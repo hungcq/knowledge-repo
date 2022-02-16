@@ -10,16 +10,17 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 
 ## Structure
 - Introduction:
-  - Distinguish between 2 dif types of things: within reach & out of reach
+  - Distinguish between 2 dif types of things: within reach (peripersonal) & out of reach (extrapersonal)
   - 2 corresponding modes of thinking: H&N chemicals & dopamine
   - Introduce problems in some chapters
   - Some notes about presentations & styles
 - Chap 1:
   - Set the problem: what is the function of dopamine if not pleasure?
+  - Dopamine & H&N terms & mechanisms
   - Anticipation of new possibilities
   - Evolutionary explanation
   - Glamour: definition & issue
-  - Treadmill effect
+  - Gambling behavior
   - H&N molecules, love & sex implication
   - Effect of testosterone
   - How dopa drive sexual behavior & prevent enjoyment of sexual experience
@@ -46,7 +47,54 @@ Arguments are supported by data, experiment results, evolutionary history and bi
   - Highlight anomaly, sensitive behaviors
 - Use lots of individual examples & stories
 
+## Terms
+- Reward prediction error
+- Peripersonal vs extrapersonal
+- Romance: dopamine thrill at the start of relationship
+- H&N (here and now) chemicals: serotonin, oxytocin, endorphins, endocannabinoids chemicals
+- Passionate (usually 12-18 months) vs companionate love (after)
+- Dopaminergic personality (brain naturally produce more dopamine):
+  - High number of sexual partners
+  - Low age of first sexual intercourse
+
 ## Arguments
+### 1. Love
+- Dopamine is not a marker of pleasure. It is a reaction to the unexpected - possibility and anticipation
+- Dopamine rushes come from promising surprises (eg new, unexpected messages (content not revealed), new people...)
+- -> Stop when things become regular events
+- Reward prediction error:
+  - We constantly make predictions about what is coming next
+  - Dopamine rush comes:
+    - When what happens is better than expected
+    - There is a possibility of it
+- Brain deals with within reach things (peripersonal) & out of reach things (extrapersonal) in dif ways
+- H&N chemicals give pleasure from sensation & emotion from peripersonal space
+- Getting things in extrapersonal space requires effort, time & planning
+- -> Dopamine exercise control when brain is engaged with extrapersonal space: to maximize resources in the future, to pursuit better things
+- Dopamine doesn't react to having things, only to getting new things
+- -> Need to transition to H&N chemicals to enjoy things we have
+- Same with acquiring (extrapersonal) & maintaining love (peripersonal)
+- -> Need to transition to experience the H&N (satisfaction) after early romance/passionate love (pursuit)
+- Long term rela chemicals: oxytocin (more in female) & vasopressin (male)
+- Glamour: when we see things that stimulate our dopaminergic imagination, drowning out our ability to accurately perceive H&N reality
+- -> Create desires that cannot be fulfilled because they are only in our imagination
+- Unpredictable/random reward -> more dopamine -> more attempts
+- -> Gambling behaviors
+- Testosterone:
+  - Related to muscular features: facial hair, increased muscle mass, low-pitched voice
+  - Vary mostly between individuals
+  - H&N chemical, create sexual desire (any partner can satisfy) in both male & female
+  - Not suppressed but work together with dopamine
+  - Suppressed by long term rela chemicals (oxytocin & vasopressin)
+- -> Related to marry behavior: naturally high = less likely to marry. Marry = reduced testosterone level
+- Sex:
+  - First stage: desire & arousal: dopaminergic, future-looking
+  - Physical contact & orgasm: H&N experience (endorphins), dopamine region (prefrontal cortex) shut down
+  - -> Need to focus on present to enjoy sex
+- Suppressing sexual behavior can prolong passionate love
+
+### 2. Drugs
+
 
 ## Criticism
 - Focus on biological factors. A complete analysis of behaviors would need to take into accounts the nurture factors. Some warrants on p.153-154.

@@ -6,18 +6,92 @@ Antony Lewis 2018
 Blockchain, Finance
 
 ## Structure
-- Chap 0-3: introduce basic terms & concepts:
-  - Money & digital money
-  - Cryptography
-- Chap 4-6: applications
-  - Cryptocurrencies & digital tokens:
-    - What they are
-    - How to buy, store, and sell them
-    - How to explore their blockchains
-    - The risks in managing them
-  - Blockchain technologies being explored by businesses
-- Chap 7-8: investment
-- Chap 9: summary & predictions
+- Introduction: introduce basic terms & concepts
+- Chap 1-2: money & digital money
+  - Money:
+    - Cash vs digital money: advs & disadvs
+    - What functions money serves
+    - How Bitcoin fit into the picture
+    - Fiat vs representative money
+    - History of money
+    - Policy regarding money: currency peg, quantitative easing
+  - Digital money:
+    - How bank transfer works:
+      - Same currency payment:
+        - Same bank
+        - Different banks
+      - International payment:
+        - Same bank
+        - Different banks
+    - -> Issues when there are multiple intermediaries
+    - How e-wallet works
+- Chap 3: cryptography:
+  - Basic concepts: encryption, hash, digital signature
+  - How these are applied to Bitcoin
+- Chap 4-5: cryptocurrencies & digital tokens:
+  - Bitcoin:
+    - Aim
+    - Functions of Bitcoin software
+    - How Bitcoin solved digital money problems
+    - Payment process
+    - Characteristics: transparency, peer-to-peer, security
+    - Reality: software & protocol upgrade, miners, hardware, ownership, transaction fee, price
+    - Wallet types & functions
+    - How to buy & sell: directly, via exchanges & over the counter brokers
+    - History
+    - Satoshi Nakamoto: possible impacts
+  - Ethereum:
+    - Aim
+    - Functions of Ethereum software, dif vs Bitcoin software
+    - Proof-of-stake mining
+    - Dif vs Bitcoin
+    - Smart contract:
+      - Definition
+      - Characteristic
+      - Programming languages
+      - Steps to run
+    - Softwares
+    - History
+  - Forks:
+    - 2 types: fork of codebase & fork of live blockchain
+    - Hard vs soft fork
+  - Digital tokens:
+    - Definition of token
+    - Types of digital tokens & their functions:
+      - Blockchain-native token
+      - Asset backed token
+      - Utility token
+- Chap 6: blockchain technology:
+  - Features
+  - Dif vs normal & distributed database
+  - Types of blockchain & their applications: public vs private blockchain
+  - Questions to ask about blockchain technology
+- Chap 7-8: investment:
+  - Initial coin offerings:
+    - Ways for companies to raise money
+    - Whitepaper
+    - ICO steps
+    - Types of ICO tokens: security & utility tokens
+    - Types of token sale: conservative route & other route
+    - Treasury (tokens in project's reserve)
+    - Exchange listing
+    - Regulations
+  - Investing:
+    - Pricing of dif types of tokens:
+      - Asset backed token
+      - Cryptocurrencies
+      - ICO utility token
+    - Risks & mitigations:
+      - Market risk
+      - Liquidity risk
+      - Exchange risks
+      - Wallet risks
+      - Regulatory risks
+      - Scam: causes & popular scams
+- Chap 9: summary & predictions:
+  - New values created by blockchain technology
+  - Public blockchain predictions
+  - Private blockchain predictions
 
 ## Author's problems & solution
 - Cover the basics of bitcoins, blockchains and cryptocurrencies without requirement of any specific expertise: OK
@@ -26,7 +100,9 @@ Blockchain, Finance
 - Author's promise:
   - Be unbiased
   - Use analogy but not excessively
-- Lots of graphs, diagrams & illustrations
+- Lots of graphs, diagrams & illustrations: well-used & aid understanding
+- Well-structured chapters
+- Important distinctions clearly highlighted
 
 ## Terms
 - Public/permissionless (vs private/permissioned) blockchain: list of transactions can be written by anyone
@@ -97,8 +173,9 @@ Blockchain, Finance
 - History of money: "whatever form it takes, it gets watered down either through debasement or by excessive creation until a certain limit, then there is a reform"
 
 ### 2. Digital money
-- How digital money is currently used to settle debts
-- How money moves around the financial system
+- Aims:
+  - How digital money is currently used to settle debts
+  - How money moves around the financial system
 - Note: there is one typo in the figures: should be 9990, not 9900
 
 - Money in customer accounts is a liability of the banks:
@@ -246,7 +323,7 @@ Blockchain, Finance
   - Control block creation time:
     - Proof-of-work: hash(hash of prev block + block data + random number) < target number -> can create block
     - Adjust when more miners join: auto-adjust target number
-  - Incentivise block-creators:
+  - Incentivize block-creators:
     - Voluntary transaction fee, miners can choose transaction with higher fee
     - Block rewards: miner can add a transaction to create coin at the start of the block
   - -> Payment come from the protocol itself
@@ -256,10 +333,6 @@ Blockchain, Finance
     - When new blocks added on top of either block, choose the longer chain
   - -> 51% attack: create its own transaction, include in block in alternative chain
   - Avoid double spend: wait until the block with your transaction to be buried deep
-- Transaction also refer to previous transactions' hash
-- -> All Bitcoins can be traced
-- -> No individual unit, only lumps (outputs of transactions)
-- -> Account balance = unspent transaction outputs
 - Payment process:
   - Transaction created and signed by sender
   - -> Broadcasted to neighbor nodes, validated according to:
@@ -271,16 +344,21 @@ Blockchain, Finance
   - -> Miners decide to pack into a block & mine the block
   - -> Block is mined & propagated to other nodes
   - -> Recorded as confirmed transaction
-- Bitcoin intermediary nodes: non-specific & can act instead of each other
-- Impact of malicious nodes:
-  - Bookkeeper: not passing transactions
-  - -> Can be verified with other nodes' data -> No impact
-  - Miners:
-    - Not include transactions
-    - -> Transactions can't be confirmed -> Not a big impact
-    - Attempt to mine a longer chain to double spend
-    - -> Only works when having significant proportion of the network's hashing power
-    - Can't steal Bitcoins from other accounts: no private key
+- Characteristics:
+  - Transparency: transaction also refer to previous transactions' hash
+  - -> All Bitcoins can be traced
+  - -> No individual unit, only lumps (outputs of transactions)
+  - -> Account balance = unspent transaction outputs
+  - Peer-to-peer: still go through intermediary nodes, but Bitcoin intermediary nodes: non-specific & can act instead of each other
+  - Security: impact of malicious nodes:
+    - Bookkeeper: not passing transactions
+    - -> Can be verified with other nodes' data -> No impact
+    - Miners:
+      - Not include transactions
+      - -> Transactions can't be confirmed -> Not a big impact
+      - Attempt to mine a longer chain to double spend
+      - -> Only works when having significant proportion of the network's hashing power
+      - Can't steal Bitcoins from other accounts: no private key
 - Bitcoin reality:
   - Main software & protocol upgrade: Bitcoin Core
   - Miners: centralized by few organizations which can mine profitably
@@ -299,7 +377,7 @@ Blockchain, Finance
       - Display address
       - Display account balance
       - Make payment
-    - Hardware wallet:
+    - Hardware wallet
 - Buy & sell via exchange:
   - Exchange matches buy & sell order
   - Central clearing counterparty: trades appear to be against the exchange -> anonymity to customers
@@ -365,16 +443,16 @@ Blockchain, Finance
   - Short programs stored on Ethereum blockchain
   - Replicated across all nodes
   - Can be inspected by the public
-  - Steps:
+  - Turing complete: fully functional & can perform any computation available in other programming languages
+  - Programming languages:
+    - Most common: Solidity
+    - Other: Serpent (similar to Python), LLL (deprecated)
+  - Steps to run:
     - Upload smart contract to blockchain via a transaction -> it exists at an address
     - Run smart contract via a transaction:
       - Miners run first
       - When mined, broadcasted to other nodes. Other nodes run the contract.
-  - Turing complete: fully functional & can perform any computation available in other programming languages
-  - Languages:
-    - Most common: Solidity
-    - Other: Serpent (similar to Python), LLL (deprecated)
-- Software:
+- Softwares:
   - CLI: geth (Go, popular), eth (C++), pyethapp (Python), Parity (Rust, popular)
   - GUI: Mist: run on top of geth or eth
 - Ethereum's history: notable event: DAO hack & reversal of transaction
@@ -397,16 +475,283 @@ Blockchain, Finance
   - Soft fork: loosened rule -> compatible with old version
 
 ### 5. Digital tokens
-- 
+- Token: issued by an issuer and can be used in a specific context/marketplace, under specific conditions/timings
+- -> Has value only in that context
+- Types:
+  - Blockchain-native token (eg Bitcoin, ETH)
+  - Asset backed token
+  - Utility token
+- Transaction can change state of token
+- Can't be used to track physical object
+#### Blockchain-native token
+- Better called cryptocurrency
+- Essential for the underlying blockchain to work and be incentivized
+- Nothing backs the token
+- Value derive from:
+  - Usable in the corresponding blockchain
+  - Speculative value
+#### Asset backed token
+- A claim on a custodian for the financial asset
+- Types:
+  - Depository receipt token: usable once, to claim an item. Advs:
+    - Transparency & security
+    - Ease of transaction
+    - Segregation of responsibility:
+      - Transaction responsibility moves entirely to owner
+      - Issuer only cares about storing items, issuing tokens & delivering items upon when claimed
+  - Title token: digital document represent proof of ownership of an asset
+  - Contract token: represent contractual obligation between the issuer of the token and the bearer of the token (eg a share)
+#### Utility token
+- Can be redeemed for a product or service
 
 ### 6. Blockchain technology
+- Features:
+  - A database that records transactions
+  - Replication of data across a number of systems in realtime
+  - Peer to peer architecture
+  - Cryptographic methods. Eg:
+    - Digital signature to prove ownership & authenticity
+    - Hashes to ensure completeness of data
+- -> Put together existing technologies to create new capabilities
+- Comparison with other types of databases:
+  - Dif vs normal database: automatically:
+    - Connect to other peers & listen for new data
+    - Validate new data against agreed rules
+    - Store & broadcast new data to other network participant
+  - -> Blockchain = database with additional features
+  - Dif vs distributed database: participants don't have to trust each other
+- Blockchain work best when everything is recorded on the chain
+- Blockchains are distributed ledgers, which have blocks of data chained together & broadcasted to all participants
+- Terminology: blockchain technology vs ledger:
+  - Technology: rule/standard for how a ledger is created and maintained
+  - Ledger: specific instances of ledger
+- Types:
+  - Public/permissionless blockchain:
+    - Anyone can create block or be a bookkeeper without permission from an authority
+    - Anyone can create an address & make transaction
+  - Private/permissioned blockchain:
+    - Only allow approved participants to join
+    - Don't need native token to incentivize
+    - Don't need proof of work
+    - Transaction performed on data that can be trusted to be up-to-date, approved & signed off by appropriate parties
+- -> Different tools to address dif problems
+- Applications:
+  - Public blockchains:
+    - Speculation
+    - Buy items from underground markets: not ideal since it is tracable
+    - Cross border payment: not ideal since have to exchange twice: fiat 1 to crypto, crypto to fiat 2
+    - -> Costly
+    - Initial coin offerings
+  - Private blockchains:
+    - Cross-organization communication
+    - Single source of truth of data, with transparent changes to it
+    - Shared workflows in the form of smart contracts
+    - Remove the need for third party record keeper
+  - Currently being experimented for many use cases that involved data
+  - -> Might trigger spill-over benefits from digitalizing the workflow
+- Questions to ask about blockchain technology:
+  - Which blockchain?
+  - Public or private one?
+  - What data is represented on the blockchain and what data is ‘off-chain?’
+  - What do the tokens represent?
+  - When a token is passed from one party to another what does this mean in real life?
+  - What happens if a private key is lost or copied? Is this acceptable?
+  - Are all parties comfortable with the data that is being passed around the network?
+  - How will upgrades be managed?
+  - What’s in the blocks?
+  - Public blockchains:
+    - Will all parties run nodes or will some trust others?
+    - If the blockchain is backlogged (bottleneck), what impact might have this have on users?
+    - How will the project deal with forks and chainsplits?
+    - How will data privacy be achieved?
+    - How will operators comply with evolving regulations?
+  - Private blockchains:
+    - Who will run the nodes? Why?
+    - Who is going to write blocks?
+    - Who is going to validate blocks and why?
+    - If this is about data sharing, why can’t a web server be used?
+    - Is there a natural central authority whom everyone trusts, and if so why aren’t they hosting a portal?
 
 ### 7. Initial coin offerings
+- New way for companies to raise money without diluting ownership or having to pay investors back
+- Ways for companies to raise money:
+  - Equity
+  - Debt
+  - Pre-ordering of products (eg books, computer games)
+- Crowdfunding:
+  - Raise fund by getting small investment from large number people
+  - Usually through a platform to bring together projects, investors & customers
+- Whitepaper:
+  - Official definition: authoritative report or policy paper
+  - ICO whitepapers usually describe commercial, technical and financial details:
+    - Goal: problem & solution
+    - Development milestones
+    - Project team's background & exp
+    - Expected total fundraise value
+    - How the funds will be managed and spent
+    - Purpose & use of the tokens
+    - Initial & ongoing distribution of the tokens
+- Steps:
+  1. Describe project in whitepaper, announce ICO
+  2. Investors send funds (usually cryptocurrencies) to receive tokens/promise of tokens in the future
+  3. Tokens might be listed on exchanges
+  4. Product/service created, tokens become redeemable
+- Types of ICO tokens:
+  - Security token: tradable financial securities
+  - Utility token: to be exchange later for product/service
+- 2 types of token sale:
+  - Conservative route: for projects whose tokens may fall under securities regulation:
+    - Not advertise widely
+    - Offer to rich people/experienced investors
+  - Other route: private sale -> presale -> public token offering
+    - Private sale:
+      - Negotiate directly with each investor
+      - Investor sign an agreement to pay now to receive tokens at a later date
+    - Pre-sale:
+      - Sale before public sale, usually with a discount
+      - Create hype for public sale
+    - Public sale:
+      - Via a smart contract containing:
+        - Whitelist logic: to identify the investor
+        - Bonus/discount logic
+        - Caps: min & max amount expected
+      - Investors send money to the smart contract and receive tokens automatically
+      - Tokens can be:
+        - Ethereum standard tokens
+        - Ethereum standard tokens to be redeemed later for tokens on the new blockchain
+      - Usually well-hyped
+- Treasury:
+  - Definition: tokens in reserve (not for sale) to reward founders, pay staff/contractors, to stabilize price of tokens on exchanges
+  - Project may self-impose limits on how fast the reserves can be spent to increase investors confidence
+  - Can create value on company's balance sheet after token is listed on exchange
+- Exchange listing:
+  - Important event for project:
+    - Increase liquidity
+    - Investors expectation to trade the tokens
+  - Usually no requirement for listed companies (eg public disclosure of financial information)
+  - -> Exchanges are willing to list any tokens to make profit -> Risk
+- Regulations:
+  - Standards start to appear to classify tokens as securities or not
+  - ICOs are increasingly regulated
+  - -> Increase clarity for investment, allow project to focus on business
+  - Dif across jurisdictions
+  - -> Projects can select favourable jurisdiction
 
 ### 8. Investing
+- Aim: describe considerations to help decide whether to invest in cryptoassets
+#### Pricing
+- Asset backed token: price ~ price of underlying asset
+- Cryptocurrencies:
+  - Points to consider:
+    - Current price: refer to popular exchanges with the highest trade volume
+    - Factors affecting price: like other financial asset:
+      - Sentiment
+      - Gossip & chatter on forums/social media
+      - Technical successes/failures
+      - Celebrity endorsements
+      - Regulatory issues
+      - Market manipulation (eg large buy/sell)
+    - What should the price be: no existing method to value cryptocurrencies/token yet
+- ICO utility token:
+  - Initially:
+    - Hard to value because redemption is always describe generally, not quantified
+    - -> Subject to normal market forces
+    - Issuer might try to manipulate price by buying tokens when price falls
+  - Later: project need to decide to set prices (eg for 1 GB storage in 1 year) in fiat or tokens:
+    - Price in fiat: token might increase in value due to scarcity as long as project doesn't issue new tokens
+    - Price in token:
+      - Project has control of the token price by referring to substituted product/service. Example:
+        - Substitute price: 10$ for the product
+        - Set price = 2 tokens/product -> price = 5$, 1 token/product -> price = 10$
+      - Project founders if hold tokens are incentivized to keep token price high and stable
+#### Risks & mitigations
+- Market risk: price fall to zero due to: time, hack/vulnerability
+- Liquidity risk:
+  - Market cannot support transaction at price you expect
+  - When:
+    - Coin is unpopular
+    - Coin is de-listed
+- Exchange risks:
+  - Hack by third party
+  - Staff stealing customers' money
+  - Exchange/users of exchange engage in illegal/unethical activity
+- -> Mitigation:
+  - Research & choose exchange carefully
+  - Only use exchange when necessary & withdraw as soon as possible after trading
+- Wallet risks: tradeoff between security & convenience: offline vs online wallets
+- Regulatory risks:
+  - ICO might be considered illegal
+  - Tax
+- -> Check the law of current jurisdiction
+- Scam:
+  - Causes: hype, technical complexity, regulatory uncertainty, naive investors
+  - Popular scams:
+    - Ponzi schemes: pay old investors with new investors' money
+    - Exit scam: founders run off with customers' money
+    - Fake hack: profit from short position
+    - Pump & dumps: illiquid coins bought cheaply by fraudsters, then create hype to sold at higher price to new investors
+    - Scam ICOs: raise money without delivering products
+    - Spoof ICOs: fake ICO website
+    - Scam mining schemes: not disclose info such as difficulty of mining scheme
+    - Fake wallets
 
 ### 9. Conclusion
+- Blockchain industry, including cryptocurrencies, business blockchains & tokenization of assets is still in its infancy
+- 2 new values:
+  - Crypto:
+    - Censorship resistant financial assets
+    - Direct peer to peer transfer without third party
+    - Transparent automation with smart contract
+  - Blockchain:
+    - Remove duplicative business processes
+    - Allow digital assets & records to move freely between businesses without intermediaries
+- Public blockchain predictions:
+  - Public cryptocurrency industry: innovation will continue accelerated as developers & staff are incentivized by tokens & cryptoassets increasing in price
+  - Tokenization of assets, products & services will continue: new markets of digital collectables, esp computer games & e-sports
+  - ICOs will continue to be popular, with more standardized practices & regulations
+  - New stablecoins - tokenized fiat currency
+  - -> Will enable new cycle of innovation
+  - New solutions (eg sharding, state channels) to reduce backlogs, increase transaction volume & throughput for public blockchains
+  - Forks & chainsplits will become more problematic because of the confusion they create
+  - Proof of stake mechanism by Ethereum if successfully implemented will create precedence
+  - Governance will become more important as amount of value recorded on blockchains increase
+- Private blockchain predictions:
+  - Will be adopted by businesses, in small groups first, then will form larger networks
+  - Will enable moving documents across organizational boundaries. Blockchain will ensure:
+    - Authenticity of documents
+    - Completeness of the set of data
+  - -> Increase speed & reduce cost of business transaction within and across borders
+  - -> Impact on the economy
+  - Smart contract will enable guaranteed business-to-business automation
+  - Enable atomic transaction: reduce risk between businesses, remove need for third party escrow service
+  - There will be a shift from improved processes to evolved processes
+  - -> Change the way businesses interact
+  - Reduce in number of intermediaries
+  - -> Financial intermediaries & other companies at risk of disruption will need to adopt blockchain & evolve business models to work in the new env
+  - -> A few will succeed & many will fail due to unviable models, insufficient interest, or insufficient network size. Those that succeed could become extremely relevant.
+- Other prediction: distinction between public & private blockchains might fade away or assets can move between blockchains with ease
 
 ## Criticism
+- Since the industry is evolving rapidly and this book is published in 2018, many important new technologies/concepts weren't covered. Eg:
+  - Decentralized exchange
+  - Stablecoins
+  - Non fungible token (NFT)
+  - New blockchains
+- Some parts cover not in depth
+- Histories of money, Bitcoin & Ethereum are boring to read and don't contain many important points
 
 ## Takeaway
+- Understanding about money:
+  - Functions
+  - Advs & disadvs of dif types of money
+  - How Bitcoin fit into the picture
+- Understanding about digital money & banking system:
+  - How bank transfer works
+  - How e-wallet works
+- -> Understand the issues of multiple intermediaries: costly, approval needed, complex system
+- Understanding of Bitcoin protocol at a high level, how dif concepts of cryptography are applied to it, including:
+  - Hash
+  - Digital signature
+- Understanding of Bitcoin & Ethereum, smart contract, dif types of digital tokens
+- Understanding of blockchain technologies, types of blockchains & their applications
+- Understanding of ICO
