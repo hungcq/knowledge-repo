@@ -65,7 +65,7 @@ Provide guide for analytical reading of dif kind of reading material.
 - Present teachers (attending lecture, listening) vs absent teachers (reading)
 
 #### 2. The levels of reading: 4 levels
-- Elementary: understand what the words in the sentence mean
+- Elementary: understand what a sentence means
 - Inspectional (skimming systematically): understand what the book is about, what is its structure
 - -> Get the most out of a book within given time
 - Analytical reading: thorough, complete reading, for the sake of understanding
@@ -113,9 +113,9 @@ Provide guide for analytical reading of dif kind of reading material.
 #### 5. How to be a demanding reader
 - Ask & answer questions while reading
 - 4 questions an active reader asks:
-  - What is the book about as a whole  
+  - What is the book about as a whole?  
   -> Leading theme, how the theme is ordered/divided
-  - What is being said in details, and how  
+  - What is being said in details, and how?  
   -> Main ideas, assertions & arguments of a particular message
   - Is the book true, in whole or part?
   - What of it?
@@ -280,7 +280,7 @@ by giving reasons for any critical judgement you make
   - Make your own assumptions explicit, compare with other's assumptions
   - Attempt to be impartial, avoid partisanship
 - Points to disagree (be specific) with an authors:
-  - **Rule 12**: He is uninformed: lack kno relevant to the problems
+  - **Rule 12**: He is uninformed: lack knowledge relevant to the problems
   he is trying to solve
   - **Rule 13**: He is misinformed: have error kno relevant to the problems  
   -> Rule 12 & 13: defects in premises, which leads to a dif conclusion/inability to
@@ -631,7 +631,7 @@ have to
        - In conceptions of the question
        - In views of the subject
      - Controversy: a number of issues revolving around a connected set of questions
-  5. Analyzing the discussion:
+  5. Analyze the discussion:
      - Order the questions & issues clearly:
        - General -> specific
        - Indicate the relations among issues
@@ -666,7 +666,7 @@ have to
 - -> Read to keep the mind alive & growing
 
 ## Criticism
-- The book is quite old, before the digital age: haven't been able to deal with changes in:
+- The book is quite old, before the digital age: hasn't been able to deal with changes in:
   - The explosion of materials, esp digital ones
   - New form of materials (ebooks)
   - New ways of taking note, searching for information & answers

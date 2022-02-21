@@ -14,11 +14,11 @@ Arguments are supported by data, experiment results, evolutionary history and bi
   - 2 corresponding modes of thinking: H&N chemicals & dopamine
   - Introduce problems in some chapters
   - Some notes about presentations & styles
-- Chap 1:
+- Chap 1: Introduction to dif types of molecules & their effects. Effects on behaviors regarding love & sex.
   - Set the problem: what is the function of dopamine if not pleasure?
   - Dopamine & H&N terms & mechanisms
   - Anticipation of new possibilities
-  - Evolutionary explanation
+  - Evolutionary explanation of dividing into 2 modes of thinking
   - Glamour: definition & issue
   - Gambling behavior
   - H&N molecules, love & sex implication
@@ -27,7 +27,39 @@ Arguments are supported by data, experiment results, evolutionary history and bi
   - Effect of suppressing sexual behavior
   - Chapter summary
 - Chap 2:
+  - Set the problem: conflicting desires, decisions lack of consideration for ultimate goal
+  - Evolutionary explanation of desire
+  - Buyer remorse: cause & solutions
+  - Drug abuse: cause & mechanism
+  - Factors affecting level of addiction. Dif between cocaine & crack.
+  - Drunk vs high
+  - Diminishing stimulation of drug use. Shutdown of dopamine system when there is no reward.
+  - Liking chemicals. Effects of dual drugs.
+  - Impulsiveness. Effect of nicotine.
+  - Effects of dopa boosting medicines
+  - Porn addiction, similarity with drug addiction. Effect of easy access on addiction.
+  - Addictive factors of video games
+  - Future-oriented (control) dopamine vs desire dopamine - introduction of next chapter
 - Chap 3:
+  - Dopamine control circuit: mechanism, functions, evolutionary explanation
+  - Persistence
+  - How dopa influence effort
+  - Confidence. How others react to dominance & submissiveness.
+  - Effect of amphetamine
+  - Self-efficacy role in sport comeback
+  - Agentic & affiliative relationship
+  - Submissive behavior in achieving goal & in social context
+  - Effect of high dopamine level in control circuit
+  - Effect of low dopamine level in control circuit. ADHD: symptoms, consequences, treatments.
+  - Other consequences of ADHD
+  - Cheating behaviors of winners
+  - Spontaneous & planned violence
+  - Suppression of emotion
+  - Limited will power
+  - Psychotherapies to treat addiction:
+    - Motivational enhancement therapy
+    - Cognitive behavioral therapy
+    - Twelve-step facilitation therapy
 - Chap 4:
 - Chap 5:
 - Chap 6:
@@ -39,13 +71,16 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 - Offer ways to achieve balance & happiness: OK
 
 ## Presentation & styles
+- Author notes:
+  - Some parts are speculative, esp later chapter
+  - There are simplification to make things easier to grasp
+  - Select studies:
+    - Reflecting general consensus, not all contradicting studies
+    - Highlight anomaly, sensitive behaviors
 - No outline
-- Some parts are speculative, esp later chapter
-- There are simplification to make things easier to grasp
-- Select studies:
-  - Reflecting general consensus, not all contradicting studies
-  - Highlight anomaly, sensitive behaviors
 - Use lots of individual examples & stories
+- There are some things in common between parts in each chapter, but the connections are not strong enough
+- There are digressions but usually interesting enough
 
 ## Terms
 - Reward prediction error
@@ -53,9 +88,12 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 - Romance: dopamine thrill at the start of relationship
 - H&N (here and now) chemicals: serotonin, oxytocin, endorphins, endocannabinoids chemicals
 - Passionate (usually 12-18 months) vs companionate love (after)
-- Dopaminergic personality (brain naturally produce more dopamine):
-  - High number of sexual partners
-  - Low age of first sexual intercourse
+- Impulsiveness
+- Self-efficacy
+- Agentic vs affiliative relationship
+- Submissive vs dominant behavior/posture
+- Planned vs spontaneous violence
+- Dopaminergic personality
 
 ## Arguments
 ### 1. Love
@@ -67,7 +105,10 @@ Arguments are supported by data, experiment results, evolutionary history and bi
   - Dopamine rush comes:
     - When what happens is better than expected
     - There is a possibility of it
-- Brain deals with within reach things (peripersonal) & out of reach things (extrapersonal) in dif ways
+- Peripersonal vs extrapersonal things:
+  - Peripersonal: up close, in direct contact, focused on the present moment
+  - Extrapersonal: at a distance, thinking abstractly, focused on the future
+- Brain deals with peripersonal &extrapersonal in dif ways
 - H&N chemicals give pleasure from sensation & emotion from peripersonal space
 - Getting things in extrapersonal space requires effort, time & planning
 - -> Dopamine exercise control when brain is engaged with extrapersonal space: to maximize resources in the future, to pursuit better things
@@ -92,13 +133,178 @@ Arguments are supported by data, experiment results, evolutionary history and bi
   - Physical contact & orgasm: H&N experience (endorphins), dopamine region (prefrontal cortex) shut down
   - -> Need to focus on present to enjoy sex
 - Suppressing sexual behavior can prolong passionate love
+- High level of dopamine naturally:
+  - High number of sexual partners
+  - Low age of first sexual intercourse
 
 ### 2. Drugs
+- Aristotle's idea: ultimate purpose of all actions: happiness
+- -> Issue: usually lack of consideration for purpose: just do what we want at that moment
+- Desire dopamine mechanism:
+  - Circuit: mesolimbic pathway (dopamine desire circuit):
+    - <img src="../resources/the-molecule-of-more/1.png" alt="drawing" width="300"/>
+    - Cells wind through ventral tegmental area (old part of brain) to nucleus accumbens
+    - These cells activated -> release dopamine to nucleus accumbens -> motivation feeling
+  - -> Evolved to promote survival & reproduction
+  - Dopamine desire system constantly scans the env for evolutionarily attractive resources & opportunities
+  - Desire circuit are activated when those things appear, whether or not these things are actually needed
+  - -> Send signal to pay attention by feeling of desire & usually excitement
+  - -> Sensation of wanting is not a choice to make but a reaction to things encountered
+  - Also contribute to the formation of memories related to those things
+  - -> Shaping brain to make surprising events predictable to maximize resources
+  - -> Important to neuroplasticity
+  - -> No more surprise & reward prediction error
+  - Might be opposed by dopamine control circuit
+  - -> Evolutionary explanation: systems containing opposing forces are easier to control
+- Effect on behavior: dopamine activation in desire circuit triggers energy, enthusiasm & hope -> feel good
+- -> People pursuit this feeling of anticipation, of life is about to get better
+- Imagination of future possibilities tend to be idealized
+- Liking circuit (H&N): tiny, fragile & harder to trigger, compare to dopamine desire system
+- Buyer's remorse:
+  - Cause: failure of the H&N experience (enjoyment) to compensate for the loss of dopa arousal (excitement)
+  - Solutions:
+    - Make a wise purchase
+    - Purchase sth that triggers more dopa expectation after the purchase
+    - Purchase less
+- Drug abuse:
+  - Cause: addictive drugs hit the desire circuit with intense chemical blast, > all natural behaviors
+  - Mechanism:
+    - Dif vs natural behavior: bypass circuitry of surprise & prediction -> desire circuit doesn't shut down after performing the behavior
+    - -> Always want more
+    - Stimulate dopamine release no matter the current situation
+    - -> Connect drug use to everything -> drug becomes answer to all aspect of life
+    - Level of addiction: depend on
+      - Level of dopa stimulation. More dopa = more addictive.
+      - On set time: faster = more addictive. Fastest: smoking, intravenous injection.
+    - Diminishing stimulation: only craving is intense, high is less
+    - Usually also boost impulsiveness (see impulsive behavior below)
+    - Drug that trigger both desire & liking circuit: heroin, OxyContin, marijuana
+    - Marijuana effect:
+      - Dopa boosting:
+        - Engage with things that are usually perceived as unimportant
+        - Lost in thoughts, float in imaginary world
+      - Other situation: suppress dopamine, mimicking H&N
+      - -> Activities associated with wanting and motivation seem less important
+    - Nicotine effect: main effect: triggering compulsive use. Little stimulation.
+  - Addiction also depends on easy access: easier = more common
+  - -> Porn addiction (has sth in common with drug addiction) becomes more common after the internet
+- When expected reward fails to materialize, dopamine firing rate drops to zero (compare to normal of 5 times/s)
+- -> Dopamine shutdown creates feeling of resentful & deprived
+- -> Drug abuser will continue to use to get a relief from the low when diminishing stimulation set in
+- Drunk vs high:
+  - High: depend on how fast alcohol gets into the brain
+  - -> Drink drinks that are more concentrated & easier to drink (eg mixed drink > beer)
+  - Drunk: depend on total amount of alcohol consumed
+- Impulsive behavior: occur when too much value is placed on immediate pleasure, not on long term consequences
+- -> Desire dopa overpowers rational parts of the brain
+- Parkinson's disease: dopamine deficiency in pathway that's responsible for controlling muscle movement
+- -> Treatment: dopamine boosting drug
+- Side effect of dopa boosting drug (effect possibly depends on genetic vulnerability):
+  - Boost impulsive behavior (eg risk taking)
+  - Expect to win bigger
+  - Hypersexuality (high sexual urges)
+- Adolescent brains: not fully developed, esp the frontal lobes (only after early 20s)
+- -> More impulsiveness & bad decisions
+- -> More negative consequences from video games
+- Addictive factors of video games:
+  - Surprising factors from unpredictable rewards
+  - -> Reward prediction errors (eg opening chests)
+  - Endless possibilities of open environments to explore
+  - Display of progress to trigger pursuit of more
+  - Social pleasure:
+    - H&N: company of others
+    - Dopaminergic: work together towards a shared goal (better future)
+  - H&N: beautiful scenery
 
+### 3. Domination
+- Dopamine control circuit (meso-cortical circuit):
+  - <img src="../resources/the-molecule-of-more/2.png" alt="drawing" width="300"/>
+  - Start from ventral tegmental area, end in frontal lobes (specialized in logical thinking)
+  - Manage uncontrolled urges of desire dopamine. Decide what sort of "more" is worth having.
+  - Take the energy of desire and guide it toward profitable ends
+  - Give us the ability to use abstract concepts, construct plans, strategize
+  - -> Gain control, dominate the world to get the things we want
+  - Source of imagination: imagine consequences of decisions -> help make decision
+  - -> Also work in the unreal world of the possible
+  - Give us ability to consider: ideas, plans theories, abstract concepts, worlds yet to be
+  - Evolutionary aim: secure as many resources as possible
+  - -> Reward: feeling good
+  - Behavior towards others: can be aggressive or submissive, depends on the context
+  - Source of persistence & effort: willingness to do more work to get better things
+  - Source of ability to suppress emotions
+  - -> Stay calm in complex situations, develop plan to secure more resources
+- Early success can positively influence persistence: having a confident expectation of success (self-efficacy)
+- Dominant vs submissive posture:
+  - Dominant posture: expand body, take large amount of space
+  - Submissive posture: constrict body
+  - People are more likely to unconsciously adopt complementary posture rather than mirror the same dominant/submissive posture (unlike other actions during a talk)
+  - -> Like & feel more comfortable compared to mirroring posture
+- -> Submission to self-efficacy
+- Some goals require working with other people
+- Agentic vs affiliative relationship:
+  - Agentic rela:
+    - Formed for the purpose of accomplish a goal
+    - Orchestrated by dopamine
+    - The other person acts as an agent assisting you in achieving your goal
+    - Can be passive, as long as can achieve the goal
+  - Affiliative rela:
+    - Purpose: enjoy social interactions
+    - Pleasure: being with another person (H&N)
+  - Most relationships have both affiliative & agentic elements
+  - Preference depends on individuals:
+    - Agentic people (prefer agentic rela): cool & distant
+    - Affiliative people: affectionate & warm, social, turn for others for support. Likely to be friendly, accessible followers.
+    - Good at both: friendly, accessible leaders
+    - Bad at both: distant & isolated
+- Submissive behavior can be a sign of elevated social status (courtesy)
+- Dominant behavior may stem from personal insecurity or imperfect education
+- Effect of high level of control dopamine, imbalance between dopamine & H&N neurotransmitters:
+  - Work relentlessly toward goals but never stop to enjoy the fruits of achievement, don't even brag about those achievements
+  - -> Achieve sth, move on to the next
+  - Usually unhappy
+- Effect of low level of control dopamine:
+  - Struggle with internal control: impulsive, facing difficulty when trying to focus on complex tasks
+  - Can result in ADHD
+- Attention deficit hyperactivity disorder (ADHD):
+  - Symptoms: poor focus & concentration, poor impulse control
+  - Seen most often in children: not fully developed frontal lobes
+  - Consequences:
+    - High-risk, pleasure-seeking behavior: drug addiction, early sexual activity, obesity
+    - Unable to focus -> can't extract resources from the env
+    - Difficulty making friends
+    - Overreaction
+  - Treatment: medication to increase dopamine level
+- Dopamine can suppress feelings of guilt (H&N emotion) -> can lead to deceit/violence
+- Cheating to win: dopamine surge from winning (evolutionary cause) make us want to win more
+- Spontaneous vs planned violence:
+  - Spontaneous violence: set off by passion (H&N), dopamine is suppress
+  - -> Degrade the inflicter's future well-being
+  - Planned violence:
+    - Effective strategy, planned in advance, sometimes in detail
+    - Aim at gaining resources or control
+    - Low emotional content (cold violence) -> advantage in the midst of conflict
+- Dopaminergic personality: focus on making the future more rewarding at the expense of being able to experience joys of the present
+  - Active desire circuit naturally: impulsive, difficult to satisfy, constantly seeking more
+  - Active control circuit naturally:
+    - Cold & calculating
+    - Ruthless & devoid of emotion, better ability to suppress emotion
+    - Interested more in winning competitions
+- Norepinephrine (adrenaline in the brain): H&N chemical of fight or flight (panic)
+- Out of willpower: give up easily when frustrated
+- Psychotherapy to treat addiction:
+  - Goal: pit one part of the brain against another:
+  - Popular types:
+    - Motivational enhancement therapy: encourage patients to talk about healthy desires
+    - -> Use as source of endurance when dopamine circuit shuts down without drug
+    - Cognitive behavioral therapy: plan to handle cues of desire
+    - 12-step facilitation therapy (Alcoholic Anonymous):
+      - Form relationship with other members of group
+      - Use H&N experience of guilt (letting others down)
 
 ## Criticism
 - Focus on biological factors. A complete analysis of behaviors would need to take into accounts the nurture factors. Some warrants on p.153-154.
 - Some examples & stories are irrelevant
+- Chap 2 use an actual example (Buzz Aldrin) but there is no data supporting the claim that he has high level of control dopamine
 - Chap 5 - Politics might go too far: studies are mainly about correlation between political view and behaviors, not inner mechanism (dopaminergic or not)
 - Chap 6: predictions are too pessimistic, uncritical, far-fetched, shallow & technologist
 
