@@ -17,7 +17,7 @@
 
 # Neuroplasticity
 - Attention & focus: motivation & visual focus (stare at object of focus for 1-2 min, blink less). Rest 20 min after period of focus 90 min.
-- Making error & incremental learning: appriciate error. Break after 7-30 min of frustration when facing error.
+- Making error & incremental learning: appreciate error. Break after 7-30 min of frustration when facing error.
 
 # Recover from injury
 - Plenty of sleep, activity (min 10 mins of walking), heat, keep injured part active - reduce healthy part activity

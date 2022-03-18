@@ -118,7 +118,8 @@ Last part of the book handles the difficulty when transitioning from monolithic 
     - Issues to address to successfully implement a solution
   - -> Objectivity -> better decision making
 
-## 
+## 1. Escaping monolithic hell
+- 
 
 # Criticism
 

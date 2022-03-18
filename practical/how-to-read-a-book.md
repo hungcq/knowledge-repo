@@ -1,14 +1,12 @@
-# How to read a book
-
-## Category
+# Category
 Practical, reading, books
 
-## Summary
+# Summary
 Category different levels of reading: elementary, superficial, analytical and syntopical.
 Provide guide & rules for last 3 levels of reading, with the focus on analytical reading.
 Provide guide for analytical reading of dif kind of reading material.
 
-## Structure
+# Structure
 - Part 1:
   - 4 goals of reading
   - 4 levels of reading
@@ -23,7 +21,7 @@ Provide guide for analytical reading of dif kind of reading material.
   - Syntopical reading guide
   - Pyramid of books (3 levels)
 
-## Author problems & solutions
+# Author problems & solutions
 - Goal proposed by author: read effectively
 - Means to achieve the goal:
   - Superficial reading the book, decide whether:
@@ -32,16 +30,16 @@ Provide guide for analytical reading of dif kind of reading material.
   - If it is worth an analytical reading, apply analytical reading rules to get the most out of the book
   - If more than 1 books is needed, apply syntopical reading rules to get the most out of the related books
 
-## Terms
+# Terms
 - Elementary reading
 - Superficial reading
 - Analytical reading
 - Syntopical reading
 
-## Arguments
-### I - The dimensions of reading
+# Arguments
+## I - The dimensions of reading
 
-#### 1. The activity and art of reading
+### 1. The activity and art of reading
 - Active reading:
   - Must actively receive (catch) the sent info/message  
   -> Need skills to receive well dif kinds of communication
@@ -64,7 +62,7 @@ Provide guide for analytical reading of dif kind of reading material.
   - vs Learn by discovery (unaided discovery)
 - Present teachers (attending lecture, listening) vs absent teachers (reading)
 
-#### 2. The levels of reading: 4 levels
+### 2. The levels of reading: 4 levels
 - Elementary: understand what a sentence means
 - Inspectional (skimming systematically): understand what the book is about, what is its structure
 - -> Get the most out of a book within given time
@@ -76,7 +74,7 @@ Provide guide for analytical reading of dif kind of reading material.
     - Place the books in relation to one another
     - Construct an analysis of the subject which may not be in any books
 
-#### 3. Elementary reading
+### 3. Elementary reading
 - Approaches to teach elementary reading
 - Stages of learning to read:
   - Reading readiness: physical, intellectual, language, personal
@@ -84,7 +82,7 @@ Provide guide for analytical reading of dif kind of reading material.
   - Build vocab quickly, understand unfamiliar words using context, read for dif purposes, in dif fields
   - Make use of dif writings: understand same concepts & compare authors' views
 
-#### 4. Inspectional reading
+### 4. Inspectional reading
 - 2 steps:
   - Skimming
   - Superficial reading
@@ -110,7 +108,7 @@ Provide guide for analytical reading of dif kind of reading material.
   - Avoid fixations & regressions: use finger as pointers, move it faster than what your eyes are comfortable  
   -> Can improve concentration but not much comprehension
 
-#### 5. How to be a demanding reader
+### 5. How to be a demanding reader
 - Ask & answer questions while reading
 - 4 questions an active reader asks:
   - What is the book about as a whole?  
@@ -143,10 +141,10 @@ Provide guide for analytical reading of dif kind of reading material.
   - Practice each individual acts until become proficient
   - Link individual acts together, focus on the overall goal
 
-### II - The third level of reading: analytical reading
+## II - The third level of reading: analytical reading
 - Don't need to apply analytical reading rules to everything you read, but need to ask 4 questions about everything you read
 
-#### 6. Categorizing a book
+### 6. Categorizing a book
 - **Analytical reading Rule 1**: you must know what kind of book you are reading,
 asap, preferably before you read
 - How: inspectional reading
@@ -173,7 +171,7 @@ asap, preferably before you read
       - Need prior knowledge/training to understanding
     - Philosophy: armchair thinking, use normal/daily exp
 
-#### 7. X-raying a book
+### 7. X-raying a book
 - **Rule 2**: state the unity of the whole book in a single/a few sentences:
   - Title
   - Intro
@@ -198,7 +196,7 @@ into a whole, by being ordered to one another and toe the unity of the whole:
 - => Rules 1-4 (structural rules) answer:  
 What is the book about as a whole?
 
-#### 8. Coming to terms with an author
+### 8. Coming to terms with an author
 - Word: several meanings. Term (a word used unambiguously): 1 meaning
 - Mapping: n to n
 - Only for nonfiction works
@@ -216,7 +214,7 @@ What is the book about as a whole?
   that you do understand
 - Make a  table: words/phrases | meanings
 
-#### 9. Determining an author's message
+### 9. Determining an author's message
 - Propositions (statements): declarations that sth is true -> argument
 - Proposition & sentence: mapping n to n
 - **Rule 6**: mark the most important sentences in a book and discover
@@ -255,7 +253,7 @@ been solved, among which what the author has acknowledged
 - => Rule 5-8 (interpretive rules) answer:  
 What is being said in details, and how? (interpreting the book's content)
 
-#### 10. Criticizing a book fairly
+### 10. Criticizing a book fairly
 - **Rule 9**: you must be quite certain that you understand before you:
   - Agree
   - Disagree
@@ -274,7 +272,7 @@ by giving reasons for any critical judgement you make
 - View disagreement as generally remediable
 - => Rule 9-11: general maxims of intellectual etiquette
 
-#### 11. Agreeing or disagreeing with an author
+### 11. Agreeing or disagreeing with an author
 - How to disagree without prejudice and emotions:
   - Ack your emotions
   - Make your own assumptions explicit, compare with other's assumptions
@@ -298,7 +296,7 @@ by giving reasons for any critical judgement you make
   - What of it: need to ask this question if you determined what is said is true
 - Read few books but well > read many but superficially
 
-#### 12. Aids to reading
+### 12. Aids to reading
 - 2 types of aids to reading:
   - Intrinsic: rely on the book itself: not realistic since there is always effect of past exp
   - Extrinsic: outside the book. Sometimes necessary for full understanding.  
@@ -342,11 +340,11 @@ by giving reasons for any critical judgement you make
           - The meaning of "fact" is culturally determined
           - Not a good tools for understanding: no arguments & imagination
 
-### III - Approaches to different kinds of reading matter
+## III - Approaches to different kinds of reading matter
 - Focus: dif kinds of questions to be asked & to be expected answers when reading
 dif kinds of books
 
-#### 13. How to read practical books
+### 13. How to read practical books
 - Practical books can't solve its problem all by itself: need judgement & action of a particular situation  
 -> Can only state general rules
 - 2 types of practical books:
@@ -368,7 +366,7 @@ dif kinds of books
   - What of it: imply action on your part  
   -> No action = not agree. Exception: practical books applying to only certain people (eg food recipe)
 
-#### 14. How to read imaginative literature
+### 14. How to read imaginative literature
 - Readers of fiction usually:
   - Know what they enjoy
   - Don't know why they enjoy
@@ -411,7 +409,7 @@ dif kinds of books
     - Try to experience it actively, only criticize after
     - Focus on what is good about the book and why, not what you like and dislike
 
-#### 15. Suggestions for reading stories, plays & poems
+### 15. Suggestions for reading stories, plays & poems
 - 4th question: what of it? Not needed for fiction: it can lead to action, but don't
 have to  
 -> Implied statements can be in it, but not the essence of the work
@@ -447,7 +445,7 @@ have to
   - Don't spend too much effort to study the context & author's background  
   -> Focus on the work
 
-#### 16. How to read history
+### 16. How to read history
 - Author's definition of history: formal narrative accounts of a period/event/series of events in the past
 - It's difficult to  reconstruct the past, esp distant past
 - Only some historical facts are certain
@@ -494,7 +492,7 @@ have to
   - Must know who the summarizer is
   - Infer what was left out
 
-#### 17. How to read science and mathematics
+### 17. How to read science and mathematics
 - Scientific book:
   - The report of findings or conclusions in some field of research, of lab experiments or observations in nature
   - Aim:
@@ -511,7 +509,7 @@ have to
   - -> Reduce the unintelligibility of science
 - Scientific objectivity: frank admittance of initial assumptions
 - -> Focus on the assumptions
-- Term: usually uncommon/tecnical words
+- Term: usually uncommon/technical words
 - Propositions: generalizations
 - Follow the arguments:
   - Inductive arguments: characteristic of science. Need to:
@@ -521,13 +519,14 @@ have to
     - Make language of science objective, avoid emotional connotations
     - To deal with math in scientific books:
       - Improve math skill: read elementary math, focus on principle of math reasoning
-      - For scientific work that has math in it (not math book): skip parts containing math: focus on the propositions & their relations to the work as a whole
+      - For scientific work that has math in it (not math book): skip parts containing math:
+      focus on the propositions & their relations to the work as a whole
 - Scientific popularizations: works written for a wide audience:
   - Contain few descriptions of experiments, focus on their result
   - Contain little math
 - Beauty of math: logical exposition of a limited problem
 
-#### 18. How to read philosophy
+### 18. How to read philosophy
 - Philosophy: 
   - Ask & attempt to answer profound question
   - -> Great philosophers clear complexities & see simple distinctions
@@ -572,7 +571,7 @@ have to
   - Dogmatic: basis of arguments is dogma of religion
 - Orthodox book: allow only 1 right way of reading & interpreting
 
-#### 19. How to read social science
+### 19. How to read social science
 - Social science writing also include some fiction
 - Fields in social science:
   - Core (academic): anthropology, economics, politics, sociology (academic)
@@ -589,8 +588,8 @@ have to
 - -> Get up-to-date knowledge
 - -> Require syntopical reading
 
-### IV - The ultimate goal of reading
-#### 20. Syntopical reading
+## IV - The ultimate goal of reading
+### 20. Syntopical reading
 - Need to know:
   - Whether more than 1 book is relevant
   - Which books are relevant
@@ -654,7 +653,7 @@ have to
       - Read the same passages in relation to dif topics
       - -> Understand dif strains of meaning
 
-#### 21. Reading and the growth of the mind
+### 21. Reading and the growth of the mind
 - To improve reading skill -> need to read challenging books
 - Poetical books could be the hardest to read: no explicit terms & arguments
 - Level of books:
@@ -665,7 +664,7 @@ have to
 - Human vs other animals: continue to grow mentally beyond a certain stage of development
 - -> Read to keep the mind alive & growing
 
-## Criticism
+# Criticism
 - The book is quite old, before the digital age: hasn't been able to deal with changes in:
   - The explosion of materials, esp digital ones
   - New form of materials (ebooks)
@@ -682,7 +681,7 @@ have to
   - Intermediate materials: might not be needed
   - Difficult materials: might be useful in this case, need first reading to prime & get the big picture
 
-## Take away
+# Take away
 - Extremely important distinctions regarding:
   - Aims of reading
   - Levels of reading
