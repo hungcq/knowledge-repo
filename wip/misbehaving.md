@@ -1,3 +1,5 @@
+(This summary focus on the findings of behavioral economics, not history of the field)
+
 # Category
 Behavioral economics, economics. Contains bio, stories & history of behavioral economics.
 
@@ -56,6 +58,10 @@ The author also presents its influence on public policy and prediction of future
 - Present value
 - Closed-end fund
 - Coarse theorem
+- Becker conjecture
+- Nudge
+- Randomized control trial (RCT)
+- Evidence-based economics
 
 # Arguments
 
@@ -123,7 +129,7 @@ The author also presents its influence on public policy and prediction of future
 - Bounded rationality: lack the cognitive ability to solve complex problems
 - -> Formal eco handle it by adding error term to the equation
 - -> Believe that as long as the errors are random, its opposing effects will cancel each other out
-- The errors not random but systematic bias
+- The errors are not random but systematic bias
 
 ### 4. Value theory
 - Normative vs descriptive theory:
@@ -150,7 +156,7 @@ The author also presents its influence on public policy and prediction of future
 ### 6. The Gauntlet
 - Main reasons economists think they could safely ignore abnormal behaviors:
   - As if:
-    - Argument: Even if people are not capable of actually solving the complex problems economists assume they can handle,
+    - Argument: even if people are not capable of actually solving the complex problems economists assume they can handle,
     they behave as if they can
     - -> Their actions will approximate those predicted by the theory
     - Should evaluate a theory based on accuracy of its predictions, not realism of its assumption
@@ -234,10 +240,10 @@ spend on sth = forgo other opportunities
   - -> Should be spent in a way that best serves the interest of the household/organization
 - Also apply to wealth: by ease to spend: cash > normal accounts > saving accounts
 #### Additional info
-- 2008 crisis & relation to mental budgeting:
+- 2008 crisis & relation to mental budgeting (not a full account. Leverage in financial markets is also critical - see The signal and the noise):
   - Home equity budget is easy to spend, esp on consumer durables
   - House price boomed -> homeowners borrowed against the increased equity to spend more
-  - -> Consumption reduced when bubble busted -> Recession
+  - -> Consumption reduced when bubble busted -> recession
 
 ### 10. At the poker table
 - House money effect (dif with prospect theory prediction - risk-averse for gains):
@@ -329,6 +335,7 @@ you believe that if you change preferences later, the change will be a mistake
   - Any time period far enough away to be considered later: half utility, no discounting
 
 ## Interlude
+
 ### 13. Misbehaving in the real world
 - Skiing resort: selling discounted 10-pack ticket:
   - Transaction utility
@@ -338,13 +345,14 @@ you believe that if you change preferences later, the change will be a mistake
 - Reducing price only makes sense when:
   - Increase current sale
   - Increase future sale by building customer loyalty
-- Sale small % < Rebate (returning some money) - dif mental account < reducing car loan interest (10 -> 2.9%) - reducing 2/3 rate sound like a lot
+- Sale small % < rebate (returning some money) - dif mental account < reducing car loan interest (10 -> 2.9%) - reducing 2/3 rate sound like a lot
 
 ## IV. Working with Danny: 1984-85
+
 ### 14. What seems fair
 - Formal eco theory prediction when demand increase: raise price
 - -> Who value it most should get it
-- Perception of fairness depends on :
+- Perception of fairness depends on:
   - Whom the action helps or harms
   - How it is framed:
     - Highest price intended to charge as regular price, deviation as discount -> fair
@@ -370,9 +378,10 @@ you believe that if you change preferences later, the change will be a mistake
     - Cooperation can be maintained in repeated games if players are given opportunity to punish non-cooperators
 
 ### 16. Mugs
-(combine with notes of chap 2)
+(combined with notes of chap 2)
 
 ## V. Engaging with the economics profession
+
 ### 17. The debate begins
 - Rationality is neither necessary nor sufficient to do good economic theory:
   - Necessary: many rigorous formal theories based on behavior that is not rational
@@ -421,6 +430,7 @@ or consider some theoretical exercises pointless
     - Advice: buy a diversified portfolio heavily tilted toward stocks, then avoid reading news
 
 ## VI. Finance
+
 ### 21. The beauty contest
 - Efficient market hypothesis (EMH): 2 components:
   - Prices are rational: event if some people made mistakes, smart people could trade against them & correct prices
@@ -497,6 +507,7 @@ value stock has higher risk -> higher earning = risk premium
 - -> Price was not correct but got more wrong -> collapsed
 
 ## VII. Welcome to Chicago: 1995-present
+
 ### 27. Law schooling
 - Traditional law & economics approach: based exclusively on models of Econ:
 things would turn out for the best if markets were left alone to sort things out
@@ -520,12 +531,134 @@ things would turn out for the best if markets were left alone to sort things out
       - Fairness: willing to walk away from an unfair offer
       - -> People can punish the other party, even at cost to themselves
 
+### 28. The offices
+
+### 29. Football
+- Becker conjecture:
+  - Def: in competitive labor markets, only people who are able to perform their jobs like Econ are able to land the key positions
+  - Only true to low & middle positions, not high positions
+  - -> Peter principle: people keep getting promoted until they reach their level of incompetence
+  - Manager job is multidimensional -> can't pay attention to everything, including analytical reasoning
+  - Author's hunch: for imp decisions, managers rely more on gut instincts, less on quantitative analysis done by others
+- -> To understand how organizations make decisions & how to improve them: need to aware that they are owned and managed by Human
+- Football drafting:
+  - Decision-making at high stakes
+  - Underlying problem: how to choose employees
+  - Tendency: overvalue the right to pick early, trade many later/future picks for early picks
+  - Psychological causes:
+    - Overconfidence in ability to distinguish players' skill
+    - Extreme forecast: willing to say that someone will be a superstar (but actually superstars are very rare)
+    - Winner's curse: when many bidders bid for the same object, the winner is often the one who most overvalues the object
+    - False consensus: people think that other share their preferences
+    - Present bias: want to win now
+  - Why the market is not corrected:
+    - Limits to arbitrage problem:
+    only opportunity to take advantage of inefficiency is to lend this year's picks for better ones next year
+    - Dumb principal problem:
+      - Managers follow conventional wisdom to avoid getting fired
+      - Owners want to win now
+
+### 30. Game shows
+- Game show decision-making:
+  - Decision-making at high stakes
+  - Specific behavioral causes can be pointed out:
+    - Prospect theory: changes matter, not wealth
+    - House money effect & break even effect
+    - Path dependence: the way the game has played out influence the choices people make
+- An amount of money is considered small or large depending on the context
+- People are more willing to lie by omission than commission (I promise to...)
+
+## VIII. Helping out
+- 3 goals of beha economists by mid-1990s:
+  - Find & document anomalies
+  - Develop theory: mathematical models that incorporate psychology finding
+  - Make the world a better place without paternalism
+
+### 31. Save more tomorrow
+- Difficulty of formal eco to deal with retirement saving problem:
+  - Assumption: people already save the right amount -> no help needed
+  - Only tool: increase after-tax financial return on saving
+- Behavioral reasons why people not save enough for retirement & solutions:
+  - Inertia
+  - Loss aversion
+  - Present-bias: people have more self-control in decisions about future
+- -> Solution:
+  - Automatic enrollment until people opt out or cap is hit
+  - Give people option of deciding now to increase saving rates later, after salary increase
+- Paternalism must involve coercion
+
+### 32. Going public
+- Nudge idea:
+  - Premise:
+    - In complicated world, people cannot make optimal decisions in all domains
+    - But people enjoy the right to choose for themselves, even when making mistakes sometimes
+  - Aim: help people achieve their own goals by making it easier to make what they will consider good decisions, without coercion
+  - Approach: anticipate errors, devise policy to reduce error rate
+  - Nudge def: some small feature in the env that attracts attention & influences behavior positively
+- -> Rules & regulations are still inevitable to help society function
+
+### 33. Nudging in the UK
+- Insights when running gov experiments:
+  - If you want people to comply with some norm or rule, inform them that most other people comply
+  - If you want to encourage someone to do sth, make it easy, remove barriers for change
+  - Need to test idea carefully before implement
+  - -> Randomize control trial (RCT): assign people at random to receive dif treatments & a control group that receives no treatment
+  - Small improvements will matter if accumulate
+  - Straightforward reminders (eg mobile notification) can work
+  - -> Nudge don't need to be creative, elaborative or hidden
+- Difficulties of running RCT in field settings:
+  - Expensive
+  - Can run pilot experiment to detect issues beforehand
+  - Experimenters can't be present on site at every step
+- Condition for small change to make big impact:
+  - A portion of the population will benefit from it
+  - Target population must agree that the change is desirable
+  - It is possible to make the change with one nearly costless action
+- Nudges are merely tools, can be used with bad intentions
+
+## Conclusion
+- Beha eco has the biggest impact in finance & development economics (eco of poor countries). Reasons:
+  - There are very specific theories (eg law of one price)
+  - Lots of data to test those theories
+- -> The field converges into evidence-based eco
+- Evidence-based economics:
+  - Derived from empirical observation, most importantly from field experiments
+  - Dif from theories deduced from axioms of rational choice
+- Author's wish of regarding direction of the field in the future:
+  - Macroeconomics:
+    - Why macroeco is out of focus:
+      - Hard to make falsifiable predictions
+      - Data are scarce
+    - How behavioral analysis can help even without clear hypothesis: to improve how a policy is executed
+    - -> Need better understanding of how Human/firms run by Human behave to evaluate impact of public policy
+  - Convergence of economics when everyone does empirical works & is willing to incorporate imp variables into models
+- Basic lessons from author's exp:
+  - Observe things in the real world
+  - Collect data systematically, esp data & past track records that can prove you wrong, to:
+    - Convince people
+    - Overcome overconfidence & confirmation biases
+  - Try new idea or run actual experiments & record results: the proper way to learn & improve
+  - Speak up. Create env that encourages evidence-based decisions.
+### Additional info
+- Mitigating costs of failures might be more effective at stimulating new businesses than high-earning tax cut
+
 # Criticism
+- Some chapters might be irrelevant (eg chap 28)
+- Stories make the book easy to read but dilute the content a bit
+- Familiarity with some economics/psychology experiments might be needed to read the book well
+(can be found in Thinking fast and slow and Superfreakonomics)
 
 # Take away
+- History of behavioral economics
+- Difference between beha eco and formal eco
+- Basic understanding of some important economic concepts & theories
+- Difference between normative & descriptive economic theories
+- Some human psychological & economic tendencies & biases. New understanding about self-control problems & fairness
+- -> Implications in finance, investment, business, public policy
+- Importance of & proper way to do trial and error approach: run RCT, collect data, improve
+- -> Lessons for other fields
 
 # Notes
 - Mistake when skimming this book:
   - Didn't read conclusion
   - Didn't read bibliography (dif from index)
-- This summary focus on the findings of beha eco, not history of the field
