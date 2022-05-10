@@ -151,11 +151,9 @@ mechanism of the world
 - Problem: improbable is not impossible
 
 #### 9. Problem of current scientific standard & practice using a fixed p-value = 0.05
-- p-value = 0.05 -> if H is true, there is 5% chance that the exp returns
-a statistical significant result  
+- p-value = 0.05 -> if H is true, there is 5% chance that the exp returns a statistical significant result  
 -> 5% of exp are publishable
-- Exps that failed to replicate the original exp won't be published coz no statistical
-significant result is found
+- Exps that failed to replicate the original exp won't be published coz no statistical significant result is found
 - When number of things with real effect is small & the study is low-powered:
 overwhelmed by things with no effect but pass the test
 - Treat a continuous variable as a binary one  
