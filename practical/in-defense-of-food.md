@@ -38,13 +38,16 @@
     - Discussion of food chain from perspective of ecology & evolutionary biology
     - -> The Western diet as abrupt changes in food environment
     - 5 major changes introduced by the Western diet
-    - Discussions of solutions to the Western diet
+    - Discussions of unpractical solutions to the Western diet
 - Part III:
   - Chap 1:
     - State the solution: stop eating the Western diet
     - Difficulty in execution
     - -> Why we need the rules
     - Scope, general aim of the rules & aim of each set of rules
+  - Chap 2: rules regarding food choice: distinguish food from food-like products
+  - Chap 3: rules regarding best types of whole food
+  - Chap 4: rules regarding how to eat
 
 # Author's problems & solution
 - Describe how we arrived at present state of nutritional confusion & anxiety: OK
@@ -232,7 +235,7 @@
       - -> Various health problems
   - Food culture -> food science: what, how, why, when, how much we should eat
 - -> Can be reversed without going back to hunter-gatherer living
-- Solutions to the Western diet:
+- Unpractical solutions to the Western diet:
   - Rely on food science: the field not developed enough yet
   - Adapt biologically: no ideal condition for natural selection
   - Health care: economic cost, decreased quality of life
@@ -253,7 +256,7 @@
   - Eat food:
     - Related to shopping, in the form of filters
     - Goal: separate & defend real food from numerous food-like products, esp in the supermarket
-  - Mostly plant: best types of foods to eat
+  - Mostly plant: best types of wholefoods to eat & ways of produce & combine them in meal
   - Not too much:
     - How to eat food: manners, customs & habits governing relationship to food & eating
     - Goal: create healthy & pleasing culture of eating
