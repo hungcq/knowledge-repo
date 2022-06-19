@@ -61,7 +61,7 @@
 
 ## 8. Project structure
 - Avoid elaborate package hierarchy
-- -> Use fewer, larger packages
+- -> Use fewer, larger packages. Avoid empty package.
 - A Java package is equivalent to a single .go source file
 - Arrange files by import statements:
   - Same imports -> merge
@@ -69,3 +69,23 @@
 - Use internal packages to reduce your public API surface: a package .../a/b/c/internal/d/e/f:
   - Can be imported only by code in the directory tree rooted at .../a/b/c
   - Cannot be imported by code in .../a/b/g or in any other repository
+- Keep package main as small as possible:
+  - func main() should only:
+    - Parse flags
+    - Open connections to databases, loggers
+  - One command per package
+
+## 9. Error handling
+- Never use any other variables without checking the error
+- Error should be opaque: avoid coupling with caller
+- Avoid panic. Avoid log.Fatal/Panic.
+- Only handle an error once: handle it (including logging then ignore) or return it
+
+## 10. Concurrency
+- Channel:
+  - Ownership:
+    - Only owner should close and write to the channel
+    - If multiple writers, then no writer should close it
+  - Prefer channels with a size of zero or one:
+    - 0 for coordination
+    - 1 when dealing with unknown number of consumers
