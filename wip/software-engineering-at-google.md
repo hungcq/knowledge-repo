@@ -93,6 +93,7 @@
 - 3 difs between SE vs programming: time, scale & tradeoffs:
   - Time & change (most imp):
     - Time add a new dimension to programming: code needs to be sustainable
+    - <img src="../resources/software-engineering-at-google/1.png" alt="drawing" width="500"/>
     - Require planning & manage impact of required change
     - -> Need practice & expertise
     - Hyrum's law: given enough time & users, all observable behaviors of a system will be depended by sb, no matter what you promise in the contract
@@ -285,6 +286,107 @@
     - Use a tracking system
   - Divide & drop 80% unimp work: will be handled by others or will make itself noticeable
   - Take break & occasion to recharge
+
+### 7. Measuring engineering productivity
+- Goal:
+  - Improve SE productivity -> can scale
+  - Measure efficiently
+- Hard to measure
+- -> Create productivity specialist team: multi-discipline -> understand both tech & human aspects
+- How to decide whether it is worth measuring:
+the data help stakeholders make a decision, not to prove/disprove a hypothesis
+- Goals/signals/metrics framework to guide metric creation:
+  - Goal
+  - Signal:
+    - How you might know that you have achieved the end result
+    - Might not be measurable
+  - Metric:
+    - Proxy to a signal
+    - Measurable
+- -> Benefits:
+  - Avoid bias
+  - Decide & ack in advance what is measurable
+  - Maintain traceability (ie what this metric is for)
+- Insights from qualitative metrics:
+  - Contexts/narrative
+  - Next steps to improve a process
+  - Validation for quantitative metrics
+- Final step:
+  - Take action: improve tools & processes
+  - Track result
+
+## III - Processes
+### 8. Style guides and rules
+- Rule: not strictly prescriptive: might need judgement
+- Guidance (dif vs rule): best practice, not strictly enforced
+- Goals:
+  - Sustainability
+  - Productivity: let dev focus on dev, not style
+- Rule creation:
+  - Focus on goal
+  - Principles:
+    - Brief: imp point only -> easy to remember & apply
+    - Optimized for readers, not writers
+    - Consistent:
+      - Easy to understand, esp for people who switch projects
+      - Take adv of tools to scale
+      - Avoid having to decide everytime
+    - -> Think long-term, adhere to widely accepted standard
+    - Avoid error-prone/complex features: easy to understand & avoid bugs
+    - Concede to optimization, practicalities & interoperability -> adjustment
+  - Record decisions leading to the rule
+  - -> Easy to reevaluate when assessing change proposal
+- Changing rule process: identify existing problems -> solutions
+- Enforcing rules:
+  - Socially: teaching & training
+  - Technically:
+    - Tooling: error checker, code formatter.
+    - Advs:
+      - Correctness
+      - Scalability
+    - Disadv: can't apply to rules requiring judgement
+
+### 9. Code review
+- Require:
+  - Process
+  - Supporting tools
+- Shouldn't: debate previous design decisions
+- 3 types of approval needed from 3 roles (goal: flexibility -> scalable):
+  - Other engineer: functional correctness & understandability
+  - Code owner: suitable for the repo
+  - Readability: consistency of style
+- -> Usually done by 1 person or the author perform both role 2 & 3
+- Benefits:
+  - Code correctness
+  - Comprehensibility: optimized for readers
+  - Consistency
+  - Psychological & cultural benefits:
+    - Responsibility
+    - Openness to criticism
+    - Validation/recognition of one's work
+    - Being more careful
+  - Knowledge sharing
+- Best practices:
+  - Be polite & professional:
+    - Ask for reason before assuming sth is wrong
+    - If not agree with reviewer: offer an alternative & ask reviewer to take another look
+  - Write small changes: ~200 lines
+  - -> Easy to review & rollback
+  - Write good change descriptions: list the changes briefly
+  - Keep num of reviewers to a minimum -> easy to scale
+  - Automate where possible
+  - Types of code reviews for dif types of changes:
+    - New feature: focus on sustainability
+    - Behavior changes (API), improvements & optimizations: focus on:
+      - Benefit
+      - Update/ensure tests work correctly
+    - Bug fixes & rollbacks: focus on:
+      - Fix the bug only
+      - Update test to catch the error
+    - Refactoring & large-scale changes:
+      - Low-risk: reviewed by owners of the entire codebase
+      - High-risk/local expertise needed: reviewed by individual engineers:
+      limit comments to concern specific to local code, not the tool -> scalable
 
 # Criticism
 - Chap 1 discuss at quite a high level: need familiarity with many concepts to understand the examples
