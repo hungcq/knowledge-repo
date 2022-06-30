@@ -1,69 +1,81 @@
 # Terms
+## List of microservice patterns
+- Application architecture patterns:
+  - Monolithic architecture (40)
+  - Microservice architecture (40)
+- Decomposition patterns:
+  - Decompose by business capability (51)
+  - Decompose by subdomain (54)
+- Messaging style patterns:
+  - Messaging (85)
+  - Remote procedure invocation (72)
+- Reliable communications patterns:
+  - Circuit breaker: RPC proxy. Functions:
+    - Track num of successful/failed requests
+    - If error rate exceeds some threshold, trip the circuit breaker -> further attempts fail immediately
+    - After a period, client can try again. Close the circuit if successful.
+    - 3 states: closed, half-open, open
+- Service discovery patterns:
+  - 3rd party registration (85)
+  - Client-side discovery (83)
+  - Self-registration (82)
+  - Server-side discovery (85)
+- Transactional messaging patterns:
+  - Transactional outbox: publish an event or message as part of a DB transaction by saving it in an outbox table in the DB
+  - Polling publisher: publish messages by pulling the outbox table
+  - Transaction log tailing: publish changes made to the DB by reading transaction logs of the outbox table
+- Data consistency patterns:
+  - Saga (114)
+- Business logic design patterns:
+  - Aggregate (150)
+  - Domain event (160)
+  - Domain model (150)
+  - Event sourcing (184)
+  - Transaction script (149)
+- Querying patterns:
+  - API composition (223)
+  - Command query responsibility segregation (228)
+- External API patterns:
+  - API gateway (259)
+  - Backends for frontends (265)
+- Testing patterns:
+  - Consumer-driven contract test (302)
+  - Consumer-side contract test (303)
+  - Service component test (335)
+- Security patterns:
+  - Access token (354)
+- Cross-cutting concerns patterns:
+  - Externalized configuration (361)
+  - Microservice chassis (379)
+- Observability patterns:
+  - Application metrics (373)
+  - Audit logging (377)
+  - Distributed tracing (370)
+  - Exception tracking (376)
+  - Health check API (366)
+  - Log aggregation (368)
+- Deployment patterns:
+  - Deploy a service as a container (393)
+  - Deploy a service as a VM (390)
+  - Language-specific packaging format (387)
+  - Service mesh (380)
+  - Serverless deployment (416)
+  - Sidecar (410)
+- Refactoring to microservices patterns:
+  - Anti-corruption layer (447)
+  - Strangler application (432)
+## Terms
 - Pattern: reusable solution to a problem that occur in a particular context
 - Microservice pattern language: collection of interrelated software architecture and design patterns for microservices
+- Software architecture: high level structure of a software, which consists of constituent parts & the dependencies between those parts
 - Monolithic architecture: archi style that structures a system (implementation *view*) as a single executable or deployable component
 - Microservice architecture: archi style that structures a system (implementation *view*) as a set of multiple loosely coupled, independently deployable services
 - Service: standalone, independently deployable software component that implements some useful functionality
-- Business capability
-- List of microservice patterns:
-    - Decomposition patterns:
-        - Decompose by business capability (51)
-        - Decompose by subdomain (54)
-    - Messaging style patterns:
-        - Messaging (85)
-        - Remote procedure invocation (72)
-    - Reliable communications patterns:
-        - Circuit breaker (78)
-    - Service discovery patterns:
-        - 3rd party registration (85)
-        - Client-side discovery (83)
-        - Self-registration (82)
-        - Server-side discovery (85)
-    - Transactional messaging patterns:
-        - Polling publisher (98)
-        - Transaction log tailing (99)
-        - Transactional outbox (98)
-    - Data consistency patterns:
-        - Saga (114)
-    - Business logic design patterns:
-        - Aggregate (150)
-        - Domain event (160)
-        - Domain model (150)
-        - Event sourcing (184)
-        - Transaction script (149)
-    - Querying patterns:
-        - API composition (223)
-        - Command query responsibility segregation (228)
-    - External API patterns:
-        - API gateway (259)
-        - Backends for frontends (265)
-    - Testing patterns:
-        - Consumer-driven contract test (302)
-        - Consumer-side contract test (303)
-        - Service component test (335)
-    - Security patterns:
-        - Access token (354)
-    - Cross-cutting concerns patterns:
-        - Externalized configuration (361)
-        - Microservice chassis (379)
-    - Observability patterns:
-        - Application metrics (373)
-        - Audit logging (377)
-        - Distributed tracing (370)
-        - Exception tracking (376)
-        - Health check API (366)
-        - Log aggregation (368)
-    - Deployment patterns:
-        - Deploy a service as a container (393)
-        - Deploy a service as a VM (390)
-        - Language-specific packaging format (387)
-        - Service mesh (380)
-        - Serverless deployment (416)
-        - Sidecar (410)
-    - Refactoring to microservices patterns:
-        - Anti-corruption layer (447)
-        - Strangler application (432)
-- Software architecture: high level structure of a software, which consists of constituent parts & the dependencies between those parts
+- Business capability: something that a business does in order to generate value (eg order management, item management, shipping...)
+- IDL: interface definition language
+- Service registry: database of network locations of an app's service instances
+- Message broker: an intermediary through which all messages flow (sender -> broker -> receiver)
+- Transactional messaging: publish messages as part of a transaction that updates the DB
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith

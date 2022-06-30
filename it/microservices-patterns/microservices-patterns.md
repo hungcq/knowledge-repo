@@ -24,7 +24,11 @@ Last part of the book handles the difficulty when transitioning from monolithic 
 # Criticism
 - Implementation examples in each chapter is too elaborated, make it difficult to read, esp without familiarity with Java & Spring
 - -> Maybe can organize the book differently? Architecture part vs Technologies/examples part.
-- Chap 3: discussion of async design didn't take into account FE flow design, which dictates whether sync/async option is possible
+- Chap 2: decompose by sub-domain pattern part has too vague a description to apply. Result is the same as using decompose by business capability?
+- Chap 3:
+  - Polling publisher pattern faces the same initial problem:
+  what happen if the Message relay deletes from the outbox table then crashes before able to publish message?
+  - Discussion of async design didn't take into account FE flow design, which dictates whether sync/async option is possible
 - Chap 13:
   - Why place anti-corruption layer in service? Should keep the service adapter clean for new usages.
 

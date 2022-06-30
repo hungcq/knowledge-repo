@@ -4,7 +4,7 @@
 
 ## 1. Escaping monolithic hell
 - Monolithic architecture:
-    - <img src="../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
+    - <img src="../../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
     - Suitable for new, small app
     - Benefits when the app is small:
         - Simple to dev: suitable for IDE & dev tools
@@ -30,7 +30,7 @@
         - Based on request's attribute
     - Decompose by function into multiple services. Can be combined with load balancing.
 - Microservice architecture:
-    - <img src="../resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
+    - <img src="....//resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
     - Suitable for large, complex app
     - -> Less about size, more about clear, focused responsibility for each service
     - Characteristics:
@@ -81,25 +81,25 @@
         - Infra patterns: solve infra issues outside development
         - App infra patterns: solve infra issues related to development
         - App patterns: solve development problems
-    - <img src="../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
+    - <img src="../../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
     - Groups:
         - Decomposition:
-        - <img src="../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
+        - <img src="../../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
         - Communication:
-        - <img src="../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
+        - <img src="../../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
         - Data consistency:
-        - <img src="../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
+        - <img src="../../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
         - Data query:
-        - <img src="../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
+        - <img src="../../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
         - Deployment:
-        - <img src="../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
+        - <img src="../../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
         - Observability
         - Automated testing
         - Crosscutting concerns
         - Security
 - Process & organization:
     - Imp for success, beside architecture
-    - <img src="../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
+    - <img src="../../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
     - Organization: team of teams, each 8-12 people
         - Each team has clear business-oriented goal:
           developing and possibly operating one or more services that implement a feature or a business capability
@@ -111,7 +111,7 @@
 
 ## 2. Decomposition strategies
 - Architectural view in 4+1 model: describes a particular aspect of the architecture
-  - IMG 2.1
+  - <img src="../../resources/microservices-patterns/2.1.png" alt="drawing" width="500"/>
 - Architectural style:
   - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
   - An app usually uses a combination of archi styles
@@ -119,7 +119,7 @@
     - Layered (eg 3-tier architecture)
     - Hexagonal:
       - Business logic at the center, has ports, interact with the outside via ports
-      - IMG 2.2
+      - <img src="../../resources/microservices-patterns/2.2.png" alt="drawing" width="500"/>
       - Port:
         - Defines a set of operations
         - Usually interface
@@ -162,6 +162,203 @@
           - Improve app dev time attribute (eg understandability maintainability, testability)
           - Improve runtime isolation: can't lock DB of other services
       - Should only use shared libs for functionality that is unlikely to change
+- Steps to define an app's microservice architecture:
+  - Not a process to follow mechanically, but likely to be iterative and requires creativity
+  - <img src="../../resources/microservices-patterns/2.5.png" alt="drawing" width="500"/>
+  - Step 1: identify the system operations:
+    - System operation def: abstraction of a request that the app must handle. Can be either:
+      - Command: update data
+      - Query: retrieve data
+    - <img src="../../resources/microservices-patterns/2.6.png" alt="drawing" width="500"/>
+    - Steps:
+      - Create a high-level domain model: by analyzing the nouns in the user stories/scenarios and talking to domain experts
+      - -> Result: domain models containing classes 
+      - Define system operations:
+        - <img src="../../resources/microservices-patterns/tab-2.1.png" alt="drawing" width="500"/>
+        - Derive from verbs in user stories
+        - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
+  - Step 2: define services by business capability:
+    - Adv: business capabilities are stable -> resulting archi is stable
+    - The resulting services are only the first attempt at defining the archi
+    - -> May evolve over time as more is learned about the domain:
+      - Combine services due to excessive IPC
+      - Split services due to high complexity
+    - Use domain driven design (DDD) as an alternative:
+      - Domain def: app's problem space
+      - Define a separate domain model for each subdomain -> service correspond to subdomain
+      - Identify subdomain by business capability
+    - Decomposition design issues:
+      - Network latency: combine service to reduce IPC
+      - Sync IPC reduces latency: use async messaging
+      - Managing data consistency: distributed trans or saga
+      - Obtain a consistent view of the data: rarely a problem in practice
+      - God classes prevent decomposition: apply DDD and use a separate domain model for each service
+      - -> Each service has its own domain model with its own version of the god class
+  - Step 3: define service APIs: steps:
+    - Assign system operations to services
+    - Determine the APIs required to support collaboration between services for each system operation: independent of IPC technology
+
+## 3. Interprocess communication in a microservice architecture
+### IPC design issues:
+- Interaction styles:
+  - <img src="../../resources/microservices-patterns/tab-3.1.png" alt="drawing" width="500"/>
+  - Mostly not related to IPC techs (eg can use messaging for req/res style by blocking waiting for a res)
+- API definition: API-first design
+  - Steps:
+    - Write interface definition
+    - Review it with client devs
+  - -> Only implement the service after that
+- Evolve API:
+  - Use semantic versioning
+  - Strive to make backward-compatible changes:
+    - Add optional attributes to the request. Provide default values for missing attributes.
+    - Add attributes to a response. Clients should ignore extra response attributes.
+    - Add new operations
+  - For major, breaking changes:
+    - Embed the major version number in the URL (eg /v2/...)
+    - Support old versions by putting version-translating logic in the service's *API adapter*
+- Messaging formats:
+  - Use cross-language message format
+  - Types:
+    - Text-based (eg JSON, XML):
+      - Advs:
+        - Readable by human
+        - Self-describing
+      - Disadv: big & costly-to-parse message
+    - Binary: advs & disadvs: reverse of text-based. Additional advs:
+      - Require API-first design
+      - Can be statically checked in compiling languages
+### Remote procedure call communication
+- Characteristic: client assumes the res will arrive in a timely fashion
+- Advs:
+  - Familiar & easy to test
+  - Simple architecture
+- Disadvs:
+  - Reduced availability
+  - Clients need to know location of the service -> need service discovery
+- Design issues:
+  - Handle partial failure & protect caller:
+    - Develop robust RPC proxies using:
+      - Request timeout
+      - Limit number of outstanding requests from a client to a service
+      - Circuit breaker
+    - Recover from an unavailable service:
+      - Return error to client
+      - Return a fallback value
+      - Return cached data or omit the field from the response
+  - Service discovery:
+    - Why service discovery is needed: in modern, cloud-based microservices app:
+      - Service instance have dynamically assigned network locations
+      - Set of service instances changes dynamically because of autoscaling, failures & upgrades
+    - Mechanism:
+      - When service instances start and stop: update the *service registry*
+      - When a client invokes a service: query the service registry to obtain a list of available service instances & routes the request to one of them
+    - 2 types:
+      - Application-level service discovery:
+        - <img src="../../resources/microservices-patterns/3.5.png" alt="drawing" width="500"/>
+        - Need health check mechanism
+        - Client can cache service instances to improve performance
+        - Adv: can handle scenario when services are deployed on multiple deployment platforms
+        - Disadvs:
+          - Need service discovery lib for every language/framework
+          - Need to set up & manage the service registry
+      - Platform-provided service discovery:
+        - <img src="../../resources/microservices-patterns/3.6.png" alt="drawing" width="500"/>
+        - Adv: all aspects of service discovery are handled by the deployment platform
+        - -> Service discovery is available to all services and clients regardless of their language/framework
+        - Disadv: only support discovery of services that have been deployed using the platform
+### Async messaging communication
+- <img src="../../resources/microservices-patterns/3.7.png" alt="drawing" width="500"/>
+- 2 types of channels:
+  - Point to point: 1 message consumed by only 1 of the consumers (eg same consumer group in Kafka)
+  - Publish-subscribe
+- Use messaging to implement dif interaction styles:
+  - Req/res & req/async res:
+    - <img src="../../resources/microservices-patterns/3.8.png" alt="drawing" width="500"/>
+    - For sync req/res, client blocks until it receives the response
+  - One-way noti & publish/subscribe: supported by messaging infra
+  - Publish/async responses: similar to async req/res. Client gather responses with matching correlation ID.
+- API definition:
+  - Async operations API:
+    - Req/async res:
+      - Service's command mes channel
+      - Types & formats of command message
+      - Types & format of reply message
+    - One-way noti:
+      - Service's command mes channel
+      - Types & formats of command message
+  - Published events API:
+    - Event channel
+    - Types & formats of event messages
+- 2 types of architecture:
+  - Broker-less: direct communication, client doesn't wait for response:
+    - Advs:
+      - Of direct communication
+      - No disadv of centralized broker
+    - Disadvs:
+      - Same as RPC
+      - Hard to implement mechanisms such as guarantee delivery
+  - Broker-based: use a message broker:
+    - Main consideration when choosing message broker: message ordering & scalability
+    - Advs:
+      - Loose coupling: publisher don't need to be aware of consumers -> no need for service discovery
+      - Message buffering -> increased availability
+    - Disadvs:
+      - Potential performance bottleneck/single point of failure
+      - Additional operational complexity
+- Design issues:
+  - Competing receivers & message ordering: 
+    - How to scale out receivers while preserve message ordering
+    - How to process message concurrently in each consumer
+  - -> Solution: sharded (partitioned) channels:
+    - <img src="../../resources/microservices-patterns/3.11.png" alt="drawing" width="500"/>
+    - Related messages -> same partition (eg partitioned by key)
+    - n partition : 1 consumer service (eg same consumer group)
+  - -> Same approach can be applied to multi threading handlers in each service
+  - Handle duplicate messages:
+    - Most mes broker deliver at least once
+    - Duplicate example: crash before ack-ing
+    - Solutions:
+      - Write idempotent message handlers. Requirements:
+        - Logic can be called multiple times with no additional effect
+        - Message broker preserves ordering when redelivering messages
+      - Track messages & discard duplicates:
+        - Store processed message ids in dedicated table
+        - Store processed message in app table (eg when using NoSQL DB with limited transaction model)
+  - Transactional messaging:
+    - Use distributed trans spanning the DB & the broker
+    - -> Problem: many modern brokers don't support distributed trans
+    - Use *transactional outbox pattern*:
+      - <img src="../../resources/microservices-patterns/3.13.png" alt="drawing" width="500"/>
+      - Publish message using *Polling publisher* or *Transaction log tailing* pattern
+  - Choose lib:
+    - Use broker's client lib: require effort to implement high level mechanisms
+    - -> Should use higher level library/framework that support higher level interaction styles
+- How to replace sync interaction to improve availability:
+  - Use async interaction styles
+  - -> Disadv: services often have external API that uses sync protocol (eg REST) -> must respond immediately
+  - Replicate data:
+    - Mechanism:
+      - Maintain a replica of the needed data when processing requests
+      - Subscribe to events publish by data owner to keep the replica up to date
+    - Disadv: might require replication of large amount of data
+  - Finish processing after returning a response:
+    - Mechanism:
+      - Respond to client immediately (eg in pending state)
+      - Send confirmed state later
+    - Disadv: require corresponding client flow/logic
+### Additional info
+- Factors to consider when choosing message broker:
+  - Supported programming language
+  - Supported messaging standard (eg AMQP, STOMP)
+  - Message ordering
+  - Delivery guarantees
+  - Persistence
+  - Durability: disconnected consumer can receive prev messages after reconnecting
+  - Scalability
+  - Latency
+  - Competing consumers
+
 ## 13. Refactoring to microservices
 - Goal: refactor from monolith to microservices without having to rewrite app from scratch
 ### Overview of refactoring to microservices
@@ -191,7 +388,7 @@
         - Integration glue code:
             - Allow service to access the monolith data & invoke its functionality
             - Consist of adapters in the monolith & the service that communicate via IPC
-        - IMG 13.2
+        - <img src="../../resources/microservices-patterns/13.2.png" alt="drawing" width="500"/>
     - Non-usage:
         - New feature is too small to be a meaningful service
         - New feature is too tightly coupled with the monolith
@@ -199,13 +396,13 @@
         - Data consistency problem
     - -> Need to implement in the monolith, extract later
 - Separate presentation tier from the backend:
-    - IMG 13.3
+    - <img src="../../resources/microservices-patterns/13.3.png" alt="drawing" width="500"/>
     - Benefits:
         - Dev, deploy & scale 2 apps independently
         - Expose remote API of monolith that can be called by new microservices
     - -> Only a partial solution
 - Extract business capabilities into services:
-    - IMG 13.4
+    - <img src="../../resources/microservices-patterns/13.4.png" alt="drawing" width="500"/>
     - Parts to extract to the new service:
         - Inbound adapters containing API endpoints
         - Domain logic
@@ -254,7 +451,7 @@
                     - Proxy to new service
                 - Use feature toggle to dynamically switch between the 2 implementations
                 - Remove the existing monolith implementation when the service is considered working as expected
-                - IMG 13.23
+                - <img src="../../resources/microservices-patterns/13.23.png" alt="drawing" width="500"/>
     - Pick interaction style & IPC mechanism:
         - Query data:
             - Option 1: consumer invoke RPC API of data provider:
@@ -278,7 +475,7 @@
             - Need to communicate with monolith
         - Goal: prevent legacy monolith's domain model from polluting service's domain model
         - Anti corruption layer def: layer of code that translates between dif domain models
-        - IMG 13.11
+        - <img src="../../resources/microservices-patterns/13.11.png" alt="drawing" width="500"/>
         - Functions:
             - Map class/attribute names/values
             - Map status code
@@ -314,5 +511,5 @@
         - Monolith login handler returns an additional cookie to be included in every request. Cookie content: JWT token.
         - API gateway validate the token in the cookie, set it in authorization header and send to services
         - Services validate the token and extract info
-        - IMG 13.13
+        - <img src="../../resources/microservices-patterns/13.13.png" alt="drawing" width="500"/>
 ### Refactoring examples of strat 1 and 3: skipped

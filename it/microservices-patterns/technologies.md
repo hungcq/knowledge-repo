@@ -1,1 +1,31 @@
 # Technologies
+- REST API definition:
+  - Open API (openapis.org): most popular IDL:
+  - Swagger project: set of tools for dev & documenting API, including tools to generate client stubs & server skeletons from an interface def
+- RPC techs:
+  - REST:
+    - IPC mechanism that mostly uses HTTP
+    - Characteristics:
+      - Resource: represent a single or a collection of business objects
+      - Use HTTP verbs for manipulating a resource (referenced using a URL)
+    - REST maturity model:
+      - Level 2: use HTTP verbs to perform actions: GET, POST, PUT
+      - Level 3: representation of a resource returned by GET request contains link for performing actions on the resource
+      - -> Don't have to hard-wire URLs into client code
+    - Design issues:
+      - Fetch multiple resources in a single request: use alternative API technologies (eg GraphQL, Netflix Falcor)
+      - Map operations to HTTP verbs (eg dif types of update operations on the same resource)
+  - gRPC:
+    - Binary-message based protocol: use Protocol Buffer as message format
+    - Use protobuf compiler to generate client-side stubs & server-side skeletons
+    - Communication tech: HTTP/2
+    - Bidirectional streaming features enable both RPC & messaging
+- Service discovery:
+  - Eureka: highly available service registry
+  - Ribbon: HTTP client that supports Eureka client
+- Brokerless messaging: ZeroMQ (zeromq.org)
+- Transaction log tailing:
+  - Debezium: publishes DB changes to Kafka
+  - LinkedIn Databus: mine Oracle trans log & publishes change as events
+  - DynamoDB streams
+  - Eventuate Tram: use MySQL biglog/Postgres WAL/polling to read from outbox table & publish to Kafka
