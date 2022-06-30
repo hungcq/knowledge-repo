@@ -1,0 +1,318 @@
+# Arguments
+## Preface
+- Enterprise applications are typically large monoliths (is it?)
+
+## 1. Escaping monolithic hell
+- Monolithic architecture:
+    - <img src="../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
+    - Suitable for new, small app
+    - Benefits when the app is small:
+        - Simple to dev: suitable for IDE & dev tools
+        - Easy to make radical changes
+        - Easy to test
+        - Easy to deploy
+        - Easy to scale
+    - Drawbacks when the app is big:
+        - Too complex -> difficult to dev & debug
+        - Dev is slow: lag IDE, slow build, long start up time -> edit, build, run, test loop takes a long time
+        - Path from commit to deployment is long:
+            - Many devs -> hard to merge & need further testing
+            - Complex -> need careful, system testing
+        - Difficult to scale: conflicting resource requirements from dif modules
+        - Not reliable:
+            - Hard to test thoroughly
+            - Lack of fault isolation
+        - Locked into an obsolete tech stack: rewrite whole app is risky
+- Software architecture mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
+- 3 ways to scale an app:
+    - Load balance requests across multiple instances:
+        - Randomly
+        - Based on request's attribute
+    - Decompose by function into multiple services. Can be combined with load balancing.
+- Microservice architecture:
+    - <img src="../resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
+    - Suitable for large, complex app
+    - -> Less about size, more about clear, focused responsibility for each service
+    - Characteristics:
+        - Loosely coupled services: services as unit of modularity, API as boundary
+        - -> Easier to preserve modularity
+        - Services communicate via APIs
+        - Each service has its own database
+    - Benefits: of small, independent services:
+        - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
+            - Testability
+            - Deployability: usually don't require coordination
+            - Autonomous, loosely coupled teams
+        - Maintainability
+        - Scalability: based on resource requirement of each service
+        - Easy to experiment & adopt new techs
+        - Reliability:
+            - Better fault isolation
+            - Easier to test
+    - Drawbacks:
+        - Difficult to find the right set of services
+        - -> Can result in distributed monolith
+        - Complex distributed system:
+            - IPC
+            - Partial failures
+            - Transactions & queries spanning multiple services
+            - Dev: not supported by IDE, hard to do automated testing multiple services
+            - Operational complexity: management & deployment
+        - -> Require sophisticated dev & operation skills
+        - Need coordination when deploying features spanning many services
+        - Difficult to decide when to adopt
+          -> Many issues has multiple solutions, each with different set of tradeoffs
+- Pattern:
+    - Describe:
+        - Issues
+        - Result:
+            - Benefit: solved issues
+            - Drawback: unsolved issues
+            - New issues
+        - Related patterns
+    - -> Objectivity -> better decision making
+    - Can be organized into group: handle problems in a particular area
+    - Pattern language: collection of related patterns that solve problems within a particular domain
+- Microservice pattern language:
+    - Software pattern: solves a software architecture or design problem by defining a set of collaborating software elements:
+        - Object-oriented pattern: contains collaborating classes
+        - High level design pattern: contains collaborating services
+    - 3 layers:
+        - Infra patterns: solve infra issues outside development
+        - App infra patterns: solve infra issues related to development
+        - App patterns: solve development problems
+    - <img src="../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
+    - Groups:
+        - Decomposition:
+        - <img src="../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
+        - Communication:
+        - <img src="../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
+        - Data consistency:
+        - <img src="../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
+        - Data query:
+        - <img src="../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
+        - Deployment:
+        - <img src="../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
+        - Observability
+        - Automated testing
+        - Crosscutting concerns
+        - Security
+- Process & organization:
+    - Imp for success, beside architecture
+    - <img src="../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
+    - Organization: team of teams, each 8-12 people
+        - Each team has clear business-oriented goal:
+          developing and possibly operating one or more services that implement a feature or a business capability
+        - Cross-functional, can develop, test, and deploy its services without having to frequently communicate or coordinate with other teams
+        - Grow: adding teams
+    - -> Higher dev velocity, clear point of contact
+    - Development & delivery process: agile dev & deployment practices (eg Scrum, Kanban)
+    - Transition from monolithic to microservice architecture: need to consider reaction & emotion of people
+
+## 2. Decomposition strategies
+- Architectural view in 4+1 model: describes a particular aspect of the architecture
+  - IMG 2.1
+- Architectural style:
+  - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
+  - An app usually uses a combination of archi styles
+  - Styles apply to the logical view:
+    - Layered (eg 3-tier architecture)
+    - Hexagonal:
+      - Business logic at the center, has ports, interact with the outside via ports
+      - IMG 2.2
+      - Port:
+        - Defines a set of operations
+        - Usually interface
+        - Types:
+          - Inbound: API exposed by business logic (eg service interface), allow it to be invoked by external apps
+          - Outbound: define how business logic invoke external systems (eg repository interface)
+      - Adapter types:
+        - Inbound: handle outside requests by invoking business logic via inbound port (eg MVC controller)
+        - Outbound: implements outbound port, invoked by business logic and invoke external apps (eg data access object DAO)
+      - -> Adapters depend on business logic
+      - Advs:
+        - Decouple business logic from presentation & data access logic in the adapters
+        - -> Easier to test business logic in isolation
+        - Flexible, reflect modern app architecture: multiple, exchangeable adapters
+        - Usage: design each service in a microservice archi
+  - Styles apply to the implementation view:
+    - Monolithic archi
+    - Microservice archi:
+      - Component: service:
+        - With its own logical view archi (usually hexagonal) & potentially separate technology stack
+        - Implementation view can take many form (see Chap 12)
+        - Correspond to business capabilities
+        - Has an API to provide client access to its functionality. API consists of:
+            - Commands: perform action & update data
+            - Queries: retrieve data
+            - Events: published by service, consumed by its clients
+        - Size of service is mostly unimportant:
+          - Sign of well-designed service:
+            - Can be developed by a small team with minimal lead time and collaboration with other teams
+            - A team might only be responsible for a single service
+          - Sign of badly designed service:
+            - Requires a large team
+            - Take a long time to test
+            - Constantly need to change because of changes to other services or trigger changes in other services -> distributed monolith
+      - Connector: communication protocol that services use to communicate, implemented using IPC mechanism
+      - Key constraint: services are loosely coupled: all interactions with the service happen via its API
+        - Restrict how services collaborate: not via DB
+        - Advs:
+          - Encapsulate implementation details -> can change without impacting clients
+          - Improve app dev time attribute (eg understandability maintainability, testability)
+          - Improve runtime isolation: can't lock DB of other services
+      - Should only use shared libs for functionality that is unlikely to change
+## 13. Refactoring to microservices
+- Goal: refactor from monolith to microservices without having to rewrite app from scratch
+### Overview of refactoring to microservices
+- Consideration before refactoring: make sure business problems arise because of monolith architecture, not because of:
+    - Poor software dev process (eg manual testing)
+    - Not try all scalability solution
+- Non-strategy: dev new microservices app from scratch. Reasons:
+    - Lots of time wasted not implementing features that the business needs
+    - New features still developed in the monolith -> effort diverted, constant moving target
+    - Might implement features that are no longer needed
+- Overall strat:
+    - Incrementally refactor the monolith & build stranger app
+    - -> Stop when the monolith is small enough/no longer an obstacle to ongoing dev
+    - Migrate high value or constantly changing areas of the app first
+    - -> Increase dev velocity, maintain business support for the migration
+    - Avoid making widespread changes to the monolith
+    - Avoid building deployment infra upfront: only need a deployment pipeline with automated testing
+    - Reduce effort, have time to gain real exp to pick technologies
+### Strategies for refactoring a monolith to microservices
+- Implement new features as services:
+    - Benefits:
+        - Stop the monolith from growing
+        - Accelerate dev of new features
+        - Demonstrate business value
+    - Need 2 other elements to integrate the new service into the app:
+        - API gateway: to route request to service & monolith
+        - Integration glue code:
+            - Allow service to access the monolith data & invoke its functionality
+            - Consist of adapters in the monolith & the service that communicate via IPC
+        - IMG 13.2
+    - Non-usage:
+        - New feature is too small to be a meaningful service
+        - New feature is too tightly coupled with the monolith
+        - -> Performance problem due to excessive IPC
+        - Data consistency problem
+    - -> Need to implement in the monolith, extract later
+- Separate presentation tier from the backend:
+    - IMG 13.3
+    - Benefits:
+        - Dev, deploy & scale 2 apps independently
+        - Expose remote API of monolith that can be called by new microservices
+    - -> Only a partial solution
+- Extract business capabilities into services:
+    - IMG 13.4
+    - Parts to extract to the new service:
+        - Inbound adapters containing API endpoints
+        - Domain logic
+        - Outbound adapters (eg DB access logic)
+        - DB schema of the monolith
+    - Likely to be time-consuming: monolith code base is likely to be messy
+    - -> Need to decide which service to extract first
+    - Might do over many iterations: each iteration extract several functionalities
+    - Design issues:
+        - How to split the domain model:
+            - Remove object references:
+                - Use aggregate concept
+                - Avoid having large impact on clients of the class on the monolith: replicate data
+            - Split class: extract functionality from a class that has other responsibilities
+        - How to refactor the database: changing all clients of the DB to use the new schema takes lots of time
+        - -> Solutions:
+            - Migrate then replicate data from service back to monolith to avoid large impact
+            - Migrate the clients incrementally (might not need to when client code is extracted into a new service)
+        - What is the sequence of service extraction:
+            - Design the new architecture -> revise it as you gain migration experience
+            - Strats:
+                - Freeze monolith dev/bug fix and extract services on demand:
+                    - Adv: force you to break up the monolith
+                    - Disadv: service extraction is driven by short-term requirements
+                    - -> Risk of small benefit in exchange for lots of effort
+                - Rank services by the benefit from extraction:
+                    - Accelerates development: when business roadmap suggests lots of dev in such part
+                    - Solve performance/scaling/reliability problem
+                    - Enable extraction of other services
+                - -> More strategic & closely align with business' needs
+    - Design steps:
+        - Review code related to the service business and identify participating entities & their fields
+        - Decide which data to migrate to the service. Need to consider:
+            - How monolith and service access each other's data
+            - How to maintain data consistency
+        - Design service domain logic: mostly copy code from the monolith
+### Designing how the service and the monolith collaborate
+- Design integration glue:
+    - Design API that the glue provides to the domain logic: encapsulate in an interface:
+        - Query API: Respository interface
+        - Command API: Service interface:
+            - Changes in the monolith to call the Service interface:
+                - Identify all places in the monolith that invoke such business logic to call the interface
+                - Implement the interface with:
+                    - Existing monolith logic
+                    - Proxy to new service
+                - Use feature toggle to dynamically switch between the 2 implementations
+                - Remove the existing monolith implementation when the service is considered working as expected
+                - IMG 13.23
+    - Pick interaction style & IPC mechanism:
+        - Query data:
+            - Option 1: consumer invoke RPC API of data provider:
+                - Adv: simple to implement
+                - Disadv:
+                    - Inefficient if consumer makes lots of requests
+                    - Reduced availability
+            - Option 2:
+                - Provider is monolith: service implement CQRS
+                - Provider is service: service publish domain events for monolith to consume and update its DB
+                - Adv: efficient
+                - Disadv:
+                    - Increased complexity
+                    - Might need to modify monolith to publish domain event
+        - Update data: use transactional messaging
+            - Transaction required: use saga
+            - Transaction not required: publish event
+    - Implement anti-corruption layer:
+        - When:
+            - Develop new domain model in the service, dif from monolith domain model
+            - Need to communicate with monolith
+        - Goal: prevent legacy monolith's domain model from polluting service's domain model
+        - Anti corruption layer def: layer of code that translates between dif domain models
+        - IMG 13.11
+        - Functions:
+            - Map class/attribute names/values
+            - Map status code
+        - Where to implement:
+            - In service:
+                - When receive monolith domain event
+                - When invoke monolith API
+            - In monolith:
+                - When subscribe to service event
+                - When invoke service API
+    - Publish/consume domain event in the monolith:
+        - Publish:
+            - Sol 1: in the code:
+                - Adv: can publish high level domain event
+                - Disadv:
+                    - Need to locate all the places to publish. Potentially huge change.
+                    - Can't deal with cases using stored procedure
+            - Sol 2: use DB event via transaction log tailing/polling
+                - Adv: don't have to change the monolith
+                - Disadv:
+                    - Low level event
+                    - Don't know reason for the update
+        - Consume problem: monolith written in language without message broker client
+        - -> New helper service to subscribe to event & update monolith DB directly
+- Maintain data consistency across service and monolith:
+    - Problem: introducing saga's compensating transaction in the monolith might require numerous, risky code change (eg new "state" field in DB model)
+    - Approach: ensure monolith transactions are either pivot or retriable transactions by:
+        - Design saga
+        - Decide service extraction order
+- Handle authentication & authorization:
+    - Problem: support both monolith and JWT-based security mechanisms simultaneously
+    - Solution:
+        - Monolith login handler returns an additional cookie to be included in every request. Cookie content: JWT token.
+        - API gateway validate the token in the cookie, set it in authorization header and send to services
+        - Services validate the token and extract info
+        - IMG 13.13
+### Refactoring examples of strat 1 and 3: skipped

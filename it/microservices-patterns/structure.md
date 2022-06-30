@@ -1,0 +1,55 @@
+# Structure
+## Outline
+- Preface:
+    - History of microservice architecture
+    - The problems & how they will be addressed in the book
+    - Reason to organize the book around patterns
+- Chap 1 & 2:
+    - Basic concepts
+    - Problem of monolithic, when and why to use microservice architecture
+    - Advs & disadvs of microservice architecture
+    - Microservice patterns as a solution
+    - Defining application architecture:
+        - Decompose & define services
+        - Define APIs
+- Chap 3-12: problems & patterns:
+    - Interprocess communication
+    - Managing transactions
+    - Designing business logic
+    - Implementing queries
+    - Designing external APIs for various types of client
+    - Automated testing for microservices
+    - Developing production-ready services:
+        - Security
+        - Configuration
+        - Observability
+    - Deployment
+- Chap 13: refactoring from monolithic to microservice architecture: difficulty & strategies
+
+## Detailed structure
+- Chap 1:
+    - Monolithic architecture: usage, advs & disadvs
+    - Role of software architecture
+    - Microservice architecture: usage, characteristics, advs & disadvs
+    - Pattern & pattern language: def, characteristics, advs
+    - Microservice pattern language: def, 3 layers, pattern groups
+    - Process & organization: when working with microservice architecture
+- Chap 2:
+    - Concepts related to software architecture:
+        - Dif views of architecture
+        - Architectural styles: hexagonal, microservices
+    - Steps to define microservice architecture for an app:
+        - Identify system operations
+        - Define services: difficulties & solution
+        - Define API
+- Chap 13:
+    - Overview: consideration before refactoring, non-strat and overview of strangler strat
+    - 3 main strangling strats: usage, advs, design issues:
+        - Implement new features as services
+        - Separate presentation tier and backend
+        - Extract business capabilities into services
+    - Design collaboration between service and monolith: architecture, design issues:
+        - Design integration glue
+        - Maintain data consistency
+        - Handle authentication & authorization
+    - Refactoring examples using strat 1 and 3
