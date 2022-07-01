@@ -22,10 +22,10 @@
   - Server-side discovery (85)
 - Transactional messaging patterns:
   - Transactional outbox: publish an event or message as part of a DB transaction by saving it in an outbox table in the DB
-  - Polling publisher: publish messages by pulling the outbox table
   - Transaction log tailing: publish changes made to the DB by reading transaction logs of the outbox table
+  - Polling publisher: publish messages by pulling the outbox table
 - Data consistency patterns:
-  - Saga (114)
+  - Saga: maintain data consistency across services using a sequence of local transactions coordinated using async messaging
 - Business logic design patterns:
   - Aggregate (150)
   - Domain event (160)
@@ -76,6 +76,9 @@
 - Service registry: database of network locations of an app's service instances
 - Message broker: an intermediary through which all messages flow (sender -> broker -> receiver)
 - Transactional messaging: publish messages as part of a transaction that updates the DB
+- State machine: consist of a set of states and transitions between states that are triggered by events. Each transition can have an action.
+- Anomaly: when a trans reads of writes data in a way that wouldn't if trans were executed once at a time
+- Countermeasure: saga design strategy that deal with the lack of isolation
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith

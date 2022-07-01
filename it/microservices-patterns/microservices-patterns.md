@@ -29,6 +29,9 @@ Last part of the book handles the difficulty when transitioning from monolithic 
   - Polling publisher pattern faces the same initial problem:
   what happen if the Message relay deletes from the outbox table then crashes before able to publish message?
   - Discussion of async design didn't take into account FE flow design, which dictates whether sync/async option is possible
+- Chap 4:
+  - Advs & disadvs of choreography saga seem a bit forced, with contradictions
+  - 
 - Chap 13:
   - Why place anti-corruption layer in service? Should keep the service adapter clean for new usages.
 

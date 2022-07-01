@@ -54,6 +54,15 @@
     - Advs, disadvs & mitigations
     - Techs
     - How to replace sync interactions to increase availability
+- Chap 4:
+  - Overview of trans management & 2 approaches: distributed trans & saga
+  - 2 types of saga: example advs & disadvs:
+    - Choreography
+    - Orchestration
+  - Design issues when using saga:
+    - Transactional mes: solved
+    - Lack of isolation: types, dif solutions with examples
+  - Code example of orchestration saga
 - Chap 13:
   - Overview: consideration before refactoring, non-strat and overview of strangler strat
   - 3 main strangling strats: usage, advs, design issues:
