@@ -1,9 +1,5 @@
 # Structure
 ## Outline
-- Preface:
-  - History of microservice architecture
-  - The problems & how they will be addressed in the book
-  - Reason to organize the book around patterns
 - Chap 1 & 2:
   - Basic concepts
   - Problem of monolithic, when and why to use microservice architecture
@@ -27,6 +23,10 @@
 - Chap 13: refactoring from monolithic to microservice architecture: difficulty & strategies
 
 ## Detailed structure
+- Preface:
+  - History of microservice architecture
+  - The problems & how they will be addressed in the book
+  - Reason to organize the book around patterns
 - Chap 1:
   - Monolithic architecture: usage, advs & disadvs
   - Role of software architecture
@@ -69,12 +69,25 @@
     - Domain model pattern -> Domain driven design
     - Publish domain event: domain event pattern
   - 2 examples of business logic design
-- Chap 6:
+- Chap 7:
   - API composition: archi, design issues, advs & disadvs, usage
   - CQRS (same as above):
     - Design decisions
     - How to build/rebuild view
   - Example of CQRS design
+- Chap 8:
+  - Problems with client-invoking-services approaches
+  - -> API gateway as solution
+  - API gateway:
+    - Functions
+    - Archi
+    - Advs & disadvs
+    - Design issues
+  - API gw techs, considerations & examples:
+    - Off-the-shelf solutions
+    - Frameworks to dev your own
+    - Graph API techs
+- Chap 11:
 - Chap 13:
   - Overview: consideration before refactoring, non-strat and overview of strangler strat
   - 3 main strangling strats: usage, advs, design issues:

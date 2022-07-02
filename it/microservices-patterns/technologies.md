@@ -29,3 +29,11 @@
   - LinkedIn Databus: mine Oracle trans log & publishes change as events
   - DynamoDB streams
   - Eventuate Tram: use MySQL biglog/Postgres WAL/polling to read from outbox table & publish to Kafka
+- API gateway:
+  - Off-the-shelf product: AWS API gateway, Kong, Traefik
+  - Framework to dev your own: Netflix Zuul, Spring cloud gateway
+  - Graph-based techs:
+    - Advs: flexible queries, less dev effort
+    - <img src="../../resources/microservices-patterns/8.9.png" alt="drawing" width="500"/>
+    - GraphQL: standard, available in many languages. Apollo graphQL: popular Node implementation
+    - Netflix Falcor: implementation

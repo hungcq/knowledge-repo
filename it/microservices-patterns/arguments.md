@@ -4,199 +4,198 @@
 
 ## 1. Escaping monolithic hell
 - Monolithic architecture:
-    - <img src="../../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
-    - Suitable for new, small app
-    - Benefits when the app is small:
-        - Simple to dev: suitable for IDE & dev tools
-        - Easy to make radical changes
-        - Easy to test
-        - Easy to deploy
-        - Easy to scale
-    - Drawbacks when the app is big:
-        - Too complex -> difficult to dev & debug
-        - Dev is slow: lag IDE, slow build, long start up time -> edit, build, run, test loop takes a long time
-        - Path from commit to deployment is long:
-            - Many devs -> hard to merge & need further testing
-            - Complex -> need careful, system testing
-        - Difficult to scale: conflicting resource requirements from dif modules
-        - Not reliable:
-            - Hard to test thoroughly
-            - Lack of fault isolation
-        - Locked into an obsolete tech stack: rewrite whole app is risky
+  - <img src="../../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
+  - Suitable for new, small app
+  - Benefits when the app is small:
+    - Simple to dev: suitable for IDE & dev tools
+    - Easy to make radical changes
+    - Easy to test
+    - Easy to deploy
+    - Easy to scale
+  - Drawbacks when the app is big:
+    - Too complex -> difficult to dev & debug
+    - Dev is slow: lag IDE, slow build, long start up time -> edit, build, run, test loop takes a long time
+    - Path from commit to deployment is long:
+      - Many devs -> hard to merge & need further testing
+      - Complex -> need careful, system testing
+    - Difficult to scale: conflicting resource requirements from dif modules
+    - Not reliable:
+      - Hard to test thoroughly
+      - Lack of fault isolation
+    - Locked into an obsolete tech stack: rewrite whole app is risky
 - Software architecture mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
 - 3 ways to scale an app:
-    - Load balance requests across multiple instances:
-        - Randomly
-        - Based on request's attribute
-    - Decompose by function into multiple services. Can be combined with load balancing.
+  - Load balance requests across multiple instances:
+    - Randomly
+    - Based on request's attribute
+  - Decompose by function into multiple services. Can be combined with load balancing.
 - Microservice architecture:
-    - <img src="....//resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
-    - Suitable for large, complex app
-    - -> Less about size, more about clear, focused responsibility for each service
-    - Characteristics:
-        - Loosely coupled services: services as unit of modularity, API as boundary
-        - -> Easier to preserve modularity
-        - Services communicate via APIs
-        - Each service has its own database
-    - Benefits: of small, independent services:
-        - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
-            - Testability
-            - Deployability: usually don't require coordination
-            - Autonomous, loosely coupled teams
-        - Maintainability
-        - Scalability: based on resource requirement of each service
-        - Easy to experiment & adopt new techs
-        - Reliability:
-            - Better fault isolation
-            - Easier to test
-    - Drawbacks:
-        - Difficult to find the right set of services
-        - -> Can result in distributed monolith
-        - Complex distributed system:
-            - IPC
-            - Partial failures
-            - Transactions & queries spanning multiple services
-            - Dev: not supported by IDE, hard to do automated testing multiple services
-            - Operational complexity: management & deployment
-        - -> Require sophisticated dev & operation skills
-        - Need coordination when deploying features spanning many services
-        - Difficult to decide when to adopt
-          -> Many issues has multiple solutions, each with different set of tradeoffs
+  - <img src="../../resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
+  - Suitable for large, complex app
+  - Benefits: of small, independent services:
+    - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
+      - Testability
+      - Deployability: usually don't require coordination
+      - Autonomous, loosely coupled teams
+    - Maintainability
+    - Scalability: based on resource requirement of each service
+    - Easy to experiment & adopt new techs
+    - Reliability:
+      - Better fault isolation
+      - Easier to test
+  - Drawbacks:
+    - Difficult to find the right set of services
+    - -> Can result in distributed monolith
+    - Complex distributed system:
+      - IPC
+      - Partial failures
+      - Transactions & queries spanning multiple services
+      - Dev: not supported by IDE, hard to do automated testing multiple services
+      - Operational complexity: management & deployment
+    - -> Require sophisticated dev & operation skills
+    - Need coordination when deploying features spanning many services
+    - Difficult to decide when to adopt 
+  - -> Many issues has multiple solutions, each with different set of tradeoffs
 - Pattern:
-    - Describe:
-        - Issues
-        - Result:
-            - Benefit: solved issues
-            - Drawback: unsolved issues
-            - New issues
-        - Related patterns
-    - -> Objectivity -> better decision making
-    - Can be organized into group: handle problems in a particular area
-    - Pattern language: collection of related patterns that solve problems within a particular domain
+  - Describe:
+    - Issues
+    - Result:
+      - Benefit: solved issues
+      - Drawback: unsolved issues
+      - New issues
+    - Related patterns
+  - -> Objective -> better decision making
+  - Can be organized into group: handle problems in a particular area
+  - Pattern language: collection of related patterns that solve problems within a particular domain
 - Microservice pattern language:
-    - Software pattern: solves a software architecture or design problem by defining a set of collaborating software elements:
-        - Object-oriented pattern: contains collaborating classes
-        - High level design pattern: contains collaborating services
-    - 3 layers:
-        - Infra patterns: solve infra issues outside development
-        - App infra patterns: solve infra issues related to development
-        - App patterns: solve development problems
+  - Software pattern: solves a software architecture or design problem by defining a set of collaborating software elements:
+    - Object-oriented pattern: contains collaborating classes
+    - High level design pattern: contains collaborating services
+  - 3 layers:
+    - Infra patterns: solve infra issues outside development
+    - App infra patterns: solve infra issues related to development
+    - App patterns: solve development problems
     - <img src="../../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
-    - Groups:
-        - Decomposition:
-        - <img src="../../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
-        - Communication:
-        - <img src="../../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
-        - Data consistency:
-        - <img src="../../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
-        - Data query:
-        - <img src="../../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
-        - Deployment:
-        - <img src="../../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
-        - Observability
-        - Automated testing
-        - Crosscutting concerns
-        - Security
+  - Groups:
+    - Decomposition:
+      - <img src="../../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
+    - Communication:
+      - <img src="../../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
+    - Data consistency:
+      - <img src="../../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
+    - Data query:
+      - <img src="../../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
+    - Deployment:
+      - <img src="../../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
+    - Observability
+    - Automated testing
+    - Crosscutting concerns
+    - Security
 - Process & organization:
-    - Imp for success, beside architecture
-    - <img src="../../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
-    - Organization: team of teams, each 8-12 people
-        - Each team has clear business-oriented goal:
-          developing and possibly operating one or more services that implement a feature or a business capability
-        - Cross-functional, can develop, test, and deploy its services without having to frequently communicate or coordinate with other teams
-        - Grow: adding teams
-    - -> Higher dev velocity, clear point of contact
-    - Development & delivery process: agile dev & deployment practices (eg Scrum, Kanban)
-    - Transition from monolithic to microservice architecture: need to consider reaction & emotion of people
+  - Imp for success, beside architecture
+  - <img src="../../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
+  - Organization: team of teams, each 8-12 people:
+    - Each team has clear business-oriented goal:
+    developing and possibly operating one or more services that implement a feature or a business capability
+    - Cross-functional, can develop, test, and deploy its services without having to frequently communicate or coordinate with other teams 
+    - Grow: adding teams
+  - -> Higher dev velocity, clear point of contact
+  - Development & delivery process: agile dev & deployment practices (eg Scrum, Kanban)
+  - Transition from monolithic to microservice architecture: need to consider reaction & emotion of people
 
 ## 2. Decomposition strategies
+### Architectural view & architectural style
 - Architectural view in 4+1 model: describes a particular aspect of the architecture
   - <img src="../../resources/microservices-patterns/2.1.png" alt="drawing" width="500"/>
 - Architectural style:
   - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
   - An app usually uses a combination of archi styles
-  - Styles apply to the logical view:
-    - Layered (eg 3-tier architecture)
-    - Hexagonal:
-      - Business logic at the center, has ports, interact with the outside via ports
-      - <img src="../../resources/microservices-patterns/2.2.png" alt="drawing" width="500"/>
-      - Port:
-        - Defines a set of operations
-        - Usually interface
-        - Types:
-          - Inbound: API exposed by business logic (eg service interface), allow it to be invoked by external apps
-          - Outbound: define how business logic invoke external systems (eg repository interface)
-      - Adapter types:
-        - Inbound: handle outside requests by invoking business logic via inbound port (eg MVC controller)
-        - Outbound: implements outbound port, invoked by business logic and invoke external apps (eg data access object DAO)
-      - -> Adapters depend on business logic
-      - Advs:
-        - Decouple business logic from presentation & data access logic in the adapters
-        - -> Easier to test business logic in isolation
-        - Flexible, reflect modern app architecture: multiple, exchangeable adapters
-        - Usage: design each service in a microservice archi
-  - Styles apply to the implementation view:
-    - Monolithic archi
-    - Microservice archi:
-      - Component: service:
-        - With its own logical view archi (usually hexagonal) & potentially separate technology stack
-        - Implementation view can take many form (see Chap 12)
-        - Correspond to business capabilities
-        - Has an API to provide client access to its functionality. API consists of:
-            - Commands: perform action & update data
-            - Queries: retrieve data
-            - Events: published by service, consumed by its clients
-        - Size of service is mostly unimportant:
-          - Sign of well-designed service:
-            - Can be developed by a small team with minimal lead time and collaboration with other teams
-            - A team might only be responsible for a single service
-          - Sign of badly designed service:
-            - Requires a large team
-            - Take a long time to test
-            - Constantly need to change because of changes to other services or trigger changes in other services -> distributed monolith
-      - Connector: communication protocol that services use to communicate, implemented using IPC mechanism
-      - Key constraint: services are loosely coupled: all interactions with the service happen via its API
-        - Restrict how services collaborate: not via DB
-        - Advs:
-          - Encapsulate implementation details -> can change without impacting clients
-          - Improve app dev time attribute (eg understandability maintainability, testability)
-          - Improve runtime isolation: can't lock DB of other services
-      - Should only use shared libs for functionality that is unlikely to change
-- Steps to define an app's microservice architecture:
-  - Not a process to follow mechanically, but likely to be iterative and requires creativity
-  - <img src="../../resources/microservices-patterns/2.5.png" alt="drawing" width="500"/>
-  - Step 1: identify the system operations:
-    - System operation def: abstraction of a request that the app must handle. Can be either:
-      - Command: update data
-      - Query: retrieve data
-    - <img src="../../resources/microservices-patterns/2.6.png" alt="drawing" width="500"/>
-    - Steps:
-      - Create a high-level domain model: by analyzing the nouns in the user stories/scenarios and talking to domain experts
-      - -> Result: domain models containing classes 
-      - Define system operations:
-        - <img src="../../resources/microservices-patterns/tab-2.1.png" alt="drawing" width="500"/>
-        - Derive from verbs in user stories
-        - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
-  - Step 2: define services by business capability:
-    - Adv: business capabilities are stable -> resulting archi is stable
-    - The resulting services are only the first attempt at defining the archi
-    - -> May evolve over time as more is learned about the domain:
-      - Combine services due to excessive IPC
-      - Split services due to high complexity
-    - Use domain driven design (DDD) as an alternative:
-      - Domain def: app's problem space
-      - Define a separate domain model for each subdomain -> service correspond to subdomain
-      - Identify subdomain by business capability
-    - Decomposition design issues:
-      - Network latency: combine service to reduce IPC
-      - Sync IPC reduces latency: use async messaging
-      - Managing data consistency: distributed trans or saga
-      - Obtain a consistent view of the data: rarely a problem in practice
-      - God classes prevent decomposition: apply DDD and use a separate domain model for each service
-      - -> Each service has its own domain model with its own version of the god class
-  - Step 3: define service APIs: steps:
-    - Assign system operations to services
-    - Determine the APIs required to support collaboration between services for each system operation: independent of IPC technology
+### Styles apply to the logical view
+- Layered (eg 3-tier architecture)
+- Hexagonal:
+  - Business logic at the center, has ports, interact with the outside via ports
+  - <img src="../../resources/microservices-patterns/2.2.png" alt="drawing" width="500"/>
+  - Port:
+    - Defines a set of operations
+    - Usually interface
+    - Types:
+      - Inbound: API exposed by business logic (eg service interface), allow it to be invoked by external apps
+      - Outbound: define how business logic invoke external systems (eg repository interface)
+  - Adapter types:
+    - Inbound: handle outside requests by invoking business logic via inbound port (eg MVC controller)
+    - Outbound: implements outbound port, invoked by business logic and invoke external apps (eg data access object DAO)
+  - -> Adapters depend on business logic
+  - Advs:
+    - Decouple business logic from presentation & data access logic in the adapters
+    - -> Easier to test business logic in isolation
+    - Flexible, reflect modern app architecture: multiple, exchangeable adapters
+    - Usage: design each service in a microservice archi
+### Styles apply to the implementation view:
+- Monolithic archi
+- Microservice archi:
+  - Component: service:
+    - With its own logical view archi (usually hexagonal) & potentially separate technology stack
+    - Implementation view can take many form (see Chap 12)
+    - Correspond to business capabilities
+    - Has an API to provide client access to its functionality. API consists of:
+      - Commands: perform action & update data
+      - Queries: retrieve data
+      - Events: published by service, consumed by its clients
+    - Size of service:
+      - Mostly unimportant, compared to clear, focused responsibility of each service
+      - Sign of well-designed service:
+        - Can be developed by a small team with minimal lead time and collaboration with other teams
+        - A team might only be responsible for a single service
+      - Sign of badly designed service:
+        - Requires a large team
+        - Take a long time to test
+        - Constantly need to change because of changes to other services or trigger changes in other services -> distributed monolith
+  - Connector: communication protocol that services use to communicate, implemented using IPC mechanism
+  - Key constraint: services are loosely coupled:
+    - Services as units of modularity, API as boundary: all interactions with the service happen via its API
+    - -> Easier to preserve modularity
+    - Restrict how services collaborate: not via DB
+    - -> Each service has its own database
+    - Advs:
+      - Encapsulate implementation details -> can change without impacting clients
+      - Improve app dev time attribute (eg understandability maintainability, testability)
+      - Improve runtime isolation: can't lock DB of other services
+  - Should only use shared libs for functionality that is unlikely to change
+### Steps to define an app's microservice architecture:
+- Not a process to follow mechanically, but likely to be iterative and requires creativity
+- <img src="../../resources/microservices-patterns/2.5.png" alt="drawing" width="500"/>
+- Step 1: identify the system operations:
+  - System operation def: abstraction of a request that the app must handle. Can be either:
+    - Command: update data
+    - Query: retrieve data
+  - <img src="../../resources/microservices-patterns/2.6.png" alt="drawing" width="500"/>
+  - Steps:
+    - Create a high-level domain model: by analyzing the nouns in the user stories/scenarios and talking to domain experts
+    - -> Result: domain models containing classes 
+    - Define system operations:
+      - <img src="../../resources/microservices-patterns/tab-2.1.png" alt="drawing" width="500"/>
+      - Derive from verbs in user stories
+      - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
+- Step 2: define services by business capability:
+  - Adv: business capabilities are stable -> resulting archi is stable
+  - The resulting services are only the first attempt at defining the archi
+  - -> May evolve over time as more is learned about the domain:
+    - Combine services due to excessive IPC
+    - Split services due to high complexity
+  - Use domain driven design (DDD) as an alternative:
+    - Domain def: app's problem space
+    - Define a separate domain model for each subdomain -> service correspond to subdomain
+    - Identify subdomain by business capability
+  - Decomposition design issues:
+    - Network latency: combine service to reduce IPC
+    - Sync IPC reduces latency: use async messaging
+    - Managing data consistency: distributed trans or saga
+    - Obtain a consistent view of the data: rarely a problem in practice
+    - God classes prevent decomposition: apply DDD and use a separate domain model for each service
+    - -> Each service has its own domain model with its own version of the god class
+- Step 3: define service APIs: steps:
+  - Assign system operations to services
+  - Determine the APIs required to support collaboration between services for each system operation: independent of IPC technology
 
 ## 3. Interprocess communication in a microservice architecture
 ### IPC design issues:
@@ -432,7 +431,6 @@
 ### Business logic organization patterns
 - Transaction script pattern:
   - Archi:
-    - IMG 5.2
     - Scripts locate in service classes as methods, once for each request/system operation, containing business logic of the request
     - Service method accesses DB via data access objects
     - Data objects are pure data with little/no behavior
@@ -518,7 +516,7 @@
 - Publish event: service invoke domain event publisher interface (~command publisher interface)
 - Consume event: event consumer class (~command handler class) invoke service interface
 ### Example: skipped
-- IMG 5.12
+- <img src="../../resources/microservices-patterns/5.12.png" alt="drawing" width="500"/>
 
 ## 6. Developing business logic with event sourcing: skipped
 
@@ -544,15 +542,15 @@
 ### Query using CQRS pattern
 - Usages:
   - When API composition can't efficiently perform a query: not all services store attributes that can be used to filter or sort:
-    - IMG 7.7
+    - <img src="../../resources/microservices-patterns/7.7.png" alt="drawing" width="500"/>
     - Solution:
       - API composer retrieve & join large data set -> inefficient
       - Fetch IDs, then bulk fetch other services -> require bulk fetch API
   - Service data model doesn't efficiently support the query (eg geospatial/text search query)
   - Need to separate concerns: service responsibility is maintaining business data, not querying data
 - Archi:
-  - IMG 7.8
-  - IMG 7.10
+  - <img src="../../resources/microservices-patterns/7.8.png" alt="drawing" width="500"/>
+  - <img src="../../resources/microservices-patterns/7.10.png" alt="drawing" width="500"/>
   - Command/domain model:
     - Handle CUD operations using its own database
     - Can handle simple queries (eg non-join, primary key-based query)
@@ -583,7 +581,48 @@
       - Record max event ID or map of (agg type-agg ID, max event ID)
     - Build & update CQRS view: use archived event. Use snapshot when don't have all events.
 
-## 8.
+## 8. External API patterns
+### Problems with client-invoking-services approach
+- Multiple requests via the Internet: inefficient & poor UX
+- Coupling -> hard to change APIs/architecture
+- Services might use client-unfriendly IPC mechanisms
+- It's ok for web app running in same data center to access the backend directly
+### API gateway pattern
+- API gateway's functions:
+  - Request routing
+  - API composition
+  - Protocol translation
+  - Edge functions (eg authentication, rate limiting, caching)
+  - -> Alternative: implement in an upstream service:
+    - Adv: separate concern
+    - Disadvs: increase network latency & complexity
+- Archi:
+  - <img src="../../resources/microservices-patterns/8.3.png" alt="drawing" width="500"/>
+- Ownership model:
+  - <img src="../../resources/microservices-patterns/8.6.png" alt="drawing" width="500"/>
+  - *Note: common layer functions: request routing, authen...
+  - Deployment pipeline must be fully automated to avoid blocking
+- Backend for frontend pattern:
+  - Archi:
+    - <img src="../../resources/microservices-patterns/8.7.png" alt="drawing" width="500"/>
+    - Use shared lib for common functionality
+  - Advs: of microservices
+- Advs:
+  - Encapsulate internal structure of the app
+  - Provide client-specific API -> reduce number of round-trips & simplify client code
+- Disadvs:
+  - Add a new highly available component
+  - Risk of becoming a dev bottleneck
+  - -> Updating process should be lightweight
+- Design issues:
+  - Performance & scalability: use async IO (eg Node) for IO intensive logic
+  - Need to invoke services concurrently to improve performance
+  - -> Need to write maintainable concurrent code (eg reactive programming, JS promise) to avoid callback hell
+  - Handle partial failure: use techniques in chap 3
+  - Fit the current archi: need to consider when choose tech/framework
+
+## 11. 
+
 
 ## 13. Refactoring to microservices
 - Goal: refactor from monolith to microservices without having to rewrite app from scratch

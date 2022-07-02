@@ -37,8 +37,8 @@
   - Command query responsibility segregation (CQRS): implement a query that needs data from several services
   by using events to maintain a read-only view that replicates data from the services
 - External API patterns:
-  - API gateway (259)
-  - Backends for frontends (265)
+  - API gateway: implement a service that's the entry point for external API client into the microservices-based app
+  - Backends for frontends: implement a separate API gateway for each type of client
 - Testing patterns:
   - Consumer-driven contract test (302)
   - Consumer-side contract test (303)
