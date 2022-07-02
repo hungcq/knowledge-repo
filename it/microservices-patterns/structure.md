@@ -28,9 +28,7 @@
   - The problems & how they will be addressed in the book
   - Reason to organize the book around patterns
 - Chap 1:
-  - Monolithic architecture: usage, advs & disadvs
-  - Role of software architecture
-  - Microservice architecture: usage, characteristics, advs & disadvs
+  - Monolithic & microservice architecture: usage, advs & disadvs
   - Pattern & pattern language: def, characteristics, advs
   - Microservice pattern language: def, 3 layers, pattern groups
   - Process & organization: when working with microservice architecture
