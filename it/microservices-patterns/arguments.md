@@ -425,6 +425,166 @@
   - By value: select concurrency mechanism (saga or distributed trans) based on business risk
 ### Saga code example: skipped
 
+## 5. Designing business logic in a microservice architecture
+- Design issues:
+  - Eliminate object references spanning service boundaries
+  - Design business logic that works within the transaction management constraints of microservice architecture
+### Business logic organization patterns
+- Transaction script pattern:
+  - Archi:
+    - IMG 5.2
+    - Scripts locate in service classes as methods, once for each request/system operation, containing business logic of the request
+    - Service method accesses DB via data access objects
+    - Data objects are pure data with little/no behavior
+  - Adv: simple to write
+  - Disadv: hard to extend & maintain
+  - Usage: simple business logic
+- Domain model pattern:
+  - Archi (~object oriented design):
+    - Business logic consists of an object model - network of relatively small classes
+    - Classes correspond directly to concepts from problem domain, most contain both state and behavior
+    - -> Simple service methods: business logic delegated to domain objects
+    - Service method's logic: ~aggregate pattern (below)
+  - Advs:
+    - Modular
+    - Easy to understand
+    - Easy to test each class individually
+    - Easy to change/extend
+- Domain driven design:
+  - Building blocks:
+    - Entity: an object with a persistent identity. 2 entities with same attribute values are dif objects.
+    - Value object: an object as a collection of values. 2 values object with same attribute values can be used interchangeably.
+    - Factory
+    - Repository
+    - Service
+  - Fuzzy boundaries problem: when updating a business object:
+    - What to load/delete?
+    - What rules to enforce?
+  - -> Solution: aggregate pattern:
+    - Focus of design: identify aggregates, their boundaries & roots
+    - Characteristics:
+      - (1) Operations are invoked on the aggregate root (via a method), acting on the entire aggregate rather than parts of it
+      - An aggregate is the object of storage, often loaded entirely from the DB -> avoid complication; scaling DB by sharding agg is straightforward
+      - Concurrency is handled by locking the aggregate root (eg version number/DB level lock)
+    - Advs:
+      - Decompose a domain model into chunks, which are easier to understand
+      - (1) advs:
+        - Clarify the scope of operations (eg load, update, delete)
+        - Enforces rules: no accidental update of a dif agg
+    - Aggregate rules:
+      - Client can only update an agg by invoking a method on the agg root
+      - Inter-agg references must use primary keys instead of object references. Advs:
+        - Loosely coupled
+        - Ensure boundaries
+        - Ref can span services
+      - One transaction creates or updates one agg. Advs:
+        - Trans is contained within a service
+        - Match the limited trans model of most NoSQL DB
+    - Agg size consideration: small (vs big):
+      - Advs: scalable, modular, reduce update conflicts
+      - Disadv: trans updating multiple aggs is not atomic
+    - Design business logic:
+      - Bulk of business logic: in aggs
+      - The rest of business logic:
+        - Sagas: orchestrating logic
+        - Services:
+          - Load agg from DB using Repository, invoke one of its methods, then save it using Repository
+          - Invoke external services
+          - Publish events
+          - Create saga if update spans multiple services
+### Publish domain event
+- If there are interested consumers, agg publish event each time its state changes or when it is created
+- Domain event presentation:
+  - By a class in the domain model (eg OrderCreated), with properties that convey the event meaningfully
+  - Has metadata (eg event ID & timestamp, auditing data). Can be put in:
+    - The event class
+    - Super class
+    - Wrapper class
+- Approaches to identify domain events:
+  - Find in requirement for notification
+  - Use event storming meeting with domain experts. Steps:
+    - Brainstorm events
+    - Identify event triggers: user actions, external system, another domain event, passing of time
+    - Identify aggs that consumes each command and emits the corresponding event
+- Approaches to generate domain events:
+  - Agg invoke message API directly
+  - -> Problem: agg loaded from DB, not created -> can't use dependency injection to pass the messaging API
+  - Split responsibility between the agg and the service:
+    - Agg generate events whenever its state changes, return to service. Service publishes domain events as message:
+      - Adv: simple
+      - Disadv: agg's non-void methods is more complex -> not a problem for multiple-return-value languages
+    - Agg root accumulate events in a field. Service retrieves the events & publishes them.
+    - -> Difficult to implement
+- Publish event: service invoke domain event publisher interface (~command publisher interface)
+- Consume event: event consumer class (~command handler class) invoke service interface
+### Example: skipped
+- IMG 5.12
+
+## 6. Developing business logic with event sourcing: skipped
+
+## 7. Implementing queries in a microservice architecture
+### Query using API composition pattern
+- Types of composer:
+  - FE client (eg web app)
+  - Service: API gateway/BFF variant
+- Design issues:
+  - Decide which component to act as API composer:
+    - Frontend client: not practical for clients accessing services via the internet: slow network
+    - API gateway -> allow clients accessing the gateway via the internet to efficiently retrieve the data
+    - Standalone API composer: usage:
+      - For queries used internally by multiple services
+      - Externally accessible queries with logic too complex to be part of API gateway
+  - Query performance: should call provider services in parallel
+- Adv: simple to implement
+- -> Should consider first when design queries
+- Disadvs:
+  - Costly query
+  - Reduced availability: involve multiple services. Solution: see chap 3 - RPC design issues: recover from an unavailable service
+  - Lack of transactional data consistency
+### Query using CQRS pattern
+- Usages:
+  - When API composition can't efficiently perform a query: not all services store attributes that can be used to filter or sort:
+    - IMG 7.7
+    - Solution:
+      - API composer retrieve & join large data set -> inefficient
+      - Fetch IDs, then bulk fetch other services -> require bulk fetch API
+  - Service data model doesn't efficiently support the query (eg geospatial/text search query)
+  - Need to separate concerns: service responsibility is maintaining business data, not querying data
+- Archi:
+  - IMG 7.8
+  - IMG 7.10
+  - Command/domain model:
+    - Handle CUD operations using its own database
+    - Can handle simple queries (eg non-join, primary key-based query)
+  - Query model: handle nontrivial queries
+  - Can be applied within a service or to define query services: build DB by subscribing to events published by multiple services
+- Advs:
+  - Enable efficient queries
+  - Enable efficient implementation of diverse queries using dif types of DB
+  - Make querying possible in an event sourcing app
+  - Improve separation of concerns: both command side & query side are simpler & easier to maintain
+- Disadvs:
+  - Complex archi -> increased dev & operational effort
+  - Replication lag -> client must handle inconsistency by:
+    - Command side & query side APIs return version. When out of date, client poll the query side.
+    - Update local model using data returned by the command
+    - -> UI code might need to duplicate server side code
+- Design issues:
+  - Choose datastore tech for the view:
+    - Consideration:
+      - Characteristics of queries
+      - How to efficiently implement update operations when receiving events
+    - NoSQL advs: richer data mode, higher performance
+    - SQL advs: familiar, BI, non-primary key-based update
+  - Design data access module:
+    - Handle concurrency: use lock or update DB records without reading them first
+    - Handle duplicate event:
+      - Idempotent
+      - Record max event ID or map of (agg type-agg ID, max event ID)
+    - Build & update CQRS view: use archived event. Use snapshot when don't have all events.
+
+## 8.
+
 ## 13. Refactoring to microservices
 - Goal: refactor from monolith to microservices without having to rewrite app from scratch
 ### Overview of refactoring to microservices

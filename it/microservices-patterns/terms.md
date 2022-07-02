@@ -27,14 +27,15 @@
 - Data consistency patterns:
   - Saga: maintain data consistency across services using a sequence of local transactions coordinated using async messaging
 - Business logic design patterns:
-  - Aggregate (150)
-  - Domain event (160)
-  - Domain model (150)
+  - Aggregate: organize a domain model as a collection of aggregates, each of which is a graph of objects that can be treated as a unit
+  - Domain event: an aggregate publishes a domain event when it's created or undergoes some other significant change
+  - Domain model: organize business logic as an object model consisting of classes that have state and behavior
   - Event sourcing (184)
-  - Transaction script (149)
+  - Transaction script: organize business logic as a collection of procedural transaction scripts, one for each type of request
 - Querying patterns:
-  - API composition (223)
-  - Command query responsibility segregation (228)
+  - API composition: implement a query that retrieves data from several services by querying each service via its API & combine the results
+  - Command query responsibility segregation (CQRS): implement a query that needs data from several services
+  by using events to maintain a read-only view that replicates data from the services
 - External API patterns:
   - API gateway (259)
   - Backends for frontends (265)
@@ -76,9 +77,16 @@
 - Service registry: database of network locations of an app's service instances
 - Message broker: an intermediary through which all messages flow (sender -> broker -> receiver)
 - Transactional messaging: publish messages as part of a transaction that updates the DB
-- State machine: consist of a set of states and transitions between states that are triggered by events. Each transition can have an action.
+- State machine:
+  - Consist of a set of states and transitions between states that are triggered by events
+  - Each transition can have an action
 - Anomaly: when a trans reads of writes data in a way that wouldn't if trans were executed once at a time
 - Countermeasure: saga design strategy that deal with the lack of isolation
+- Domain driven design (DDD): a refinement of object oriented design to develop complex business logic
+- Aggregate (in DDD):
+  - A cluster of domain objects within a boundary that can be treated as a unit
+  - Consist of a root entity and possibly one or more other entities and value objects
+- Domain event (in DDD): sth happened to an agg (eg state change)
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith

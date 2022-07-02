@@ -63,6 +63,18 @@
     - Transactional mes: solved
     - Lack of isolation: types, dif solutions with examples
   - Code example of orchestration saga
+- Chap 5:
+  - Design business logic in each service:
+    - Transaction script pattern
+    - Domain model pattern -> Domain driven design
+    - Publish domain event: domain event pattern
+  - 2 examples of business logic design
+- Chap 6:
+  - API composition: archi, design issues, advs & disadvs, usage
+  - CQRS (same as above):
+    - Design decisions
+    - How to build/rebuild view
+  - Example of CQRS design
 - Chap 13:
   - Overview: consideration before refactoring, non-strat and overview of strangler strat
   - 3 main strangling strats: usage, advs, design issues:

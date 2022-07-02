@@ -29,9 +29,11 @@ Last part of the book handles the difficulty when transitioning from monolithic 
   - Polling publisher pattern faces the same initial problem:
   what happen if the Message relay deletes from the outbox table then crashes before able to publish message?
   - Discussion of async design didn't take into account FE flow design, which dictates whether sync/async option is possible
-- Chap 4:
-  - Advs & disadvs of choreography saga seem a bit forced, with contradictions
-  - 
+- Chap 4: advs & disadvs of choreography saga seem a bit forced, with contradictions
+- Chap 5:
+  - Rule 3 of aggregate: one trans creates or updates one agg: how about aggs of the same type?
+  - How to load other aggs for business logic? CQRS? Req/res?
+- Chap 7: when discuss ways to build CQRS view, haven't dealt with: how to choose the starting event correspond to the snapshot
 - Chap 13:
   - Why place anti-corruption layer in service? Should keep the service adapter clean for new usages.
 
