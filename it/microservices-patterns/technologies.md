@@ -37,3 +37,46 @@
     - <img src="../../resources/microservices-patterns/8.9.png" alt="drawing" width="500"/>
     - GraphQL: standard, available in many languages. Apollo graphQL: popular Node implementation
     - Netflix Falcor: implementation
+- Authentication & authorization:
+  - Framework:
+    - Spring Security, Apache Shiro: Java
+    - Passport: Node
+  - Json Web Token (JWT): popular standard for transparent token:
+    - Function: securely represent claims (eg user identity & roles) between 2 parties
+    - Consists of:
+      - Payload: Json object containing user info (eg identity & roles)
+      - Other metadata (eg expiration date)
+      - Signed secret: only known to the creator of the JWT & recipient services
+      - -> Prevent third party from tampering with the JWT
+  - OAuth 2.0: authentication protocol originally designed to authorize a third party app without revealing its password:
+    - Flows:
+      - API client flow:
+        - IMG 11.4
+      - Login-based client flow:
+        - IMG 11.5
+    - Refresh token steps:
+      - API gateway obtains a new access token: make an OAuth 2.0 Refresh Grant request with the refresh token to the authen (OAuth) server
+      - Authen server returns a new access token if the refresh token hasn't expired or revoked
+      - API gateway passes the new access token to the services & return it to the client
+    - Advs:
+      - Proven security standard
+      - Save dev time: don't have to dev security infra (authentication & role management)
+- Logging infra:
+  - ELK stack (popular)
+    - Elastic search: text-search oriented NoSQL DB -> used as logging server
+    - Logstash: log pipeline that aggregates the service logs & writes to Elastic search
+    - Kibana: visualization tool for Elastic search
+  - Other log pipelines: Fluentd, Apache Flume
+- Distributed tracing:
+  - B3: common standard for propagating trace info
+  - Distributed tracing server: Open Zipkin, AWS X-ray
+- Application metric:
+  - Prometheus: popular open source monitoring & alerting system. Use pull model.
+  - Grafana: data visualization tool, can work with Prometheus. Can set up alerts for metrics.
+- Exception tracking:
+  - Honeybadger: cloud-based service
+  - Sentry.io: have both cloud-based version and open source version to deploy on your own infra
+- Microservice chassis frameworks:
+  - Java: Spring Boot, Spring Cloud
+  - Golang: Go Kit, Micro
+- Service mesh: Istio, Linkerd, Conduit

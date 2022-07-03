@@ -44,10 +44,10 @@
   - Consumer-side contract test (303)
   - Service component test (335)
 - Security patterns:
-  - Access token (354)
+  - Access token: API gateway passes a token containing information about the user (eg identity & roles) to the services that it invokes
 - Cross-cutting concerns patterns:
-  - Externalized configuration (361)
-  - Microservice chassis (379)
+  - Externalized configuration: provide the configuration property values to a service instance at runtime
+  - Microservice chassis: a framework/set of frameworks that handle cross-cutting concerns (eg observability, config)
 - Observability patterns:
   - Application metrics (373)
   - Audit logging (377)
@@ -59,7 +59,9 @@
   - Deploy a service as a container (393)
   - Deploy a service as a VM (390)
   - Language-specific packaging format (387)
-  - Service mesh (380)
+  - Service mesh:
+    - Networking infra that handles all communication between services and external apps
+    - Implement cross-cutting concerns (eg circuit breaker, distributed tracing, service discovery, load balancing, rule-based traffic routing)
   - Serverless deployment (416)
   - Sidecar (410)
 - Refactoring to microservices patterns:
@@ -87,6 +89,14 @@
   - A cluster of domain objects within a boundary that can be treated as a unit
   - Consist of a root entity and possibly one or more other entities and value objects
 - Domain event (in DDD): sth happened to an agg (eg state change)
+- Authentication: verify the identity of the principal (app or human) that is attempting to access the app
+- Authorization: verify that the principal is allowed to perform the requested operation on the specified data:
+  - Role-based security: assign each user one or more roles that grant them permission to invoke particular operations
+  - Access control list: grant users or roles permission to perform an operation on a particular business object or aggregate
+- Audit: track the operations that a principal performs in order to detect security issues, help CS & enforce compliance
+- Trace (in distributed tracing): represent an external request, consist of one or more spans
+- Span (in distributed tracing): represent an operation. Key attributes: operation name, start & end time.
+- Aspect oriented programming (AOP) (~middleware in Node): automatically intercept each service method call & perform an action
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith

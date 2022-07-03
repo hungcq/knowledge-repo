@@ -86,6 +86,18 @@
     - Frameworks to dev your own
     - Graph API techs
 - Chap 11:
+  - Security: authentication & authorization:
+    - Review of security in monolith
+    - In microservice: archi, token approach, OAuth standard & archi
+  - Configuration: problems, push-based & pull-based external config: design, advs & disadvs
+  - Observability aspects, archi & techs:
+    - Health check
+    - Log
+    - Distributed tracing
+    - Exception tracking
+    - App metric
+    - Audit log
+  - Microservice chassis & service mesh: def, overview, techs
 - Chap 13:
   - Overview: consideration before refactoring, non-strat and overview of strangler strat
   - 3 main strangling strats: usage, advs, design issues:
