@@ -1,0 +1,93 @@
+## 5. Designing business logic in a microservice architecture
+- Design issues:
+  - Eliminate object references spanning service boundaries
+  - Design business logic that works within the transaction management constraints of microservice architecture
+### Business logic organization patterns
+- Transaction script pattern:
+  - Archi:
+    - Scripts locate in service classes as methods, once for each request/system operation, containing business logic of the request
+    - Service method accesses DB via data access objects
+    - Data objects are pure data with little/no behavior
+  - Adv: simple to write
+  - Disadv: hard to extend & maintain
+  - Usage: simple business logic
+- Domain model pattern:
+  - Archi (~object oriented design):
+    - Business logic consists of an object model - network of relatively small classes
+    - Classes correspond directly to concepts from problem domain, most contain both state and behavior
+    - -> Simple service methods: business logic delegated to domain objects
+    - Service method's logic: ~aggregate pattern (below)
+  - Advs:
+    - Modular
+    - Easy to understand
+    - Easy to test each class individually
+    - Easy to change/extend
+- Domain driven design:
+  - Building blocks:
+    - Entity: an object with a persistent identity. 2 entities with same attribute values are dif objects.
+    - Value object: an object as a collection of values. 2 values object with same attribute values can be used interchangeably.
+    - Factory
+    - Repository
+    - Service
+  - Fuzzy boundaries problem: when updating a business object:
+    - What to load/delete?
+    - What rules to enforce?
+  - -> Solution: aggregate pattern:
+    - Focus of design: identify aggregates, their boundaries & roots
+    - Characteristics:
+      - (1) Operations are invoked on the aggregate root (via a method), acting on the entire aggregate rather than parts of it
+      - An aggregate is the object of storage, often loaded entirely from the DB -> avoid complication; scaling DB by sharding agg is straightforward
+      - Concurrency is handled by locking the aggregate root (eg version number/DB level lock)
+    - Advs:
+      - Decompose a domain model into chunks, which are easier to understand
+      - (1) advs:
+        - Clarify the scope of operations (eg load, update, delete)
+        - Enforces rules: no accidental update of a dif agg
+    - Aggregate rules:
+      - Client can only update an agg by invoking a method on the agg root
+      - Inter-agg references must use primary keys instead of object references. Advs:
+        - Loosely coupled
+        - Ensure boundaries
+        - Ref can span services
+      - One transaction creates or updates one agg. Advs:
+        - Trans is contained within a service
+        - Match the limited trans model of most NoSQL DB
+    - Agg size consideration: small (vs big):
+      - Advs: scalable, modular, reduce update conflicts
+      - Disadv: trans updating multiple aggs is not atomic
+    - Design business logic:
+      - Bulk of business logic: in aggs
+      - The rest of business logic:
+        - Sagas: orchestrating logic
+        - Services:
+          - Load agg from DB using Repository, invoke one of its methods, then save it using Repository
+          - Invoke external services
+          - Publish events
+          - Create saga if update spans multiple services
+### Publish domain event
+- If there are interested consumers, agg publish event each time its state changes or when it is created
+- Domain event presentation:
+  - By a class in the domain model (eg OrderCreated), with properties that convey the event meaningfully
+  - Has metadata (eg event ID & timestamp, auditing data). Can be put in:
+    - The event class
+    - Super class
+    - Wrapper class
+- Approaches to identify domain events:
+  - Find in requirement for notification
+  - Use event storming meeting with domain experts. Steps:
+    - Brainstorm events
+    - Identify event triggers: user actions, external system, another domain event, passing of time
+    - Identify aggs that consumes each command and emits the corresponding event
+- Approaches to generate domain events:
+  - Agg invoke message API directly
+  - -> Problem: agg loaded from DB, not created -> can't use dependency injection to pass the messaging API
+  - Split responsibility between the agg and the service:
+    - Agg generate events whenever its state changes, return to service. Service publishes domain events as message:
+      - Adv: simple
+      - Disadv: agg's non-void methods is more complex -> not a problem for multiple-return-value languages
+    - Agg root accumulate events in a field. Service retrieves the events & publishes them.
+    - -> Difficult to implement
+- Publish event: service invoke domain event publisher interface (~command publisher interface)
+- Consume event: event consumer class (~command handler class) invoke service interface
+### Example: skipped
+- <img src="../../resources/microservices-patterns/5.12.png" alt="drawing" width="500"/>

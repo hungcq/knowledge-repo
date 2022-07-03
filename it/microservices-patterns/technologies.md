@@ -80,3 +80,7 @@
   - Java: Spring Boot, Spring Cloud
   - Golang: Go Kit, Micro
 - Service mesh: Istio, Linkerd, Conduit
+- VM deployment:
+  - Animator: EC2 AMI VM builder
+  - Packer (packer.io): modern VM image builder, support many virtualization techs (eg EC2, Digital Ocean, Virtual Box, VMware)
+  - Elastic Beanstalk: modern way to deploy services as VM on AWS

@@ -1,0 +1,39 @@
+## 8. External API patterns
+### Problems with client-invoking-services approach
+- Multiple requests via the Internet: inefficient & poor UX
+- Coupling -> hard to change APIs/architecture
+- Services might use client-unfriendly IPC mechanisms
+- It's ok for web app running in same data center to access the backend directly
+### API gateway pattern
+- API gateway's functions:
+  - Request routing
+  - API composition
+  - Protocol translation
+  - Edge functions (eg authentication, rate limiting, caching)
+  - -> Alternative: implement in an upstream service:
+    - Adv: separate concern
+    - Disadvs: increase network latency & complexity
+- Archi:
+  - <img src="../../resources/microservices-patterns/8.3.png" alt="drawing" width="500"/>
+- Ownership model:
+  - <img src="../../resources/microservices-patterns/8.6.png" alt="drawing" width="500"/>
+  - *Note: common layer functions: request routing, authen...
+  - Deployment pipeline must be fully automated to avoid blocking
+- Backend for frontend pattern:
+  - Archi:
+    - <img src="../../resources/microservices-patterns/8.7.png" alt="drawing" width="500"/>
+    - Use shared lib for common functionality
+  - Advs: of microservices
+- Advs:
+  - Encapsulate internal structure of the app
+  - Provide client-specific API -> reduce number of round-trips & simplify client code
+- Disadvs:
+  - Add a new highly available component
+  - Risk of becoming a dev bottleneck
+  - -> Updating process should be lightweight
+- Design issues:
+  - Performance & scalability: use async IO (eg Node) for IO intensive logic
+  - Need to invoke services concurrently to improve performance
+  - -> Need to write maintainable concurrent code (eg reactive programming, JS promise) to avoid callback hell
+  - Handle partial failure: use techniques in chap 3
+  - Fit the current archi: need to consider when choose tech/framework

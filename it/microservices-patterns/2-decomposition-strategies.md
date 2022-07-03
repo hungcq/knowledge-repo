@@ -1,0 +1,93 @@
+## 2. Decomposition strategies
+### Architectural view & architectural style
+- Architectural view in 4+1 model: describes a particular aspect of the architecture
+  - <img src="../../resources/microservices-patterns/2.1.png" alt="drawing" width="500"/>
+- Architectural style:
+  - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
+  - An app usually uses a combination of archi styles
+### Styles apply to the logical view
+- Layered (eg 3-tier architecture)
+- Hexagonal:
+  - Business logic at the center, has ports, interact with the outside via ports
+  - <img src="../../resources/microservices-patterns/2.2.png" alt="drawing" width="500"/>
+  - Port:
+    - Defines a set of operations
+    - Usually interface
+    - Types:
+      - Inbound: API exposed by business logic (eg service interface), allow it to be invoked by external apps
+      - Outbound: define how business logic invoke external systems (eg repository interface)
+  - Adapter types:
+    - Inbound: handle outside requests by invoking business logic via inbound port (eg MVC controller)
+    - Outbound: implements outbound port, invoked by business logic and invoke external apps (eg data access object DAO)
+  - -> Adapters depend on business logic
+  - Advs:
+    - Decouple business logic from presentation & data access logic in the adapters
+    - -> Easier to test business logic in isolation
+    - Flexible, reflect modern app architecture: multiple, exchangeable adapters
+    - Usage: design each service in a microservice archi
+### Styles apply to the implementation view:
+- Monolithic archi
+- Microservice archi:
+  - Component: service:
+    - With its own logical view archi (usually hexagonal) & potentially separate technology stack
+    - Implementation view can take many form (see Chap 12)
+    - Correspond to business capabilities
+    - Has an API to provide client access to its functionality. API consists of:
+      - Commands: perform action & update data
+      - Queries: retrieve data
+      - Events: published by service, consumed by its clients
+    - Size of service:
+      - Mostly unimportant, compared to clear, focused responsibility of each service
+      - Sign of well-designed service:
+        - Can be developed by a small team with minimal lead time and collaboration with other teams
+        - A team might only be responsible for a single service
+      - Sign of badly designed service:
+        - Requires a large team
+        - Take a long time to test
+        - Constantly need to change because of changes to other services or trigger changes in other services -> distributed monolith
+  - Connector: communication protocol that services use to communicate, implemented using IPC mechanism
+  - Key constraint: services are loosely coupled:
+    - Services as units of modularity, API as boundary: all interactions with the service happen via its API
+    - -> Easier to preserve modularity
+    - Restrict how services collaborate: not via DB
+    - -> Each service has its own database
+    - Advs:
+      - Encapsulate implementation details -> can change without impacting clients
+      - Improve app dev time attribute (eg understandability maintainability, testability)
+      - Improve runtime isolation: can't lock DB of other services
+  - Should only use shared libs for functionality that is unlikely to change
+### Steps to define an app's microservice architecture:
+- Not a process to follow mechanically, but likely to be iterative and requires creativity
+- <img src="../../resources/microservices-patterns/2.5.png" alt="drawing" width="500"/>
+- Step 1: identify the system operations:
+  - System operation def: abstraction of a request that the app must handle. Can be either:
+    - Command: update data
+    - Query: retrieve data
+  - <img src="../../resources/microservices-patterns/2.6.png" alt="drawing" width="500"/>
+  - Steps:
+    - Create a high-level domain model: by analyzing the nouns in the user stories/scenarios and talking to domain experts
+    - -> Result: domain models containing classes
+    - Define system operations:
+      - <img src="../../resources/microservices-patterns/tab-2.1.png" alt="drawing" width="500"/>
+      - Derive from verbs in user stories
+      - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
+- Step 2: define services by business capability:
+  - Adv: business capabilities are stable -> resulting archi is stable
+  - The resulting services are only the first attempt at defining the archi
+  - -> May evolve over time as more is learned about the domain:
+    - Combine services due to excessive IPC
+    - Split services due to high complexity
+  - Use domain driven design (DDD) as an alternative:
+    - Domain def: app's problem space
+    - Define a separate domain model for each subdomain -> service correspond to subdomain
+    - Identify subdomain by business capability
+  - Decomposition design issues:
+    - Network latency: combine service to reduce IPC
+    - Sync IPC reduces latency: use async messaging
+    - Managing data consistency: distributed trans or saga
+    - Obtain a consistent view of the data: rarely a problem in practice
+    - God classes prevent decomposition: apply DDD and use a separate domain model for each service
+    - -> Each service has its own domain model with its own version of the god class
+- Step 3: define service APIs: steps:
+  - Assign system operations to services
+  - Determine the APIs required to support collaboration between services for each system operation: independent of IPC technology

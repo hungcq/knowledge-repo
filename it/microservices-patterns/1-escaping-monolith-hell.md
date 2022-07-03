@@ -1,0 +1,100 @@
+## 1. Escaping monolithic hell
+- Monolithic architecture:
+  - <img src="../../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
+  - Suitable for new, small app
+  - Benefits when the app is small:
+    - Simple to dev: suitable for IDE & dev tools
+    - Easy to make radical changes
+    - Easy to test
+    - Easy to deploy
+    - Easy to scale
+  - Drawbacks when the app is big:
+    - Too complex -> difficult to dev & debug
+    - Dev is slow: lag IDE, slow build, long start up time -> edit, build, run, test loop takes a long time
+    - Path from commit to deployment is long:
+      - Many devs -> hard to merge & need further testing
+      - Complex -> need careful, system testing
+    - Difficult to scale: conflicting resource requirements from dif modules
+    - Not reliable:
+      - Hard to test thoroughly
+      - Lack of fault isolation
+    - Locked into an obsolete tech stack: rewrite whole app is risky
+- Software architecture mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
+- 3 ways to scale an app:
+  - Load balance requests across multiple instances:
+    - Randomly
+    - Based on request's attribute
+  - Decompose by function into multiple services. Can be combined with load balancing.
+- Microservice architecture:
+  - <img src="../../resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
+  - Suitable for large, complex app
+  - Benefits: of small, independent services:
+    - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
+      - Testability
+      - Deployability: usually don't require coordination
+      - Autonomous, loosely coupled teams
+    - Maintainability
+    - Scalability: based on resource requirement of each service
+    - Easy to experiment & adopt new techs
+    - Reliability:
+      - Better fault isolation
+      - Easier to test
+  - Drawbacks:
+    - Difficult to find the right set of services
+    - -> Can result in distributed monolith
+    - Complex distributed system:
+      - IPC
+      - Partial failures
+      - Transactions & queries spanning multiple services
+      - Dev: not supported by IDE, hard to do automated testing multiple services
+      - Operational complexity: management & deployment
+    - -> Require sophisticated dev & operation skills
+    - Need coordination when deploying features spanning many services
+    - Difficult to decide when to adopt
+  - -> Many issues has multiple solutions, each with different set of tradeoffs
+- Pattern:
+  - Describe:
+    - Issues
+    - Result:
+      - Benefit: solved issues
+      - Drawback: unsolved issues
+      - New issues
+    - Related patterns
+  - -> Objective -> better decision making
+  - Can be organized into group: handle problems in a particular area
+  - Pattern language: collection of related patterns that solve problems within a particular domain
+- Microservice pattern language:
+  - Software pattern: solves a software architecture or design problem by defining a set of collaborating software elements:
+    - Object-oriented pattern: contains collaborating classes
+    - High level design pattern: contains collaborating services
+  - 3 layers:
+    - Infra patterns: solve infra issues outside development
+    - App infra patterns: solve infra issues related to development
+    - App patterns: solve development problems
+    - <img src="../../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
+  - Groups:
+    - Decomposition:
+      - <img src="../../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
+    - Communication:
+      - <img src="../../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
+    - Data consistency:
+      - <img src="../../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
+    - Data query:
+      - <img src="../../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
+    - Deployment:
+      - <img src="../../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
+    - Observability
+    - Automated testing
+    - Crosscutting concerns
+    - Security
+- Process & organization:
+  - Imp for success, beside architecture
+  - <img src="../../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
+  - Organization: team of teams, each 8-12 people:
+    - Each team has clear business-oriented goal:
+      developing and possibly operating one or more services that implement a feature or a business capability
+    - Cross-functional, can develop, test, and deploy its services without having to frequently communicate or coordinate with other teams
+    - Grow: adding teams
+  - -> Higher dev velocity, clear point of contact
+  - Development & delivery process: agile dev & deployment practices (eg Scrum, Kanban)
+  - Transition from monolithic to microservice architecture: need to consider reaction & emotion of people

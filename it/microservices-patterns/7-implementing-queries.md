@@ -1,0 +1,60 @@
+## 7. Implementing queries in a microservice architecture
+### Query using API composition pattern
+- Types of composer:
+  - FE client (eg web app)
+  - Service: API gateway/BFF variant
+- Design issues:
+  - Decide which component to act as API composer:
+    - Frontend client: not practical for clients accessing services via the internet: slow network
+    - API gateway -> allow clients accessing the gateway via the internet to efficiently retrieve the data
+    - Standalone API composer: usage:
+      - For queries used internally by multiple services
+      - Externally accessible queries with logic too complex to be part of API gateway
+  - Query performance: should call provider services in parallel
+- Adv: simple to implement
+- -> Should consider first when design queries
+- Disadvs:
+  - Costly query
+  - Reduced availability: involve multiple services. Solution: see chap 3 - RPC design issues: recover from an unavailable service
+  - Lack of transactional data consistency
+### Query using CQRS pattern
+- Usages:
+  - When API composition can't efficiently perform a query: not all services store attributes that can be used to filter or sort:
+    - <img src="../../resources/microservices-patterns/7.7.png" alt="drawing" width="500"/>
+    - Solution:
+      - API composer retrieve & join large data set -> inefficient
+      - Fetch IDs, then bulk fetch other services -> require bulk fetch API
+  - Service data model doesn't efficiently support the query (eg geospatial/text search query)
+  - Need to separate concerns: service responsibility is maintaining business data, not querying data
+- Archi:
+  - <img src="../../resources/microservices-patterns/7.8.png" alt="drawing" width="500"/>
+  - <img src="../../resources/microservices-patterns/7.10.png" alt="drawing" width="500"/>
+  - Command/domain model:
+    - Handle CUD operations using its own database
+    - Can handle simple queries (eg non-join, primary key-based query)
+  - Query model: handle nontrivial queries
+  - Can be applied within a service or to define query services: build DB by subscribing to events published by multiple services
+- Advs:
+  - Enable efficient queries
+  - Enable efficient implementation of diverse queries using dif types of DB
+  - Make querying possible in an event sourcing app
+  - Improve separation of concerns: both command side & query side are simpler & easier to maintain
+- Disadvs:
+  - Complex archi -> increased dev & operational effort
+  - Replication lag -> client must handle inconsistency by:
+    - Command side & query side APIs return version. When out of date, client poll the query side.
+    - Update local model using data returned by the command
+    - -> UI code might need to duplicate server side code
+- Design issues:
+  - Choose datastore tech for the view:
+    - Consideration:
+      - Characteristics of queries
+      - How to efficiently implement update operations when receiving events
+    - NoSQL advs: richer data mode, higher performance
+    - SQL advs: familiar, BI, non-primary key-based update
+  - Design data access module:
+    - Handle concurrency: use lock or update DB records without reading them first
+    - Handle duplicate event:
+      - Idempotent
+      - Record max event ID or map of (agg type-agg ID, max event ID)
+    - Build & update CQRS view: use archived event. Use snapshot when don't have all events.

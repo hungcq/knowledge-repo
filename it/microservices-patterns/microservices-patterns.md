@@ -24,6 +24,7 @@ Last part of the book handles the difficulty when transitioning from monolithic 
 # Criticism
 - Implementation examples in each chapter is too elaborated, make it difficult to read, esp without familiarity with Java & Spring
 - -> Maybe can organize the book differently? Architecture part vs Technologies/examples part.
+- Preface: are enterprise applications are typically large monoliths?
 - Chap 2: decompose by subdomain pattern part has too vague a description to apply. Result is the same as using decompose by business capability?
 - Chap 3:
   - Polling publisher pattern faces the same initial problem:

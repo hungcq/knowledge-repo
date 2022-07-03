@@ -98,6 +98,18 @@
     - App metric
     - Audit log
   - Microservice chassis & service mesh: def, overview, techs
+- Chap 12:
+  - Overview of deployment: def, history, functions of production env
+  - 4 deployment patterns: archi, pipeline, process, advs & disadvs:
+    - Language-specific package
+    - Virtual machine
+    - Container
+    - Serverless
+  - Technologies: archi, deployment & upgrade process with examples:
+    - Docker
+    - Kubernetes
+    - Istio
+    - AWS lambda
 - Chap 13:
   - Overview: consideration before refactoring, non-strat and overview of strangler strat
   - 3 main strangling strats: usage, advs, design issues:

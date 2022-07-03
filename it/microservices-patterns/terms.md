@@ -97,6 +97,12 @@
 - Trace (in distributed tracing): represent an external request, consist of one or more spans
 - Span (in distributed tracing): represent an operation. Key attributes: operation name, start & end time.
 - Aspect oriented programming (AOP) (~middleware in Node): automatically intercept each service method call & perform an action
+- Deployment: combination of process & architecture:
+  - Deployment process: steps that must be performed by people (devs & operations) to get software into production
+  - Deployment architecture: structure of the env in which that software runs
+- Container image: a filesystem image consisting of the app & any software required to run the service
+- Release: make a service in production available to handle production traffic
+- Sidecar: a process or container that runs alongside the service instance and implements cross-cutting concerns
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith
