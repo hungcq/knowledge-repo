@@ -86,6 +86,30 @@
     - Off-the-shelf solutions
     - Frameworks to dev your own
     - Graph API techs
+- Chap 9:
+  - Automated testing vs manual testing
+  - Testing microservices overview:
+    - Def, concepts, types
+    - Test double: usage & types
+    - Testing services interaction: consumer driven contract testing: concepts & process
+    - Deployment pipeline with tests
+  - Unit testing guide with example for dif type of classes in a service: setup, execution & verification:
+    - Entities & value object
+    - Saga
+    - Domain service
+    - HTTP request handler
+    - Message handler
+- Chap 10:
+  - Integration test for dif types of interactions with examples:
+    - Persistent
+    - HTTP req/res
+    - Publish/subscribe
+    - Async req/res
+  - Component tests:
+    - Approaches -> use DSL
+    - Types & implementation
+    - Setup & run
+  - End-to-end tests: consideration, implementation, setup & run
 - Chap 11:
   - Security: authentication & authorization:
     - Review of security in monolith

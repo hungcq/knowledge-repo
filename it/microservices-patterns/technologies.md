@@ -85,3 +85,11 @@
   - Animator: EC2 AMI VM builder
   - Packer (packer.io): modern VM image builder, support many virtualization techs (eg EC2, Digital Ocean, Virtual Box, VMware)
   - Elastic Beanstalk: modern way to deploy services as VM on AWS
+- Testing:
+  - Mockito: popular mock object framework for Java
+  - Consumer driven contract test:
+    - Spring Cloud Contract: for Spring
+    - Pact frameworks: available in many languages
+  - Gherkin: DSL for writing executable specifications
+  - Cucumber: test automation framework for Gherkin
+- Docker Compose: tool which allows the definition of a set of containers, then starts & stops them as a unit 

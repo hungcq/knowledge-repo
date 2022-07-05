@@ -103,6 +103,12 @@
 - Container image: a filesystem image consisting of the app & any software required to run the service
 - Release: make a service in production available to handle production traffic
 - Sidecar: a process or container that runs alongside the service instance and implements cross-cutting concerns
+- Test case (test): a set of test inputs, execution conditions & expected results to verify the behavior of the system under test (SUT)
+- Test suite: a collection of related tests
+- Test double: an object that simulates the behavior of the dependency
+- Consumer driven contract test: an integration test for a provider that verifies that the shape of its API matches the expectations of a consumer
+- Deployment pipeline: the automated process of getting code from dev's computer into production
+- User journey test: corresponds to a user's journey through the system
 
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith
