@@ -12,8 +12,9 @@
       - Level 2: use HTTP verbs to perform actions: GET, POST, PUT
       - Level 3: representation of a resource returned by GET request contains link for performing actions on the resource
       - -> Don't have to hard-wire URLs into client code
-    - Design issues:
-      - Fetch multiple resources in a single request: use alternative API technologies (eg GraphQL, Netflix Falcor)
+    - Difficulties:
+      - Fetch multiple resources in a single request
+      - -> Use alternative API technologies (eg GraphQL, Netflix Falcor)
       - Map operations to HTTP verbs (eg dif types of update operations on the same resource)
   - gRPC:
     - Binary-message based protocol: use Protocol Buffer as message format

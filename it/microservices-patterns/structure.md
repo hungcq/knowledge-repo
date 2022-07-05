@@ -45,11 +45,12 @@
     - Types of interaction
     - Define & evolve API
     - Message format
-  - RPC: advs, disadvs & mitigations, technologies
+  - RPC: advs, disadvs, design issues, technologies
   - Messaging:
     - How to implement dif interaction styles
     - API def
-    - Advs, disadvs & mitigations
+    - 2 types of architecture, advs & disadvs: broker-less vs broker-based
+    - Design issues
     - Techs
     - How to replace sync interactions to increase availability
 - Chap 4:
