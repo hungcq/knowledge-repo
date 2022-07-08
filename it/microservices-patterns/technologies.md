@@ -30,6 +30,11 @@
   - LinkedIn Databus: mine Oracle trans log & publishes change as events
   - DynamoDB streams
   - Eventuate Tram: use MySQL biglog/Postgres WAL/polling to read from outbox table & publish to Kafka
+- Event sourcing event store frameworks:
+  - Event Store (eventstore.org): .NET
+  - Lagom
+  - Axon: Java, include CQRS
+  - Eventuate
 - API gateway:
   - Off-the-shelf product: AWS API gateway, Kong, Traefik
   - Framework to dev your own: Netflix Zuul, Spring cloud gateway

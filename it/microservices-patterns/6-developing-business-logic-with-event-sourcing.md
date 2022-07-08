@@ -1,1 +1,90 @@
-## 6. Developing business logic with event sourcing: skipped
+## 6. Developing business logic with event sourcing
+### Traditional persistence:
+- Approach:
+  - Map classes to DB tables
+  - Map classes field to DB columns
+  - Map instances to table's rows
+- Problems:
+  - Object-relation mismatch
+  - Business logic code might need to contain:
+    - Agg history
+    - Audit log
+    - Event publishing code
+  - -> Cost dev time & risk of out of sync with business logic
+### Event sourcing
+- Characteristics:
+  - Agg business logic is structure around the requirement to produce & consume events
+  - -> Change in agg business logic:
+    - <img src="../../resources/microservices-patterns/6.5.png" alt="drawing" width="500"/>
+  - Dif from normal domain event:
+    - Agg, not the consumer, determines the events & their structure
+    - Required: emitted for every state changes
+- 3 steps to load an agg:
+  - Load the events for the agg
+  - Create an agg instance using its default constructor
+  - Iterate through the events, calling `apply`
+- Steps to update agg:
+  - Load agg
+  - Invoke `process` method to gen new events
+  - Update the agg by iterating through the new events, calling `apply`
+  - Save the new events in the event store
+- Design issues:
+  - Handle concurrent update: use optimistic locking:
+    - Map agg root to a table with a `version` column, incremented whenever the agg is updated
+    - Use `SET VERSION = VERSION + 1 WHERE VERSION = <original version>` as part of a trans
+  - Publish event: polling/tailing the event table instead of the OUTBOX table
+  - Performance when reconstructing using a large number of events: periodically persist a snapshot of the agg's state:
+    - Load agg using the most recent snapshot & events occurred since the snapshot was created
+    - <img src="../../resources/microservices-patterns/6.8.png" alt="drawing" width="500"/>
+    - Snapshot format: JSON/memento pattern
+  - Idempotent message processing:
+    - Using relational DB: insert processed message ids into a table
+    - Using NoSQL DB:
+      - Store message ID in the events
+      - Detect duplicate by verifying that none of the agg's events contains the message ID
+      - Problem: when message doesn't generate event
+      - -> Save a pseudo-event to store the message ID -> event consumers must ignore it
+  - Evolve domain events: non-backward compatible changes:
+    - Use schema migration: migrate the DB using scripts
+    - Use a separate component - upcaster to transform events when they are loaded from the event store then save them to DB
+  - Delete data:
+    - Traditional way: soft-delete: emit DeletedEvent
+    - Challenge: hard delete an agg or a field:
+      - Solution 1: encryption:
+        - Each user has an encryption key, stored in a dif table
+        - Events containing user's personal info are encrypted using the key
+      - -> Deletes the key will delete all the data
+      - -> Can't deal with cases when a field is used as agg ID
+      - Solution 2: pseudonymization:
+        - Replace the field as a UUID, use the UUID as the agg ID
+        - Store UUID & field mapping in a DB table -> delete when needed
+  - Query: use CQRS
+- Advs:
+  - Reliably publish domain events
+  - Preserve agg history: can rebuild state of an agg at a given point in time
+  - Can be used for auditing purpose
+  - Mostly avoid Object Relational mismatch problem: event usually have a simple, serializable structure
+- Disadv: dif programming model: take time to learn, require rewriting business logic
+### Event store
+- Usually a hybrid of a DB & a message broker
+- Archi:
+  - <img src="../../resources/microservices-patterns/6.9.png" alt="drawing" width="500"/>
+### Using saga with event sourcing
+- Choreography-based saga:
+  - Adv: easy to implement
+  - Disadv: event has a dual purpose: required to be published even if there is no state change or no agg created (eg error event)
+- Design issues when using orchestration-based saga:
+  - Create a saga reliably:
+    - Relational DB: create in the same trans
+    - NoSQL DB: use an event handler that creates the orchestrator in response to a domain event emitted by the agg
+    - -> Can also be applied to Relational event store
+    - -> Promote loose coupling: service no longer explicitly instantiate saga
+  - Implement saga participant:
+    - Relational DB event store: atomically process saga command messages & send replies
+    - NoSQL event store: use 2-step process to send reply message:
+      - Add SagaReplyRequested pseudo event to be saved in the event store when creating or updating an agg
+      - SagaReplyRequested event handler use the event data to construct reply message & writes to the reply channel
+  - Persist saga orchestrator: use 2 types of events: created & updated
+  - Send command message reliably in NoSQL event store: 2 steps:
+    - Store SagaCommandEvent with all data needed to send the command (eg destination channel, command object)
+    - SagaCommandEvent handler processes events & sends commands

@@ -30,7 +30,7 @@
   - Aggregate: organize a domain model as a collection of aggregates, each of which is a graph of objects that can be treated as a unit
   - Domain event: an aggregate publishes a domain event when it's created or undergoes some other significant change
   - Domain model: organize business logic as an object model consisting of classes that have state and behavior
-  - Event sourcing (184)
+  - Event sourcing: persist an agg as a sequence of domain events that represent state changes.
   - Transaction script: organize business logic as a collection of procedural transaction scripts, one for each type of request
 - Querying patterns:
   - API composition: implement a query that retrieves data from several services by querying each service via its API & combine the results
@@ -89,6 +89,7 @@
   - A cluster of domain objects within a boundary that can be treated as a unit
   - Consist of a root entity and possibly one or more other entities and value objects
 - Domain event (in DDD): sth happened to an agg (eg state change)
+- Optimistic locking: typically use a version column to detect whether the agg has changed since it was read
 - Authentication: verify the identity of the principal (app or human) that is attempting to access the app
 - Authorization: verify that the principal is allowed to perform the requested operation on the specified data:
   - Role-based security: assign each user one or more roles that grant them permission to invoke particular operations

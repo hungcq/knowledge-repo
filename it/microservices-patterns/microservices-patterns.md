@@ -34,6 +34,7 @@ Last part of the book handles the difficulty when transitioning from monolithic 
 - Chap 5:
   - Rule 3 of aggregate: one trans creates or updates one agg: how about aggs of the same type?
   - How to load other aggs for business logic? CQRS? Req/res?
+- Chap 6: deleting techniques only work when deleting a user data completely, not deleting a particular field
 - Chap 7: when discuss ways to build CQRS view, haven't dealt with: how to choose the starting event correspond to the snapshot
 - Chap 9: all the examples are solitary unit test. Can't see why entity tests and saga tests are sociable tests.
 - Chap 10: where to run the tests? Need to read full code examples.

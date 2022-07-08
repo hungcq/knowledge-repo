@@ -68,6 +68,13 @@
     - Domain model pattern -> Domain driven design
     - Publish domain event: domain event pattern
   - 2 examples of business logic design
+- Chap 6:
+  - Traditional persistence: approach & problems
+  - Event sourcing: def, char, advs & disadvs, design issues
+  - Event store: archi & example
+  - Using saga with event sourcing:
+    - Choreography-based saga: problems
+    - Orchestration-based saga: design issues
 - Chap 7:
   - API composition: archi, design issues, advs & disadvs, usage
   - CQRS (same as above):
