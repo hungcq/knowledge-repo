@@ -1,0 +1,31 @@
+# I.	Foundations of data systems
+## 1. Reliable, scalable & maintainable applications
+- Functions of data-intensive app:
+  - Store data: DB
+  - Remember search operation, speed up read: cache
+  - Search by key word: search index
+  - Send mes to other processes: stream processing
+  - Crunch large volume of data: batch processing
+- 3 non-functional concerns:
+  - Reliability: work correctly, even when faults occur (fault tolerant). Handle certain types of fault:
+    - Hardware
+    - Software
+    - Human
+  - Scalability: maintain performance when load increases:
+    - Load: load params:
+      - Request/s
+      - Read/write DB
+      - CCU
+      - Cache hit rate
+    - Performance:
+      - Through put
+      - Response time: distribution of value (e.g., 99.9 percentile histogram)
+      - Maintain performance: scale up vs scale out
+  - Maintainability: let people work productively on the system
+    - Operability
+    - Simplicity:
+      - Good abstraction (APIs…)
+      - Avoid accidental complexity
+    - Evolvability:
+      - Simplicity
+      - TTD, refactoring

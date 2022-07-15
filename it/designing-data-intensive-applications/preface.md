@@ -1,0 +1,12 @@
+## Preface
+- Data-intensive (vs CPU intensive): data is the main challenge:
+  - Quantity
+  - Complexity
+  - Speed of change
+- Focus:
+  - How & why dif data techs work
+  - Make good design decisions
+- Outline:
+  - Fundamentals
+  - Distributed data
+  - Derived data
