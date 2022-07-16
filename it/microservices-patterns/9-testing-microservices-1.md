@@ -28,12 +28,12 @@
   - Component tests: verify the behavior of a service in isolation
   - End-to-end tests: verify the behavior of the entire app
 - -> Testing strat: write more small tests:
-  - <img src="../../resources/microservices-patterns/9.5.png" alt="drawing" width="500"/>
+  - <img src="./resources/9.5.png" alt="drawing" width="500"/>
 - Categorize test using test quadrant:
-  - <img src="../../resources/microservices-patterns/9.4.png" alt="drawing" width="500"/>
+  - <img src="./resources/9.4.png" alt="drawing" width="500"/>
 - Test driven way to fix bug: write a test that reproduces the bug and write code that fixes it
 - Deployment pipeline:
-  - <img src="../../resources/microservices-patterns/9.9.png" alt="drawing" width="500"/>
+  - <img src="./resources/9.9.png" alt="drawing" width="500"/>
   - Test stages in deployment pipeline:
     - Pre-commit: run unit tests
     - Commit tests: compile service, run unit tests, perform static code analysis

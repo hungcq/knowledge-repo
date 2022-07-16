@@ -14,14 +14,14 @@
     - Adv: separate concern
     - Disadvs: increase network latency & complexity
 - Archi:
-  - <img src="../../resources/microservices-patterns/8.3.png" alt="drawing" width="500"/>
+  - <img src="./resources/8.3.png" alt="drawing" width="500"/>
 - Ownership model:
-  - <img src="../../resources/microservices-patterns/8.6.png" alt="drawing" width="500"/>
+  - <img src="./resources/8.6.png" alt="drawing" width="500"/>
   - *Note: common layer functions: request routing, authen...
   - Deployment pipeline must be fully automated to avoid blocking
 - Backend for frontend pattern:
   - Archi:
-    - <img src="../../resources/microservices-patterns/8.7.png" alt="drawing" width="500"/>
+    - <img src="./resources/8.7.png" alt="drawing" width="500"/>
     - Use shared lib for common functionality
   - Advs: of microservices
 - Advs:

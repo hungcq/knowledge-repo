@@ -1,6 +1,6 @@
 ## 1. Escaping monolithic hell
 - Monolithic architecture:
-  - <img src="../../resources/microservices-patterns/1.1.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.1.png" alt="drawing" width="500"/>
   - Suitable for new, small app
   - Benefits when the app is small:
     - Simple to dev: suitable for IDE & dev tools
@@ -26,7 +26,7 @@
     - Based on request's attribute
   - Decompose by function into multiple services. Can be combined with load balancing.
 - Microservice architecture:
-  - <img src="../../resources/microservices-patterns/1.7.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.7.png" alt="drawing" width="500"/>
   - Suitable for large, complex app
   - Benefits: of small, independent services:
     - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
@@ -71,25 +71,25 @@
     - Infra patterns: solve infra issues outside development
     - App infra patterns: solve infra issues related to development
     - App patterns: solve development problems
-    - <img src="../../resources/microservices-patterns/1.10.png" alt="drawing" width="500"/>
+    - <img src="./resources/1.10.png" alt="drawing" width="500"/>
   - Groups:
     - Decomposition:
-      - <img src="../../resources/microservices-patterns/1.11.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.11.png" alt="drawing" width="500"/>
     - Communication:
-      - <img src="../../resources/microservices-patterns/1.12.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.12.png" alt="drawing" width="500"/>
     - Data consistency:
-      - <img src="../../resources/microservices-patterns/1.13.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.13.png" alt="drawing" width="500"/>
     - Data query:
-      - <img src="../../resources/microservices-patterns/1.14.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.14.png" alt="drawing" width="500"/>
     - Deployment:
-      - <img src="../../resources/microservices-patterns/1.15.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.15.png" alt="drawing" width="500"/>
     - Observability
     - Automated testing
     - Crosscutting concerns
     - Security
 - Process & organization:
   - Imp for success, beside architecture
-  - <img src="../../resources/microservices-patterns/1.16.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.16.png" alt="drawing" width="500"/>
   - Organization: team of teams, each 8-12 people:
     - Each team has clear business-oriented goal:
       developing and possibly operating one or more services that implement a feature or a business capability

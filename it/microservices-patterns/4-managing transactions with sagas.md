@@ -23,15 +23,15 @@
 ### 2 ways to structure saga's coordination logic:
 - Choreography: distribute decision making and sequencing among the saga participants
   - Main communication method: events
-  - <img src="../../resources/microservices-patterns/4.4.png" alt="drawing" width="500"/>
+  - <img src="./resources/4.4.png" alt="drawing" width="500"/>
   - Disadv: risk of interaction being too complex for complex saga
   - Usage: simple sagas
 - Orchestration: centralize saga coordination logic in a saga orchestrator class
   - Mechanism: orchestrator sends command messages to saga participants telling them which operations to perform
-  - <img src="../../resources/microservices-patterns/4.6.png" alt="drawing" width="500"/>
+  - <img src="./resources/4.6.png" alt="drawing" width="500"/>
     - *Note*: Order service sends its own event to be consistent: saga treats Order service as just another participant
   - How to model the orchestrator: as state machine:
-    - <img src="../../resources/microservices-patterns/4.7.png" alt="drawing" width="500"/>
+    - <img src="./resources/4.7.png" alt="drawing" width="500"/>
     - Action: invoke a saga participant
     - Transition between states: triggered by completion of a local trans by a saga participant
     - -> Current state & outcome of local trans determine state transition & action to perform

@@ -19,7 +19,7 @@
 - Microservice security:
   - Authentication:
     - Approach: centralize authentication in the API gateway before forwarding to the services
-    - <img src="../../resources/microservices-patterns/11.3.png" alt="drawing" width="500"/>
+    - <img src="./resources/11.3.png" alt="drawing" width="500"/>
     - Advs:
       - One place to implement -> safe effort
       - Hide complexity of dif auth mechanisms from the services
@@ -70,7 +70,7 @@
     - -> Use open source frameworks
 ### Observability
 - Goal: make the service easier to manage & trouble shoot
-- <img src="../../resources/microservices-patterns/11.9.png" alt="drawing" width="500"/>
+- <img src="./resources/11.9.png" alt="drawing" width="500"/>
 - Aspects:
   - Health check:
     - Service exposes health check API endpoint which returns the health of the service
@@ -109,7 +109,7 @@
     - Types:
       - Infra-level metrics: eg CPU, memory, disk utilization
       - App-level metrics: eg request latency, QPS, num of requests
-    - <img src="../../resources/microservices-patterns/11.14.png" alt="drawing" width="500"/>
+    - <img src="./resources/11.14.png" alt="drawing" width="500"/>
     - Properties of a metric sample:
       - Name
       - Value
@@ -152,5 +152,5 @@
   - Adv: reduce dev effort
   - Disadv: need one for every language/platform used to write services
 - Service mesh:
-  - <img src="../../resources/microservices-patterns/11.17.png" alt="drawing" width="500"/>
+  - <img src="./resources/11.17.png" alt="drawing" width="500"/>
   - Help simplify the chassis: only implement concerns tightly integrated with app code (eg externalized config, health checks)

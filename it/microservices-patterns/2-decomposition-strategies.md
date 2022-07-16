@@ -1,7 +1,7 @@
 ## 2. Decomposition strategies
 ### Architectural view & architectural style
 - Architectural view in 4+1 model: describes a particular aspect of the architecture
-  - <img src="../../resources/microservices-patterns/2.1.png" alt="drawing" width="500"/>
+  - <img src="./resources/2.1.png" alt="drawing" width="500"/>
 - Architectural style:
   - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
   - An app usually uses a combination of archi styles
@@ -9,7 +9,7 @@
 - Layered (eg 3-tier architecture)
 - Hexagonal:
   - Business logic at the center, has ports, interact with the outside via ports
-  - <img src="../../resources/microservices-patterns/2.2.png" alt="drawing" width="500"/>
+  - <img src="./resources/2.2.png" alt="drawing" width="500"/>
   - Port:
     - Defines a set of operations
     - Usually interface
@@ -58,17 +58,17 @@
   - Should only use shared libs for functionality that is unlikely to change
 ### Steps to define an app's microservice architecture:
 - Not a process to follow mechanically, but likely to be iterative and requires creativity
-- <img src="../../resources/microservices-patterns/2.5.png" alt="drawing" width="500"/>
+- <img src="./resources/2.5.png" alt="drawing" width="500"/>
 - Step 1: identify the system operations:
   - System operation def: abstraction of a request that the app must handle. Can be either:
     - Command: update data
     - Query: retrieve data
-  - <img src="../../resources/microservices-patterns/2.6.png" alt="drawing" width="500"/>
+  - <img src="./resources/2.6.png" alt="drawing" width="500"/>
   - Steps:
     - Create a high-level domain model: by analyzing the nouns in the user stories/scenarios and talking to domain experts
     - -> Result: domain models containing classes
     - Define system operations:
-      - <img src="../../resources/microservices-patterns/tab-2.1.png" alt="drawing" width="500"/>
+      - <img src="./resources/tab-2.1.png" alt="drawing" width="500"/>
       - Derive from verbs in user stories
       - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
 - Step 2: define services by business capability:

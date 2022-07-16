@@ -22,21 +22,21 @@
     - Execute the test suites in the deployment pipeline of provider
     - -> If a consumer contract test fails -> provider has made a breaking change to the API
     - -> Need to fix or talk to consumer team
-    - <img src="../../resources/microservices-patterns/9.8.png" alt="drawing" width="500"/>
+    - <img src="./resources/9.8.png" alt="drawing" width="500"/>
   - Contract:
     - Consists of example messages that are exchanged during one interaction (eg HTTP req & res)
     - RPC: consist of example req & response
       - Provider side: invoke the provider with the contract req & verifies that it returns a res that match the contract's res
       - Consumer side: config a stub simulating provider's behavior
-      - <img src="../../resources/microservices-patterns/10.3.png" alt="drawing" width="500"/>
+      - <img src="./resources/10.3.png" alt="drawing" width="500"/>
     - Messaging: consist of example domain event
       - Provider side: verify that the test causes the provider to emit an event & the event match es the contract's event
       - Consumer side: verify that consumer can handle the event
-      - <img src="../../resources/microservices-patterns/10.4.png" alt="drawing" width="500"/>
+      - <img src="./resources/10.4.png" alt="drawing" width="500"/>
     - Async req/res: consist of req mes & res mes
       - Provider side: invoke the API with the contract req mes & verify that the res matches the contract res
       - Consumer side: config a stub subscriber which listens for contract req mes & reply with the specified res
-      - <img src="../../resources/microservices-patterns/10.5.png" alt="drawing" width="500"/>
+      - <img src="./resources/10.5.png" alt="drawing" width="500"/>
 ### Component tests
 - Implementation options:
   - Code: disadv:
@@ -47,7 +47,7 @@
     - Define tests using English-like scenarios
     - Execute the specifications using test automation framework
   - -> Don't need to manually translate scenarios into runnable code
-- <img src="../../resources/microservices-patterns/10.7.png" alt="drawing" width="500"/>
+- <img src="./resources/10.7.png" alt="drawing" width="500"/>
 - Steps:
   - Setup:
     - Replace a service's dependencies with stubs that simulate their behavior

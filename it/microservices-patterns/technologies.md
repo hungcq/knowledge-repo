@@ -40,7 +40,7 @@
   - Framework to dev your own: Netflix Zuul, Spring cloud gateway
   - Graph-based techs:
     - Advs: flexible queries, less dev effort
-    - <img src="../../resources/microservices-patterns/8.9.png" alt="drawing" width="500"/>
+    - <img src="./resources/8.9.png" alt="drawing" width="500"/>
     - GraphQL: standard, available in many languages. Apollo graphQL: popular Node implementation
     - Netflix Falcor: implementation
 - Authentication & authorization:

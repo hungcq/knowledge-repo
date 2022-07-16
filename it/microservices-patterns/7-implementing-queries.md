@@ -20,15 +20,15 @@
 ### Query using CQRS pattern
 - Usages:
   - When API composition can't efficiently perform a query: not all services store attributes that can be used to filter or sort:
-    - <img src="../../resources/microservices-patterns/7.7.png" alt="drawing" width="500"/>
+    - <img src="./resources/7.7.png" alt="drawing" width="500"/>
     - Solution:
       - API composer retrieve & join large data set -> inefficient
       - Fetch IDs, then bulk fetch other services -> require bulk fetch API
   - Service data model doesn't efficiently support the query (eg geospatial/text search query)
   - Need to separate concerns: service responsibility is maintaining business data, not querying data
 - Archi:
-  - <img src="../../resources/microservices-patterns/7.8.png" alt="drawing" width="500"/>
-  - <img src="../../resources/microservices-patterns/7.10.png" alt="drawing" width="500"/>
+  - <img src="./resources/7.8.png" alt="drawing" width="500"/>
+  - <img src="./resources/7.10.png" alt="drawing" width="500"/>
   - Command/domain model:
     - Handle CUD operations using its own database
     - Can handle simple queries (eg non-join, primary key-based query)
