@@ -92,5 +92,5 @@
   - Pre-computed (materialized) aggregates for fast query
   - Data cube/OLAP cube: grid of aggregates grouped by dif dimensions 
   - -> Faster but less flexibility. Write more expensive
-  - <img src="../../resources/designing-data-intensive-applications/3.12.png" width="500">
+  - <img src="./resources/3.12.png" width="500">
  
