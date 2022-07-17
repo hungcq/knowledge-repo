@@ -1,0 +1,103 @@
+## 11. Stream processing
+- Stream: data incrementally made available over time
+- Event stream: data management mechanism
+### 11.1. Transmitting event streams
+- Event: produced by producer -> encoded -> transmitted over network -> processed by multiple consumers
+#### Messaging systems
+- Adv over direct communication: allow multiple producers & consumers
+- Considerations:
+  - Produce faster than consume speed:
+    - Drop mes
+    - Buffer in a queue
+    - Backpressure
+  - Handle failure: durability vs throughput
+- Direct messaging via UDP multicast: message lost over network/when nodes down
+- Message broker: database optimized for handling message streams:
+  - Use queue -> async
+  - Delete mes when finish processing: can’t reprocess mes
+  - Slow when buffer is big (maybe written to disk)
+  - Notify client when data change (new mes)
+  - Deliver mes to multiple consumers:
+    - Load balancing: redeliver mes to other consumer in case no ack -> no mes order
+    - Fan-out
+#### Log-based message broker
+- Adv over traditional mes broker:
+  - Store mes to allow reprocessing
+  - Can produce even without consumer (no memory used up)
+- Use append-only log files, partitioned across machines
+- Topic: group of partitions with mes of the same type
+- Order: only within, not across partition
+- Parallelize by assign dif partition to dif consumer group (1/many nodes)
+- -> Problems:
+  - Num consumers must <= num partitions
+  - Head of line blocking within partition
+- Track processed mes by consumer offset
+- Old mes dropped if out of disk space
+### 11.2. Databases and streams
+- Replication log as data stream 
+- -> Keep heterogeneous data systems in sync
+- Problem with dual write (client write to both systems at the same time): write order can’t be ensure
+- Change data capture (CDC):
+  - Observe all change written to a leader DB, extract & replicate to other systems
+  - Optimizations:
+    - Taking DB snapshot corresponding to a log offset
+    - Log compaction: remove log record with the same key in case of overriding value/deletion
+- Event sourcing:
+  - Store all changes to application state as a log of change events
+  - Vs CDC:
+    - Higher level (application): user action instead of DB change
+    - Save all event, no compaction
+  - Event (fact) vs command (rejectable) -> command validation & event publishing must be in a sync block (atomic commit)
+- Immutability:
+  - DB as mutable state, change logs as immutable events
+  - -> Can derive multiple representations from the same logs
+  - Limitations:
+    - Async update: sync requires distributed atomic transaction
+    - Large change history
+    - Not allow deletion -> need to work around
+### 11.3. Processing streams
+- Process stream:
+  - Keeping data system in sync
+  - Push events to users
+  - Produce output stream (pipeline)
+- Stream processing for monitoring:
+  - Complex event processing (CEP): specify rule to search for patterns of events in a stream
+  - Stream analytics: aggregations & statistical metrics over a large number of events (rate, average, statistics over an interval)
+  - Maintaining materialized views
+  - Search for patterns in individual event/multiple events
+- Difficulty of reasoning about time:
+  - Use local system clock -> inaccurate in case of network fault, queueing, process restart
+  - End-user clock manipulation: must track send timestamp -> subtract with server timestamp to adjust event timestamp
+  - Handle straggler (delayed) event:
+    - Ignore
+    - Publish a correction/retract prev output
+  - Type of windows:
+    - Tumbling: fixed length, not overlap
+    - Hopping window: fixed length, overlap to provide smoothing
+    - Sliding window
+    - Session window: all events of the same user occur closely in time
+- Stream joins: need to maintain state
+  - Stream-stream (window join):
+    - Can be self-join if process related events of one stream
+    - Use hash table, drop old event if no matching event from the other stream
+  - Stream-table (stream enrichment):
+    - Query DB: slow
+    - Load a copy to processor node, update by change data capture
+  - Table-table (materialized view maintenance):
+    - Both streams are DB changelogs
+    - Output: changes to the materialized view of the join of 2 tables
+    - Example:
+      - Twitter post cache of followers: update when post added/follower changed
+      - -> Materialized view of post table & follower table
+  - Need to consider time dependence of joins
+- Fault tolerance: ensure each event processed only once:
+  - Microbatching & checkpointing: can’t deal with side effect
+  - Atomic commit
+  - Idempotence (e.g., write mes offset when update DB). Requirements:
+    - Deterministic operation
+    - No concurrent node updating the same value
+    - Fencing to avoid declared dead but actually alive situation
+- Rebuild state after failure:
+  - Replicate to external node
+  - Save to local disk
+  - Ignore, rebuild: in case of short window
