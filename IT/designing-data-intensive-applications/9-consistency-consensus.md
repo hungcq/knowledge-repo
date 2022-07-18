@@ -11,13 +11,14 @@
 - Not linearizable systems:
   - Multi-leader replication: no single copy of data
   - Leaderless replication: can’t solve cross-channel timing dependency even with strict quorum:
-  - <img src="./resources/9.6.png" width="500">
+    - <img src="./resources/9.6.png" width="500">
 - CAP: either consistent or available when partitioned 
 - -> Old theorem, not practical because ignore other faults
 - Cost of linearizability: performance
 ### 9.2. Ordering guarantees
 - Ordering preserve causality
-- Linearizability (total order - all operations are ordered) > causal consistency (partial order - concurrent operations exist): strongest consistency model that incurs no performance cost & can be available
+- Linearizability (total order - all operations are ordered) > causal consistency (partial order - concurrent operations exist):
+strongest consistency model that incurs no performance cost & can be available
 - Determine causal dependency: version vector to keep track of prior read -> overhead
 #### Sequence number ordering
 - Lamport timestamp: pair (counter, node ID): every node & client keep track of max counter value it has seen so far & update stale current value:
@@ -32,12 +33,12 @@
   - Append a “set username” mes to the log
   - Read the log, wait for the mes you just append to be delivered back
   - Check for messages contain the same username: if the first mes is your mes -> success 
-- -> Not ensure linearizable reads
+- -> Not ensure linearizable reads: changes are not immediately visible when reading from a data store updated async with the log
 - Ways to implement linearizable reads:
-  - Append a mes, read the log & wait until the mes is delivered back
+  - Append a dummy mes, read the log & wait -> do the actual read when the mes is delivered back
   - Fetch last mes position, wait until all mes up to that pos is delivered
   - Read from a sync replica
-- Implement total order broadcast using linearizable storage (other way around):
+- Implement total order broadcast using linearizable storage (the other way around):
   - Append a linearizable int to order mes
   - If node receive mes n + 2, must wait for n + 1 to arrive
 - Make all nodes agree on a linearizable int, even in case of failure -> consensus algo
@@ -58,14 +59,15 @@
   - -> Blocking atomic commit protocol
   - Coordinator app become stateful
 #### Fault-tolerant consensus
-- Decide on a sequence of values 
+- Decide on a sequence of values
 - -> Total order broadcast algo
 - Need leader to decide on the order
 - 2 voting steps:
   - Decide a leader: use an epoch number, ensure that within each epoch, the leader is unique
-  - Leader proposal: must wait for a quorum of nodes to response: leader with highest epoch win
+  - Leader proposal: must wait for a quorum of nodes to response: leader with the highest epoch win
 #### Coordination services
-- Design to hold small amount of (not frequently changed) data in memory (disk for persistent), replicated across all nodes using fault-tolerant total order broadcast algo
+- Design to hold small amount of (not frequently changed) data in memory (disk for persistent),
+replicated across all nodes using fault-tolerant total order broadcast algo
 - Features:
   - Linearizable atomic operations: need total order broadcast
   - Total ordering of operations: use increasing trans id

@@ -1,7 +1,7 @@
 # III. Derived data
 - Systems of record (normalized) vs derived data systems (redundant, denormalized)
 ## 10. Batch processing
-- 3 types of system:
+- 3 types of systems:
   - Services (online systems): request - response model, focus on response time
   - Batch processing systems (offline systems): operate on fixed set of input, focus on throughput
   - Stream processing systems (near-real-time systems): operate on events shortly after they happened
@@ -11,7 +11,7 @@
   - Experiment with prototypes
 - Example:
   - Sort data by key, then iterate & merge (reduce)
-  - Advs over program using in memory hash table: can handle case when there is not enough memory: written sort segments to disk (like LSM tree)
+  - Advs over program using in memory hash table: can handle case when there is not enough memory: write sorted segments to disk (like LSM tree)
 - Use a common interface: file (sequence of ASCII text)
 - Separate logic & wiring: use stdin as input & stdout as output
 ### 10.2. MapReduce & distributed filesystems
@@ -37,7 +37,7 @@
 - -> Need to use external workflow scheduler
 - Reduce-side joins & grouping:
   - Joins must be local to a single machine to be efficient
-  - 2 mappers for 2 sides of join: partition in the same way (hash of key…)
+  - 2 mappers for 2 sides of join: partition in the same way (eg hash of key)
   - Reducer download & merge both side of join
   - Handle hot keys:
     - 1 side of join sharded
@@ -51,14 +51,14 @@
   - Map-side merge joins: if both sides are partitioned in the same way & sorted (e.g., result of previous job), mappers just read both sides incrementally
 - Batch processing output examples:
   - Search indexes
-  - Key-value store (recommendation for users…): wait for batch job to finish, then bulk load result into DB 
-  - -> Increase performance & avoid duplicating side-effect of failed and retried jobs
+  - Key-value store (eg recommendation for users): wait for batch job to finish, then bulk load result into DB 
+  - -> Increase performance & avoid duplicating side effect of failed and retried jobs
 - Hadoop (HDFS + MapReduce) vs massively parallel processing (MPP) database:
   - MPP: focus on parallel execution of SQL queries on multi machines
   - Hadoop: general-purpose OS that can run arbitrary programs:
     - High diversity of storage: dump data first, process later -> flexible
     - Diversity of processing model: not constrained to SQL
-    - Design for frequent faults (preemption, termination…)
+    - Design for frequent faults (eg preemption, termination)
 ### 10.3. Beyond MapReduce
 - Materialization of immediate state: write files to HDFS after each job: slow down execution, have to wait prev job to finish 
 - -> Dataflow engines (Spark, Tez, Flink):
@@ -74,6 +74,6 @@
   - Hard to partition frequently communicating vertexes together
   - -> Lot of mes sent via network
   - -> Running on 1 machine is usually more efficient
-- Optimization:
-  - Include declarative API (to optimize join…)
-  - Reusable implementation for specialized domains (ML algo…)
+- Optimizations:
+  - Include declarative API (eg to optimize join)
+  - Reusable implementation for specialized domains (eg ML algo)

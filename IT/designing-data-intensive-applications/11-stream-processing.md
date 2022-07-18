@@ -36,17 +36,17 @@
 ### 11.2. Databases and streams
 - Replication log as data stream 
 - -> Keep heterogeneous data systems in sync
-- Problem with dual write (client write to both systems at the same time): write order can’t be ensure
-- Change data capture (CDC):
+- Problem with dual write (client write to both systems at the same time): write order can’t be ensured
+- Change data capture:
   - Observe all change written to a leader DB, extract & replicate to other systems
   - Optimizations:
     - Taking DB snapshot corresponding to a log offset
     - Log compaction: remove log record with the same key in case of overriding value/deletion
 - Event sourcing:
   - Store all changes to application state as a log of change events
-  - Vs CDC:
+  - Vs Change data capture:
     - Higher level (application): user action instead of DB change
-    - Save all event, no compaction
+    - Save all events, no compaction
   - Event (fact) vs command (rejectable) -> command validation & event publishing must be in a sync block (atomic commit)
 - Immutability:
   - DB as mutable state, change logs as immutable events
@@ -61,7 +61,7 @@
   - Push events to users
   - Produce output stream (pipeline)
 - Stream processing for monitoring:
-  - Complex event processing (CEP): specify rule to search for patterns of events in a stream
+  - Complex event processing: specify rule to search for patterns of events in a stream
   - Stream analytics: aggregations & statistical metrics over a large number of events (rate, average, statistics over an interval)
   - Maintaining materialized views
   - Search for patterns in individual event/multiple events
@@ -86,14 +86,15 @@
   - Table-table (materialized view maintenance):
     - Both streams are DB changelogs
     - Output: changes to the materialized view of the join of 2 tables
-    - Example:
-      - Twitter post cache of followers: update when post added/follower changed
-      - -> Materialized view of post table & follower table
-  - Need to consider time dependence of joins
+    - Example: Twitter post cache of followers: update when post added/follower changed
+    - -> Materialized view of post table & follower table
+  - Need to consider time dependence of joins: join an event with old or new state?
+  - -> Can use versioning (eg the event specify the version to join)
 - Fault tolerance: ensure each event processed only once:
   - Microbatching & checkpointing: can’t deal with side effect
   - Atomic commit
-  - Idempotence (e.g., write mes offset when update DB). Requirements:
+  - Idempotence (e.g., save last mes offset to the DB record). Requirements:
+    - Message ordering
     - Deterministic operation
     - No concurrent node updating the same value
     - Fencing to avoid declared dead but actually alive situation

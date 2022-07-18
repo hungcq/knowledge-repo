@@ -39,9 +39,9 @@
       - Choose timeout period
 - Replication logs implementations:
   - Statement-based: problems:
-    - Non-deterministic function calls (NOW(), RAND()…)
+    - Non-deterministic function calls (eg NOW(), RAND())
     - Order of execution
-    - Side-effect (triggers…)
+    - Side-effect (eg triggers)
   - -> Replace with fixed value, but many edge cases
   - Write-ahead log shipping (byte sequence): safe, but depend on the storage engine & version
   - Logical (row-based) log replication:

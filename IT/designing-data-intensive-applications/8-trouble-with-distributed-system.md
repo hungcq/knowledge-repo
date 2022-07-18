@@ -1,5 +1,5 @@
 ## 8. The trouble with distributed system
-- Total vs partial failure: non-deterministic (operations might sometimes work & sometimes fail)
+- Partial failure (vs total failure): non-deterministic (operations might sometimes work & sometimes fail)
 - Cloud computing vs high-performance (super) computing:
   - Cloud computing: multi commodity computers connected via an IP network 
   - -> Must be able to handle partial failure
@@ -26,16 +26,16 @@
   - d: delivery time on network
   - r: request handling time 
 - -> Problem: unbounded network delay & unbounded request handling time
-- Sync vs async network: bursty traffic to maximize utilization of network capacity, no need to guess & allocate network bandwidth
+- Async network (vs sync network): bursty traffic to maximize utilization of network capacity, no need to guess & allocate network bandwidth
 ### 8.2. Unreliable clock
 - Duration vs point-in-time
-- Monotonic (suitable for measuring duration) vs time-of-day clock:
+- Time-of-day clock (vs monotonic clock - suitable for measuring duration):
   - Can jump back/forward
   - Need to sync with NTP (network time protocol) servers
   - Can be changed by users 
 - -> Can’t use timestamp for order events across dif nodes
 - Confident interval of clock
-- Process pause (due to GC, virtualization…): the app not realize it is paused
+- Process pause (eg due to GC, virtualization): the app not realize it is paused
 ### 8.3. Consensus
 - Fencing token: increasing number returned with a lock 
 - -> Reject write request with expired lock
@@ -43,7 +43,7 @@
 ### 8.4. System models
 - Things that a distributed system algo may assume
 - 3 system models:
-  - Sync: bounded network delay, clock error & process pauses 
+  - Sync: bounded network delay, bounded clock error & bounded process pauses 
   - -> Usually not realistic
   - Partially sync: behave like sync system most of the time 
   - -> Realistic

@@ -1,41 +1,42 @@
 ## 12. The future of data systems
 ### 12.1. Data integration
 - Understand adv of each product -> combine to complex app
-- Combine tools by derived data
+- -> Combine tools using derived data
 - Derived data vs distributed transactions:
   - Distributed transactions:
     - Locks for mutual exclusion
     - Atomic commit to ensure exactly-once
-    - Provide linearizability (timing guarantee, read-your-write…)
+    - Provide linearizability (eg timing guarantee, read-your-write)
   - Derived data systems:
     - Use a log for ordering
     - Use deterministic retry & idempotent to ensure exactly-once
     - Async: no linearizability
 - Limit of total ordering:
-  - Single leader
-  - Events originated in dif services
+  - Single leader -> no order when there are multi partitions
+  - Events originated in dif services/data centers
   - Client update before receiving response -> dif order in client
 - Ensure casual order:
   - Logical timestamp: recipient has to handle out of order events, metadata has to be passed around
   - Log system state the user saw before making decision: unique ID for read event
   - Use conflict resolution algo
-- Ensure data in right form & right place: use batch & stream processing
-- Async operations: more fault-tolerant
-- Reprocessing data for app evolution:
-  - Not limited to simple changes
-  - Allow gradual, reversible evolution
+- Advs of batch & stream processing:
+  - Ensure data in right form & right place: deterministic functions with well-defined inputs & outputs
+  - Async operations: more fault-tolerant
+  - Reprocessing data for app evolution:
+    - Not limited to simple changes
+    - Allow gradual, reversible evolution
 ### 12.2. Unbundling databases
 - SQL & transaction (high level abstraction) vs Unix & NoSQL (low level abstraction)
 - Similarity: building index in traditional database & maintaining materialized view
 - Composing dif storage & processing tools into coherent system:
   - Unifying reads: query integrated system with a single high level query language
-  - Unifying writes (like unbundling database index feature): ensure all changes is captured even in case of faults 
+  - Unifying writes (like unbundling database index feature): ensure all changes are captured even in case of faults 
   - -> Async event log with idempotent writes instead of distributed trans
-- Missing tools: uniform interface to integrate dif system & propagate changes
+- Missing tools: uniform interface to integrate dif systems & propagate changes
 - Separate app code & storage
 - Dataflow: interplay between state, state changes & app code: app code subscribes to changes instead of polling for changes
 #### Observing derived state
-- Read path: only compute when user act
+- Read path: only compute when user acts
 - Write path: precomputed, done as data come in
 - Derived data set: where read path meets write path 
 - -> Trade off between computation at read & write time
@@ -44,7 +45,7 @@
 - Reads as stream of events: merge with write events 
 - -> Can track read events & derive meaningful data, merge data across partitions
 ### 12.3. Aiming for correctness
-- Avoid duplication: need to be enforce at end-user device using unique ID for each operation
+- Avoid duplication: need to be enforced at end-user device using unique ID for each operation
 - Ensure uniqueness constraint in log-based messaging: process each partition in a single thread, scale out by hash unique field & map to partition
 - Multi-partition request processing: money transfer example:
   - Client gen request ID

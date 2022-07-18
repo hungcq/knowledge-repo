@@ -7,7 +7,7 @@
   - Send mes to other processes: stream processing
   - Crunch large volume of data: batch processing
 - 3 non-functional concerns:
-  - Reliability: work correctly, even when faults occur (fault tolerant). Handle certain types of fault:
+  - Reliability: work correctly, even when faults occur (fault-tolerant). Handle certain types of faults:
     - Hardware
     - Software
     - Human
@@ -18,13 +18,13 @@
       - CCU
       - Cache hit rate
     - Performance:
-      - Through put
+      - Throughput
       - Response time: distribution of value (e.g., 99.9 percentile histogram)
       - Maintain performance: scale up vs scale out
   - Maintainability: let people work productively on the system
     - Operability
     - Simplicity:
-      - Good abstraction (APIs…)
+      - Good abstraction (eg APIs)
       - Avoid accidental complexity
     - Evolvability:
       - Simplicity

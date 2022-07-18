@@ -17,7 +17,7 @@
     - Sparse memory index, range index
     - Compress-able blocks (between keys in sparse index)
   - How to maintain sorted segment:
-    - Keep new write in memtable (in-memory tree (AVL…))
+    - Keep new write in memtable (in-memory tree (eg AVL))
     - When tree reach threshold, write to disk
     - Read request: check memtable -> check segments (newer to older)
     - Handle crash: keep a log file to restore memtable
@@ -77,7 +77,7 @@
 - Analytic schemas:
   - Star:
     - 1 fact table (events)
-    - Many dimension tables: product info, customer info… (wh/how questions)
+    - Many dimension tables: eg product info, customer info (wh/how questions)
   - Snowflake: dimension table broken down to sub-dimension tables
 - Column-oriented storage:
   - Many columns, but query only select several columns
