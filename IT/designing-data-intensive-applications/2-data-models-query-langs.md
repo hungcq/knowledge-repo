@@ -9,7 +9,7 @@
   | Now support JSON & XML fields with query & index                        | Dynamic schema                                                              |
   | Query optimizer handle the access path for join                         | Suitable for self-contained document<br>-> Better locality (no join needed) |
   | Normalize (no duplicate)<br>-> Handle one to many & many to many better | Denormalize (one to many)<br>-> Handle by application code -> costly        |
-- Consideration: Document vs Relational:
+- Considerations:
   - Simplicity of application code: self-contained or many to many?
   - Schema flexibility: schema-on-read or schema-on-write (costly when update schema)
   - Data locality:

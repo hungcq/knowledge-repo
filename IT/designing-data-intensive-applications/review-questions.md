@@ -1,3 +1,7 @@
+# Data models
+- What is the main differences between relational & document data model? What should be considered when choosing data model?
+- 
+
 # Transactions
 - What is a tran? Goal of using tran.
 - Explain 4 concepts in ACID with examples. How to ensure durability in: 1 node & multi nodes
