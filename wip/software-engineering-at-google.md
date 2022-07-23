@@ -392,3 +392,6 @@ the data help stakeholders make a decision, not to prove/disprove a hypothesis
 - Chap 1 discuss at quite a high level: need familiarity with many concepts to understand the examples
 - 2 chaps about leadership are high level and self-help style
 - -> Need real life experiments to see whether the strategies work & how to apply them in specific situations
+
+# Take away
+- How to write clear, resilient to change tests

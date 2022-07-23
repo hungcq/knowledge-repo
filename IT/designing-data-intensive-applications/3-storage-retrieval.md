@@ -4,35 +4,48 @@
 - -> Need space. Write overhead
 - Hash indexes (hash table):
   - Basic in-memory hash map of key – disk offset
-  - Break file into append-only segments. Compact periodically to remove duplicate old keys
+  - Break data into append-only segment files. Compact & merge segments periodically to remove duplicate old keys
   - 1 hash map for each segment. Search all the map from newer to older
   - Append-only advs:
     - Fast sequential write
     - Easy concurrency & recovery control
     - No fragmented data
+  - Disadvs:
+    - Hash map must fit in memory, otherwise access is slow
+    - Can't do range queries: must read all keys
 - Log-structure merge tree (LMS tree):
   - Based on hash indexes
-  - Sorted string table (SS table): keys in segment file are sorted:
+  - Use segment files whose keys are sorted (sorted string table - SS table)
+  - Advs:
     - Efficient merge (like merge sort)
-    - Sparse memory index, range index
+    - Can use sparse in-memory index, range index for each segment (using BST like AVL)
+    - -> Reduce memory usage
     - Compress-able blocks (between keys in sparse index)
+    - -> Reduce size & disk IO
   - How to maintain sorted segment:
     - Keep new write in memtable (in-memory tree (eg AVL))
     - When tree reach threshold, write to disk
-    - Read request: check memtable -> check segments (newer to older)
+    - Read request: check memtable -> check in-memory index of segments (newer to older)
     - Handle crash: keep a log file to restore memtable
   - Optimizations:
     - Bloom filter to check if key exists
     - Compaction strategy
 - B-tree:
-  - Break DB into fixed-size blocks/pages
-  - Write: search for the page containing the key, update & write the whole page to disk
+  - Implementation:
+    - Break DB into fixed-size blocks/pages
+    - Pages refer to other pages' address on disk
+    - Read: traverse tree until reaching leaf. Leaf contains key's value or address of page containing key's value
+      - <img src="./resources/3.6.png" width="500">
+    - Update: search for the page containing the key, update & write the whole page to disk
+    - Insert: if page reach its maximum capacity -> break into 2 pages & update tree
+      - <img src="./resources/3.7.png" width="500">
   - Ensure reliability:
     - Write-ahead log (redo log): use to restore the tree in consistent state if crash when updating multiple pages
     - Latch (light-weight lock): handle concurrent access
   - Optimizations:
-    - Copy-on-write instead of write-ahead logs
-    - Abbreviate keys in internal pages (B+ tree)
+    - Copy-on-write updated page, then point to it after finishing
+    - -> Don't need to maintain write-ahead logs
+    - Abbreviate keys in internal pages (B+ tree): only need range info
     - -> More keys in 1 page, fewer levels
     - Data pointers only at leaf pages (B+ tree)
     - Make leaf pages sequential on disk 
@@ -41,27 +54,29 @@
     - -> Scanning without jumping back to parent pages
     - Fractal tree: borrow log-structured ideas
 - B-tree vs LSM tree (only in theory, empirical tests needed):
-  - Write amplification: 1 write to DB lead to multiple writes to disk
+  - Write amplification def: 1 write to DB lead to multiple writes to disk
   - LSM advs & problems:
     - Advs:
-      - Higher write throughput
+      - Higher write throughput: sequential writes & usually lower write amplification
       - Less fragmentation -> less space
     - Problems:
       - Unpredictable response time (effect of compaction operation)
-      - Compaction can’t keep up with write -> out of disk space
+      - Compaction can't keep up with write -> out of disk space
   - B-tree: strong transaction semantics
 - Other indexing structures:
-  - Handle 1 key/multirow (e.g., secondary index):
-    - Store all rows as a list
-    - Make key unique by append row ID
-  - Clustered index: store row within index 
+  - Secondary index:
+    - Implementation similar to primary index
+    - Handle 1 key/multirow (e.g., multi row with same userid in secondary index):
+      - Store all rows as a list
+      - Make key unique by append row ID
+  - Clustered index (store row within index) & covering index (store needed columns of the row within index)
   - -> No need to jump from index to heap file
-  - Multi-dimensional index vs multi-column index
+  - Multi-dimensional index (eg firstname, lastname) vs multi-column index (eg geospatial)
   - Full text search & fuzzy index (similar keys). i.e., using trie
   - In-memory DB: handle durability via:
     - Logs
     - Periodic write (weak durability)
-  - -> Faster not because don’t read from disk, but no overhead of encoding data to write to disk
+  - -> Faster not because don't read from disk, but no overhead of encoding data to write to disk
 ### 3.2. Transaction processing vs Analytics
 - OLTP vs OLAP (online analytic processing):
 - | OLTP                            | OLAP                      |
@@ -76,7 +91,7 @@
   - OLTP DBs -> extract -> transform -> load -> data warehouse
 - Analytic schemas:
   - Star:
-    - 1 fact table (events)
+    - 1 fact table: contain events
     - Many dimension tables: eg product info, customer info (wh/how questions)
   - Snowflake: dimension table broken down to sub-dimension tables
 - Column-oriented storage:

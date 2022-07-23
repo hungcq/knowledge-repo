@@ -1,6 +1,6 @@
 ## 4. Encoding & evolution
 - Difficulty when update code immediately after schema change:
-  - Server: many nodes -> rolling upgrade, check for error
+  - Server: many nodes -> usually do rolling upgrade
   - Client: depend on user
 - Compatibility:
   - Backward: new code can read old data
@@ -8,14 +8,14 @@
 - Data representations:
   - In memory: DS & pointers
   - In file & over network: sequence of bytes 
-  - -> Encode/serialize data from mem to disk/network representation, then decode to mem
+- -> Encode/serialize data from mem to disk/network representation, then decode to mem
 ### 4.1. Encoding formats
 - Language-specific formats:
   - Language-dependent: inflexible
-  - Security: instantiate classes
+  - Security: instantiate arbitrary classes
   - Versioning problem
   - Not efficient
-- JSON, XML & binary variants: verbose because text format & keep field names
+- JSON, XML & binary variants: verbose because of text format & keeping field names
 - Thrift & Protocol buffers:
   - Use field tags (int) -> lighter
   - Versioning by field tags
@@ -23,31 +23,32 @@
     - Not reuse field tags
     - Not add/remove required field
 - Avro:
-  - Use for encoding many similar records
-  - Use schema history for evolution, match by field name
+  - Use for encoding many similar records. Schema included at start of the encoded file.
+  - Decode: match writer & reader schema by field name
+  - Use schema history for evolution
   - Light-weight: no field name, field tag
 - Advs of schemas:
   - Compact
   - Can be used as documentation. Track changes
-  - Gen code from schema
-### 4.2. Modes of data flow
+  - Can gen code from schema
+### 4.2. Modes of data flow between processes
 - Through DB:
-  - Old code should only ignore field, not write the whole object
+  - Old code should ignore new fields, not write the whole object
   - Migrate:
     - All rows: expensive
     - Gradually when read
 - Through services: REST & RPC:
   - RPC problem: treat network calls (many complications) like function calls
-  - Evolution: if can’t force client to update, keep multi versions of the same API
+  - Evolution: if can't force client to update, keep multi versions of the same API
 - Through async messages:
   - Advs:
     - Buffer between services -> handle failure
     - No service discovery needed
     - Allow 1 to many
-    - Decouple sender – recipient
+    - Decouple sender - recipient
   - Distributed actor framework:
     - Base on actor model: actor (logic) handle async messages sent by other actors
     - Distributed: actors on dif nodes, mes sent across nodes 
     - -> Mes can be lost
-    - Problem: encoding format, difficult evolution 
+    - Problem: language-specific encoding format, difficult evolution 
     - -> Need to replace with other format (e.g. Protocol buffers)

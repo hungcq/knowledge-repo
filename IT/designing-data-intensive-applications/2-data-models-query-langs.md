@@ -46,4 +46,4 @@
   - Predicate: property key/edge
   - Object: property value/vertex
   - SPARQL query language
-- Data log: foundation. Base of Hadoop query
+- Data log: foundation of SPARQL, Hadoop query languages
