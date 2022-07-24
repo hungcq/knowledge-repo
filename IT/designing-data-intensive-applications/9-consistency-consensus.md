@@ -10,7 +10,7 @@
   - System with consensus algos
 - Not linearizable systems:
   - Multi-leader replication: no single copy of data
-  - Leaderless replication: can’t solve cross-channel timing dependency even with strict quorum:
+  - Leaderless replication: can't solve cross-channel timing dependency even with strict quorum:
     - <img src="./resources/9.6.png" width="500">
 - CAP: either consistent or available when partitioned 
 - -> Old theorem, not practical because ignore other faults
@@ -23,7 +23,7 @@ strongest consistency model that incurs no performance cost & can be available
 #### Sequence number ordering
 - Lamport timestamp: pair (counter, node ID): every node & client keep track of max counter value it has seen so far & update stale current value:
   - <img src="./resources/9.8.png" width="500">
-- -> Ensure total ordering but can’t detect concurrent operations
+- -> Ensure total ordering but can't detect concurrent operations
 - Only work after the fact, not for operation that need immediate result (e.g., check for unique username to create)
 #### Total order broadcast
 - 2 safety properties:

@@ -63,8 +63,8 @@
 - Materialization of immediate state: write files to HDFS after each job: slow down execution, have to wait prev job to finish 
 - -> Dataflow engines (Spark, Tez, Flink):
   - Handle entire workflow as one job
-  - Don’t have to alternate map & reduce: only operator functions chained together
-  - Don’t have to sort when not required
+  - Don't have to alternate map & reduce: only operator functions chained together
+  - Don't have to sort when not required
   - Can optimize base on workflow info
   - Need to recompute data/save checkpoint in case immediate state on RAM lost 
   - -> Operator functions must be deterministic

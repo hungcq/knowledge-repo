@@ -14,7 +14,7 @@
 - Direct messaging via UDP multicast: message lost over network/when nodes down
 - Message broker: database optimized for handling message streams:
   - Use queue -> async
-  - Delete mes when finish processing: can’t reprocess mes
+  - Delete mes when finish processing: can't reprocess mes
   - Slow when buffer is big (maybe written to disk)
   - Notify client when data change (new mes)
   - Deliver mes to multiple consumers:
@@ -36,7 +36,7 @@
 ### 11.2. Databases and streams
 - Replication log as data stream 
 - -> Keep heterogeneous data systems in sync
-- Problem with dual write (client write to both systems at the same time): write order can’t be ensured
+- Problem with dual write (client write to both systems at the same time): write order can't be ensured
 - Change data capture:
   - Observe all change written to a leader DB, extract & replicate to other systems
   - Optimizations:
@@ -91,7 +91,7 @@
   - Need to consider time dependence of joins: join an event with old or new state?
   - -> Can use versioning (eg the event specify the version to join)
 - Fault tolerance: ensure each event processed only once:
-  - Microbatching & checkpointing: can’t deal with side effect
+  - Microbatching & checkpointing: can't deal with side effect
   - Atomic commit
   - Idempotence (e.g., save last mes offset to the DB record). Requirements:
     - Message ordering

@@ -552,13 +552,13 @@ Blockchain, Finance
 - Questions to ask about blockchain technology:
   - Which blockchain?
   - Public or private one?
-  - What data is represented on the blockchain and what data is ‘off-chain?’
+  - What data is represented on the blockchain and what data is "off-chain"?
   - What do the tokens represent?
   - When a token is passed from one party to another what does this mean in real life?
   - What happens if a private key is lost or copied? Is this acceptable?
   - Are all parties comfortable with the data that is being passed around the network?
   - How will upgrades be managed?
-  - What’s in the blocks?
+  - What's in the blocks?
   - Public blockchains:
     - Will all parties run nodes or will some trust others?
     - If the blockchain is backlogged (bottleneck), what impact might have this have on users?
@@ -569,8 +569,8 @@ Blockchain, Finance
     - Who will run the nodes? Why?
     - Who is going to write blocks?
     - Who is going to validate blocks and why?
-    - If this is about data sharing, why can’t a web server be used?
-    - Is there a natural central authority whom everyone trusts, and if so why aren’t they hosting a portal?
+    - If this is about data sharing, why can't a web server be used?
+    - Is there a natural central authority whom everyone trusts, and if so why aren't they hosting a portal?
 
 ### 7. Initial coin offerings
 - New way for companies to raise money without diluting ownership or having to pay investors back

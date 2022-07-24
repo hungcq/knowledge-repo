@@ -11,6 +11,22 @@
 - What are the common encoding formats? How versioning is handled by each?
 - What are the modes of data flow between processes? What are the advs of async messaging over RPC?
 
+# Replication
+- What are the advs of distributed data?
+- What are the dif algos to replicate data across nodes? How are they implemented, including read, write, replication?
+- What are the steps and considerations when designing fail over for leader-based, leaderless replication?
+- What are the problems related to replication lag? How to deal with them?
+- What are read and write quorum? What should be considered when choosing read & write quorum values?
+- What are the dif ways to implement replication logs?
+
+# Partitioning
+- What is the main difficulty with partitioning?
+- What are the dif strategies to partition key-value data? What are the tradeoff of each approach?
+- How to handle celebrity key problem?
+- What are the dif ways to partition secondary index? How read & write are handled in each case?
+- What are the dif ways to assign partition to node? How rebalancing is handled in each case, with what tradeoff?
+- Where can partitioning knowledge be kept? How is routing & discovery handled?
+
 # Transactions
 - What is a tran? Goal of using tran.
 - Explain 4 concepts in ACID with examples. How to ensure durability in: 1 node & multi nodes

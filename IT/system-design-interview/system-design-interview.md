@@ -195,7 +195,7 @@
     - Close when: new mes/timeout
     - Problem:
       - Multi servers
-      - Can’t detect disconnection
+      - Can't detect disconnection
       - Inefficient
   - Web socket: need to manage connections
 - API servers: auth, user profile, service discovery

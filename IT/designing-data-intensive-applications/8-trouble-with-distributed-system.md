@@ -33,7 +33,7 @@
   - Can jump back/forward
   - Need to sync with NTP (network time protocol) servers
   - Can be changed by users 
-- -> Can’t use timestamp for order events across dif nodes
+- -> Can't use timestamp for order events across dif nodes
 - Confident interval of clock
 - Process pause (eg due to GC, virtualization): the app not realize it is paused
 ### 8.3. Consensus
@@ -56,5 +56,5 @@
 - Partially sync with crash-recovery faults: useful model for real system
 - Correctness of algo: must satisfy some properties
 - Safety vs liveness properties:
-  - Safety: can identify the time of violation. Violation can’t be undone
+  - Safety: can identify the time of violation. Violation can't be undone
   - Liveness (“eventual” keyword): may not hold at some point in time, but might be satisfied in the future

@@ -6,7 +6,7 @@
 - -> Can ignore certain error scenarios & concurrency issues
 - ACID (BASE = not ACID):
   - Atomicity = abort-ability: undo partial changes when error occurs
-  - Consistency: consistent states are defined by app and violable by codes. DB can’t fully ensure
+  - Consistency: consistent states are defined by app and violable by codes. DB can't fully ensure
   - Isolation: handle concurrency: concurrently executed trans are isolated from each other
   - Durability: data written by trans are not lost:
     - 1 node: e.g., write-ahead logs, in case DSs on disk are corrupted
@@ -57,10 +57,10 @@
 - Conflict resolution: merge conflict writes, used in multi-leader/leaderless DB replication
 #### Write skew & phantoms
 - Write skew can be resolved by locking all read rows when update 
-- -> Can’t in case of phantom reads
+- -> Can't in case of phantom reads
 - Solution: materializing conflicts: create artificial locks in DB:
   - Example: booking: 15-min time slots, table containing combinations of room & time slot 
-  - -> Lock on this table’s rows when read
+  - -> Lock on this table's rows when read
   - Problems:
     - Difficult to figure out
     - Concurrency control mechanism affect data model

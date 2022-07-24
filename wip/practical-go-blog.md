@@ -18,7 +18,7 @@
 ## 4. Understanding nil
 - Always return an explicit nil, rather than a typed value containing nil: will lead to unexpected error in case of Interface return type
 - Never use nil to indicate a failure, only to indicate the absence of an error
-- Don’t check for a nil receiver. Employ high test coverage and vet/lint tools to spot unhandled error conditions resulting in nil receivers.
+- Don't check for a nil receiver. Employ high test coverage and vet/lint tools to spot unhandled error conditions resulting in nil receivers.
 
 ## 6. API design
 - API consists of exported:
