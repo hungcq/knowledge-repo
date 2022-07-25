@@ -20,7 +20,7 @@
       - Lack of fault isolation
     - Locked into an obsolete tech stack: rewrite whole app is risky
 - Software architecture mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
-- 3 ways to scale an app:
+- 3 ways to scale an app horizontally:
   - Load balance requests across multiple instances:
     - Randomly
     - Based on request's attribute
@@ -29,7 +29,7 @@
   - <img src="./resources/1.7.png" alt="drawing" width="500"/>
   - Suitable for large, complex app
   - Benefits: of small, independent services:
-    - Enables the continuous delivery and deployment of large, complex apps (most imp benefit):
+    - Enable continuous delivery and deployment of large, complex apps (most imp benefit):
       - Testability
       - Deployability: usually don't require coordination
       - Autonomous, loosely coupled teams

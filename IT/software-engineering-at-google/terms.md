@@ -1,0 +1,11 @@
+# Testing
+- Test size: resources needed to run the test
+- Test scope: how much code is being validated (not executed) by a given test
+- Hermetic: contain all the info necessary to set up, execute & tear down
+- Code coverage: % feature code executed by tests
+- Exploratory testing:
+  - A form of manual testing
+  - Interact with a product via a public API, try new paths/user scenarios in the system
+  - Looking for:
+    - Behavior deviating from expected/intuitive behavior
+    - Security vulnerability

@@ -6,7 +6,7 @@
   - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
   - An app usually uses a combination of archi styles
 ### Styles apply to the logical view
-- Layered (eg 3-tier architecture)
+- Layered (eg 3-tier architecture): doesn't reflect modern app's archi: multiple entry/exit points
 - Hexagonal:
   - Business logic at the center, has ports, interact with the outside via ports
   - <img src="./resources/2.2.png" alt="drawing" width="500"/>
@@ -24,7 +24,7 @@
     - Decouple business logic from presentation & data access logic in the adapters
     - -> Easier to test business logic in isolation
     - Flexible, reflect modern app architecture: multiple, exchangeable adapters
-    - Usage: design each service in a microservice archi
+  - Usage: design each service in a microservice archi
 ### Styles apply to the implementation view:
 - Monolithic archi
 - Microservice archi:
@@ -53,9 +53,9 @@
     - -> Each service has its own database
     - Advs:
       - Encapsulate implementation details -> can change without impacting clients
-      - Improve app dev time attribute (eg understandability maintainability, testability)
+      - Improve app dev time attribute (eg understandability, maintainability, testability)
       - Improve runtime isolation: can't lock DB of other services
-  - Should only use shared libs for functionality that is unlikely to change
+  - Unit of reuse: service. Shared libs should only be used for functionality that is unlikely to change.
 ### Steps to define an app's microservice architecture:
 - Not a process to follow mechanically, but likely to be iterative and requires creativity
 - <img src="./resources/2.5.png" alt="drawing" width="500"/>
@@ -70,7 +70,9 @@
     - Define system operations:
       - <img src="./resources/tab-2.1.png" alt="drawing" width="500"/>
       - Derive from verbs in user stories
-      - Describe the operation's behavior in terms of effect on domain objects and their rela: create, update, delete domain objects; create/destroy rela between them
+      - Describe the operation's behavior in terms of effect on domain objects and their rela:
+        - Create, update, delete domain objects
+        - Create/destroy rela between them
 - Step 2: define services by business capability:
   - Adv: business capabilities are stable -> resulting archi is stable
   - The resulting services are only the first attempt at defining the archi

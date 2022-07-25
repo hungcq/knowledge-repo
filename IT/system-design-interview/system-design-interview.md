@@ -4,7 +4,7 @@
 ## Multi data centers diagram
 - <img src="./resources/1.15.png" width="600">
 ## Notes
-- Split DB server – service server: scale independently
+- Split DB server - service server: scale independently
 - Limit of vertical scaling:
   - Hardware limit
   - No failover/redundancy
@@ -12,7 +12,7 @@
   - Distribute traffic, reduce load to single server
   - Redirect in case of failure
   - Add/remove server easily (auto-scaling)
-- Master (write) – slave (read) DB replication:
+- Master (write) - slave (read) DB replication:
   - Better performance
   - Availability
 - Sharding DB: scale horizontally. Problems:

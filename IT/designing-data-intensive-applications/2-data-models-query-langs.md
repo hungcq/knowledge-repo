@@ -26,7 +26,7 @@
   - Need to write 2 coordinated functions (map & reduce)
 ### 2.3. Graph-like data model: focus on highly connected data (many to many)
 - Property graph model:
-  - 1 vertex – many edges
+  - 1 vertex - many edges
   - Vertex:
     - ID
     - Outgoing edges
@@ -41,7 +41,7 @@
   - Heterogeneous: anything could be vertex & edge
   - Cypher query language
   - Query in SQL
-- Triple-stores: subject – predicate – object
+- Triple-stores: subject - predicate - object
   - Subject: vertex
   - Predicate: property key/edge
   - Object: property value/vertex

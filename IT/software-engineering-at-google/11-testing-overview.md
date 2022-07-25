@@ -1,0 +1,73 @@
+# 11. Testing overview
+- Advs of automated testing:
+  - Prevent bugs
+  - Allow to change with confidence
+  - Better software design: more modular, handle edge cases
+  - Test as doc
+  - Faster review
+- Advs over manual testing: scalable:
+  - Reusable after written
+  - Automated, can use dif configurations
+- Limitations: can't deal with situations requiring:
+  - Qualitative, human judgement
+  - Creativity (eg *exploratory testing*)
+  - -> Create test to automate after issue detected
+- Challenge: big test suite -> unstable & slow
+- 3 testing activities:
+  - Write test
+  - Run test: regularly
+  - Fix test failure: quickly
+- *Test size*:
+  - Small test:
+    - Constraint: can't access source of slowness/nondeterminism:
+      - Run in a single process -> can't run a server & have a separate test process connect to it
+      - Can't sleep, perform IO/other blocking calls -> can't access network or disk
+      - -> Use test double for these operations
+    - Can be enforced using tools
+  - Medium test:
+    - Constraint: contained within a single machine
+    - -> Can't make network calls to any system other than localhost
+    - Adv: more realistic
+    - Disadv: can be slow/nondeterministic (eg rely on OS/third party processes)
+  - Large test:
+    - No constraint
+    - Focus:
+      - Full system end-to-end tests: validate config
+      - Legacy component that doesn't allow using test doubles
+    - Should be isolated from small/medium tests: run only during build & release process
+    - -> Can't impact dev workflow
+- *Test scope*:
+  - Unit test: validate logic in a small focused part of the codebase (eg class/method)
+  - Integration test: verify interaction between a small number of components (eg server & its DB)
+  - Large-scoped test (functional, end-to-end, system test): validate:
+    - Interaction of several distinct parts of the system
+    - Emergent behavior not expressed in a single class/method
+- Test suite design:
+  - Focus on smaller, narrower-scoped tests
+  - Common properties regardless of size:
+    - *Hermetic*
+    - Assume as little as possible about outside env (eg order in which tests are run, shared DB)
+    - Simple, clear -> no control statements (eg operation, conditional, loop)
+    - -> Easy to read & diagnose failure
+  - 2 antipatterns of tests distribution by size/scope:
+    - IMG 11.4
+    - Ice cream cone: usually appear in projects that start as prototypes & rushed to production
+    - Hourglass: hard to instantiate individual dependencies in isolation due to tight coupling
+  - Write tests for anything you don't want to break (eg expected behaviors, dep behaviors)
+  - Write tests simulating failure
+  - Problem of *code coverage* as a metric:
+    - Inflexible, lack of context
+    - Might result in big, useless tests
+    - Become a goal itself
+- Problems of poorly written tests: reduced productivity:
+  - Hard to change code
+  - Dev skip running tests
+- -> Solutions:
+  - Invest effort to improve tests
+  - Create doc & supporting tools
+- How to make testing a part of culture:
+  - Orientation classes for new hires: why & how
+  - Test certified program:
+    - Evaluate the testing process in each team -> divide into level, use internal dashboard to increase competition
+    - Provide instructions on how to improve
+  - Testing on the Toilet

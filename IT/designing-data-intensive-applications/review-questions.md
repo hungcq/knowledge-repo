@@ -1,14 +1,14 @@
 # Data models & query languages
-- What is the main differences between relational & document data model? What should be considered when choosing data model?
+- What are the main differences between relational & document data model? What should be considered when choosing data model?
 - What are the 2 types of query languages?
 
 # Storage & retrieval
 - What are the main primary-key index structures? How are they implemented? What are the main advs & disadvs of each?
-- How secondary index are implemented?
+- How secondary index is implemented?
 - What is clustered index, covering index, multi-dimensional index, multi-column index?
 
 # Encoding & evolution
-- What are the common encoding formats? How versioning is handled by each?
+- What are the common encoding formats? What are the advs & disadvs of each? How is versioning handled by each?
 - What are the modes of data flow between processes? What are the advs of async messaging over RPC?
 
 # Replication

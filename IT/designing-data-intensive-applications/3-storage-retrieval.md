@@ -3,12 +3,12 @@
 - Keep additional metadata to help locate the data 
 - -> Need space. Write overhead
 - Hash indexes (hash table):
-  - Basic in-memory hash map of key – disk offset
+  - Basic in-memory hash map of key - disk offset
   - Break data into append-only segment files. Compact & merge segments periodically to remove duplicate old keys
   - 1 hash map for each segment. Search all the map from newer to older
   - Append-only advs:
     - Fast sequential write
-    - Easy concurrency & recovery control
+    - Easy concurrency & recovery control: no overwrite
     - No fragmented data
   - Disadvs:
     - Hash map must fit in memory, otherwise access is slow
@@ -47,8 +47,7 @@
     - -> Don't need to maintain write-ahead logs
     - Abbreviate keys in internal pages (B+ tree): only need range info
     - -> More keys in 1 page, fewer levels
-    - Data pointers only at leaf pages (B+ tree)
-    - Make leaf pages sequential on disk 
+    - Make leaf pages sequential on disk
     - -> Fast scan in sorted order
     - Pointer to siblings in leaf pages (B+ tree)
     - -> Scanning without jumping back to parent pages
