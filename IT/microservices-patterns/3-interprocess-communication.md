@@ -52,7 +52,8 @@
       - Set of service instances changes dynamically because of autoscaling, failures & upgrades
     - Mechanism:
       - When service instances start and stop: update the *service registry*
-      - When a client invokes a service: query the service registry to obtain a list of available service instances & routes the request to one of them
+      - When a client invokes a service:
+      query the service registry to obtain a list of available service instances & routes the request to one of them
     - 2 types:
       - Application-level service discovery:
         - <img src="./resources/3.5.png" alt="drawing" width="500"/>
@@ -108,7 +109,7 @@
       - Additional operational complexity
 - Design issues:
   - Competing receivers & message ordering:
-    - How to scale out receivers while preserve message ordering
+    - How to scale out receivers while preserving message ordering
     - How to process message concurrently in each consumer
   - -> Solution: sharded (partitioned) channels:
     - <img src="./resources/3.11.png" alt="drawing" width="500"/>

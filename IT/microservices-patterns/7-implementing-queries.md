@@ -1,12 +1,9 @@
 ## 7. Implementing queries in a microservice architecture
 ### Query using API composition pattern
-- Types of composer:
-  - FE client (eg web app)
-  - Service: API gateway/BFF variant
 - Design issues:
   - Decide which component to act as API composer:
-    - Frontend client: not practical for clients accessing services via the internet: slow network
-    - API gateway -> allow clients accessing the gateway via the internet to efficiently retrieve the data
+    - Frontend client (eg web app): not practical for clients accessing services via the internet: slow network
+    - API gateway/BFF variant -> allow clients accessing the gateway via the internet to efficiently retrieve the data
     - Standalone API composer: usage:
       - For queries used internally by multiple services
       - Externally accessible queries with logic too complex to be part of API gateway

@@ -57,9 +57,9 @@
   - OAuth 2.0: authentication protocol originally designed to authorize a third party app without revealing its password:
     - Flows:
       - API client flow:
-        - IMG 11.4
+        - <img src="./resources/11.4.png" alt="drawing" width="500"/>
       - Login-based client flow:
-        - IMG 11.5
+        - <img src="./resources/11.5.png" alt="drawing" width="500"/>
     - Refresh token steps:
       - API gateway obtains a new access token: make an OAuth 2.0 Refresh Grant request with the refresh token to the authen (OAuth) server
       - Authen server returns a new access token if the refresh token hasn't expired or revoked

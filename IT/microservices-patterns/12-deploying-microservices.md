@@ -3,7 +3,7 @@
 - History:
   - Evolution of deployment architecture:
     - <img src="./resources/12.1.png" alt="drawing" width="500"/>
-  - Evolution of deployment proces:
+  - Evolution of deployment process:
     - Devs give app & operating instructions to operations
     - -> DevOps: dev team is also responsible for deployment:
       - Operation team provide console for dev to deploy code
@@ -19,8 +19,7 @@
     - Provide devs with insight into what their services are doing, including log files & metrics
     - Alert devs if there is problem
   - Request routing: route user requests to the services
-- How to prevent bug in new deployment to affect users:
-  - Separate deployment from release
+- How to prevent bugs in new deployment from affecting users: separate deployment from release:
   - Use service mesh feature: rule-based load balancing & traffic routing
   - -> Can safely run multiple versions of the services simultaneously
   - Steps:

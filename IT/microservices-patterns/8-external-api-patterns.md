@@ -19,11 +19,6 @@
   - <img src="./resources/8.6.png" alt="drawing" width="500"/>
   - *Note: common layer functions: request routing, authen...
   - Deployment pipeline must be fully automated to avoid blocking
-- Backend for frontend pattern:
-  - Archi:
-    - <img src="./resources/8.7.png" alt="drawing" width="500"/>
-    - Use shared lib for common functionality
-  - Advs: of microservices
 - Advs:
   - Encapsulate internal structure of the app
   - Provide client-specific API -> reduce number of round-trips & simplify client code
@@ -37,3 +32,8 @@
   - -> Need to write maintainable concurrent code (eg reactive programming, JS promise) to avoid callback hell
   - Handle partial failure: use techniques in chap 3
   - Fit the current archi: need to consider when choose tech/framework
+- Backend for frontend pattern:
+  - Archi:
+    - <img src="./resources/8.7.png" alt="drawing" width="500"/>
+    - Use shared lib for common functionality
+  - Advs: of microservices

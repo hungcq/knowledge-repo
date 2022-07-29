@@ -12,7 +12,7 @@
       - Memory: require requests to be routed to the same instance
       - DB
     - Session token: used to identify the session. Usually opaque token. Can be:
-      - cryptographically strong random number
+      - Cryptographically strong random number
       - Store of session state
     - Steps: login -> server returns session token -> client includes token in each subsequent request -> server
   - API client: use API key & secret in every request
@@ -78,7 +78,7 @@
     - -> Deployment infra can take appropriate actions:
       - Route requests to dif instances
       - Terminate/restart the instance
-    - Design issue:
+    - Design issues:
       - Implement health check endpoint: request handler checks service instance's connections to external service (eg DB, message broker)
       - Invoke health check endpoint: depend on details of deployment infra
   - Log aggregation:
@@ -148,9 +148,9 @@
         - Adv: automatically provide an audit log for create & update operation
         - Disadv: doesn't record queries
 ### Microservice chassis & service mesh
-- Microservice chassis:
+- *Microservice chassis*:
   - Adv: reduce dev effort
   - Disadv: need one for every language/platform used to write services
-- Service mesh:
+- *Service mesh*:
   - <img src="./resources/11.17.png" alt="drawing" width="500"/>
   - Help simplify the chassis: only implement concerns tightly integrated with app code (eg externalized config, health checks)

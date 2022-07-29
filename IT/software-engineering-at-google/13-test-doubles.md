@@ -1,0 +1,15 @@
+# 13. *Test doubles*
+- Impact of test doubles on software development:
+  - Codebase needs to be designed to be testable (eg use dep injection)
+  - -> Can swap out real implementation with test doubles
+  - Double should be used carefully to avoid brittle, complex tests
+  - Behavior of test double should closely resemble behavior of real implementation
+  - -> No perfect fidelity -> need to supplement unit tests with larger scope tests that exercise real implementation
+- Techniques for using test doubles:
+  - *Faking*:
+    - Ideal technique
+    - Challenge: ensure & maintain its behavior to stay similar to the real implementation
+  - *Stubbing* & *interaction testing*:
+    - Usually done through mocking frameworks to reduce boilerplate
+    - Overuse can lead to problems
+  - 
