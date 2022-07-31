@@ -30,7 +30,7 @@
     - Handle CUD operations using its own database
     - Can handle simple queries (eg non-join, primary key-based query)
   - Query model: handle nontrivial queries
-  - Can be applied within a service or to define query services: build DB by subscribing to events published by multiple services
+  - Can be applied within a service or can define query services: build DB by subscribing to events published by multiple services
 - Advs:
   - Enable efficient queries
   - Enable efficient implementation of diverse queries using dif types of DB
@@ -44,7 +44,7 @@
     - -> UI code might need to duplicate server side code
 - Design issues:
   - Choose datastore tech for the view:
-    - Consideration:
+    - Considerations:
       - Characteristics of queries
       - How to efficiently implement update operations when receiving events
     - NoSQL advs: richer data mode, higher performance
@@ -54,4 +54,4 @@
     - Handle duplicate event:
       - Idempotent
       - Record max event ID or map of (agg type-agg ID, max event ID)
-    - Build & update CQRS view: use archived event. Use snapshot when don't have all events.
+    - Build & update CQRS view: use archived events. Use snapshot when don't have all events.

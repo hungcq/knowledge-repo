@@ -49,7 +49,7 @@
     - Assume as little as possible about outside env (eg order in which tests are run, shared DB)
     - Simple, clear -> no control statements (eg operation, conditional, loop)
     - -> Easy to read & diagnose failure
-  - 2 antipatterns of tests distribution by size/scope:
+  - 2 anti-patterns of tests distribution by size/scope:
     - IMG 11.4
     - Ice cream cone: usually appear in projects that start as prototypes & rushed to production
     - Hourglass: hard to instantiate individual dependencies in isolation due to tight coupling

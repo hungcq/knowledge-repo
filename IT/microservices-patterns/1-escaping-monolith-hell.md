@@ -1,5 +1,5 @@
 ## 1. Escaping monolithic hell
-- Monolithic architecture:
+- *Monolithic architecture*:
   - <img src="./resources/1.1.png" alt="drawing" width="500"/>
   - Suitable for new, small app
   - Benefits when the app is small:
@@ -19,13 +19,13 @@
       - Hard to test thoroughly
       - Lack of fault isolation
     - Locked into an obsolete tech stack: rewrite whole app is risky
-- Software architecture mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
+- *Software architecture* mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
 - 3 ways to scale an app horizontally:
   - Load balance requests across multiple instances:
     - Randomly
     - Based on request's attribute
   - Decompose by function into multiple services. Can be combined with load balancing.
-- Microservice architecture:
+- *Microservice architecture*:
   - <img src="./resources/1.7.png" alt="drawing" width="500"/>
   - Suitable for large, complex app
   - Benefits: of small, independent services:
@@ -52,7 +52,7 @@
     - Need coordination when deploying features spanning many services
     - Difficult to decide when to adopt
   - -> Many issues has multiple solutions, each with different set of tradeoffs
-- Pattern:
+- *Pattern*:
   - Describe:
     - Issues
     - Result:
@@ -63,7 +63,7 @@
   - -> Objective -> better decision making
   - Can be organized into group: handle problems in a particular area
   - Pattern language: collection of related patterns that solve problems within a particular domain
-- Microservice pattern language:
+- *Microservice pattern language*:
   - Software pattern: solves a software architecture or design problem by defining a set of collaborating software elements:
     - Object-oriented pattern: contains collaborating classes
     - High level design pattern: contains collaborating services

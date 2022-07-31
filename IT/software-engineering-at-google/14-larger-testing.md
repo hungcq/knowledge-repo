@@ -1,0 +1,205 @@
+# 14. Larger testing
+## Overview
+- Chars:
+  - Slow
+  - Non-hermetic:: share resources with other tests & traffic
+  - Non-deterministic
+- Goal: reflect real beha -> more confident that the SUT works
+- Common gaps in unit tests:
+  - Unfaithful doubles: written by dev of SUT, not dev of the dep
+  - -> Problems:
+    - Might be stale
+    - Mistaken beha
+  - Can't test config issues
+  - Can't test issues arising under load
+  - Miss beha/inputs/side effects not anticipated by the dev writing the tests
+- Disadvs:
+  - Not dev-friendly: hard to run during development
+  - No clear ownership: who should maintain & diagnose issues
+  - Lack of standardization: depend on the chars of the SUT
+  - -> Harder to run, integrate & automate
+- Google exp:
+  - Moving toward the test pyramid within the first few days of dev is critical for long-term health. How:
+    - Build unit tests (eg make it a requirement for submission)
+    - Introduce automated integration tests & move away from manual e2e tests
+  - Challenges:
+    - Rate of distinct scenarios to test in an e2e way can grow exponentially/combinatorially depending on the structure of the SUT
+    - Impact of low-fidelity double grow exponentially with number of components
+  - -> Goal: implement larger tests that work well at scale but maintain reasonably high fidelity
+- Dev work flow:
+  - Use a separate post-submit continuous build
+  - To write effectively: need clear libs, doc & examples:
+    - Reuse assertion libs
+    - Create libs to interact with SUTs, run A/B diffs, seed test data & orchestrate test workflows
+  - Run large tests:
+    - Techniques to speed up tests:
+      - Reduce scope/split into smaller tests to run in parallel
+      - Instead of using time-based sleep to wait for non-deterministic action to occur:
+        - Polling for a state transition repeatedly over a time window
+        - Use event handler
+      - Optimize build time: only build the core part of the SUT, use pre-built versions of other dep at a known good version
+    - Reduce flakiness:
+      - Reduce scope
+      - Higher timeout value -> tradeoff with test speed
+    - Make test understandable:
+      - Clear failure message:
+      for performance/A-B diff test, need clear explanation of what is measured & why the beha is considered suspect
+      - Minimize effort to identify root cause (eg distributed tracing)
+      - Provide support & contact info of owner & supporter of the test
+- Ownership:
+  - Integration tests of components within a particular project: project lead
+  - Featured-focused tests across services: feature owner:
+    - Dev responsible for e2e implementation
+    - Product manager/test engineer owning the description of the business scenario
+  - Record test owner using:
+    - Regular code ownership
+    - Annotations in test code
+## Structure
+- Phases:
+  - Obtain a SUT
+  - Seed necessary data
+  - Perform actions
+  - Verify beha
+- SUT:
+  - Hermeticity & fidelity are usually in conflict
+  - Example types:
+    - Single process
+    - Single machine
+    - Multi machine
+    - Shared env (staging/production):
+      - Adv: low cost
+      - Disadvs:
+        - Conflict with other simultaneous uses
+        - Must wait for the code to be pushed to the env
+        - -> Too late to test
+        - Risk of end-user impact when using production env
+    - Hybrid: run part of the SUT explicitly but have it interact with a shared env
+    - -> Needed for big system
+  - Should reduce SUT size at problem boundaries:
+    - UI (browser, cli, app) - API boundary:
+      - Why UIs are unreliable and costly to test:
+        - Often change in look-and-feel ways without impacting the underlying beha
+        - Usually have async beha
+      - Approach: split the tests into connected tests, use public API to drive e2e tests
+    - Third-party boundary: needed because:
+      - No public shared env for testing
+      - Might have cost with sending traffic
+- Test data: 2 types:
+  - Seeded data: setting up SUT state
+  - Test traffic: sent to the SUT by the test itself during its execution
+- Verification:
+  - Manual: use human to interact with an SUT
+    - Types:
+      - Regression: perform actions as defined on a consistent test plan
+      - Exploratory
+    - Problem: hard to scale
+  - Assertion
+  - A/B comparison (differential): run 2 copies of the SUT, send the same data & compare the output
+  - -> Diffs are verified by human to see whether each is intended
+## Types
+- Functional testing of one or more interacting binaries:
+  - Chars:
+    - SUT: single machine hermetic or cloud-deployed isolated
+    - Data: handcrafted
+    - Verification: assertions
+  - Execution: interact via published API
+- Browser & device testing: special case of functional testing, test the end user apps
+- Performance, load & stress testing:
+  - Chars:
+    - SUT: cloud-deployed isolated
+    - Data: handcrafted/multiplexed from production
+    - Verification: diff (performance metrics)
+  - Execution: send simultaneous traffic to external API
+  - Goal:
+    - Ensure performance between versions
+    - Ensure system can handle expected spikes in traffic
+- Deployment config testing:
+  - Chars:
+    - SUT: single machine hermetic or cloud-deployed isolated
+    - Data: none
+    - Verification: assertions (doesn't crash)
+  - Execution: test the integration of the SUT with its config files
+- *Exploratory testing*: chars:
+  - SUT: production or shared staging
+  - Data: production or a known test universe
+  - Verification: manual
+- A/B diff regression testing:
+  - Chars:
+    - SUT: 2 cloud-deployed isolated envs
+    - Data: usually multiplexed from production or sampled
+    - Verification: A/B diff comparison
+  - Execution: send traffic to a public API & compare responses between old & new versions (esp between migrations)
+  - Any deviations in beha must be reconciled as anticipated or unanticipated (regressions)
+  - Variants:
+    - A/A testing (comparing a system to itself) to identify non-deterministic beha, noise, flakiness
+    - -> Remove those from A/B diffs
+    - A/B/C testing (?)
+  - Limitations:
+    - Manual verification of diffs
+    - Noise (eg non-determinism)
+    - Generate enough useful traffic
+    - Complexity in setting up 2 SUTs, esp when there are shared dep
+- *UAT*:
+  - Chars:
+    - SUT: machine-hermetic or cloud-deployed isolated
+    - Data: handcrafted
+    - Verification: assertions
+  - Can use actual coding languages instead of runnable specification languages when:
+  those defining the intended product beha are fluent coders
+- *Probers* & canary analysis:
+  - Chars:
+    - SUT: production
+    - Data: production
+    - Verification: assertions & A/B diff (of metrics)
+  - Goal: ensure that the production env itself is healthy
+  - Prober asserts well-known & deterministic read-only actions
+  - -> Assertions hold even if the production data changes
+  - -> Provide early detection of major issues
+  - Canary analysis: compare health metrics of both the canary & baseline parts of production
+  - Limitation: issues already affected end users
+- Disaster recovery & chaos engineering:
+  - Chars:
+    - SUT: production
+    - Data: production & user-crafted (fault injection)
+    - Verification: manual & A/B diff (metrics)
+  - Goal: test how well the systems can react to unexpected changes/failures
+  - Disaster recovery: inject faults into infra (eg datacenter fires/malicious attacks)
+  - Chaos engineering:
+    - Continuously introduce a bg level of faults into the systems & see what happens
+    - Restore functionality before things get out of hand
+  - -> Break assumptions of stability & reliability -> create habit of building resiliency
+  - Limitations:
+    - Issues already affected end users
+    - Disaster recovery is expensive to run
+- User evaluation:
+  - Chars:
+    - SUT: production
+    - Data: production
+    - Verification: manual and A/B diffs (of metrics)
+  - Goal: collect metrics about the popularity & issues of upcoming features
+  - Approaches:
+    - Use limited rollouts & experiments to make features in production available to a subset of users:
+      - Dogfooding: release to staff -> feedback
+      - Experimentation (imp at Google): release to experiment group, compare with the control group in terms of some desired metric
+    - Rater evaluation:
+      - Present human raters with results for a given operation & ask which one is better and why
+      - Usage: in system where result evaluation is relative
+      - Goal: determine whether to launch an algo changes
+
+
+## Additional info
+- How to ensure the double reflects actual beha:
+  - Popular approach: consumer driven contract testing
+  - Google approach: record & replay tests:
+    - Record mode test: run continuously on post-submit to gen traffic logs & verify logs are generated
+    - Replay mode test: used during dev & pre-submit testing
+    - When client beha changes significantly: rerun test in Record mode to generate new traffic
+- Should draft a test plan when designing software: strategic outline of what types of testing are needed and how much each, by:
+  - Identify primary risks
+  - Necessary testing approaches to mitigate those risks
+- Common approach to exploratory testing: bug bash meeting:
+  - A team of engineers & related personnel with familiarity with the product manually tests it
+  - Can use a published guidelines regarding:
+    - Particular focus areas
+    - Starting points for using the system
+  - Goal: explore & document questionable product behaviors & bugs

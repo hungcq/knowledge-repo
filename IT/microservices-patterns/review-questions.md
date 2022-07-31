@@ -9,7 +9,7 @@
 
 # Architectural styles
 - How to look at an app architecture from dif perspectives?
-- What are the common ways to structure the logical view? What is the advs & disadvs of each?
+- What are the common ways to structure the logical view? What are the advs & disadvs of each?
 
 # IPC
 - What are the main types of interaction styles, categorized by dif dimensions?
@@ -22,9 +22,9 @@
 - What are the main considerations when choosing a message broker?
 - How to scale out receiver while preserving message ordering?
 - What are the techniques to handle duplicate messages?
-- How to ensure a message is published as part of a transaction?
+- How to ensure that a message is published as part of a transaction?
 - What are the dif ways to replace sync interaction to improve availability? What is the mechanism and tradeoff regarding each?
-- (Chap 5) What data should be including an domain event?
+- (Chap 5) What data should be including a domain event?
 
 # Queries in microservices
 - What are the dif ways to implement queries in microservices? What should be the considerations when choosing between them?
@@ -50,7 +50,7 @@
 - What is the function of a health check endpoint?
 - What is log aggregation? Which functions should a log infra supports?
 - Why distributed tracing is needed? How is it implemented?
-- What is application metrics? Why do we need it? What is a typical architecture? What are dif types of metrics?
+- What is application metrics? Why do we need it? What is its typical architecture? What are dif types of metrics?
 - What are the attributes of a common metric sample?
 - What is the responsibility of devs to have application metrics available? What are the dif ways to send to metric service?
 - Why do we need exception tracking when already have logging? How is it implemented?
@@ -65,10 +65,10 @@
 - What are the main deployment patterns? What are the advs and disadvs of each? Which pattern should be considered first?
 - What should be performed by the deployment pipeline in each pattern?
 - What is Docker? What is the function of a Dockerfile? What is included in its content?
-- What are the necessary steps to push and run a docker image? What are the common arguments in `docker run` command?
+- What are the necessary steps to push and run a Docker image? What are the common arguments in `docker run` command?
 - What is Kubernetes? What are its main functions? What are the main concepts and components in its architecture?
 - What are the steps to deploy a service using Kubernetes? How to make a service accessible from the outside of a cluster?
-- How to upgrade a running service in Kubernetes? How to rollback the deployment if bugs occur?
+- How to upgrade a running service in Kubernetes? How to roll back the deployment if bugs occur?
 - What is Istio? What are the key concepts and components in its architecture? How to utilize it to separate deployment from release?
 - What is AWS Lambda? What is the dif when deploying in Lambda comparing to other deployment patterns?
 - What are the dif ways to invoke a Lambda function? How to deploy and upgrade a Lambda function?

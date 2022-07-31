@@ -72,7 +72,8 @@
 - Microservice pattern language: collection of interrelated software architecture and design patterns for microservices
 - Software architecture: high level structure of a software, which consists of constituent parts & the dependencies between those parts
 - Monolithic architecture: archi style that structures a system (implementation *view*) as a single executable or deployable component
-- Microservice architecture: archi style that structures a system (implementation *view*) as a set of multiple loosely coupled, independently deployable services
+- Microservice architecture: archi style that structures a system (implementation *view*) as a set of multiple loosely coupled,
+independently deployable services
 - Service: standalone, independently deployable software component that implements some useful functionality
 - Business capability: something that a business does in order to generate value (eg order management, item management, shipping...)
 - IDL: interface definition language
@@ -110,6 +111,5 @@
 - Consumer driven contract test: an integration test for a provider that verifies that the shape of its API matches the expectations of a consumer
 - Deployment pipeline: the automated process of getting code from dev's computer into production
 - User journey test: corresponds to a user's journey through the system
-
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services
   and extracting services from the monolith

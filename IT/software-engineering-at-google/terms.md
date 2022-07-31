@@ -2,6 +2,7 @@
 - Test size: resources needed to run the test
 - Test scope: how much code is being validated (not executed) by a given test
 - Hermetic: contain all the info necessary to set up, execute & tear down
+- Flaky test: test that fails non-deterministically
 - Code coverage: % feature code executed by tests
 - Exploratory testing:
   - A form of manual testing
@@ -18,3 +19,5 @@
 - Fake: a lightweight implementation of an API that behaves similar to the real implementation but isn't suitable for production (eg in-memory DB)
 - Stubbing: the process of giving behavior to a function that otherwise has no behavior by specifying what values to return
 - Interaction testing (mocking): a way to validate how & whether a function is called without actually calling the implementation of the function
+- UAT: automated test that exercise the product through public APIs to ensure the overall beha for specific user journeys
+- Prober: function test that run encoded assertions against the production env
