@@ -12,8 +12,8 @@
   - Multi-leader replication: no single copy of data
   - Leaderless replication: can't solve cross-channel timing dependency even with strict quorum:
     - <img src="./resources/9.6.png" width="500">
-- CAP: either consistent or available when partitioned 
-- -> Old theorem, not practical because ignore other faults
+- CAP: choose either consistency or availability when partitioned 
+- -> Old theorem, not practical because it ignores other faults
 - Cost of linearizability: performance
 ### 9.2. Ordering guarantees
 - Ordering preserve causality

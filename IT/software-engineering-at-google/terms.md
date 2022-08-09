@@ -1,3 +1,7 @@
+
+# Documentation
+- Documentation: every supplemental text that an engineer needs to write to do their job, including standalone docs & code comments
+
 # Testing
 - Test size: resources needed to run the test
 - Test scope: how much code is being validated (not executed) by a given test

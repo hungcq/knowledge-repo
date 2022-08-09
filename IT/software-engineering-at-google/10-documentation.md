@@ -1,0 +1,64 @@
+# 10. *Documentation*
+## Overview
+- SEs write most of the doc themselves
+- -> Need proper processes, tools & incentives
+- Advs:
+  - Understandable code & APIs
+  - Clearly stated design goals & team objectives -> project team are more focused
+  - Clear steps for manual processes
+  - Less effort to onboard new members to a team/code base
+  - Long term benefit to all future readers
+- Reasons why doc is not popular:
+  - No immediate benefit to writers
+  - Engineers' attitude:
+    - View writing as a separate skill than that of programming
+    - Don't feel like they are capable writers
+  - Limited tools & integration into dev workflow
+  - Doc is view as extra burden to be maintained
+## Best practices
+- Treat as code:
+  - With owner/maintainer
+  - With internal policies/standard rules to optimized for readers
+  - Version controlled
+  - Review changes
+  - Track issues
+  - Evaluated periodically
+  - With tools to measure accuracy, freshness...
+- Write for audience:
+  - Identify the audience formally/informally before writing
+  - Criteria to categorize audience:
+    - Experience level (eg expert or junior)
+    - Domain knowledge (eg team member or outsider)
+    - Purpose (eg quick reference or checking implementation details)
+    - How a user encounters the doc:
+      - Seekers knowing what they want: focus on consistency in style to support efficient search
+      - Stumblers not knowing exactly what they want: provide overview/intro & intended audience
+    - Customer vs provider (implementor): create separate doc for each type
+  - -> Write the doc at their level
+  - How to approach a broad audience: keep the doc short: might require maintaining a larger, detailed one
+- Know the dif types, not mix types
+## Doc types
+- Reference doc (most common type):
+  - Usually generated from code comments
+  - 2 types by purpose:
+    - API comments
+    - Implementation comments
+  - 3 types by place:
+    - File comments:
+      - Should be used for all files
+      - Content:
+        - Main use cases
+        - Intended audience
+    - Class comments: content:
+      - Purpose of the class
+      - Important methods
+    - Function/public method comments:
+      - Use indicative verb
+      - Content:
+        - What the function does
+        - What is returned
+- Design doc:
+  - 
+
+## Additional info
+- Canonical doc to avoid conflicts of docs with dif owners

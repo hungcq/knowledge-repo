@@ -35,10 +35,10 @@
         - Test frameworks (eg Cucumber)
         - White space & comments (for complex tests)
         - -> Tests can be read at 3 levels of granularity:
-          - Test method name
+          - Name of the test method
           - Given when then comments
           - Actual code
-      - Name tests after te behavior being tested to convey useful info:
+      - Name tests after the behavior being tested to convey useful info:
         - Why test name are imp:
           - First item in failure reports
           - Express intent of the test
@@ -61,14 +61,14 @@
   - -> Use helper method to init the value while reusing code
   - Shared setup:
     - Useful when the majority of tests:
-      - Don't care about the specific arguments used to construct those objects under test
+      - Don't care about the specific arguments used to construct the objects under test
       - Can let them stay in default states
-    - Lead to unclear tests if tests depending on the particular values used in setup
+    - Lead to unclear tests if tests depend on the particular values used in setup
     - -> Better to repeat & state the value explicitly
-  - Shared helpers & validation: validation help (if needed) should check only 1 fact.
+  - Shared helpers & validation: validation helper (if needed) should check only 1 fact
   Check many facts will separate definition & execution from validation
   - *Test infra*:
-    - Need to be treated as its own separate product
+    - Need to be treated as a separate product
     - -> Must have its own tests
     - Mostly 3rd party libs -> should standardize across org
 ## Additional info
