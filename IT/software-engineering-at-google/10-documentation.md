@@ -15,6 +15,10 @@
     - Don't feel like they are capable writers
   - Limited tools & integration into dev workflow
   - Doc is view as extra burden to be maintained
+- Good doc: 
+  - 3 aspects: completeness, accuracy, clarity
+  - -> Usually there is tradeoffs between those
+  - Good doc does it intended job of its type
 ## Best practices
 - Treat as code:
   - With owner/maintainer
@@ -37,6 +41,34 @@
   - -> Write the doc at their level
   - How to approach a broad audience: keep the doc short: might require maintaining a larger, detailed one
 - Know the dif types, not mix types
+- Doc reviews:
+  - 3 types of reviews (can sometimes be mixed)
+  - Technical review:
+    - Goal: accuracy
+    - Reviewer: subject matter expert
+  - Audience review:
+    - Goal: clarity
+    - Reviewer: someone unfamiliar with the domain
+  - Writing review:
+    - Goal: consistency
+    - Reviewer: technical writer/volunteer
+- Doc usually answer How question. Try to address who-what-when-where-why in the first 2 paragraphs of any doc:
+  - Who: audience
+  - What: purpose of the doc
+  - -> The doc should contain only info related to the what
+  - When: when the doc was created, reviewed or updated (explicitly or implicitly using tools)]
+  - Where: where the doc should live, often implicit
+  - Why: purpose of the doc: summary of what you expect someone to take way from the doc
+- Structure: should have beginning, middle & end:
+  - Beginning: problem
+  - Middle: recommended solution
+  - End: takeaways
+- Deprecation:
+  - Should avoid abandoned docs as much as possible
+  - Deprecation steps:
+    - Remove or mark it as obsolete
+    - Indicate where to go for new info (if possible)
+- Technical writer: focus on writing docs that cross API boundaries
 ## Doc types
 - Reference doc (most common type):
   - Usually generated from code comments
@@ -58,7 +90,34 @@
         - What the function does
         - What is returned
 - Design doc:
-  - 
+  - Best practices:
+    - Require approved design doc before starting working on any major project
+    - Use design doc template approved by the team
+    - Should support collaboration
+  - Content:
+    - Goals of the design
+    - Implementation strategy
+    - Key design decisions with emphasis on their individual tradeoffs
+- Tutorial:
+  - When to write: when you first join a team
+  - Content: everything needs to be done along the way
+  - Number the steps explicitly
+  - Types:
+    - Focus on user:
+      - Number each action that a user, not the system, needs to undertake
+      - Denote user-visible input or output on separate lines
+    - Focus on other aspect: number the steps from the perspective of that focus
+- Conceptual doc:
+  - Purposes:
+    - Provide overviews of the APIs/systems
+    - To augment, not replace a reference document set
+  - Tradeoffs: duplication, simplification
+  - Difficult to write -> unpopular
+- Landing pages:
+  - Content: only links to other pages for more info
+  - Audience: user of your product or API
+## Doc review
+
 
 ## Additional info
 - Canonical doc to avoid conflicts of docs with dif owners

@@ -34,7 +34,10 @@
 - Part 3: processes:
   - Chap 8: style guides & rules: why, how to create, maintain & apply
   - Chap 9: code review: why, how, types
-  - Chap 10: documentation: concept, why, how
+  - Chap 10: documentation:
+    - Overview: def, advs
+    - Best practices: audience, workflow, audience, structure, deprecation, technical writers
+    - Types & content of each type
   - Chap 11, 12, 13, 14: testing:
     - Why, how, history at Google, limitation
     - Unit test, test double, larger tests: why, how, concepts, types
@@ -93,11 +96,11 @@
 - 3 difs between SE vs programming: time, scale & tradeoffs:
   - Time & change (most imp):
     - Time add a new dimension to programming: code needs to be sustainable
-    - <img src="../resources/software-engineering-at-google/1.png" alt="drawing" width="500"/>
+    - <img src="./resources/1.png" alt="drawing" width="500"/>
     - Require planning & manage impact of required change
     - -> Need practice & expertise
-    - Hyrum's law: given enough time & users, all observable behaviors of a system will be depended by sb, no matter what you promise in the contract
-    - -> Changes always introduce breakage & have to consider tradeoffs of such breakages
+    - Hyrum's law: given enough time & users, all observable behaviors of a system will be depended on by sb, no matter what you promise in the contract
+    - -> Changes always introduce breakage -> have to consider tradeoffs of such breakages
     - Why change is needed:
       - Issue: underlying tech change (eg fix security issue)
       - Opportunity: efficiency improvement
