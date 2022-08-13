@@ -116,8 +116,6 @@
 - Landing pages:
   - Content: only links to other pages for more info
   - Audience: user of your product or API
-## Doc review
-
 
 ## Additional info
 - Canonical doc to avoid conflicts of docs with dif owners

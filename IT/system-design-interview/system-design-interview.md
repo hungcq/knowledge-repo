@@ -300,73 +300,91 @@ Practical, IT, System design
 - [UUID v6](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/)
 
 # 8. URL shortener
-## Problem & design scope
-- Total URL
+## Requirements
+- Give example of how it works
 - Req/s
 - URL length
+- Support update/delete?
+- -> Calculate storage requirement
 ## High level design
 - API:
-  - POST: add URL
-  - GET: return original URL
-- Redirect: 301 client cache, 302 not cache
+  - POST: return short URL, add short-long URL mapping if not exist
+  - GET: redirect to original URL
 - Mapping by hash
-## Deep dive
+## Details
 - Data model:
   - ID
   - ShortURL
   - OriginalURL
+- Hash string length = log(total number of records, num possible characters)
 - Hash function:
   - Common hash function:
     - Handle hash collision by appending a string
-    - Check URL exist: bloom filter
-  - Base 62 conversion of ID: predictable
+    - Check hash exist in DB exist: use bloom filter for efficiency
+  - Base 62 conversion of auto incremented ID: predictable
 - Flow: Client <--> Load balancer -> Servers -> Cache -> DB
+- Redirect codes:
+  - 301: permanent: browser will cache & not send subsequent request to short URL
+  - -> Reduce load
+  - 302: temporary: browser won't cache
+  - -> Better for tracking short URL usage
 ## Wrap up
 - Rate limiter
 - Scaling server & DB
-- Analytic
+- Analytic: number of click, scenario when click happens
 - Availability, consistency, reliability
 
-# 6. Web crawler
+# 9. Web crawler
+## Web crawler overview
 - Used to discover new/updated content on the web
-- Tree-like style
-- Purpose:
+- Mechanism: start with a few pages, go to other pages in each page, traverse in tree-like style
+- Purposes:
   - Search engine indexing
-  - Web archiving
-  - Web mining
+  - Web archiving (store web content)
+  - Web data mining
   - Web monitoring (e.g., copyright)
-## Problem & design scope
+## Requirements
 - Purpose
 - Num pages/s
 - Content type: HTML, image
-- Store data? Duplicate?
+- Need to update data (ie new/updated web page)?
+- Storage duration?
+- Store duplicate content?
 ## High level design
 - <img src="./resources/9.2.png" width="700">
-## Deep dive
-- Traversal algo: BFS
-- URL frontier:
-  - Ensure politeness
-  - Prioritization
-  - Freshness: ensure content updated 
-- -> Distribute URL into queue to be downloaded
+## Details
+- How to choose seed URLs:
+  - Popular sites
+  - By category
+- Traversal algo: usually BFS. Improvement:
+  - Avoid flooding the same page
+  - Visit important page first
+- -> URL frontier:
+  - Ensure politeness: each domain as a queue, handled by 1 worker
+  - Prioritization: use queues with dif weights, workers choose queue randomly based on weight, put to queue router
+  - Freshness: ensure content updated, can use page's update history
+  - <img src="./resources/9.8.png" width="500">
 - HTML downloader:
-  - Multi nodes
-  - Cached DNS resolver
-  - Geographically distributed
+  - Multi nodes, pull from queue pushed by URL frontier
+  - Read & cached robot.txt (file in each site specifying which web can be downloaded)
+  - Cache IPs returned by DNS resolver
+  - Geographically distributed -> improve download time
   - Timeout
+- Add new modules for other tasks: URL seens? ->
+  - Image downloader
+  - Web monitoring (eg monitor for copyright issues)
 - Avoid problematic content:
-  - Redundant
-  - Spider traps
+  - Redundant content: use hash/checksum
+  - Spider traps:
+    - Blacklist/other filters
+    - Max URL length
   - Noise: ads, spam URL
-## Wrap up
-- Server-side rendering page
-- Filter
+- Server-side rendering page to obtain dynamically generated content
+- Filter: avoid low quality/spam pages
 - Scale: DB, downloader
-- Availability, consistency, reliability
-- Analytics
 
-# 7. Noti system
-## Problem & design scope
+# 10. Noti system
+## Requirements
 - Noti type
 - Num noti/day
 - Client/server-send?
