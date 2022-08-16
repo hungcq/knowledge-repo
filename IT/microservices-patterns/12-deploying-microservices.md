@@ -57,7 +57,7 @@
     - Deploy the VM image to machine
   - Advs:
     - Encapsulate technology stack: in the VM
-    - Isolated service instance
+    - Isolate service instance
     - Use mature cloud infra, which supports:
       - Resource allocation
       - Load balancing

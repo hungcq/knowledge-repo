@@ -382,52 +382,83 @@ Practical, IT, System design
 - Server-side rendering page to obtain dynamically generated content
 - Filter: avoid low quality/spam pages
 - Scale: DB, downloader
+## Materials
+- [Mercator web crawler paper](https://courses.cs.washington.edu/courses/cse454/15wi/papers/mercator.pdf)
+- [Web crawling survey](http://infolab.stanford.edu/~olston/publications/crawling_survey.pdf)
+- [Web crawling - Standford lecture](https://www.ics.uci.edu/~lopes/teaching/cs221W12/slides/Lecture05.pdf)
+- [PageRank citation ranking paper](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)
+- [Google dynamic rendering](https://developers.google.com/search/docs/advanced/javascript/dynamic-rendering)
+- [IRL bot web crawler design](https://irl.cse.tamu.edu/people/hsin-tsang/papers/www2008.pdf)
+- [Detect spamming content paper](http://airweb.cse.lehigh.edu/2006/urvoy.pdf)
 
 # 10. Noti system
 ## Requirements
-- Noti type
-- Num noti/day
-- Client/server-send?
+- Noti type: push noti, SMS, email?
 - Real time?
-## Design
+- Type of supported device?
+- Triggering mechanisms:
+  - Other services
+  - Scheduled noti
+- Allow users to unsubscribe?
+- Num noti/day
+## High level design
 - 2 flows:
   - Gather contact info
   - Send noti
-- Gather info: 1 user -> N devices:
+- Gather info: 1/N user -> N devices:
   - User -> Load balancer -> API servers -> DB
+  - User schema: userid, phone, email
+  - Device schema: device token
 - Send noti:
   - <img src="./resources/10.14.png" width="700">
+## Details
+- Noti template for consistency & performance
+- Retry mechanism
+- Deduplicate message mechanism
+- Rate limit
+- Authenticate sender services with app key & app secret
+- Monitor: user engagement, num noti sent
+- Check user settings before sending
+## Materials
+- [You cannot have exactly once delivery in distributed system](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
 
-# 8. News feed system
-## Problem & design scope
-- Scope
-- Features
-- News feed order
+# 11. News feed system
+## Requirements
+- What does news feed mean?
+- Supported clients?
+- Main features?
+- News feed order: chronological or by weight?
 - Num friends of user
 - Traffic volume: num DAU
-- Feed content: image, video?
+- Feed content: text, image, video?
+- Send notification to followers when feed is published?
+- Support muting? Support selective sharing with some friends only?
 ## High level design
 - 2 flows:
   - Feed publishing
   - Feed building
-## Deep dive
-- News feed cache: store post ID by user ID
+## Details
+- News feed cache: store post ID by user ID (friend ID?)
 - Post cache, DB: store post content by post ID
 - User cache, DB: store user info, follow/unfollow info…
 - Feed publishing design:
   - Fanout on write: fast retrieval, heavy computation, waste resource on inactive use
   - Fanout on read
   - <img src="./resources/11.4.png" width="700">
+- -> Should use hybrid approach: fanout on read for users with many followers, otherwise fanout on write
 - Retrieval:
   - <img src="./resources/11.7.png" width="700">
+  - CDN for media content
 - Cache architecture:
   - News feed: feed IDs
   - Content: hot, normal
   - Social graph: followers, following
   - Action: like, rep…
   - Counter: like, reply
+## Materials
+- [How facebook newsfeed works](https://www.facebook.com/help/327131014036297/)
 
-# 9. Chat system
+# 12. Chat system
 ## Problem & design scope
 - Type of chat app: 1-1/group
 - Scope: mobile/web
@@ -498,5 +529,7 @@ Practical, IT, System design
 
 # Criticisms
 - Chap 6 assume leaderless replication models without acking it first
+- Some concepts are a bit confusing (eg web server are used instead of API gateway in chapter 11)
+- Chap 13 Feed service and Post service share the same Post cache & DB
 
 # Takeaway

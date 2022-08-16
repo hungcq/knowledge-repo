@@ -37,23 +37,23 @@
     - Less effective tests:
       - Can't ensure the stubbed function behaves like the real impl
       - Can't store state -> hard to test certain aspects of SUT
-  - Usage:
-    - Need a function to return a specific value to get the SUT into a certain state
+  - Use case: need a function to return a specific value to get the SUT into a certain state
+  - Best practice:
     - Each stubbed function should have a direct relationship to the test's assertions
-    - -> Num of stubs should be small to avoid complexity
+    - Num of stubs should be small to avoid complexity
 - *Interaction testing*:
   - Disadvs:
     - Can't ensure that the SUT is working properly: can only validate that certain functions are called as expected
     - -> Need to make assumption about the beha of the code
     - Leak impl details: reveal that the SUT calls a function
-  - Usage:
+  - Use cases:
     - Can't use real impl & no fake exists
     - -> Use mock as a compromise
     - Differences in the number/order of calls to a function would cause undesired beha
     (eg when using cache, need to verify that the DB object is not accessed more times than expected)
-  - Not a complete replacement for state testing
-  - -> When using mock in unit tests, need to supplement the test suite with larger scoped tests that perform state testing
   - Best practice:
+    - Not a complete replacement for state testing
+    - -> When using mock in unit tests, need to supplement the test suite with larger scoped tests that perform state testing
     - Should be used for state-changing functions (eg command function)
     - -> For non-state-changing function (eg query function), stubbing is enough:
     the SUT will return the value of the function to do other work that can be asserted
