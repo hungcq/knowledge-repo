@@ -22,12 +22,13 @@ Practical, IT, System design
 # Terms
 - SLA: service level agreement, defining the uptime the service provider promises to deliver
 
-# 1. Scaling techniques
-## Overall Diagram
+# Content
+## 1. Scaling techniques
+### Overall Diagram
 - <img src="./resources/1.23.png" width="500">
-## Multi data centers diagram
+### Multi data centers diagram
 - <img src="./resources/1.15.png" width="500">
-## Notes
+### Notes
 - Split DB server - service server: scale independently
 - Limit of vertical scaling:
   - Hardware limit
@@ -76,7 +77,7 @@ Practical, IT, System design
   - Availability: request not lost in case of failure
   - Scalability: scale producer/consumer independently
 - Logging (detect issues), metric (system status, business) & automation (CI/CD to improve productivity)
-## Materials
+### Materials
 - [Should you go beyond relational databases?](https://blog.teamtreehouse.com/should-you-go-beyond-relational-databases)
 - [Caching strategies and how to choose the right one](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)
 - [Netflix multi-regional resiliency solution](https://netflixtechblog.com/active-active-for-multi-regional-resiliency-c47719f6685b)
@@ -84,8 +85,8 @@ Practical, IT, System design
 - [Common NoSQL use cases by survey](http://highscalability.com/blog/2010/12/6/what-the-heck-are-you-actually-using-nosql-for.html)
 - [Scaling memcached at Facebook](https://www.cs.bu.edu/~jappavoo/jappavoo.github.com/451/papers/memcache-fb.pdf)
 
-# 2. Interview framework
-## Overview
+## 2. Interview framework
+### Overview
 - Purpose of SDIs: test communication & problem-solving skills:
   - Technical design skill
   - Collaboration skill
@@ -96,7 +97,7 @@ Practical, IT, System design
   - Over-engineering, ignore tradeoffs: costly system
   - Narrow-minded
   - Stubborn
-## 4-step process
+### 4-step process
 - Problem & design scope: clarify requirements & assumptions:
   - What specific features to build
   - Scope: mobile/web?
@@ -119,7 +120,7 @@ Practical, IT, System design
   - Operational issues: monitoring, deployment
   - Handle the next scale (eg x10 users)
 
-# 3. Rough estimation
+## 3. Rough estimation
 - 1 ASCII char = 1 byte
 - Compress data (fast) before send (slow network read)
 - Write down assumption with unit
@@ -130,17 +131,16 @@ Practical, IT, System design
   - Number of servers
 - Latency numbers:
   - <img src="./resources/2.2.png" width="600">
-## Materials
+### Materials
 - [Google back-of-the-envelope estimation](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
   
-# 4. Rate limiter
-## Overall
+## 4. Rate limiter
+### Overall
 - Def: used to control the rate of traffic sent by a client or a service
 - Mechanism: block excess request when threshold is reached
 - Advs:
   - Prevent resource starvation/server overload (eg when there is DDoS attack)
   - Reduce cost (eg there is cost to call third party API)
-## Design
 ### Requirements
 - Client side or server side?
 - Throttle based on which attribute of the request? (eg user ID, IP)
@@ -187,11 +187,10 @@ Practical, IT, System design
   - Retry with backoff
 - Detailed design:
   - <img src="./resources/4.13.png" width="400">
-## Materials
+### Materials
 - [Rate limiting with Redis sorted set](https://engineering.classdojo.com/blog/2015/02/06/rolling-rate-limiter/)
-- 
 
-# 5. Consistent hashing
+## 5. Consistent hashing
 - Problem: use normal hash function eg hash(key) % num server
 - -> Most key are redistributed when add/remove server
 - Hash space -> connect 2 ends to create hash ring
@@ -211,21 +210,21 @@ Practical, IT, System design
       - Index keys in each node by key range, then query keys to be moved?
       - Not possible for hash index: need to scan all keys in all node?
 - <img src="./resources/5.14.png" width="400">
-## Materials
+### Materials
 - [Wiki consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing)
 - [Amazon Dynamo paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 - [Cassandra paper](http://www.cs.cornell.edu/Projects/ladis2009/papers/lakshman-ladis2009.pdf)
 - [Stanford consistent hashing lecture](http://theory.stanford.edu/~tim/s16/l/l1.pdf)
 
-# 6. Key-value store
-## Requirements
+## 6. Key-value store
+### Requirements
 - Main operations: get & set
 - Read, write latency
 - Memory usage
 - Consistency vs availability
 - Amount of data
 - Autoscale?
-## High level design
+### High level design
 - Design issues:
   - Data partitioning & auto-scaling: consistent hashing with virtual nodes
   - Data replication: store in the first x unique servers on the hash ring
@@ -246,7 +245,7 @@ Practical, IT, System design
     - Read from in-memory SSTable if found
     - Read from disk if not found in SSTable
       - <img src="./resources/6.17.png" width="400">
-## Additional info
+### Additional info
 - CAP theorem:
   - Def: it is impossible for a distributed system to simultaneously provide more than 2 of 3 guarantees:
     - Consistency: client always sees the same data no matter which node it reads from
@@ -256,18 +255,18 @@ Practical, IT, System design
   - For distributed data system:
     - Choosing consistency means blocking all writes to avoid unavailable node serving stale data
     - Choose availability means allow writes, unavailable node continues to serve stale data, sync later
-## Materials
+### Materials
 - [BigTable paper](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtableosdi06.pdf)
 - [Cassandra architecture](https://cassandra.apache.org/doc/latest/architecture/)
 
-# 7. Distributed unique ID generator
-## Requirements
+## 7. Distributed unique ID generator
+### Requirements
 - Chronologically ordered?
 - Increment by?
 - Numerical?
 - ID length/size?
 - Scale: how many IDs/s?
-## High level design
+### High level design
 - Approaches:
   - Multi leader replication:
     - Mechanism: k DB, each auto increment by k
@@ -295,23 +294,23 @@ Practical, IT, System design
       - 4096 IDs/s each machine
     - -> Tunable by changing the number of bits
     - Problem: sync time between different machines
-## Materials
+### Materials
 - [Twitter snowflake](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake)
 - [UUID v6](https://www.percona.com/blog/2014/12/19/store-uuid-optimized-way/)
 
-# 8. URL shortener
-## Requirements
+## 8. URL shortener
+### Requirements
 - Give example of how it works
 - Req/s
 - URL length
 - Support update/delete?
 - -> Calculate storage requirement
-## High level design
+### High level design
 - API:
   - POST: return short URL, add short-long URL mapping if not exist
   - GET: redirect to original URL
 - Mapping by hash
-## Details
+### Details
 - Data model:
   - ID
   - ShortURL
@@ -328,14 +327,14 @@ Practical, IT, System design
   - -> Reduce load
   - 302: temporary: browser won't cache
   - -> Better for tracking short URL usage
-## Wrap up
+### Wrap up
 - Rate limiter
 - Scaling server & DB
 - Analytic: number of click, scenario when click happens
 - Availability, consistency, reliability
 
-# 9. Web crawler
-## Web crawler overview
+## 9. Web crawler
+### Web crawler overview
 - Used to discover new/updated content on the web
 - Mechanism: start with a few pages, go to other pages in each page, traverse in tree-like style
 - Purposes:
@@ -343,16 +342,16 @@ Practical, IT, System design
   - Web archiving (store web content)
   - Web data mining
   - Web monitoring (e.g., copyright)
-## Requirements
+### Requirements
 - Purpose
 - Num pages/s
 - Content type: HTML, image
 - Need to update data (ie new/updated web page)?
 - Storage duration?
 - Store duplicate content?
-## High level design
+### High level design
 - <img src="./resources/9.2.png" width="700">
-## Details
+### Details
 - How to choose seed URLs:
   - Popular sites
   - By category
@@ -382,7 +381,7 @@ Practical, IT, System design
 - Server-side rendering page to obtain dynamically generated content
 - Filter: avoid low quality/spam pages
 - Scale: DB, downloader
-## Materials
+### Materials
 - [Mercator web crawler paper](https://courses.cs.washington.edu/courses/cse454/15wi/papers/mercator.pdf)
 - [Web crawling survey](http://infolab.stanford.edu/~olston/publications/crawling_survey.pdf)
 - [Web crawling - Standford lecture](https://www.ics.uci.edu/~lopes/teaching/cs221W12/slides/Lecture05.pdf)
@@ -391,8 +390,8 @@ Practical, IT, System design
 - [IRL bot web crawler design](https://irl.cse.tamu.edu/people/hsin-tsang/papers/www2008.pdf)
 - [Detect spamming content paper](http://airweb.cse.lehigh.edu/2006/urvoy.pdf)
 
-# 10. Noti system
-## Requirements
+## 10. Noti system
+### Requirements
 - Noti type: push noti, SMS, email?
 - Real time?
 - Type of supported device?
@@ -401,7 +400,7 @@ Practical, IT, System design
   - Scheduled noti
 - Allow users to unsubscribe?
 - Num noti/day
-## High level design
+### High level design
 - 2 flows:
   - Gather contact info
   - Send noti
@@ -411,7 +410,7 @@ Practical, IT, System design
   - Device schema: device token
 - Send noti:
   - <img src="./resources/10.14.png" width="700">
-## Details
+### Details
 - Noti template for consistency & performance
 - Retry mechanism
 - Deduplicate message mechanism
@@ -419,11 +418,11 @@ Practical, IT, System design
 - Authenticate sender services with app key & app secret
 - Monitor: user engagement, num noti sent
 - Check user settings before sending
-## Materials
+### Materials
 - [You cannot have exactly once delivery in distributed system](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
 
-# 11. News feed system
-## Requirements
+## 11. News feed system
+### Requirements
 - What does news feed mean?
 - Supported clients?
 - Main features?
@@ -433,11 +432,11 @@ Practical, IT, System design
 - Feed content: text, image, video?
 - Send notification to followers when feed is published?
 - Support muting? Support selective sharing with some friends only?
-## High level design
+### High level design
 - 2 flows:
   - Feed publishing
   - Feed building
-## Details
+### Details
 - News feed cache: store post ID by user ID (friend ID?)
 - Post cache, DB: store post content by post ID
 - User cache, DB: store user info, follow/unfollow info…
@@ -455,77 +454,229 @@ Practical, IT, System design
   - Social graph: followers, following
   - Action: like, rep…
   - Counter: like, reply
-## Materials
+### Materials
 - [How facebook newsfeed works](https://www.facebook.com/help/327131014036297/)
 
-# 12. Chat system
-## Problem & design scope
-- Type of chat app: 1-1/group
+## 12. Chat system
+### Requirements
+- Type of chat app: 1-1/group?
 - Scope: mobile/web
 - Num DAU
 - Group size limit
 - Text size limit
+- Support media?
+- Support voice/video call?
 - Encryption
 - Chat history storage duration
 - Multi devices/user?
 - Noti
-## High level design
+- Side function: seen? Online/offline status? Searching?
+### High level design
 - Sender (HTTP keep-alive/web socket) -> Chat service (store, relay) (web socket) -> receiver
 - Service -> receiver protocol:
   - Polling: inefficient when no new mes
-  - Long polling:
-    - Close when: new mes/timeout
-    - Problem:
+  - Long polling: 
+    - Mechanism:
+      - Client holds connection open until there is new mes/timeout
+      - After new mes/timeout, client opens another connection
+    - Problems:
       - Multi servers
       - Can't detect disconnection
       - Inefficient
   - Web socket: need to manage connections
 - API servers: auth, user profile, service discovery
+- DB choice:
+  - User profile, settings, friend list: relational DB for robustness
+  - Chat history: noSQL DB:
+    - Fast read & random access
+    - Scale
 - <img src="./resources/12.8-modified.png" width="700">
-## Deep dive
+### Details
+- Unique message ID PK: snowflake
 - Service discovery (e.g., Zookeeper): pick chat server for client
 - 1-1 chat flow:
   - <img src="./resources/12.12.png" width="600">
-- Sync across device: use cur ID on device -> fetch new mes
-- Group chat flow: mes sync queue for each user in group:
+- Sync across device:
+  - 1 session on each device
+  - Use current mes ID on each device -> fetch new mes
+- Group chat flow: mes sync queue for each user (or each server?) in group:
   - A -> C queue -> C 
   - A -> D queue -> D 
   - B -> C queue -> C
 - Online status:
-  - Heart beat
-  - Friends sub to channel (e.g., A onl channel)
-## Wrap up
-- Media: compression, cloud storage, thumbnail
+  - Send heart beat to presence server
+  - When status change, publish to friends' presence server via message queue
+- Handle large group: read when user opens the group or manually refresh
+### Wrap up
+- Support media file: compression, cloud storage, thumbnail
 - Client-side caching
-- Resend
+- Resend mechanism
+- End-to-end encryption
+### Materials
+- [Erlang at Facebook](https://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)
+- [Messenger & Whatsapp process 60B messages each day](https://www.theverge.com/2016/4/12/11415198/facebook-messenger-whatsapp-number-messages-vs-sms-f8-2016)
+- [Facebook messages technology](https://www.facebook.com/notes/10158791457767200/)
+- [Whatsapp end-to-end encryption](https://faq.whatsapp.com/791574747982248/?locale=en_US)
+- [Slack uses app-level cache to scale](https://slack.engineering/flannel-an-application-level-edge-cache-to-make-slack-scale/)
 
-# 10. Search auto complete system
-## Problem & design scope
+## 13. Search auto complete system
+### Requirements
 - Matching: beginning/middle?
-- Num of suggestion
+- Num of suggestions
+- Sort by?
 - Spell check?
-- Multi languages?
+- English or multi languages?
 - Case sensitive?
 - Num users/day
-- Sort by?
-## High level design
+- Response time
+- -> Estimation: num of search query -> num of search autocomplete request -> amount of data saved (eg 20% search queries are new)
+### High level design
 - Data gathering service:
-  - Query
-  - Frequency
-- Query service
-## Deep dive
-- Trie with optimizations:
-  - Limit prefix max length
-  - Cache top search query at each node 
-  - -> No need to search and sort all children
-  - <img src="./resources/13.8.png" width="600">
+  - Gather & aggregate search queries
+  - Data model: query, frequency
+- Query service: return n suggestions sorted by popularity
+### Details
+- Trie
+  - Use to store string compactly & retrieve it quickly
+  - Basic usage: traverse using prefix, get all children, sort children by popularity
+  - Optimizations:
+    - Limit prefix max length -> traverse take O(1)
+    - Cache top search query at each node
+    - -> No need to search and sort all children
+    - -> Trade space for time complexity
+    - <img src="./resources/13.8.png" width="600">
 - Data gathering service:
+  - Top searches are unlikely to change & updating tree for every search is costly
+  - -> Need optimization
   - <img src="./resources/13.9.png" width="600">
+  - Log search data: sampling to reduce amount of logs
+  - Store trie data:
+    - Document store
+    - Key-value store: prefix:data
 - Query service:
   - User -> Load balancer -> API servers -> Filter layer -> Trie cache -> Trie DB
   - Other optimizations:
-    - Efficient dynamic content update (react)
+    - Efficient dynamic content update (React)
     - Browser caching
+- Approaches to scale data layer:
+  - Shard by n first level (eg aa-ac in 1 node)
+  - -> Can result in uneven distribution
+  - Store mapping from prefix to shard using a shard-manager DB/service
+- Support real-time update:
+  - Aggregate more frequently
+  - Stream processing
+  - Reduce amount of data updated by sharding
+  - Change ranking model: more weight to recent search
+### Materials
+- [The life of a typehead query FB](https://www.facebook.com/notes/10158791367817200/)
+- [Prefix service sharing Medium](https://medium.com/@prefixyteam/how-we-built-prefixy-a-scalable-prefix-search-service-for-powering-autocomplete-c20f98e2eff1)
+- [Prefix hash tree paper](https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf)
+
+## 14. Video sharing platform
+- Example: Youtube, Netflix
+### Requirements
+- Main features: eg share/watch video, subscribe, comments, like, save to playlist
+- Supported FE clients
+- Scale: DAU, average time spent/user/day
+- Supported video resolutions
+- Video size restriction?
+- Can leverage existing cloud infra? Need to optimize cost?
+- Quality requirement: upload speed, streaming quality
+- -> Estimation: average video size, average uploads/user
+  - Amount of storage each day
+  - Amount of data stream each day -> CDN cost
+### High level design
+- Cloud services to leverage: CDN & blob storage
+- 3 main components:
+  - FE
+  - CDN: stream video
+  - API servers: serve other requests
+- 2 main flows:
+  - Video uploading flow:
+    - <img src="./resources/14.4.png" width="600">
+  - Video streaming flow: need to understand & choose the right video streaming protocol
+### Details
+- Use DAG to determine & parallelize video-transcoding tasks
+- Video transcoding architecture:
+  - <img src="./resources/14.10.png" width="700">
+  - DAG scheduler decide tasks to run & put tasks into task queue
+  - Resource scheduler:
+    - Get task from task queue, pick the suitable worker from worker queue to run the task
+    - <img src="./resources/14.17.png" width="700">
+- Upload flow:
+  - Steps:
+    - FE -> API server: pre-signed URL: give access permission to the object in the URL (eg object in Amazon S3)
+    - FE -> Object storage: upload using pre-signed URL
+  - Split & upload video in small chunks
+  - -> Fast & resumable upload
+  - Upload to close data center
+- Copyright/permission:
+  - Use digital right management system (eg Google Widevine)
+  - Encrypt when uploading & decrypt when playing back
+  - -> Only authorized users can access
+  - Watermarking
+- Reduce CDN cost:
+  - Serve frequently accessed video from CDN, serve other videos from your own video server
+  - Store less encoded versions for short video
+  - Store region-specific video in one region only
+  - Build your own CDN
+- -> Need to analyze historical viewing patterns
+- Live streaming: dif latency requirement, smaller chunks of data
+- Analyze videos & users to flag & take down unwanted video
+### Materials
+- [Netflix on AWS](https://aws.amazon.com/solutions/case-studies/netflix/)
+- [Streaming protocols](https://www.dacast.com/blog/streaming-protocols/)
+- [Distributed video processing on FB paper](https://www.cs.princeton.edu/~wlloyd/papers/sve-sosp17.pdf)
+- [Delegate data access with shared access signature](https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-access-signature)
+- [Scaling Youtube](https://www.youtube.com/watch?v=w5WVu624fY8)
+- [Internet short video sharing paper](https://arxiv.org/pdf/0707.3670.pdf)
+- [Predict content popularity to maximize infra efficiency at Netflix](https://netflixtechblog.com/content-popularity-for-open-connect-b86d56f613b)
+
+## Cloud storage service
+### Requirements
+- Main features: upload/download files, view file info, sync files, share files
+- Supported clients?
+- Supported file formats?
+- Need encryption?
+- File size limit?
+- Scale: DAU, number of requests or uploads each day
+- -> Estimation:
+  - Storage needed
+  - Upload QPS
+### High level design
+- Simple design:
+  - <img src="./resources/15.7.png" width="500">
+- 3 main APIs:
+  - Upload file
+  - Download file
+  - Get file's metadata
+- Resolve conflict:
+  - First version that got processed win
+  - Second version will be presented with the original file. User manually resolves the conflict.
+- High level design:
+  - <img src="./resources/15.10.png" width="500">
+  - Block server:
+    - Break files into small blocks before uploading to cloud storage
+    - Reconstruct file from blocks when requested
+### Details
+- Block server: split -> compress -> encrypt -> upload changed blocks to cloud storage (delta sync)
+- Data schema:
+  - <img src="./resources/15.13.png" width="500">
+- Fetch new data flow:
+  - Block service -> file meta service -> noti service -> client: file uploaded
+  - Client -> file meta service: changed blocks
+  - Client -> block service: download changed blocks
+- Save storage:
+  - Limit number of file versions
+  - Deduplicate unchanged blocks
+  - Move data to cold storage
+### Materials
+- [Differential synchronization](https://neil.fraser.name/writing/sync/)
+- [Differential sync Youtube video](https://www.youtube.com/watch?v=S2Hp_1jqpY8)
+- [Scaling dropbox talk](https://www.youtube.com/watch?v=PE4gwstWhmc)
+- [Rsync algo paper](https://www.andrew.cmu.edu/course/15-749/READINGS/required/cas/tridgell96.pdf)
+- [Rsync lib github](https://github.com/librsync/librsync)
+- [Dropbox security whitepaper](https://www.dropbox.com/static/business/resources/Security_Whitepaper.pdf)
 
 # Criticisms
 - Chap 6 assume leaderless replication models without acking it first
@@ -533,3 +684,6 @@ Practical, IT, System design
 - Chap 13 Feed service and Post service share the same Post cache & DB
 
 # Takeaway
+- Basic scaling techniques
+- How to design popular systems (eg noti, chat)
+- References to blogs/papers of actual system
