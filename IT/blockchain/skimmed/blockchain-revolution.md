@@ -20,6 +20,6 @@ Skipped, not worth analyzing
 
 ## Conclusion
 - Not worth an analytical reading. After a quick skim of some passages:
-  - Full of groundless arguments, without and data to back up
+  - Full of groundless arguments, without any data to back up
   - Wishful, unrealistic examples of blockchain applications
 - A test for the validity of arguments: it has been 6 years seen the publication of this book, have your life or others been transformed through blockchain technology? NOPE
