@@ -25,3 +25,5 @@
 - Interaction testing (mocking): a way to validate how & whether a function is called without actually calling the implementation of the function
 - UAT: automated test that exercise the product through public APIs to ensure the overall beha for specific user journeys
 - Prober: function test that run encoded assertions against the production env
+- Deprecation: the process of orderly migration away from and eventual removal of obsolete systems
+- 
