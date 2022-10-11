@@ -1,0 +1,34 @@
+## 3. Knowledge sharing
+- Summary: mechanism & culture to share knowledge effectively
+- Challenge to learning:
+  - Lack of psychological safety
+  - Info islands. Consequences:
+    - Info fragmentation
+    - Info duplication
+    - Info skew: dif, conflicting way of doing the same thing
+  - Single point of failure
+  - All or nothing expertise: 2 groups:
+    - Know everything: accumulate knowledge & responsibility
+    - Novice: lag behind
+  - Parroting: copy without understanding
+  - Haunted graveyards: code people avoid touching because they afraid sth might go wrong
+- Philosophy: combine personalized help with documentation (scale better but has maintenance code)
+- Set up psychologically safe env via:
+  - Mentorship: safe to ask
+  - Groups: via rules for interation
+- Grow personal knowledge:
+  - Ask questions
+  - Understand context
+- Dif approaches to ask the community:
+  - Group chats: less structured, hard to document
+  - Mailing lists: clumsy, suited for complicated questions
+  - Q&A platform: same advs as mailing list, but more usable & editable
+- Why ask the community:
+  - Can get help from broader community
+  - Answers are broadly available to others in the community
+- Other stuffs about Google knowledge sharing culture:
+  - Tech talks & classes
+  - Documentation
+  - Newsletter
+  - Communities
+  - Code style review

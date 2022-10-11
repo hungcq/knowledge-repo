@@ -1,0 +1,11 @@
+## 4. Engineering for equity
+- Responsibilities of engineers when designing products for a broad base of users
+- -> How: org embraces diversity
+- How to ensure equity:
+  - Build multicultural capacity:
+    - Make data set comprehensive, cover all groups
+    - Increase diversity in the workforce
+    - Educate to increase awareness
+  - Focus on actionable & comprehensive approaches
+  - Challenge established processes
+  - Consider tradeoff between product velocity and inclusivity

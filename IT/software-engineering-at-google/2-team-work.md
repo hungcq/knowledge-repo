@@ -1,0 +1,24 @@
+# II - Culture
+## 2. How to work well on teams
+- Tendency to hide WIP so people won't judge
+- -> Part of bigger problem: want to be seen as genius
+- -> Only a myth: great works are result of collaboration
+- Why shouldn't hide:
+  - Early detection of mistake -> reduced cost
+  - Have backup -> reduced risk
+  - Advice to problems, shared knowledge -> efficiency
+- SE is a team endeavor
+- 3 pillars of social interaction:
+  - Humility
+  - Respect
+  - Trust
+- -> Good rela will help get the work done
+- Creative nature of SE requires risk being taken & mistake being learned
+- -> How to learn from mistakes: document failures by performing root-cause analysis & writing a postmortem describing:
+  - Summary of the event
+  - Timeline
+  - Primary cause
+  - Impact & damage
+  - Immediate actions to fix
+  - Preventive actions
+  - Lessons learned

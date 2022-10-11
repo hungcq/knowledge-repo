@@ -26,4 +26,5 @@
 - UAT: automated test that exercise the product through public APIs to ensure the overall beha for specific user journeys
 - Prober: function test that run encoded assertions against the production env
 - Deprecation: the process of orderly migration away from and eventual removal of obsolete systems
-- 
+- Version control system: system that tracks version of file over time, by maintaining metadata about the set of file being managed
+- Repository: a collective copy of files and metadata in VCS

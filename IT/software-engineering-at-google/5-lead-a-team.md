@@ -1,0 +1,60 @@
+## 5. How to lead a team
+- Goal:
+  - For leaders: people management & technical leadership
+  - For others: understand leaders better
+- 3 types of role:
+  - Engineering manager: people & product aspect
+  - Tech lead: technical & project management aspect
+  - Tech lead manager (combine both roles): for new, small teams
+- Difficulties:
+  - Hard to measure impact
+  - Less time coding
+  - Afraid not able to
+- Why lead: increase impact: scalable job
+- How:
+  - Serve the team: remove obstacles, create good technical & social env
+  - Focus on what things should be done, trust the team to figure out how to do it
+- Anti-patterns:
+  - Hire pushover -> need to tell them what to do everytime
+  - Ignore low performers:
+    - Team spirit down: having to carry
+    - Solutions: work with them early, set small incremental goals
+    - -> Meet expectation: OK. Not: out.
+  - Ignore human issues: need to show understanding & sympathy
+  - Be everyone's friend: to soft. Don't have to.
+  - Compromise the hiring bar -> low performers
+  - Treat your team like children
+- Positive patterns:
+  - Lose the ego:
+    - Trust
+    - Appreciate rational discussion & constructive criticism
+    - Sincerely apologize when making mistakes
+  - Remain calm: always observed & have emotional impact on others
+  - When people ask for advice:
+    - Don't try to solve the problem
+    - Help them solve by asking questions to refine & explore the problem
+  - Be a catalyst: build consensus
+  - Remove roadblocks (eg technical/org): solve or find the right person to solve
+  - Be a teacher & a mentor: give people time to learn on their own
+  - -> Must balance with product priority
+  - Set clear goals: create concise mission statement for the team
+  - Be honest: situations:
+    - Can't tell sth/don't know sth -> admit it
+    - Give criticism:
+      - Don't use compliment sandwich to soften the blow
+      - -> Listener will miss the critical message
+      - Be kind, honest & to the point
+  - Track & ensure happiness
+  - Give complements & ack
+  - Insulate team from unrelated, org problems
+
+### Additional info:
+- Attributes of a mentor:
+  - Experienced with your team's processes & system
+  - Explanation ability
+  - Ability to gauge how much help the mentee needs
+- Common career goals:
+  - Be promoted
+  - Learn sth new
+  - Launch sth imp
+  - Work with smart people
