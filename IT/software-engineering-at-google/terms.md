@@ -28,3 +28,5 @@
 - Deprecation: the process of orderly migration away from and eventual removal of obsolete systems
 - Version control system: system that tracks version of file over time, by maintaining metadata about the set of file being managed
 - Repository: a collective copy of files and metadata in VCS
+- Static analysis: programs analyzing source code to find potential issues that can be diagnosed without executing the program
+- 

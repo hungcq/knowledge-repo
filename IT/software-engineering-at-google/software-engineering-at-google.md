@@ -67,6 +67,18 @@
   - Challenges
   - Google implementation details
   - Tradeoffs in code search implementation
+- Chap 18: build systems & build philosophy
+  - Overview: function & goal of a build system
+  - Types of build systems: mechanism, advs & disadvs
+  - Considerations when choosing build system
+  - Best practice for managing modules & dependencies
+- Chap 19: code review tool:
+  - Code review tool principles
+  - Google code review process & corresponding features of the review tool
+- Chap 20: static analysis:
+  - Overview: def, advs, chars of effective static analysis tool
+  - Recommended static analysis process
+  - Review of Google's static analysis tool
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous
