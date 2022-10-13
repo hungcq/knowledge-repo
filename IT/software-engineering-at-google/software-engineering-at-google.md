@@ -56,10 +56,17 @@
 - Part 5: conclusion
 
 ## Detailed structure
-- Chap 16: version control and branch management
+- Chap 16: version control and branch management:
   - Overview: def, comparison with other approaches, functions, centralized vs distributed VCS
   - Branch management practice: analysis & recommendations
   - Google practice: dependency management, branch management, monorepo
+- Chap 17: code search:
+  - Functionalities
+  - Goals of code search & corresponding functions
+  - Advs of separate web tool
+  - Challenges
+  - Google implementation details
+  - Tradeoffs in code search implementation
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous
