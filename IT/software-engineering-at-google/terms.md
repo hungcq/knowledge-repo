@@ -29,4 +29,9 @@
 - Version control system: system that tracks version of file over time, by maintaining metadata about the set of file being managed
 - Repository: a collective copy of files and metadata in VCS
 - Static analysis: programs analyzing source code to find potential issues that can be diagnosed without executing the program
-- 
+- Semantic versioning:
+  - Def: the practice of representing a version number for some dependency (esp libs) using 3 decimal-separated integers
+  - Types of versions:
+    - Major: breaking change to an existing API
+    - Minor: purely added functionality, backward compatible
+    - Patch: low risk non-API-impacting implementation details & bug fixes

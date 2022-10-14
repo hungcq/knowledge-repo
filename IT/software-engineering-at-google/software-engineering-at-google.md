@@ -79,6 +79,12 @@
   - Overview: def, advs, chars of effective static analysis tool
   - Recommended static analysis process
   - Review of Google's static analysis tool
+- Chap 21: dependency management
+  - Problems
+  - Importing dep: tradeoff, consideration & recommendation
+  - 4 common solutions
+  - Limitations of semantic version
+  - Practical proposal
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous
@@ -122,6 +128,7 @@
 - Chap 17: code search:
   - Too much boring technical details
   - Is the idea even remotely feasible for normal orgs?
+- Chap 21: dependency management: what is a SAT graph?
 
 # Take away
 - How to write clear, resilient to change tests
