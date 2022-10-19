@@ -1,5 +1,5 @@
-# 13. *Test doubles*
-## Overview
+## 13. *Test doubles*
+### Overview
 - Impact of test doubles on software development:
   - Codebase needs to be designed to be testable (eg use dep injection)
   - -> Can swap out real implementation with test doubles
@@ -13,7 +13,7 @@
     - Tests don't depend on implementation (vs using doubles for external implementation)
   - Use when real implementation is fast (build time & execution time), deterministic, has simple dependencies (eg value object)
   - Can structure real implementation to make construction simpler (eg factory pattern)
-## Techniques for using test doubles
+### Techniques for using test doubles
 - *Faking*:
   - Ideal technique when using test doubles
   - Require maintenance effort to follow real impl:

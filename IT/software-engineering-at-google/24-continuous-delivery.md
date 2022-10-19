@@ -1,0 +1,21 @@
+## 24. Continuous delivery
+- Advs of early & frequent release:
+  - Enable teams to see the impact of their work quickly & adapt faster to a shifting market
+  - Reduce the time between code complete & user feedback to minimize the cost of WIP
+- Goal: reduce cost, increase discipline & make the risks of release more incremental
+- -> Need to resist the obvious operational fixes (S approach):
+  - Reverting to a traditional planning model that leaves little room for learning or iteration
+  - Add more governance & oversight to the development process
+  - Implement risk reviews or rewarding low-risk & often low-value features
+- -> Need to migrate to a microservice architecture
+- Process:
+  - Flag-guard all changes. Risks:
+    - Code can still be scraped and analyzed if not well-obfuscated
+    - Not all features can be hidden behind flags without adding a lot of complexity
+  - Release frequently & leave changes that can't meet the deadline behind
+  - Use dynamic, configurable deployments to pack only the needed features
+  - Use A/B experiments to evaluate the tradeoffs between a feature's cost & its value to users & business
+  - Release qualification model to handle the diversity of clients (eg Android):
+    - Use representative testing when comprehensive testing is not feasible
+    - Gradual release
+    - Automated A/B release: no human needed to monitor & make decision

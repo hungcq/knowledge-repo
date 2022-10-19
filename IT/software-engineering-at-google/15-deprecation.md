@@ -1,4 +1,5 @@
-## Overview
+## 15. Deprecation
+### Overview
 - Goal: remove redundancy & complexity that builds up in a system over time
 - -> Reduce resource costs & improve velocity
 - Deprecation scope: range from individual function calls to entire software stacks
@@ -7,14 +8,14 @@
   - Technical systems, not end-user products
   - System owner has visibility into its use
 
-## When to deprecate
+### When to deprecate
 - When: better alternatives exist
 - -> In the long run, extra cost of old system become significant (operation & maintenance)
 - Amount of deprecation work should be limited to:
   - Focused effort
   - Reduce impact on users
 
-## Difficulties
+### Difficulties
 - Affect users
 - Dif between old & new system -> lots of tradeoffs
 - Human tendency: emotional attachment, change aversion
@@ -22,13 +23,13 @@
 - -> Need to research & measure
 - -> Focus on incremental, small changes that deliver benefit
 
-## Deprecation during design
+### Deprecation during design
 - Affect design decisions. Considerations:
   - Users' migration effort
   - Incremental replacement plan
 - -> Many are related to how a system provides & consumes dependencies
 
-## Types of deprecation
+### Types of deprecation
 - Advisory deprecation:
   - Def:
     - Don't have a deadline
@@ -43,7 +44,7 @@
   - Need enforcement mechanism
   - -> Allow deprecating team to break non-compliant users
 
-## Tools
+### Tools
 - Types:
   - Discovery: find users & how they use the system, before & during migration:
     - Static analysis
@@ -61,7 +62,7 @@
       - -> Avoid creating alert fatigue & being ignored
     - -> Can help to prevent new users but rarely lead to migration of existing systems
 
-## Process
+### Process
 - Similar to other SE projects
 - Need explicit project owners
 - Need concrete, incremental, beneficial milestones

@@ -1,4 +1,4 @@
-# 12. Unit testing
+## 12. Unit testing
 - Characteristics of bad tests:
   - Brittle: break in response to unrelated change that introduced no real bugs
   - Unclear: when the test fails, hard to determine what was wrong, how to fix & why it was originally written
@@ -71,7 +71,7 @@
     - Need to be treated as a separate product
     - -> Must have its own tests
     - Mostly 3rd party libs -> should standardize across org
-## Additional info
+### Additional info
 - 4 types of code changes:
   - Pure refactoring:
     - Tests shouldn't change

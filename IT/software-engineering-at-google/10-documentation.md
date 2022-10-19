@@ -1,5 +1,5 @@
-# 10. *Documentation*
-## Overview
+## 10. *Documentation*
+### Overview
 - SEs write most of the doc themselves
 - -> Need proper processes, tools & incentives
 - Advs:
@@ -19,7 +19,7 @@
   - 3 aspects: completeness, accuracy, clarity
   - -> Usually there is tradeoffs between those
   - Good doc does it intended job of its type
-## Best practices
+### Best practices
 - Treat as code:
   - With owner/maintainer
   - With internal policies/standard rules to optimized for readers
@@ -69,7 +69,7 @@
     - Remove or mark it as obsolete
     - Indicate where to go for new info (if possible)
 - Technical writer: focus on writing docs that cross API boundaries
-## Doc types
+### Doc types
 - Reference doc (most common type):
   - Usually generated from code comments
   - 2 types by purpose:
@@ -117,5 +117,5 @@
   - Content: only links to other pages for more info
   - Audience: user of your product or API
 
-## Additional info
+### Additional info
 - Canonical doc to avoid conflicts of docs with dif owners

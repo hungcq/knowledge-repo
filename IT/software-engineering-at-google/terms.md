@@ -35,3 +35,12 @@
     - Major: breaking change to an existing API
     - Minor: purely added functionality, backward compatible
     - Patch: low risk non-API-impacting implementation details & bug fixes
+- Large-scale change (LSC): any set of changes that are logically related but cannot practically be submitted as a single atomic unit
+- Haunted graveyard: a system that is so ancient, obtuse or complex that no one dares enter it
+- TAP: Google CI framework
+- Continuous integration (CI): the continuous assembling and testing of our entire complex and rapidly evolving system
+- Continuous build (CB): integrate the latest code changes at head & runs an automated build & test
+- Release candidate (RC): a cohesive, deployable unit created by an automated process, assembled of code, configuration,
+and other dependencies that have passed the continuous build
+- Continuous delivery (CD): a continuous assembling of release candidates, followed by the promotion and testing
+of those candidates throughout a series of environments - sometimes reaching production and sometimes not

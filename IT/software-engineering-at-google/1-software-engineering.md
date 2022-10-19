@@ -4,7 +4,7 @@
 - 3 difs between SE vs programming: time, scale & tradeoffs:
   - Time & change (most imp):
     - Time add a new dimension to programming: code needs to be sustainable
-    - <img src="./resources/1.png" alt="drawing" width="500"/>
+    - <img src="./resources/1.1.png" alt="drawing" width="500"/>
     - Require planning & manage impact of required change
     - -> Need practice & expertise
     - Hyrum's law: given enough time & users, all observable behaviors of a system will be depended on by sb, no matter what you promise in the contract

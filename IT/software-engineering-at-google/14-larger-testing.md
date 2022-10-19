@@ -1,5 +1,5 @@
-# 14. Larger testing
-## Overview
+## 14. Larger testing
+### Overview
 - Chars:
   - Slow
   - Non-hermetic:: share resources with other tests & traffic
@@ -54,7 +54,7 @@
   - Record test owner using:
     - Regular code ownership
     - Annotations in test code
-## Structure
+### Structure
 - Phases:
   - Obtain a SUT
   - Seed necessary data
@@ -96,7 +96,7 @@
   - Assertion
   - A/B comparison (differential): run 2 copies of the SUT, send the same data & compare the output
   - -> Diffs are verified by human to see whether each is intended
-## Types
+### Types
 - Functional testing of one or more interacting binaries:
   - Chars:
     - SUT: single machine hermetic or cloud-deployed isolated
@@ -186,8 +186,7 @@
       - Usage: in system where result evaluation is relative
       - Goal: determine whether to launch an algo changes
 
-
-## Additional info
+### Additional info
 - How to ensure the double reflects actual beha:
   - Popular approach: consumer driven contract testing
   - Google approach: record & replay tests:

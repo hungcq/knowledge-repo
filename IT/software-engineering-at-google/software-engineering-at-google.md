@@ -79,12 +79,24 @@
   - Overview: def, advs, chars of effective static analysis tool
   - Recommended static analysis process
   - Review of Google's static analysis tool
-- Chap 21: dependency management
+- Chap 21: dependency management:
   - Problems
   - Importing dep: tradeoff, consideration & recommendation
   - 4 common solutions
   - Limitations of semantic version
   - Practical proposal
+- Chap 22: large scale change:
+  - Overview: author's problems, types of change
+  - Reasons why many kinds of changes can't be committed atomically
+  - LSC infra
+  - LSC process
+- Chap 23: continuous integration:
+  - Overview: CI from a testing perspective, CI function, tradeoff
+  - Continuous testing
+  - CI challenges
+  - CI at Google: with examples & lessons learned
+- Chap 24: continuous delivery:
+  - 
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous
