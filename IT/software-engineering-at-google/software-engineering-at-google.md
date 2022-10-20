@@ -96,7 +96,14 @@
   - CI challenges
   - CI at Google: with examples & lessons learned
 - Chap 24: continuous delivery:
-  - 
+  - Advs of frequent release
+  - Goal
+  - Process
+- Chap 25: compute as a service:
+  - Evolution of CaaS, with challenges & solutions
+  - Effect on software development
+  - Compute architecture lessons learned at Google, over time and scale
+  - Considerations when choosing a compute service
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous

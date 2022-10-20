@@ -44,3 +44,4 @@
 and other dependencies that have passed the continuous build
 - Continuous delivery (CD): a continuous assembling of release candidates, followed by the promotion and testing
 of those candidates throughout a series of environments - sometimes reaching production and sometimes not
+- Cattle versus pets
