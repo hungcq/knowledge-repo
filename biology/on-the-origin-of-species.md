@@ -1,17 +1,62 @@
 # Category
-Biology, theoretical
+Biology, geology, theoretical
+
+# Structure
+## Outline
+- Chap 1-5: theory:
+  - Variation, under domestication & nature
+  - Inheritance
+  - Struggle for existence & natural selection
+- Chap 6-11: dealing with difficulties:
+  - Perfect organs
+  - Lack of transitional varieties & species, now & in geological record
+  - Complex instinct, imperfect instinct
+  - Sterility of hybrid
+  - Geological records
+  - Geographical distribution
+- Chap 13: supporting evidence:
+  - Geographical distribution
+  - Mutual affinities
+- Chap 14: summary & conclusion
+## Detailed structure
+See table of contents
+
+# Goal
+- Provide clear insight into the means of modification & co-adaptation to support the conclusion:
+each species had not been independently created, but had descended, like varieties, from other species
+- -> Study of variation under domestication as the best approach
 
 # Style
 - Expository, with answers to counter-arguments & alternative theories
 - Empirical: lots of observational evidence
+- Strictly coherent: the chapters form one long argument
+- Uncertainty & reservation exist in the conclusions
+- -> Typical of scientific works?
+- Some parts are a bit lengthy & repetitive
 
 # Terms
 - Horticulture: gardening
 - Monstrosity: considerable deviation of structure in one part, either injurious or not useful to the species,
-and not generally propagated
-- Struggle for existence: include dependence of one being on another, not only the life of the individual but success in leaving progeny
+  and not generally propagated
+- Struggle for existence: include dependence of one being on another,
+not only the life of the individual but success in leaving progeny
+- Mongrel: ~hybrid
+- Variety < species < genus < family < order < class
+- Affinity: close relationship
+- Corporeal: physical
+- Natura non facit saltus: nature does not make jump
+- Stratum: layer of rock
+- Palaeontology: history of life study using fossils
+- Quadruped (vs biped): animal with 4 legs
+- Genealogical: connected to line of ancestors
 
-# Content
+# Main points
+## Introduction:
+- Goal
+- Outline of structure
+- Conclusion
+- Confirmation & ack of the unknown
+
 ## 1. Variation under domestication
 - Causes of variability: less in condition of life than prior to conception
 - Differences due to frequency of usage
@@ -47,7 +92,7 @@ and not generally propagated
 - Species & varieties are only sth on the same scale of variation
 - Wide-ranging, much diffused & common varieties vary most. Reason: dominant species will be likely to propagate advs to children
 - Species of the larger genera in each country vary more frequently than species of the smaller genera. Reason:
-more species -> more materials to vary (multiplicative effect) (on average, not all cases)
+  more species -> more materials to vary (multiplicative effect) (on average, not all cases)
 - -> Species are not created
 - Species in large genera are more similar to each other than those in small genera
 - Group of species is generally centered around a parent species
@@ -62,3 +107,23 @@ more species -> more materials to vary (multiplicative effect) (on average, not 
   - Within indis of the same species
   - With indis other species
   - With physical condition of life
+- Limiting factors: competitions with other species:
+  - Available food
+  - Climate effects:
+    - Direct effect
+    - Lack of food
+    - Favor other competing species
+  - Epidemic: competition with parasite species
+- Checks & relations between organic beings in the same area are complex
+- Struggle between individuals or varieties of the same species is constant & severe:
+same food, living area & risk
+- -> Less between species of the same genus & of distinct genera
+
+## 4. Natural selection
+
+
+# Take away
+- Much deeper understanding of natural selection & evolutionary biology, including theory, supporting arguments & difficulties
+- Historical perspective on one of the best work of science & biology:
+full of keen observations, sharp, critical & coherent arguments, careful & adequate treatment of most counter-arguments
+- 
