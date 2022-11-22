@@ -16,7 +16,7 @@ Sport, practical
 - Types of training (increasing level of intensity):
   - E: easy running (or jogging). L run: typically at E pace.
   - M: marathon-pace running: training at the projected marathon race pace
-  - T: threshold running
+  - T: threshold running. H: hard run, distance and time are not specific.
   - I: interval training
   - R: repetition training
 - Stroke volume: amount of blood pumped with each heart beat
@@ -177,7 +177,7 @@ Sport, practical
       - Maximum: 150 mins
     - Focus on maintain good running mechanics to avoid injury
     - Distance limit for any single run:
-      - Weekly mileage < 64km:  <= 30% weekly mileage
+      - Weekly mileage < 64km: <= 30% weekly mileage
       - Weekly mileage >= 64km: the lesser of 25% weekly mileage or 150 mins
 - Marathon-pace running:
   - Intensity: 75-84% VO2 max or 80-89% max heart rate
@@ -218,7 +218,42 @@ Sport, practical
     - <img src="./resources/4.2-tab-1.png">
     - <img src="./resources/4.2-tab-2.png">
 - Interval training:
-  - 
+  - Intensity: at or very close to VO2 max & maximum heart rate
+  - Benefit: maximize aerobic power
+  - Training suggestions:
+    - Time:
+      - 3-5m (need 90-120s to build up VO2 max from complete recovery)
+      - < 3m: when use shorter recovery time (less than running time)
+    - Should not work beyond VO2 max pace (no additional benefit relative to the purpose of I run)
+    - Distance limit in a single workout: the lesser of 10K or 8% weekly mileage
+    - For hard run (H):
+      - Should not worry about the actual speed
+      - Pace: could maintain for 10-12m
+      - Recovery jog: shorter or equal hard run duration
+    - <img src="./resources/4.3-tab-1.png">
+    - <img src="./resources/4.3-tab-2.png">
+    - <img src="./resources/4.3-tab-3.png">
+- Repetition training:
+  - Benefit: improve anaerobic power, speed & economy of running
+  - Training suggestions:
+    - Have to be recovered enough to run fast and with good technique
+    - For distance runner, recovery time should be:
+      - In time: 2-3 times as the faster R-pace runs
+      - In distance: jog as far as the run just performed
+    - Distance limit in a single workout: the lesser of 8K or 5% weekly mileage
+    - <img src="./resources/4.4-tab-1.png">
+    - <img src="./resources/4.4-tab-2.png">
+    - <img src="./resources/4.4-tab-3.png">
+    - <img src="./resources/4.4-tab-4.png">
+- Tracking training intensities:
+  - Should record the total amount of mileage accomplished each week
+  - Note how much dif types of stress are being included in overall program
+  - Heart rate point table:
+    - <img src="./resources/4.5.png">
+  - Increase training amount:
+    - Increase heart rate point for each type of training
+    - Increase total heart rate point
+    - Increase weekly mileage
 - Summary:
   - <img src="./resources/4.1.png">
 #### Additional info
