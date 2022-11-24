@@ -116,7 +116,7 @@ Sport, practical
 ### 3. Physiological & personal training profiles
 - Aerobic profile:
   - Economy curve: how much aerobic involvement is associated with increasing workloads
-  - <img src="./resources/3.2.png">
+  - <img src="./resources/3.2.png" width="400">
   - Running economy can vary depending on where you are running (eg at sea level, at altitude, on track, on treadmill)
   - Gender dif: the best men have higher VO2 max values than the best women
 - Running variable and improvements:
@@ -126,7 +126,7 @@ Sport, practical
     - Blood lactate
     - Rating of perceived exertion (RPE): show level of discomfort
   - Improvement due to training:
-    - <img src="./resources/3.4.png">
+    - <img src="./resources/3.4.png" width="400">
 - Heart rate during training runs:
   - Slower speed of running under less than desirable conditions will often lead to the desired intensity of exercise
   - Purpose of work out & variable to measure:
@@ -147,7 +147,7 @@ Sport, practical
 - Personal training & racing profiles:
   - To set up a training plan that best fits each indi:
   should gather basic info about the past & current state of fitness and time availability
-  - <img src="./resources/3.8.png" width="500">
+  - <img src="./resources/3.8.png" width="400">
 #### Additional info
 - Training intensity is not always the same at the same speed of running. Examples of other factors:
   - Temperate
@@ -188,7 +188,7 @@ Sport, practical
   - Training suggestions:
     - Distance limit for any single run: lesser of 110 mins or 29km or 20% weekly mileage
     - Should mix M with both E and T
-    - <img src="./resources/4.1-tab.png">
+    - <img src="./resources/4.1-tab.png" width="400">
 - Threshold running:
   - Intensity:
     - Fairly hard but the pace is manageable for a fairly long time: 20-30 mins
@@ -215,8 +215,8 @@ Sport, practical
       - <= 10% weekly mileage
       - Tempo run: 20 mins each, can do more than one
       - Cruise intervals: total 30 mins
-    - <img src="./resources/4.2-tab-1.png">
-    - <img src="./resources/4.2-tab-2.png">
+    - <img src="./resources/4.2-tab-1.png" width="400">
+    - <img src="./resources/4.2-tab-2.png" width="400">
 - Interval training:
   - Intensity: at or very close to VO2 max & maximum heart rate
   - Benefit: maximize aerobic power
@@ -230,9 +230,9 @@ Sport, practical
       - Should not worry about the actual speed
       - Pace: could maintain for 10-12m
       - Recovery jog: shorter or equal hard run duration
-    - <img src="./resources/4.3-tab-1.png">
-    - <img src="./resources/4.3-tab-2.png">
-    - <img src="./resources/4.3-tab-3.png">
+    - <img src="./resources/4.3-tab-1.png" width="400">
+    - <img src="./resources/4.3-tab-2.png" width="400">
+    - <img src="./resources/4.3-tab-3.png" width="400">
 - Repetition training:
   - Benefit: improve anaerobic power, speed & economy of running
   - Training suggestions:
@@ -241,21 +241,21 @@ Sport, practical
       - In time: 2-3 times as the faster R-pace runs
       - In distance: jog as far as the run just performed
     - Distance limit in a single workout: the lesser of 8K or 5% weekly mileage
-    - <img src="./resources/4.4-tab-1.png">
-    - <img src="./resources/4.4-tab-2.png">
-    - <img src="./resources/4.4-tab-3.png">
-    - <img src="./resources/4.4-tab-4.png">
+    - <img src="./resources/4.4-tab-1.png" width="400">
+    - <img src="./resources/4.4-tab-2.png" width="400">
+    - <img src="./resources/4.4-tab-3.png" width="400">
+    - <img src="./resources/4.4-tab-4.png" width="400">
 - Tracking training intensities:
   - Should record the total amount of mileage accomplished each week
   - Note how much dif types of stress are being included in overall program
   - Heart rate point table:
-    - <img src="./resources/4.5.png">
+    - <img src="./resources/4.5.png" width="400">
   - Increase training amount:
     - Increase heart rate point for each type of training
     - Increase total heart rate point
     - Increase weekly mileage
 - Summary:
-  - <img src="./resources/4.1.png">
+  - <img src="./resources/4.1.png" width="500">
 #### Additional info
 - Stay at any amount of weekly time spent running for at least 3-4 weeks before increasing the training amount
 - When max for the season, can increase or decrease weekly amounts based on weather or other situations limiting available time
