@@ -14,11 +14,11 @@ Sport, practical
 # Terms
 - Viscosity: nhầy
 - Types of training (increasing level of intensity):
-  - E: easy running (or jogging). L run: typically at E pace.
+  - E: easy running (or jogging). L run: typically at E pace. jg: jog: jogging or slow running.
   - M: marathon-pace running: training at the projected marathon race pace
   - T: threshold running. H: hard run, distance and time are not specific.
   - I: interval training
-  - R: repetition training
+  - R: repetition training. ST: stride: light, quick 15-20s run (not sprinting) with 45-60s rest between
 - Stroke volume: amount of blood pumped with each heart beat
 
 # Main points
@@ -261,9 +261,89 @@ Sport, practical
 - When max for the season, can increase or decrease weekly amounts based on weather or other situations limiting available time
 - Should use time, not distance, as the factor limiting types of training
 
-### 6.
+### 5. VDOT system of training
+- Race time imp as a measurement: reflect max, economy, threshold & mental approach to racing
+- VDOT (V.O2): represent performance
+- -> Higher value is associated with better runner, regardless of age or sex
+- How to determine VDOT value:
+  - <img src="./resources/5.1-tab.png" width="500">
+  - Use the highest value of dif race times to determine appropriate paces for dif types of training
+- How to determine training intensity:
+  - <img src="./resources/5.2-tab.png" width="600">
+  - <img src="./resources/5.3-tab.png" width="500">
+- 6-second rule: add 6s (7-8s for runner in 40-50 VDOT categories) for lower training intensity per 400m
+
+### 6. Environment- and altitude-specific training
+- It is beneficial to train under the same conditions where important races will take place
+- Don't try to train a lot under adverse conditions because you will not be able to train as hard as usual
+- When racing in:
+  - Unusually hot conditions, perform a moderate warm-up, and cool down with a wet towel across shoulder
+  - In cold conditions: start the race in an extra upper-body layer and discard them during the race after warmed up
 - Altitude training: skipped
+
+### 7. Treadmill training
+
+### 8. Fitness training
+- 4 training plans for dif types of runners:
+  - White plan: beginners or people just came back to running
+    - <img src="./resources/8.1-tab-1.png" width="400">
+    - <img src="./resources/8.1-tab-2.png" width="400">
+    - <img src="./resources/8.1-tab-3.png" width="400">
+  - Red plan: runner involved in running but to a limited degree
+  - Blue plan: serious runners who what to increase dedication to running
+    - <img src="./resources/8.3-tab-1.png" width="400">
+    - <img src="./resources/8.3-tab-2.png" width="400">
+    - <img src="./resources/8.3-tab-3.png" width="400">
+  - Gold plan: serious runners who want to be involved in a structured program and who can commit time
+- -> Blue and gold plan are more than adequate to prepare for serious racing
+- -> Can move on to structured event-training programs in part 2 of the book
+
+### 9. Training breaks and supplemental training
+- Types of training breaks:
+  - Unplanned:
+    - Might be due to injury/illness -> can't do any running or alternative exercises
+    - Do other types of exercises during break could enhance performance
+  - Planned: running and other types of training are always a possibility:
+    - Time: min 2 weeks, max 6 weeks
+- Due to loss of fitness, should not jump right back into the volume of training you were doing before
+- -> Can gain benefit without training hard because of lower level of fitness
+- Effect of break by break duration:
+  - <img src="./resources/9.1.png" width="400">
+- -> A few day off won't have much negative effect
+- VDOT adjustment by break duration:
+  - <img src="./resources/9.1-tab.png" width="400">
+  - <img src="./resources/9.2.png" width="400">
+- Supplemental trainings (refer to the book for details):
+  - Push-up
+  - Side leg lift
+  - High knee
+  - Crunch
+  - Recovery run and stretch
+  - Squat thrust
+  - Leg lift
+  - Arm and leg flapping
+  - Recovery run
+
+## II - Applying the formula to competitive events
+### 10. Season-tailored training
+
+### 11. 800 meters
+
+### 12. 1500 meters to 2 miles
+
+### 13. 5K and 10K
+
+### 14. Cross country
+
+### 15. 15K to 30K
+
+### 16. Marathon
+
+### 17. Ultradistance
+
+### 18. Triathlon
 
 # Criticism
 - Most pictures (except information table) are irrelevant
 - Mixing miles and meter is really messy
+- Partly an informational book: half of the book should be used as reference instead of for understanding
