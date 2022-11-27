@@ -156,7 +156,7 @@ Sport, practical
   - Rough/muddy footing
 
 ### 4. Types of training and intensities
-- Easy running:
+- Easy running (E):
   - Intensity: 59-74% VO2 max or 65-79% max heart rate
   - Benefits:
     - Psychological: boost confidence when can increase duration
@@ -179,7 +179,7 @@ Sport, practical
     - Distance limit for any single run:
       - Weekly mileage < 64km: <= 30% weekly mileage
       - Weekly mileage >= 64km: the lesser of 25% weekly mileage or 150 mins
-- Marathon-pace running:
+- Marathon-pace running (M):
   - Intensity: 75-84% VO2 max or 80-89% max heart rate
   - Benefits: for someone training for a marathon:
     - Adjust the specific pace to be used in the race
@@ -189,7 +189,7 @@ Sport, practical
     - Distance limit for any single run: lesser of 110 mins or 29km or 20% weekly mileage
     - Should mix M with both E and T
     - <img src="./resources/4.1-tab.png" width="400">
-- Threshold running:
+- Threshold running (T):
   - Intensity:
     - Fairly hard but the pace is manageable for a fairly long time: 20-30 mins
     - Peaked and rested, can race for 60 mins
@@ -217,7 +217,7 @@ Sport, practical
       - Cruise intervals: total 30 mins
     - <img src="./resources/4.2-tab-1.png" width="400">
     - <img src="./resources/4.2-tab-2.png" width="400">
-- Interval training:
+- Interval training (I):
   - Intensity: at or very close to VO2 max & maximum heart rate
   - Benefit: maximize aerobic power
   - Training suggestions:
@@ -233,7 +233,7 @@ Sport, practical
     - <img src="./resources/4.3-tab-1.png" width="400">
     - <img src="./resources/4.3-tab-2.png" width="400">
     - <img src="./resources/4.3-tab-3.png" width="400">
-- Repetition training:
+- Repetition training (R):
   - Benefit: improve anaerobic power, speed & economy of running
   - Training suggestions:
     - Have to be recovered enough to run fast and with good technique
@@ -347,3 +347,8 @@ Sport, practical
 - Most pictures (except information table) are irrelevant
 - Mixing miles and meter is really messy
 - Partly an informational book: half of the book should be used as reference instead of for understanding
+
+# Takeaway
+- Training principles
+- Dif types of training & benefits
+- Training plans for dif levels of fitness & dif types of race
