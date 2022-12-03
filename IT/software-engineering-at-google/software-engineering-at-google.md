@@ -149,5 +149,5 @@
   - Is the idea even remotely feasible for normal orgs?
 - Chap 21: dependency management: what is a SAT graph?
 
-# Take away
+# Takeaways
 - How to write clear, resilient to change tests

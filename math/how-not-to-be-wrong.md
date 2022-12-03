@@ -313,7 +313,7 @@ a small point: eg: Part 1: Chap 1-3, 5, is of considerable size but not many poi
   - Correlation != causation
   - Difficulty of extracting public opinion
 
-## Take away
+## Takeaways
 - Standard statistical test (null hypothesis significant test)
 - Problems of current scientific standard & practice using fixed p-value=0.05
 - Bayesian inference

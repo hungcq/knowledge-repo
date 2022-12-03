@@ -379,7 +379,7 @@ people will love technologies that provide distraction, deprive them capacity to
 - Some special terms are provided and used throughout the book (eg discourse, resonance, metaphor), but the definition is not clear-cut
 - -> Simple English word should be more preferable (eg communication, influence)
 
-# Take away
+# Takeaways
 - Aware of and understand the implication and influence of media, and technology in general, in:
   - Form of content
   - Standard of truth and intelligence

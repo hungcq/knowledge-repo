@@ -66,5 +66,5 @@ Politics
 - Arguments are not that sound: derive from some parallels & a few examples
 - Not strictly coherent: some parts seem irrelevant, out of place
 
-# Take away
+# Takeaways
 - Historical perspective on the American revolution

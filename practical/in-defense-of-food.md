@@ -343,7 +343,7 @@
   - Effect of alcohol
 - Some rules in How to eat chapter are repeated, not well-organized
 
-# Take away
+# Takeaways
 - Understand nutritionism: definition, history & its effect on current food environment
 - -> New way of looking at food & making food/eating choice
 - Aware of the flaws of nutrition science

@@ -41,7 +41,7 @@ Last part of the book handles the difficulty when transitioning from monolithic 
 - Chap 13:
   - Why place anti-corruption layer in service? Should keep the service adapter clean for new usages.
 
-# Take away
+# Takeaways
 - Lots of architectural concepts, problems & solutions
 - -> Deeper understanding of system design, microservice concepts, design issues & dif solutions
 - -> Bring out all relevant exp to reflect

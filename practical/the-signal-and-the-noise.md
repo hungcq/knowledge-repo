@@ -393,7 +393,7 @@
 - The topics in many chapters are big (eg economics, finance)
 - -> Some high level overview of the issues and lessons are presented, but clearly not detailed enough
 
-# Take away
+# Takeaways
 - Basic poker skill
 - Fuller understanding of scientific method & role of prediction in science
 - Problems of prediction, esp in the age of big data

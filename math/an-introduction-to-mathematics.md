@@ -1,0 +1,271 @@
+# Category
+- Mathematics
+- Philosophy
+- Physics
+- History
+
+# Structure
+- Chap 1: The abstract nature of mathematics
+  - Cause of failure in math education
+  - Goal, non goal
+  - Style
+  - Abstract char of math
+  - Role of math in scientific thoughts
+- Chap 2: Variables
+  - Some & any idea -> variables
+  - Presenting relationship of things using variables
+- Chap 3: Methods of application
+  - Prerequisites for the application of math formula
+  - Historical events regarding the growth of math physics
+- Chap 4: Dynamics
+  - Dynamic, dynamical explanation of phenomena
+  - Application of math
+  - Physical, scientific world view
+  - Vector quantities & vector addition
+- Chap 5: The symbolism of mathematics
+  - Arithmetic symbols: Arabic number, operations
+  - Function, character & adv of symbol
+  - Symbol 0 & algebraic form of equations
+  - Parameters
+- Chap 6: Generalization of number
+  - Fractional
+  - Incommensurable
+  - Operation
+  - -> Generality idea
+- Chap 7 & 8: Imaginary numbers
+  - Motivation for finding an interpretation
+  - Order couple representation, also as vector:
+    - Proof of addition
+    - Proof of multiplication
+  - -> Calculus of vector
+- Chap 9: Coordinate geometry
+  - Coalescence of ideas in algebra & geometry
+  - -> Coordinate geometry
+  - Algebraic form of straight line
+  - Idea of origin O
+- Chap 10: Conic sections
+  - Def
+  - Properties
+  - Application in astronomy
+  - Algebraic form of
+- Chap 11: Functions
+  - Function def, representation
+  - Continuous vs discontinuous function
+  - Dif between old & modern math: precise def
+  - Continuity & related defs
+- Chap 12: Periodicity in nature
+  - Def
+  - Role of periodicity in conception of life
+  - Underlying assumption of astronomical periodicity
+  - Mathematical implication
+- Chap 13: Trigonometry
+  - Origin
+  - Sine & cosine: def, periodicity
+  - Periodic function def
+  - Fourier theorem & harmonic analysis
+- Chap 14: Series
+  - Def
+  - Series summation
+  - Limit def
+  - Convergent vs divergent series, uniformly vs non uniformly convergent
+  - Series generalization: function as limit, exponential function & some applications
+- Chap 15: The differential calculus
+  - Idea & imp
+  - Difficulty of def & solution
+  - Def
+- Chap 16: Geometry
+  - Abstract nature
+  - Scope of study
+  - Method of study
+  - Need for variables
+- Chap 17: Quantity
+  - Def
+  - Quantity idea
+  - Rule of measurement
+
+# Goals
+- Show what the mathematics is about,
+and why it is necessarily the foundation of exact thought as applied to natural phenomena
+- Non goal: to teach math
+
+# Terms
+- Pedantry: too much attention to details
+
+# Style
+- Author claim: focus to make the general argument comprehensible, details are only used as examples
+- Full of illuminating historical stories
+- Some examples require focused attention
+
+# Main points
+## 1. The abstract nature of mathematics
+- Cause of failure in math education:
+fundamental ideas are not disentangled from the technical procedure
+invented to facilitate their exact representation in particular instances
+- -> A mass of details not illuminated by any general conception
+- Most obvious characteristic of math: applies to everything, apart from any particular feelings/emotions/sensations
+- -> Abstract science
+- Tendency of human thoughts: ascribe origin of individual sensations
+to relations between the things which form the external world
+- Why math is imp: science attempts to generalize and abstract away from particular sensation
+  into general laws of the world of external events
+- -> Need abstract mathematical ideas to describe abstract, formal properties of things (scientific description)
+
+## 2. Variables
+- Ideas of "any" and "some" things in algebra: use letters instead of definite numbers of arithmetic
+- -> Enabled by variables
+- Some def: anything between any and one only
+- "Some" idea allows the presentation of relationship between dif things using more than one variable
+- Idea of undetermined variables is much more imp in math, compared to the solution of equation containing them
+### Additional info
+- Skillful mathematicians choose equivalent form of the relation under consideration
+that is most convenient for immediate purpose
+- Study of general properties of relation between pairs of numbers is facilitated by the use of xOy diagram
+
+## 3. Methods of application
+- Math simplicity of formula won't make the stated law true
+- -> Must check the assumptions & relevance to the phenomena
+- To apply math formula, need to have:
+  - Clear theoretical ideas
+  - Correct estimate of their relevant to the phenomena under observation
+### Additional info
+- Practicality vs tendency towards abstract knowledge:
+  - Practical man as a man who practices the errors of his forefathers
+  - -> All advances are confined to minor technical details of engineering
+  - Abstract dreamers: arrive at new point of view, which could give a more fundamental control over the forces of nature
+
+## 4. Dynamics
+### Dynamic, dynamical explanation of phenomena
+- Claim of dynamics: the various quantities of things perceptible to the senses
+are merely our peculiar mode of appreciating changes in position on the part of things existing in space
+- Dynamical explanation of phenomena: statements of general form
+that such and such a substance or body was in this place and now in that place
+- -> Laws of motion, ie law of changes of configuration of things, are ultimate law of physical science
+- How a physical object is described in physical science:
+without reference to anyone in particular or to any special modes of perception:
+  - Geometrical elements by which the positions of bodies in space can be settled
+  (eg lengths of lines, sizes of angles, areas and volumes)
+  - Rate of changes of geometrical elements (eg velocities, angular velocities, accelerations)
+  - -> Necessitated by the fact of motion and change
+### Application of math
+- Deal with correlation between variable numbers which are supposed to represent
+  the correlations existing in nature between the measures of these geometrical elements & their rates of change
+- When variables are substituted by definite numbers: only in occasional testing of the laws by reference to experiments
+### Physical, scientific world view
+- Implication of physical world view: events of such an abstract world are sufficient to explain our sensations
+- Evidence of the existence of external physical world:
+the world submitted itself to test & allow its events to be explored and predicted by the apparatus of abstract math ideas
+- -> Inductive verification has a remarkable success, even though inductive proof is never conclusive
+### Vector quantities & vector addition
+- Vector def: anything completely given by the determination of a magnitude and a direction
+- Fundamental vectors of science: velocity, acceleration, force
+- Vector presentation: a line drawn with the proper length in the proper direction on the arbitrarily assigned scale of magnitude
+- Vector addition diagram: chief bridge over which the results of pure math are applied to the facts of nature
+
+## 5. Symbolism of mathematics
+- Symbols:
+  - Function: as an immense simplification,
+  representing an analysis of the ideas of the subjects & an almost pictorial representation of their relations to each other
+  - -> Need training to understand
+  - Adv: allow transitions in reasoning almost mechanically by the eye, which otherwise would need the higher faculties of the brain
+  - Character: concise -> visible at once glance & can be rapidly written
+  - -> Placed in immediate juxtaposition -> juxtaposition should have an imp meaning
+- Algebraic form: 0 on the right side
+- Parameters:
+  - Result from combination of variable idea & algebraic form idea
+  - Distinction between var & param: presented by letters at the end vs by letters at the beginning of the alphabet
+  - Adv: generalization reduce the amount of arithmetic performed
+### Additional info
+- Deliberate vs automatic thinking:
+civilization advances by extending the number of imp operations which we can perform without thinking about them
+- -> Operations of thought are limited, must only be made at decisive moment
+
+## 6. Generalizations of number
+- Real numbers: include integral, fractional & incommensurable numbers
+- Incommensurable numbers fill the gap in fractional series
+- 3 imp math ideas: generality, variable & form
+- Positive & negative numbers as operations
+- -> Generalize above countable things
+
+## 7 & 8. Imaginary numbers
+- Origin: due to equations like x^2 + a = b
+- -> Goal: achieve generalization of a & b -> solutions +-sqrt(b - a) always have a meaning even if b - a < 0
+- -> sqrt(-1) needs a meaning
+- The interpretation of sqrt(-1) needs to meet ordinary algebraic rules (eg commutative operations)
+- Proofs that the representation using ordered couples meets the rules: addition & multiplication
+- Same formula for vector addition & multiplication
+- -> Quadratic equation (ax^2 + bx +c = 0) can always be interpreted in terms of vector (calculus of vector)
+
+## 9. Coordinate geometry
+- Representation of a point in a plain by (x,y) coordinate
+- Math deals with the general truths applying to all things
+- -> Various branches of math undergo a perpetual process of generalization, then coalesce
+- Coalescence of ideas in geometry & algebra:
+  - Ideas of algebra:
+    - Correlation between variable numbers
+    - Classification of correlations into types by the idea of algebraic form
+  - Ideas of geometry:
+    - Variable points, satisfying some condition so as form to a locus
+    - Classification of loci into types by the idea of conditions of th same form
+  - Coordinate geometry:
+    - Relate together geometry, science of space, with algebra, science of number
+    - Identify algebraic correlation with geometrical locus
+    - Alignment between 2 sciences:
+      - The point on a plane is represented in algebra by its two coordinates x & y
+      - The condition satisfied by any point on the locus is represented by the corresponding correlation between x & y
+      - To correlations expressible in some general algebraic form (eg ax + by = c),
+      there correspond loci of some general type, whose geometrical conditions are all of the same form
+- Algebraic form of straight line: ax + by = c
+- Idea of origin O in coordinates or vectors:
+our first procedure in exploring the universe is to fix upon an origin "nearly here"
+
+## 10. Conic sections
+- Def: curves formed by cutting a cone with a plane:
+  - Ellipse
+  - Parabola
+  - Hyperbola
+- Properties
+- Application of conic sections in astronomy
+- Alge form of conic sections (only when they represent any locus):
+ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0
+
+## 11. Functions
+- Def: a correlation between 2 variable numbers, called respectively the argument and the value of the function,
+such that whatever value be assigned to the argument, the value is definitely (uniquely) determined
+- -> Representable like other correlations by a graph (method of coordinate geometry)
+- Denote: y = f(x): y is the value of some undetermined function of the argument x
+- Continuous & discontinuous functions:
+  - The most imp distinction
+  - Discontinuous functions might be hard to present by a graph
+  - For many functions discontinuities only occur at isolated points (eg y = 1/x)
+- Def between old & modern math: precise definition:
+  - Vague half-metaphorical terms like "gradually" are no longer tolerated in its exact statements
+  - Only admit statements & defs & arguments which exclusively employ the few simple ideas
+  about number & magnitude & variables on which the science is founded
+  - Advs:
+    - Necessary for accuracy
+    - Necessary for research: allow clearness of thought
+    - -> Boldness of thought & fertility in trying new combinations of ideas
+- Continuity of functions & related ideas def:
+  - Interval of values of argument x of f(x): all the values lying between some two values of x
+  - A set of numbers approximates to a number a within a standard k
+  when the numerical difference between a & every number of the set is less than k
+  - -> k: standard of approximation k
+  - Neighborhood: values of f(x) possess a characteristic in the "neighborhood of a" when some interval can be found, which:
+    - Contain the number a not as an endpoint
+    - Every value of the function for arguments, other than a, lying within that interval possesses the characteristic
+    The value f(a) of the function for the argument a may or may not possess the characteristic
+  - In the neighborhood of a, f(x) approximates to c within the standard k when some interval can be found, which:
+    - Include a not as an endpoint
+    - All values of f(x) where x lies in the interval and is not a, differ from c by less than k
+  - Continuity: f(x) is continuous  at a value a of its argument
+  when in the neighborhood of a its values approximate to f(a) within every standard of approximation (any k)
+
+## 12. Periodicity in nature
+- 
+
+# Takeaways
+- Math imp to & its application in science
+- Main ideas & subjects of math:
+  - History of their development
+  - Their relation to each others
+  - Their application in science

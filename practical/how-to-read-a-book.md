@@ -681,7 +681,7 @@ have to
   - Intermediate materials: might not be needed
   - Difficult materials: might be useful in this case, need first reading to prime & get the big picture
 
-# Take away
+# Takeaways
 - Extremely important distinctions regarding:
   - Aims of reading
   - Levels of reading

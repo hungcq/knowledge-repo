@@ -325,7 +325,7 @@ not laziness but the deeply held beliefs about how great people handle high-stak
 - The arguments & examples are convincing
 - -> Definitely worth a try to make some checklists & adopt checklist culture
 
-## Take away
+## Takeaways
 - Some new distinctions: causes of human failure, types of problem based on complexity
 - Recognize the complexity in many fields & inadequacy of individual ability
 - Understand how to make a good checklist, how to make ease the adoption of checklist

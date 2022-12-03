@@ -348,7 +348,7 @@ happened because of similar env or random factors
 - Chap 8 has so many conclusions without any implications
 - Some parts are a bit lengthy & repetitive
 
-# Take away
+# Takeaways
 - Much deeper understanding of natural selection & evolutionary biology, including theory, supporting arguments & difficulties
 - Historical perspective on one of the best work of science & biology:
 full of keen observations, sharp, critical & coherent arguments, careful & adequate treatment of most counter-arguments

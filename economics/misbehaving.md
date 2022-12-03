@@ -648,7 +648,7 @@ things would turn out for the best if markets were left alone to sort things out
 - Familiarity with some economics/psychology experiments might be needed to read the book well
 (can be found in Thinking fast and slow and Superfreakonomics)
 
-# Take away
+# Takeaways
 - History of behavioral economics
 - Difference between beha eco and formal eco
 - Basic understanding of some important economic concepts & theories

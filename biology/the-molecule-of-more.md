@@ -686,7 +686,7 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 One study on of dopa gene and political view on page 154.
 - Chap 6: predictions are too pessimistic, uncritical, far-fetched, shallow & technologist
 
-## Take away
+## Takeaways
 - Distinction & interplay between dopamine & other H&N molecules: mechanism, feeling, effect on behavior
 - Distinction between control & desire dopamine: mechanism, effect on behavior
 - Lots of info regarding neural mechanisms, scientific studies, behaviors

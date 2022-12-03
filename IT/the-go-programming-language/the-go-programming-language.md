@@ -30,4 +30,4 @@ program consists of processes with no shared state, communicating & synchronizin
 # Criticism
 - 
 
-# Take away
+# Takeaways
