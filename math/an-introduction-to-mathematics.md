@@ -225,7 +225,7 @@ our first procedure in exploring the universe is to fix upon an origin "nearly h
   - Hyperbola
 - Properties
 - Application of conic sections in astronomy
-- Alge form of conic sections (only when they represent any locus):
+- Algebraic form of conic sections (only when they represent any locus):
 ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0
 
 ## 11. Functions
@@ -261,7 +261,95 @@ such that whatever value be assigned to the argument, the value is definitely (u
   when in the neighborhood of a its values approximate to f(a) within every standard of approximation (any k)
 
 ## 12. Periodicity in nature
-- 
+- Periodicity def: successive events so analogous to each other that they may be termed recurrences of the same event
+- -> Nature is dominated by the existence of those events
+- Imp role of periodicity in conception of life:
+  - Conception of experience as a guide to conduct
+  - Time as a quantity
+- Underlying assumption of astrological periodicity: laws of motion are exactly verified
+- -> Astronomical phenomena are only used as reference
+- Implication to math: to be a fit instrument for the investigation of nature,
+need to be able to express essential periodicity of things
+### Additional info
+- Determination of the broad general consistency of the imp periodicities (eg motion of planets)
+was the first step in natural science
+
+## 13. Trigonometry
+- Origin: triangularization process in map-making
+- Main problem of trigonometry: given the magnitudes of the angles of a triangle,
+what can be stated as to the relative magnitudes of the sides
+- Sine & cosine:
+  - Def
+  - Period = 2pi
+- Periodic function def: f(x) is periodic with period a if:
+  - For any value of x, f(x) = f(x + a)
+  - There is no number b smaller than a such that for any value of x, f(x) = f(x + b)
+- Fourier theorem (imp to abstract theory of periodic functions):
+if f(x) be a periodic function with period a and if f(x) satisfied certain conditions,
+then f(x) can be written as the sum of a set of terms in the form:
+  - c0 + c1 x sin(2pi x / a + e1) + c2 x sin(2pi x / a + e2) + ...
+- -> Result: harmonic analysis of the function: x represent particular time
+- -> Deal with natural fact of periodicity
+
+## 14. Series
+- Def: a set of things ranged in order/sequence
+- Series summation: symbolize the fundamental process of approximation
+- Limit:
+  - For infinite series, we approximate to the limit of the summation of the series
+  - Def: define a series s where sn = sum of terms of original series to n,
+  l is the limit (ie sum to infinity) of the terms of series s1, s2, s3,..., sn..., if,
+  corresponding to each standard of approximation k, a term sn of the series can be found so that
+  all succeeding terms (eg sn+1, sn+2) approximate to l within k
+- Convergent vs divergent series:
+  - Convergent def: possess a sum to infinity
+  - Uniformly vs non uniformly convergent in the interval a-b: we can always state some number of terms n such that,
+  if we take n or more terms to form the sum, then whatever value x has within the interval a-b,
+  we can satisfy the desired standard of approximation
+- Series generalization:
+  - Using a variable int n: f1(x), f2(x),..., fn(x),...
+  - Function as limit of a series
+  - Exponential (exp) function
+
+## 15. Differential calculus
+- Idea: the systematic consideration of the rates of increase of function
+- -> Common in nature
+- Coalesce with the problem of drawing tangent to curve
+- Difficulty of definition & solution:
+  - Limit def via neighborhood:
+    - Notion: consider f(x) over the interval x -> h + x
+    - x as a constant, h as a variable
+    - Limit of f(h) at a as is a property of the neighborhood of a:
+    f(x) has the limit l at a value a of its argument x,
+    when in the neighborhood of a its value approximate to l within every standard of approximation
+    - Def of continuity via limit: f(x) is continuous at a when:
+      - It possesses a limit at a
+      - The limit is equal to its value at a
+- Derived function (differential coefficient) def:
+the limit, if it exists, of the function (f(x+h) - f(x))/h of the argument h at the value 0 of its argument
+### Additional info
+- Subjects of Integral calculus:
+  - Rectification of curves: find the lengths of curves
+  - Quadrature of curves: find the areas enclosed by curves
+
+## 16. Geometry
+- Scope of study: properties of the shapes and relative positions of things
+- -> Science of dimensional order: a division of the more general science of order
+- Abstract nature:
+  - Ignore all particular sensations: particularity is only a character of the mind when reasoning about space
+  - Ignore particular things: only used as examples
+- Method of study: think of interesting simple figures and investigate correlations between their various parts
+- Attempt to generalize introduce the ideas of variables
+
+## 17. Quantity
+- Def: a set of things (eg lengths) which are measurable in terms of any one of them
+- -> Quantities of the same kind
+- Quantity idea: the means by which a continuum (eg a line, an area) can be split up into definite countable parts
+- -> Number can be used to determine the exact properties of a continuous whole
+- Requisites of rule of quantity measurement:
+  - General agreement with common sense: equality of the units
+  - A definite rule for minute changes shall be stated which allows of the simplest expression of the laws of nature
+- Quantity is the main application of the theory of numbers
+- Physical science depends on the main ideas of number, quantity, space and time
 
 # Takeaways
 - Math imp to & its application in science
