@@ -16,8 +16,8 @@ Sport, practical
 - Types of training (increasing level of intensity):
   - E: easy running (or jogging). L run: typically at E pace. jg: jog: jogging or slow running.
   - M: marathon-pace running: training at the projected marathon race pace
-  - T: threshold running. H: hard run, distance and time are not specific.
-  - I: interval training
+  - T: threshold running
+  - I: interval training. H: hard run, distance and time are not specific.
   - R: repetition training. ST: stride: light, quick 15-20s run (not sprinting) with 45-60s rest between
 - Stroke volume: amount of blood pumped with each heart beat
 

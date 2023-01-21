@@ -1,4 +1,5 @@
-# Category: software engineering
+# Category
+- Software engineering
 
 # Structure
 ## Simple outline
@@ -107,12 +108,12 @@
 
 # Author problems & solutions
 - Current SE theory & practice are not very rigorous
-- -> Share Google collective exp (why: scale & many years of exp)
-- -> Path toward more reliable software practices
+- -> Share Google collective exp (why: scale & many years of exp): OK
+- -> Path toward more reliable software practices: OK
 - Provide 3 principles to consider when designing, architecting & writing code
-- -> Able to react to necessary change
+- -> Able to react to necessary change: OK
 - Describe lessons that a typical SE should learn on the jobs: culture, process & tools
-- -> Can be applied directly or adjusted to specific problems
+- -> Can be applied directly or adjusted to specific problems: OK
 - Not cover: software design & development
 - -> Focus on engineering, not programming
 - (Also in outline)
@@ -150,4 +151,6 @@
 - Chap 21: dependency management: what is a SAT graph?
 
 # Takeaways
+- How to think from an engineer perspective: consider time, scale and tradeoff
 - How to write clear, resilient to change tests
+- Best practices & lessons about various aspects of software engineering from a big, experienced organization
