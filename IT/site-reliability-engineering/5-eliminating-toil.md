@@ -1,0 +1,31 @@
+# 5. Eliminating toil
+- Main types of SRE activities:
+  - Toil:
+    - Def: the kind of work tied to running a production service that tends to be:
+      - Manual
+      - Repetitive
+      - Automatable
+      - Interupt-driven and reactive, rather than strategy-driven and proactive
+      - Devoid of enduring value
+      - Scale linearly as a service growth
+  - Engineering work:
+    - Software engineering: involve writing or modifying code, in addition to any associated design and documentation work
+    - Systems engineering: involve:
+      - Configuring production systems, modifying configurations, or documenting systems
+        in a way that produces lasting improvements from a one-time effort
+      - Consulting on architecture, design and productionization for dev teams
+      - Eg: monitor setup & updates, setup/configure load balancing, setup server configuration, tuning OS param
+  - Overhead: administrative work not tied directly to running a service (eg hiring, HR paperwork, meetings, training courses)
+- Process of eliminating toil:
+  - Set goal of 50% time spent on engineering work
+  - Calculate toil: time spent on-call as lower bound on toil
+- Advs of less toil:
+  - Enable the SRE org to scale up sublinearly with service size
+  - Manage services more efficiently than either a pure dev team or a pure ops team
+- Toil is bad when it is too much. Reasons:
+  - Career stagnation
+  - Low morale
+  - Confusion: about responsibility of the role
+  - Slow product's feature velocity
+  - Set precedent for dev counterparts to shift operational tasks to SRE
+  - Promote attrition: high turn-over rate for people who don't like toil

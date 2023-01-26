@@ -16,6 +16,16 @@
   - Metric to measure service risk
   - Considerations when define service's risk tolerance
   - Error budget: problems, goals, process, advs
+- Chap 4: service level objective:
+  - SLI
+  - SLO
+  - SLA
+- Chap 5: eliminating toil:
+  - Main types of SRE activities:
+    - Toil: def
+    - Engineering work: types
+  - Process of eliminating toil
+  - When toil is bad
 
 # Author's goals
 - Problem: most effort is spent after a software is built
