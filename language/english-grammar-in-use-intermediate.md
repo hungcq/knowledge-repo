@@ -43,3 +43,18 @@ Use with today, this evening, this year... when these periods are not finished a
 ## Other case
 - has been to somewhere = visited, not there now
 - has gone to somewhere = is there now or is on the way there
+
+# 9. Present perfect continuous
+- Describe an activity that has recently stopped or just stopped. Eg:
+  - Why are you so tired? What have you been doing?
+  - How long have you been waiting?
+- Use with how long/for/since for activity that is still happening or has just stopped
+- Describe repeating actions. Eg: I have been doing it for years
+- Comparison with present perfect:
+  - Present perfect continuous:
+    - We are thinking of the activity. It does not matter whether it has been finished or not.
+    - Describe how long (for something that is still happening)
+  - Present perfect:
+    - Sth has been finished. We are thinking about the result of the activity (the painted bedroom), not the activity itself.
+    - Describe how much, how many or how many times (for completed actions)
+    - Use for verbs that can't be in -ing form (except want and mean that can be used with present perfect continuous)
