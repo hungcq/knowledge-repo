@@ -27,3 +27,17 @@
 - Appreciation to be affective to reduce trade surplus -> decrease in capital account deficit
 - (export = + current acc, buy capital abroad = -capital acc) -> export decrease = buy less capital abroad
 - -> domestic sell more capital to foreign/foreign sell less capital to domestic
+
+# Financial statement analysis
+- Pay attention to the year above each column
+## Income statement analysis
+- Always calculate basic EPS and compare with diluted EPS, in case diluted EPS > basic EPS
+- P/E ratio calculation
+## Balance sheet analysis
+- Remember all the types of assets/liabilities/equities & their examples
+## Financial ratios
+- Total debt only include interest-bearing debts (not account payable and other long-term debts)
+- Interest coverage ratio
+## Income tax
+- Higher tax base = less depreciation = higher taxable income = more tax paid = tax asset
+- Income tax expense (provision for income tax) = tax payable + dDTL + dDTA
