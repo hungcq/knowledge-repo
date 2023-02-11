@@ -16,8 +16,6 @@
 - Draw a 4-column table for the 4 phases
 - Business cycle & inventory-sale ratio:
   - <img src="./resources/2.png" width="600">
-## Monetary and fiscal policy
-- 
 
 ## Geopolitics
 - Tools of geopolitics:
@@ -41,3 +39,5 @@
 ## Income tax
 - Higher tax base = less depreciation = higher taxable income = more tax paid = tax asset
 - Income tax expense (provision for income tax) = tax payable + dDTL + dDTA
+## Long-term debt
+- Unamortized discount + current bond liability = face value
