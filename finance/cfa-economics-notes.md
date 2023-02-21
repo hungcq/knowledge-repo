@@ -41,3 +41,14 @@
 - Income tax expense (provision for income tax) = tax payable + dDTL + dDTA
 ## Long-term debt
 - Unamortized discount + current bond liability = face value
+
+# Corporate issuers
+- Financial leverage = EBIT/EBT -> more debt = higher leverage
+- Operating leverage = revenue/EBIT -> lower profit = higher leverage
+## Capital investment
+- Discount rate (in NPV calculation) = opportunity cost of capital (COC)
+
+# Equity
+## Market structure
+- Bid = dealer buy in = lower price
+- Offer = dealer sell out = higher price
