@@ -33,6 +33,28 @@
   - Placed a greater emphasis than their Northern counterparts in creating ideal beauty,
   based on the ideas of a harmony and proportion, as manifest in ancient art
 
+# 17th century
+- Development of science. New rationalistic world view form & religious world view challenged.
+- -> Cultural change affecting arts. Sense of uncertainty.
+- Features of art:
+  - Powerful emphatic images to overpower doubts
+  - Catholic churches invested heavily in paintings to be used as propaganda
+  - -> Forceful, convincing messages
+  - -> Attractive art: great visual power & intensity
+  - Small, quite arts
+  - -> Interest in here & now, materialism
+- -> Varied arts reflecting differences in religion, economy, class & origin
+
 # Impression
 - Continuity
 - Innovation
+- Multi-discipline
+
+# Pay attention to
+- Brush stroke
+- Scene
+- Expression
+- Light
+- Pose
+- Arrangement of figures
+- Illusionism
