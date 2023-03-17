@@ -28,7 +28,7 @@ colleges & uni as the main mechanism that societies allocate opportunity: origin
   - Proposals to restore social esteem
   - Call for public discussion & deliberation about the common good
 
-# Goal
+# Goals
 - Call for public discourse which takes seriously the corrosive effect of meritocracy on the social bonds
 
 # Style
