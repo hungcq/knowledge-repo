@@ -1,0 +1,495 @@
+# 1. Emotions across cultures
+- Universal emotions & facial expressions
+
+# 2. When do we become emotional?
+- Evolved themes & learned themes (variations).
+- 9 ways to become emotional:
+  - Automatic appraisal
+  - Reflective appraisal
+  - Remembering emotional scene
+  - Imagining emotional scene
+  - Talking about emotional scene
+  - Empathy
+  - Others' instructions
+  - Violation of social norms
+  - Voluntarily assuming the appearance of emotion
+
+# 3. Changing what we become emotional about
+- Refractory period.
+- Learned trigger (1) -> cell assembly in brain (memory of learned trigger) (2) -> emotional response (3)
+- 6 factors determining how successful the attempt to reduce power of trigger and length of refractory period (1):
+  - Closeness to the evolved theme:
+    - Closer -> harder
+    - Physical actions > words
+  - Closeness to the original situation
+  - How early in life
+  - Strength of the initial emotions
+  - Density (how often) of the initial experiences
+  - Affective style (speed, strength, duration): depends on individual: faster, stronger response -> harder
+- Weaken the trigger:
+  - Identify the trigger: aware of emotion -> keep a log of when
+  - Avoid/anticipate the situation
+  - Cool the trigger: thinking about the event afterward, consider alternative explanations
+- Mood: easy to trigger related emotion
+- Mood vs emotion. Mood:
+  - Longer: days. Emotion: seconds, minutes.
+  - Slight but continuous emotional state
+  - Trigger related emotions
+  - No signal in face or voice. Identified via emotions triggered.
+  - Bias interpretation of and response
+  - Can't identify the trigger:
+    - Randomly
+    - Dense emotional experiences
+
+# 4. Behaving emotionally
+- Problems:
+  - Overact under emotions
+  - No emotions
+  - Feel emotions but no/lack of expressions
+- Emotional behavior: signals, actions, internal changes
+- Signals: instant, can't be turned off, universal, don't say anything about the source:
+  - Facial expressions: easy to fake
+  - Voice: very hard to hide/fake, capture attention
+  - Physical action: easy to inhibit
+- Learned actions:
+  - Easier & faster to learn if consistent with preset actions
+  - Operate automatically
+- Internal changes:
+  - Body: detectable
+  - Thought:
+    - Memories related to the emotion
+    - Interpretation of situation is consistent with emotion -> justify and maintain emotion
+  - Regulatory patterns: modify behavior
+- Affect program:
+  - Preset but can be added with learned behaviors
+  - Can't be interrupted
+- Emotions rarely occur singly or in pure form:
+  - Sequential
+  - Overlapping & blending
+- Learned response maybe unlearn-able
+- How easy to unlearn:
+  - Bodily movement > voice & facial
+  - How early in life when acquired: earlier -> harder
+  - How intense and dense the emotional episodes
+- Emotional consciousness: aware of the feeling vs consciousness:
+  - Appraisal awareness
+  - Impulse awareness
+  - Reflective consciousness / attentiveness: able to observe ourselves during an emotional episode,
+  ideally before more than a few seconds have passed. We recognize that we are being emotional
+  and can consider whether or not our response is justified.
+  We can reevaluate, reappraise, and if that is not successful, then direct what we say and do.
+  This occurs while we are experiencing the emotion, as soon as we have become conscious of our emotional feelings and actions.
+- Increase attentiveness: familiar with:
+  - Triggers
+  - Sensations & body feelings
+  - Observe others
+- Attentiveness may not work if:
+  - Intense emotion
+  - Importing a script which is not identified
+  - In a relevant mood
+  - Lack of sleep
+  - Continual physical pain
+- What to do when being attentive:
+  - Reappraise what is occurring. Problem: refractory period.
+  - Interrupt/halt actions. Reduce signals.
+- Analyze emotional episode afterward. Understand self & the other.
+
+# 5. Sadness and agony
+- Trigger: loss:
+  - Rejection
+  - Loss of self-esteem
+  - Loss of admiration/praise
+  - Health
+  - Body parts
+  - Object
+- Agony: protest and denial
+- Long last, interchange between sadness and agony
+- Related emotions:
+  - Anger: being rejected. Can be used as a defense, substitute, cure
+  - Afraid: unable to live without the loss, unable to recover
+  - Positive emotion: memories, others' help
+- Sadness can be delayed to show in suitable context: environment, people
+- Diminish if there is time to adjust for the incoming loss
+- Denial in response to sudden loss
+- Functions:
+  - Draw attention and help
+  - Enrich meaning of the loss
+  - Rebuild resources and conserve energy
+- Sympathy more with child's sad expression
+- Want help vs not
+- Sympathy vs anger response
+- Mood: blue
+- Personality trait vs emotional disorder:
+  - Both long
+  - Not impair vs impair ability to live
+- Sad sensations:
+  - Eyelids heavy
+  - Cheeks rise
+  - Back of throat sore
+  - Eyes moistened with tears
+- Face:
+  - Inner corners of brows raised
+  - Upper eyelids drooped
+  - Lip corners pulled down
+  - Wrinkle around mouth
+  - Cheek raise -> narrow eyes
+- Dealing with suppressed expressions
+
+# 6. Anger
+- Triggers:
+  - Interference:
+    - Physical inference (theme)
+    - Deliberate > incidental
+  - Frustration
+  - People trying to hurt us: physically & psychologically -> anger & fear
+  - Rejection
+  - Response to others' anger
+  - Disappointment: more towards those close to us:
+    - Can hurt us most
+    - Safer to show anger
+  - Offensive actions/beliefs
+- Strength range: annoyance -> rage
+- Resentment vs grudge, hatred (longer)
+- Message:
+  - Get out of the way
+  - Want to hurt (motive)
+- Related emotions:
+  - Fear: of:
+    - Harm cause by target
+    - Harm cause by self
+  - Disgust
+  - Guilty/ashamed
+- Motive to control anger:
+  - Continue the relationship
+  - Make things better
+- Act or not act: is the cause best deal with by expressing anger?
+- Unaware when angry
+- Stonewall:
+  - Don't response to others' emotions
+  - Cause: can't deal with self and others' feeling
+- Manage anger: distinguish the offensive actions with the person who did it
+- -> Direct anger toward the actions. Sympathize with the person. Help him not act in this way.
+- Problem: refractory period
+- Irritable mood: deal with:
+  - Get out of the mood (indulge in activities we enjoy)
+  - Avoid people
+- Useful function of anger: motivate actions, bring changes
+- -> Need to identify the cause
+- Anger can reduce fear, motivate actions.
+- Personality trait: hostility. Glare.
+- Anger re-emerge when talk about: more when the cause has not been dealt with
+- Referential expression: partial & brief.
+- Disorder: violence: verbally & physically:
+  - Certain forms of violence are justifiable/understandable (revenge?)
+  - Man more than woman:
+    - Status hierarchy
+    - Can't be sure of offsprings' father
+  - Evolutionary violence vs emotional disorder violence
+  - Cause of violence:
+    - Early life environmental stress
+    - Bad parenting
+    - Head injury
+    - Genetic factors
+- Look:
+  - Eyelids tensed and upper eyelid raised
+  - Eyebrow down towards nose and drawn together (seen also in facing difficulty)
+  - Eyes wide opened, stare hard
+  - Lips tightly pressed and tensed / Lips opened in rectangular shape
+- Sensation: pressure, tension & heat:
+  - Heart rate increase
+  - Respiration increase
+  - Blood pressure rise
+  - Face redden
+  - Bite down teeth, chin/jaw thrust forward
+  - Lips pressed -> strong physically exertion
+- Hard to hide expression: thinner lips
+- Brow & eye expression: appear also in:
+  - Difficulty (not understand what the other saying)
+  - Confusion
+  - Concentration
+  - Determination
+- Use the information:
+  - Duration of expression:
+    - Longer: more intense feeling
+    - Exception:
+      - Brief & intense: deliberate or unconscious suppression
+      - Long & slight: deliberate
+  - What to do:
+    - Not close:
+      - Could ignore the expression, but acknowledge & be cautious
+      - Don't ask:
+        - Why are you angry with me?
+        - Are you angry?
+      - Could acknowledge & ask if you can help
+      - Avoid label it "anger". Use "how you feel" instead.
+      - Suggest discussion at a later time
+      - Consider action if it is just the beginning
+    - Close:
+      - Sympathy
+      - Explain
+      - Make up in some ways
+
+# 7. Surprise and fear
+- Surprise:
+  - Trigger: unexpected event
+  - Brief, quickly leave for other emotions or no emotions (fixed, limited duration)
+  - Hard to distinguish with fear expression
+  - Surprise vs startle (giật mình). Startle:
+    - Physical reflex
+    - Shorter timing
+    - Can't be eliminated fully/inhibit reaction even if pre-notified
+    - Different set of expression
+- Fear:
+  - Trigger: threat of harm:
+    - Theme: physical harm:
+      - Sth move quickly towards
+      - Sudden loss of support, make we fall through space
+      - Sight of snake (reptilian)
+    - Variations: physically & psychologically
+  - Can fear nearly anything
+  - Groundless fear
+  - Action: depend on past experience about what protect ourselves
+    - Do anything
+    - Do nothing
+  - Evolutionary actions:
+    - Hiding & fleeing
+    - Angry at the threat
+  - Related emotions:
+    - Anger:
+      - Self
+      - Threat
+    - Disgust: self
+  - If can deal with the threat:
+    - Don't feel unpleasant sensations & thoughts
+    - Focus on dealing with the threat
+  - Fearful experience:
+    - Intensity
+    - Timing
+    - Coping
+  - Function:
+    - Immediate threat:
+      - Focus attention
+      - Mobilize action
+    - Impending threat: worry -> more vigilant
+    - Facial expression:
+      - Notify, warn others
+      - Recruit others to deal with the threat/to help/to reassure
+      - May satisfy, cause the attacker to back off
+    - Pain & sex: too specific. Vs emotions (not locatable).
+    - Mood: anxiety
+    - Personality: shy/timid
+- Facial expression:
+  - Upper eyelids raised high, lower eyelids tensed
+  - Jaw dropped
+  - Lips stretched horizontally towards ears
+  - Brows raised high, pulled together
+- Body sensations:
+  - Hands colder
+  - Breath deeply & rapidly
+  - Sweat
+  - Muscle in arms & legs tremble & tighten
+  - Body move back
+- Worried: same but weaker sensations
+- Expression duration: shorter -> surprise (1-2s)
+- If only eye, tensed lower eyelids, the rest of face blank -> fear
+- Eyebrows when asking questions:
+  - Raised: already know answer. Also when listening: exclaimation/disbelief.
+  - Lower & draw together: don't know the answer
+- Fear vs surprise:
+  - Fear:
+    - Tensed lower eyelids
+    - Brows draw together
+    - Lips stretch back towards ears
+  - Surprise:
+    - Jaw drops down
+    - Upper eyelids raised less
+- Use the information:
+  - Remember: expression does not reveal cause
+  - -> Don't jump to conclusion
+  - Not close:
+    - Don't mention perception of their fear
+    - Response: suggestion: Is there more that you would like to discuss with me about the situation?
+    - -> Show sympathy
+  - Close: can be direct, but ask, don't assume the cause.
+  "I sense that something is worrying you. Can I help in any way?"
+
+# 8. Disgust and Contempt
+# 8.1. Disgust
+- Feeling of aversion
+- Caused by:
+  - Taste, thought of eating sth
+  - Smell, sound, touch
+- Actions & appearance of people/ideas
+- Related emotion: anger
+- Theme: oral incorporation of sth offensive (different across/within culture) and contaminating
+- Universal trigger: bodily products: feces, vomit, urine, mucus and blood (even your own)
+- Appear as a separate emotion at age 4-8
+- People fascinate disgust
+- Most disgusting for adults: interpersonal (the morally repugnant in particular)
+- Interpersonal disgust:
+  - The strange
+  - The diseased
+  - The misfortunate
+  - The morally tainted
+- Fed-up disgust: usually in response to stonewalling
+- Intimacy lower the threshold for disgust (parents, sexual intimates and other close relationships)
+- Functions:
+  - Suspension of disgust = personal commitment
+  - Avoid the disgusting -> reduce contagion
+- Empathy: reactions to others' emotions:
+  - Cognitive empathy: recognize
+  - Emotional empathy: feel
+  - Compassionate empathy: want to help
+- Disorder: disgust itself is not, but play important role in some psychiatric disorder
+- Expression:
+  - Unbalanced, asymmetric
+  - Lip corner tightened, slightly raised
+## 8.2. Contempt
+- Vs disgust: contempt:
+  - Only experienced about people or actions of people, not about tastes, smells, touches
+  - Make you feel superior to the object of contempt
+  - Intensity: disgust has higher spectrum
+  - Contempt usually feels good
+- Function:
+  - Signal the feeling of being superior
+  - Signal the feeling of not needing to accommodate or engage
+- -> Assert power/status: show by people who are uncertain about their status
+- Related emotions: anger (mild form – annoyance)
+- Moods: no word to describe
+- Facial expression: extreme disgust:
+  - Upper lips raised high
+  - Lower lips raised & slightly protruded
+  - Wrinkle around mouth is deep, forms inverted U
+  - Nose:
+    - Nostril wings raised
+    - Wrinkle on side & bridge
+  - Cheeks raised
+  - Brows lowered
+  - Crow-feet wrinkles
+- Slight expression:
+  - Nose wrinkled
+  - Upper lip raised
+## 8.3. Using the information
+- Not close:
+  - Facing definite contempt/disgust: don't directly confront (most people don't acknowledge the feeling).
+  Give a chance to talk about the feeling.
+  - Facing slight/suppressed disgust/contempt: "I sense that it is hard for you to accept this,
+  because you think it was in some way unjustified. Can we talk about that"?
+- Close:
+  - Disgust:
+    - Can be direct: "You feel I am acting pretty unfairly toward you."
+    - Try not to defend yourself, allow the person to say fully what she is feeling
+    - Then try to explain your feelings/actions calmly
+  - Contempt:
+    - Ignore
+    - Acknowledge, discuss solution
+
+# 9. Enjoyable emotions
+- A set of distinctive enjoyable emotions
+- Sensory pleases:
+  - Touch, sight, sound, smell, taste
+  - Universal themes & learned variations
+- Amusement
+- Contented:
+  - Everything seems right, nothing needs to do
+  - No facial expression (facial muscle relaxed)
+- Excitement:
+  - Arise in response to novelty or challenge
+  - Closely related to fear
+  - Related emotions:
+    - Other enjoyable emotions
+    - Fear -> rage
+    - Anger -> terror
+- Relief:
+  - Felt when sth that had strongly aroused our emotions subsides
+  - Accompanied by: a sigh, a deep inhalation/exhalation
+  - Must be preceded by other emotions
+- Wonder:
+  - Sth rare happened
+  - Feeling: overwhelmed by sth incomprehensible
+  - Related: fear. Wonder + fear = awe.
+  - Body sensations:
+    - Goose bumps (nổi da gà)
+    - Deep respiration
+    - Tingling on shoulder/back of the neck
+    - Head shakes
+  - Vs inspiration/admiration: inspiration no goosebumps, no respiration changes
+- Ecstasy/bliss:
+  - Self-transcendent delight
+  - Intense experience
+- Fiero:
+  - Feel after accomplish sth difficult
+  - Help motivate great efforts & achievements
+- Naches:
+  - Pleasure & pride parents feel when their child accomplish sth important
+  - Ensure parental investment in the growth & achievement of their children
+- Elevation: when we see unexpected human good acts
+- Gratitude
+- Schadenfreude: when you know that your worst enemy has suffered
+- Functions:
+  - Motivate our lives
+  - Cause us to do things that are good for us
+  - Cause us to engage in activity that is necessary for survival
+- Most people are specialists, craving some emotions more than others
+- -> Organize their life to experience these emotions
+- Theme:
+  - Reunion with a close person
+  - Sexual relation
+  - Birth of a wanted child
+  - Being in the present of a loved one (ecstasy)
+- Common moods: excitement, contentment & amusement
+- Emotion disorder:
+  - Anhedonia: not capable of feeling enjoyable emotions
+  - Mania: excessive, unremitting excitement
+- Recognition:
+  - Facial expression: smile
+  - Voice: distinguish different enjoyable emotions
+- Enjoyable smile vs non enjoyable smile:
+  - Enjoyable smile:
+    - Has contraction of the muscle around the eye:
+      - Inner (around eyelids): controllable
+      - Outer (all around eye socket): uncontrollable. The more it is shown, the more happiness felt.
+    - Expression:
+      - Eyes narrower
+      - Cheeks higher
+      - Contour of cheeks changed
+      - Eyebrows moved down slightly
+      - Enjoyable broad smile: eye cover fold (mí mắt – the skin between eyelid & eyebrow) pulled down
+  - Non enjoyable smile:
+    - Might involve just lips
+    - Show when:
+      - Polite
+      - Agree with the speaker
+    - Hesitant smile
+    - Miserable smile: no protest about his misery (Lips pressed together, lower lip pushed upward)
+    - Managing-emotion smile
+- Using the information:
+  - Usually fake vs real smile doesn't matter
+  - What specific enjoyable emotion felt usually doesn't matter
+
+# 10. Individual different in emotional experience
+- Ways of experience emotion:
+  - Speed of emotional onset
+  - Strength of emotional response
+  - Duration of emotional response
+  - How long it takes to recover/go back to baseline state
+- -> No correlation: every combination can occur
+- Frequency of emotional episodes
+- How well-controlled
+- How clearly we signal others
+- Events that easily trigger each emotion
+- Some left-over emotions: guilt, shame, embarrassment, envy: no unique expression
+
+# 11. Meaning of different types of expression
+- Slight expression:
+  - Beginning of an emotion
+  - Weak emotion
+  - Diminished emotion
+  - Failed attempt to conceal an emotion
+- Partial expression:
+  - Weak emotion
+  - Diminished emotion
+  - Failed attempt to conceal an emotion
+- Micro expression:
+  - Deliberate suppression of an emotion
+  - Unconscious suppression of an emotion
