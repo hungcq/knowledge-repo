@@ -29,6 +29,10 @@
 - Analytic statement: true by definition, self-explanatory, have no informative value (eg frozen water is ice)
 - Stratagem: trick
 - Hypostatization: representation
+- Epistemology (the logic of scientific discovery): the theory of scientific method, including:
+  - Logical analysis of the relations between scientific statements
+  - Choice of method: decisions about the way in which sci stms are to be dealt with
+  - -> Depend on the aim we choose
 - Problem of induction: the question whether inductive inferences are justified, or under what conditions
 - Positivism:
   - Old: admit as scientific or legitimate only those concepts/notions/ideas which are derived from experience,
@@ -51,6 +55,13 @@ one or more universal laws, together with certain singular statements, the initi
 within a finite individual or particular spatio-temporal region
 - Individual concept: a concept in the definition of which proper names or equivalent signs are indispensable
 - Universal concept: a concept which any reference to proper names can be completely eliminated
+- Explicit definition: whereby concepts of an axiom system are given meaning in terms of a system of lower level universality
+- Conventionalism: view theoretical natural science not as a picture of nature but merely a logical construction;
+it is this construction which determines the properties of an artificial world:
+a world of concepts implicitly defined by the natural laws which we have chosen. Sci speaks only in this world.
+- Logical characterization of falsifiable systems: logical relations holding between the theory and the class of basic stms
+- System of basic statements: all self-consistent singular statements of a certain logical form:
+all conceivable singular statements of fact
 
 # Content
 ## Preface
@@ -60,7 +71,7 @@ within a finite individual or particular spatio-temporal region
 - -> Scientific kno is the extension of common sense kno
 - Scientific kno can be more easily studied compared to common sense kno
 - -> Problem of reasonable belief -> problem of accepting & rejecting sci theories
-## Part 1: introduction to the logic of science
+## I. Introduction to the logic of science
 ### 1. A survey of some fundamental problems
 - Task of logic of scientific discovery (kno): to give a logical analysis of the method of empirical sciences
 #### The problem of induction
@@ -148,7 +159,7 @@ any statement in science against falsification
   - For science: allow the scientists to compare his work with the def
   - For philosophy: advance the theory of knowledge, deal with problems of older theories
 
-## Part 2: some structural components of a theory of experience
+## II. Some structural components of a theory of experience
 ### 3. Theories
 #### Causality, explanation, and the deduction of predictions
 - Causal explanation def
@@ -173,6 +184,104 @@ considered singular statements
 - Universal concept def
 - The distinction has no relation with the distinction between class and element:
 both indi and universal names may occur as names of some classes or elements
+#### Strictly universal and existential statements
+- Imp types of universal pure statements (only universal names and no individual names occur):
+  - Strictly universal
+  - Strictly existential: "there are", "there exist at least one"
+- The negation of a strictly universal statement is always equivalent to a strictly existential statement and vice versa
+- -> Theories of natural science can be expressed in the form of negations of strictly existential statements
+or in the form of non-existence statements ("there is not" statements)
+- -> Theories as prohibitions: deny that sth exist or is the case
+- -> Falsifiable
+- Strictly existential statements cannot be falsified. No singular statement (basic statement) can contradict them.
+- -> Non-empirical or metaphysical
+- Unilateral decidability: both kinds of strict statements are decidable one-way only
+#### Theoretical system
+- A tentative system can usually be quite well surveyed as a whole, with all its imp consequences
+- -> Formulated sufficiently clearly & definitely
+- -> Every new assumption can be easily recognizable for what it is: a modification and therefore a revision of the system
+- Axiomatized system: when a set of statements, the axioms, has been formulated which satisfies the following requirements:
+  - Free from contradiction, self or mutual
+  - -> Not every arbitrarily chosen statement is deducible from it
+  - Independent: not contain any axiom deducible from the remaining axioms
+  - Sufficient: for the deduction of all statements belonging to the theory which is to be axiomatized
+  - Necessary: contain no superfluous assumptions
+- -> Enable the investigation of the mutual dependence of various parts of the system
+#### Some possibilities of interpreting a system of axioms
+- 2 interpretations of any system of axioms:
+  - If the axioms are regarded as conventions then they tie down the use or meaning of the fundamental ideas
+  or primitive terms or concepts which the axioms introduce; they determine what can
+  and what cannot be said about these fundamental ideas (eg axioms of Euclidean geometry)
+  - -> Not falsifiable (all analytic statements)
+  - As a system of empirical or scientific hypotheses: systems that results from applying a rule:
+  not to use undefined concepts as if they were implicitly defined
+  - -> Enable evolution: new system cover old one
+#### Levels of universality. The modus tollens
+- Theoretical systems have statements with dif level of universality
+- If a system of higher level of universality is falsified, the falsification may be attributed to the new hypothesis
+- -> The old system of lesser universality is not required to be regarded as falsified
+
+### 4. Falsifiability
+#### Some conventionalist objections
+- Conventionalism def
+- -> Laws of nature are not falsifiable by observation; for they are needed to determine what an observation and
+what a sci measurement is
+- Conventionalism as a system is self-contained and defensible
+- Conventionalists tend to select the simplest system
+- -> Problem: attitude when the old system is challenged: try to explain away the inconsistencies of the old system
+#### Methodological rules
+- Empirical (refutable) systems should be distinguished by its methods
+- -> The methods should prevent conventionalist stratagems
+- Some common stratagems & handling methods:
+  - Auxiliary hypotheses:
+    - Only accept those whose introduction does not diminish the degree of falsifiablity or testability
+    of the system in question, but increases it
+    - -> The introduction of auxiliary hypotheses should always be regarded as an attempt to construct a new system
+    - -> The new system should always be judged on the issue of whether it would, if adopted, constitute a real advance
+    in our knowledge of the world -> open up new possibilities for testing and falsifying the theory
+    - Allow singular statements which do not really belong to the theoretical system
+      (eg assumption that certain observation or measurement which cannot be repeated may have been due to error)
+  - Change in definitions: permissible if useful, but must be regarded as modifications of the system
+  - -> The system has to be re-examined after as if it were new
+  - Concern regarding the competence of the experimenter or theoretician: inter-subjectively testable experiments are
+  either to be accepted, or to be rejected in the light of counter-experiments
+#### Logical investigation of falsifiability
+- Logical characterization of falsifiable systems def
+- System of basic statements def
+- -> Contain many stms which are mutually incompatible
+- As opposed to metaphysical theory, empirical theory should allow us to deduce more emp singular stms
+than we can deduce from the initial conditions alone
+- An emp theory must divide the class of all possible basic stmts unambiguously into 2 non-empty subclasses:
+  - Potential falsifiers: prohibited by the theory
+  - Permitted stms
+- A theory:
+  - Make assertions only about its potential falsifiers: it asserts their falsity
+  - Say nothing about the truth/falsity of permitted basic stms
+#### Falsifiability and falsification
+- Rules to determine under what conditions a system is to be regarded as falsified:
+  - Non reproducible occurrences are of no significance
+  - -> Accepted basic stms which contradict a theory are not sufficient to falsify it
+  - Only falsify when a low level emp hypo which describes such an effect is proposed and corroborated
+  - -> Falsifying hypo
+#### Occurrences and events
+- Expression in informal language:
+  - Occurrence: described by a singular stm (basic stm)
+  - Event:
+    - What may be typical or universal about an occurrence
+    - What, in an occurrence, can be described with the help of universal names
+- -> A theory, provided it is falsifiable, rules out not merely one occurrence, but always at least one event
+#### Falsifiability and consistency
+- Consistency: the first requirement to be satisfied by every theoretical system, empirical or not
+- Inconsistent system: uninformative because any conclusion can be derived from it
+- Consistent system: divide the set of all possible stms into 2:
+  - Those which it contradicts
+  - Those with which it is compatible
+- Relation between consistency and falsifiability: mostly analogous:
+stms which do not satisfy the condition of consistency fail to differentiate
+between any 2 stms within the totality of all possible stms
+
+### 5. The problem of the empirical basis
+- 
 
 # Criticism
 - Chap 8 (probability) is too technical

@@ -3,7 +3,7 @@
 ## Category
 Economics, finance
 
-## Summary TODO
+## Summary
 Introduce basic aspects of finance, including: micro & macroeconomics related to finance, investment & personal finance
 
 ## Structure
@@ -31,5 +31,5 @@ Introduce basic aspects of finance, including: micro & macroeconomics related to
 - Make complex concept accessible using visual aids & practical examples
 - Offer a clear understanding of what money is all about & how it shapes modern society
 
-## Terms:
+## Terms
 Laissez faire /lesei fer/: market will produce the best solution when there is no gov interference

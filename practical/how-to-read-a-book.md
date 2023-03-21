@@ -42,7 +42,7 @@ Provide guide for analytical reading of dif kind of reading material.
 ### 1. The activity and art of reading
 - Active reading:
   - Must actively receive (catch) the sent info/message  
-  -> Need skills to receive well dif kinds of communication
+  - -> Need skills to receive well dif kinds of communication
   - To read better:
     - More active
     - Perform the acts involved more skillfully
@@ -52,8 +52,8 @@ Provide guide for analytical reading of dif kind of reading material.
     - Understand what the author comm
     - Both reader & author has common understanding
   - Read for understanding (this book's focus): when don't understand fully what the author comm  
-  -> Can increase understanding (bigger picture, connections)  
-  -> Art of reading: understand more without external help
+  - -> Can increase understanding (bigger picture, connections)  
+  - -> Art of reading: understand more without external help
 - Conditions for reading for understanding:
   - Initial inequality in understanding
   - Reader's ability to overcome this inequality in some degree
@@ -106,15 +106,15 @@ Provide guide for analytical reading of dif kind of reading material.
 - Reading speed:
   - Should vary with nature & complexity of the material
   - Avoid fixations & regressions: use finger as pointers, move it faster than what your eyes are comfortable  
-  -> Can improve concentration but not much comprehension
+  - -> Can improve concentration but not much comprehension
 
 ### 5. How to be a demanding reader
 - Ask & answer questions while reading
 - 4 questions an active reader asks:
   - What is the book about as a whole?  
-  -> Leading theme, how the theme is ordered/divided
+  - -> Leading theme, how the theme is ordered/divided
   - What is being said in details, and how?  
-  -> Main ideas, assertions & arguments of a particular message
+  - -> Main ideas, assertions & arguments of a particular message
   - Is the book true, in whole or part?
   - What of it?
     - Info: why does the author think it is imp to know these things? Is it imp to you to know them?
@@ -134,7 +134,7 @@ Provide guide for analytical reading of dif kind of reading material.
 - 3 kinds of note-making:
   - Structural (inspectional reading)
   - Conceptual (analytical reading): the author's and your own concepts  
-  -> Answers to questions about its truth & significance
+  - -> Answers to questions about its truth & significance
   - Dialectical (syntopical reading): discussion engaged by all authors
 - Forming reading habit:
   - Know the rule
@@ -182,7 +182,7 @@ into a whole, by being ordered to one another and toe the unity of the whole:
   - Divide major part into sections (not need to apply to full details)
   - Chapter divisions should only be used as a reference
 - **Rule 4**: find out what the author's problems were  
--> Why the book has the unity it has, why the parts are organized that way
+- -> Why the book has the unity it has, why the parts are organized that way
 - Common questions:
   - Theoretical:
     - Existence of sth
@@ -262,7 +262,7 @@ What is being said in details, and how? (interpreting the book's content)
   - Read the whole book
   - Read other works of the same author
 - **Rule 10**: when you disagree, do so reasonably, not contentiously  
--> Learning the truth is what matters, not winning an argument
+- -> Learning the truth is what matters, not winning an argument
 - Source of disagreement:
   - Misunderstanding
   - Lack of relevant knowledge
@@ -280,8 +280,8 @@ by giving reasons for any critical judgement you make
 - Points to disagree (be specific) with an authors:
   - **Rule 12**: He is uninformed: lack knowledge relevant to the problems
   he is trying to solve
-  - **Rule 13**: He is misinformed: have error kno relevant to the problems  
-  -> Rule 12 & 13: defects in premises, which leads to a dif conclusion/inability to
+  - **Rule 13**: He is misinformed: have erroneous kno relevant to the problems  
+  - -> Rule 12 & 13: defects in premises, which leads to a dif conclusion/inability to
   solve a problem
   - **Rule 14**: He is illogical:
     - Failure to follow logical rule: conclusion not follow from reasons
@@ -289,8 +289,8 @@ by giving reasons for any critical judgement you make
   - -> Can't disagree on first 3 points -> have to agree, at least in part
   - **Rule 15**: His analysis is incomplete: has not solved all the problems he
   started with  
-  -> Can suspend judgement on the whole  
-  -> Can compare with other works
+  - -> Can suspend judgement on the whole  
+  - -> Can compare with other works
 - => Rules 9-15 (critical rules) answer:
   - Is it true?
   - What of it: need to ask this question if you determined what is said is true
@@ -300,7 +300,7 @@ by giving reasons for any critical judgement you make
 - 2 types of aids to reading:
   - Intrinsic: rely on the book itself: not realistic since there is always effect of past exp
   - Extrinsic: outside the book. Sometimes necessary for full understanding.  
-  -> Don't depend too much on it. Try your best on intrinsic first, only use external help if still can't understand.
+  - -> Don't depend too much on it. Try your best on intrinsic first, only use external help if still can't understand.
 - 4 categories:
   - Relevant exp:
     - Common exp (not necessarily universal exp):
@@ -335,7 +335,7 @@ by giving reasons for any critical judgement you make
         - Cyclopedia:
           - Is about facts
           - Should pay attention about relation of facts (in 1 topic)  
-          -> Could use the index, though not ideal
+          - -> Could use the index, though not ideal
           - Remember that "fact", esp of science, can be falsified
           - The meaning of "fact" is culturally determined
           - Not a good tools for understanding: no arguments & imagination
@@ -346,25 +346,25 @@ dif kinds of books
 
 ### 13. How to read practical books
 - Practical books can't solve its problem all by itself: need judgement & action of a particular situation  
--> Can only state general rules
+- -> Can only state general rules
 - 2 types of practical books:
   - Focus on rules: arguments to prove the rules are sound:
     - Via principles
     - Via concrete examples
   - Focus on principles behind rules (eg economics, politics, morals): arguments (like those of theoretical books) to prove why sth is the case  
-  -> Readers need to think about not mentioned rules & their application
+  - -> Readers need to think about not mentioned rules & their application
 - Practically true means:
   - The rule works
   - The end that it seeks is desirable for you  
-  -> Author will try to persuade  
-  -> Need to detect oratory parts
+  - -> Author will try to persuade  
+  - -> Need to detect oratory parts
 - Need to understand personality & background of the author to understand & judge a practical book
 - Adjustment of rules & questions:
   - Rule 4: find out what the author wants you to do
   - Rule 8: find out how the author proposes that you do this
   - Is it true: is his proposed goal also what you want to seek? Is the proposed means the best way of seeking it?
   - What of it: imply action on your part  
-  -> No action = not agree. Exception: practical books applying to only certain people (eg food recipe)
+  - -> No action = not agree. Exception: practical books applying to only certain people (eg food recipe)
 
 ### 14. How to read imaginative literature
 - Readers of fiction usually:
@@ -373,7 +373,7 @@ dif kinds of books
 - Fiction vs nonfiction:
   - Fiction:
     - Convey an experience only available in the book  
-    -> Deeper reality of our inner life, not usually touched
+    - -> Deeper reality of our inner life, not usually touched
     - Require imagination
     - Ambiguous words & metaphors
     - The parts depend on each other
@@ -386,7 +386,7 @@ dif kinds of books
   - Resist its effect
   - Look for terms, propositions, arguments
   - Criticize by standard of truth & consistency  
-  -> Criticize the authenticity & plausibility of the story in the world created by author
+  - -> Criticize the authenticity & plausibility of the story in the world created by author
 - Rules:
   - Structural:
     - Classification:
@@ -403,16 +403,15 @@ dif kinds of books
       - Characters
       - Characters' thoughts, speeches, feelings & actions
     - Static connections (~propositions): scene, background, world  
-    -> Try to be in it
+    - -> Try to be in it
     - Dynamic connections: unravelling in the plot
   - Critical:
     - Try to experience it actively, only criticize after
     - Focus on what is good about the book and why, not what you like and dislike
 
 ### 15. Suggestions for reading stories, plays & poems
-- 4th question: what of it? Not needed for fiction: it can lead to action, but don't
-have to  
--> Implied statements can be in it, but not the essence of the work
+- 4th question: what of it? Not needed for fiction: it can lead to action, but don't have to  
+- -> Implied statements can be in it, but not the essence of the work
 - How to read stories:
   - Read quickly -> unity, relation of events
   - Read intensely & immersively -> details  
@@ -423,7 +422,7 @@ have to
     - Love more deeply
     - Sadism & masochism
   - Human needs: justice, understanding, reduced anxiety
-  -> Bad stories: people get punished/rewarded randomly
+  - -> Bad stories: people get punished/rewarded randomly
 - Epic poems: read Iliad, Odyssey, Aeneid, Divine comedy & Paradise lost
 - Plays:
   - Need to imagine the background world
@@ -433,17 +432,15 @@ have to
   - Offer insight about life, as we still live it
   - Offer framework for other plays
   - How to read:
-    - Pay attention to the lack of time & the need for immediate decision
-    -> wrong decision
+    - Pay attention to the lack of time & the need for immediate decision -> wrong decision
     - Protagonists are giant, superior
 - Lyric poetry:
   - Read through without stopping
   - Read out loud the second time
   - Pay attention to imp words: in the rhyme, repeated
-  - Pay attention to conflicts: between people, love & time, life & death,
-  the transient & the eternal
-  - Don't spend too much effort to study the context & author's background  
-  -> Focus on the work
+  - Pay attention to conflicts: between people, love & time, life & death, the transient & the eternal
+  - Don't spend too much effort to study the context & author's background
+  - -> Focus on the work
 
 ### 16. How to read history
 - Author's definition of history: formal narrative accounts of a period/event/series of events in the past
