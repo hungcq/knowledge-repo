@@ -168,6 +168,55 @@
   - Inflate the success of related people
 
 ## 6. Authority
+- Beha: willingness of adults to go to almost any lengths on the command of an authority
+- Causes:
+  - Social benefits
+  - For indi:
+    - Informational: trusting expert
+    - No risk of disobedience to higher power
+- Compliant technique: recommendation from authority/experts
+- The appearance of authority is enough. Cues used when lacking real authority substances:
+  - Titles
+  - Clothes (eg uniform, business suit)
+  - Trappings (eg car, jewelry)
+- Handling tactics:
+  - Aware of power of authority & how easy it can be faked:
+    - Need to distinguish real & not real expert: focus on field of expertise
+    - Need to check whether the expert is honest: anything to gain from the recommendation?
+    - -> Aware of counter move when they pretend to argue to a degree against their own interests
+### Addi
+- Association between size and status
+
+## 7. Scarcity
+- Beha: opportunities seem more valuable to us when their availability is limited
+- Cause: loss aversion, regret aversion of forgone oppo
+- Compliant techniques:
+  - Limited number: inform the customer that a certain product is in short supply that cannot be guaranteed to last long
+  - Deadline: place some official time limit on the customer's oppo to get the offer
+  - -> No time to think
+- Causes of effectiveness: psychological reactance: try to retain freedom of choice when it is limited/threatened
+- -> Rationalize afterward about the positive qualities of the product
+- Also apply to non-material things: info, messages, communications, knowledge
+- Conditions for effectiveness:
+  - Drop from abundance to scarcity > constance scarcity
+  - Drop because of demand > normal drop
+  - -> Competitiveness
+- Handling tactics:
+  - Difficulty: typical reaction to scarcity hinders the ability to think
+  - Tactics:
+    - Pay attention to competitive arousal -> cue
+    - Distinguish between the joy of possessing vs experiencing: what we want from the item
+### Addi
+- Exclusive info is more persuasive
+- Techniques:
+  - Schedule the same appointment time for prospective buyers
+  - Auction format: trigger competitiveness
+
+## Epilogue
+- Summary: increasingly complex world
+- -> Revert to simple cue, auto response to guide decision
+- -> More susceptible to trick of compliance professionals
+- -> Need tactics to identify & retaliate
 
 # Criticism
 - Is there a misunderstanding between gene selection and social selection?
