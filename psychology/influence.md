@@ -67,7 +67,7 @@
     - Advs:
       - Increase commitment rate: requestee feels greater responsibility for the arrangement
       - Increase chance for future favors: requestee feels greater satisfaction with the arrangement
-- Tactics to deal with:
+- Handling tactics:
   - Refuse the request: psychological damage
   - Refuse the initial favor:
     - Difficult in practice
@@ -81,6 +81,95 @@
   - Trigger reciprocation
 - Allow man to buy a drink = sexually obligated in some cultures
 
+## 3. Commitment and consistency
+- Beha: desire to be & appear consistent with earlier choices
+- -> Might act against best interest
+- Cause: personal & social pressure
+- Advs of consistency:
+  - Evo, informational: reduced mental effort
+  - Psychological: protection against troubling realization resulted from logic
+- Trigger: commitment, promise
+- Alter self-image by small commitment. Advs:
+  - Non-specific: cover a whole range of related situations
+  - Self-sustained belief
+- -> Influence future beha
+- Compliant techniques:
+  - Foot-in-the-door: obtain a large purchase by starting with a small one
+  - Induce to make a choice. After committed, remove the inducement
+  - -> The commitment can self-sustained
+  - -> Adv: make a person feel pleased with a poor choice
+  - -> Suitable when there is only poor choice to offer
+- Conditions for effective commitment:
+  - Active action (eg written stms)
+  - Public commitment
+  - Extra effort (sunk cost fallacy)
+  - Inner responsibility for the commitment (more imp)
+  - -> Need to reduce external pressure (eg reward & threat)
+- Handling tactic: pay attention to signals of foolish consistency:
+  - Tighten stomach
+  - Ask yourself: "would I make the same choice with current info", then trust the first feeling
+  - -> No time to rationalize
+### Addi
+- Techniques:
+  - Under-supply the promised gift
+  - Ask to predict the donated amount
+  - Ask how are you feeling
+  - -> Feeling well -> hard to be stingy after
+- Imp role of harsh initiation ceremony in increasing group's survival & solidarity
+
+## 4. Social proof
+- Beha: assume that an action is more correct if others are doing it
+- Optimal conditions:
+  - Uncertainty
+  - Follow people similar to ourselves
+- Handling tactics:
+  - When social proof is deliberate faked: make a conscious decision to be alert to counterfeit social evidence
+  - Recheck the facts
+### Addi
+- Sound of laughter: cue that sth is funny
+- Sale technique: label the product as "fastest growing", "largest selling"
+- Cause of bystander inaction: everyone is unsure but looks at others' inaction for cue -> no action
+- -> How to seek help in such situation: isolate one indi from the crowd & call for help: provide specific instructions
+- -> No uncertainty, clear responsibility, clear actions to perform
+- Use a number of compliant group members as examples for social proof
+
+## 5. Liking
+- Beha: prefer to say yes to the requests of someone we know and like
+- Compliant techniques:
+  - Get then mention the name of a friend who recommend
+  - When formed friendships are not present: try to be liked
+- Factors that cause reliable liking:
+  - Physical attractiveness (halo effect)
+  - Similarity (eg clothes, background, interest, opinion, personal trait, lifestyle)
+  - Compliments (eg I like you). Don't have to be true.
+  - Frequent contact under good experience. Cooperation towards common goals.
+  - -> Technique: establish that both are working for the same goals (eg work against the bad guy like their boss)
+  - Association with good things. Techniques to associate with the things we like:
+    - Good-looking models
+    - Cultural symbols
+    - Celebrities
+    - Community project
+    - Food
+- Handling tactics:
+  - Deal with specific liking factor: too many & work unconsciously
+  - -> Hard to achieve
+  - General tactic: focus on not the causes, but the effect:
+  the feeling that we have come to like the practitioner more quickly or more deeply than we would have expected
+  - -> Then:
+    - Reverse action: dislike them
+    - -> Might be unfair, forgo actually nice people
+    - Separate the liked person from the request
+### Addi
+- Competitive activities increase hostility towards other groups
+- -> Collaboration towards common goal reduces conflict
+- People become fonder of the people and things they experienced while they are eating
+- When prestige is low: more likely to:
+  - Associate ourselves with successful others
+  - Inflate the success of related people
+
+## 6. Authority
+
 # Criticism
 - Is there a misunderstanding between gene selection and social selection?
 - Some real-life stories seem to be cherry-picked
+- Chap 4 social proof handling tactic 2: how can we recheck the fact when we do things automatically?
