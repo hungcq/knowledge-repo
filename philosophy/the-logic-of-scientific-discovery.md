@@ -62,6 +62,8 @@ a world of concepts implicitly defined by the natural laws which we have chosen.
 - Logical characterization of falsifiable systems: logical relations holding between the theory and the class of basic stms
 - System of basic statements: all self-consistent singular statements of a certain logical form:
 all conceivable singular statements of fact
+- Psychologism: the doctrine that stms can be justified not only by stms but also by perceptual exp
+- Protocol sentences: sentences which represent experiences
 
 # Content
 ## Preface
@@ -281,7 +283,55 @@ stms which do not satisfy the condition of consistency fail to differentiate
 between any 2 stms within the totality of all possible stms
 
 ### 5. The problem of the empirical basis
-- 
+#### Perceptual experiences as empirical basis: psychologism
+- Trilemma: accept sci stms dogmatically vs justify them via stms (infinite regress) vs psychologism
+- Psychologism def
+- -> Science as the systematic presentation of our immediate convictions
+- -> Problem: scientific stms expressed in universals can never be justified
+#### Concerning the so-called "protocol sentences"
+- Protocol sentence def
+#### The objectivity of the empirical basis
+- Epistemology should focus on:
+  - How we test sci stms by their deductive consequences
+  - What kind of consequences we can select for this purpose if they in their turn are to be inter-subjectively testable
+- -> Should not focus on: how I can, having the experience S, justify my description of it, and defend it against doubt
+- Process of sci: testing, not justifying using exp
+- Sci suspend judgement about assertions which are not testable
+- -> Those can at best suggest a problem
+#### Basic statements
+- Formal requirements for basic stms:
+  - From a universal stm without initial conditions, no basic stm can be deduced
+  - Universal stm and basic stm can contradict each other
+- Basic stms have the form of singular existential stm:
+  - There is a so-and-so in the region k
+  - Such-and-such an event is occurring in the event k
+- Singular non-existential stm: there is not
+- Basic stms can be formed from the conjunction of 2 basic stms or from one basic & one non-basic stm
+- Material requirement: the event mentioned in the basic stm must be an observable event
+(inter-subjectively testable by observation)
+- In material mode of speech: an observable event is occurring in a certain individual region of space and time
+#### The relativity of basic statements. Resolution of Fries's trilemma
+- Any basic stm can again in its turn be subjected to tests, using as a touchstone any of the basic stms
+which can be deduced from it with the help of some theory, either the one under test, or another
+- -> The need to stop only at a kind of stm that is especially easy to test
+- When investigators doesn't agree, then either:
+  - Continue the tests
+  - Conclude that the stm is not inter-subjectively testable
+- Resolution of the trilemma: experiences can motivate a decision, and hence acceptance or rejection of a stm, but don't justify it
+#### Theory and experiment
+- Basic stms are accepted as the result of a decision or agreement; and to that extend they are conventions
+- -> With the goal of discovering objective truth, the decisions are reached in accordance with a procedure governed by rules
+- Imp rule: only accept/reject basic stms when testing theories: raise searching questions about these theories,
+to be answered by the acceptance of basic stms
+- A random collection of stms can never add up to a sci
+- Epistemological theory of experiment:
+  - The theoretician puts certain definite questions to the experimenter
+  - The experimenter, by his experiments, tries to elicit a decisive answer to these questions.
+  All other questions he tries hard to exclude.
+- -> Theory dominates the experimental work from its initial planning up to the finishing touches in the lab
+- How to select theory: one which:
+  - Has hitherto stood up to the severest tests
+  - Is testable in the most rigorous way
 
 # Criticism
 - Chap 8 (probability) is too technical

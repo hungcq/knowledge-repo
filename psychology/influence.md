@@ -1,7 +1,5 @@
 # Category
 - Psychology
-- Sociology
-- Evolutionary biology
 
 # Structure
 - Chap 1: chars of automatic behaviors
@@ -47,8 +45,10 @@
 - Contrast principle: ~ anchoring. Eg: present expensive item first as an anchor for comparison -> the other item is cheap
 
 ## 2. Reciprocation
-- Imp evo role: facilitate coordination
-- Cultural influence to enforce reciprocation
+- Beha: try to repay in kind what another person has provided us
+- Causes:
+  - Imp evo role: facilitate coordination
+  - Cultural influence
 - Chars:
   - Override other factors like liking
   - Uninvited debts also work because of social obligation to receive
@@ -83,19 +83,19 @@
 
 ## 3. Commitment and consistency
 - Beha: desire to be & appear consistent with earlier choices
-- -> Might act against best interest
+- -> Might act against our best interest
 - Cause: personal & social pressure
 - Advs of consistency:
   - Evo, informational: reduced mental effort
   - Psychological: protection against troubling realization resulted from logic
 - Trigger: commitment, promise
-- Alter self-image by small commitment. Advs:
-  - Non-specific: cover a whole range of related situations
-  - Self-sustained belief
-- -> Influence future beha
 - Compliant techniques:
   - Foot-in-the-door: obtain a large purchase by starting with a small one
-  - Induce to make a choice. After committed, remove the inducement
+  - Alter self-image by small commitment. Advs:
+    - Non-specific: cover a whole range of related situations
+    - Self-sustained belief
+  - -> Influence future beha
+  - Induce to make a choice. After committed, remove the inducement.
   - -> The commitment can self-sustained
   - -> Adv: make a person feel pleased with a poor choice
   - -> Suitable when there is only poor choice to offer
@@ -105,8 +105,8 @@
   - Extra effort (sunk cost fallacy)
   - Inner responsibility for the commitment (more imp)
   - -> Need to reduce external pressure (eg reward & threat)
-- Handling tactic: pay attention to signals of foolish consistency:
-  - Tighten stomach
+- Handling tactics:
+  - Pay attention to signals of foolish consistency: tighten stomach
   - Ask yourself: "would I make the same choice with current info", then trust the first feeling
   - -> No time to rationalize
 ### Addi
@@ -127,11 +127,12 @@
   - Recheck the facts
 ### Addi
 - Sound of laughter: cue that sth is funny
-- Sale technique: label the product as "fastest growing", "largest selling"
+- Techniques:
+  - Label the product as "fastest growing", "largest selling"
+  - Use a number of compliant group members as examples for social proof
 - Cause of bystander inaction: everyone is unsure but looks at others' inaction for cue -> no action
 - -> How to seek help in such situation: isolate one indi from the crowd & call for help: provide specific instructions
 - -> No uncertainty, clear responsibility, clear actions to perform
-- Use a number of compliant group members as examples for social proof
 
 ## 5. Liking
 - Beha: prefer to say yes to the requests of someone we know and like
@@ -144,7 +145,7 @@
   - Compliments (eg I like you). Don't have to be true.
   - Frequent contact under good experience. Cooperation towards common goals.
   - -> Technique: establish that both are working for the same goals (eg work against the bad guy like their boss)
-  - Association with good things. Techniques to associate with the things we like:
+  - Association with things we like:
     - Good-looking models
     - Cultural symbols
     - Celebrities
@@ -179,28 +180,28 @@
   - Titles
   - Clothes (eg uniform, business suit)
   - Trappings (eg car, jewelry)
-- Handling tactics:
-  - Aware of power of authority & how easy it can be faked:
-    - Need to distinguish real & not real expert: focus on field of expertise
-    - Need to check whether the expert is honest: anything to gain from the recommendation?
-    - -> Aware of counter move when they pretend to argue to a degree against their own interests
+- Handling tactic: aware of power of authority & how easy it can be faked:
+  - Need to distinguish real & not real expert: focus on field of expertise
+  - Need to check whether the expert is honest: anything to gain from the recommendation?
+  - -> Aware of counter move when they pretend to argue to a degree against their own interests
 ### Addi
 - Association between size and status
 
 ## 7. Scarcity
 - Beha: opportunities seem more valuable to us when their availability is limited
-- Cause: loss aversion, regret aversion of forgone oppo
+- Causes:
+  - Loss aversion, regret aversion of forgone oppo
+  - Psychological reactance: try to retain freedom of choice when it is limited/threatened
+  - -> Rationalize afterward about the positive qualities of the product
 - Compliant techniques:
   - Limited number: inform the customer that a certain product is in short supply that cannot be guaranteed to last long
   - Deadline: place some official time limit on the customer's oppo to get the offer
   - -> No time to think
-- Causes of effectiveness: psychological reactance: try to retain freedom of choice when it is limited/threatened
-- -> Rationalize afterward about the positive qualities of the product
 - Also apply to non-material things: info, messages, communications, knowledge
 - Conditions for effectiveness:
   - Drop from abundance to scarcity > constance scarcity
   - Drop because of demand > normal drop
-  - -> Competitiveness
+  - -> Trigger competitiveness
 - Handling tactics:
   - Difficulty: typical reaction to scarcity hinders the ability to think
   - Tactics:
@@ -215,10 +216,10 @@
 ## Epilogue
 - Summary: increasingly complex world
 - -> Revert to simple cue, auto response to guide decision
-- -> More susceptible to trick of compliance professionals
+- -> More susceptible to tricks of compliance professionals
 - -> Need tactics to identify & retaliate
 
 # Criticism
 - Is there a misunderstanding between gene selection and social selection?
 - Some real-life stories seem to be cherry-picked
-- Chap 4 social proof handling tactic 2: how can we recheck the fact when we do things automatically?
+- Chap 4 - social proof: handling tactic 2: how can we recheck the fact when we do things automatically?
