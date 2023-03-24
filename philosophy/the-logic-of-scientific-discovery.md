@@ -64,6 +64,8 @@ a world of concepts implicitly defined by the natural laws which we have chosen.
 all conceivable singular statements of fact
 - Psychologism: the doctrine that stms can be justified not only by stms but also by perceptual exp
 - Protocol sentences: sentences which represent experiences
+- Logical content: class of all non-tautological stms which are derivable from the stm in question
+- Empirical content of stm p: the class of its potential falsifiers
 
 # Content
 ## Preface
@@ -128,7 +130,7 @@ instead of proposing a convention
   but can be falsified by them (by means of purely deductive inference)
   - Evasion of falsification is possible
   - -> The method should be characterized to exclude those ways of evasion
-#### The problem of the "empirical basis"
+#### The problem of the 'empirical basis'
 - Problems of the empirical basis def
 - Basic statement def
 - Singular statement must be empirical to serve as premisses in falsifying inferences
@@ -189,10 +191,10 @@ both indi and universal names may occur as names of some classes or elements
 #### Strictly universal and existential statements
 - Imp types of universal pure statements (only universal names and no individual names occur):
   - Strictly universal
-  - Strictly existential: "there are", "there exist at least one"
+  - Strictly existential: 'there are', 'there exist at least one'
 - The negation of a strictly universal statement is always equivalent to a strictly existential statement and vice versa
 - -> Theories of natural science can be expressed in the form of negations of strictly existential statements
-or in the form of non-existence statements ("there is not" statements)
+or in the form of non-existence statements ('there is not' statements)
 - -> Theories as prohibitions: deny that sth exist or is the case
 - -> Falsifiable
 - Strictly existential statements cannot be falsified. No singular statement (basic statement) can contradict them.
@@ -288,7 +290,7 @@ between any 2 stms within the totality of all possible stms
 - Psychologism def
 - -> Science as the systematic presentation of our immediate convictions
 - -> Problem: scientific stms expressed in universals can never be justified
-#### Concerning the so-called "protocol sentences"
+#### Concerning the so-called 'protocol sentences'
 - Protocol sentence def
 #### The objectivity of the empirical basis
 - Epistemology should focus on:
@@ -332,6 +334,77 @@ to be answered by the acceptance of basic stms
 - How to select theory: one which:
   - Has hitherto stood up to the severest tests
   - Is testable in the most rigorous way
+
+### 6. Degrees of testability
+#### A programme and an illustration
+- High degree of falsifiability = larger class of potential falsifiers
+= say more about the world of experience (higher empirical content)
+- Aim of theoretical sci: obtain theory with the highest degree of falsifiability
+- -> Single out the world of 'our experience' from the class of all logically possible worlds of experience
+with the greatest precision attainable by theoretical sci
+- -> All the events or classes of occurrences which we actually encounter and observe, and only those,
+would be characterized as 'permitted'
+#### How are classes of potential falsifiers to be compared?
+- Difficulty in comparing classes of potential falsifiers: infinite classes of forbidden/permitted events
+- 3 ways of comparing infinite classes:
+  - Use the concept of cardinality (power) of a class
+  - -> Can't solve the problem since the classes of potential falsifiers have the same cardinal number for all theories
+  - Use the concept of dimension: linked with degree of composition of basic stms
+  - Use the subclass relation
+#### Degrees of falsifiability compared by means of the subclass relation
+- Fsb: degree of falsifiability
+- Fsb(x) > Fsb(y) if class of potential falsifiers of x include that of y as proper subclass
+- -> Fsb(metaphysical/tautological) = 0. Fsb(self-contradictory) = 1 (assume 1 = max)
+- -> Fsb(empirical) > 0 & < 1 (empirical & consistent)
+#### The structure of the subclass relation. Logical probability
+- Less falsifiable = more logically probable
+- Degree of falsifiability can also be applied to singular stms
+#### Empirical content, entailment, and degree of falsifiability
+- Logical content def
+- Empirical content def
+- The comparison of the logical and of the empirical contents of 2 stms p & q leads to the same result
+if the stms compared contain no metaphysical elements
+#### Levels of universality and degrees of precision
+- 2 imp demands to attain the highest possible empirical content:
+  - The demand for the highest attainable level (or degree) of universality
+  - The demand for the highest attainable degree of precision
+- Rule: if of 2 stms both their universality and their precision are comparable, then the less universal or less precise
+is derivable from the more universal or more precise; unless the one is more universal and the other more precise
+#### Logical ranges. Notes on the theory of measurement
+- Degree of precision in measurement must be high enough to detect the small dif between the calculated observable events
+when comparing the consequences of 2 theories
+- Bounds of interval (x+-y) need to be fixed with a degree of precision greatly exceeding
+what we can hope to attain for the original measurement
+- -> Unsharp (condensation) bounds
+- In the absence of measurements, concept of condensation bounds cannot be applied
+- -> Superiority of methods that employ measurements over purely qualitative methods
+#### Degrees of testability compared by reference to dimensions
+- Limitation of subclass relation in answering the question of the number of parameters which have to be ascertained,
+and to be substituted in the formula
+- Compare theories as to their degrees of testability by ascertaining the minimum degree of composition
+which a basic stm must have if it is to be able to contradict the theory
+- -> Need to find a way to compare basic stms in order to ascertain whether they are more or less composite
+- All basic stms, whatever their content, whose degree of composition does not reach the requisite minimum,
+would be permitted by the theory simply because of their low degree of composition
+- Comparison process:
+  - Select arbitrarily a class of relatively atomic stms, taken as a basis for comparison.
+  Example form: there is a measuring apparatus for ... at the place ...,
+  the pointer of which lies between the gradation marks ... and ...
+  - d: dimension: all singular stms whose degree of composition <= d are permitted
+  - -> Smaller d = higher falsifiability
+  - -> Can be applied to basic stms
+- If 2 theories have the same d, then use subclass approach if can
+#### The dimension of a set of curves
+- When the field of application of a theory can be identified with the field of its graphic representation,
+then the dimension of the theory with respect to this field is
+identical with the dimension of the set of curves corresponding to the theory
+- -> The number of freely determinable params of a set of curves by which a theory is represented
+is characteristic for the degree of falsifiability of that theory
+#### Two ways of deducing the number of dimensions of a set of curves
+- 2 methods of reducing d:
+  - Material: not change the share of curve
+  - Formal: change the shape of curve
+  - -> Not diminish the generality of the definition
 
 # Criticism
 - Chap 8 (probability) is too technical
