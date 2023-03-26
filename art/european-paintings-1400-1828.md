@@ -58,3 +58,4 @@
 - Pose
 - Arrangement of figures
 - Illusionism
+- Texture, thickness of paint layers

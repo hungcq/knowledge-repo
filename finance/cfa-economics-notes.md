@@ -1,3 +1,34 @@
+# Quantitative methods
+- Calculate number of compounding period using calculator: log a(b) = ln(b)/ln(a)
+- Type of graph for each visualization purpose (TODO read official materials):
+  - Line chart: visualize trend in variables over time. Can use bubble to add 3rd dimension.
+  - Heat map: the degree of correlation between different variables
+  - Histogram: shape, center, and spread of the distribution of numerical data
+  - Scatter plot matrix: organize scatter plots between pairs of variables:
+  to inspect all pairwise relationships in one combined visual
+- Correlation from covariance matrix:
+  - Diagonal line: standard deviation ^ 2
+  - Others: covariance between variables: std 1 x std 2 x correlation(1,2)
+- Covariance from joint probabilities
+- Continuous compounding rate = ln(1 + return rate)
+- Desirable statistical properties of an estimator:
+  - Unbiased: expected value equal to the parameter that it is intended to estimate
+- Type 1, type 2 error def & relation with significance level & p value. Power of test:
+  - Level of significance: probability of rejecting a true null hypo (type 1 error)
+- Distinguish between level of significance & confidence interval
+- p-value def
+- t table: p column = 2 tail. Need to x2.
+- TODO Review reading 6
+## Detailed points
+- Uni/bi/trimodal: having 1/2/3 peaks in frequency distribution graph
+- Target semi/downside deviation: include only below target. Denominator still n - 1.
+- Coefficient of variation = standard variation / mean
+- Mutually exclusive events are dependent: when one happens, the prob of the other is affected (becomes 0)
+- Parameter def: any descriptive measure of a population characteristic
+- Time period bias: relation does not hold over other time periods. Occur when:
+  - Period studied too short
+  - Period studied too long: a structural change in relationship occurred DURING the period
+
 # Economics
 ## Aggregate Output, Prices, and Economic Growth
 - GDP inclusion criteria:

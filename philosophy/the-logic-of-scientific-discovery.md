@@ -66,6 +66,14 @@ all conceivable singular statements of fact
 - Protocol sentences: sentences which represent experiences
 - Logical content: class of all non-tautological stms which are derivable from the stm in question
 - Empirical content of stm p: the class of its potential falsifiers
+- n-freedom of a sequence: if the relative frequencies of its primary properties are n-insensitive:
+insensitive to selection according to 1 predecessor and according to pairs of predecessors ...
+and according to n-tuples of predecessors
+- Frame conditions: the rules of play and other rules determining the conditions
+under which the various events of a random sequence are to take place
+- Formally singular probability that the event k has the probability b given that k is an element of the sequence a
+= probability of the property b within the reference sequence a
+- Probability logic: logical relation between events, sequence of stms, probability in alternative & truth
 
 # Content
 ## Preface
@@ -405,6 +413,184 @@ is characteristic for the degree of falsifiability of that theory
   - Material: not change the share of curve
   - Formal: change the shape of curve
   - -> Not diminish the generality of the definition
+
+### 7. Simplicity
+#### Elimination of the aesthetic and the pragmatic concepts of simplicity
+- Aesthetic: more elegant
+- Pragmatic: done more easily
+- Reason for elimination: extra-logical, irrelevant to the theory of knowledge
+#### Simplicity and degree of falsifiability
+- Define simplicity as degree of falsifiability
+- -> Simple = more universal & falsifiable = greater empirical content
+
+### 8. Probability
+- Scope: probability of events and the problems it raises
+- -> Probability of hypo in chap 9
+#### The problem of interpreting probability statements
+- Types:
+  - Numerical
+  - Non-numerical:
+    - Can be transformed into numerical
+    - Can't be transformed
+- Problem: how to interpret a numerical probability stm and the numerical assertion it makes
+#### Subjective and objective interpretations
+- 2 interpretations of classical theory of probability:
+  - Subjective: notable is Keynes logico-subjective theory (~Bayesian).
+  Limitation: does not explain how a stm of ignorance, interpreted as a frequency stm, can be empirically tested and corroborated
+  - Objective: frequency interpretation: treat every numerical probability stm as a stm about the relative frequency
+  with which an event of a certain kind occurs within a sequences of occurrences
+  - -> Numerical prob stms are only admissible if we can give a frequency interpretation of them
+- Next part (skipped - too technical): construct anew the theory of prob as a modified frequency theory
+#### The problem of decidability
+- Problem: so long as the binomial formula is derivable within the system, probability stms will not be falsifiable
+- -> Void of empirical content
+- Practical falsification used in empirical sci: obtained only through a methodological decision
+to regard highly improbable events as ruled out (prohibited)
+#### The logical form of probability statements
+- Prob stms are non-falsifiable & non-verifiable, therefore:
+  - Have no falsifiable consequences
+  - Cannot themselves be consequences of verifiable stms
+  - Have unilaterally verifiable consequences (purely existential - there is consequences)
+  - Are themselves consequences of unilaterally falsifiable universal stms (all stms)
+- Purely existential consequences are verifiable
+- Prob stms have 2 requirements:
+  - Randomness -> the form of an existential hypothesis
+  - -> Establish a relation between prob stms and basic stms
+  - Uniqueness -> can't have the form of an existential hypo
+  - -> Regulate the relations between the various prob stms themselves
+  - -> Ensure prob stms can contradict one another
+#### A probabilistic system of speculative metaphysics
+- -> Explain any regularities as a rare random occurrence
+#### Probability in physics
+- The rule that extreme improbabilities have to be neglected agrees with the demand for sci objectivity:
+improbable events are not reproducible
+- -> If reproducible then the prob estimate is falsified
+- The dividing line between what is permitted and what is forbidden is determined by the attainable precision in measurements
+#### Law and chance
+- Frame conditions def
+- -> No initial conditions given -> can't make prediction
+- Chance is subjective when our knowledge does not suffice for prediction
+- A sequence of experimental results will be chance-like
+  if the frame conditions which define the sequence differ from the initial conditions. Can't infer that:
+  - Its elements are not predictable, or that they are 'due to chance' in the subjective sense of insufficient knowledge
+  - There are no laws
+  - The sequence itself is completely irregular
+#### The deducibility of macro laws from micro laws
+- To explain macro events, need:
+  - Non-statistical hypotheses about the micro events and their laws of interaction
+  - Hypothetical frequency estimates: a special class of hypotheses: prohibitions which concern regularities in the large
+- Statistical estimates (frequency stms) can be derived from assumptions about the statistical distribution of initial conditions
+#### Formally singular probability statements
+- Formally singular prob def
+- Sequence a is often not explicitly mentioned
+- When there are several possible reference sequences, stms about the actual outcome of singular occurrences
+cannot change the prob of these occurrences; they may however suggest to us the choice of another reference-class
+- -> ~ subjective theory: interpret formally singular prob as 'degree of rational belief'
+#### The theory of range
+- If between two property classes y and b the subclass relation holds, then:
+Fsb(event k has property y) > Fsb(event k has property b)
+- -> If we have randomness, we may correlate relative frequencies with the ranges in order to make the ranges measurable
+
+### 10. Corroboration, or how a theory stands up to tests
+- Theories are not verifiable, but they can be corroborated
+- -> Should focus on degree of corroboration, not prob of hypo
+#### Concerning the so-called verification of hypotheses
+- Common justification for ignoring the non-verifiability of theories: regularities which are directly testable by experiment,
+though conceivable, or logically possible, that they might change;
+but this possibility is disregarded by empirical sci and does not affect its methods
+- -> Sci method presupposes the immutability of natural processes
+- It would be a mistake to assert that natural regularities do not change
+- -> It is part of our def of natural laws if we postulate that they are to be invariant with respect to space and time;
+and also if we postulate that they are to have no exceptions
+- -> The possibility of falsifying a corroborated law is by no means without significance from a methodological point of view
+- Failure of inductive method in solving the issue: have to choose between infinite regress and apriorism
+#### The probability of a hypothesis and the probability of events: criticism of probability logic
+- Probability logic def
+- Failure of the attempt to reduce prob of hypo to prob of events (stms):
+  - (Acked) confusion of subjective feelings of conviction with objective prob
+  - Difficulty: with reference to what sequence of stms can a prob value be assigned to a hypothesis:
+    - Frequency of the stms which agree with it -> random, non-sense prob
+    - Tests passed to tests not passed -> 0 prob
+    - A favourable result to those which led to an indifferent result
+    - -> No relation to 'truth', only subjective confidence
+  - Hypo (universal stm) is not a sequence of basic stms: their derivation requires initial condition together with a hypo
+  - Regard prob of hypo as element of a sequence of hypotheses with a definite truth-frequency
+  - -> Cannot speak of truth-frequency within a sequence of hypotheses because we can never know of a hypo whether it is true
+- Reason why believers in prob logic have reached an opposite view: hypotheses of prob are not falsifiable
+- -> They use prob logic to deal with the difficulty (decidable)
+- -> Need methodological rules to make them falsifiable (close to actual method of physicists)
+#### Inductive logic and probability logic
+- Not possible to construct a concept of the prob of hypos which maybe interpreted as
+expressing a 'degree of validity' of the hypos, in analogy to the concepts 'true' and 'false',
+and which is sufficiently closely related to the concept of 'objective prob' (relative frequency)
+- Even if possible to construct such a concept, problem of induction can't be solved:
+to assess the truth/prob of an appraisal (the stm that describes a theory as 'probable'),
+need another appraisal or apriori principle of induction
+- -> Same situation: have to choose between infinite regress or apriorism
+- To avoid the pitfall, need to take into account the asymmetry between verification & falsification
+#### The positive theory of corroboration: how a hypothesis may 'prove its mettle'
+- Addressing objections:
+  - Theories as provisional conjectures: tautological
+  - Use of corroboration as appraisal: the appraisal of the corroboration is not a hypo,
+  but can be derived if we are given the theory as well as the accepted basic stms
+  - -> Logical relation: assert the fact that these basic stms do not contradict the theory,
+  and it does this with due regard to the degree of testability of the theory,
+  and to the severity of the tests to which the theory has been subjected, up to a stated period of time:
+  a theory is 'corroborated' as long as it stands up to these tests
+- Degree of corroboration as:
+  - The severity of various tests to which the hypo in question can be and has been subjected
+  - -> Depend upon the degree of testability, thus the simplicity of the hypo: high universality & high precision
+  - Not so much the number of corroborating instances
+- Degree of corroboration is:
+  - Not numerically calculable & comparable
+  - Regarded as final when a theory is falsified
+#### Corroborability, testability, and logical probability
+- Corroborability ~ testability: inverse to logical prob
+- -> Opposite view to prob logic: prob of hypo ~ logical prob
+- Tendency of inductive & prob logic:
+  - Assign significance to theory whose content goes as little as possible beyond what is empirically established
+  - -> More logically probable (justifiable by exp)
+  - -> Deny value of predictions
+  - Choose simple theory that has less chance of conflict with reality
+#### Remarks concerning the use of the concepts 'true' and 'corroborated'
+- It is possible to avoid using the concepts 'true' and 'false'
+- -> Use logical considerations about derivability relations instead
+- Use of language:
+  - Corroboration stm: stm p follows from the (non-contradictory) conjunction of t and b
+  - Falsifying stm: a theory is contradicted by a certain set of accepted basic stm
+  - Acceptance of basic stms as the result of a conventional decision
+- 'True' and 'false' to be used as logical, not empirical concepts
+- -> Timeless: describe or appraise a stm irrespective of any changes in the empirical world
+- -> The dif between truth and corroboration:
+corroboration is logically derivable from the theory and the various set of basic stms accepted at various times
+#### The path of science
+- Direction in the evolution of physics, from theories of a lower level of universality to theories of a higher level,
+can be viewed as:
+  - Inductive direction
+  - Quasi-inductive direction: increase in testability: theories of some level of universality are proposed,
+  and deductively tested; after that theories of a higher level of universality are proposed, and in their turn tested
+  with the help of those of the previous levels of universality, and so on
+  - -> Based on deductive inferences from the higher level to the lower level
+- Reasons why not invent theories of the highest level of universality straight away:
+many proposed but not testable by current level of sci
+- -> The advance forward is step by step corresponding to the advance of experimental technique
+- -> Seem at first like the inductive path
+- Rhetorical summary:
+  - Objective & motive of sci: striving for knowledge and the search for truth,
+  though can never claim to have attained truth, or even a substitute for it, such as prob
+  - -> Can only make guesses, guided by the unscientific, the mataphysical faith in laws, in regularities that we can uncover-discover
+  - Method: test the hypo systematically
+  - The advance of sci is:
+    - Not due to the fact that more and more perceptual experiences accumulate in the course of time
+    - Not due to the fact that we are making ever better use of our senses
+    - By proposing bold ideas & subject them to tests
+  - Tests are guided by ideas: experiments planned to elicit a clear-cut yes or no.
+  The scientists to decide an answer using rules.
+  - The demand for scientific objectivity makes it inevitable that every scientific stm must remain tentative forever
+  - The aim of sci is:
+    - Not making its answers final, or even probable: unattainable, illusory
+    - An infinite yet attainable aim: that of ever discovering new, deeper, and more general problems,
+    and of subjecting our ever tentative answers to ever renewed and ever more rigorous tests
 
 # Criticism
 - Chap 8 (probability) is too technical
