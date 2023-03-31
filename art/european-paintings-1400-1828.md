@@ -45,6 +45,17 @@
   - -> Interest in here & now, materialism
 - -> Varied arts reflecting differences in religion, economy, class & origin
 
+# 18th century
+- Absolute monarchies weakened
+- -> Try to display ostentatiously
+- -> Rococo style. A bit evasive, removed from social, cultural & political reality.
+- Center of art: Paris, setting trends across Europe & America
+- Following trend: Neoclassicism (~ 1760 - 19th century):
+  - Renewed interest in classical antiquity
+  - Rejection of superfluous decoration & a preference for straight lines and angles
+- -> Adopted by elegant society all over the continent in dress & architecture, sculpture & in painting.
+Also chosen to be art of the Revolution.
+
 # Impression
 - Continuity
 - Innovation
@@ -59,3 +70,5 @@
 - Arrangement of figures
 - Illusionism
 - Texture, thickness of paint layers
+- Choice of main colors
+- Line & angle
