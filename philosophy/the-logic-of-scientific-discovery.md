@@ -19,9 +19,12 @@
 # Goals
 - Give a logical analysis of the method of empirical sciences
 - Give a more detailed analysis of the method of deductive testing
-- -> Show that, within the framework of this analysis, all the epistemological that inductive logic gives rise can be dealt with
+- -> Show that, within the framework of this analysis,
+all the epistemological problems that inductive logic gives rise can be dealt with
 
 # Style
+- Expositional
+- Thorough and logical
 
 # Terms
 - Synthetic statement: description of the world that can't be taken for granted.
@@ -30,7 +33,7 @@
 - Stratagem: trick
 - Hypostatization: representation
 - Epistemology (the logic of scientific discovery): the theory of scientific method, including:
-  - Logical analysis of the relations between scientific statements
+  - Logical analysis of the relations between scientific stms
   - Choice of method: decisions about the way in which sci stms are to be dealt with
   - -> Depend on the aim we choose
 - Problem of induction: the question whether inductive inferences are justified, or under what conditions
@@ -38,18 +41,18 @@
   - Old: admit as scientific or legitimate only those concepts/notions/ideas which are derived from experience,
   logically reducible to elements of sense-experience (eg sensations, impressions, perceptions, visual/auditory memories)
   - Modern: see science not as a system of concepts but rather a system of stms
-  - -> Admin as scientific or legitimate only those stms which are reducible to elementary statement of experience
-    (eg judgements of perception, atomic propositions, protocol sentences
+  - -> Admit as scientific or legitimate only those stms which are reducible to elementary stm of experience
+    (eg judgements of perception, atomic propositions, protocol sentences)
   - -> Criterion of demarcation is identical with the demand for an inductive logic
-- Problems of the empirical basis: problems concerning the empirical character of singular statements & how they are tested
-- Basic statement: a statement which can serve as a premise in an empirical falsification (statement of a singular fact)
-- Objectivity of scientific statements: the fact that scientific theories can be inter-subjectively tested
+- Problems of the empirical basis: problems concerning the empirical character of singular stms & how they are tested
+- Basic statement: a stm which can serve as a premise in an empirical falsification (stm of a singular fact)
+- Objectivity of scientific stms: the fact that scientific theories can be inter-subjectively tested
 - Naturalistic view: methodology is the study of actual behavior of scientists
-- Give causal explanation of an event: deduce a statement which describes it, using as premises of the deduction
-one or more universal laws, together with certain singular statements, the initial conditions
+- Give causal explanation of an event: deduce a stm which describes it, using as premises of the deduction
+one or more universal laws, together with certain singular stms, the initial conditions
 - Universal statements: hypotheses of the character of natural laws
-- Initial conditions: singular statements apply to the specific event in question
-- Singular prediction/effect: singular statement deduced from the universal statements & initial conditions
+- Initial conditions: singular stms apply to the specific event in question
+- Singular prediction/effect: singular stm deduced from the universal stms & initial conditions
 - Strictly universal statement: assertion about an unlimited number of individuals
 - Numerically universal statement: assertion about a finite class of specific elements
 within a finite individual or particular spatio-temporal region
@@ -60,12 +63,12 @@ within a finite individual or particular spatio-temporal region
 it is this construction which determines the properties of an artificial world:
 a world of concepts implicitly defined by the natural laws which we have chosen. Sci speaks only in this world.
 - Logical characterization of falsifiable systems: logical relations holding between the theory and the class of basic stms
-- System of basic statements: all self-consistent singular statements of a certain logical form:
-all conceivable singular statements of fact
+- System of basic statements: all self-consistent singular stms of a certain logical form:
+all conceivable singular stms of fact
 - Psychologism: the doctrine that stms can be justified not only by stms but also by perceptual exp
 - Protocol sentences: sentences which represent experiences
 - Logical content: class of all non-tautological stms which are derivable from the stm in question
-- Empirical content of stm p: the class of its potential falsifiers
+- Empirical content of a statement: the class of its potential falsifiers
 - n-freedom of a sequence: if the relative frequencies of its primary properties are n-insensitive:
 insensitive to selection according to 1 predecessor and according to pairs of predecessors ...
 and according to n-tuples of predecessors
@@ -78,7 +81,7 @@ under which the various events of a random sequence are to take place
 # Content
 ## Preface
 - Central problem & interest in philosophy & science: understand the world
-- The growth of knowledge can be best studied  by studying the growth of scientific knowledge
+- The growth of knowledge can be best studied by studying the growth of scientific knowledge
 - Method of philosophy: rational discussion: state the problem clearly & examine its proposed solution critically
 - -> Scientific kno is the extension of common sense kno
 - Scientific kno can be more easily studied compared to common sense kno
@@ -100,7 +103,7 @@ under which the various events of a random sequence are to take place
 - Overview of the method of deductive testing:
 New tentative idea (eg anticipation, hypothesis, theoretical system)
 - -> Deduce conclusions logically
-- -> Compare with one another & with other relevant statements to find what logical relations exist between them
+- -> Compare with one another & with other relevant stms to find what logical relations exist between them
 - 4 ways to test a theory:
   - Logical comparison of conclusions among themselves: test for logical consistency
   - Investigation of the logical form: whether the theory is empirical or not (eg tautological)
@@ -111,7 +114,8 @@ New tentative idea (eg anticipation, hypothesis, theoretical system)
 - Deductive testing:
 Singular stms (predictions) are deduced from the theory with the help of other previously accepted stms
 - -> Select those that are not derivable from the current theory, especially those which the current theory contradicts
-- -> Seek a decision regards these & other derived stms by comparing them with the results of practical applications & experiments:
+- -> Seek a decision regards these & other derived stms
+by comparing them with the results of practical applications & experiments:
   - Singular conclusions are acceptable (verified) -> the theory has passed its test for the time being
   - Singular conclusions are falsified -> the theory is falsified
 - -> Positive decision can only temporarily support the theory, subsequent negative decisions might always falsify it
@@ -119,7 +123,7 @@ Singular stms (predictions) are deduced from the theory with the help of other p
 - -> The procedure is not inductive: truth/probability of theory not derived from truth of singular stms
 #### The problem of demarcation
 - Method of induction can't solve the problem of demarcation: can't distinguish between empirical sciences & metaphysical systems
-- Positivist try to find the chars of empirical science & of metaphysics to distinguish them from each other
+- Positivists try to find the chars of empirical science & of metaphysics to distinguish them from each other
 instead of proposing a convention
 - -> Failure due to problem of induction
 - Proposal for a criterion of demarcation as a convention
@@ -131,44 +135,44 @@ instead of proposing a convention
 - -> Distinguished from other systems by the fact that it has been submitted to deductive testing method
 #### Falsifiability as a criterion of demarcation
 - Theories can't be verified by exp (inductive logic)
-- -> Need a new criterion which allow unverified statements into empirical science
+- -> Need a new criterion which allow unverified stms into empirical science
 - -> Falsifiability as the criterion of demarcation (testable by exp)
 - Addressing objections:
-  - How falsifiability is better than verifiability: universal statements can't be derived from singular statements,
+  - How falsifiability is better than verifiability: universal stms can't be derived from singular stms,
   but can be falsified by them (by means of purely deductive inference)
   - Evasion of falsification is possible
   - -> The method should be characterized to exclude those ways of evasion
 #### The problem of the 'empirical basis'
 - Problems of the empirical basis def
-- Basic statement def
-- Singular statement must be empirical to serve as premisses in falsifying inferences
-- Problem: perceptual exp can't justify basic statements: statements can only be logically justified by statements
+- Basic stm def
+- Singular stm must be empirical to serve as premisses in falsifying inferences
+- Problem: perceptual exp can't justify basic stms: stms can only be logically justified by stms
 - -> Solution depends on the distinction between objective logical relations & subjective exp
 - -> Need to define objectivity
 #### Scientific objectivity and subjective conviction
 - Scientific objectivity def
-- To be inter-subjectively testable, the statement must be universal - deal with events occurring regularly
-- Statement of objective exp doesn't provide any justification for scientific statement
-- -> Can only be considered as psychological statement - only meaningful to psychology
-- Infinite regression: objective statement must be inter-subjectively testable
-- -> Can derive from it other testable statements, but test can't be carried on forever
-- -> Not a problem since scientific statements, according to the method, is not required to be tested, only testable
+- To be inter-subjectively testable, the stm must be universal - deal with events occurring regularly
+- Stm of subjective exp doesn't provide any justification for scientific stm
+- -> Can only be considered as psychological stm - only meaningful to psychology
+- Infinite regression: objective stm must be inter-subjectively testable
+- -> Can derive from it other testable stms, but test can't be carried on forever
+- -> Not a problem since scientific stms, according to the method, are not required to be tested, only testable
 
 ### 2. On the problem of a theory of scientific method
 #### Why methodological decisions are indispensable
 - Distinguishing char of science is its ability to advance, esp when there are conflicting systems of theories
-- -> Empirical science should be characterized by its method of dealing with scientific statements
+- -> Empirical science should be characterized by its method of dealing with scientific stms
 #### The naturalistic approach to the theory of method
 - Naturalistic view def
 - A system of methodological rules without a principle of induction is better:
 the principle of induction is not needed, doesn't provide any value & gives rise to inconsistencies
-- What is a science and a scientist always remains a matter of convention or decision
+- What a science/scientist is always remains a matter of convention or decision
 - -> Methodology should be a matter of convention
 #### Methodological rules as conventions
 - Main rule: other rules of scientific procedure must be designed in a way that they do not protect
-any statement in science against falsification
+any stm in science against falsification
 - Value of the convention:
-  - For science: allow the scientists to compare his work with the def
+  - For science: allow the scientist to compare his work with the def
   - For philosophy: advance the theory of knowledge, deal with problems of older theories
 
 ## II. Some structural components of a theory of experience
@@ -176,68 +180,70 @@ any statement in science against falsification
 #### Causality, explanation, and the deduction of predictions
 - Causal explanation def
 - Components of causal explanation:
-  - Universal statements def
+  - Universal stms def
   - Initial conditions def (ie causes)
   - Singular prediction def (ie effect)
-- The author won't make any general assertion as to the universal applicability of this deductive method of theoretical explanation
+- The author won't make any general assertion as to the universal applicability
+of this deductive method of theoretical explanation
 - Proposal: methodological rule: we are not to abandon the search for universal laws and for a coherent theoretical system,
 nor ever give up our attempts to explain causally any kind of event we can describe
 #### Strict and numerical universality
-- 2 types of universal synthetic statements:
-  - Strictly universal statement def (theory, natural law)
-  - -> Cannot be replaced by a conjunction of a finite number of singular statements
-  - Numerically universal statement def
-  - -> Can be replaced by a conjunction of singular statements by enumerate all the elements of the finite class concerned
-- Proposed convention: regard natural law as strictly universal statements. Numerically universal statements should be
-considered singular statements
+- 2 types of universal synthetic stms:
+  - Strictly universal stm def (theory, natural law)
+  - -> Cannot be replaced by a conjunction of a finite number of singular stms
+  - Numerically universal stm def
+  - -> Can be replaced by a conjunction of singular stms by enumerate all the elements of the finite class concerned
+- Proposed convention:
+  - Regard natural law as strictly universal stms
+  - Numerically universal stms should be considered singular stms
 #### Universal concepts and individual concepts
 - Individual concept def
-- -> Must exist in singular statement
+- -> Must exist in singular stm
 - Universal concept def
 - The distinction has no relation with the distinction between class and element:
 both indi and universal names may occur as names of some classes or elements
-#### Strictly universal and existential statements
-- Imp types of universal pure statements (only universal names and no individual names occur):
+#### Strictly universal and existential stms
+- Imp types of universal pure stms (only universal names and no individual names occur):
   - Strictly universal
-  - Strictly existential: 'there are', 'there exist at least one'
-- The negation of a strictly universal statement is always equivalent to a strictly existential statement and vice versa
-- -> Theories of natural science can be expressed in the form of negations of strictly existential statements
-or in the form of non-existence statements ('there is not' statements)
+  - Strictly existential: eg 'there are', 'there exist at least one'
+- The negation of a strictly universal stm is always equivalent to a strictly existential stm and vice versa
+- -> Theories of natural science can be expressed in the form of negations of strictly existential stms
+or in the form of non-existence stms ('there is not' stms)
 - -> Theories as prohibitions: deny that sth exist or is the case
 - -> Falsifiable
-- Strictly existential statements cannot be falsified. No singular statement (basic statement) can contradict them.
+- Strictly existential stms cannot be falsified. No singular stm (basic stm) can contradict them.
 - -> Non-empirical or metaphysical
-- Unilateral decidability: both kinds of strict statements are decidable one-way only
+- Unilateral decidability: both kinds of strict stms are decidable one-way only
 #### Theoretical system
 - A tentative system can usually be quite well surveyed as a whole, with all its imp consequences
 - -> Formulated sufficiently clearly & definitely
 - -> Every new assumption can be easily recognizable for what it is: a modification and therefore a revision of the system
-- Axiomatized system: when a set of statements, the axioms, has been formulated which satisfies the following requirements:
+- Axiomatized system: when a set of stms, the axioms, has been formulated which satisfies the following requirements:
   - Free from contradiction, self or mutual
-  - -> Not every arbitrarily chosen statement is deducible from it
-  - Independent: not contain any axiom deducible from the remaining axioms
-  - Sufficient: for the deduction of all statements belonging to the theory which is to be axiomatized
+  - -> Not every arbitrarily chosen stm is deducible from it
+  - Independent: contain no axiom deducible from the remaining axioms
+  - Sufficient: for the deduction of all stms belonging to the theory which is to be axiomatized
   - Necessary: contain no superfluous assumptions
 - -> Enable the investigation of the mutual dependence of various parts of the system
 #### Some possibilities of interpreting a system of axioms
 - 2 interpretations of any system of axioms:
   - If the axioms are regarded as conventions then they tie down the use or meaning of the fundamental ideas
-  or primitive terms or concepts which the axioms introduce; they determine what can
-  and what cannot be said about these fundamental ideas (eg axioms of Euclidean geometry)
-  - -> Not falsifiable (all analytic statements)
+  or primitive terms or concepts which the axioms introduce;
+  they determine what can and what cannot be said about these fundamental ideas (eg axioms of Euclidean geometry)
+  - -> Not falsifiable (all analytic stms)
   - As a system of empirical or scientific hypotheses: systems that results from applying a rule:
   not to use undefined concepts as if they were implicitly defined
-  - -> Enable evolution: new system cover old one
+  - -> Enable evolution: new system covers old one
 #### Levels of universality. The modus tollens
-- Theoretical systems have statements with dif level of universality
+- Theoretical systems have stms with dif level of universality
 - If a system of higher level of universality is falsified, the falsification may be attributed to the new hypothesis
 - -> The old system of lesser universality is not required to be regarded as falsified
 
 ### 4. Falsifiability
 #### Some conventionalist objections
 - Conventionalism def
-- -> Laws of nature are not falsifiable by observation; for they are needed to determine what an observation and
-what a sci measurement is
+- -> Laws of nature are needed to determine what an observation and what a sci measurement is
+- -> Laws of nature are not falsifiable by observation
 - Conventionalism as a system is self-contained and defensible
 - Conventionalists tend to select the simplest system
 - -> Problem: attitude when the old system is challenged: try to explain away the inconsistencies of the old system
@@ -251,7 +257,7 @@ what a sci measurement is
     - -> The introduction of auxiliary hypotheses should always be regarded as an attempt to construct a new system
     - -> The new system should always be judged on the issue of whether it would, if adopted, constitute a real advance
     in our knowledge of the world -> open up new possibilities for testing and falsifying the theory
-    - Allow singular statements which do not really belong to the theoretical system
+    - Allow singular stms which do not really belong to the theoretical system
       (eg assumption that certain observation or measurement which cannot be repeated may have been due to error)
   - Change in definitions: permissible if useful, but must be regarded as modifications of the system
   - -> The system has to be re-examined after as if it were new
@@ -259,7 +265,7 @@ what a sci measurement is
   either to be accepted, or to be rejected in the light of counter-experiments
 #### Logical investigation of falsifiability
 - Logical characterization of falsifiable systems def
-- System of basic statements def
+- System of basic stms def
 - -> Contain many stms which are mutually incompatible
 - As opposed to metaphysical theory, empirical theory should allow us to deduce more emp singular stms
 than we can deduce from the initial conditions alone
@@ -281,7 +287,7 @@ than we can deduce from the initial conditions alone
   - Event:
     - What may be typical or universal about an occurrence
     - What, in an occurrence, can be described with the help of universal names
-- -> A theory, provided it is falsifiable, rules out not merely one occurrence, but always at least one event
+- -> A falsifiable theory rules out not merely one occurrence, but always at least one event
 #### Falsifiability and consistency
 - Consistency: the first requirement to be satisfied by every theoretical system, empirical or not
 - Inconsistent system: uninformative because any conclusion can be derived from it
@@ -308,7 +314,7 @@ between any 2 stms within the totality of all possible stms
 - Process of sci: testing, not justifying using exp
 - Sci suspend judgement about assertions which are not testable
 - -> Those can at best suggest a problem
-#### Basic statements
+#### Basic stms
 - Formal requirements for basic stms:
   - From a universal stm without initial conditions, no basic stm can be deduced
   - Universal stm and basic stm can contradict each other
@@ -320,7 +326,7 @@ between any 2 stms within the totality of all possible stms
 - Material requirement: the event mentioned in the basic stm must be an observable event
 (inter-subjectively testable by observation)
 - In material mode of speech: an observable event is occurring in a certain individual region of space and time
-#### The relativity of basic statements. Resolution of Fries's trilemma
+#### The relativity of basic stms. Resolution of Fries's trilemma
 - Any basic stm can again in its turn be subjected to tests, using as a touchstone any of the basic stms
 which can be deduced from it with the help of some theory, either the one under test, or another
 - -> The need to stop only at a kind of stm that is especially easy to test
@@ -426,7 +432,7 @@ is characteristic for the degree of falsifiability of that theory
 ### 8. Probability
 - Scope: probability of events and the problems it raises
 - -> Probability of hypo in chap 9
-#### The problem of interpreting probability statements
+#### The problem of interpreting probability stms
 - Types:
   - Numerical
   - Non-numerical:
@@ -446,7 +452,7 @@ is characteristic for the degree of falsifiability of that theory
 - -> Void of empirical content
 - Practical falsification used in empirical sci: obtained only through a methodological decision
 to regard highly improbable events as ruled out (prohibited)
-#### The logical form of probability statements
+#### The logical form of probability stms
 - Prob stms are non-falsifiable & non-verifiable, therefore:
   - Have no falsifiable consequences
   - Cannot themselves be consequences of verifiable stms
@@ -480,7 +486,7 @@ improbable events are not reproducible
   - Non-statistical hypotheses about the micro events and their laws of interaction
   - Hypothetical frequency estimates: a special class of hypotheses: prohibitions which concern regularities in the large
 - Statistical estimates (frequency stms) can be derived from assumptions about the statistical distribution of initial conditions
-#### Formally singular probability statements
+#### Formally singular probability stms
 - Formally singular prob def
 - Sequence a is often not explicitly mentioned
 - When there are several possible reference sequences, stms about the actual outcome of singular occurrences

@@ -72,3 +72,5 @@ Also chosen to be art of the Revolution.
 - Texture, thickness of paint layers
 - Choice of main colors
 - Line & angle
+- Idea behind
+- Perspective of the artist
