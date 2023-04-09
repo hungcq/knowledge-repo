@@ -72,9 +72,7 @@ all conceivable singular stms of fact
 - n-freedom of a sequence: if the relative frequencies of its primary properties are n-insensitive:
 insensitive to selection according to 1 predecessor and according to pairs of predecessors ...
 and according to n-tuples of predecessors
-- Frame conditions: the rules of play and other rules determining the conditions
-under which the various events of a random sequence are to take place
-- Formally singular probability that the event k has the probability b given that k is an element of the sequence a
+- Unique probability: within 1 reference sequence, for 1 property there is only 1 probability p
 = probability of the property b within the reference sequence a
 - Probability logic: logical relation between events, sequence of stms, probability in alternative & truth
 
@@ -312,15 +310,15 @@ between any 2 stms within the totality of all possible stms
   - What kind of consequences we can select for this purpose if they in their turn are to be inter-subjectively testable
 - -> Should not focus on: how I can, having the experience S, justify my description of it, and defend it against doubt
 - Process of sci: testing, not justifying using exp
-- Sci suspend judgement about assertions which are not testable
+- Sci suspends judgement about assertions which are not testable
 - -> Those can at best suggest a problem
-#### Basic stms
+#### Basic statements
 - Formal requirements for basic stms:
   - From a universal stm without initial conditions, no basic stm can be deduced
   - Universal stm and basic stm can contradict each other
 - Basic stms have the form of singular existential stm:
   - There is a so-and-so in the region k
-  - Such-and-such an event is occurring in the event k
+  - Such-and-such an event is occurring in the region k
 - Singular non-existential stm: there is not
 - Basic stms can be formed from the conjunction of 2 basic stms or from one basic & one non-basic stm
 - Material requirement: the event mentioned in the basic stm must be an observable event
@@ -337,8 +335,8 @@ which can be deduced from it with the help of some theory, either the one under 
 #### Theory and experiment
 - Basic stms are accepted as the result of a decision or agreement; and to that extend they are conventions
 - -> With the goal of discovering objective truth, the decisions are reached in accordance with a procedure governed by rules
-- Imp rule: only accept/reject basic stms when testing theories: raise searching questions about these theories,
-to be answered by the acceptance of basic stms
+- Imp rule: only accept/reject basic stms when testing theories:
+raise searching questions about these theories, to be answered by the acceptance of basic stms
 - A random collection of stms can never add up to a sci
 - Epistemological theory of experiment:
   - The theoretician puts certain definite questions to the experimenter
@@ -395,7 +393,7 @@ what we can hope to attain for the original measurement
 #### Degrees of testability compared by reference to dimensions
 - Limitation of subclass relation in answering the question of the number of parameters which have to be ascertained,
 and to be substituted in the formula
-- Compare theories as to their degrees of testability by ascertaining the minimum degree of composition
+- Compare degrees of testability of theories by ascertaining the minimum degree of composition
 which a basic stm must have if it is to be able to contradict the theory
 - -> Need to find a way to compare basic stms in order to ascertain whether they are more or less composite
 - All basic stms, whatever their content, whose degree of composition does not reach the requisite minimum,
@@ -410,13 +408,13 @@ would be permitted by the theory simply because of their low degree of compositi
 - If 2 theories have the same d, then use subclass approach if can
 #### The dimension of a set of curves
 - When the field of application of a theory can be identified with the field of its graphic representation,
-then the dimension of the theory with respect to this field is
-identical with the dimension of the set of curves corresponding to the theory
+then the dimension of the theory with respect to this field
+is identical with the dimension of the set of curves corresponding to the theory
 - -> The number of freely determinable params of a set of curves by which a theory is represented
 is characteristic for the degree of falsifiability of that theory
 #### Two ways of deducing the number of dimensions of a set of curves
 - 2 methods of reducing d:
-  - Material: not change the share of curve
+  - Material: not change the shape of curve
   - Formal: change the shape of curve
   - -> Not diminish the generality of the definition
 
@@ -432,10 +430,10 @@ is characteristic for the degree of falsifiability of that theory
 ### 8. Probability
 - Scope: probability of events and the problems it raises
 - -> Probability of hypo in chap 9
-#### The problem of interpreting probability stms
+#### The problem of interpreting probability statements
 - Types:
   - Numerical
-  - Non-numerical:
+  - Non-numerical: 2 types:
     - Can be transformed into numerical
     - Can't be transformed
 - Problem: how to interpret a numerical probability stm and the numerical assertion it makes
@@ -452,19 +450,21 @@ is characteristic for the degree of falsifiability of that theory
 - -> Void of empirical content
 - Practical falsification used in empirical sci: obtained only through a methodological decision
 to regard highly improbable events as ruled out (prohibited)
-#### The logical form of probability stms
+#### The logical form of probability statements
 - Prob stms are non-falsifiable & non-verifiable, therefore:
   - Have no falsifiable consequences
-  - Cannot themselves be consequences of verifiable stms
-  - Have unilaterally verifiable consequences (purely existential - there is consequences)
-  - Are themselves consequences of unilaterally falsifiable universal stms (all stms)
-- Purely existential consequences are verifiable
+  - Cannot be consequences of verifiable stms
+  - Have unilaterally verifiable consequences (purely existential - 'there is' consequences)
+  (eg if p(b) > 0, there is occurrence of b in the sequence)
+  - Are consequences of unilaterally falsifiable universal stms ('all' stms)
+- Purely existential consequences (existential hypotheses) are verifiable
 - Prob stms have 2 requirements:
   - Randomness -> the form of an existential hypothesis
   - -> Establish a relation between prob stms and basic stms
-  - Uniqueness -> can't have the form of an existential hypo
+  - Uniqueness def -> can't have the form of an existential hypo but the form of universal stm
   - -> Regulate the relations between the various prob stms themselves
-  - -> Ensure prob stms can contradict one another
+  - -> Ensure prob stms can contradict one another:
+  prob stms have the form of a conjunction between universal stm and existential hypo
 #### A probabilistic system of speculative metaphysics
 - -> Explain any regularities as a rare random occurrence
 #### Probability in physics
@@ -473,7 +473,8 @@ improbable events are not reproducible
 - -> If reproducible then the prob estimate is falsified
 - The dividing line between what is permitted and what is forbidden is determined by the attainable precision in measurements
 #### Law and chance
-- Frame conditions def
+- Frame conditions def: the rules of play and other rules determining the conditions 
+under which the various events of a random sequence are to take place
 - -> No initial conditions given -> can't make prediction
 - Chance is subjective when our knowledge does not suffice for prediction
 - A sequence of experimental results will be chance-like
@@ -486,8 +487,8 @@ improbable events are not reproducible
   - Non-statistical hypotheses about the micro events and their laws of interaction
   - Hypothetical frequency estimates: a special class of hypotheses: prohibitions which concern regularities in the large
 - Statistical estimates (frequency stms) can be derived from assumptions about the statistical distribution of initial conditions
-#### Formally singular probability stms
-- Formally singular prob def
+#### Formally singular probability statements
+- Formally singular prob: event k has the probability b given that k is an element of the sequence a
 - Sequence a is often not explicitly mentioned
 - When there are several possible reference sequences, stms about the actual outcome of singular occurrences
 cannot change the prob of these occurrences; they may however suggest to us the choice of another reference-class
@@ -506,8 +507,9 @@ though conceivable, or logically possible, that they might change;
 but this possibility is disregarded by empirical sci and does not affect its methods
 - -> Sci method presupposes the immutability of natural processes
 - It would be a mistake to assert that natural regularities do not change
-- -> It is part of our def of natural laws if we postulate that they are to be invariant with respect to space and time;
-and also if we postulate that they are to have no exceptions
+- -> It is part of our def of natural laws that they are:
+  - Invariant with respect to space and time
+  - To have no exceptions
 - -> The possibility of falsifying a corroborated law is by no means without significance from a methodological point of view
 - Failure of inductive method in solving the issue: have to choose between infinite regress and apriorism
 #### The probability of a hypothesis and the probability of events: criticism of probability logic
@@ -517,7 +519,7 @@ and also if we postulate that they are to have no exceptions
   - Difficulty: with reference to what sequence of stms can a prob value be assigned to a hypothesis:
     - Frequency of the stms which agree with it -> random, non-sense prob
     - Tests passed to tests not passed -> 0 prob
-    - A favourable result to those which led to an indifferent result
+    - Tests with favourable result to those which led to an indifferent result
     - -> No relation to 'truth', only subjective confidence
   - Hypo (universal stm) is not a sequence of basic stms: their derivation requires initial condition together with a hypo
   - Regard prob of hypo as element of a sequence of hypotheses with a definite truth-frequency
@@ -545,7 +547,7 @@ need another appraisal or apriori principle of induction
   a theory is 'corroborated' as long as it stands up to these tests
 - Degree of corroboration as:
   - The severity of various tests to which the hypo in question can be and has been subjected
-  - -> Depend upon the degree of testability, thus the simplicity of the hypo: high universality & high precision
+  - -> Depend upon the degree of testability of the hypo: high universality & high precision
   - Not so much the number of corroborating instances
 - Degree of corroboration is:
   - Not numerically calculable & comparable
@@ -563,7 +565,7 @@ need another appraisal or apriori principle of induction
 - -> Use logical considerations about derivability relations instead
 - Use of language:
   - Corroboration stm: stm p follows from the (non-contradictory) conjunction of t and b
-  - Falsifying stm: a theory is contradicted by a certain set of accepted basic stm
+  - Falsifying stm: a theory is contradicted by a certain set of accepted basic stms
   - Acceptance of basic stms as the result of a conventional decision
 - 'True' and 'false' to be used as logical, not empirical concepts
 - -> Timeless: describe or appraise a stm irrespective of any changes in the empirical world
@@ -573,8 +575,9 @@ corroboration is logically derivable from the theory and the various set of basi
 - Direction in the evolution of physics, from theories of a lower level of universality to theories of a higher level,
 can be viewed as:
   - Inductive direction
-  - Quasi-inductive direction: increase in testability: theories of some level of universality are proposed,
-  and deductively tested; after that theories of a higher level of universality are proposed, and in their turn tested
+  - Quasi-inductive direction: increase in testability:
+  Theories of some level of universality are proposed and deductively tested
+  - -> Theories of a higher level of universality are proposed, and in their turn tested
   with the help of those of the previous levels of universality, and so on
   - -> Based on deductive inferences from the higher level to the lower level
 - Reasons why not invent theories of the highest level of universality straight away:
@@ -584,7 +587,7 @@ many proposed but not testable by current level of sci
 - Rhetorical summary:
   - Objective & motive of sci: striving for knowledge and the search for truth,
   though can never claim to have attained truth, or even a substitute for it, such as prob
-  - -> Can only make guesses, guided by the unscientific, the mataphysical faith in laws, in regularities that we can uncover-discover
+  - -> Can only make guesses, guided by the unscientific, the mataphysical faith in laws/regularities that we can uncover-discover
   - Method: test the hypo systematically
   - The advance of sci is:
     - Not due to the fact that more and more perceptual experiences accumulate in the course of time
@@ -595,8 +598,8 @@ many proposed but not testable by current level of sci
   - The demand for scientific objectivity makes it inevitable that every scientific stm must remain tentative forever
   - The aim of sci is:
     - Not making its answers final, or even probable: unattainable, illusory
-    - An infinite yet attainable aim: that of ever discovering new, deeper, and more general problems,
-    and of subjecting our ever tentative answers to ever renewed and ever more rigorous tests
+    - Ever discovering new, deeper, and more general problems,
+    and of subjecting our ever tentative answers to ever renewed and ever more rigorous tests: infinite yet attainable
 
 # Criticism
 - Chap 8 (probability) is too technical
@@ -604,3 +607,7 @@ many proposed but not testable by current level of sci
 - Seem like a good understanding of quantum theory is required to understand chap 9
 
 # Takeaway
+- Scientific method: deductive testing, corroboration
+- Methodological rules regarding various problems: conventionalist stratagems, probability
+- Falsifiability as a criterion of demarcation between scientific & metaphysical system/stms
+- Relations between basic stms of experience & hypotheses: observability, scientific objectivity
