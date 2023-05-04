@@ -1,0 +1,2 @@
+- First exam: 95/120, 79.2%
+- Low scores: ethics, econs, FSA, corp issuers, fixed-income, derivatives

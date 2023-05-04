@@ -9,6 +9,7 @@
 - Term maturity structure: bonds from a single issue that all mature on the same date
 - Discount margin = YTM - reference rate
 - Rates if not mentioned period, are always quoted on 1-year basis
+- Review example of estimating YTM of illiquid bond
 ## ABS
 - Call protection: prepayment protection
 - Balloon risk: risk that the borrower will not be able to the balloon payment

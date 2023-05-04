@@ -11,6 +11,7 @@
   - Number of new shares from stock option = num of options - num of options * option price / market price
   - Numerator: net income - preferred dividends + convertible preferred dividends + debt interest * (1 - tax rate)
   - Always calculate basic EPS and compare with diluted EPS, in case diluted EPS > basic EPS
+- Trading securities unrealized gain affects net income, available for sale unrealized gain affects equity via other comprehensive income
 ## Balance sheet analysis
 - Example:
   - <img src="./resources/balance-sheet.png" width="500">

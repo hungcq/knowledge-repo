@@ -6,6 +6,7 @@ with beta risk on the x-axis and expected return on the y-axis.
 - Treynor ratio: portfolio excess return per unit of systematic risk: (Rp - Rf) / beta(p)
 - Jensen's alpha: difference between a portfolio return and the return of a portfolio on the SML that has the same beta:
   - alpha = Rp - (Rf + beta * (Rm - Rf))
+- According to CAPM, rational investor will choose portfolio along the CAL
 ## Risk management
 - Risk exposure should be measured after risk budgeting
 ## Technical analysis
