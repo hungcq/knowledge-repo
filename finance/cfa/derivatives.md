@@ -1,1 +1,2 @@
 - Convenience yield = non-monetary benefits of holding an asset
+- American call option is valuable if exercise early can provide cash flow (eg bond's coupon)

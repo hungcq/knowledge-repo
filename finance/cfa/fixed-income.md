@@ -10,6 +10,7 @@
 - Discount margin = YTM - reference rate
 - Rates if not mentioned period, are always quoted on 1-year basis
 - Review example of estimating YTM of illiquid bond
+- Investment grade: from BBB to AAA (BB or B is not)
 ## ABS
 - Call protection: prepayment protection
 - Balloon risk: risk that the borrower will not be able to the balloon payment

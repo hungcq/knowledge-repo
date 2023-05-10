@@ -20,6 +20,7 @@
 - Companies by industries: (in book)
 - Industry/sector rotation strategy: time investment in industries
 through an analysis of fundamentals and/or business-cycle conditions
+- Low capacity -> more pricing power
 ## Equity valuation
 - P/E ratio based on the Gordon growth dividend discount model = D1/E1 / (r−g) = dividend payout ratio / (r-g)
 - Free cash flow to equity model:

@@ -1,2 +1,6 @@
-- First exam: 95/120, 79.2%
-- Low scores: ethics, econs, FSA, corp issuers, fixed-income, derivatives
+- First exam: 95/120, 79.2%. Low scores: ethics, econs, FSA, corp issuers, fixed-income, derivatives
+- Second exam: 103/120, 85.8%. Low score: **econs**, **FSA**, ethics, equity
+- LOS 35.k. SchweserNotes, Book 4 page 52.
+- LOS 34.e. SchweserNotes, Book 4 page 29
+- 3rd exam: 96/120, 80%. Low scores: ethics, FSA, derivatives
+- 4th exam: 94/120, 78.3%. Low scores: ethics, econ, derivatives, issuers, portfolio

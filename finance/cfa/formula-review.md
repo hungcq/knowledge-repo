@@ -1,15 +1,18 @@
 # Quantitative methods
+- Trimmed mean, winsorized mean
+- Harmonic mean & usage
 - Continuous compounding return over multiple period
 - Position from percentile
 - Mean absolute deviation (MAD)
 - Target downside deviation
 - Coefficient of variation
+- Total probability
 - Probabilistic variance
 - Probabilistic covariance
 - Concrete covariance
 - Mean of binomial random variable
 - Variance of binomial random variable
-- Shortfall ratio
+- Shortfall ratio (Roy's safety first)
 - Sampling error
 - Standard error of sample mean
 - Confidence interval
@@ -23,14 +26,13 @@
 - Normal profit
 - Marginal rev from price elasticity
 - GDP deflator
-- Disposable income
 - Solow (neoclassical) growth model
 - Growth accounting
-- Sustainable growth
+- Sustainable growth, potential GDP
 - Quantity equation of exchange (money velocity)
 - Fiscal multiplier
 - Real exchange rate
-- Marshall-Lerner condition
+- Marshall-Lerner condition & meaning
 # FSA
 - Diluted EPS
 - Ending shareholders' equity
@@ -38,8 +40,8 @@
 - Free cash flow to equity
 - Working capital turnover
 - Defensive interval ratio
-- Financial leverage
 - Fixed-charge coverage
+- EBIT
 - Gross profit margin
 - Operating profit margin
 - Pretax margin
@@ -63,6 +65,7 @@
 - Net income at various level of sale
 - Purchases from inventory & COGS
 - Net operating cycle
+- De-levered beta asset, equity
 # Portfolio management
 - Holding period return for multiple period
 - Annualized return
@@ -80,7 +83,7 @@
 - Margin call price
 - Free cash flow to equity model
 - Projected EPS from dividend discount model
-- Enterprise value
+- Enterprise value, EV/EBITDA meaning
 # Fixed income
 - Money market yield
 - Bond equivalent yield
@@ -103,3 +106,34 @@
 - Put-call parity
 # Alternative investments
 - Price target in head and shoulder patterns
+
+# To review
+- Total probability
+- Test statistic
+- Paired comparison test stat, usage
+- Chi-square test stat
+- F-test stat
+- MR from elasticity
+- Solow growth model
+- Growth accounting
+- Sustainable growth, potential GDP
+- Ending equity
+- FCFF
+- FCFE
+- Working capital turnover
+- Fixed-charge coverage
+- EBIT
+- Adjusted ROA
+- Return on common equity
+- Dividend per share
+- Effective tax
+- Income tax expense
+- Operating leverage, meaning
+- Market model of return
+- Real return
+- M-squared
+- Jensen's alpha
+- FCFE model
+- EV, EV/EBITDA meaning
+- Current yield
+- Duration gap, meaning 
