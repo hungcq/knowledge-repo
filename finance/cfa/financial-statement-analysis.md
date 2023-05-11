@@ -92,7 +92,7 @@ Preferred dividend cost can't be capitalized
 - Income tax expense (provision for income tax) = tax payable + dDTL - dDTA
 ## Long-term liabilities
 - Accounting treatments by types of leases:
-  - Short-term, low-value lease: report rent expense on income statement
+  - Short-term, low-value lease: report rent expense in income statement
   - For lessee, operating & financing lease:
     - Record right-of-use asset & lease liability on balance sheet. Value = PV of lease payments.
     - (Basically) Amortize the asset & reduce lease liability by each lease payment
