@@ -1,3 +1,4 @@
+# Economics
 - 211: income effect
 - 212: long run average total cost curve
 - 249: national income, personal income
@@ -5,51 +6,166 @@
   - Inflationary gap
   - Recessionary gap
   - Stagflation
-- 280: credit cycle
-- 281: neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions
+- 280: credit cycle: cyclical fluctuation of interest rate & credit availability
+- 281: neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions:
+  - Neoclassical:
+    - Cycle driven by technological change
+    - Non interventionism approach: wage & input price will adjust rapidly
+  - New classical (real business cycle theory):
+    - Cycle due to utility maximizing actors responding to real economic forces (external shock, change in technology)
+    - Non interventionism approach
+  - Keynesian: 
+    - Cycle due to excessive optimism/pessimism by managers, contractions can persist due to slow adjustment of wage/input price
+    - Intervention by fiscal policy
+  - Monetarist:
+    - Cycle due to inapt money supply
+    - Approach: maintain moderate & predictable money supply growth
+  - Austrian:
+    - Cycle due to gov intervention that drives interest rate to low level
+    - Non interventionism approach
 - 270:
-  - Leading indicators: index, new orders of manufacturers, building permit, consumer expectation
+  - Leading indicators: equity index, new orders of manufacturers, building permit, consumer expectation
   - Coincident indicators: industrial production/manufacturing, income
   - Lagging indicators: inventory/sale, unemployment, leading/loan, CPI (inflation)
 - 282:
   - Frictional unemployment
-  - Structural unemployment
-  - Cyclical unemployment
+  - Structural unemployment: long term economic changes that require workers to learn new skills to fill available jobs
+  - Cyclical unemployment: positive/negative when economy producing less/more than potential real GDP
   - Unemployed
   - Disinflation, deflation
   - Headline/core inflation
   - Laspeyres price index (constant basket of good), Paasche index (current basket of good) & Fisher index & their biases
-  - Cost-push, demand-pull inflation
-  - Non-accelerating inflation rate of unemployment
-- 306: function of money
+  - Cost-push inflation: decrease in aggregate supply due to increase in input price
+  - Demand-pull inflation: increase in aggregate demand
+  - Non-accelerating inflation rate of unemployment: unemployment rate below which upward pressure on wages is likely to develop
+- 306: functions of money:
+  - Medium of exchange
+  - Store of value
+  - Unit of account
 - 307:
-  - Main objective of central banks
-  - Effective central bank's characteristics
-  - Real trend rate
-  - Neutral interest rate
+  - Main objective of central banks: control inflation
+  - Effective central bank's characteristics:
+    - Independent: politically
+    - Creditable: follow through the stated policy
+    - Transparent: make clear which indicators are used & report the state of those indicators
+  - Real trend rate: long term sustainable real growth rate of an economy
+  - Neutral interest rate:
+    - Real trend rate + target inflation
+    - Benchmark for whether monetary policy is expansionary/contractionary
 - 309: fiscal policy delays: recognition/action/impact lag
 - 316: 4 geopolitics category
-- 317: 3 types of geopolitical risk: event, exogenous, thematic
+- 317: 3 types of geopolitical risk: event, exogenous, thematic (known factors that have long term effect)
 - 331:
   - GNP vs GDP
-  - Comparative adv models: Ricardo, Heckscher & Ohlin
+  - Comparative adv models:
+    - Ricardo: labor productivity due to difference in technology
+    - Heckscher & Ohlin: relative amount of labor & capital
 - 332:
-  - Minimum domestic content (trade restriction)
-  - Voluntary export restrain (VAR)
+  - Trade restriction:
+    - Minimum domestic content: requirement that some % of product content must be from domestic country
+    - Voluntary export restrain (VER): self-imposed export restriction -> the self-imposer (not importer) captures all surplus
   - 5 types of trade agreement
 - 333:
   - Current acc components: import/export goods & service, interest/dividend received, unilateral transfer
   - Capital acc: transfer for fixed asset purchases, purchases of non-financial assets, asset bought/taken by migrants
   - Financial acc: ~fin assets own by domestic/foreign
-  - Acc surplus meaning
+  - Current account surplus meaning: export > import -> surplus money -> buy foreign asset -> financial/capital account deficit
   - Role of:
-    - IMF: money coop, exchange rate, payment system, help with balance of payment problem
+    - IMF: money coop, exchange rate stability, international payment system setup, help with balance of payment problem
     - World Bank: loan, grant
     - WTO: multilateral trade agreements
 - 349:
-  - Sell/buy side in FX market
+  - Sell side in FX market: large international bank (not central bank)
   - Point in FX quotation
 - 350: exchange rate regimes:
-  - Formal dollarization, monetary union
-  - Currency board agreement, conventional fixed peg arrangement, pegged exchange rate with horizontal band,
-  target rate, crawling peg, crawling bands, managed floating, independent floating
+  - No currency: formal dollarization, monetary union
+  - Have its own currency:
+    - Currency board agreement: explicit commitment to exchange domestic currency for a specified foreign currency at fixed rate
+    - -> Import inflation rate, no independent monetary policy (~dollarization)
+    - Conventional fixed peg arrangement: peg with 1% margin
+    - Pegged exchange rate with horizontal band (target zone): peg with wider margin
+    - Crawling peg: periodical adjustment of peg rate for inflation
+    - Crawling bands: increasing peg band
+    - Managed floating: monetary authority influence rate in response to specific indicators (eg inflation, balance of payment)
+    - Independent floating: market-determined rate
+  - -> Wider band -> more flexibility in conducting monetary policy
+- Structural deficit
+
+# FSA
+- 17: statement of change in equity
+- 18:
+  - Auditor's qualified/adverse/disclaimer of opinion
+  - Proxy stm
+  - 6 steps of FSA framework. Processing data: ratios, graph, common size
+- 26:
+  - Standard-setting bodies vs regulatory authorities
+  - Fundamental/enhancing chars of financial stms
+- 51:
+  - Multistep income stm
+  - Expense categorization: by nature (eg depreciation), by function (eg COGS)
+- 52:
+  - Matching principle
+  - Position on income stm, before or after tax of: discontinued operation, unusual/infrequent items
+  - Prospective change cases: an accounting estimate, inventory cost flow method (GAAP)
+- 53:
+  - Vertical common size income stm
+  - Comprehensive income, other comprehensive income
+- 74:
+  - Classified balance sheet
+  - Current asset
+  - Cash equivalents
+  - Cost model
+- 75:
+  - Accrued liabilities
+  - Unearned revenue
+  - Treasury stock
+  - Non-controlling (minority) interest
+  - Accumulated other comprehensive income
+  - Vertical common size balance sheet
+- 100:
+  - CFO, CFI, CFF
+  - Position of non-cash investing/financing activities
+- 101: advs of direct/indirect method of presenting CFO
+- 102: common size cash flow stms
+- 132:
+  - Business/geographic segment of a firm
+  - Pro forma financial stm
+- 183:
+  - Treatment of internally developed asset cost, research cost, development cost
+  - Classification of cash outflow for capitalized asset
+- 184:
+  - Component depreciation (IFRS)
+  - Cash flow under dif depreciation methods
+  - Impairment effect on income stm, cash flow stm
+  - Revaluation model
+  - De-recognition
+- 185:
+  - Revaluation allowed under? Treatment & disclosure.
+  - Impairment treatment: IFRS, GAAP. Disclosure.
+- 186: investment property fair value & treatment of increase in value
+- 204:
+  - Taxable income
+  - Tax payable
+  - Income tax expense
+  - Valuation allowance
+  - Treatment of deferred tax liabilities for analytical purpose
+- 205:
+  - Asset's tax base, calculation
+  - Temporary difference
+  - Allowance effect on earning
+- 201: statutory tax rate vs effective tax rate
+- 224: bond's proceed value
+- 225:
+  - Gain/loss when redeem bond early
+  - Position of details about long-term debt's
+- 219: treatment of lease IFRS/GAAP for leasee, leasor
+- 226: net pension liability/asset & treatment of change
+- 239:
+  - Financial reporting quality spectrum:
+    - Compliant > not compliant > fraudulent
+    - Decision useful > bias reporting choice & estimate (aggressive/conservative) > actively managed earning
+    - Earning quality
+- 240:
+  - Low quality report conditions
+  - Mechanisms to discipline reporting quality
+  - Treatment of non GAAP measure: explanation & reconciliation
