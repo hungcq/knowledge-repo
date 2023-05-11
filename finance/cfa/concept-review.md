@@ -1,0 +1,55 @@
+- 211: income effect
+- 212: long run average total cost curve
+- 249: national income, personal income
+- 260:
+  - Inflationary gap
+  - Recessionary gap
+  - Stagflation
+- 280: credit cycle
+- 281: neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions
+- 270:
+  - Leading indicators: index, new orders of manufacturers, building permit, consumer expectation
+  - Coincident indicators: industrial production/manufacturing, income
+  - Lagging indicators: inventory/sale, unemployment, leading/loan, CPI (inflation)
+- 282:
+  - Frictional unemployment
+  - Structural unemployment
+  - Cyclical unemployment
+  - Unemployed
+  - Disinflation, deflation
+  - Headline/core inflation
+  - Laspeyres price index (constant basket of good), Paasche index (current basket of good) & Fisher index & their biases
+  - Cost-push, demand-pull inflation
+  - Non-accelerating inflation rate of unemployment
+- 306: function of money
+- 307:
+  - Main objective of central banks
+  - Effective central bank's characteristics
+  - Real trend rate
+  - Neutral interest rate
+- 309: fiscal policy delays: recognition/action/impact lag
+- 316: 4 geopolitics category
+- 317: 3 types of geopolitical risk: event, exogenous, thematic
+- 331:
+  - GNP vs GDP
+  - Comparative adv models: Ricardo, Heckscher & Ohlin
+- 332:
+  - Minimum domestic content (trade restriction)
+  - Voluntary export restrain (VAR)
+  - 5 types of trade agreement
+- 333:
+  - Current acc components: import/export goods & service, interest/dividend received, unilateral transfer
+  - Capital acc: transfer for fixed asset purchases, purchases of non-financial assets, asset bought/taken by migrants
+  - Financial acc: ~fin assets own by domestic/foreign
+  - Acc surplus meaning
+  - Role of:
+    - IMF: money coop, exchange rate, payment system, help with balance of payment problem
+    - World Bank: loan, grant
+    - WTO: multilateral trade agreements
+- 349:
+  - Sell/buy side in FX market
+  - Point in FX quotation
+- 350: exchange rate regimes:
+  - Formal dollarization, monetary union
+  - Currency board agreement, conventional fixed peg arrangement, pegged exchange rate with horizontal band,
+  target rate, crawling peg, crawling bands, managed floating, independent floating
