@@ -2,6 +2,8 @@
 - Financial leverage = EBIT/EBT -> more debt = higher leverage
 - Operating leverage = revenue/EBIT -> lower profit = higher leverage
 - Common law = US law = more protection to shareholder
+- Estimation of WACC: always use target capital structure if available.
+Only use market value to estimate when target structure not available.
 ## Capital investment
 - Discount rate (in NPV calculation) = opportunity cost of capital (COC)
 - Capital budgeting analysis usually applies to replacement/mandatory project, not research & development project (high risk)

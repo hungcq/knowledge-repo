@@ -11,6 +11,7 @@
 - Rates if not mentioned period, are always quoted on 1-year basis
 - Review example of estimating YTM of illiquid bond
 - Investment grade: from BBB to AAA (BB or B is not)
+- Capital gain/loss on selling bond = sell price - NPV
 ## ABS
 - Call protection: prepayment protection
 - Balloon risk: risk that the borrower will not be able to the balloon payment

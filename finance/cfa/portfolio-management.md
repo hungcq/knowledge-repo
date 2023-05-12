@@ -10,6 +10,7 @@ with beta risk on the x-axis and expected return on the y-axis.
 - According to CAPM, rational investor will choose portfolio along the CAL
 - Diversification ratio = portfolio return std / avg std of individual securities in the portfolio
 - -> Lower = better diversification
+- delta & gamma: measure derivative risk
 ## Risk management
 - Risk exposure should be measured after risk budgeting
 ## Technical analysis

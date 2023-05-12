@@ -1,6 +1,290 @@
 # Economics
 - 211: income effect
 - 212: long run average total cost curve
+- *: national income, personal income
+- 260:
+  - Inflationary gap
+  - Recessionary gap
+  - Stagflation
+- *: credit cycle
+- *: neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions
+- *:
+  - Leading indicators
+  - Coincident indicators
+  - Lagging indicators
+- 282:
+  - Frictional unemployment
+  - * Structural unemployment
+  - * Cyclical unemployment
+  - Unemployed
+  - Disinflation, deflation
+  - * Headline/core inflation
+  - Laspeyres price index, Paasche index & Fisher index & their biases
+  - Cost-push inflation
+  - Demand-pull inflation
+  - * Non-accelerating inflation rate of unemployment (NAIRU)
+- 306: functions of money
+- 307:
+  - * Main objective of central banks
+  - Effective central bank's characteristics:
+    - Independent
+    - Creditable
+    - Transparent
+  - * Real trend rate
+  - * Neutral interest rate
+- 309: fiscal policy delays
+- 316: 4 geopolitics category
+- 317: 3 types of geopolitical risk
+- 331:
+  - GNP vs GDP
+  - Comparative adv models:
+    - Ricardo
+    - Heckscher & Ohlin
+- 332:
+  - Trade restriction:
+    - Minimum domestic content
+    - Voluntary export restrain (VER)
+  - 5 types of trade agreement
+- 333:
+  - Current acc components
+  - Capital acc
+  - Financial acc
+  - Current account surplus meaning
+  - Role of:
+    - * IMF
+    - World Bank
+    - WTO
+- 349:
+  - Sell side in FX market
+  - Point in FX quotation
+- 350: exchange rate regimes:
+  - No currency
+  - Have its own currency:
+    - Currency board agreement
+    - Conventional fixed peg arrangement
+    - Pegged exchange rate with horizontal band (target zone)
+    - * Crawling peg
+    - Crawling bands
+    - * Managed floating
+    - Independent floating
+- Structural deficit
+
+# FSA
+- 17: statement of change in equity
+- 18:
+  - * Auditor's:
+    - Qualified
+    - Adverse
+    - Disclaimer of opinion
+  - Proxy stm
+  - 6 steps of FSA framework
+- 26:
+  - Standard-setting bodies vs regulatory authorities
+  - * Chars of financial stms:
+    - Fundamental
+    - Enhancing
+- 51:
+  - Multistep income stm
+  - Expense categorization
+- 52:
+  - Matching principle
+  - Position in income stm of:
+    - Discontinued operation
+    - Unusual/infrequent items
+  - Prospective change cases
+- 53:
+  - Vertical common size income stm
+  - Comprehensive income
+  - Other comprehensive income
+- 74:
+  - Classified balance sheet
+  - * Current asset
+  - Cash equivalents
+  - Cost model
+- 75:
+  - Accrued liabilities
+  - Unearned revenue
+  - * Components of owner's equity:
+    - Contributed capital
+    - Preferred stock
+    - Retained earning
+    - Treasury stock
+    - Non-controlling (minority) interest
+    - **Accumulated** other comprehensive income
+  - Vertical common size balance sheet
+- 100:
+  - * CFO
+  - * CFI
+  - * CFF
+  - Position of non-cash investing/financing activities
+- 101: advs of direct/indirect method of presenting CFO
+- 102:
+  - Common size cash flow stms
+  - Conversion from indirect to direct
+- 132:
+  - * Business/geographic segment of a firm
+  - Pro forma financial stm
+- 183:
+  - Treatment of:
+    - Internally developed asset cost
+    - Research cost
+    - Development cost
+  - Classification of cash outflow for capitalized asset
+- 184:
+  - Component depreciation
+  - Cash flow under dif depreciation methods
+  - Impairment's effect:
+    - Net income, asset, equity, ROA, ROE
+    - Cash flow stm
+  - * De-recognition (disposal by sale)
+- 185:
+  - * Revaluation model. Disclosure.
+  - * Impairment treatment. Effect in income, cash flow stm. Disclosure.
+- 186: investment property:
+  - Def
+  - Report
+  - Treatment of increase in value for fair value model
+- 204:
+  - Taxable income
+  - * Tax payable
+  - Income tax expense
+  - Valuation allowance
+  - Treatment of deferred tax liabilities for analytical purpose
+- 205:
+  - Asset's tax base, calculation
+  - * Temporary difference
+- 201:
+  - Statutory tax rate
+  - Effective tax rate
+- 224: bond's proceed value
+- 225:
+  - * Gain/loss when redeem bond early
+  - Position of details about long-term debt's
+- 219: * treatment of lease IFRS/GAAP for leasee, leasor
+- 226: net pension liability/asset calculation, report
+- 239: financial reporting quality spectrum
+- 240:
+  - Low quality report conditions
+  - Mechanisms to discipline reporting quality
+  - * Treatment of non GAAP measure
+
+# Fixed income
+- 25: bond indenture/trust deed
+- 26:
+  - Foreign bond/Eurobond market/currency
+  - Secured/unsecured bond
+  - Credit enhancements:
+    - Internal:
+      - Over-collateralization
+      - Excess spread
+      - Tranches
+    - External:
+      - Surety bond
+      - Bank guarantee
+      - Letter of credit
+  - Tax treatment of interest income, selling bond, pure discount bond
+  - Cash flow:
+    - Bullet/fully amortizing/partially amortizing
+    - Sinking fund provision
+    - 20-21: step up coupon note, credit-linked bond, payment-in-kind, deferred coupon, index-linked
+- Investment grade
+- 30:
+  - Grey market
+  - Syndicate
+  - Shelf-registration
+- 38:
+  - Auction of bond: common case
+  - Private placement
+- 31: tender offer
+- 39:
+  - Settlement date of gov bond, corp bond
+  - Non-sovereign gov bond, agency (quasi) gov bond
+  - Bank debt: bilateral loan, syndicated loan
+  - Commercial paper
+  - Term maturity, serial maturity structure
+  - Medium-term note
+  - Credit-linked note
+  - Capital-protected instrument
+  - Participation instrument
+  - Leveraged instrument, inverse floater
+- 40:
+  - Short-term funding alternatives available to banks
+  - Repurchase agreement: repo rate, repo margin (haircut), reverse repo
+- 65:
+  - Method for determining period of accrued bond interest:
+    - Gov bond
+    - Corp bond
+  - Matrix pricing example
+  - True yield
+  - Simple yield
+  - Yield to call, yield to worst
+- 66:
+  - Par curve
+  - Forward curve
+  - I-spread (interpolated spread)
+- 67:
+  - Z-spread
+  - Option-adjusted spread (OAS) for callable bond
+- 85:
+  - Seller, SPE
+  - Time tranching, credit tranching
+- 86:
+  - Recourse/non recourse
+  - Loan to value (LTV) ratio, meaning
+  - Pass through rate
+  - Conditional prepayment rate
+  - Single monthly maturity rate (SMM)
+  - PSA prepayment
+  - Credit enhancement
+  - CMO:
+    - Def
+    - Usually used tranching:
+      - Sequential pay CMO
+      - Planned amortization CMD (PAC)
+  - Prepayment risk
+  - CMBS:
+    - Def
+    - Characteristic
+    - Call (prepayment) protection:
+      - Loan-level: defeasance, yield maintenance charge (must pay interest amount loss to lenders)
+      - CMBS level
+  - Asset-backed securites (ABS): def:
+    - Auto loan: chars
+    - Credit card:
+      - Chars
+      - Lockout period
+  - CDO: collateralized debt obligation: def: structured finance CDO, synthetic CDO
+  - Covered bond: chars
+- 109:
+  - Effective duration usage
+  - Key rate duration
+    - Def
+    - Usage
+  - Effect of put/call provision on duration
+  - Term structure of yield volatility
+  - Empirical duration, effective scenario
+- 127:
+  - Credit risk components
+  - Spread risk components
+  - Priority of claims on corp debt
+  - Issuer credit rating (usually apply to), issue credit rating, notching
+- 128:
+  - 4 components of credit analysis
+  - Condition for narrow spread
+
+# Derivatives
+- Swap as a series of FRAs
+
+# Alternative investments
+- Hedge fund strategies:
+  - Event-driven (eg merger, restructuring)
+  - Relative value
+  - Macro
+  - Equity (eg fundamental growth/value, sector specific, market neutral (equal amount in long & short position) vs short bias)
+
+# Economics
+- 211: income effect
+- 212: long run average total cost curve
 - 249: national income, personal income
 - 260:
   - Inflationary gap
@@ -37,7 +321,7 @@
   - Laspeyres price index (constant basket of good), Paasche index (current basket of good) & Fisher index & their biases
   - Cost-push inflation: decrease in aggregate supply due to increase in input price
   - Demand-pull inflation: increase in aggregate demand
-  - Non-accelerating inflation rate of unemployment: unemployment rate below which upward pressure on wages is likely to develop
+  - Non-accelerating inflation rate of unemployment (NAIRU): unemployment rate below which upward pressure on wages is likely to develop
 - 306: functions of money:
   - Medium of exchange
   - Store of value
@@ -72,7 +356,7 @@
   - Current account surplus meaning: export > import -> surplus money -> buy foreign asset -> financial/capital account deficit
   - Role of:
     - IMF: money coop, exchange rate stability, international payment system setup, help with balance of payment problem
-    - World Bank: loan, grant
+    - World Bank: loan, credit, grant
     - WTO: multilateral trade agreements
 - 349:
   - Sell side in FX market: large international bank (not central bank)
@@ -89,7 +373,7 @@
     - Managed floating: monetary authority influence rate in response to specific indicators (eg inflation, balance of payment)
     - Independent floating: market-determined rate
   - -> Wider band -> more flexibility in conducting monetary policy
-- Structural deficit
+- Structural deficit: gov budget deficit that would persist when the economy is at full employment
 
 # FSA
 - 17: statement of change in equity: amount & sources of changes in equity
@@ -102,8 +386,7 @@
   - 6 steps of FSA framework:
     - State objective
     - Gather data
-    - Process data
-    - Processing data: ratios, graph, common size
+    - Process data -> ratios, graph, common size
     - Analyze & interpret data
     - Report conclusions/recommendations
     - Update the analysis
@@ -185,7 +468,7 @@
       - Carrying value using cost model
   - Impairment treatment:
     - IFRS:
-      - When carrying value > recoverable amount (ie max(fair value - selling cost, value in use))
+      - When carrying value > recoverable amount (ie max(fair value - selling cost, value in use (ie NPV of future cash flow)))
       - Write down to recoverable amount
     - GAAP:
       - When carrying value > undiscounted future cash flows
@@ -203,6 +486,7 @@
     - Tax due but not paid (on balance sheet)
   - Income tax expense: expense recognized in income stm
   - Valuation allowance: reduction of deferred tax assets based on likelihood that future tax benefit will not be realized
+  - -> Reduce earning
   - Treatment of deferred tax liabilities for analytical purpose:
     - Not expected to reverse: as equity
     - Expected to reverse: as liabilities
@@ -210,7 +494,6 @@
   - Asset's tax base (value for tax purposes), calculation: cost - accumulated depreciation on the tax return
   - Temporary difference: dif between tax base & carrying value of asset/liability
   that will result in taxable amounts/deductible amounts in the future
-  - Valuation allowance: reduce earning
 - 201:
   - Statutory tax rate: tax rate of the jurisdiction where the firm operates
   - Effective tax rate: net income/EBT
@@ -222,11 +505,10 @@
 - 226: net pension liability/asset:
   - = fair value of defined benefit plan's asset - estimated pension obligation
   - Change reported in other comprehensive income
-- 239:
-  - Financial reporting quality spectrum:
-    - Compliant > not compliant > fraudulent
-    - Decision useful > bias reporting choice & estimate (aggressive/conservative) > actively managed earning
-    - Earning quality
+- 239: financial reporting quality spectrum:
+  - Compliant > not compliant > fraudulent
+  - Decision useful > bias reporting choice & estimate (aggressive/conservative) > actively managed earning
+  - Earning quality
 - 240:
   - Low quality report conditions: motivation, opportunity, rationalization
   - Mechanisms to discipline reporting quality: regulation, auditing, private contract
@@ -243,40 +525,133 @@
       - Excess spread
       - Tranches
     - External:
-      - Surety bond
-      - Bank guarantee
-      - Letter of credit
-  - Tax treatment of interest income, selling bond, pure discount bond
+      - Surety bond: insured by insurance company
+      - Bank guarantee: insured by bank
+      - Letter of credit: promise by bank to lend if needed
+  - Tax treatment:
+    - Interest income & pure discount bond increase: use ordinary income tax rate
+    - Selling bond: use capital gain tax rate
   - Cash flow:
-    - Bullet/fully amortizing/partially amortizing
-    - Sinking fund provision
-    - 20-21: step up coupon note, credit-linked bond, payment-in-kind, deferred coupon, index-linked
+    - Bullet (repay entire principal at maturity)/fully amortizing/partially amortizing
+    - Sinking fund provision: require issuer to retire a portion of a bond issue at specified times during the bond's life
+    - 20-21:
+      - Step up coupon note: coupon rate increase over time on predetermined schedule
+      - Credit-linked: coupon rate linked reversely to rating of issuer
+      - Payment-in-kind: allow issuer to make coupon payments by increasing principal amount of the outstanding bonds
+      - -> Higher yield. Used when not enough cash to pay coupon.
+      - Deferred coupon: regular coupon/principal payments only begin after a period of time since issuance
+      - Index-linked: coupon based on an index (eg equity, commodity, inflation (ie linkers)).
+      Principal protected bond: index-linked bond that will not pay less than original par value at maturity
 - Investment grade: AAA, AA, A, BBB (or Aaa -> Baa3)
 - 30:
   - Grey market
   - Syndicate
   - Shelf-registration: issue overtime less disclosure, for financially sound company
 - 38:
-  - Auction of bond: common case
-  - Private placement
-- 31: tender offer
+  - Auction of bond: usually for gov bond
+  - Private placement: sale of an entire issue to a qualified investor/group of investors (typically large institutions)
+- 31: tender offer: secondary market transaction: issuer offers to repurchase some of its outstanding bonds at a specified price
 - 39:
-  - Settlement date of gov bond, corp bond
+  - Settlement date of gov bond (T + 0, T + 1), corp bond (T + 2, T + 3)
   - Non-sovereign gov bond, agency (quasi) gov bond
   - Bank debt: bilateral loan, syndicated loan
-  - Commercial paper
-  - Term maturity, serial maturity structure
-  - Medium-term note
-  - Credit-linked note
-  - Capital-protected instrument
-  - Participation instrument
-  - Leveraged instrument, inverse floater
+  - Commercial paper: money market instrument issued by corps of high credit quality
+  - Term maturity (corp bonds)
+  - Serial maturity structure (corp bonds): mature on a predetermined schedule
+  - Medium-term note: corp issues that can be structured to meet the requirements of investors
+  - Credit-linked note: yield enhancement instrument (higher yield):
+  redeemed at less than par value if a specified credit event occurs on a reference asset
+  - Capital-protected instrument: guaranteed payment & participation in any increase in value of an equity/index/asset
+  - Participation instrument: payments depend on returns on an asset/index/interest rate (eg floating rate bond)
+  - Leveraged instrument, inverse floater: coupon rate inversely rated to a reference rate
 - 40:
   - Short-term funding alternatives available to banks: customer deposit, CD, central bank, inter-bank
-  - Repurchase agreement: repo rate, repo margin (haircut), reverse repo
+  - Repurchase agreement: repo rate (interest rate for repo), repo margin (haircut), reverse repo
+- 65:
+  - Method for determining period of accrued bond interest:
+    - Gov bond: actual day
+    - Corp bond: 360 day year, 30 day month
+  - Matrix pricing example
+  - True yield: account for coupon payment delayed by weekends/holidays -> < street yield
+  - Simple yield: adjust current yield using straight-line amortization of discount/premium (discount +, premium -)
+  - Yield to call, yield to worst
+- 66:
+  - Par curve: show coupon rate for bonds of various maturities that would result in bond price = par value
+    (spot rates dif for dif maturities)
+  - Forward curve: curve of same time period, dif year into the future (eg 1y1y, 2y1y)
+  - I-spread (interpolated spread): benchmark is swap rate
+- 67:
+  - Z-spread: spread that must be added to each spot rate on the benchmark curve to make PV = current price
+  - Option-adjusted spread (OAS) for callable bond = Z-spread - call value
+- 85:
+  - Seller/depositor, trust/issuer/SPE
+  - Time tranching, credit tranching
+- 86:
+  - Recourse/non recourse
+  - Loan to value (LTV) ratio, meaning
+  - Pass through rate: coupon rate of RMBS
+  - Conditional prepayment rate: annualized measure of prepayment
+  - Single monthly maturity rate (SMM): month-end measure of prepayment
+  - PSA prepayment benchmark: monthly
+  - Credit enhancement: usually used for non-agency RMBS
+  - CMO:
+    - Collateralized by pools of RMBS
+    - Usually used tranching:
+      - Sequential pay CMO: time tranching
+      - Planned amortization CMD (PAC): PAC tranches & support tranches
+  - Prepayment risk: contraction, extension
+  - CMBS:
+    - Backed by mortgages on income-producing real estate properties
+    - Non resource -> credit risk -> use credit tranching
+    - Call (prepayment) protection:
+      - Loan-level: defeasance (use paid amount to buy gov securities),
+      yield maintenance charge (must pay interest amount loss to lenders)
+      - CMBS level: time tranching
+  - Asset-backed securites (ABS): backed by non-mortgage financial assets:
+    - Auto loan: fully amortizing, short maturities
+    - Credit card:
+      - Revolving debt, non amortizing
+      - Lockout period: only interest paid, principal payment used to purchase additional receivable
+  - CDO: collateralized debt obligation: structured securities backed by pool of debt obligation:
+  bond, bank loan, RMBS/CMBS/ABS (structured finance CDO), credit default swap (synthetic CDO)
+  - Covered bond: no SPE, asset remained on balance sheet. Asset is pooled & protected. Can recourse to both issuers & asset.
+- 109:
+  - Effective duration usage: bond with embedded option because change in interest rate may change future cash flow
+  - Key rate duration
+    - Def: price sensitivity to a spot rate of specific maturity
+    - Usage: price sensitivity to change in shape of yield curve
+  - Effect of put/call provision on duration: decrease duration because YTM change has less effect on price
+  - Term structure of yield volatility: relationship between maturity & yield volatility:
+  short-term yield more volatile -> short term bond price more volatile
+  - Empirical duration: estimate from historical data using models
+  - -> Effective for flight to quality scenario:
+  gov bond price increase (yield decrease) but corp bond price not increase (yield spread increase)
+- 127:
+  - Credit risk components: default risk (probability of default) & loss severity. Expected loss.
+  - Spread risk = downgrade risk + liquidity risk
+  - Priority of claims on corp debt:
+    - Secured > unsecured > subordinated
+    - Senior > junior
+  - Issuer credit rating (usually apply to senior unsecured), issue credit rating, notching
+- 128:
+  - 4 components of credit analysis: capacity, collateral, covenant, character (of management)
+  - Condition for narrow spread: credit cycle improving, economy expanding,
+  strong demand for debt (high demand -> high price -> narrow spread)
 
 # Derivatives
-- Swap as a series of FRAs
+- Swap as a series of FRAs:
+  - Each FRA has rate = swap fixed rate
+  - Value of each FRA != 0. First value is known at initiation (using MRR at initiation & F)
+  - Sum of values of all FRA = 0 at initiation
+  - Valuation: MRR1 / (1 + S1) + MRR2 / (1 + S2) ^ 2 + ... = F / (1 + S1) + F / (1 + S2) ^ 2 + ...
+  - -> Calculate expected forward rates (MRRs) using spot rate (S), then solve for F
 
 # Alternative investments
-- Hedge fund strategies
+- Hedge fund strategies:
+  - Event-driven: based on corp restructuring or acquisition
+  that creates profit opportunities for long/short position in securities of a specific corp (eg merger, restructuring)
+  - Relative value: buy a security & sell short another related security
+  with goal of profiting when a perceived pricing discrepancy between the 2 is resolved (eg fixed income, option volatility)
+  - Macro: based on global economic trends & events, involve long/short positions in securities, currencies & commodities
+  - Equity: long/short positions in publicly traded equities & equity derivatives
+  (eg fundamental growth/value, sector specific, market neutral (equal amount in long & short position) vs short bias)

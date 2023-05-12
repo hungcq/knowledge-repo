@@ -65,3 +65,6 @@
 - Time period bias: relation does not hold over other time periods. Occur when:
     - Period studied too short
     - Period studied too long: a structural change in relationship occurred DURING the period
+- Arithmetic mean is used to for cast return of a single year,
+geometric mean is used to calculate annual compound return (multi year)
+- Student's t distribution is defined by its degree of freedom only
