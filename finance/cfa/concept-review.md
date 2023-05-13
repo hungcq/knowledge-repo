@@ -124,6 +124,7 @@
 - 132:
   - * Business/geographic segment of a firm
   - Pro forma financial stm
+- 154: inventory write up
 - 183:
   - Treatment of:
     - Internally developed asset cost
@@ -440,6 +441,7 @@
     - Have risk & return chars distinguishable from the rest of the firm
     - Account for more than 10% of the firm's sales or assets
   - Pro forma financial stm: forecast sales growth -> adjust income stm & balance sheet items
+- 154: inventory write up (IFRS only): only to the extent of a previous write-down
 - 183:
   - Treatment of:
     - Internally developed asset cost: expense
@@ -452,7 +454,7 @@
   - Impairment's effect:
     - Decrease net income, asset, equity -> lower ROA, ROE
     - Cash flow stm: no effect
-  - De-recognition (disposal by sale): gain/loss = selling price - book value. Reported on income stm (affecting net income).
+  - De-recognition (disposal by sale): gain/loss = selling price - book value. Reported on income stm & CFI (affecting net income).
 - 185:
   - Revaluation model (IFRS):
     - Revalue assets based on fair value

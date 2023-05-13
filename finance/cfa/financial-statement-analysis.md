@@ -87,6 +87,11 @@ Preferred dividend cost can't be capitalized
   - Capitalize: expense reduce investing cash flow & create asset for depreciation
 - Useful lives must be disclosed when using cost model under IFRS
 - Long-term contract revenue recognition method doesn't affect cash flow
+- Revenue recognition methods:
+  - Completed contract (GAAP): only recognize revenue when the entire project is completed
+  - Percentage of completion (ie progress toward satisfying performance obligations):
+  recognize profit corresponding to the costs incurred as a proportion of estimated total costs
+  - Installment method: recognize profit in proportion to cash collected
 ## Income tax
 - Higher tax base of asset = less depreciation = higher taxable income = more tax paid = tax asset
 - Income tax expense (provision for income tax) = tax payable + dDTL - dDTA

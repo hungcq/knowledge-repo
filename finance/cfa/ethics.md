@@ -13,3 +13,9 @@ not Additional compensation (usually applies to client compensation for performa
 
 # Conflict of interest
 - Referral fees must be disclosed to employers & clients before entering into relationship
+
+# GIPS
+- Firms must make compliant presentations for any composite the firm has offered in the past five years,
+including composites that have been terminated
+- All fee-paying discretionary accounts/portfolios must be included in only 1 composite.
+Non-fee paying, non-discretionary is not required to be included.
