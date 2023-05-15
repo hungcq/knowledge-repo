@@ -112,3 +112,243 @@ Preferred dividend cost can't be capitalized
     - Operating lease:
       - Keep leased asset on balance sheet, record depreciation expense normally
       - Lease payments reported as income, operating cash
+
+## Concept review
+- 17: statement of change in equity
+- 18:
+  - * Auditor's:
+    - Qualified
+    - Adverse
+    - Disclaimer of opinion
+  - Proxy stm
+  - 6 steps of FSA framework
+- 26:
+  - Standard-setting bodies vs regulatory authorities
+  - * Chars of financial stms:
+    - Fundamental
+    - Enhancing
+- 51:
+  - Multistep income stm
+  - Expense categorization
+- 52:
+  - Matching principle
+  - Position in income stm of:
+    - Discontinued operation
+    - Unusual/infrequent items
+  - Prospective change cases
+- 53:
+  - Vertical common size income stm
+  - Comprehensive income
+  - Other comprehensive income
+- 74:
+  - Classified balance sheet
+  - * Current asset
+  - Cash equivalents
+  - Cost model
+- 75:
+  - Accrued liabilities
+  - Unearned revenue
+  - * Components of owner's equity:
+    - Contributed capital
+    - Preferred stock
+    - Retained earning
+    - Treasury stock
+    - Non-controlling (minority) interest
+    - **Accumulated** other comprehensive income
+  - Vertical common size balance sheet
+- 100:
+  - * CFO
+  - * CFI
+  - * CFF
+  - Position of non-cash investing/financing activities
+- 101: advs of direct/indirect method of presenting CFO
+- 102:
+  - Common size cash flow stms
+  - Conversion from indirect to direct
+- 132:
+  - * Business/geographic segment of a firm
+  - Pro forma financial stm
+- 154: inventory write up
+- 183:
+  - Treatment of:
+    - Internally developed asset cost
+    - Research cost
+    - Development cost
+  - Classification of cash outflow for capitalized asset
+- 184:
+  - Component depreciation
+  - Cash flow under dif depreciation methods
+  - Impairment's effect:
+    - Net income, asset, equity, ROA, ROE
+    - Cash flow stm
+  - * De-recognition (disposal by sale)
+- 185:
+  - * Revaluation model. Disclosure.
+  - * Impairment treatment. Effect in income, cash flow stm. Disclosure.
+- 186: investment property:
+  - Def
+  - Report
+  - Treatment of increase in value for fair value model
+- 204:
+  - Taxable income
+  - * Tax payable
+  - Income tax expense
+  - Valuation allowance
+  - Treatment of deferred tax liabilities for analytical purpose
+- 205:
+  - Asset's tax base, calculation
+  - * Temporary difference
+- 201:
+  - Statutory tax rate
+  - Effective tax rate
+- 224: bond's proceed value
+- 225:
+  - * Gain/loss when redeem bond early
+  - Position of details about long-term debt's
+- 219: * treatment of lease IFRS/GAAP for leasee, leasor
+- 226: net pension liability/asset calculation, report
+- 239: financial reporting quality spectrum
+- 240:
+  - Low quality report conditions
+  - Mechanisms to discipline reporting quality
+  - * Treatment of non GAAP measure
+
+## Concept answers
+- 17: statement of change in equity: amount & sources of changes in equity
+- 18:
+  - Auditor's:
+    - Qualified: notes any exceptions to accounting principles
+    - Adverse: stms not presented fairly
+    - Disclaimer of opinion: unable to express an opinion
+  - Proxy stm: matters to be voted at shareholder's meeting
+  - 6 steps of FSA framework:
+    - State objective
+    - Gather data
+    - Process data -> ratios, graph, common size
+    - Analyze & interpret data
+    - Report conclusions/recommendations
+    - Update the analysis
+- 26:
+  - Standard-setting bodies vs regulatory authorities
+  - Chars of financial stms:
+    - Fundamental: relevance (decision-useful) & faithful representation (complete, no bias, no error)
+    - Enhancing: comparability, verifiability, timeliness, understandability
+- 51:
+  - Multistep income stm: provide subtotal for gross profit
+  - Expense categorization: by nature (eg depreciation), by function (eg COGS)
+- 52:
+  - Matching principle: match revenue with expense required to generate them
+  - Position in income stm, before or after tax of:
+    - Discontinued operation: below income from continuing operations, net of tax
+    - Unusual/infrequent items: above income from continuing operations, before tax
+  - Prospective change cases: an accounting estimate (eg useful life of asset), inventory cost flow method (GAAP)
+- 53:
+  - Vertical common size income stm: divide by revenue
+  - Comprehensive income = net income + other comprehensive income, measure all changes to equity
+  - Other comprehensive income: transactions that affect equity but not net income
+- 74:
+  - Classified balance sheet: separate current/non-current assets/liabilities
+  - Current asset: asset expected to be used up/converted to cash in less than max(1 year, the firm's operating cycle)
+  - Cash equivalents: short-term, highly liquid financial assets readily convertible to cash
+  - Cost model: historical cost - depreciation
+- 75:
+  - Accrued liabilities: expenses recognized in income stm but not yet contractually due
+  - Unearned revenue: cash collected in advance of providing goods & services
+  - Components of owner's equity:
+    - Contributed capital: amount contributed by common shareholders
+    - Preferred stock
+    - Retained earning
+    - Treasury stock: issued common stock issued that has been repurchased by the firm
+    - Non-controlling (minority) interest: portion of a subsidiary that is not owned by the parent
+    - **Accumulated** other comprehensive income
+  - Vertical common size balance sheet: divide by total assets
+- 100:
+  - CFO: affect net income, related to current assets/liabilities
+  - CFI: related to long term assets & certain investments
+  - CFF: related to non-current liabilities & equity (eg issue/repaying debt & stock)
+  - Position of non-cash investing/financing activities: footnotes/supplemental schedule to cash flow stm
+- 101: advs of direct/indirect method of presenting CFO
+- 102:
+  - Common size cash flow stms: either:
+    - Divide by revenue
+    - Divide each cash inflow/outflow by total of inflows/outflows
+  - Conversion from indirect to direct: use sale & COGS, add/subtract reported figures in indirect stm or balance sheet items
+- 132:
+  - Business/geographic segment of a firm: portion of a firm that:
+    - Have risk & return chars distinguishable from the rest of the firm
+    - Account for more than 10% of the firm's sales or assets
+  - Pro forma financial stm: forecast sales growth -> adjust income stm & balance sheet items
+- 154: inventory write up (IFRS only): only to the extent of a previous write-down
+- 183:
+  - Treatment of:
+    - Internally developed asset cost: expense
+    - Research cost: expense
+    - Development cost: IFRS can be capitalized, GAAP expense. Exception: software created for sale.
+  - Classification of cash outflow for capitalized asset: CFI
+- 184:
+  - Component depreciation (IFRS)
+  - Cash flow under dif depreciation methods: unaffected: same tax payable, dif income tax expense
+  - Impairment's effect:
+    - Decrease net income, asset, equity -> lower ROA, ROE
+    - Cash flow stm: no effect
+  - De-recognition (disposal by sale): gain/loss = selling price - book value. Reported on income stm & CFI (affecting net income).
+- 185:
+  - Revaluation model (IFRS):
+    - Revalue assets based on fair value
+    - Gain:
+      - First recognized in income stm as gain to the extent of previous loss
+      - Extra reported as revaluation surplus in shareholder's equity (other comprehensive income)
+    - Loss:
+      - First reduce revaluation surplus
+      - Extra reported as loss in income stm
+    - Disclosure:
+      - Revaluation date
+      - How fair value was determined
+      - Carrying value using cost model
+  - Impairment treatment:
+    - IFRS:
+      - When carrying value > recoverable amount (ie max(fair value - selling cost, value in use (ie NPV of future cash flow)))
+      - Write down to recoverable amount
+    - GAAP:
+      - When carrying value > undiscounted future cash flows
+      - Write down to fair value
+    - Loss in income stm. No effect on cash flow.
+    - Disclosure: loss amount & circumstances that caused the loss
+- 186: investment property (IFRS):
+  - Def: property owned for the purpose of earning rent, capital appreciation, or both
+  - Report: fair value or cost model
+  - Treatment of increase in value for fair value model: directly in income stm
+- 204:
+  - Taxable income: income subjected to tax on the tax return
+  - Tax payable:
+    - Tax liabilities on the tax return
+    - Tax due but not paid (on balance sheet)
+  - Income tax expense: expense recognized in income stm
+  - Valuation allowance: reduction of deferred tax assets based on likelihood that future tax benefit will not be realized
+  - -> Reduce earning
+  - Treatment of deferred tax liabilities for analytical purpose:
+    - Not expected to reverse: as equity
+    - Expected to reverse: as liabilities
+- 205:
+  - Asset's tax base (value for tax purposes), calculation: cost - accumulated depreciation on the tax return
+  - Temporary difference: dif between tax base & carrying value of asset/liability
+    that will result in taxable amounts/deductible amounts in the future
+- 201:
+  - Statutory tax rate: tax rate of the jurisdiction where the firm operates
+  - Effective tax rate: net income/EBT
+- 224: bond's proceed value: PV using market rate at issuance
+- 225:
+  - Gain/loss when redeem bond early: book value - redeem price
+  - Position of details about long-term debt's: footnote
+- 219: treatment of lease IFRS/GAAP for leasee, leasor
+- 226: net pension liability/asset:
+  - = fair value of defined benefit plan's asset - estimated pension obligation
+  - Change reported in other comprehensive income
+- 239: financial reporting quality spectrum:
+  - Compliant > not compliant > fraudulent
+  - Decision useful > bias reporting choice & estimate (aggressive/conservative) > actively managed earning
+  - Earning quality
+- 240:
+  - Low quality report conditions: motivation, opportunity, rationalization
+  - Mechanisms to discipline reporting quality: regulation, auditing, private contract
+  - Treatment of non GAAP measure: explanation & reconciliation

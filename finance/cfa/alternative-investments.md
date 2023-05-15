@@ -1,6 +1,130 @@
 # Alternative investments
 - Evaluate private company: use asset-based approach
+- Commodities market is in backwardation if producers are primary driver of future price
 - Over time, commodities compared to returns on global stocks or bonds:
   - Lower return
   - Higher price volatility
-- Commodities market is in backwardation if producers are primary driver of future price
+## Concept review
+- Traditional investment vs alternative investment
+- Adverse selection
+- Dry powder
+- Alternative investment general structure
+- Management fee:
+  - Hedge fund
+  - Private equity fund
+- Catch up clause
+- Waterfall
+- Deal-by-deal waterfall (American) vs whole of fund (European)
+- Clawback provision
+- High watermark
+- Sortino ratio
+- Calmar ratio
+- Return measures:
+  - Multiple of invested capital (money multiplier)
+  - IRR: more accurate
+- Either or fee
+- Founder's share
+- Private debt
+- Private equity investments. Private investment in public equity.
+- Venture capital investment stages
+- Exit strats for private equity fund:
+  - Trade sale
+  - IPO
+  - Recapitalization
+  - Secondary sale
+  - Write off/liquidation
+- Types of private debts:
+  - Direct lending
+  - Venture debt
+  - Mezzanine loan
+  - Distressed debt
+- Indexes of real estate performance & chars:
+  - Appraisal index
+  - Repeat sale index
+  - REIT
+- Brownfield investment chars (vs greenfield)
+- Contango vs backwardation
+- Lock up period
+- Notice period, time
+- Backfill bias
+- Hedge fund strategies:
+  - Event-driven
+  - Relative value
+  - Macro
+  - Equity
+- MBS
+- Derivatives
+
+## Concept answers
+- Traditional investment: long-only investment in cash or publicly traded stocks/bonds
+- -> Alternative investment: other types of investments
+- Adverse selection (co-investing): fund managers select better assets for the fund, offer co-investors worse assets
+- Dry powder: committed capital not invested (drawn down)
+- Alternative investment general structure: limited partnership: GP (fund manager), LPs (investors)
+- Management fee:
+  - Hedge fund: % of net asset value
+  - Private equity fund: % of committed capital (> capital invested)
+- Catch up clause: ~ soft hurdle
+- Waterfall: way in which payments are allocated to GP & LPs as profits & losses are realized on deals (each fund managed)
+- Deal-by-deal waterfall (American) vs whole of fund (European)
+- Clawback provision: LP can recover previous incentive payment on gains that are later reversed
+- High watermark: provision that no incentive fees are paid on gains that only offset prior losses
+- Sortino ratio: (return - Rf) / downside deviation
+- Calmar ratio: avg annual compound return (usually 3 years) / max drawdown (peak - trough value)
+- -> Higher, better
+- Return measures:
+  - Multiple of invested capital (money multiplier):
+    (total capital returned + value of remaining asset) / total capital paid in
+  - IRR: more accurate
+- Either or fee: pay max (management fee, incentive fee)
+- Founder's share: benefits to early investors of a fund
+- Private debt: lending to private entities
+- Private equity investments:
+  - Private companies
+  - Public companies to take private (leveraged buyout - use debt as leverage)
+  - Early stage companies (venture capital fund)
+  - Distressed investment
+  - Developmental capital (minority equity investing): provide capital for business growth/restructuring.
+  Private investment in public equity: dev capital in public companies
+- Venture capital investment stages:
+  - Formative:
+    - Angel (pre-seed): idea stage
+    - Seed (most popular): fun product dev, marketing, market research
+    - Early (start-up): fund initial commercial production
+  - Later stage (expansion): fund expansion for companies which already have production & sales
+  - Mezzanie stage: fund to prepare for an IPO
+- Exit strats for private equity fund:
+  - Trade sale: sell company to competitor company/strategic buyer
+  - IPO
+  - Recapitalization: issue debt to pay dividend (only a step toward exit)
+  - Secondary sale: sell to another private equity firm or a group of investors
+  - Write off/liquidation
+- Types of private debts:
+  - Direct lending. Leveraged loan: borrow from another source.
+  - Venture debt
+  - Mezzanine loan (subordinated debt)
+  - Distressed debt: buy debt of firms at or near bankruptcy
+  - -> Active engagement in restructuring
+- Indexes of real estate performance:
+  - Appraisal index: based on periodic estimate of property values
+  - -> Smoother, low std
+  - Repeat sale index: based on price changes for properties sold multiple time
+  - -> Sample may not be representative
+  - REIT: based on REIT share price
+- Brownfield investment chars (vs greenfield): stable cash flow, high yield, low growth potential
+- Contango (future price > current price) vs backwardation
+- Lock up period: time after initial investment over which LP cannot/costly redemption
+- Notice period (30-90 days): time for the fund to fulfill a redemption request
+- Backfill bias (hedge fund performance): effect on historical index returns of adding a new fund to an index
+- Hedge fund strategies:
+  - Event-driven: based on corp restructuring or acquisition
+    that creates profit opportunities for long/short position in securities of a specific corp (eg merger, restructuring)
+  - Relative value: buy a security & sell short another related security 
+  - -> Profit when a perceived pricing discrepancy between the 2 is resolved (eg fixed income, option volatility)
+  - Macro (top down):
+    - Based on global economic trends & events
+    - Involve long/short positions in securities, currencies & commodities
+  - Equity (bottom up): long/short positions in publicly traded equities & equity derivatives
+    (eg fundamental growth/value, sector specific, market neutral (equal amount in long & short position) vs short bias)
+- MBS is alter investment in real estate
+- Derivatives are alternative investment
