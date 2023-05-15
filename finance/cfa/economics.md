@@ -34,6 +34,7 @@
 - Neoclassical/Solon growth model: Y = total factor productivity/tech level x f(capital, labor)
 - Money neutrality: M x V = P x Y
 - -> Change in money supply increase P, not Y
+- Increase in expected income -> decrease saving -> decrease supply of financial capital -> increase interest rate
 ## Business cycles
 - Cycle: recovery -> expansion (peak) -> slowdown -> contraction (bottom/trough)
 - Draw a 4-column table for the 4 phases:

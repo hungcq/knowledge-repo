@@ -102,7 +102,7 @@ Preferred dividend cost can't be capitalized
     - Record right-of-use asset & lease liability on balance sheet. Value = PV of lease payments.
     - (Basically) Amortize the asset & reduce lease liability by each lease payment
   - For lessor:
-    - Financing lease:
+    - Financing (capital) lease:
       - Remove lease asset, add lease receivable (value = PV of lease payments) to balance sheet
       - -> Record gain/loss = lease receivable value - lease asset book value
       - For each lease payment:
@@ -112,6 +112,7 @@ Preferred dividend cost can't be capitalized
     - Operating lease:
       - Keep leased asset on balance sheet, record depreciation expense normally
       - Lease payments reported as income, operating cash
+- Lease disclosure: min lease payment in next 5 years & sum lease payment more than 5 years into the future
 
 ## Concept review
 - 17: statement of change in equity

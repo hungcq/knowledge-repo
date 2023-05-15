@@ -69,8 +69,9 @@
 - Deal-by-deal waterfall (American) vs whole of fund (European)
 - Clawback provision: LP can recover previous incentive payment on gains that are later reversed
 - High watermark: provision that no incentive fees are paid on gains that only offset prior losses
+- -> Incentive fee only when account value is higher than the highest previous value
 - Sortino ratio: (return - Rf) / downside deviation
-- Calmar ratio: avg annual compound return (usually 3 years) / max drawdown (peak - trough value)
+- Calmar ratio: avg annual compound return (usually 3 years) / max draw down (peak - trough value)
 - -> Higher, better
 - Return measures:
   - Multiple of invested capital (money multiplier):
