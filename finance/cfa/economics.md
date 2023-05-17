@@ -1,14 +1,13 @@
 # Economics
 ## Demand & supply analysis
-- Price elasticity for Q = b - a x P: P0 / Q0 x a. P0: price at point x0.
 - Normal profit is the level of accounting profit such that implicit opportunity costs are just covered
 - -> = 0 economic profit
 - Giffen good: inferior good with income effect > substitution effect
 - -> Increase in price increase quantity demanded
 - Veblen goods: highly valued, high-priced "status" goods
 - -> Consumers may tend to buy more if its price rises
-- Slope of demand curve is slope of function of price in term of demand (b) : P = a - b.Q
-- -> Demand curve: P is y-axis, Q is x- axis -> present P in term of Q
+- Slope of demand curve is slope of function of price in terms of demand (b) : P = a - b.Q
+- -> Demand curve: P is y-axis, Q is x-axis -> present P in terms of Q
 ## Business structure
 - Collusion is less likely when companies have similar market shares -> higher competitive force
 - Dif degree of price discrimination for monopoly:
@@ -23,7 +22,7 @@
 - -> (X - M) = (S - I) + (T - G)
 - GDP inclusion criteria:
     - Within the period
-    - Has market value. Exception: owner-occupied housing & gov services
+    - Has market value. Exception: owner-occupied housing & gov services.
     - Final good, not intermediate
 - GPD as income/output:
     - <img src="resources/gdp.png" width="500">
@@ -31,25 +30,18 @@
   - Expenditure approach: add statistical discrepancy
   - Income approach: add capital consumption allowance
 - Mixed income = income from unincorporated business (eg farm, rental)
-- Neoclassical/Solon growth model: Y = total factor productivity/tech level x f(capital, labor)
-- Money neutrality: M x V = P x Y
-- -> Change in money supply increase P, not Y
 - Increase in expected income -> decrease saving -> decrease supply of financial capital -> increase interest rate
 ## Business cycles
 - Cycle: recovery -> expansion (peak) -> slowdown -> contraction (bottom/trough)
 - Draw a 4-column table for the 4 phases:
     - <img src="resources/cycle-employment.png" width="600">
     - <img src="resources/cycle-inventory.png" width="600">
-- Economics indicators:
-  - <img src="resources/econ-indicators.png" width="600">
-- Austrian school: gov intervention as primary cause of business cycle. Not intervene when there is cyclical downturn.
 - Credit cycles tend to be  longer, deeper, and sharper than business cycles
 ## Geopolitics
 - Tools of geopolitics:
     - <img src="resources/geopolitics-tools.png" width="600">
 ## Balance of payments
 - Foreign direct investment increases capital account surplus -> increase current account deficit
-- International monetary fund (IMF) aids countries that are experiencing an economically detrimental current account deficit
 ## Currency exchange rate
 - Appreciation to be affective to reduce trade surplus -> decrease in capital account deficit
 - (export = + current acc, buy capital abroad = -capital acc) -> export decrease = buy less capital abroad
@@ -63,73 +55,67 @@
   - Percent: multiply
 
 ## Concept review
-- 211: income effect
-- 212: long run average total cost curve
-- *: national income, personal income
-- 260:
+- Income effect
+- Long run average total cost curve
+- National income, personal income
+- Aggregate demand/supply fluctuation:
   - Inflationary gap
   - Recessionary gap
   - Stagflation
-- *: credit cycle
-- *: neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions
-- *:
+- Credit cycle
+- Neoclassical/Keynesian/monetarist/Austrian economics & business cycle & suggested actions
+- Economic indicators:
   - Leading indicators
   - Coincident indicators
   - Lagging indicators
-- 282:
-  - Frictional unemployment
-  - * Structural unemployment
-  - * Cyclical unemployment
-  - Unemployed
-  - Disinflation, deflation
-  - * Headline/core inflation
-  - Laspeyres price index, Paasche index & Fisher index & their biases
-  - Cost-push inflation
-  - Demand-pull inflation
-  - * Non-accelerating inflation rate of unemployment (NAIRU)
-- 306: functions of money
-- 307:
-  - * Main objective of central banks
-  - Effective central bank's characteristics:
-    - Independent
-    - Creditable
-    - Transparent
-  - * Real trend rate
-  - * Neutral interest rate
-- 309: fiscal policy delays
-- 316: 4 geopolitics category
-- 317: 3 types of geopolitical risk
-- 331:
-  - GNP vs GDP
-  - Comparative adv models:
-    - Ricardo
-    - Heckscher & Ohlin
-- 332:
-  - Trade restriction:
-    - Minimum domestic content
-    - Voluntary export restrain (VER)
-  - 5 types of trade agreement
-- 333:
-  - Current acc components
-  - Capital acc
-  - Financial acc
-  - Current account surplus meaning
-  - Role of:
-    - * IMF
-    - World Bank
-    - WTO
-- 349:
-  - Sell side in FX market
-  - Point in FX quotation
-- 350: exchange rate regimes:
+- Frictional unemployment
+- Structural unemployment
+- Cyclical unemployment
+- Unemployed
+- Disinflation, deflation
+- Headline/core inflation
+- Laspeyres price index, Paasche index & Fisher index & their biases
+- Cost-push inflation
+- Demand-pull inflation
+- Non-accelerating inflation rate of unemployment (NAIRU)
+- Functions of money
+- Main objective of central banks
+- Effective central bank's characteristics:
+  - Independent
+  - Creditable
+  - Transparent
+- Real trend rate
+- Neutral interest rate
+- Fiscal policy delays
+- 4 geopolitics category
+- 3 types of geopolitical risk
+- GNP vs GDP
+- Comparative adv models:
+  - Ricardo
+  - Heckscher & Ohlin
+- Trade restriction:
+  - Minimum domestic content
+  - Voluntary export restrain (VER)
+- 5 types of trade agreements
+- Current acc components
+- Capital acc
+- Financial acc
+- Current account surplus meaning
+- Role of:
+  - IMF
+  - World Bank
+  - WTO
+- Sell side in FX market
+- Point in FX quotation
+- Exchange rate regimes:
   - No currency
   - Have its own currency:
     - Currency board agreement
     - Conventional fixed peg arrangement
     - Pegged exchange rate with horizontal band (target zone)
-    - * Crawling peg
+    - Crawling peg
     - Crawling bands
-    - * Managed floating
+    - Managed floating
     - Independent floating
 - Structural deficit
 
@@ -172,7 +158,8 @@
   - Laspeyres price index (constant basket of good), Paasche index (current basket of good) & Fisher index & their biases
   - Cost-push inflation: decrease in aggregate supply due to increase in input price
   - Demand-pull inflation: increase in aggregate demand
-  - Non-accelerating inflation rate of unemployment (NAIRU): unemployment rate below which upward pressure on wages is likely to develop
+  - Non-accelerating inflation rate of unemployment (NAIRU):
+  unemployment rate below which upward pressure on wages is likely to develop
 - 306: functions of money:
   - Medium of exchange
   - Store of value
@@ -199,7 +186,7 @@
   - Trade restriction:
     - Minimum domestic content: requirement that some % of product content must be from domestic country
     - Voluntary export restrain (VER): self-imposed export restriction -> the self-imposer (not importer) captures all surplus
-  - 5 types of trade agreement
+  - 5 types of trade agreements
 - 333:
   - Current acc components: import/export goods & service, interest/dividend received, unilateral transfer
   - Capital acc: transfer for fixed asset purchases, purchases of non-financial assets, asset bought/taken by migrants
@@ -207,7 +194,7 @@
   - Current account surplus meaning: export > import -> surplus money -> buy foreign asset -> financial/capital account deficit
   - Role of:
     - IMF: money coop, exchange rate stability, international payment system setup, help with balance of payment problem
-    - World Bank: loan, credit, grant
+    - World Bank: loan, credit, grant -> reduce poverty
     - WTO: multilateral trade agreements
 - 349:
   - Sell side in FX market: large international bank (not central bank)

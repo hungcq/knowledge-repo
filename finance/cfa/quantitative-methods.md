@@ -1,70 +1,228 @@
 # Quantitative methods
 - Calculate number of compounding period using calculator: log a(b) = ln(b)/ln(a)
-- Type of graph for each visualization purpose (TODO read official materials):
-    - Line chart: visualize trend in variables over time. Can use bubble to add 3rd dimension.
-    - Heat map: the degree of correlation between different variables
-    - Histogram: shape, center, and spread of the distribution of numerical data
-    - Scatter plot matrix: organize scatter plots between pairs of variables:
-      to inspect all pairwise relationships in one combined visual
+- Type of graph for each visualization purpose:
+  - Line chart: visualize trend in variables over time. Can use bubble to add 3rd dimension.
+  - Heat map: the degree of correlation between different variables
+  - Histogram: shape, center, and spread of the distribution of numerical data
+  - Scatter plot matrix: organize scatter plots between pairs of variables:
+    to inspect all pairwise relationships in one combined visual
 - Correlation from covariance matrix:
-    - Diagonal line: standard deviation ^ 2
-    - Others: covariance between variables: std 1 x std 2 x correlation(1,2)
+  - Diagonal line: standard deviation ^ 2
+  - Others: covariance between variables: std 1 x std 2 x correlation(1,2)
 - Covariance from joint probabilities
 - Continuous compounding rate = ln(1 + return rate)
 - Desirable statistical properties of an estimator:
-    - Unbiased: expected value equal to the parameter that it is intended to estimate
-    - Consistent: accuracy of the parameter estimate increases as the sample size increases
+  - Unbiased: expected value equal to the parameter that it is intended to estimate
+  - Consistent: accuracy of the parameter estimate increases as the sample size increases
 - Percentile calculation: (n + 1) x percentile / 100. Then use linear extrapolation if value is not an integer.
+- Mutually exclusive events are dependent: when one happens, the prob of the other is affected (becomes 0)
+- Time period bias: relation does not hold over other time periods. Occur when:
+  - Period studied too short
+  - Period studied too long: a structural change in relationship occurred **during** the period
+- Arithmetic mean is used to for cast return of a single year,
+  geometric mean is used to calculate annual compound return (multi years)
 ## Hypothesis testing
 - Type 1 & type 2 error:
-    - Type 1: commit: reject null hypo when it is actually true (accept alternative when it is false)
-    - -> Level of significance (alpha): probability of rejecting a true null hypo (prob of type 1 error)
-    - Type 2:
-        - Def: omit: failure to reject the null hypo when it is actually false
-        - -> Contrast to type 1 & significance level:
-          smaller significance level -> lower prob of type 1 error & more likely to not reject null hypo -> higher prob of type 2
-        - Power of test: prob of rejecting null hypo when it is false. = 1 - P(type 2 error). Can increase by:
-            - Increase significance level
-            - Increase sample size
+  - Type 1: commit: reject null hypo when it is actually true (accept alternative when it is false)
+  - -> Level of significance (alpha): probability of rejecting a true null hypo (prob of type 1 error)
+  - Type 2:
+    - Def: omit: failure to reject the null hypo when it is actually false
+    - -> Contrast to type 1 & significance level:
+      smaller significance level -> lower prob of type 1 error & more likely to not reject null hypo -> higher prob of type 2
+    - Power of test: prob of rejecting null hypo when it is false. = 1 - P(type 2 error). Can increase by:
+      - Increase significance level
+      - Increase sample size
 - Relation between level of significance (eg 0.05) & rejection region:
   higher level of significance ~ wider rejection region (edges of the distribution) -> less confidence in result
 - p-value:
-    - Prob of obtaining a test stat that would lead to a rejection of the null hypo assuming the null hypo is true (type 1 error)
-    - Smallest level of significance for which the null hypo can be rejected
-      (eg p-value of test = 6% -> significance must be >= 6% to reject the null hypo)
+  - Prob of obtaining a test stat that would lead to a rejection of the null hypo assuming the null hypo is true (type 1 error)
+  - Smallest level of significance for which the null hypo can be rejected
+    (eg p-value of test = 6% -> significance must be >= 6% to reject the null hypo)
 - t table: p column = 2 tail. Need to x2.
-- Use 1 or 2 tail test: test range vs test equality. Also applied to chi-square & F tests
+- Use 1 or 2 tail test: test range vs test equality. Also applied to chi-square & F tests.
 - Type of test by purpose:
-    - t: mean, difference in means of 2 independent population, means of pair difs between 2 dependent populations
-    - Chi-square: variance of a normally distributed population:
-        - Degree of freedom: n-1
-        - Test stat: (n-1) x sample variance ^ 2 / hypothesized population variance ^ 2
-    - F: equality of variances of 2 normally distributed populations:
-        - Degree of freedom: n1 - 1, n2 - 1
-        - Test stat: larger variance / smaller variance
+  - t: mean, difference in means of 2 independent population, means of pair difs between 2 dependent populations
+  - Chi-square: variance of a normally distributed population: degree of freedom: n-1
+  - F: equality of variances of 2 normally distributed populations:
+    - Degree of freedom: n1 - 1, n2 - 1
+    - Test stat: larger variance / smaller variance
 - Non-parametric test usages:
-    - Assumptions of parametric tests are not met (eg small sample size, non-normal distribution)
-    - Data not suitable for parametric test (eg ranked data)
+  - Assumptions of parametric tests are not met (eg small sample size, non-normal distribution)
+  - Data not suitable for parametric test (eg ranked data)
 ## Linear regression
 - Residual = actual value - predicted value
 - Assumptions:
-    - Linear rela exists
-    - Variance of the residual term is constant for all observation (homoskedasticity)
-    - Residual term is independently distributed (eg residual for one observation is not correlated with that of another obs)
-    - Residual term is normally distributed
+  - Linear rela exists
+  - Variance of the residual term is constant for all observation (homoskedasticity)
+  - Residual term is independently distributed (eg residual for one observation is not correlated with that of another obs)
+  - Residual term is normally distributed
 - F test stat whether the slope coefficient = 0: MSR/MSE. Degree of freedom: 1 & n - 2.
 - t test stat whether slope coefficient = x: (estimated slope coefficient - x) / standard error of slope coefficient.
   Degree of freedom: n - 2.
 - Standard error of the estimate (standard deviation of the regression residuals) = sqrt(MSE) = sqrt(SSE/n-2)
-## Detailed points
-- Uni/bi/trimodal: having 1/2/3 peaks in frequency distribution graph
-- Target semi/downside deviation: include only below target. Denominator still n - 1.
-- Coefficient of variation = standard variation / mean
-- Mutually exclusive events are dependent: when one happens, the prob of the other is affected (becomes 0)
-- Parameter def: any descriptive measure of a population characteristic
-- Time period bias: relation does not hold over other time periods. Occur when:
-    - Period studied too short
-    - Period studied too long: a structural change in relationship occurred DURING the period
-- Arithmetic mean is used to for cast return of a single year,
-geometric mean is used to calculate annual compound return (multi year)
-- Student's t distribution is defined by its degree of freedom only
+
+## Concept review
+- Ordinary annuities (vs annuities due)
+- Required return
+- Structured data: time series/cross-sectional/panel data
+- Frequency distribution
+- Contingency table
+- -> Marginal frequency
+- Confusion matrix
+- Data visualization:
+  - Distributions
+  - Comparison among categories & distributions
+  - Comparison over time
+  - Relationship
+- Trimmed mean
+- Mode
+- -> Uni/bi/trimodal
+- Arithmetic mean usage
+- Interquartile range
+- Box & whisker plot:
+    - Box
+    - Vertical line
+- Dispersion
+- Positively skewed
+- Kurtosis
+- Spurious correlation
+- Quantile
+- Event
+- Objective probabilities:
+    - Empirical prob
+    - A priori prob
+- Subjective prob
+- Addition rule
+- Multiplication rule
+- Total prob rule
+- Conditional expected value
+- Prob tree
+- Covariance
+- Independent
+- Prob distribution
+- Cumulative distribution func (distribution func)
+- Binomial random var & assumptions
+- -> Bernoulli random var
+- Multi variate distribution (vs uni variate)
+- 95% confident interval
+- Standard normal distribution
+- Shortfall risk
+- Lognormal distribution
+- t-distribution
+- Probability sampling:
+  - Simple random sampling
+  - Systematic sampling
+  - Stratified random sampling
+  - Cluster:
+    - One-stage
+    - 2-stage
+- Non-probability sampling:
+    - Convenience
+    - Judgemental
+- Point estimate
+- Resampling method:
+    - Jackknife
+    - Boostrap
+- Estimator
+- Parameter
+- Not economically significant due to
+- Decision rule
+- Adjusted significance = alpha x rank of p value / number of test
+- Least-squared linear regression model
+- Log-lin regression model
+- Test regression param
+- Coefficient of determination
+- ANOVA table
+
+## Concept answers
+- Ordinary annuities (vs annuities due): cash flows occur at the end of each period
+- Required return = real risk-free rate + expected inflation + default risk premium + liquidity premium + maturity risk premium
+- Structured data: time series/cross-sectional/panel data
+- Frequency distribution: summarize statistical data by assigning them to specific groups/intervals/classes. Steps:
+  - Define intervals
+  - Assign obs to intervals
+  - Count the obs
+- Contingency table: 2d array representing joint frequency of 2 variables
+- -> Marginal frequency: total frequency of a row/column
+- Confusion matrix: contingency table showing predicted & actual true/false
+- Data visualization:
+  - Distributions:
+    - Histogram: bar chart of continuous data classified into frequency distribution (abs frequency)
+    - Frequency polygon: ~histogram, but use line
+    - Word cloud: for text
+  - Comparison among categories & distributions:
+    - Grouped (clustered) bar chart, stacked bar chart: illustrate 2 categories at once
+    - Treemap: color presentation of relative sizes of categories & sub-categories
+  - Comparison over time: line chart: time series data. Add dimensions:
+    - Dif scale: use dual scale
+    - Bubble line chart
+  - Relationship:
+    - Scatter plot: how 2 vars tend to change in relation to each other
+    - -> Scatter plot matrix: analyze more than 2 vars, consist of n(n-1)/2 scatter plots, each presenting 2 vars
+    - Heat map: use color & shade to display data frequency (eg display contingency table)
+    - -> Comparison among categories
+- Trimmed mean: exclude a stated % of the most extreme obs (eg 2% trimmed -> exclude 1% lowest & 1% highest)
+- Mode: value occur most frequently in a dataset
+- -> Uni/bi/trimodal: 1/2/3 modes exist
+- Arithmetic mean: used to estimate the next obs
+- Interquartile range: dif between third & first quartile
+- Box & whisker plot:
+  - Box: central portion of data: interquartile range, mean (x point), median (horizontal line)
+  - Vertical line: entire range
+- Dispersion: variability around the central tendency: range, MAD, variance, coefficient of variation (relative dispersion)
+- Positively skewed: skewed right: mean > median > mode
+- Kurtosis: degree to which a distribution is more or less peaked than a normal distribution. More peak = fatter tail:
+  - Leptokurtic: more peaked -> more data clustered around mean & more outliers -> kurtosis > 3, excess kurtosis > 0
+  - Platykurtic: less peaked
+  - Mesokurtic: equally peaked
+- Spurious correlation: by chance or by correlation with a third var
+- Quantile: a value at or below which a stated proportion of the data in a distribution lies
+- Event: outcome/set of outcomes. Exhaustive events: include all possible outcome
+- Objective probabilities:
+  - Empirical prob: established by analyzing past data
+  - A priori prob: determined by using formal reasoning & inspection process (not data)
+- Subjective prob: use personal judgement (least formal)
+- Addition rule: A or B
+- Multiplication rule: A and B
+- Total prob rule: P(A) from conditional probs
+- Conditional expected value: contingent on the outcome of some other events
+- Prob tree: show conditional probs of various outcomes
+- Covariance: how 2 vars move together
+- -> Positive: when one var > mean, the other aso tends to be > mean
+- Independent: P(A|B) = P(A)
+- Prob distribution: describe probs of all possible outcomes for a random var
+- Cumulative distribution func (distribution func): p(x <= a)
+- Binomial random var: num of success in a given num of trials. Assumptions:
+  - p(success) for each trial is constant
+  - Trials are independent
+- -> Bernoulli random var: num of trial = 1
+- Multi variate distribution (vs uni variate): probs associated with a group of dependent random vars
+- 95% confident interval: range that we expect the random var to be in 95% of the time
+- Standard normal distribution: mean = 0, std = 1. Standardization: (x - mean) / std.
+- Shortfall risk: prob that a portfolio value/return will fall below a particular target value for a given time period
+- Lognormal distribution: generated by e^x, x is normally distributed
+- t-distribution: described  by only degree of freedom. Mean = 0. Flatter & fatter tails
+- Probability sampling: select a sample when we know the prob of each sample member:
+  - Simple random sampling: each item has equal prob of being selected
+  - Systematic sampling: select every n-th item
+  - Stratified random sampling: select a sample from each subgroup (stratum) with sample size ~ group size
+  - Cluster: assuming each subset (cluster) is representative of the overall population:
+    - One-stage: select randomly some clusters -> get all data in those clusters
+    - 2-stage: select random sample from each selected clusters
+- Non-probability sampling:
+  - Convenience
+  - Judgemental: based on experience & judgement
+- Point estimate: value used to estimate population param
+- Resampling method:
+  - Jackknife: calculate multiple sample mean, each with one obs removed from the sample
+  - Boostrap: repeatedly draw samples of size n from full data set
+- Estimator: formula used to compute a point estimate
+- Parameter: any descriptive measure of a population characteristic
+- Not economically significant due to: transaction cost, tax, risk
+- Decision rule: specific & quantitative
+- Adjusted significance = alpha x rank of p value / number of test
+- Least-squared linear regression model: minimized sum squared error
+- Log-lin regression model: log for relative change, lin ear for abs change
+- Test regression param: t test
+- Coefficient of determination (R^2)=r^2=SSR/SST: proportion of total variation of dependent var explained by the regression
+- ANOVA table

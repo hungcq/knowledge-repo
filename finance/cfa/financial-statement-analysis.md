@@ -2,27 +2,24 @@
 - Pay attention to the year above each column
 ## Income statement analysis
 - Example:
-  - <img src="./resources/income-stm-1.png" width="500">
-  - <img src="./resources/income-stm-2.png" width="500">
+  - <img src="./resources/income-stm-1.png" width="600">
+  - <img src="./resources/income-stm-2.png" width="600">
 - Dividends are not included in income stm or other comprehensive income
 - -> Only used for calculating retained earnings, should not deduce it to get net income
-- Basic P/E ratio: (net income - preferred dividends) / num of common shares outstanding
 - Calculate diluted EPS:
   - Number of new shares from stock option:
   num of options - num of options * option price / average market price (not end of period price)
-  - Numerator: net income - preferred dividends + convertible preferred dividends + debt interest * (1 - tax rate)
   - Always calculate basic EPS and compare with diluted EPS, in case diluted EPS > basic EPS
   - Weighted average number of share calculation (p.42 Notes):
   weighted average number of share before the dividend date x dividend rate + weighted average number of share after dividend
 - Trading securities unrealized gain affects net income, available for sale unrealized gain affects equity via other comprehensive income
 ## Balance sheet analysis
 - Example:
-  - <img src="./resources/balance-sheet.png" width="500">
-- Remember all types of assets/liabilities/equities & their examples
-- Trade receivables are reported at net realizable value, uncollectability already accounted for
+  - <img src="./resources/balance-sheet.png" width="600">
+- Trade receivables are reported at net realizable value, un-collectability already accounted for
 ## Cash flow statements
 - Example:
-  - <img src="./resources/cash-flow.png" width="500">
+  - <img src="./resources/cash-flow.png" width="600">
 - Types of activities classified by types of cash flow:
   - Operating:
     - Current assets & current liabilities
@@ -44,8 +41,6 @@
 ## Financial ratios
 - Total debt only include interest-bearing short/long debts (not account payable and other long-term debts)
 - Interest coverage ratio: EBIT / actual interest payment
-- Operating cycle: days of sales outstanding + days of inventory on hand
-- Cash conversion cycle: days of sales outstanding + days of inventory on hand - days payable
 ## Inventories
 - Types of costs included in inventory:
   - Purchase
@@ -64,26 +59,13 @@
   - Increase in current asset: LIFO reserve - tax paid
 - Reversal of inventory write-down: decrease cost of sales
 - Inventory write-down: decrease inventory -> decrease COGS & higher net income compared to normal in later period
+- Inventory write-up: maximum is previous write down
 - Inventory valuation:
   - IFRS: lower of cost and net realizable value
   - GAAP: lower of cost, market value, or net realisable value depending upon the inventory method used
 ## Long-lived assets
 - Cost that can be capitalized: interest paid - interest received from temporarily investing.
-Preferred dividend cost can't be capitalized
-- Impairment loss calculation:
-  - IFRS: write down to recoverable amount: max(value in use, fair value - selling costs).
-  Value in use = PV of future cash flow.
-  - GAAP:
-    - Write down when carrying value > un-discounted future cash flow
-    - Write down to: fair value, or PV of future cash flow if fair value is not known
-- Impairment effect:
-  - Reduce asset value
-  - -> Lower depreciation & higher net income in subsequent periods
-  - Loss in income statement: recorded as operating expense -> reduce net income
-  - No impact on cash flow: not reduce taxable income
-- Revaluation (can be used for PP&E) effect:
-  - Has effect on net income to the extent of previous revaluation reduce net income
-  - Increase asset & equity: revaluation surplus in other comprehensive income. Asset increased in value on balance sheet.
+Preferred dividend cost can't be capitalized.
 - Fair value model (can be used for investment property): increase/decrease in value reflected directly in income
 - Asset purchase/development effect on cash flow:
   - Purchase: expense reduce operating cash flow
@@ -118,54 +100,46 @@ Preferred dividend cost can't be capitalized
 - Lease disclosure: min lease payment in next 5 years & sum lease payment more than 5 years into the future
 
 ## Concept review
-- 17: statement of change in equity
-- 18:
-  - * Auditor's:
-    - Qualified
-    - Adverse
-    - Disclaimer of opinion
-  - Proxy stm
-  - 6 steps of FSA framework
-- 26:
-  - Standard-setting bodies vs regulatory authorities
-  - * Chars of financial stms:
-    - Fundamental
-    - Enhancing
-- 51:
-  - Multistep income stm
-  - Expense categorization
-- 52:
-  - Matching principle
-  - Position in income stm of:
-    - Discontinued operation
-    - Unusual/infrequent items
-  - Prospective change cases
-- 53:
-  - Vertical common size income stm
-  - Comprehensive income
-  - Other comprehensive income
-- 74:
-  - Classified balance sheet
-  - * Current asset
-  - Cash equivalents
-  - Cost model
-- 75:
-  - Accrued liabilities
-  - Unearned revenue
-  - * Components of owner's equity:
-    - Contributed capital
-    - Preferred stock
-    - Retained earning
-    - Treasury stock
-    - Non-controlling (minority) interest
-    - **Accumulated** other comprehensive income
-  - Vertical common size balance sheet
-- 100:
-  - * CFO
-  - * CFI
-  - * CFF
-  - Position of non-cash investing/financing activities
-- 101: advs of direct/indirect method of presenting CFO
+- Statement of change in equity
+- Auditor's:
+  - Qualified
+  - * Adverse
+  - Disclaimer of opinion
+- Proxy stm
+- * 6 steps of FSA framework
+- Standard-setting bodies vs regulatory authorities
+- Chars of financial stms:
+  - Fundamental
+  - Enhancing
+- Multistep income stm
+- Expense categorization
+- * Matching principle
+- Position in income stm of:
+  - Discontinued operation
+  - Unusual/infrequent items
+- Prospective change cases
+- Vertical common size income stm
+- Comprehensive income
+- Other comprehensive income
+- Classified balance sheet
+- Current asset
+- Cash equivalents
+- Cost model
+- Accrued liabilities
+- Unearned revenue
+- Components of owner's equity:
+  - Contributed capital
+  - Preferred stock
+  - Retained earning
+  - Treasury stock
+  - * Non-controlling (minority) interest
+  - **Accumulated** other comprehensive income
+- Vertical common size balance sheet
+- CFO
+- CFI
+- * CFF
+- Position of non-cash investing/financing activities
+- Advs of direct/indirect method of presenting CFO
 - 102:
   - Common size cash flow stms
   - Conversion from indirect to direct
@@ -242,7 +216,7 @@ Preferred dividend cost can't be capitalized
   - Expense categorization: by nature (eg depreciation), by function (eg COGS)
 - 52:
   - Matching principle: match revenue with expense required to generate them
-  - Position in income stm, before or after tax of:
+  - Position in income stm of:
     - Discontinued operation: below income from continuing operations, net of tax
     - Unusual/infrequent items: above income from continuing operations, before tax
   - Prospective change cases: an accounting estimate (eg useful life of asset), inventory cost flow method (GAAP)
@@ -297,7 +271,7 @@ Preferred dividend cost can't be capitalized
     - Cash flow stm: no effect
   - De-recognition (disposal by sale): gain/loss = selling price - book value. Reported on income stm & CFI (affecting net income).
 - 185:
-  - Revaluation model (IFRS):
+  - Revaluation model (IFRS, can be used for PP&E):
     - Revalue assets based on fair value
     - Gain:
       - First recognized in income stm as gain to the extent of previous loss
@@ -305,6 +279,7 @@ Preferred dividend cost can't be capitalized
     - Loss:
       - First reduce revaluation surplus
       - Extra reported as loss in income stm
+    - Increase asset & equity: revaluation surplus in other comprehensive income. Asset increased in value on balance sheet.
     - Disclosure:
       - Revaluation date
       - How fair value was determined
@@ -315,8 +290,12 @@ Preferred dividend cost can't be capitalized
       - Write down to recoverable amount
     - GAAP:
       - When carrying value > undiscounted future cash flows
-      - Write down to fair value
-    - Loss in income stm. No effect on cash flow.
+      - Write down to fair value, or PV of future cash flow if fair value is not known
+    - Effect:
+      - Loss in income stm: recorded as operating expense -> reduce net income
+      - No effect on cash flow: not reduce taxable income
+      - Reduce asset value
+      - -> Lower depreciation & higher net income in subsequent periods
     - Disclosure: loss amount & circumstances that caused the loss
 - 186: investment property (IFRS):
   - Def: property owned for the purpose of earning rent, capital appreciation, or both
