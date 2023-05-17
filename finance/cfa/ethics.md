@@ -19,3 +19,5 @@ not Additional compensation (usually applies to client compensation for performa
 including composites that have been terminated
 - All fee-paying discretionary accounts/portfolios must be included in only 1 composite.
 Non-fee paying, non-discretionary is not required to be included.
+- GIPS 8 main sections:
+  - 

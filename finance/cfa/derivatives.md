@@ -2,6 +2,8 @@
 - Hedge ratio in one-period binomial model for option valuation:
   - hSt(up) - ct = hSt(down) -> h -> hS0(up) - c0 = (hSt(up) - ct) / (1 + r) -> c0
 - Risk neutrality model: option value = (value up x P(up) + value down x P(down)) / (1 + r)
+- Payoff = S - X (or X - S)
+- Profit = payoff - option price
 
 ## Concept review
 - Convenience yield

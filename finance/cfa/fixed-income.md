@@ -176,8 +176,9 @@
   - Medium-term note: corp issues that can be structured to meet the requirements of investors
   - Credit-linked note: yield enhancement instrument (higher yield):
     redeemed at less than par value if a specified credit event occurs on a reference asset
-  - Capital-protected instrument: guaranteed payment & participation in any increase in value of an equity/index/asset
+  - Capital-protected (guaranteed) instrument: guaranteed payment & participation in any increase in value of an equity/index/asset
   - Participation instrument: payments depend on returns on an asset/index/interest rate (eg floating rate bond)
+  - -> No guaranteed payment
   - Leveraged instrument, inverse floater: coupon rate inversely related to a reference rate
 - 40:
   - Short-term funding alternatives available to banks: customer deposit, CD, central bank, inter-bank

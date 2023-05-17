@@ -64,6 +64,9 @@
   - Increase in current asset: LIFO reserve - tax paid
 - Reversal of inventory write-down: decrease cost of sales
 - Inventory write-down: decrease inventory -> decrease COGS & higher net income compared to normal in later period
+- Inventory valuation:
+  - IFRS: lower of cost and net realizable value
+  - GAAP: lower of cost, market value, or net realisable value depending upon the inventory method used
 ## Long-lived assets
 - Cost that can be capitalized: interest paid - interest received from temporarily investing.
 Preferred dividend cost can't be capitalized
