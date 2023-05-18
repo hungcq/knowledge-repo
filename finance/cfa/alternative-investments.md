@@ -21,11 +21,17 @@
 - Calmar ratio
 - Return measures:
   - Multiple of invested capital (money multiplier)
-  - IRR: more accurate
+  - IRR
 - Either or fee
 - Founder's share
 - Private debt
-- Private equity investments. Private investment in public equity.
+- Private equity investments:
+  - Private companies
+  - Public companies to take private
+  - Early stage companies (venture capital fund)
+  - Distressed investment
+  - Developmental capital (minority equity investing)
+- Private investment in public equity
 - Venture capital investment stages
 - Exit strats for private equity fund:
   - Trade sale
@@ -34,7 +40,7 @@
   - Secondary sale
   - Write off/liquidation
 - Types of private debts:
-  - Direct lending
+  - Direct lending. Leveraged loan.
   - Venture debt
   - Mezzanine loan
   - Distressed debt
@@ -90,7 +96,7 @@
 - Venture capital investment stages:
   - Formative:
     - Angel (pre-seed): idea stage
-    - Seed (most popular): fun product dev, marketing, market research
+    - Seed (most popular): fund product dev, marketing, market research
     - Early (start-up): fund initial commercial production
   - Later stage (expansion): fund expansion for companies which already have production & sales
   - Mezzanie stage: fund to prepare for an IPO

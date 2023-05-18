@@ -103,17 +103,17 @@ Preferred dividend cost can't be capitalized.
 - Statement of change in equity
 - Auditor's:
   - Qualified
-  - * Adverse
+  - Adverse
   - Disclaimer of opinion
 - Proxy stm
-- * 6 steps of FSA framework
+- 6 steps of FSA framework
 - Standard-setting bodies vs regulatory authorities
 - Chars of financial stms:
   - Fundamental
   - Enhancing
 - Multistep income stm
 - Expense categorization
-- * Matching principle
+- Matching principle
 - Position in income stm of:
   - Discontinued operation
   - Unusual/infrequent items
@@ -132,64 +132,53 @@ Preferred dividend cost can't be capitalized.
   - Preferred stock
   - Retained earning
   - Treasury stock
-  - * Non-controlling (minority) interest
+  - Non-controlling (minority) interest
   - **Accumulated** other comprehensive income
 - Vertical common size balance sheet
 - CFO
 - CFI
-- * CFF
+- CFF
 - Position of non-cash investing/financing activities
 - Advs of direct/indirect method of presenting CFO
-- 102:
-  - Common size cash flow stms
-  - Conversion from indirect to direct
-- 132:
-  - * Business/geographic segment of a firm
-  - Pro forma financial stm
-- 154: inventory write up
-- 183:
-  - Treatment of:
-    - Internally developed asset cost
-    - Research cost
-    - Development cost
-  - Classification of cash outflow for capitalized asset
-- 184:
-  - Component depreciation
-  - Cash flow under dif depreciation methods
-  - Impairment's effect:
-    - Net income, asset, equity, ROA, ROE
-    - Cash flow stm
-  - * De-recognition (disposal by sale)
-- 185:
-  - * Revaluation model. Disclosure.
-  - * Impairment treatment. Effect in income, cash flow stm. Disclosure.
-- 186: investment property:
+- Common size cash flow stms
+- Conversion from indirect to direct
+- Business/geographic segment of a firm
+- Pro forma financial stm
+- Inventory write up
+- Treatment of:
+  - Internally developed asset cost
+  - Research cost
+  - Development cost
+- Classification of cash outflow for capitalized asset
+- Component depreciation
+- Cash flow under dif depreciation methods
+- Impairment's effect:
+  - Net income, asset, equity, ROA, ROE
+  - Cash flow stm
+- De-recognition (disposal by sale)
+- Revaluation model. Disclosure.
+- Impairment treatment. Effect. Disclosure.
+- Investment property:
   - Def
   - Report
   - Treatment of increase in value for fair value model
-- 204:
-  - Taxable income
-  - * Tax payable
-  - Income tax expense
-  - Valuation allowance
-  - Treatment of deferred tax liabilities for analytical purpose
-- 205:
-  - Asset's tax base, calculation
-  - * Temporary difference
-- 201:
-  - Statutory tax rate
-  - Effective tax rate
-- 224: bond's proceed value
-- 225:
-  - * Gain/loss when redeem bond early
-  - Position of details about long-term debt's
-- 219: * treatment of lease IFRS/GAAP for leasee, leasor
-- 226: net pension liability/asset calculation, report
-- 239: financial reporting quality spectrum
-- 240:
-  - Low quality report conditions
-  - Mechanisms to discipline reporting quality
-  - * Treatment of non GAAP measure
+- Taxable income
+- Tax payable
+- Income tax expense
+- Valuation allowance
+- Treatment of deferred tax liabilities for analytical purpose
+- Asset's tax base, calculation
+- Temporary difference
+- Statutory tax rate
+- Effective tax rate
+- Bond's proceed value
+- Gain/loss when redeem bond early
+- Position of details about long-term debt's
+- Net pension liability/asset calculation, * report
+- Financial reporting quality spectrum
+- Low quality report conditions
+- Mechanisms to discipline reporting quality
+- Treatment of non GAAP measure
 
 ## Concept answers
 - 17: statement of change in equity: amount & sources of changes in equity
@@ -267,7 +256,8 @@ Preferred dividend cost can't be capitalized.
   - Component depreciation (IFRS)
   - Cash flow under dif depreciation methods: unaffected: same tax payable, dif income tax expense
   - Impairment's effect:
-    - Decrease net income, asset, equity -> lower ROA, ROE
+    - Decrease net income -> lower ROA, ROE
+    - Increase asset & equity: revaluation surplus in other comprehensive income. Asset increased in value on balance sheet.
     - Cash flow stm: no effect
   - De-recognition (disposal by sale): gain/loss = selling price - book value. Reported on income stm & CFI (affecting net income).
 - 185:
@@ -279,7 +269,6 @@ Preferred dividend cost can't be capitalized.
     - Loss:
       - First reduce revaluation surplus
       - Extra reported as loss in income stm
-    - Increase asset & equity: revaluation surplus in other comprehensive income. Asset increased in value on balance sheet.
     - Disclosure:
       - Revaluation date
       - How fair value was determined

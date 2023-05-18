@@ -1,3 +1,99 @@
+# Concept review
+## Corporate structures & ownership
+- Business structures:
+  - Sole proprietorship
+  - General partnership
+  - Limited partnership
+  - Corp: structure, profit, liability, capital access
+- Tax in business structure
+- For-profit org: public corp (vs private corp)
+- Private placement memorandum
+- Ways to become public
+- Ways to become private
+- Equity holder interest (vs debt holder)
+## Corp gov & ESG
+- Shareholder theory
+- Stakeholder theory (broader)
+- Related party transaction
+- Stakeholder management
+- Resolution:
+  - Ordinary
+  - Special
+- Activist shareholder mechanism:
+  - Proxy fight
+  - Tender offer
+  - Hostile takeover
+- Board of directors committees:
+  - Audit
+  - Governance
+  - Nomination
+  - Compensation (remuneration)
+  - Risk
+  - Investment
+- Common law
+- ESG investing terms:
+  - Responsible investing
+  - Sustainable investing
+  - Socially responsible investing
+- Approaches to integrating ESG factors into portfolio management process:
+  - Negative screening
+  - Positive screening
+  - Best-in-class (relative) approach
+  - Full integration
+  - Thematic investing
+  - Engagement/active ownership
+  - Green finance
+- Green bond
+## Business models & risks
+- Business model: def:
+- Business model terms:
+  - Penetration pricing
+  - Fractional ownership
+  - Franchising: franchisee, franchisor
+  - Private label manufacturer
+  - Value-added resellers
+  - Affiliate marketing
+  - Aggregator (vs marketplace business)
+- Value proposition
+- Value chain
+- Supply chain
+- Risks:
+  - Macro
+  - Business
+  - Financial
+## Capital investment
+- Discount rate (in NPV calculation) = opportunity cost of capital (COC)
+- Capital budgeting analysis usually applies to
+- Capital component break point
+- Costs included in capital allocation process
+- Costs not included in capital allocation process
+- Problems of adjusting the cost of capital for flotation costs
+- Real options: def:
+  - Timing
+  - Abandonment
+  - Expansion
+  - Flexibility
+  - Fundamental
+## Working capital & liquidity
+- Bank lines of credit:
+  - Uncommitted
+  - Committed
+  - Revolving
+- Working capital management approaches: conservative (vs aggressive)
+- Sources of liquidity:
+  - Primary
+  - Secondary
+- Drags on liquidity
+- Pull on liquidity
+## Capital structure
+- Estimation of WACC
+- Static trade-off theory (vs MM proposition with taxes)
+- Agency cost of equity
+- Cost of asymmetric info
+- Pecking order theory
+## Leverage
+- Contribution margin
+
 # Corporate issuers
 ## Corporate structures & ownership
 - Business structures:
@@ -93,7 +189,7 @@ which majority shareholders have a financial interest -> detriment of minority s
     - Franchisee sell in specific area & pays % sale to franchisor
     - Franchisor provide some product & marketing support
   - Private label manufacturer: product products for others to market under their own brand name
-  - Value-added resellers: adding installation, support & customization
+  - Value-added resellers: add installation, support & customization
   - Affiliate marketing: do marketing for a fee
   - Aggregator (vs marketplace business): provide a marketplace but sell products & services under its own brand name
 - Value proposition: how customers will value the chars of the product/service, compared to competing products
@@ -109,11 +205,11 @@ which majority shareholders have a financial interest -> detriment of minority s
 - Discount rate (in NPV calculation) = opportunity cost of capital (COC)
 - Capital budgeting analysis usually applies to replacement/mandatory project, not research & development project (high risk)
 - Capital component break point = value at which component's cost of capital changes / component weight in WACC
-- Cost included in capital allocation process (calculating project's cash flow):
+- Costs included in capital allocation process (calculating project's cash flow):
   - Externalities
   - Opportunity cost
   - Tax impact
-- Cost not included in capital allocation process:
+- Costs not included in capital allocation process:
   - Financing cost: included in required rate of return
   - Sunk cost (eg research & development)
 - Problems of adjusting the cost of capital for flotation costs: increase cost of capital
