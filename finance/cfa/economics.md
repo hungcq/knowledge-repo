@@ -37,6 +37,11 @@
     - <img src="resources/cycle-employment.png" width="600">
     - <img src="resources/cycle-inventory.png" width="600">
 - Credit cycles tend to be  longer, deeper, and sharper than business cycles
+- Fiscal policy is the use of taxes and government spending to affect the level of aggregate expenditures
+- Monetary policy:
+  - Def 1: action taken by a nation's central bank to affect aggregate output and prices
+    through changes in bank reserves, reserve requirements, or its target interest rate
+  - Def 2: central bank activities that are directed toward influencing the quantity of money and credit in an economy
 ## Geopolitics
 - Tools of geopolitics:
     - <img src="resources/geopolitics-tools.png" width="600">

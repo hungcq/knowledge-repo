@@ -12,7 +12,8 @@
   - Always calculate basic EPS and compare with diluted EPS, in case diluted EPS > basic EPS
   - Weighted average number of share calculation (p.42 Notes):
   weighted average number of share before the dividend date x dividend rate + weighted average number of share after dividend
-- Trading securities unrealized gain affects net income, available for sale unrealized gain affects equity via other comprehensive income
+- Trading securities unrealized gain affects net income,
+available for sale unrealized gain affects equity via other comprehensive income
 ## Balance sheet analysis
 - Example:
   - <img src="./resources/balance-sheet.png" width="600">
@@ -80,24 +81,6 @@ Preferred dividend cost can't be capitalized.
 ## Income tax
 - Higher tax base of asset = less depreciation = higher taxable income = more tax paid = tax asset
 - Income tax expense (provision for income tax) = tax payable + dDTL - dDTA
-## Long-term liabilities
-- Accounting treatments by types of leases:
-  - Short-term, low-value lease: report rent expense in income statement
-  - For lessee, operating & financing lease:
-    - Record right-of-use asset & lease liability on balance sheet. Value = PV of lease payments.
-    - (Basically) Amortize the asset & reduce lease liability by each lease payment
-  - For lessor:
-    - Financing (capital) lease:
-      - Remove lease asset, add lease receivable (value = PV of lease payments) to balance sheet
-      - -> Record gain/loss = lease receivable value - lease asset book value
-      - For each lease payment:
-        - Amortize the lease receivable (as revenue)
-        - Record interest amount as income
-      - -> All are recorded as operating cash flow
-    - Operating lease:
-      - Keep leased asset on balance sheet, record depreciation expense normally
-      - Lease payments reported as income, operating cash
-- Lease disclosure: min lease payment in next 5 years & sum lease payment more than 5 years into the future
 
 ## Concept review
 - Statement of change in equity
@@ -179,6 +162,8 @@ Preferred dividend cost can't be capitalized.
 - Low quality report conditions
 - Mechanisms to discipline reporting quality
 - Treatment of non GAAP measure
+- Accounting treatments by types of leases: lessee & lessor
+- Lease disclousure
 
 ## Concept answers
 - 17: statement of change in equity: amount & sources of changes in equity
@@ -324,3 +309,20 @@ Preferred dividend cost can't be capitalized.
   - Low quality report conditions: motivation, opportunity, rationalization
   - Mechanisms to discipline reporting quality: regulation, auditing, private contract
   - Treatment of non GAAP measure: explanation & reconciliation
+- Accounting treatments by types of leases:
+  - Short-term, low-value lease: report rent expense in income statement
+  - For lessee, operating & financing lease:
+    - Record right-of-use asset & lease liability on balance sheet. Value = PV of lease payments.
+    - (Basically) Amortize the asset & reduce lease liability by each lease payment
+  - For lessor:
+    - Financing (capital) lease:
+      - Remove lease asset, add lease receivable (value = PV of lease payments) to balance sheet
+      - -> Record gain/loss = lease receivable value - lease asset book value
+      - For each lease payment:
+        - Amortize the lease receivable (as revenue)
+        - Record interest amount as income
+      - -> All are recorded as operating cash flow
+    - Operating lease:
+      - Keep leased asset on balance sheet, record depreciation expense normally
+      - Lease payments reported as income, operating cash
+- Lease disclosure: min lease payment in next 5 years & sum lease payment more than 5 years into the future

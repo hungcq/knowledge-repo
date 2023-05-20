@@ -1,5 +1,4 @@
 # Fixed income
-- Discount margin = YTM - reference rate
 - Rates if not mentioned period, are always quoted on 1-year basis
 - Capital gain/loss on selling bond = sell price - NPV
 ## Risk & return
@@ -12,116 +11,106 @@
 - Credit rating focus primarily on probability of default. Loss severity & liquidity are secondary, used for notching.
 
 ## Concept review
-- * Plain vanilla bond
-- * Original discount tax provision
-- 25: bond indenture/trust deed
-- 26:
-  - Foreign bond/Eurobond market/currency
-  - Secured/unsecured bond
-  - Credit enhancements:
-    - Internal:
-      - Over-collateralization
-      - Excess spread
-      - Tranches
-    - External:
-      - Surety bond
-      - Bank guarantee
-      - Letter of credit
-  - Tax treatment of interest income, selling bond, pure discount bond
-  - Cash flow:
-    - Bullet/fully amortizing/partially amortizing
-    - Sinking fund provision
-    - * 20-21: step up coupon note, credit-linked bond, payment-in-kind, deferred coupon, index-linked, principal protected
+- Tenor
+- Plain vanilla bond
+- Original discount tax provision
+- Bond indenture/trust deed
+- Foreign bond/Eurobond market/currency
+- Secured/unsecured bond
+- Credit enhancements:
+  - Internal:
+    - Over-collateralization
+    - Excess spread
+    - Tranches
+  - External:
+    - Surety bond
+    - Bank guarantee
+    - Letter of credit
+- Tax treatment of interest income, selling bond, pure discount bond
+- Cash flow:
+  - Bullet/fully amortizing/partially amortizing
+  - Sinking fund provision
+  - Step up coupon note, credit-linked bond, payment-in-kind, deferred coupon, index-linked, principal protected
 - Investment grade
-- 30:
-  - Grey market
-  - Syndicate
-  - Shelf-registration
-- 38:
-  - Auction of bond: common case
-  - Private placement
-- 31: tender offer
-- 39:
-  - Settlement date of gov bond, corp bond
-  - Non-sovereign gov bond, agency (quasi) gov bond
-  - Bank debt: bilateral loan, syndicated loan
-  - Commercial paper
-  - Term maturity, serial maturity structure
-  - * Medium-term note
-  - Credit-linked note
-  - * Capital-protected instrument
-  - * Participation instrument
-  - Leveraged instrument, inverse floater
-- 40:
-  - Short-term funding alternatives available to banks
-  - Repurchase agreement: repo rate, repo margin (haircut), reverse repo
-- 65:
-  - Method for determining period of accrued bond interest:
-    - Gov bond
-    - Corp bond
-  - Matrix pricing example
-  - * True yield
-  - Simple yield
-  - Yield to call, yield to worst
-- 66:
-  - Par curve
-  - Forward curve
-  - I-spread (interpolated spread)
-- 67:
-  - * Z-spread
-  - Option-adjusted spread (OAS) for callable bond
-- 85:
-  - * Parties involved in securitization
-  - Tranches, time tranching, credit tranching
-- 86:
-  - Prepayment risk
-  - Balloon risk
-  - RMBS:
-    - Recourse/non recourse
-    - Loan to value (LTV) ratio, meaning
-    - Pass through rate
-    - Conditional prepayment rate
-    - Single monthly maturity rate (SMM)
-    - PSA prepayment
-    - * Credit enhancement for which type of ABS
-    - * CMO:
-      - Def
-      - Usually used tranching:
-        - Sequential pay CMO
-        - Planned amortization CMO (PAC)
-  - CMBS:
-    - * Def
-    - * Characteristic
-    - Call (prepayment) protection:
-      - Loan-level: defeasance, yield maintenance charge
-      - CMBS level
-  - Asset-backed securities (ABS): * def:
-    - Auto loan: chars
-    - Credit card:
-      - * Chars
-      - Lockout period
-  - CDO: collateralized debt obligation: * def: structured finance CDO, * synthetic CDO
-  - Covered bond: chars
-- 109:
-  - Effective duration usage
-  - Key rate duration
+- Grey market
+- Syndicate
+- Shelf-registration
+- Auction of bond: common case
+- Private placement
+- Tender offer
+- Settlement date of gov bond, corp bond
+- Non-sovereign gov bond, agency (quasi) gov bond
+- Bank debt: bilateral loan, syndicated loan
+- Commercial paper
+- Term maturity, serial maturity structure
+- Medium-term note
+- Credit-linked note
+- Capital-protected instrument
+- Participation instrument
+- Leveraged instrument, inverse floater
+- Short-term funding alternatives available to banks
+- Repurchase agreement: repo rate, repo margin (haircut), reverse repo
+- Method for determining period of accrued bond interest:
+  - Gov bond
+  - Corp bond
+- Matrix pricing example
+- True yield
+- Simple yield
+- Yield to call, yield to worst
+- Discount margin
+- Par curve
+- Forward curve
+- I-spread (interpolated spread)
+- Z-spread
+- Option-adjusted spread (OAS) for callable bond
+- Parties involved in securitization
+- Tranches, time tranching, credit tranching
+- Prepayment risk
+- Balloon risk
+- RMBS:
+  - Recourse/non recourse
+  - Loan to value (LTV) ratio, meaning
+  - Pass through rate
+  - Conditional prepayment rate
+  - Single monthly maturity rate (SMM)
+  - PSA prepayment
+  - Credit enhancement for which type of ABS
+  - CMO:
     - Def
-    - Usage
-  - Effect of change in YTM on duration
-  - Effect of put/call provision on duration
-  - * Term structure of yield volatility
-  - * Empirical duration, effective scenario
-- 127:
-  - * Credit risk components
-  - Spread risk components
-  - * Priority of claims on corp debt
-  - Issuer credit rating (usually apply to), issue credit rating, notching
-- 128:
-  - 4 components of credit analysis
-  - Capacity analysis
-  - Condition for narrow spread
+    - Usually used tranching:
+      - Sequential pay CMO
+      - Planned amortization CMO (PAC)
+- CMBS:
+  - Def
+  - Characteristic
+  - Call (prepayment) protection:
+    - Loan-level: defeasance, yield maintenance charge
+    - CMBS level
+- Asset-backed securities (ABS): * def:
+  - Auto loan: chars
+  - Credit card:
+    - Chars
+    - Lockout period
+- CDO: collateralized debt obligation: * def: structured finance CDO, * synthetic CDO
+- Covered bond: chars
+- Effective duration usage
+- Key rate duration:
+  - Def
+  - Usage
+- Effect of change in YTM on duration
+- Effect of put/call provision on duration
+- Term structure of yield volatility
+- Empirical duration, effective scenario
+- Credit risk components
+- Spread risk components
+- Priority of claims on corp debt
+- Issuer credit rating (usually apply to), issue credit rating, notching
+- 4 components of credit analysis
+- Capacity analysis
+- Condition for narrow spread
 
 ## Concept answers
+- Tenor: time left until maturity
 - Plain vanilla bond: standard coupon bond
 - Original discount tax provision:
   - Requires the investor to include a prorated portion of the original issue discount
@@ -191,6 +180,7 @@
   - True yield: account for coupon payment delayed by weekends/holidays -> < street yield
   - Simple yield: adjust current yield using straight-line amortization of discount/premium (discount +, premium -)
   - Yield to call, yield to worst
+- Discount margin = YTM - reference rate
 - 66:
   - Par curve: show coupon rate for bonds of various maturities that would result in bond price = par value
     (spot rates dif for dif maturities)

@@ -1,5 +1,6 @@
 # Equity
 - Fama & French 3 factors model: relative size, relative book-to-market value, and beta of the asset
+- Warrant holders have the right to buy the issuer's common stock
 ## Market structure
 - Bid = dealer buy in = lower price
 - Offer = dealer sell out = higher price
