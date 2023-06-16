@@ -1,0 +1,8 @@
+- ISO:
+  - How sensitive the image sensor is to light
+  - Higher = more sensitive -> brighter image
+  - Range:
+    - 100 or 200: sunny day or bright setting with lots of light
+    - 400: cloudy days or indoor shots
+    - 800: indoors without an external light
+    - 1600+: for low light situations
