@@ -1,0 +1,5 @@
+- Exam domains:
+  - Security: 30%
+  - Resilience: 26%
+  - High performance: 24%
+  - Cost optimization: 20%

@@ -1,0 +1,51 @@
+# Solution architecture discussion
+- 5 pillars:
+  - Cost
+  - Performance
+  - Reliability
+  - Security
+  - Operational excellence
+- WhatIsTheTime: stateless web app:
+  - 1 instance, scaling vertically
+  - -> Elastic IP
+  - Scaling horizontally
+  - -> DNS, A record, multiple IPs
+  - -> DNS, Alias record + ELB + health check for availability
+  - Autoscaling group: reduce manual operation effort
+  - -> Multi AZs for availability
+  - Reserved instance for cost saving
+- MyClothes: stateful web app: online shopping with cart:
+  - ELB stateful session: maintain user session
+  - -> Cookies: heavy request, need validation
+  - -> Server session in ElastiCache/DynamoDB, session ID stored in cookies
+  - RDS stores user data
+  - -> Cache/read replicas to scale read
+  - Multi Azs for ELB, ASG, RDS, ElastiCache for availability
+  - Security group ref each other to restrict to private traffic (except LB) for security
+- MyWordPress: global scale, support picture upload & access:
+  - File storage: EBS volume attach to 1 EC2 instance
+  - -> EFS for scalability, use ENI attached to EC2 instances to connect to EFS
+  - Aurora RDS for easy multi AZs & read replicas
+- Instantiate apps quickly:
+  - EC2: use Golden AMI: install OS, app dependencies beforehand
+  - -> Beanstalk to mix Golden AMI & dynamic user data script
+  - RDS DB: restore from snapshot -> schema ready
+  - EBS volume: restore from snapshot: disk formatted & have data
+- Elastic Beanstalk:
+  - Def: dev centric view of deploying an app on AWS
+  - -> Managed service, dev do configuration & code
+  - Use commonly used components: eg EC2, ASG, ELB, RDS
+  - Cost:
+    - Beanstalk: free
+    - Other components: cost money
+  - Components:
+    - App: collections of Beanstalk components (envs, versions, configs)
+    - App version: iteration of app code
+    - Env:
+      - Def: collection of AWS resources running an app version
+      - Tiers: web env tier & worker env tier (process work using queue, scale based on queue load)
+      - Can create multiple env
+    - Process: create app -> upload app version -> launch env -> manage env
+    - Deployment mode:
+      - Single instance: suitable for dev
+      - High availability with LB & RDS failover: suitable for production

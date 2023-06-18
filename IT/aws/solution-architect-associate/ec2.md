@@ -1,0 +1,157 @@
+# Elastic compute cloud (EC2)
+- Create budget to get notified about cost passing a specific budget
+- EC2: elastic compute cloud
+- Config:
+  - Window
+  - CPU: cores & compute power
+  - RAM
+  - Storage:
+    - Network attached (EBS & EFS)
+    - Hardware (EC2 instance store)
+  - Network card: speed, public IP
+  - Firewall rules: security group
+  - Bootstrap script: config instance at first run (EC2 user data)
+- Naming convention: m5.2xlarge:
+  - m: instance class
+  - 5: generation (higher better)
+  - 2xlarge: size within the instance class
+- Security group:
+  - Control traffic into/out of EC2 instances (~firewall outside the instance)
+  - Contain only allow rules
+  - Can reference by IP/security group
+  - Regulate:
+    - Access to port
+    - Authorized IP ranges
+  - Group:Instance n:n
+  - Locked down to a region/VPC combination
+  - Recommendation: maintain one security group for SSH access
+  - Default:
+    - Block all inbound traffic
+    - Allow all outbound traffic
+  - Troubleshooting:
+    - Timeout (not accessible): security group issue
+    - Connection refused: app error (eg not launched)
+- Attach role to instance to give it permissions (not aws configure)
+- Purchase options:
+  - On-demand: short workload, predictable pricing, pay by second
+  - Reserved (1/3 years):
+    - Long workload (eg DB)
+    - Can be sell in marketplace
+    - Convertible reserved: flexible instance
+  - Saving plan (1/3 years): commitment to an amount of usage, long workload.
+    Usage beyond saving plan billed at on-demand price.
+  - Spot instance:
+    - Short workload, resistant to failure, cheapest, can lose instance if someone paying more
+    - -> Define max spot price & get the instance when current spot price < max
+    - Create via spot request
+    - Spot request is independent of spot instance
+    - -> To terminate: cancel request then terminate instance
+    - Spot fleet: set of spot instances + (optional) on-demand instances:
+      - Try to meet capacity within price constraints
+      - Define launch pools: instance type, OS, AZ
+      - Strategies:
+        - Lowest price pool
+        - Diversified: distributed across pools
+        - Capacity optimized: highest capacity pool
+        - Price capacity optimized (recommended): highest capacity -> lowest price
+  - Dedicated host:
+    - Book entire physical server, control instance placement
+    - To address compliance requirement/software licence per socket/core/VM
+    - Purchase options:
+      - On-demand
+      - Reserved
+    - Most expensive
+  - Dedicated instance: no other customers share the hardware
+  - Capacity reservation: reserve on-demand capacity in a specific AZ for any duration
+  - -> Suitable for short-term uninterrupted workload on specific AZ
+- Private IP: access the internet via NAT + internet gateway
+- Elastic IP:
+  - IPv4
+  - Used to have fixed IP for EC2 instance
+  - Can be attached to one instance at a time
+  - -> If one instance fails, can move to another instance
+  - Max: 5 per account
+  - Best practice: use random public IP & assign DNS name to instance or use LB
+- Placement group: control over EC2 instances placement strat:
+  - Cluster: into low latency cluster (same rack) within AZ -> higher risk of failure
+  - Spread: spread over underlying hardware (max 7 instances per group per AZ) -> for critical apps
+  - Partition: spread over partitions (on dif racks, max 7 per AZ). Partitions are separated from each other's failure.
+  - -> Used for partition-aware app (eg Kafka, Hadoop)
+- -> Select when launch EC2 instance
+- Elastic network interface (ENI):
+  - Logical component in VPC representing a virtual network card
+  - Attributes:
+    - 1 primary private v4 IP
+    - 1+ secondary private v4 IP
+    - 1 public IPv4
+    - 1+ security group
+    - 1 MAC address
+  - Can be created independently & move (attach) to EC2 on the fly for failover
+  - Bound to specific AZ
+- -> Use to have more control over private IP
+- Hibernate: preserve RAM state into disk
+- -> Faster boot
+## Storage
+- EBS (elastic block storage):
+  - Network device that can be attached to instances while running
+  - -> Store data even after terminated
+  - Can be mounted to 1 instance at a time
+  - Bound to AZ -> need to snapshot to move between AZ
+  - Billed for provision capacity
+  - Delete on termination attribute
+  - Volume types:
+    - gp2/3: general purpose SSD. gp3 can set IOPS independently (not depend on size)
+    - io1/2: high performance SSD, provision IOPS. Support EBS multi-attach:
+      - To multiple EC2 instances (max 16) in the same AZ
+      - File system must be cluster-aware
+      - Apps must handle concurrent write
+    - -> When need >16k IOPS, suitable for DBs. Max IOPS io1: 64k, max IOPS io2 block express: 256k.
+    - -> Higher IOPS must use instance store.
+    - st l: low cost, general purpose HDD
+    - sc l: lowest cost, low throughput HDD
+  - -> HDD can't be boot volume
+- EBS snapshot:
+  - Can be copied between AZ/region
+  - Can be archived: cheaper, need time to restore
+  - Delete: moved to recycle bin
+  - Fast snapshot restore: force full initialization of snapshot to have no latency on first use
+- AMI (amazon machine image):
+  - Customization of EC2 instance (eg software, config)
+  - -> Faster boot & config time
+  - Built for specific region, can be copied across regions
+  - Can launch instances from:
+    - Public AMI
+    - Your own AMI: need to create & maintain
+    - Marketplace AMI: created & sold by others
+- Instance store:
+  - Higher performance hardware disk attached to EC2 instance (local)
+  - Ephemeral, risk of failure -> use for buffer, cache, temp content
+  - -> Need backup & replication
+- EBS encryption:
+  - Layer: data, data transfer, snapshot
+  - Chars: automatically handled, minimal impact on latency, use KMS keys (AES-256)
+  - Encrypt an unencrypted volume: create unencrypted snapshot -> copy as encrypted -> create volume from snapshot
+- EFS (elastic file system):
+  - Def: managed network file system that can be mounted on any EC2
+  - Chars:
+    - Can be bound to EC2 instances cross AZs
+    - Highly available, automatically scalable, expensive
+    - Work with Linux based OS (POSIX file system)
+    - Encryption at rest using KMS
+  - Use cases: content management, web serving...
+  - Performance classes:
+    - Scale
+    - Performance mode (set at creation):
+      - General purpose: latency sensitive use case
+      - Max IO: higher latency, throughput & parallelism
+    - Throughput mode:
+      - Bursting
+      - Provisioned: set throughput regardless of storage size
+      - Elastic: scale based on workload
+  - Storage classes:
+    - Storage tiers:
+      - Standard: for frequently accessed file
+      - Infrequent access (EFS-IA): can be managed via life cycle policy
+    - Availability & durability:
+      - Standard: good for production
+      - One zone: good for dev, back up enabled by default, one zone IA

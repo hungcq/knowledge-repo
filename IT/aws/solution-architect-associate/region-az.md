@@ -1,0 +1,11 @@
+# Region & availability zone
+- Region:
+  - Def: cluster of data centers
+  - Most services are regional
+  - Usually have 3 availability zones
+- Considerations:
+  - Compliance: data gov & legal
+  - Proximity
+  - Available services
+  - Pricing
+- Points of presence (ie edge locations) -> deliver content with low latency

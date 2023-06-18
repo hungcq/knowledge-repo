@@ -1,0 +1,47 @@
+# Identity & access management (IAM)
+- Group: contain users, not group
+- 1 user can belong to 0 -> n group
+- Policy:
+  - JSON doc: define permissions
+  - -> Least privilege principle: give users only the needed permissions
+  - Group vs inline policy: for 1 user
+  - Components:
+    - Version
+    - ID
+    - Statement:
+      - Sid
+      - Effect: allow/deny
+      - Principal (map): user/account/role
+      - Action: array allow/deny actions
+      - Resource: array
+      - Condition: when to apply
+- Password policy:
+  - Length
+  - Specific character types
+  - Allow users to change password
+  - Password expiration
+  - Password reuse prevention
+- MFA = password + security device. Types of devices:
+  - Virtual (eg Google Auth, Authy)
+  - Universal 2nd factor (U2F) security key
+  - Hardware key fob
+- Access via:
+  - Management console: use password + MFA
+  - CLI: use access key
+  - SDK (libs for code): use access key
+- Access key: managed by users. Components:
+  - ID: ~username
+  - Secret: ~password
+- Role: assign permissions to services
+- Security tools (for audit):
+  - Credentials report (account level): list users & status of their credentials
+  - Access advisor (user level): service permissions granted & last access of those services
+- Best practices:
+  - Root account: shouldn't be used or shared, except for AWS account setup
+  - 1 user ~ 1 person in org
+  - Assign users to groups & assign permissions to groups
+  - Create strong password policy
+  - Use & enforce MFA
+  - Use roles to give permissions to services
+  - Use access key for programmatic access (CLI/SDK)
+  - Audit permissions using security tools
