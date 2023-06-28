@@ -1,0 +1,148 @@
+# Storage
+## EBS (elastic block storage)
+- Network device that can be attached to instances while running
+- -> Store data even after terminated
+- Can be mounted to 1 instance at a time
+- Bound to AZ -> need to snapshot to move between AZ
+- Billed for provision capacity
+- Delete on termination attribute
+- Volume types:
+  - gp2/3: general purpose SSD. gp3 can set IOPS independently (not depend on size)
+  - io1/2: high performance SSD, provision IOPS. Support EBS multi-attach:
+    - To multiple EC2 instances (max 16) in the same AZ
+    - File system must be cluster-aware
+    - Apps must handle concurrent write
+  - -> When need >16k IOPS, suitable for DBs. Max IOPS io1: 64k, max IOPS io2 block express: 256k.
+  - -> Higher IOPS must use instance store.
+  - st l: low cost, general purpose HDD
+  - sc l: lowest cost, low throughput HDD
+- -> HDD can't be boot volume
+- EBS snapshot:
+  - Can be copied between AZ/region
+  - Can be archived: cheaper, need time to restore
+  - Delete: moved to recycle bin
+  - Fast snapshot restore: force full initialization of snapshot to have no latency on first use
+- EBS encryption:
+  - Layer: data, data transfer, snapshot
+  - Chars: automatically handled, minimal impact on latency, use KMS keys (AES-256)
+  - Encrypt an unencrypted volume: create unencrypted snapshot -> copy as encrypted -> create volume from snapshot
+## Instance store
+- Higher performance hardware disk attached to EC2 instance (local)
+- Ephemeral, risk of failure -> use for buffer, cache, temp content
+- -> Need backup & replication
+## EFS (elastic file system)
+- Def: managed network file system that can be mounted on any EC2
+- Chars:
+  - Can be bound to EC2 instances cross AZs
+  - Highly available, automatically scalable, expensive
+  - Work with Linux based OS (POSIX file system)
+  - Encryption at rest using KMS
+- Use cases: content management, web serving...
+- Performance classes:
+  - Scale
+  - Performance mode (set at creation):
+    - General purpose: latency sensitive use case
+    - Max IO: higher latency, throughput & parallelism
+  - Throughput mode:
+    - Bursting
+    - Provisioned: set throughput regardless of storage size
+    - Elastic: scale based on workload
+- Storage classes:
+  - Storage tiers:
+    - Standard: for frequently accessed file
+    - Infrequent access (EFS-IA): can be managed via life cycle policy
+  - Availability & durability:
+    - Standard: good for production
+    - One zone: good for dev, back up enabled by default, one zone IA
+## Snow family
+- Def: secure offline portable devices to:
+  - Migrate data into/out of AWS
+  - -> Solve problems of transferring lots of data via network
+  - Collect & process data at edge location (no internet/processing capacity)
+- Migration:
+  - Types:
+    - Snowball edge:
+      - Storage optimized: 80TB HDD
+      - Compute optimize: 42TB HDD/28GB NVMe
+    - Snow cone: smaller, more portable:
+      - Snow cone: 8TB HDD
+      - Snow cone SSD: 14TB SSD
+    - -> Can send back to AWS or send via network using AWS Data Send
+    - Snow mobile: truck: transfer 100PB (100,000 TB) each. Can use multiple.
+  - Process:
+    - Request devices from AWS console
+    - Install snowball client/AWS Ops Hub (desktop app) on server
+    - Connect snowball to server & copy files using client app
+    - Ship back device
+    - Data loaded into S3 bucket
+- Edge computing:
+  - Types:
+    - Snow cone & snow cone SSD: 2 CPUs, 4GB RAM, wired/wireless access
+    - Snowball edge:
+      - Compute optimized: 104 vCPUs, 416 GB RAM, optional GPU, 42 TB HDD/28 TB NVMe
+      - Storage optimized: 40 vCPUs, 80 GB RAM, 80 TB storage. Object storage clustering available.
+  - Can run EC2 instances & AWS lambda functions (using AWS IoT Greengrass)
+  - Long-term deployment (1-3 years): discount price
+## FSx
+- Def: fully managed service to launch 3rd party high performance file systems on AWS
+- Supported file systems:
+  - Lustre (linux cluster):
+    - Use cases: ML, high performance computing (HPC)
+    - Storage options: SSD, HDD
+    - Seamless integration with S3
+    - Deployment options:
+      - Scratch: temporary data, data not replicated, high burst
+      - -> For short term, cheap processing
+      - Persistent: long term, data replicated in same AZ
+      - -> Long term processing, sensitive data
+  - Windows file server:
+    - Can be mounted on EC2 instances
+    - Support Microsoft distributed file system namespaces
+    - Storage options: SSD, HDD
+  - NetApp ONTAP:
+    - Compatible with many systems (NFS, SMB, iSCSI protocol)
+    - Use case highlight: point in time instantaneous cloning (helpful for testing new workload)
+  - OpenZFS:
+    - Compatible with NFS
+    - Use case highlight: point in time instantaneous cloning
+## Storage gateway
+- Hybrid cloud: part of infra on cloud, the other part on premises
+- Storage gateway def: bridge between data on premises & data on cloud
+- Use cases:
+  - DR
+  - Backup & restore
+  - Tiered storage
+  - On premises cache & low latency file access
+- Types of gateway:
+  - S3 file:
+    - On premises server -> file gateway (via NFS/SMB) -> S3 bucket (via HTTPS)
+    - Most recently used data is cached in gateway
+    - Transition to S3 Glacier using bucket policy
+  - FSx file:
+    - Native access to FSx Windows file server
+    - Provide local cache for frequently accessed data
+  - Volume:
+    - On premises server -> volume gateway (via iSCSI) -> S3 bucket (via HTTPS) -> EBS snapshots
+    - -> Can restore on premises volume
+    - Types:
+      - Cached volume: low latency access to most recent data
+      - Stored volume: entire data set is on premises, scheduled backups to S3
+  - Tape: for physical tape
+- Hardware appliance:
+  - Provide on-premises virtualization
+  - Can be bought on amazon
+
+## Transfer family
+- Fully managed service for file transfer into & out of S3 using FTP/SFTP/FTPS
+- Cost:
+  - Per provisioned endpoint/hour
+  - Data transfer in GB
+- Flow: FTP client -> Route 53 (optional) -> transfer family -> S3/EFS (via IAM role)
+
+## Data sync
+- Move large data into/out of:
+  - On premise/other cloud to AWS: need agent
+  - AWS to dif storage service in AWS: agent not needed
+- Can sync to: S3, EFS, FSx
+- Replication can be scheduled hourly/daily/weekly
+- File permission & metadata are preserved (eg NFS POSIX, SMB)

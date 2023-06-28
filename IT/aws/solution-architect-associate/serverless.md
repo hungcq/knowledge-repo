@@ -1,0 +1,182 @@
+# Serverless
+- Def: paradigm in which devs no longer manage servers
+- Services: Lambda, DynamoDB, Cognito, API Gateway, S3, SNS, SQS, Kinesis Data Firehose, Aurora Serverless, Step Functions, Fargate
+## Lambda
+- Def: virtual function
+- Chars:
+  - Limited by time: short execution
+  - Run on demand
+  - Automated scaling
+  - Integrated with most AWS services (eg API gateway, Kinesis, DynamoDB, S3, CloudFront, EventBridge (CloudWatch events),
+  CloudWatch logs, SNS, SQS, Cognito)
+  - Can increase RAM (will also increase CPU & network)
+- Pricing: per request & compute time
+- Example usages:
+  - Thumbnail creation & metadata store
+  - CRON job: EventBridge (CloudWatch events) -> Lambda
+- Limits:
+  - Execution:
+    - Memory allocation: 128MB-10GB (1MB increments)
+    - Execution time: 900s (15 mins)
+    - Env vars: 4KB
+    - Disk capacity in function container (/tmp): 512MB-10GB
+    - Concurrent execution: 1000 (can be increased)
+  - Deployment:
+    - Size of compressed .zip: 50MB
+    - Size of uncompressed (code + dependencies): 250MB
+    - Can use /tmp dir to load other files at startup
+    - Env vars: 4KB
+- Networking:
+  - Default: outside user's own VPC (in AWS-owned VPC)
+  - -> Can't access resources in user VPC (eg RDS, ElastiCache, internal ELB)
+  - Lambda in VPC:
+    - User specifies VPC ID, subnets & security groups
+    - Lambda create ENI in subnets
+    - Use case: Lambda with RDS Proxy -> reduce open connections
+- Edge function:
+  - Def: code attached to CloudFront distributions
+  - -> Customize logic at edge
+  - 2 types:
+    - CloudFront Functions:
+      - Use case: high scale, latency sensitive CDN customizations (eg cache key optimization, header manipulation,
+      URL rewrite/redirect, req authorization/authentication)
+      - Change Viewer request & response (req/res between client & CloudFront)
+      - Native feature of CloudFront: code managed in CloudFront
+    - Lambda@Edge:
+      - Change Viewer req/res (between client & CloudFront) & Origin req/res (between CloudFront & Origin)
+      - Use case (vs CloudFront Functions): less throughput, higher resource usage, network/file system/req body access
+  - Example use cases:
+    - Customize CDN content
+    - Web security & privacy
+    - Dynamic web app at edge
+    - SEO
+- Invoke from RDS & Aurora:
+  - Invoke from within DB instance
+  - Allow processing DB data events
+  - Support: RDS Postgres & Aurora MySQL
+  - Network:
+    - DB instance must allow outbound traffic to Lambda
+    - DB must have permissions to invoke Lambda
+  - Vs DB event noti: event notifications are events about DB instance itself (eg started, stopped), not the records
+## DynamoDB
+- Chars:
+  - Managed
+  - Availability: replicated across multi AZs
+  - NoSQL DB with transaction support
+  - Distributed, highly scalable
+- 2 table classes: standard & IA
+- Schema: table (DB) -> primary key (decided at creation time) + nullable attributes (can be added overtime)
+- -> Suitable for rapidly evolving schema
+- Supported data types:
+  - Primitive
+  - Document: list, map
+  - Set: string set, number set, binary set
+- Max record size: 400KB
+- 2 capacity modes:
+  - Provisioned (default):
+    - Reads & writes per sec specified beforehand
+    - Pay for provisioned read/write capacity unit
+    - Can add autoscaling capacity
+  - On-demand: more expensive, suitable for unpredictable workload
+- DynamoDB Accelerator (DAX):
+  - Def: managed, available, seamless in memory cache for DynamoDB
+  - Microsecond latency
+  - Compatible with DynamoDB APIs -> no code change required
+  - 5 mins cache TTL (default)
+  - Use case (vs ElastiCache): object, query & scan cache for DynamoDB (vs aggregation result)
+- Stream processing:
+  - Def: ordered stream of item modifications in a table (CUD)
+  - Use cases:
+    - React to changes in real time
+    - Real time usage analytics
+    - Insert to derivative tables
+    - Implement cross region replication
+    - Invoke Lambda on changes
+  - Types:
+    - DynamoDB Streams:
+      - 24 hours retention
+      - Limited number of consumers
+      - Process using Lambda Triggers/DynamoDB Stream Kinesis
+    - Kinesis Data Stream: 1 year retention, more consumers, more processing options
+- Global Tables:
+  - In dif regions, with 2-way (active-active) replication
+  - -> Allow low latency access in multiple regions
+  - Must enable DynamoDB Streams for replication
+- TTL: auto delete expired rows after specified timestamp (in each row)
+- Backups for DR:
+  - Continuous backup using point in time recovery (PITR): max 35 days retention
+  - On-demand backup: manageable, keep until deleted
+- Integration with S3:
+  - Export to S3:
+    - Must enable PITR
+    - Use cases: analytics, auditing
+    - Format: DynamoDB JSON/ION
+  - Import from S3:
+    - Format: CSV, DynamoDB JSON/ION
+    - Create new table
+## API Gateway
+- Features:
+  - Support WebSocket
+  - API versioning
+  - Dif envs (eg test, production)
+  - Security: authentication/authorization
+  - API keys & request throttling
+  - Import APIs defined in OpenAPI/Swagger
+  - Transform & validate request/response
+  - Generate SDK & API specs
+  - Cache API responses
+- Integrations:
+  - Lambda
+  - HTTP endpoint
+  - AWS service (eg push message to SQS)
+  - -> Authenticate/rate control API calls
+- Endpoint types:
+  - Edge optimized (default):
+    - For global clients
+    - Request routed through CloudFront edge locations
+    - API Gateway in 1 region
+  - Regional:
+    - For client in 1 region
+    - Can manually combine with CloudFront
+    - -> More control over caching strats & distribution
+  - Private:
+    - Can be accessed only from VPC via ENI
+    - Use resource policy to define access
+- Security:
+  - User authentication:
+    - IAM roles: for internal apps
+    - Cognito: for external users
+    - Custom authorizers
+  - Custom domain name HTTPS:
+    - Integration with AWS Certificate Manager (ACM)
+    - -> For edge-optimized endpoint, cert must be in us-east-1
+    - Must create CNAME or A record in Route 53
+## Step Functions
+- Build serverless visual workflow (graph) to orchestrate Lambda functions
+- Features: sequence, parallel, condition, timeout, error handling...
+- Integrated with many AWS services
+- Can implement human approval in the flow
+## Cognito
+- Give users an identity to interact with web/mobile app
+- User pools:
+  - Create serverless DB of users
+  - Sign in functionality for app users
+  - Integrated with:
+    - API Gateway: Gateway check token in req with Cognito
+    - ALB: ALB redirect to Cognito to authenticate user before directing to backend
+  - Features:
+    - Simple login: username + pw
+    - Pw reset
+    - Email & phone number verification
+    - MFA
+    - Federated identity: eg Google, FB, SAML
+- Identity pools (federated identity):
+  - Provide temp AWS credentials to users to access AWS resources directly/via API Gateway
+  - Integrated with User pools
+  - IAM policies applied to credentials defined in Cognito
+  - -> Default IAM role for default/guest users
+  - Flow:
+    - User get token from third party SSO login
+    - Cognito verify token with third party
+    - Cognito generate its own token
+    - User access AWS services using Cognito token

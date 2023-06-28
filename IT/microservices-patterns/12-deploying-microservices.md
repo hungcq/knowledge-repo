@@ -99,7 +99,7 @@
   - Should consider whether this option meets the service requirements before consider other deployment patterns
 ### Technologies
 - Docker (containerization tech):
-  - Docker file:
+  - Dockerfile:
     - Describes how to build a Docker container image
     - Specify:
       - Base container image

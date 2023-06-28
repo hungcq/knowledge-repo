@@ -1,0 +1,67 @@
+# Container
+- Container management services:
+  - ECS (elastic container service): Amazon's own container platform
+  - EKS (elastic Kubernetes service): managed Kubernetes
+  - Fargate: serverless container platform, work with ECS & EKS
+  - Amazon ECR (elastic container registry):
+    - Private registry, has public version
+    - Fully integrated with ECS
+## ECS
+- Launch Docker containers on AWS = launch ECS tasks on ECS clusters
+- Launch types:
+  - EC2:
+    - User must provision & maintain infra (EC2 instances)
+    - EC2 instances must run ECS agent
+    - AWS manage starting/stopping containers
+  - Fargate: serverless solution, AWS manage ECS tasks based on CPU/RAM required
+- Security:
+  - IAM roles for ECS:
+    - EC2 instance profile: used by ECS agent, access the necessary services
+    - ECS task role:
+      - Allow each task to have specific role
+      - Define in task definition
+- Integration with LB:
+  - ALB: for most use cases
+  - NLB: use cases:
+    - High throughput/performance
+    - Pair with AWS Private link
+  - CLB: not recommended
+- Data volume: EFS, work with both launch types
+- Service auto scaling:
+  - Automatically increase/decrease desired number of ECS tasks
+  - Scale at task level, not instance level
+  - Types:
+    - AWS application autoscaling. Scaling metrics:
+      - Average CPU utilization
+      - Average RAM utilization
+      - ALB request count per target (from ALB)
+    - Target tracking: scale based on target value for a specific Cloud watch metric
+    - Step scaling: scale based on specific Cloud watch alarm
+    - Scheduled scaling: scale on specific date/time
+  - For ECS EC2 launch type, can scale EC2 instances by:
+    - ASG: based on CPU utilization
+    - ECS cluster capacity provider:
+      - Automatically provision & scale underlying infra for ECS tasks
+      - Pair with ASG: add EC2 instances when missing capacity
+## EKS
+- Launch types: ~ECS
+- Use case: migration from on-premises/other cloud Kubernetes
+- Load balancing: private ELB for private services, public ELB for public services
+- Node types:
+  - Managed node group:
+    - Auto create & manage EC2 instances (node) in ASG
+    - Support on-demand & spot instances
+  - Self-managed node group:
+    - Node created by user & registered to EKS cluster & managed by an ASG
+    - Can use prebuilt AMI: Amazon EKS optimized AMI
+    - Support on-demand & spot instances
+  - Fargate: no node management required
+- Data volume:
+  - Need to specify StorageClass manifest on EKS cluster
+  - Leverage Container storage interface (CSI) compliant driver
+  - Support types: EBS, EFS (work with Fargate), FSx for Lustre, FSx for NetApp ONTAP
+## AppRunner
+- Def: managed service to deploy web apps/APIs at scale
+- Deploy web app from source code/container image + configs
+- Managed infra
+- Auto build, deploy & scale, LB app

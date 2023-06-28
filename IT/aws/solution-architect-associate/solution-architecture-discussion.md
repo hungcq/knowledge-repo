@@ -49,3 +49,50 @@
     - Deployment mode:
       - Single instance: suitable for dev
       - High availability with LB & RDS failover: suitable for production
+- Snowball to Glacier: snowball -> S3 -> Glacier (via lifecycle policy)
+- ECS:
+  - ECS task invoked by EventBridge: client -> S3 bucket -> EventBridge event -> ECS task: get object from S3 -> DynamoDB
+  - ECS task invoke by EventBridge schedule: EventBridge event every 1 hour -> ECS task: batch processing -> S3
+  - ECS - SQS queue: autoscaling tasks poll for SQS messages
+  - ECS intercept stopped tasks using EventBridge: exited ECS task -> EventBridge event -> SNS: email -> admin
+## Serverless
+- MyTodoList: serverless mobile app:
+  - Requirements:
+    - REST APIs with HTTP
+    - User can interact with their dir in S3
+    - Authentication
+  - Architecture: client -> API Gateway -> Lambda -> DynamoDB. Authentication: client -> Cognito <-> API Gateway
+  - -> Improve read throughput: DAX, cache at API Gateway
+- MyBlog.com: serverless website:
+  - Requirements:
+    - Scale globally
+    - Send welcome email to new users
+    - HTTP APIs
+    - Serve static files: 
+    - Generate thumbnail
+    - Caching
+  - Flow:
+    - Static content: client -> CloudFront -> S3 (secured with bucket policy)
+    - API call: client -> API Gateway -> Lambda -> DAX -> DynamoDB Global Tables -> Stream -> Lambda -> Simple Email Service (SES)
+    - Thumbnail generation: client -> CloudFront -> S3 -> Lambda -> S3
+- Microservices: options:
+  - ELB -> ECS
+  - API Gateway -> Lambda
+  - ELB -> EC2 ASG
+- Software updates offloading:
+  - Problem: app on EC2 distributing software updates occasionally -> costly networking
+  - Solution: add CloudFront on top to distribute static update files
+  - -> No code change needed
+## Data storage use cases
+- RDS: OLTP
+- Aurora: ~RDS, better performance, more features
+- ElastiCache (require code change): key value store, session data, DB cache
+- DynamoDB: evolving schema, DB for serverless app, serverless cache
+- S3: big objects: static file, KV store for big files, website hosting
+- DocumentDB (managed MongoDB): ~Aurora for document DB
+- Neptune (graph DB): knowledge graph, fraud detection, recommendation engine, social networking
+- Keyspaces (managed Apache Cassandra)
+- Quantum ledger database (QLDB):
+  - Ledger DB: immutable, record all changes to data, cryptographically verifiable
+  - Vs Managed Blockchain: centralized DB -> comply with financial laws
+- Timestream (time series DB): sample architecture: Prometheus -> Timestream -> Grafana

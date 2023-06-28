@@ -41,10 +41,31 @@
   - Edit: make images look cohesive/consistent (eg color)
   - Crop
   - Layout
-- Person in motion: let them lead to the open side of the frame
 
 # Utilizing phone
 - When encounter a grand, ultra-wide scene:
   - Change vantage point: avoid unnatural objects, get better view
   - Focus on a portion of it
 - Turn grid on: get the horizon on the top/bottom third depending on whether the sky/ground is more interesting
+
+# Posing tips for men
+- Feet:
+  - Toes pointed out
+  - Feet shoulder width apart
+- Hip: lean to one side
+- Hands: have some purpose (eg 1 hand at chest/in pocket, other can droop)
+- Spine: straight
+- Neck: push forward a bit
+- Light:
+  - Angle body away from the light
+  - Turn chin (face) toward the light
+- Lower camera to elongate the legs
+- Perform action & take detail shots
+- <img src="./resources/pose.png" width="200"/>
+
+# Tips for beach portrait
+- 
+
+# Tips
+- Person in motion: let them lead to the open side of the frame
+- Cropping: avoid cropping at joins. Crop at narrowing points (eg thigh, above hip)

@@ -82,7 +82,7 @@
     - Enforce IAM auth to connect to DB. Credentials stored in Secrets Manager.
   - Not publicly accessible
   - Use case: lambda functions
-## Elastic cache
+## ElasticCache
 - Def: managed Redis/Memcached: maintenance, patching, optimization, setup, configuration, monitoring, backup & recovery
 - Require code change
 - Use cases:

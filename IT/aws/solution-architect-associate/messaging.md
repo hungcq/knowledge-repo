@@ -1,0 +1,86 @@
+# Messaging
+## SQS
+- Standard queue. Oldest offering (> 10 years).
+- Use case: decouple app. 1-1 communication.
+- Chars:
+  - Unlimited throughput
+  - Message retention: default 4 days, max 14 days
+  - Low latency (< 10ms publish/receive)
+  - Max message size: 256KB
+  - At least once delivery (can duplicate)
+  - No ordering guaranteed
+- Producer: send message via SDK
+- Consumers:
+  - Poll & process messages in parallel
+  - Can delete message
+  - Scale horizontally with ASG: based on CloudWatch queue length metric
+- Security:
+  - Encryption:
+    - In flight: via HTTPS API
+    - At rest: using KMS keys
+    - Client-side
+  - Access control: IAM policies to regulate access to SQS API
+  - SQS access policies (~S3 bucket policies): allow cross-account/other service access
+- Message visibility timeout: duration during which, after a message polled by a consumer, other consumers can't see it
+- -> After the duration, message can be reprocessed & duplicated
+- -> Can change via ChangeMessageVisibility API
+- Long polling:
+  - When polling, if there is no message, consumer can wait for message
+  - -> Decrease API calls to SQS, increase efficiency & latency of app
+  - Wait time: 1-20s. Can be set at queue level or app level via API call.
+- FIFO queue:
+  - Receive in FIFO ordering
+  - Limited throughput: 300 messages/s without batching, 3000 with batching
+  - Exactly once delivery
+  - Features:
+    - Ordering by message group IDs
+    - Deduplication using deduplication ID/content-based deduplication
+## SNS
+- Use case: pub-sub communication
+- Subscribers: SQS, Lambda, Email, SMS, HTTP, Kinesis data firehose
+- 2 types of publish:
+  - Topic publish
+  - Direct publish: to platform app via platform endpoint (eg Google cloud messaging, Apple APNS, Amazon ADM)
+- Security: ~SQS
+- Fanout pattern:
+  - SNS topic -> many SQS subscribers -> service
+  - SQS access policies must allow SNS to write
+  - Work with SQS in other regions -> cross regions delivery
+- SNS to S3: SNS -> Kinesis data firehose -> S3
+- SNS FIFO: ~SQS FIFO
+- Filter: subscriber filter message
+## Kinesis
+- Use case: real-time collect, process, analyze streaming data
+- Types:
+  - Streams:
+    - Capture, process & store data streams
+    - Flow: producers -> record (partition key + data) -> shards of data streams -> consumers
+    - -> Scale by number of shards
+    - Message retention: 1-365 days
+    - Can reprocess/replay data
+    - Capacity modes:
+      - Provisioned:
+        - Specify number of shards
+        - Cost: per shard per consumer hour
+      - On-demand:
+        - Auto scale
+        - Cost: per stream per hour & data in/out per KB
+    - Security: ~SQS
+  - Data firehose:
+    - Load data stream into AWS data stores
+    - Flow: producers -> firehose, transform optionally via Lambda -> destination (batch write)
+    - Destinations:
+      - S3, Redshift (copied through S3), OpenSearch
+      - Third party partner destination
+      - Custom destination (HTTP endpoint)
+    - Can send all or failed data into backup S3 bucket
+    - Near realtime
+    - Cost: data going through
+  - Analytics: analyze data streams with SQL/Apache Flink
+  - Video streams: capture, process & store video streams
+- Ordering: by partition using partition key
+## Amazon MQ
+- Managed broker service for RabbitMQ & ActiveMQ
+- Limited scalability
+- Run on servers -> need multi AZ for failover
+- Has both queue feature & topic feature

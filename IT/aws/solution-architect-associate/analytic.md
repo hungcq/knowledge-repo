@@ -1,0 +1,71 @@
+# Analytics
+## Athena
+- Def: serverless query service to analyze S3 data
+- Built on Presto, use SQL to query
+- Support CSV, JSON, ORC, Avro, Parquet
+- Price per TB of data scanned
+- Usually used with Amazon Quicksight for reporting/dashboard
+- Performance improvement:
+  - Use columnar data for cost saving (eg ORC, Parquet - convert via Glue)
+  - Compress data for smaller retrieval
+  - Partition dataset in S3 for easy query (eg /month=1/day=19)
+  - Use large file to minimize overhead
+- Federated query:
+  - Def: run SQL queries across dif data sources (relational, non relational, object, custom - AWS or on-premises)
+  - Use Datasource Connectors running on Lambda to run query
+  - Store result back to S3
+## Redshift
+- OLAP DB, based on Postgres, SQL query
+- Columnar storage
+- Parallel query engine
+- Price: instances provisioned
+- Integrated with Quicksight & Tableau
+- Vs Athena: data warehouse, better performance due to indexes
+- Cluster:
+  - Leader node: plan query, aggregate result
+  - Compute note: perform query
+- -> Need to provision node size in advance, can save with Reserved Instances
+- DR:
+  - Multi AZ mode for some clusters
+  - 1 AZ cluster needs snapshots for DR:
+    - Incremental snapshots (storing changes) stored in S3
+    - Snapshot creation: manual or automatic
+    - Can config Redshift to auto copy snapshot to another region
+- Load data from:
+  - Kinesis Data Firehose'
+  - S3: using COPY command
+  - EC2 instance: using JDBC driver
+- -> Large inserts are better
+- Spectrum:
+  - Query data in S3 without loading it
+  - Must have a Redshift cluster to start the query
+  - Query submitted to thousands of Spectrum nodes. Result returned to cluster.
+## OpenSearch (ex ElasticSearch)
+- 2 modes:
+  - Managed cluster
+  - Serverless cluster
+- Not natively support SQL, can enable via plugin
+- Data ingestion from Kinesis Data Firehose, AWS IoT, CloudWatch logs
+- Security: Cognito & IAM, KMS, TLS
+- Visualization: OpenSearch Dashboard
+- Patterns:
+  - Search item in DynamoDB: DynamoDB -> DynamoDB Stream -> Lambda -> OpenSearch (provide query API)
+  - CloudWatch Logs: Logs -> Subscription Filter -> Lambda (realtime)/Kinesis Data Firehose (near realtime) -> OpenSearch
+  - Kinesis Data Stream -> Firehose (near realtime) <-> Lambda (transform) -> OpenSearch
+  - Kinesis Data Stream -> Lambda (realtime) -> OpenSearch
+## Elastic MapReduce (EMR)
+- Create Hadoop cluster to analyze & process Big Data
+- Bundled with Spark, HBase, Presto, Flink...
+- Managed cluster: autoscale, integrated with Spot Instances
+- Node types:
+  - Master: manage cluster, manage health, coordinate -> long running
+  - Core: run tasks & store data
+  - Task: run tasks -> usually Spot instances
+- Purchase options:
+  - On-demand
+  - Reserved (min 1 year): cost saving
+  - -> Suitable for master & core node
+  - Spot: for task nodes
+- Cluster types:
+  - Long-running
+  - Transient (temp)
