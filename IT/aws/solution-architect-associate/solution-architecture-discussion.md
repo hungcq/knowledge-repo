@@ -96,3 +96,8 @@
   - Ledger DB: immutable, record all changes to data, cryptographically verifiable
   - Vs Managed Blockchain: centralized DB -> comply with financial laws
 - Timestream (time series DB): sample architecture: Prometheus -> Timestream -> Grafana
+## Big Data Ingestion Pipeline
+- IoT devices -> Kinesis Data Streams -> Firehose <-> Lambda transformation -> S3 ingestion bucket
+  -> Lambda -> Athena (process ingestion bucket) -> S3 reporting bucket -> Redshift/Quicksight
+## CloudTrail - EventBridge integration
+- API call interception: API call in AWS services -> CloudTrail: event -> EventBridge -> SNS

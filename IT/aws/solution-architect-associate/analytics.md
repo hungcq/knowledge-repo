@@ -4,7 +4,7 @@
 - Built on Presto, use SQL to query
 - Support CSV, JSON, ORC, Avro, Parquet
 - Price per TB of data scanned
-- Usually used with Amazon Quicksight for reporting/dashboard
+- Usually used with Amazon QuickSight for reporting/dashboard
 - Performance improvement:
   - Use columnar data for cost saving (eg ORC, Parquet - convert via Glue)
   - Compress data for smaller retrieval
@@ -19,7 +19,7 @@
 - Columnar storage
 - Parallel query engine
 - Price: instances provisioned
-- Integrated with Quicksight & Tableau
+- Integrated with QuickSight & Tableau
 - Vs Athena: data warehouse, better performance due to indexes
 - Cluster:
   - Leader node: plan query, aggregate result
@@ -53,6 +53,7 @@
   - CloudWatch Logs: Logs -> Subscription Filter -> Lambda (realtime)/Kinesis Data Firehose (near realtime) -> OpenSearch
   - Kinesis Data Stream -> Firehose (near realtime) <-> Lambda (transform) -> OpenSearch
   - Kinesis Data Stream -> Lambda (realtime) -> OpenSearch
+- Use case example: store & analyze logs in realtime
 ## Elastic MapReduce (EMR)
 - Create Hadoop cluster to analyze & process Big Data
 - Bundled with Spark, HBase, Presto, Flink...
@@ -69,3 +70,60 @@
 - Cluster types:
   - Long-running
   - Transient (temp)
+## QuickSight
+- Def: ML powered BI service to create dashboard
+- Integrations:
+  - AWS data services: RDS, Aurora, Redshift, Athena, S3...
+  - Third party data sources: SaleForce, Jira
+  - On premises DB (JDBC): tera data
+- In-memory computation using SPICE engine if data is imported into QuickSight (eg CSV, XLSX, JSON)
+- Enterprise level: can setup column-level security
+- QuickSight Users & Groups (enterprise)
+- Process: create dashboard -> publish -> share with users/groups
+## Glue
+- Def: managed serverless extract/transform/load service (ETL)
+- -> Prepare data for analytics
+- Example use cases:
+  - S3/RDS -> Glue -> Redshift
+  - Input S3 -> Import CSV -> Glue -> Output S3 -> Athena
+  - Input S3 -> Event noti -> Lambda -> Glue -> Output S3 -> Athena
+- Data Catalog: data source -> Glue Data Crawler -> Data Catalog (DB of metadata) -> Glue ETL Jobs/Athena/Redshift/EMR
+- Job Bookmarks: avoid reprocessing data
+- Elastic Views: combine & replicate data across multiple data stores using SQL
+- DataBrew: clean & normalize data using pre-built transformation
+- Studio: new GUI to create/run/monitor ETL jobs
+- Streaming ETL (based on Spark Structured Streaming): compatible with Kinesis Data Streaming, Kafka, MSK (managed Kafka)
+## Lake Formation
+- Data lake def: central place to have all data for analytics purposes
+- Def: managed service to setup data lake: discover, cleanse, transform, ingest data. Built on top of Glue.
+- Combine structure & unstructured data
+- Out-of-the-box source blueprints: S3, RDS, Relational & NoSQL DB...
+- Fine-grained Access Control for your applications (row and column-level)
+- Flow: data sources -> data lake -> analytics tools (eg Athena, Redshift, Spark)
+- Use case: centralized permissions
+## Kinesis Data Analytics
+- Data Analytics for SQL app:
+  - Flow: slide page 551
+  - Realtime analytics from Kinesis data source (Data Stream/Firehose). Can be enriched with S3 ref data.
+  - Output: Kinesis Data Stream/Firehose
+  - Use cases:
+    - Time series analytics
+    - Realtime metrics/dashboards
+- Data Analytics for Flink:
+  - Run Flink app on managed a AWS cluster
+  - Data sources: Kinesis Data Streams, MSK
+## Managed Streaming for Kafka (MSK)
+- Def: managed Kafka:
+  - User create/update/delete clusters
+  - MSK manage Kafka nodes & Zookeeper nodes in VPC/multi AZ
+- Alternative to Kinesis
+- Data stored on EBS volume as long as needed
+- MSK Serverless
+- Vs Kinesis:
+  - Higher message size (max 10MB vs max 1MB)
+  - Can't merge partitions
+- Consumers:
+  - Kinesis Data Analytics for Flink
+  - Glue
+  - Lambda
+  - Apps
