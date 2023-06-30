@@ -101,3 +101,41 @@
   -> Lambda -> Athena (process ingestion bucket) -> S3 reporting bucket -> Redshift/Quicksight
 ## CloudTrail - EventBridge integration
 - API call interception: API call in AWS services -> CloudTrail: event -> EventBridge -> SNS
+## DDoS protection
+- Edge location layer: protected at CloudFront, GA, Route53
+- Infra layer defense: protect EC2 against high traffic:
+  - Edge location mitigation approaches
+  - EC2 with ASG & ELB
+- Application layer:
+  - CloudFront for static content
+  - WAF in front of ALB
+  - Shield Advanced
+- Attack surface reduction:
+  - Obfuscating AWS resources (hide BE with API Gateway, ELB, CloudFront)
+  - Security groups & network ACLs
+  - Protect API endpoints: hide BE, CloudFront, WAF + API Gateway
+## GuardDuty
+- Def: intelligent thread discovery to protect AWS account
+- Use ML, anomaly detection, third party data
+- Input data:
+  - CloudTrail Event Logs:
+    - Management Events
+    - S3 Data Events
+  - VPC Flow Logs
+  - DNS Logs
+  - Optional Features: eg EKS Audit Logs, RDS & Aurora
+- Can setup EventBridge rules for noti
+- Can protect against CryptoCurrency attacks (has dedicated finding for it)
+## Inspector
+- Def: automated security assessment
+- Target:
+  - EC2 instances: use System Manager agent to analyze:
+    - Unintended network accessibility
+    - Known vulnerabilities of running OS
+  - Container images pushed to ECR
+  - Lambda
+- Reporting & integration with Security Hub/EventBridge
+## Macie
+- Def: managed data security & privacy service using ML & pattern matching to discover & protect sensitive data in AWS
+- -> Identify & alert to sensitive data (eg personally identifiable info)
+- Noti via EventBridge

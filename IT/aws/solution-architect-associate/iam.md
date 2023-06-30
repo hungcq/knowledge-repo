@@ -4,7 +4,7 @@
 - Policy:
   - JSON doc: define permissions
   - -> Least privilege principle: give users only the needed permissions
-  - Group vs inline policy: for 1 user
+  - Inline policy (vs group policy): for 1 user
   - Components:
     - Version
     - ID
@@ -45,3 +45,83 @@
   - Use roles to give permissions to services
   - Use access key for programmatic access (CLI/SDK)
   - Audit permissions using security tools
+- Cross acc: either:
+  - Attach a resource-based policy to a resource (eg S3 bucket policy). Eg services: Lambda, SNS, SQS, CW Logs, API Gateway
+  - Use a role as a proxy (assume a role):
+    - Give up original permissions & take role's permissions (vs use resource-based policy)
+    - Eg services: Kinesis stream, Systems Manager Run Command, ECS task
+- Permission boundaries:
+  - Def: use a managed policy to set the max permissions an IAM entity can get
+  - -> Higher precedence over IAM identity-based policy
+  - Supported for users & roles (not groups)
+  - Can be used in combination with Org. Effective permissions are intersection of boundary & identity-based policy & Org
+- Access evaluation precedence: deny > Org > resource-based > identity-based > boundary -> session
+## Organizations
+- Global service, manage multiple AWS accounts
+- Acc types:
+  - Main: management acc
+  - Other: member accs
+- Consolidated billing across all accs: single payment method
+- -> Pricing benefits from aggregated usage (eg volume discount)
+- Can share reserve instances & saving plans discount across accs
+- Hierarchy structure: root organizational unit (OU) -> sub OU -> ... -> accounts. Can divide by:
+  - Business unit
+  - Dev/production env
+  - Project based
+- Advs:
+  - Management centralization
+  - Security: Service Control Policies (SCP):
+    - IAM policies applied to OU/accs
+    - Not applied management acc: root access by default
+    - Disallow everything by default (vs IAM)
+## IAM conditions
+- aws:SourceIp: restrict client IP making API calls
+- aws:RequestedRegion: restrict region the API calls are made to
+- ec2:ResourceTag: restrict based on tags
+- aws:MultiFactorAuthPresent: force MFA
+- S3:
+  - s3:ListBucket: bucket level permission
+  - s3:GetObject, s3:PutObject, s3:DeleteObject: object level permission (need to specify path + object/*)
+- aws:PrincipalOrgID: used in resource policies to restrict access to accs that are member of an Org
+## Identity Center (ex Single Sign-On)
+- SSO for all AWS accs in AWS Orgs
+- Identity providers:
+  - Built-in identity store in Identity Center
+  - Third party: eg Active Directory, OneLogin, Okta
+- Login flow: client -> Identity center: retrieve user identities from providers -> SSO
+- Permission Set: collection of IAM policies assigned to users/groups to define AWS access
+- Multi acc permissions: manage access across AWS accounts in AWS Org
+- Application assignments:
+  - SSO access to SAML 2.0 business apps (eg Salesforce, Microsoft 365)
+  - Need to provide URLs, certificates, metadata
+- Attribute-based access control (ABAC): fine-grained permissions based on users' attributes stored in Identity Store
+## Directory Service
+- Microsoft Active Directory:
+  - Def: DB of objects: users, accs, computers, printers...
+  - Centralized security management
+  - Objects organized in trees. Forest = group of trees.
+  - Found on Windows Server with AD Domain Services
+- Allow creating Microsoft AD on AWS:
+  - Managed Microsoft AD:
+    - Create AD in AWS
+    - Manage users in AWS AD
+    - Support MFA
+    - Can establish trust connections with on-premise AD
+  - AD Connector:
+    - Def: Directory Gateway (proxy) to on-premise AD
+    - Support MFA
+    - Users managed on on-premise AD
+  - Simple AD: managed AD on AWS, can't be joined with on-premise AD
+- Identity Center - Active Dir setup:
+  - Managed AD: out of the box integration
+  - Self-managed AD: either:
+    - Create 2-way trust rela using Managed AD
+    - Create AD Connector
+## Control Tower
+- Def: easy way to set up & govern a secure & compliant multi-acc AWS env based on best practices
+- Use Org to create accs
+- Guardrails:
+  - Provide ongoing gov of Control Tower env (AWS accs)
+  - 2 types:
+    - Preventive Guardrail: use SCP (eg restrict regions across all accs)
+    - Detective: use Config to monitor compliance
