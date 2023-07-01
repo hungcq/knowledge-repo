@@ -139,3 +139,7 @@
 - Def: managed data security & privacy service using ML & pattern matching to discover & protect sensitive data in AWS
 - -> Identify & alert to sensitive data (eg personally identifiable info)
 - Noti via EventBridge
+## VPC Flow Logs:
+- Flow Logs -> CW Logs -> CW Contributor Insights -> Top IP addresses
+- Flow Logs -> CW Logs -> Metric Filter -> CW Alarm -> SNS
+- Flow Logs -> S3 -> Athena -> QuickSight (visualization)

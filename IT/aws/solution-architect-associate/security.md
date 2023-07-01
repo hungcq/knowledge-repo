@@ -25,7 +25,7 @@
 - KMS Key (ex KMS Customer Master Key) types:
   - AWS owned keys (free): SSE-S3, SSE-SQS, SSE-DDB (default key)
   - AWS managed key (free): (aws/[service name])
-  - Customer managed keys created in KMS: 1$/month
+  - Customer managed keys (CMK) created in KMS: 1$/month
   - Customer managed keys imported (must be symmetric key): 1$/month
 - API call cost: 0.03$/10000 calls
 - Automatic key rotation:
