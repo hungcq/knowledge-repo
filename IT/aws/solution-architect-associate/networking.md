@@ -35,6 +35,9 @@
 - Allow resources (eg EC2) in a VPC to connect to the Internet
 - VPC-IGW mapping: 1-1
 - Must also edit routes table to allow Internet access
+- Egress-only IGW:
+  - ~NAT Gateway, used only for IPv6
+  - Must update Route Tables
 ## Bastion host
 - Def: EC2 instance in public subnet which is connected to all other private subnets
 - -> Used to SSH to private EC2 instances
@@ -48,6 +51,7 @@
 - Traffic flow: private EC2 -> NAT instance -> Internet
 - Lots of manual config/setup needed
 ## NAT Gateway
+- Function: allow EC2s in private subnets to connect to the Internet
 - Managed NAT, no security group required, better than NAT instance
 - Pay per hour for usage & bandwidth
 - Created in a specific AZ, use Elastic IP
@@ -65,7 +69,7 @@
   - No rule match = not allowed
   - Inbound/outbound rules are stateless
   (vs stateful inbound/outbound rules of security groups - response of accepted reqs are auto accepted)
-  - Allow deny rules
+  - Allow Deny rules
 - -> Used to block IPs at subnet level
 - Default NACL: accept everything
 - Ephemeral port: client connects to defined port, expect a res from an ephemeral port (sent in req - Source Port)
@@ -128,3 +132,78 @@
   - Provide secure communication between multiple sites when user have multiple VPN connections
   - VPN connection -> traffic go over public internet
   - Setup: connect multiple VPN connections on the same VGW, setup dynamic routing & config route tables
+## Direct Connect (DX)
+- Provide dedicated private connection from a remote network to VPC
+- Dedicated connection must be setup between user's DC & Direct Connect locations
+- Need to setup VGW on VPC
+- Can access both public & private resource
+- Use cases:
+  - Increase bandwidth, lower cost
+  - Stable network (eg realtime app)
+  - Hybrid env (on premises + cloud)
+- To setup Direct Connect to 1+ VPC in dif regions (same acc), must use a Direct Connect Gateway
+- Connection types:
+  - Dedicated: physical ethernet port dedicated to a customer
+  - Hosted:
+    - Connection requests made via Direct Connect Partners
+    - Capacity can be added/removed on demand
+- Setup time usually longer than 1 month
+- Data in transit is not encrypted
+- -> Must use with VPN to provide IPsec-encrypted private connection
+- Resiliency:
+  - High resiliency: 1 connection/location
+  - Maximum resiliency: 2+ connections/location
+- Can use Site to site VPN as backup connection for lower cost
+## Transit Gateway
+- Function: transitive peering between thousands of VPC & on premises, star connection schema
+- The only service supporting IP Multicast
+- Equal cost multi path routing (ECMP): routing strat to forward a packet over multiple best path
+- -> Use case: create multiple Site to site VPN connections to increase bandwidth of connection to AWS
+- Can use Resource Access Manager to share Transit Gateway with other accs
+## VPC Traffic Mirroring
+- Allow capturing & inspecting network traffic in VPC by routing traffic to customer's managed security appliances
+- Info captured:
+  - From (Source) - ENIs
+  - To (Targets): ENI/NLB
+- -> Source & Target can be in the same or in dif VPCs (VPC Peering)
+- Can select packets to capture
+## IPv6 for VPC
+- Cannot disable IPv4 for VPC/subnet
+- Can enable IPv6
+- EC2 instances get at least a private internal IPv4 & a public IPv6
+- -> Can communicate with the Internet using either IPv4/IPv6 through Internet Gateway
+- Troubleshooting: when can't launch EC2 in subnet -> out of IPv4 -> need to create new IPv4 CIDR
+## ClassicLink
+- Connect EC2-Classic EC2 privately into VPC
+## Networking Costs
+- Traffic in EC2: free
+- EC2 in same AZ, communicate using private IP: free
+- EC2 in dif AZs same region, communicate using
+  - Private IP: 0.01/GB
+  - Public IP/elastic IP: 0.02/GB
+- Inter region: 0.02/GB
+- Egress traffic: outbound traffic (AWS -> outside)
+- Ingress traffic: inbound traffic: typically free
+- Direct Connect location co-located in the same AWS region result in lower egress network cost
+- Best practice:
+  - Use private IP for cost saving & better network performance
+  - Use same AZ for max saving at cost of high availability
+  - Keep traffic within AWS: minimize egress
+- S3:
+  - Egress cost
+  - Transfer Acceleration: faster transfer, additional cost
+  - To CloudFront: free. CloudFront to Internet: cheaper than S3
+  - Cross Region Replication: cost
+- VPC Endpoint (vs NAT Gateway) to access S3: much cheaper since traffic go in private network
+## Network Firewall
+- Network protection summary:
+  - NACL
+  - Security groups
+  - WAF
+  - Shield
+  - Firewall Manager (cross acc)
+- Network Firewall: protect the entire VPC:
+  - Layer 3 -> 7, all types of traffic
+  - Traffic filtering: allow, drop, alert for traffic that matches the rules
+  - Active flow inspection: protect against network threats with intrusion prevention capabilities
+  - Send logs to S3, CW Logs, Firehose
