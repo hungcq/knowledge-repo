@@ -143,3 +143,39 @@
 - Flow Logs -> CW Logs -> CW Contributor Insights -> Top IP addresses
 - Flow Logs -> CW Logs -> Metric Filter -> CW Alarm -> SNS
 - Flow Logs -> S3 -> Athena -> QuickSight (visualization)
+## Event processing
+- Setup dead letter queue to avoid infinite retry SQS -> Lambda: SQS -> DLQ
+- SNS -> Lambda (async) -> DLQ
+- Fanout pattern (see Messaging)
+- S3 events -> SNS, SQS, Lambda, EventBridge
+- Intercept API call with EventBridge (see CloudTrail - EventBridge integration)
+- Client -> requests -> API Gateway -> Kinesis Data Streams -> Firehose -> S3
+## Caching
+- Tradeoff: cache at edge: faster, less network cost, less computation, risk of stale data
+## Blocking IP
+- NACL: both deny & allow rules
+- Security group: allow IPs
+- Optional firewall software in EC2
+- NLB: no security group, BE can see client IP
+- -> Can install WAF IP filtering
+- CloudFront: ALB can't see client IP, but CloudFront public IP -> NACL not helpful
+- -> Can use CloudFront Geo Restriction or WAF IP filtering
+## High performance computing (HPC)
+- Suitable on cloud since resources can be scaled on demand
+- EC2 Enhanced Networking. Options:
+  - Use Elastic Network Adapter (ENA)
+  - Intel adapter
+- Elastic Fabric Adapter:
+  - Improved ENA for HPC, only work for Linux
+  - Great for inter-node communications, tightly coupled workload
+- Automation & orchestration:
+  - AWS Batch
+  - ParallelCluster:
+    - Def: open source cluster management tool to deploy HPC on AWS
+    - Can create EFA on the cluster to improve network performance
+## Highly available EC2 instance
+- CW Event/Alarm based on metric -> Lambda function -> Start attach Elastic IP to standby instance
+- Multi AZ ASG: 1 min 1 max 1 desired num of instances
+- With EBS:
+  - Use ASG Terminate lifecycle hook: create EBS snapshot
+  - ASG Launch lifecycle hook: launch new volume & attach on new EC2

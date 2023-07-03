@@ -1,0 +1,37 @@
+# White paper
+## Well Architected Framework
+- Stop guessing capacity needs -> use ASG
+- Test systems at production scale
+- Automate to make architectural experimentation easier
+- Allow for evolutionary architectures
+- Drive architectures using data
+- Improve through game days (eg flash sale simulation)
+- 6 pillars:
+  - Operational excellence
+  - Security
+  - Reliability
+  - Performance efficiency
+  - Cost optimization
+  - Sustainability
+- -> Not sth to balance/tradeoff, but a synergy
+- Well architected tool: free tool to review architectures against the 6 pillars & adopt architectural best practices
+## Trusted Advisor
+- Provide high level AWS acc assessment & provide recommendation on **5 categories**:
+  - Cost optimization
+  - Performance
+  - Security
+  - Fault tolerance
+  - Service limits
+- Support plans:
+  - 7 core checks on Basic & Developer support plan:
+    - S3 bucket permissions
+    - Security groups (port unrestricted?)
+    - IAM use (1 user minimum)
+    - MFA on root acc
+    - EBS public snapshots
+    - RDS public snapshots
+    - Service limits
+  - Full checks on Business & Enterprise support plan:
+    - Full check available on 5 categories above
+    - Can set CW Alarm when reaching limits
+    - Programmatic access using Support API
