@@ -71,7 +71,7 @@
   - Can be attached to one instance at a time
   - -> If one instance fails, can move to another instance
   - Max: 5 per account
-  - Best practice: use random public IP & assign DNS name to instance or use LB
+  - Best practice: avoid using Elastic IP, use random public IP & assign DNS name to instance or use LB
 - Placement group: control over EC2 instances placement strat:
   - Cluster: into low latency cluster (same rack) within AZ -> higher risk of failure
   - Spread: spread over underlying hardware (max 7 instances per group per AZ) -> for critical apps

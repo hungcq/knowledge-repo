@@ -59,7 +59,7 @@
 - MyTodoList: serverless mobile app:
   - Requirements:
     - REST APIs with HTTP
-    - User can interact with their dir in S3
+    - User can interact with their dir in S3: use Cognito + Security Token Service (STS)
     - Authentication
   - Architecture: client -> API Gateway -> Lambda -> DynamoDB. Authentication: client -> Cognito <-> API Gateway
   - -> Improve read throughput: DAX, cache at API Gateway

@@ -9,3 +9,7 @@
   - Available services
   - Pricing
 - Points of presence (ie edge locations) -> deliver content with low latency
+- AZ def: one or more data centers with redundant power, networking & connectivity
+- Edge location
+- Credential Report (user level)
+- Access Advisor (acc level)

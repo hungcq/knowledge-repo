@@ -1,0 +1,375 @@
+# Review
+## [Region - AZ](./region-az.md)
+- Region def
+- Scope of most service
+- Considerations when choosing regions
+- AZ def
+- Edge location
+## [IAM](./iam.md)
+- Root acc & users best practice
+- Group can contain?
+- Policy
+  - Def
+  - Least privilege principle
+  - Inline vs group policy
+  - Components
+- Can access IAM via?
+- Access key components
+## EC2
+- Boostraping, User script
+- Instance types:
+  - General purpose
+  - Compute optimized
+  - Memory optimized
+  - Storage optimized
+- Security group:
+  - Types of rules allowed
+  - Reference targets
+- Purchasing options:
+  - On-demand
+  - Reserved
+  - Saving plan
+  - Spot instance:
+    - Spot fleet:
+      - Def
+      - Strategies:
+        - Lowest price pool
+        - Diversified
+        - Capacity optimized
+        - Price capacity optimized (recommended)
+  - Dedicated host
+  - Dedicated instance
+  - Capacity reservation
+- Private vs public IP
+- Elastic IP
+- Placement group: def. Types:
+  - Cluster
+  - Spread
+  - Partition
+- ENI: def, attributes, usage
+- Hibernate
+## Storage
+- EBS: def. Scope. Chars. Delete on termination.
+- Snapshot. How to create EBS at dif AZ
+- Snapshot features:
+  - Archive
+  - Recycle bin
+  - Fast snapshot restore
+- AMI. Def. Scope. Types of AMI. AMI creation process.
+- Instance store
+- EBS volume types:
+  - gp2/gp3
+  - io1/io2. Which IOPS to use. Max IOPS.
+  - stl
+  - scl
+- -> Which can be used as boot volume
+- EBS multi-attach
+- EBS encryption: where, how to encrypt unencrypted volume
+- EFS def. Scope. Compatibility.
+- EFS performance modes:
+  - GP
+  - Max IO
+- EFS throughput mode:
+  - Bursting
+  - Provisioned
+  - Elastic
+- EFS storage tiers
+- EFS standard & one-zone
+- 4 types of ELBs. Protocol supported. Visibility.
+- ALB target groups. Where to get client IP, port, proto.
+- NLB:
+  - Function
+  - Usage
+  - IP allocation
+  - Target groups
+  - Protocols supported by health check
+- GLB:
+  - Def
+  - Functions
+  - Protocol & port
+  - Target groups
+- Sticky sessions (session affinity)
+  - Supported by which types of ELBs
+  - Cookie names: app based, duration-based
+- Cross-zone load balancing
+- Server Name Indication (SNI). Supported by which LB?
+- Connection draining (de-registration delay)
+- ASG
+  - Attributes
+  - Scaling policies:
+    - Dynamic:
+      - Target tracking
+      - Simple/step scaling
+      - Scheduled action
+    - Predictive
+    - Scaling metrics
+    - Scaling cooldown
+- Snow Family:
+  - Def
+  - Use cases
+  - Types:
+    - Snowball Edge:
+      - Storage optimized
+      - Compute optimized
+    - Snowcone
+    - Snowmobile
+  - Usage process
+  - OpsHub
+  - Edge computing
+- FSx:
+  - Def
+  - Types:
+    - Windows: feature highlight
+    - Lustre: use case highlight, feature highlight, deployment options
+    - NetApp ONTAP: compatibility
+    - OpenZFS: compatibility
+- Storage Gateway:
+  - Def
+  - Types:
+    - S3 File Gateway: use case highlight
+    - FSx File Gateway: use case highlight
+    - Volume Gateway: stored volume & cached volume
+    - Tape Gateway
+  - Hardware appliance
+- Transfer Family:
+  - Def
+  - Supported protocols
+- DataSync:
+  - Function
+  - Targets
+  - Feature highlight
+- Summary: p.373
+## Data
+- RDS:
+  - Supported DBs
+  - Storage autoscaling
+  - Read replicas: consistency, app code update, network cost
+  - Multi AZ: consistency
+  - RDS Custom: def, supported DBs, control over which
+  - RDS Proxy: advs (p.182), scope
+- Aurora:
+  - Supported DBs
+  - Use case
+  - Cross region replication
+  - Custom Endpoints
+  - Serverless
+  - Multi-master
+  - Global DB
+  - Aurora ML
+  - Backups: automated vs manual
+  - DB Cloning: mechanism, use case
+- RDS & Aurora security
+- ElastiCache:
+  - Supported caches
+  - App code update
+  - Redis vs Memcached
+  - Security
+  - Redis use case highlight
+- DocumentDB
+- Neptune
+- Keyspaces
+- QLDB (vs Managed Blockchain)
+- Timestream
+## Route53
+- DNS terms: records, zone file, name server, top level domain, second level domain
+- Route53 functions: registar vs DNS service
+- Record type, TTL, value
+- Basic record types: A, AAAA, CNAME, NS, Alias (vs CNAME)
+- Public vs private hosted zone
+- Alias record non target
+- Routing policies: simple, weighted, failover, latency based, geolocation, multi-value answer, geo-proximity, IP based
+- Health check:
+  - Types of resources support
+  - Conditions
+  - How to check private endpoints
+## Architecture solution discussion
+- p.232, 233, 243, 244, 250, 251, 495, 496, 503, 504, 559, 560
+- Beanstalk:
+  - Components: app, app version, env
+  - Web tier vs worker tier
+  - Deployment modes: single instance vs high availability
+- Snowball into Glacier
+## S3
+- Bucket:
+  - Name constraint
+  - Scope
+- Objects: key components
+- Security: user based, resource based, when IAM principle can access
+- Static website hosting
+- Versioning: scope, what happened for existing objects when enable/disable versioning
+- Replication: requirement, cross region, same region, chaining allowed?, DELETE handling
+- Storage classes:
+  - Standard - GP
+  - Standard IA
+  - One zone IA
+  - Glacier: retrieval time
+    - Instant retrieval
+    - Flexible retrieval
+    - Deep archive
+  - Intelligent tiering
+- -> How to move between classes
+- Lifecycle rules:
+  - Transition actions
+  - Expiration actions. Versioning handling.
+- Lifecycle rules scope
+- Analytics
+- Requester Pays: types of cost, who can be requester
+- Event Notifications:
+  - Targets. EventBridge features (p.295)
+  - Permission required
+- Baseline performance
+- Multipart upload: recommended, required size
+- Transfer Acceleration
+- Byte Range Fetches
+- Select & Glacier Select
+- Batch Operations: use case highlight
+- Security:
+  - Object encryption:
+    - Server side:
+      - S3 managed keys: SSE-S3: encryption type, header
+      - KMS keys: SSE-KMS: header. APIs called when upload/download
+      - Customer provided keys: SSE-C. Where encryption keys are stored. Upload protocol.
+    - Client side: lib used.
+  - Encryption in transit
+- CORS: origin components. S3 config.
+- MFA delete: requirement, who can change config
+- Access log
+- Pre-signed URL: can gen using? Expiration of each gen method.
+- Glacier Vault Lock
+- Object Lock:
+  - Requirement
+  - Retention mode: compliance, governance
+  - Legal hold
+- Access Points
+- Object Lambda: how to access.
+## CloudFront
+- Origins
+- Geo Restriction
+- Price classes
+- Cache invalidation
+## Global Accelerator
+- Unicast IP & Anycast IP
+- Number of Anycast IPs
+- Targets
+## Messaging
+- SQS:
+  - Chars
+  - Message handling
+  - Security:
+    - Encryption
+    - Access control
+    - Access Policies
+  - Message Visibility Timeout
+  - Long Polling: def, API
+  - FIFO queue
+- SNS:
+  - Ways to publish
+  - Security
+  - Architecture:
+    - Fanout
+    - Send 1 S3 event to multiple receivers (p.399)
+    - Common targets
+  - FIFO topic
+  - Message Filtering
+- Kinesis:
+  - Function
+  - Services:
+    - Data Streams:
+      - Def
+      - Chars
+      - Capacity Modes
+    - Data Firehose:
+      - Def
+      - Chars
+    - Data Analytics
+    - Video Streams
+- Amazon MQ: def
+## Container
+- ECR
+- ECS:
+  - Launch types: EC2, Fargate
+  - IAM roles: EC2 Instance Profile, ECS Task Role (defined where)
+  - Supported by which ELB types
+  - Data Volumes (EFS)
+  - Auto Scaling: based on what, types of scaling
+  - EC2 instance autoscaling (EC2 launch type): types
+- EKS:
+  - How to collect logs & metrics
+  - Node types:
+    - Managed node groups
+    - Self-managed nodes
+    - Fargate
+  - Data Volumes: supported file systems
+- Fargate
+- App Runner: can deploy using?
+## Serverless
+- Services
+- Lambda:
+  - Container Image
+  - Pricing
+  - Limit: RAM, execution time, env vars, deployment
+  - Networking: access VPC resource, RDS in VPC
+- Edge Function:
+  - Def
+  - Types & differences
+- RDS Event Noti
+- DynamoDB:
+  - Terms: tables, PK, attributes
+  - Max item size
+  - Supported data types
+  - Read/write Capacity Modes
+  - Accelerator (DAX)
+  - Stream Processing: def, types
+  - Global Tables: def, requirement, replication type
+  - TTL
+  - Backup: types
+  - S3 integration
+- API Gateway:
+  - Targets
+  - Endpoint types:
+    - Edge-optimized
+    - Regional
+    - Private
+  - Security:
+    - Types of authentications
+    - HTTPS: where to store cert for each endpoint type
+- Step Functions: def, features
+- Cognito:
+  - User Pools: def, features
+  - Identity Pools: Federated Identities term, user sources
+## Analytics
+- Athena:
+  - Def
+  - Tricks
+  - Federated Query
+- Redshift:
+  - Def
+  - Data structure
+  - Adv over Athena
+  - Cluster: node types
+  - Snapshot & DR
+  - Ways to load data, best practice
+  - Spectrum
+- OpenSearch
+- EMR: based on, cluster made of
+- QuickSight:
+  - Def
+  - Engine
+  - Column-Level security (which edition)
+  - User & group concept
+  - Dashboard & sharing
+- Glue:
+  - Def
+  - Job Bookmarks
+  - ElasticViews
+  - DataBrew
+  - Studio
+  - Streaming ETL
+- LakeFormation: def, adv
+- Kinesis Data Analytics
+  - For SQL app: def, data sources, output
+  - For Apache Flink: def, data sources
+- MSK:
+  - Def
+  - Serverless
+  - Consumers

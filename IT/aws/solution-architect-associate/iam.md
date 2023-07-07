@@ -1,9 +1,10 @@
 # Identity & access management (IAM)
+- Global service
 - Group: contain users, not group
 - 1 user can belong to 0 -> n group
 - Policy:
-  - JSON doc: define permissions
-  - -> Least privilege principle: give users only the needed permissions
+  - JSON doc: define permissions of users/groups
+  - -> Least privilege principle: give only the needed permissions
   - Inline policy (vs group policy): for 1 user
   - Components:
     - Version
@@ -34,10 +35,10 @@
   - Secret: ~password
 - Role: assign permissions to services
 - Security tools (for audit):
-  - Credentials report (account level): list users & status of their credentials
-  - Access advisor (user level): service permissions granted & last access of those services
+  - Credentials Report (account level): list users & status of their credentials
+  - Access Advisor (user level): service permissions granted & last access of those services
 - Best practices:
-  - Root account: shouldn't be used or shared, except for AWS account setup
+  - Root account: created by default, shouldn't be used or shared, except for AWS account setup
   - 1 user ~ 1 person in org
   - Assign users to groups & assign permissions to groups
   - Create strong password policy
