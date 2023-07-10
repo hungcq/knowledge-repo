@@ -1,6 +1,5 @@
 # Elastic compute cloud (EC2)
 - Create budget to get notified about cost passing a specific budget
-- EC2: elastic compute cloud
 - Config:
   - Window
   - CPU: cores & compute power
@@ -10,7 +9,7 @@
     - Hardware (EC2 instance store)
   - Network card: speed, public IP
   - Firewall rules: security group
-  - Bootstrap script: config instance at first run (EC2 user data)
+  - Bootstrap script: config instance at first run (EC2 user data). Not run when restart.
 - Naming convention: m5.2xlarge:
   - m: instance class
   - 5: generation (higher better)

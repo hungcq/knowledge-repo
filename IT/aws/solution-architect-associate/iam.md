@@ -55,26 +55,27 @@
   - Def: use a managed policy to set the max permissions an IAM entity can get
   - -> Higher precedence over IAM identity-based policy
   - Supported for users & roles (not groups)
-  - Can be used in combination with Org. Effective permissions are intersection of boundary & identity-based policy & Org
+  - Can be used in combination with Org. Effective permissions are intersection of boundary & identity-based policy & Org.
 - Access evaluation precedence: deny > Org > resource-based > identity-based > boundary -> session
 ## Organizations
 - Global service, manage multiple AWS accounts
 - Acc types:
   - Main: management acc
   - Other: member accs
-- Consolidated billing across all accs: single payment method
-- -> Pricing benefits from aggregated usage (eg volume discount)
-- Can share reserve instances & saving plans discount across accs
+- Mapping acc:org : n:1
 - Hierarchy structure: root organizational unit (OU) -> sub OU -> ... -> accounts. Can divide by:
   - Business unit
   - Dev/production env
   - Project based
+- Security: Service Control Policies (SCP):
+  - IAM policies applied to OU/accs
+  - Not applied management acc: root access by default
+  - Disallow everything by default (vs IAM)
 - Advs:
   - Management centralization
-  - Security: Service Control Policies (SCP):
-    - IAM policies applied to OU/accs
-    - Not applied management acc: root access by default
-    - Disallow everything by default (vs IAM)
+  - Consolidated billing across all accs: single payment method
+  - -> Pricing benefits from aggregated usage (eg volume discount)
+  - Can share reserve instances & saving plans discount across accs
 ## IAM conditions
 - aws:SourceIp: restrict client IP making API calls
 - aws:RequestedRegion: restrict region the API calls are made to
@@ -85,7 +86,11 @@
   - s3:GetObject, s3:PutObject, s3:DeleteObject: object level permission (need to specify path + object/*)
 - aws:PrincipalOrgID: used in resource policies to restrict access to accs that are member of an Org
 ## Identity Center (ex Single Sign-On)
-- SSO for all AWS accs in AWS Orgs
+- SSO for:
+  - All AWS accs in AWS Orgs
+  - Business cloud apps
+  - SAML 2.0 enabled apps
+  - EC2 Windows instances
 - Identity providers:
   - Built-in identity store in Identity Center
   - Third party: eg Active Directory, OneLogin, Okta

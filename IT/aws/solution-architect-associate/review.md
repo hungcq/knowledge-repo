@@ -2,8 +2,8 @@
 ## [Region - AZ](./region-az.md)
 - Region def
 - Scope of most service
-- Considerations when choosing regions
-- AZ def
+- *Considerations when choosing regions
+- *AZ def
 - Edge location
 ## [IAM](./iam.md)
 - Root acc & users best practice
@@ -12,10 +12,49 @@
   - Def
   - Least privilege principle
   - Inline vs group policy
-  - Components
+  - *Components
 - Can access IAM via?
 - Access key components
-## EC2
+- Org:
+  - Def
+  - OU
+  - Advs
+  - Acc types
+  - Mapping acc:org
+  - *Security: Service Control Policies: def, management acc permissions, default permission, perm hierarchy
+- IAM Conditions keywords:
+  - Restrict From client IP
+  - *Restrict To region
+  - *Restrict based on tags
+  - *Force MFA
+  - Resource policies: restrict access to accounts that are member of Org
+- S3 IAM: permission levels
+- Cross acc access: assuming role vs resource-based policy
+- *EventBridge: how rule can access (p.632):
+  - Lambda, SNS, SQS, CW Logs, API Gateway...
+  - Kinesis stream, Systems Manager Run Command, ECS task...
+- Permission Boundaries: def, permissions when used in combination with Org SCP, use cases
+- IAM Policy evaluation logic
+- Identity Center (ex AWS SSO):
+  - SSO:
+    - *Supported platforms/apps
+    - Identity providers
+  - Fine-grained permissions & assignments:
+    - *Multi acc permissions: function, Permission Sets
+    - *App assignments
+    - *Attribute-based access control (ABAC)
+  - Microsoft Active Directory (AD):
+    - *Def
+    - Terms: object, tree, forest
+    - AWS AD Services: relation with on-premise AD, where users are managed:
+      - *Managed Microsoft AD
+      - AD Connector
+      - Simple AD
+    - How to connect with Identity Center: AWS Managed AD, Self-managed AD
+- Control Tower:
+  - *Function
+  - *Guardrails: def, Preventive vs Detective: based on which service
+## [EC2](./ec2.md)
 - Boostraping, User script
 - Instance types:
   - General purpose
@@ -28,34 +67,42 @@
 - Purchasing options:
   - On-demand
   - Reserved
-  - Saving plan
+  - *Saving plan (vs reserved)
   - Spot instance:
-    - Spot fleet:
+    - *Spot fleet:
       - Def
+      - Launch pool
       - Strategies:
         - Lowest price pool
         - Diversified
         - Capacity optimized
         - Price capacity optimized (recommended)
-  - Dedicated host
+  - Dedicated host: use case highlight
   - Dedicated instance
   - Capacity reservation
 - Private vs public IP
 - Elastic IP
 - Placement group: def. Types:
   - Cluster
-  - Spread
-  - Partition
-- ENI: def, attributes, usage
-- Hibernate
-## Storage
-- EBS: def. Scope. Chars. Delete on termination.
-- Snapshot. How to create EBS at dif AZ
+  - *Spread: limit
+  - *Partition
+- *ENI: def, attributes, usage
+- Hibernate: def, adv
+- *AMI:
+  - Def
+  - Scope
+  - Types of AMI
+  - AMI creation process
+## [Storage](./storage.md)
+- EBS:
+  - Def
+  - Scope
+  - Delete on termination
+- Snapshot. How to create EBS at dif AZ.
 - Snapshot features:
-  - Archive
+  - *Archive
   - Recycle bin
-  - Fast snapshot restore
-- AMI. Def. Scope. Types of AMI. AMI creation process.
+  - *Fast snapshot restore
 - Instance store
 - EBS volume types:
   - gp2/gp3
@@ -63,9 +110,9 @@
   - stl
   - scl
 - -> Which can be used as boot volume
-- EBS multi-attach
+- *EBS multi-attach: which volume type, limit, use case highlight
 - EBS encryption: where, how to encrypt unencrypted volume
-- EFS def. Scope. Compatibility.
+- EFS: def, scope, compatibility
 - EFS performance modes:
   - GP
   - Max IO
@@ -73,10 +120,11 @@
   - Bursting
   - Provisioned
   - Elastic
-- EFS storage tiers
+- *EFS storage tiers
 - EFS standard & one-zone
-- 4 types of ELBs. Protocol supported. Visibility.
-- ALB target groups. Where to get client IP, port, proto.
+## [ELB - ASG](./elb-asg.md)
+- 4 types of ELBs: protocol supported, visibility (private vs public)
+- *ALB target groups. Where to get client IP, port, proto.
 - NLB:
   - Function
   - Usage
@@ -189,6 +237,10 @@
   - Web tier vs worker tier
   - Deployment modes: single instance vs high availability
 - Snowball into Glacier
+- S3 Event Noti with EventBridge: feature highlights (p.797)
+- Blocking IP with CloudFront (p.805)
+- Data management & transfer summary (p.807)
+- Highly available EC2 instance (p.812, 813, 814)
 ## S3
 - Bucket:
   - Name constraint
@@ -326,7 +378,7 @@
   - S3 integration
 - API Gateway:
   - Targets
-  - Endpoint types:
+  - Endpoint types: dif, where to store cert:
     - Edge-optimized
     - Regional
     - Private
@@ -373,3 +425,255 @@
   - Def
   - Serverless
   - Consumers
+## Machine learning
+- Rekognition: def, use case highlight
+- Transcribe: def, feature highlights
+- Polly: def, feature highlights
+- Translate
+- Lex: features
+- Connect
+- Comprehend
+- Comprehend Medical: feature highlight
+- SageMaker
+- Forecast
+- Kendra
+- Personalize
+- Textract
+## Monitoring & audit
+- Terms: metric, namespaces, dimension
+- CW Metric Streams
+- CW Logs:
+  - Terms: lop group, log stream
+  - Targets
+  - Sources
+  - Logs Insights
+  - S3 Export
+  - Logs Subscriptions: targets, filter, cross-acc
+  - Logs Aggregation
+  - How to get logs from EC2
+  - Logs Agent & Unified Agent
+- CW Alarms:
+  - States
+  - Targets
+  - Composite Alarms
+  - EC2 Instance Recovery
+- EventBridge (ex CW Events):
+  - Types of event buses
+  - Archive events
+  - Schema infer & Schema Registry
+  - Resource-based Policy
+- CW Container Insights: def, mechanism to collect logs in EKS & Kubernetes
+- CW Lambda Insights
+- CW Contributor Insights: def, use case highlight
+- CW Application Insights
+- CloudTrail:
+  - Function
+  - Scope
+  - Use case
+  - Sources of API calls
+  - Targets
+  - Event types:
+    - Management
+    - Data
+    - Insight
+  - Event retention
+- Config:
+  - Function
+  - Use cases highlight
+  - Rules: function
+  - Remediations: SSM Automation Docs, Retries
+  - Noti targets
+- Summary: p.618, 619
+## [Security](./security.md)
+- In-flight, server side, client side: where encrypt/decrypt happens, where keys are stored
+- KMS:
+  - Best practice
+  - KMS Keys (ex Customer Master Key): symmetric vs asymmetric
+  - Key types: cost, automatic rotation:
+    - AWS Owned
+    - AWS Managed Key
+    - Customer managed keys created in KMS
+    - Customer managed keys imported
+  - How to copy Snapshots across regions, across accs
+  - Key Policies: default, custom: use case
+  - Multi-region keys: how keys are managed
+- DynamoDB, Aurora: encrypt specific attributes at client-side: use what
+- S3 Replication encryption considerations:
+  - Which objects replicated by default, which not replicated, which must enable
+  - Same multi-region key replication
+- Encrypted AMI sharing process
+- SSM Param Store:
+  - Feature highlights
+  - Hierarchy
+  - Param tiers
+  - Param Policies: feature
+- Secrets Manager: def, feature highlights, use case highlight, multi-region secret mechanism
+- ACM:
+  - Integration targets
+  - Request process
+  - Import public cert: renewal, ways to get notified
+- WAF:
+  - Function
+  - Which layer
+  - Targets
+  - Types of Web ACL rules
+  - Scope
+  - Rule Group
+  - How to use with ALB
+- Shield: function, tiers
+- Firewall Manager: function, use case highlight
+- Points of DDoS mitigation (p.682->685)
+- GuardDuty:
+  - Def
+  - Data sources
+  - Noti target
+  - Feature highlight
+- Inspector:
+  - Targets:
+    - EC2s: mechanism, assessments
+    - Container Images
+    - Lambdas
+  - Risk score
+- Macie
+## [Networking](./networking.md)
+- Summary: p.692
+- CIDR: components
+- Private IP: value ranges
+- VPC:
+  - Default VPC: internet connectivity, EC2s have what
+  - Max CIDR/VPC, min/max CIDR size, CIDR allowed values, best practice
+- Subnet: IPs reserved
+- Bastion Hosts: def, config needed
+- IGW:
+  - Function
+  - Mapping to VPC
+  - Config needed
+- NAT Instance: function, config needed, adv over NAT Gateway
+- NAT Gateway:
+  - Scope
+  - Config required
+  - High availability
+- Data flow from private EC2s to Internet
+- NACL:
+  - Scope
+  - Stateful/stateless
+  - Rules: allow deny?, precedence
+  - Default NACL rule
+  - Ephemeral Ports
+- VPC Peering:
+  - Function
+  - Requirement
+  - Char highlight
+  - Scope
+- VPC Endpoints:
+  - Function
+  - Types: mechanism, when to use:
+    - Interface Endpoints
+    - Gateway Endpoints
+  - The other way to access public service
+- VPC Flow logs:
+  - Info logged
+  - Targets
+  - How to Query
+- Site to site VPN:
+  - Components: Virtual Private Gateway, Customer Gateway
+  - Config required
+- VPN CloudHub: function
+- Direct Connect (DX):
+  - Function
+  - Data flow
+  - DX Gateway: function
+  - Connection types: Dedicated vs Hosted
+  - Time to setup
+  - How to encrypt (IPSec)
+  - Resiliency: high vs maximum
+  - Backup connection setup
+- Transit Gateway:
+  - Function
+  - Connection model
+  - Scope
+  - Feature highlight
+  - Site to site VPN ECMP: use case
+  - How to share with other accs
+- Traffic Mirroring:
+  - Function
+  - Source
+  - Target
+- IPv6:
+  - Can disable IPv4 in VPC?
+  - Troubleshooting when can't launch EC2 instances in subnet -> solution
+- Egress-only IGW: function, config required
+- Summary: p.757, 758, 759
+- Reachability Analyzer (p.758)
+- PrivateLink/VPC Endpoint Services (p.759)
+- ClassicLink (p.759)
+- Network cost:
+  - Public vs private
+  - Egress vs ingress
+  - DX location
+- Network Firewall:
+  - Function
+  - Layers
+  - Info inspected
+  - Feature highlights
+## [Disaster recovery](./disaster-recovery.md)
+- Terms: RPO, RTO
+- Strats: def, effectiveness & cost:
+  - Backup & restore
+  - Pilot light: critical services only
+  - Warm standby
+  - Hot site/multi-site approach
+- DMS:
+  - Function
+  - Feature highlight: CDC
+  - Setup required
+  - Schema Conversion Tool: when to use
+  - Multi AZ deployment
+- Migrate to Aurora MySQL:
+  - RDS to Aurora options
+  - External MySQL to Aurora options
+  - DMS: when to use
+- VM import/export
+- Application Discovery Service: Agentless vs Agent-based
+- Application Migration Service
+- Server Migration Service
+- AWS Backup:
+  - Function
+  - Supported services
+  - Feature highlights
+  - Backup Plans components
+  - Backup Vault Lock
+- VMware Cloud on AWS
+## High performance computing
+- Elastic Network Adapter (ENA): function
+- Elastic Fabric Adapter (EFA): def, use case, OS restriction
+- AWS Batch
+- ParallelCluster: def, feature highlight
+## Other Services
+- CloudFormation: def, adv
+- SES
+- Pinpoint
+- SSM:
+  - Session Manager: function, advs
+  - Run Command: def, config required
+  - Patch Manager: def, config required
+  - Maintenance Windows
+  - Automation: def, Runbook
+- Cost Explorer: function, feature highlights
+- Elastic Transcoder
+- AWS Batch:
+  - Def
+  - Types of instances
+  - How to define jobs
+  - Dif vs Lambda
+- AppFlow:
+  - Def
+  - Source highlight
+  - Destination highlights
+## White papers
+- 6 pillars of Well Architected Framework
+- Well Architected Tool
+- Trusted Advisor:
+  - Function
+  - 5 categories
+  - 7 core checks vs full check

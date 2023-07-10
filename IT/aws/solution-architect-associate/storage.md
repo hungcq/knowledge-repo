@@ -13,7 +13,7 @@
     - File system must be cluster-aware
     - Apps must handle concurrent write
   - -> When need >16k IOPS, suitable for DBs. Max IOPS io1: 64k, max IOPS io2 block express: 256k.
-  - -> Higher IOPS must use instance store.
+  - -> Higher IOPS must use instance store
   - st l: low cost, general purpose HDD
   - sc l: lowest cost, low throughput HDD
 - -> HDD can't be boot volume
