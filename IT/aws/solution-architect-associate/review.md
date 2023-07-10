@@ -122,6 +122,41 @@
   - Elastic
 - *EFS storage tiers
 - EFS standard & one-zone
+- Snow Family:
+  - Def
+  - Use cases
+  - Types:
+    - Snowball Edge:
+      - Storage optimized
+      - Compute optimized
+    - Snowcone
+    - Snowmobile
+  - Usage process
+  - OpsHub
+  - Edge computing
+- FSx:
+  - Def
+  - Types:
+    - Windows: feature highlight
+    - Lustre: use case highlight, feature highlight, deployment options
+    - NetApp ONTAP: compatibility
+    - OpenZFS: compatibility
+- *Storage Gateway:
+  - Def
+  - Types:
+    - S3 File Gateway: use case highlight
+    - FSx File Gateway: use case highlight
+    - Volume Gateway: stored volume & cached volume
+    - Tape Gateway
+  - Hardware appliance
+- *Transfer Family:
+  - Def
+  - Supported protocols
+- *DataSync:
+  - Function
+  - Targets
+  - Feature highlight
+- Summary: p.373
 ## [ELB - ASG](./elb-asg.md)
 - 4 types of ELBs: protocol supported, visibility (private vs public)
 - *ALB target groups. Where to get client IP, port, proto.
@@ -142,7 +177,7 @@
 - Cross-zone load balancing
 - Server Name Indication (SNI). Supported by which LB?
 - Connection draining (de-registration delay)
-- ASG
+- ASG:
   - Attributes
   - Scaling policies:
     - Dynamic:
@@ -150,59 +185,24 @@
       - Simple/step scaling
       - Scheduled action
     - Predictive
-    - Scaling metrics
-    - Scaling cooldown
-- Snow Family:
-  - Def
-  - Use cases
-  - Types:
-    - Snowball Edge:
-      - Storage optimized
-      - Compute optimized
-    - Snowcone
-    - Snowmobile
-  - Usage process
-  - OpsHub
-  - Edge computing
-- FSx:
-  - Def
-  - Types:
-    - Windows: feature highlight
-    - Lustre: use case highlight, feature highlight, deployment options
-    - NetApp ONTAP: compatibility
-    - OpenZFS: compatibility
-- Storage Gateway:
-  - Def
-  - Types:
-    - S3 File Gateway: use case highlight
-    - FSx File Gateway: use case highlight
-    - Volume Gateway: stored volume & cached volume
-    - Tape Gateway
-  - Hardware appliance
-- Transfer Family:
-  - Def
-  - Supported protocols
-- DataSync:
-  - Function
-  - Targets
-  - Feature highlight
-- Summary: p.373
+  - Scaling metrics
+  - Scaling cooldown
 ## Data
 - RDS:
-  - Supported DBs
+  - *Supported DBs
   - Storage autoscaling
   - Read replicas: consistency, app code update, network cost
   - Multi AZ: consistency
-  - RDS Custom: def, supported DBs, control over which
-  - RDS Proxy: advs (p.182), scope
+  - *RDS Custom: def, supported DBs, control over which
+  - *RDS Proxy: advs, scope
 - Aurora:
   - Supported DBs
   - Use case
   - Cross region replication
   - Custom Endpoints
   - Serverless
-  - Multi-master
-  - Global DB
+  - *Multi-master
+  - *Global DB
   - Aurora ML
   - Backups: automated vs manual
   - DB Cloning: mechanism, use case
@@ -211,7 +211,7 @@
   - Supported caches
   - App code update
   - Redis vs Memcached
-  - Security
+  - *Security
   - Redis use case highlight
 - DocumentDB
 - Neptune
@@ -221,12 +221,12 @@
 ## Route53
 - DNS terms: records, zone file, name server, top level domain, second level domain
 - Route53 functions: registar vs DNS service
-- Record type, TTL, value
+- Record types, TTL, value
 - Basic record types: A, AAAA, CNAME, NS, Alias (vs CNAME)
 - Public vs private hosted zone
 - Alias record non target
 - Routing policies: simple, weighted, failover, latency based, geolocation, multi-value answer, geo-proximity, IP based
-- Health check:
+- *Health check:
   - Types of resources support
   - Conditions
   - How to check private endpoints
@@ -237,7 +237,7 @@
   - Web tier vs worker tier
   - Deployment modes: single instance vs high availability
 - Snowball into Glacier
-- S3 Event Noti with EventBridge: feature highlights (p.797)
+- *S3 Event Noti with EventBridge: feature highlights (p.797)
 - Blocking IP with CloudFront (p.805)
 - Data management & transfer summary (p.807)
 - Highly available EC2 instance (p.812, 813, 814)
@@ -245,16 +245,16 @@
 - Bucket:
   - Name constraint
   - Scope
-- Objects: key components
-- Security: user based, resource based, when IAM principle can access
+- *Objects: key components
+- *Security: user based, resource based, when IAM principle can access
 - Static website hosting
-- Versioning: scope, what happened for existing objects when enable/disable versioning
+- *Versioning: scope, what happened for existing objects when enable/disable versioning
 - Replication: requirement, cross region, same region, chaining allowed?, DELETE handling
 - Storage classes:
   - Standard - GP
   - Standard IA
   - One zone IA
-  - Glacier: retrieval time
+  - *Glacier: retrieval time
     - Instant retrieval
     - Flexible retrieval
     - Deep archive
@@ -262,40 +262,40 @@
 - -> How to move between classes
 - Lifecycle rules:
   - Transition actions
-  - Expiration actions. Versioning handling.
-- Lifecycle rules scope
-- Analytics
-- Requester Pays: types of cost, who can be requester
+  - *Expiration actions. Versioning handling.
+- *Lifecycle rules scope
+- Storage Class Analysis
+- *Requester Pays: types of cost, who can be requester
 - Event Notifications:
-  - Targets. EventBridge features (p.295)
-  - Permission required
-- Baseline performance
+  - *Targets. EventBridge features (p.295).
+  - *Permission required
+- *Baseline performance
 - Multipart upload: recommended, required size
 - Transfer Acceleration
 - Byte Range Fetches
 - Select & Glacier Select
-- Batch Operations: use case highlight
+- *Batch Operations: use case highlight
 - Security:
   - Object encryption:
     - Server side:
-      - S3 managed keys: SSE-S3: encryption type, header
-      - KMS keys: SSE-KMS: header. APIs called when upload/download
-      - Customer provided keys: SSE-C. Where encryption keys are stored. Upload protocol.
-    - Client side: lib used.
+      - *S3 managed keys: SSE-S3: encryption type, header
+      - *KMS keys: SSE-KMS: header. APIs called when upload/download.
+      - *Customer provided keys: SSE-C. Where encryption keys are stored. Upload protocol.
+    - *Client side: lib used
   - Encryption in transit
-- CORS: origin components. S3 config.
+- *CORS: origin components. S3 config.
 - MFA delete: requirement, who can change config
-- Access log
-- Pre-signed URL: can gen using? Expiration of each gen method.
+- *Access log
+- *Pre-signed URL: can gen using? Expiration of each gen method.
 - Glacier Vault Lock
 - Object Lock:
   - Requirement
-  - Retention mode: compliance, governance
-  - Legal hold
-- Access Points
-- Object Lambda: how to access.
+  - *Retention mode: compliance, governance
+  - *Legal hold
+- *Access Points
+- *Object Lambda: how to access
 ## CloudFront
-- Origins
+- *Origins
 - Geo Restriction
 - Price classes
 - Cache invalidation
@@ -305,7 +305,7 @@
 - Targets
 ## Messaging
 - SQS:
-  - Chars
+  - Chars: throughput, max retention
   - Message handling
   - Security:
     - Encryption
@@ -313,7 +313,7 @@
     - Access Policies
   - Message Visibility Timeout
   - Long Polling: def, API
-  - FIFO queue
+  - FIFO queue: limit
 - SNS:
   - Ways to publish
   - Security
@@ -321,7 +321,7 @@
     - Fanout
     - Send 1 S3 event to multiple receivers (p.399)
     - Common targets
-  - FIFO topic
+  - FIFO topic: limit
   - Message Filtering
 - Kinesis:
   - Function

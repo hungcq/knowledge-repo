@@ -123,4 +123,28 @@
 ## Firewall Manager
 - Def: service managing rules in all accounts of Org (eg WAF rules, security groups, network firewall)
 - Rules applied to new resources as they are created across all & future accs in Org
-- 
+## GuardDuty
+- Def: intelligent thread discovery to protect AWS account
+- Use ML, anomaly detection, third party data
+- Input data:
+  - CloudTrail Event Logs:
+    - Management Events
+    - S3 Data Events
+  - VPC Flow Logs
+  - DNS Logs
+  - Optional Features: eg EKS Audit Logs, RDS & Aurora
+- Can setup EventBridge rules for noti
+- Can protect against CryptoCurrency attacks (has dedicated finding for it)
+## Inspector
+- Def: automated security assessment
+- Target:
+  - EC2 instances: use System Manager agent to analyze:
+    - Unintended network accessibility
+    - Known vulnerabilities of running OS
+  - Container images pushed to ECR
+  - Lambda
+- Reporting & integration with Security Hub/EventBridge
+## Macie
+- Def: managed data security & privacy service using ML & pattern matching to discover & protect sensitive data in AWS
+- -> Identify & alert to sensitive data (eg personally identifiable info)
+- Noti via EventBridge
