@@ -68,7 +68,7 @@
 - Schema: table (DB) -> primary key (decided at creation time) + nullable attributes (can be added overtime)
 - -> Suitable for rapidly evolving schema
 - Supported data types:
-  - Primitive
+  - Scalar (primitive)
   - Document: list, map
   - Set: string set, number set, binary set
 - Max record size: 400KB
@@ -97,7 +97,7 @@
       - 24 hours retention
       - Limited number of consumers
       - Process using Lambda Triggers/DynamoDB Stream Kinesis
-    - Kinesis Data Stream: 1 year retention, more consumers, more processing options
+    - Kinesis Data Streams: 1 year retention, more consumers, more processing options
 - Global Tables:
   - In dif regions, with 2-way (active-active) replication
   - -> Allow low latency access in multiple regions
@@ -128,7 +128,7 @@
 - Integrations:
   - Lambda
   - HTTP endpoint
-  - AWS service (eg push message to SQS)
+  - AWS service: expose AWS API (eg push message to SQS)
   - -> Authenticate/rate control API calls
 - Endpoint types:
   - Edge optimized (default):
@@ -169,8 +169,8 @@
     - Pw reset
     - Email & phone number verification
     - MFA
-    - Federated identity: eg Google, FB, SAML
 - Identity pools (federated identity):
+  - Federated identity: eg Google, FB, SAML
   - Provide temp AWS credentials to users to access AWS resources directly/via API Gateway
   - Integrated with User pools
   - IAM policies applied to credentials defined in Cognito

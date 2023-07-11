@@ -4,6 +4,7 @@
 - Complicated solutions are probably wrong
 - Skim white papers
 - Read services' FAQ
+- Pay attention to **number of answers** in multiple-answer questions:
 ## Exam structure
 - 65 questions in 130 min (+30 accommodation)
 - Flag feature to mark questions to revisit

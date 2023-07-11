@@ -50,13 +50,15 @@
 - Must have Elastic IP attached & route table of private EC2 configured
 - Traffic flow: private EC2 -> NAT instance -> Internet
 - Lots of manual config/setup needed
+- Adv: can be used as Bastion Host
 ## NAT Gateway
 - Function: allow EC2s in private subnets to connect to the Internet
 - Managed NAT, no security group required, better than NAT instance
 - Pay per hour for usage & bandwidth
 - Created in a specific AZ, use Elastic IP
 - Can only be used by EC2s in dif subnet
-- Require IGW. Flow: private subnet -> NAT gateway -> IGW
+- Require IGW
+- Data flow: private subnet -> NAT gateway -> IGW
 - Availability:
   - Resilient within single AZ
   - Must create a NAT gateways in each AZ for fault tolerance

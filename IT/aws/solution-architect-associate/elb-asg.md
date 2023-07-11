@@ -5,6 +5,7 @@
   - Health check at target group level
   - Can be setup as internal (private) or external (public)
   - Use security group
+  - Scope: regional
   - Types:
     - Classic (old generation) - not tested: HTTP, HTTPS, TCP, SSL
     - Application: HTTP, HTTPS, web socket:
@@ -26,7 +27,9 @@
         - EC2 instances
         - Private IP addresses
         - Application load balancer
-      - Health check supports TCP, HTTP, HTTPS
+      - Health check supports:
+        - TCP
+        - HTTP, HTTPS: when target is ALB
     - Gateway (layer 3 - network layer - IP protocol):
       - Act as gateway (eg firewall, traffic inspection purpose)
       - Use case: deploy, manage, scale a fleet of virtual appliances on AWS

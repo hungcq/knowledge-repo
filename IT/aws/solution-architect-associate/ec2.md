@@ -73,7 +73,9 @@
   - Best practice: avoid using Elastic IP, use random public IP & assign DNS name to instance or use LB
 - Placement group: control over EC2 instances placement strat:
   - Cluster: into low latency cluster (same rack) within AZ -> higher risk of failure
-  - Spread: spread over underlying hardware (max 7 instances per group per AZ) -> for critical apps
+  - -> Use case: HPC
+  - Spread: spread over underlying hardware (max 7 instances per group per AZ)
+  - -> Use case: critical apps
   - Partition: spread over partitions (on dif racks, max 7 per AZ). Partitions are separated from each other's failure.
   - -> Used for partition-aware app (eg Kafka, Hadoop)
 - -> Select when launch EC2 instance

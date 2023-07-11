@@ -36,11 +36,13 @@
   - Send command status noti to SNS
   - Integrated with IAM & CloudTrail
   - Can be invoked via EventBridge
+- Need to install SSM Agent
 ### Patch Manager
 - Automate patching managed instances (EC2 & on premises)
 - Features:
   - Patch on demand or scheduled
   - Scan instances & generate patch compliance report
+- Need to install SSM Agent
 ### Maintenance Windows
 - Define schedule to perform action on instances
 ### Automation
@@ -70,3 +72,10 @@
   - Can define when to transfer: schedule, events, on demand
   - Data transformation (eg filtering, validation)
   - Encryption
+## Resource Access Manager
+- Def: share AWS resources with any AWS account or within AWS Org
+- Resources:
+  - Transit Gateways
+  - Subnets
+  - License Manager configurations
+  - Route 53 Resolver rules

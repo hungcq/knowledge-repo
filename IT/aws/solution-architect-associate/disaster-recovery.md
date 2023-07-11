@@ -41,12 +41,13 @@
 ## On premise strategy
 - Can download Amazon Linux 2 AMI as a VM (.iso) to run on premises
 - VM import/export
-- AWS Application Discovery Service: gather info about on-premise servers to plan for migration
+- AWS Application Discovery Service
 - (eg server utilization data, dependency mapping)
 - DMS: replicate on-premise <-> AWS
 - Server Migration Service: incremental replication of on-premise live servers to AWS
 ## AWS Backup
 - Managed service, to manage & automate backups centrally across AWS
+- Supported services: EC2/EBS, S3, RDS, DocumentDB, Neptune, EFS, FSx (Lustre & Windows FS), Storage Gateway (Volume)
 - Features:
   - Cross region/acc backups
   - PITR
@@ -55,6 +56,7 @@
 - Backup Plans: user created backup policies
 - Vault Lock: enforce WORM state for the backups to prevent accidental deletes (including root user)
 ## Application Discovery Service
+- Function: gather info about on-premise servers to plan for migration
 - 2 types:
   - Agentless discovery (Agentless Discovery Connector)
   - Agent-based Discovery (Application Discovery Agent): more info

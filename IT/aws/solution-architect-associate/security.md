@@ -96,7 +96,7 @@
 - Import outside public certs:
   - No auto renewal
   - Noti of expiration via:
-    - ACM -> EventBridge
+    - ACM -> EventBridge: daily expiration event (daily, starting 45 days prior to expiration)
     - AWS Config: check with ACM -> EventBridge
 ## Web App Firewall (WAF)
 - Protect web apps from common web exploits (layer 7 - HTTP)
@@ -113,7 +113,7 @@
   - Geo-match (block countries)
   - Rate-based rules: DDoS protection
 - Regional except for CloudFront
-- Rule group: reusable set of rules that can be added to a web ACL
+- Rule Group: reusable set of rules that can be added to a web ACL
 - Pattern: fixed IP using WAF with ALB: client -> Global Accelerator -> ALB + WAF -> EC2 instances
 ## Shield
 - Def: DDoS protection service

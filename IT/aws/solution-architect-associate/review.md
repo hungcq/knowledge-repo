@@ -33,7 +33,7 @@
 - *EventBridge: how rule can access (p.632):
   - Lambda, SNS, SQS, CW Logs, API Gateway...
   - Kinesis stream, Systems Manager Run Command, ECS task...
-- Permission Boundaries: def, permissions when used in combination with Org SCP, use cases
+- Permission Boundaries: def, supported IAM identities, permissions when used in combination with Org SCP, use cases
 - IAM Policy evaluation logic
 - Identity Center (ex AWS SSO):
   - SSO:
@@ -82,7 +82,7 @@
   - Capacity reservation
 - Private vs public IP
 - Elastic IP
-- Placement group: def. Types:
+- Placement group: def. Types: use case:
   - Cluster
   - *Spread: limit
   - *Partition
@@ -109,7 +109,7 @@
   - io1/io2. Which IOPS to use. Max IOPS.
   - stl
   - scl
-- -> Which can be used as boot volume
+- -> Which can be used as boot volume (also Instance Store)
 - *EBS multi-attach: which volume type, limit, use case highlight
 - EBS encryption: where, how to encrypt unencrypted volume
 - EFS: def, scope, compatibility
@@ -158,6 +158,7 @@
   - Feature highlight
 - Summary: p.373
 ## [ELB - ASG](./elb-asg.md)
+- Scope
 - 4 types of ELBs: protocol supported, visibility (private vs public)
 - *ALB target groups. Where to get client IP, port, proto.
 - NLB:
@@ -187,7 +188,7 @@
     - Predictive
   - Scaling metrics
   - Scaling cooldown
-## Data
+## [Data](./data.md)
 - RDS:
   - *Supported DBs
   - Storage autoscaling
@@ -218,7 +219,7 @@
 - Keyspaces
 - QLDB (vs Managed Blockchain)
 - Timestream
-## Route53
+## [Route53](./route-53.md)
 - DNS terms: records, zone file, name server, top level domain, second level domain
 - Route53 functions: registar vs DNS service
 - Record types, TTL, value
@@ -230,7 +231,7 @@
   - Types of resources support
   - Conditions
   - How to check private endpoints
-## Architecture solution discussion
+## [Solution architecture discussion](./solution-architecture-discussion)
 - p.232, 233, 243, 244, 250, 251, 495, 496, 503, 504, 559, 560
 - Beanstalk:
   - Components: app, app version, env
@@ -241,7 +242,12 @@
 - Blocking IP with CloudFront (p.805)
 - Data management & transfer summary (p.807)
 - Highly available EC2 instance (p.812, 813, 814)
-## S3
+- High performance computing
+  - Elastic Network Adapter (ENA): function
+  - Elastic Fabric Adapter (EFA): def, use case, OS restriction
+  - AWS Batch
+  - ParallelCluster: def, feature highlight
+## [S3](./s3.md)
 - Bucket:
   - Name constraint
   - Scope
@@ -294,194 +300,194 @@
   - *Legal hold
 - *Access Points
 - *Object Lambda: how to access
-## CloudFront
+## [CloudFront](./cloud-front-global-accelerator.md)
 - *Origins
 - Geo Restriction
 - Price classes
 - Cache invalidation
-## Global Accelerator
+## [Global Accelerator](./cloud-front-global-accelerator.md)
 - Unicast IP & Anycast IP
 - Number of Anycast IPs
 - Targets
-## Messaging
+## [Messaging](./messaging.md)
 - SQS:
-  - Chars: throughput, max retention
+  - *Chars: delivery guarantee, ordering, throughput, max retention
   - Message handling
-  - Security:
+  - *Security:
     - Encryption
     - Access control
     - Access Policies
   - Message Visibility Timeout
   - Long Polling: def, API
-  - FIFO queue: limit
+  - *FIFO queue: throughput limit: without & with batching
 - SNS:
-  - Ways to publish
+  - *Dif vs SQS
+  - *Ways to publish
   - Security
   - Architecture:
     - Fanout
     - Send 1 S3 event to multiple receivers (p.399)
-    - Common targets
+    - *Common targets
   - FIFO topic: limit
-  - Message Filtering
+  - *Message Filtering
 - Kinesis:
   - Function
   - Services:
-    - Data Streams:
+    - *Data Streams:
       - Def
       - Chars
       - Capacity Modes
-    - Data Firehose:
+    - *Data Firehose:
       - Def
       - Chars
-    - Data Analytics
-    - Video Streams
-- Amazon MQ: def
-## Container
+    - *Data Analytics
+    - *Video Streams
+- *Amazon MQ: def
+## [Container](./container.md)
 - ECR
 - ECS:
   - Launch types: EC2, Fargate
-  - IAM roles: EC2 Instance Profile, ECS Task Role (defined where)
+  - *IAM roles: EC2 Instance Profile, ECS Task Role (defined where)
   - Supported by which ELB types
   - Data Volumes (EFS)
-  - Auto Scaling: based on what, types of scaling
-  - EC2 instance autoscaling (EC2 launch type): types
+  - *Autoscaling: types of scaling
+  - *EC2 instance autoscaling (EC2 launch type): types
 - EKS:
   - How to collect logs & metrics
-  - Node types:
+  - *Node types:
     - Managed node groups
     - Self-managed nodes
     - Fargate
-  - Data Volumes: supported file systems
+  - *Data Volumes: supported file systems
 - Fargate
 - App Runner: can deploy using?
-## Serverless
+## [Serverless](./serverless.md)
 - Services
 - Lambda:
-  - Container Image
-  - Pricing
-  - Limit: RAM, execution time, env vars, deployment
-  - Networking: access VPC resource, RDS in VPC
+  - *Pricing
+  - Limit: RAM, execution time, env vars, deployment, concurrent execution (soft limit)
+  - *Networking: access VPC resource, RDS in VPC
 - Edge Function:
   - Def
-  - Types & differences
+  - *Types & differences: CloudFront Functions & Lambda@Edge
 - RDS Event Noti
 - DynamoDB:
   - Terms: tables, PK, attributes
-  - Max item size
-  - Supported data types
-  - Read/write Capacity Modes
+  - *Max record size
+  - *Supported data types
+  - *Read/write Capacity Modes
   - Accelerator (DAX)
-  - Stream Processing: def, types
-  - Global Tables: def, requirement, replication type
+  - *Stream Processing: def, types
+  - *Global Tables: def, requirement, replication type
   - TTL
   - Backup: types
-  - S3 integration
+  - *S3 integration
 - API Gateway:
-  - Targets
-  - Endpoint types: dif, where to store cert:
+  - Feature highlights: throttle req & cache res
+  - *Integrations
+  - Endpoint types:
     - Edge-optimized
     - Regional
     - Private
   - Security:
-    - Types of authentications
+    - *Types of authentications
     - HTTPS: where to store cert for each endpoint type
-- Step Functions: def, features
+- *Step Functions: def, features
 - Cognito:
-  - User Pools: def, features
-  - Identity Pools: Federated Identities term, user sources
-## Analytics
+  - *User Pools: def, features, integrations
+  - *Identity Pools: Federated Identities term, user sources, flow
+## [Analytics](./analytics.md)
 - Athena:
   - Def
-  - Tricks
-  - Federated Query
+  - *Tricks
+  - *Federated Query
 - Redshift:
   - Def
   - Data structure
-  - Adv over Athena
+  - *Adv over Athena
   - Cluster: node types
-  - Snapshot & DR
-  - Ways to load data, best practice
-  - Spectrum
+  - DR: multi AZ & snapshot
+  - *Ways to load data, best practice
+  - *Spectrum
 - OpenSearch
-- EMR: based on, cluster made of
+- *EMR: based on, cluster made of, node types
 - QuickSight:
-  - Def
-  - Engine
-  - Column-Level security (which edition)
-  - User & group concept
+  - *Def
+  - *Engine
+  - *Column-Level security: which edition
+  - User & group: concept, which edition
   - Dashboard & sharing
 - Glue:
   - Def
   - Job Bookmarks
-  - ElasticViews
-  - DataBrew
+  - *ElasticViews
+  - *DataBrew
   - Studio
-  - Streaming ETL
+  - *Streaming ETL
 - LakeFormation: def, adv
-- Kinesis Data Analytics
+- *Kinesis Data Analytics:
   - For SQL app: def, data sources, output
   - For Apache Flink: def, data sources
 - MSK:
   - Def
   - Serverless
-  - Consumers
-## Machine learning
-- Rekognition: def, use case highlight
+  - *Consumers
+## [Machine learning](./machine-learning.md)
+- *Rekognition: def, use case highlight
 - Transcribe: def, feature highlights
-- Polly: def, feature highlights
+- *Polly: def, feature highlights
 - Translate
-- Lex: features
-- Connect
+- *Lex: features
+- *Connect
 - Comprehend
 - Comprehend Medical: feature highlight
 - SageMaker
 - Forecast
-- Kendra
+- *Kendra
 - Personalize
-- Textract
-## Monitoring & audit
+- *Textract
+## [Monitoring & audit](./monitoring-audit.md)
 - Terms: metric, namespaces, dimension
-- CW Metric Streams
+- *CW Metric Streams
 - CW Logs:
-  - Terms: lop group, log stream
-  - Targets
-  - Sources
-  - Logs Insights
+  - *Terms: lop group, log stream
+  - *Targets
+  - *Sources
+  - *Logs Insights
   - S3 Export
-  - Logs Subscriptions: targets, filter, cross-acc
-  - Logs Aggregation
+  - *Logs Subscriptions: targets, Subscription Filter, cross-acc, Logs Aggregation
   - How to get logs from EC2
   - Logs Agent & Unified Agent
 - CW Alarms:
-  - States
-  - Targets
+  - *States
+  - *Targets
   - Composite Alarms
-  - EC2 Instance Recovery
+  - *EC2 Instance Recovery
 - EventBridge (ex CW Events):
-  - Types of event buses
+  - *Types of event buses
   - Archive events
   - Schema infer & Schema Registry
   - Resource-based Policy
 - CW Container Insights: def, mechanism to collect logs in EKS & Kubernetes
 - CW Lambda Insights
-- CW Contributor Insights: def, use case highlight
+- *CW Contributor Insights: def, use case highlight
 - CW Application Insights
 - CloudTrail:
-  - Function
+  - *Function
   - Scope
   - Use case
-  - Sources of API calls
-  - Targets
+  - *Sources of API calls
+  - *Targets
   - Event types:
     - Management
     - Data
-    - Insight
+    - *Insight
   - Event retention
-- Config:
+- *Config:
   - Function
-  - Use cases highlight
+  - Use case highlights
   - Rules: function
-  - Remediations: SSM Automation Docs, Retries
+  - Remediation: SSM Automation Docs, Retries
   - Noti targets
 - Summary: p.618, 619
 ## [Security](./security.md)
@@ -489,59 +495,65 @@
 - KMS:
   - Best practice
   - KMS Keys (ex Customer Master Key): symmetric vs asymmetric
-  - Key types: cost, automatic rotation:
+  - *Key types: cost, automatic rotation:
     - AWS Owned
     - AWS Managed Key
     - Customer managed keys created in KMS
     - Customer managed keys imported
-  - How to copy Snapshots across regions, across accs
-  - Key Policies: default, custom: use case
+  - *How to copy Snapshots across regions, across accs (p.655, 657)
+  - *Key Policies: default, custom: use case
   - Multi-region keys: how keys are managed
-- DynamoDB, Aurora: encrypt specific attributes at client-side: use what
-- S3 Replication encryption considerations:
+- *DynamoDB, Aurora: encrypt specific attributes at client-side: use what
+- *S3 Replication encryption considerations:
   - Which objects replicated by default, which not replicated, which must enable
   - Same multi-region key replication
-- Encrypted AMI sharing process
+- *Encrypted AMI sharing process
 - SSM Param Store:
-  - Feature highlights
+  - *Def
   - Hierarchy
   - Param tiers
-  - Param Policies: feature
-- Secrets Manager: def, feature highlights, use case highlight, multi-region secret mechanism
+  - *Param Policies: feature
+- Secrets Manager:
+  - Def
+  - Feature highlights
+  - Use case highlight
+  - *Multi-region secret mechanism
 - ACM:
-  - Integration targets
+  - *Integration targets
   - Request process
-  - Import public cert: renewal, ways to get notified
+  - *Import public cert: renewal, ways to get notified
 - WAF:
-  - Function
+  - *Function
   - Which layer
-  - Targets
-  - Types of Web ACL rules
-  - Scope
-  - Rule Group
-  - How to use with ALB
+  - *Targets
+  - *Types of Web ACL rules
+  - *Scope
+  - *Rule Group
+  - *How to use with ALB
 - Shield: function, tiers
-- Firewall Manager: function, use case highlight
-- Points of DDoS mitigation (p.682->685)
+- *Firewall Manager: function, use case highlight
+- Points of DDoS mitigation (p.682 -> 685)
 - GuardDuty:
   - Def
   - Data sources
   - Noti target
   - Feature highlight
 - Inspector:
+  - *Def
   - Targets:
     - EC2s: mechanism, assessments
     - Container Images
     - Lambdas
   - Risk score
-- Macie
+- *Macie
 ## [Networking](./networking.md)
-- Summary: p.692
+- Summary diagram: p.692
+- Summary: p.757, 758, 759
 - CIDR: components
 - Private IP: value ranges
 - VPC:
-  - Default VPC: internet connectivity, EC2s have what
-  - Max CIDR/VPC, min/max CIDR size, CIDR allowed values, best practice
+  - *Default VPC: internet connectivity, EC2s have what
+  - *Max CIDRs/VPC, min/max CIDR size, CIDR allowed values, best practice
 - Subnet: IPs reserved
 - Bastion Hosts: def, config needed
 - IGW:
@@ -551,126 +563,118 @@
 - NAT Instance: function, config needed, adv over NAT Gateway
 - NAT Gateway:
   - Scope
-  - Config required
+  - *Setup required
   - High availability
 - Data flow from private EC2s to Internet
 - NACL:
   - Scope
   - Stateful/stateless
   - Rules: allow deny?, precedence
-  - Default NACL rule
+  - *Default NACL rule
   - Ephemeral Ports
 - VPC Peering:
   - Function
-  - Requirement
-  - Char highlight
-  - Scope
-- VPC Endpoints:
+  - *Requirements
+  - *Char highlight
+  - *Scope
+- VPC Endpoints (PrivateLink):
   - Function
-  - Types: mechanism, when to use:
+  - *Types: mechanism, when to use:
     - Interface Endpoints
     - Gateway Endpoints
   - The other way to access public service
 - VPC Flow logs:
   - Info logged
-  - Targets
-  - How to Query
+  - *Targets
+  - How to query
 - Site to site VPN:
   - Components: Virtual Private Gateway, Customer Gateway
-  - Config required
-- VPN CloudHub: function
+  - *Config required
+- *VPN CloudHub: function
 - Direct Connect (DX):
   - Function
-  - Data flow
-  - DX Gateway: function
-  - Connection types: Dedicated vs Hosted
+  - *Data flow
+  - *DX Gateway: function
+  - Connection types: Dedicated vs Hosted: capacity, can add/remove capacity?
   - Time to setup
   - How to encrypt (IPSec)
-  - Resiliency: high vs maximum
+  - *Resiliency: high vs maximum
   - Backup connection setup
 - Transit Gateway:
-  - Function
+  - *Function
   - Connection model
-  - Scope
-  - Feature highlight
-  - Site to site VPN ECMP: use case
-  - How to share with other accs
+  - *Scope
+  - *Feature highlight
+  - *Site to site VPN ECMP: use case
+  - *How to share with other accs
 - Traffic Mirroring:
   - Function
   - Source
-  - Target
+  - *Targets
 - IPv6:
   - Can disable IPv4 in VPC?
   - Troubleshooting when can't launch EC2 instances in subnet -> solution
 - Egress-only IGW: function, config required
-- Summary: p.757, 758, 759
 - Reachability Analyzer (p.758)
-- PrivateLink/VPC Endpoint Services (p.759)
-- ClassicLink (p.759)
+- *ClassicLink (p.759)
 - Network cost:
   - Public vs private
   - Egress vs ingress
-  - DX location
+  - *DX location
 - Network Firewall:
   - Function
-  - Layers
-  - Info inspected
-  - Feature highlights
+  - *Layers
+  - *Feature highlights
 ## [Disaster recovery](./disaster-recovery.md)
 - Terms: RPO, RTO
 - Strats: def, effectiveness & cost:
   - Backup & restore
-  - Pilot light: critical services only
+  - Pilot light
   - Warm standby
   - Hot site/multi-site approach
 - DMS:
-  - Function
+  - *Function
   - Feature highlight: CDC
-  - Setup required
+  - *Setup required
   - Schema Conversion Tool: when to use
   - Multi AZ deployment
 - Migrate to Aurora MySQL:
-  - RDS to Aurora options
+  - *RDS to Aurora options
   - External MySQL to Aurora options
   - DMS: when to use
 - VM import/export
-- Application Discovery Service: Agentless vs Agent-based
+- Application Discovery Service: def, Agentless vs Agent-based
 - Application Migration Service
-- Server Migration Service
+- *Server Migration Service
 - AWS Backup:
-  - Function
+  - *Function
   - Supported services
-  - Feature highlights
-  - Backup Plans components
+  - Backup Plans
   - Backup Vault Lock
 - VMware Cloud on AWS
-## High performance computing
-- Elastic Network Adapter (ENA): function
-- Elastic Fabric Adapter (EFA): def, use case, OS restriction
-- AWS Batch
-- ParallelCluster: def, feature highlight
-## Other Services
-- CloudFormation: def, adv
+## [Other Services](./other-services.md)
+- *CloudFormation: def, adv
 - SES
-- Pinpoint
+- *Pinpoint
 - SSM:
   - Session Manager: function, advs
   - Run Command: def, config required
   - Patch Manager: def, config required
-  - Maintenance Windows
-  - Automation: def, Runbook
+  - *Maintenance Windows
+  - *Automation: def, Runbook
 - Cost Explorer: function, feature highlights
 - Elastic Transcoder
 - AWS Batch:
-  - Def
-  - Types of instances
+  - *Def
+  - *Types of instances
   - How to define jobs
   - Dif vs Lambda
-- AppFlow:
+- *AppFlow:
   - Def
   - Source highlight
   - Destination highlights
-## White papers
+- RAM: def, resources
+## [White papers](./white-papers.md)
 - 6 pillars of Well Architected Framework
 - Well Architected Tool
 - Trusted Advisor:

@@ -13,7 +13,10 @@
     - User must provision & maintain infra (EC2 instances)
     - EC2 instances must run ECS agent
     - AWS manage starting/stopping containers
-  - Fargate: serverless solution, AWS manage ECS tasks based on CPU/RAM required
+    - Pricing: EC2s & EBS used
+  - Fargate:
+    - Serverless solution, AWS manage ECS tasks based on CPU/RAM required
+    - Pricing: vCPU & memory resources requested by containerized app
 - Security:
   - IAM roles for ECS:
     - EC2 instance profile: used by ECS agent, access the necessary services
@@ -27,7 +30,7 @@
     - Pair with AWS Private link
   - CLB: not recommended
 - Data volume: EFS, work with both launch types
-- Service auto scaling:
+- Service autoscaling:
   - Automatically increase/decrease desired number of ECS tasks
   - Scale at task level, not instance level
   - Types:
@@ -40,7 +43,7 @@
     - Scheduled scaling: scale on specific date/time
   - For ECS EC2 launch type, can scale EC2 instances by:
     - ASG: based on CPU utilization
-    - ECS cluster capacity provider:
+    - ECS Cluster Capacity Provider:
       - Automatically provision & scale underlying infra for ECS tasks
       - Pair with ASG: add EC2 instances when missing capacity
 ## EKS
@@ -60,6 +63,7 @@
   - Need to specify StorageClass manifest on EKS cluster
   - Leverage Container storage interface (CSI) compliant driver
   - Support types: EBS, EFS (work with Fargate), FSx for Lustre, FSx for NetApp ONTAP
+- Logs & metrics: collect using CW Container Insights
 ## AppRunner
 - Def: managed service to deploy web apps/APIs at scale
 - Deploy web app from source code/container image + configs

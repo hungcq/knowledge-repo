@@ -32,7 +32,7 @@
     - Snapshot creation: manual or automatic
     - Can config Redshift to auto copy snapshot to another region
 - Load data from:
-  - Kinesis Data Firehose'
+  - Kinesis Data Firehose
   - S3: using COPY command
   - EC2 instance: using JDBC driver
 - -> Large inserts are better
@@ -103,14 +103,14 @@
 - Use case: centralized permissions
 ## Kinesis Data Analytics
 - Data Analytics for SQL app:
+  - Def: realtime analytics from Kinesis data source (Data Stream/Firehose). Can be enriched with S3 ref data.
   - Flow: slide page 551
-  - Realtime analytics from Kinesis data source (Data Stream/Firehose). Can be enriched with S3 ref data.
   - Output: Kinesis Data Stream/Firehose
   - Use cases:
     - Time series analytics
     - Realtime metrics/dashboards
 - Data Analytics for Flink:
-  - Run Flink app on managed a AWS cluster
+  - Run Flink app on managed an AWS cluster
   - Data sources: Kinesis Data Streams, MSK
 ## Managed Streaming for Kafka (MSK)
 - Def: managed Kafka:

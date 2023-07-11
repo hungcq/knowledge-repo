@@ -26,15 +26,15 @@
   - Lambda
   - OpenSearch
 - Encrypted by default (can setup KMS based encryption)
+- Send via: SDK, CW Logs Agent, CW Unified Agent
 - Sources:
-  - Send via: SDK, CW Logs Agent, CW Unified Agent
   - Beanstalk: collect from apps
   - ECS: collect from containers
   - Lambda: function logs
-  - VPC Flow Logs: VPC specific logs
   - API Gateway
-  - CloudTrail based on filter
+  - VPC Flow Logs: VPC specific logs
   - Route53: DNS queries
+  - CloudTrail based on filter
 - Logs Insight: search & analyze CW logs
 - Logs Subscriptions:
   - Provide realtime log events from CW Logs for processing & analysis
@@ -64,9 +64,9 @@
   - INSUFFICIENT_DATA
   - ALARM
 - Targets:
-  - Stop/terminate/reboot/recover EC2 instance
-  - Trigger autoscaling action
-  - Send noti to SNS
+  - EC2: stop/terminate/reboot/recover EC2 instance
+  - ASG: trigger autoscaling action
+  - SNS: send noti
 - Composite Alarms: monitor states of multiple other alarms (AND/OR conditions)
 - -> Reduce noise
 - EC2 instance recovery: triggered by StatusCheckFailed_System alarm. Can alert SNS topic.
@@ -108,8 +108,9 @@
 ## CloudTrail
 - Provide governance, compliance & audit for user's AWS account: history of events/API calls made within AWS account
 - -> Who do what
+- Sources: console, CLI, SDK, IAM users/roles
 - Enabled by default
-- Can export to CW Logs/S3
+- Targets: can export to CW Logs/S3
 - A trail can be applied to all regions (default) or 1 region
 - Event types:
   - Management:
@@ -138,5 +139,5 @@
   - Does not prevent actions from happening
   - Remediation: auto remediate non-compliant resources using SSM Automation Documents
   - -> Can set Retries if resource is still non-compliant after remediation
-  - Noti: trigger EventBridge when resources are non-compliant
+  - Noti: trigger EventBridge/SNS when resources are non-compliant
 - Config Resource: view config/compliance/CloudTrail API calls of a resource over time

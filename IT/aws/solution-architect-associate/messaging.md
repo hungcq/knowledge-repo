@@ -28,6 +28,7 @@
   - When polling, if there is no message, consumer can wait for message
   - -> Decrease API calls to SQS, increase efficiency & latency of app
   - Wait time: 1-20s. Can be set at queue level or app level via API call.
+  - API: WaitTimeSeconds
 - FIFO queue:
   - Receive in FIFO ordering
   - Limited throughput: 300 messages/s without batching, 3000 with batching
@@ -63,7 +64,7 @@
         - Specify number of shards
         - Cost: per shard per consumer hour
       - On-demand:
-        - Auto scale
+        - Autoscale
         - Cost: per stream per hour & data in/out per KB
     - Security: ~SQS
   - Data firehose:
