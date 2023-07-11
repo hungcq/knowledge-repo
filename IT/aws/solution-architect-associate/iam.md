@@ -27,7 +27,7 @@
   - Universal 2nd factor (U2F) security key
   - Hardware key fob
 - Access via:
-  - Management console: use password + MFA
+  - Console: use password + MFA
   - CLI: use access key
   - SDK (libs for code): use access key
 - Access key: managed by users. Components:
@@ -56,6 +56,10 @@
   - -> Higher precedence over IAM identity-based policy
   - Supported for users & roles (not groups)
   - Can be used in combination with Org. Effective permissions are intersection of boundary & identity-based policy & Org.
+  - Use cases:
+    - Delegate responsibility to non admins
+    - Allow users to self-manage permissions without escalating their privileges
+    - Restrict one specific user of whole acc via SCP
 - Access evaluation precedence: deny > Org > resource-based > identity-based > boundary -> session
 ## Organizations
 - Global service, manage multiple AWS accounts
@@ -69,8 +73,10 @@
   - Project based
 - Security: Service Control Policies (SCP):
   - IAM policies applied to OU/accs
-  - Not applied management acc: root access by default
+  - Not applied to management acc: root access by default
+  - Applied to root acc
   - Disallow everything by default (vs IAM)
+  - Not affect any service-linked role
 - Advs:
   - Management centralization
   - Consolidated billing across all accs: single payment method

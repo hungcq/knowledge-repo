@@ -88,6 +88,7 @@
 - Use cases:
   - DB cache: need to handle cache hit, cache miss (read DB & write to cache) in code
   - Store user session
+- -> Read heavy or compute intensive workload
 - Features:
   - Redis:
     - Multi AZ with auto failover

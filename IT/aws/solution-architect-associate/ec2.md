@@ -42,7 +42,7 @@
   - Spot instance:
     - Short workload, resistant to failure, cheapest, can lose instance if someone paying more
     - -> Define max spot price & get the instance when current spot price < max
-    - Create via spot request
+    - Create via Spot Request
     - Spot request is independent of spot instance
     - -> To terminate: cancel request then terminate instance
     - Spot fleet: set of spot instances + (optional) on-demand instances:
@@ -53,6 +53,7 @@
         - Diversified: distributed across pools
         - Capacity optimized: highest capacity pool
         - Price capacity optimized (recommended): highest capacity -> lowest price
+    - Spot Block: alternative to Spot Request, can have the instance for a specified time (1 to 6 hours) without interruptions
   - Dedicated host:
     - Book entire physical server, control instance placement
     - To address compliance requirement/software licence per socket/core/VM
@@ -61,8 +62,11 @@
       - Reserved
     - Most expensive
   - Dedicated instance: no other customers share the hardware
-  - Capacity reservation: reserve on-demand capacity in a specific AZ for any duration
+  - Capacity reservation: reserve on-demand instances capacity in a specific AZ for any duration
   - -> Suitable for short-term uninterrupted workload on specific AZ
+- Tenancy:
+  - Can only change the tenancy of an instance: dedicated <-> host
+  - Dedicated has higher priority against default (applies when there is dif between ASG launch config & VPC launch config)
 - Private IP: access the internet via NAT + internet gateway
 - Elastic IP:
   - IPv4
@@ -76,7 +80,7 @@
   - -> Use case: HPC
   - Spread: spread over underlying hardware (max 7 instances per group per AZ)
   - -> Use case: critical apps
-  - Partition: spread over partitions (on dif racks, max 7 per AZ). Partitions are separated from each other's failure.
+  - Partition: spread over partitions (on dif racks, max 7 partitions per AZ). Partitions are separated from each other's failure.
   - -> Used for partition-aware app (eg Kafka, Hadoop)
 - -> Select when launch EC2 instance
 - Elastic network interface (ENI):

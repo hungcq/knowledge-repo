@@ -69,8 +69,8 @@
   - SNS: send noti
 - Composite Alarms: monitor states of multiple other alarms (AND/OR conditions)
 - -> Reduce noise
-- EC2 instance recovery: triggered by StatusCheckFailed_System alarm. Can alert SNS topic.
-- -> Recovery: same private/public/elastic IP, metadata, placement group
+- EC2 instance recovery: triggered by StatusCheckFailed_System alarm. Can alert SNS topic. Can't recover terminated instance.
+- -> Recovery: same instance ID, private/public/elastic IP, metadata, placement group
 - Can be created based on CW Logs Metrics Filter
 ## EventBridge (ex CW Events)
 - Functions:

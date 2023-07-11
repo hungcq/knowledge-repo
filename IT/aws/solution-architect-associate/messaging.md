@@ -13,7 +13,7 @@
 - Consumers:
   - Poll & process messages in parallel
   - Can delete message
-  - Scale horizontally with ASG: based on CloudWatch queue length metric
+  - Scale horizontally with ASG: based on CloudWatch queue length metric (target tracking)
 - Security:
   - Encryption:
     - In flight: via HTTPS API
@@ -36,6 +36,7 @@
   - Features:
     - Ordering by message group IDs
     - Deduplication using deduplication ID/content-based deduplication
+- Delay queues: allow postponing the delivery of new messages to a queue for several seconds
 ## SNS
 - Use case: pub-sub communication
 - Subscribers: SQS, Lambda, Email, SMS, HTTP, Kinesis data firehose

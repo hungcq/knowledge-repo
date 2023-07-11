@@ -32,7 +32,9 @@
   - Fourth: future use
   - Last: network broadcast addr (reserved since broadcast not supported)
 ## Internet Gateway (IGW)
-- Allow resources (eg EC2) in a VPC to connect to the Internet
+- Functions:
+  - Allow resources (eg EC2) in a VPC to connect to the Internet
+  - Perform network address translation for instances that have been assigned public IPv4 addresses
 - VPC-IGW mapping: 1-1
 - Must also edit routes table to allow Internet access
 - Egress-only IGW:

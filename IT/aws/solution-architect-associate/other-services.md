@@ -76,6 +76,6 @@
 - Def: share AWS resources with any AWS account or within AWS Org
 - Resources:
   - Transit Gateways
-  - Subnets
+  - Subnets (via VPC sharing feature)
   - License Manager configurations
   - Route 53 Resolver rules

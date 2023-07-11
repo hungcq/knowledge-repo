@@ -2,11 +2,11 @@
 ## [Region - AZ](./region-az.md)
 - Region def
 - Scope of most service
-- *Considerations when choosing regions
-- *AZ def
+- Considerations when choosing regions
+- AZ def
 - Edge location
 ## [IAM](./iam.md)
-- Root acc & users best practice
+- Root acc & users best practices
 - Group can contain?
 - Policy
   - Def
@@ -21,36 +21,45 @@
   - Advs
   - Acc types
   - Mapping acc:org
-  - *Security: Service Control Policies: def, management acc permissions, default permission, perm hierarchy
+  - Security: SCP:
+    - Def
+    - Management acc permissions, root acc permissions
+    - Default permission
+    - Perm hierarchy
+    - Affect service-linked roles?
 - IAM Conditions keywords:
   - Restrict From client IP
-  - *Restrict To region
+  - Restrict To region
   - *Restrict based on tags
-  - *Force MFA
-  - Resource policies: restrict access to accounts that are member of Org
+  - Force MFA
+  - Resource policies: restrict access to accounts that are members of Org
 - S3 IAM: permission levels
 - Cross acc access: assuming role vs resource-based policy
-- *EventBridge: how rule can access (p.632):
-  - Lambda, SNS, SQS, CW Logs, API Gateway...
+- EventBridge: how rule can access (p.633):
+  - S3, Lambda, SNS, SQS, CW Logs, API Gateway...
   - Kinesis stream, Systems Manager Run Command, ECS task...
-- Permission Boundaries: def, supported IAM identities, permissions when used in combination with Org SCP, use cases
+- Permission Boundaries:
+  - Def
+  - Supported IAM identities
+  - Permissions when used in combination with Org SCP
+  - Use cases
 - IAM Policy evaluation logic
 - Identity Center (ex AWS SSO):
   - SSO:
     - *Supported platforms/apps
-    - Identity providers
+    - *Identity providers
   - Fine-grained permissions & assignments:
-    - *Multi acc permissions: function, Permission Sets
+    - *Multi acc permissions: function, Permission Set
     - *App assignments
     - *Attribute-based access control (ABAC)
   - Microsoft Active Directory (AD):
     - *Def
     - Terms: object, tree, forest
     - AWS AD Services: relation with on-premise AD, where users are managed:
-      - *Managed Microsoft AD
+      - Managed Microsoft AD
       - AD Connector
       - Simple AD
-    - How to connect with Identity Center: AWS Managed AD, Self-managed AD
+    - *How to connect with Identity Center: AWS Managed AD, Self-managed AD
 - Control Tower:
   - *Function
   - *Guardrails: def, Preventive vs Detective: based on which service
@@ -67,30 +76,40 @@
 - Purchasing options:
   - On-demand
   - Reserved
-  - *Saving plan (vs reserved)
+  - Saving plan (vs reserved)
   - Spot instance:
-    - *Spot fleet:
-      - Def
-      - Launch pool
+    - Spot Request
+    - How to terminate
+    - Spot fleet:
+      - *Def
+      - *Launch pool
       - Strategies:
         - Lowest price pool
         - Diversified
         - Capacity optimized
         - Price capacity optimized (recommended)
-  - Dedicated host: use case highlight
+    - Spot Block
+  - Dedicated host: use case highlights
   - Dedicated instance
-  - Capacity reservation
+  - *Capacity reservation: use case
+- Tenancy:
+  - Change tenancy option
+  - Tenancy priority when there is dif in VPC & ASG launch configs
 - Private vs public IP
 - Elastic IP
 - Placement group: def. Types: use case:
   - Cluster
-  - *Spread: limit
-  - *Partition
-- *ENI: def, attributes, usage
-- Hibernate: def, adv
-- *AMI:
+  - Spread: limit
+  - Partition
+- *ENI:
   - Def
+  - Attributes
   - Scope
+  - Use case highlights
+- Hibernate: def, adv
+- AMI:
+  - Def
+  - *Scope
   - Types of AMI
   - AMI creation process
 ## [Storage](./storage.md)
@@ -98,29 +117,35 @@
   - Def
   - Scope
   - Delete on termination
-- Snapshot. How to create EBS at dif AZ.
+- Snapshot. How to create EBS in dif AZ.
 - Snapshot features:
-  - *Archive
+  - Archive
   - Recycle bin
   - *Fast snapshot restore
-- Instance store
+- Instance Store
 - EBS volume types:
   - gp2/gp3
   - io1/io2. Which IOPS to use. Max IOPS.
   - stl
   - scl
 - -> Which can be used as boot volume (also Instance Store)
-- *EBS multi-attach: which volume type, limit, use case highlight
+- EBS multi-attach:
+  - Which volume type
+  - Limit
+  - *Use case highlight
 - EBS encryption: where, how to encrypt unencrypted volume
-- EFS: def, scope, compatibility
+- EFS:
+  - *Def
+  - Scope
+  - Compatibility
 - EFS performance modes:
   - GP
-  - Max IO
-- EFS throughput mode:
+  - *Max IO
+- *EFS throughput mode:
   - Bursting
   - Provisioned
   - Elastic
-- *EFS storage tiers
+- EFS storage tiers
 - EFS standard & one-zone
 - Snow Family:
   - Def
@@ -137,24 +162,24 @@
 - FSx:
   - Def
   - Types:
-    - Windows: feature highlight
-    - Lustre: use case highlight, feature highlight, deployment options
+    - *Windows: feature highlights
+    - *Lustre: use case highlight, feature highlight, deployment options: scratch, persistent
     - NetApp ONTAP: compatibility
     - OpenZFS: compatibility
-- *Storage Gateway:
+- Storage Gateway:
   - Def
   - Types:
-    - S3 File Gateway: use case highlight
-    - FSx File Gateway: use case highlight
+    - S3 File Gateway
+    - *FSx File Gateway
     - Volume Gateway: stored volume & cached volume
     - Tape Gateway
-  - Hardware appliance
-- *Transfer Family:
-  - Def
+  - *Hardware appliance
+- Transfer Family:
+  - *Def
   - Supported protocols
-- *DataSync:
+- DataSync:
   - Function
-  - Targets
+  - *Targets
   - Feature highlight
 - Summary: p.373
 ## [ELB - ASG](./elb-asg.md)
@@ -419,6 +444,7 @@
   - Dashboard & sharing
 - Glue:
   - Def
+  - Vs DMS
   - Job Bookmarks
   - *ElasticViews
   - *DataBrew
@@ -557,7 +583,7 @@
 - Subnet: IPs reserved
 - Bastion Hosts: def, config needed
 - IGW:
-  - Function
+  - Functions
   - Mapping to VPC
   - Config needed
 - NAT Instance: function, config needed, adv over NAT Gateway

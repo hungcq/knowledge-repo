@@ -83,6 +83,7 @@
 ## Glue
 - Def: managed serverless extract/transform/load service (ETL)
 - -> Prepare data for analytics
+- (vs DMS) Involves significant dev efforts
 - Example use cases:
   - S3/RDS -> Glue -> Redshift
   - Input S3 -> Import CSV -> Glue -> Output S3 -> Athena

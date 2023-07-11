@@ -30,7 +30,7 @@
 - Global accelerator:
   - Leverage AWS internal network to route traffic to app
   - Flow: user -> AWS edge location -> app (via private network)
-  - Create 2 anycast IPs for app
+  - Create 2 anycast IPs for app -> can change BE without impacting end users
   - Work with public/private: elastic IP, EC2, ALB, NLB
   - Health check & automatic failover
   - Security:

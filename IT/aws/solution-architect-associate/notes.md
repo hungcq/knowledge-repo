@@ -8,6 +8,10 @@
 - Rollout new software version gradually:
   - Globally: can use GA
   - Regional: can use ELB
+- Scale out ECS services: use service metric, not CW alarm
+- Use AWS CloudFormation StackSets to deploy the same template across accs/regions
+- NLB routing: when specifying targets using an instance ID,
+traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance
 ## S3
 - S3 versioning: after enabled, can only be suspended, not disabled
 - To transition objects from Standard to IA, min storage duration is 30 days
@@ -19,6 +23,9 @@
 - S3 Transfer Acceleration cost: only for the transfers accelerated
 - S3 objects are owned by the AWS account that uploaded it
 - -> Even S3 bucket owner (dif acc) will not implicitly have access to the objects
+- Improve performance:
+  - For object > 1GB: use Transfer Acceleration
+  - For object < 1GB: use CloudFront
 ## ASG
 - Putting instance in Standby state for maintenance prevents ASG from creating another replacing instance
 - Launch configuration (deprecated): can't specify multiple instance types (eg on-demand & spot)
@@ -32,6 +39,10 @@
 - Aurora failover: select replica with the highest priority (lowest tier) with the largest size
 - Multi AZ option is only available for RDS. Aurora has use read replica as standby instance (async replication).
 - Snapshot in S3: managed by RDS -> can't access directly
+- To recover DynamoDB to previous state, should use PITR instead of DynamoDB Stream (no code required)
+- DocumentDB (vs DynamoDB): no in-memory caching layer
+- Global Aurora failover (vs Global DynamoDB tables): cheaper
+- -> DynamoDB Global tables have no concept of failover (active-active replication)
 ## Messaging
 - Kinesis Data Analytics: realtime
 - DynamoDB is not a target of Firehose (only S3)
@@ -48,3 +59,4 @@
 - Shared services VPC: use with Transit Gateway to reduce administrative overhead & cost
 - Transit virtual interface (transit VIF): used to access one or more Transit Gateways associated with DX gateways
 - DNS hostnames and DNS resolution are required settings for private hosted zones
+- Use AZ ID to uniquely identify the AZ across accs

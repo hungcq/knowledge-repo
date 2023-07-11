@@ -10,7 +10,7 @@
   - gp2/3: general purpose SSD. gp3 can set IOPS independently (not depend on size)
   - io1/2: high performance SSD, provision IOPS. Support EBS multi-attach:
     - To multiple EC2 instances (max 16) in the same AZ
-    - File system must be cluster-aware
+    - Use case: high app availability in clustered Linux apps. File system must be cluster-aware.
     - Apps must handle concurrent write
   - -> When need >16k IOPS, suitable for DBs. Max IOPS io1: 64k, max IOPS io2 block express: 256k.
   - -> Higher IOPS must use instance store
@@ -42,9 +42,9 @@
   - Scale
   - Performance mode (set at creation):
     - General purpose: latency sensitive use case
-    - Max IO: higher latency, throughput & parallelism
+    - Max IO: higher latency, throughput & parallelism. Not supported for One-zone storage class & Elastic throughput mode.
   - Throughput mode:
-    - Bursting
+    - Bursting: scale with the amount of storage
     - Provisioned: set throughput regardless of storage size
     - Elastic: scale based on workload
 - Storage classes:
@@ -53,7 +53,7 @@
     - Infrequent access (EFS-IA): can be managed via life cycle policy
   - Availability & durability:
     - Standard: good for production
-    - One zone: good for dev, back up enabled by default, one zone IA
+    - One zone: good for dev, backup enabled by default, one zone IA
 ## Snow family
 - Def: secure offline portable devices to:
   - Migrate data into/out of AWS
@@ -86,6 +86,11 @@
 ## FSx
 - Def: fully managed service to launch 3rd party high performance file systems on AWS
 - Supported file systems:
+  - Windows file server:
+    - Can be mounted on EC2 instances
+    - Support Microsoft distributed file system namespaces
+    - Integration with Microsoft AD
+    - Storage options: SSD, HDD
   - Lustre (linux cluster):
     - Use cases: ML, high performance computing (HPC)
     - Storage options: SSD, HDD
@@ -95,10 +100,6 @@
       - -> For short term, cheap processing
       - Persistent: long term, data replicated in same AZ
       - -> Long term processing, sensitive data
-  - Windows file server:
-    - Can be mounted on EC2 instances
-    - Support Microsoft distributed file system namespaces
-    - Storage options: SSD, HDD
   - NetApp ONTAP:
     - Compatible with many systems (NFS, SMB, iSCSI protocol)
     - Use case highlight: point in time instantaneous cloning (helpful for testing new workload)
@@ -114,14 +115,14 @@
   - Tiered storage
   - On premises cache & low latency file access
 - Types of gateway:
-  - S3 file:
+  - S3 file gateway: (basically access S3 with cache):
     - On premises server -> file gateway (via NFS/SMB) -> S3 bucket (via HTTPS)
     - Most recently used data is cached in gateway
     - Transition to S3 Glacier using bucket policy
-  - FSx file:
+  - FSx file: (basically access FSx Windows with cache):
     - Native access to FSx Windows file server
     - Provide local cache for frequently accessed data
-  - Volume:
+  - Volume: (basically provide disk drive backed by S3):
     - On premises server -> volume gateway (via iSCSI) -> S3 bucket (via HTTPS) -> EBS snapshots
     - -> Can restore on premises volume
     - Types:
@@ -131,14 +132,12 @@
 - Hardware appliance:
   - Provide on-premises virtualization
   - Can be bought on amazon
-
-## Transfer family
-- Fully managed service for file transfer into & out of S3 using FTP/SFTP/FTPS
+## Transfer Family
+- Fully managed service for file transfer into & out of S3/EFS using FTP/SFTP/FTPS
 - Cost:
   - Per provisioned endpoint/hour
   - Data transfer in GB
-- Flow: FTP client -> Route 53 (optional) -> transfer family -> S3/EFS (via IAM role)
-
+- Flow: FTP client -> Route 53 (optional) -> Transfer Family -> S3/EFS (via IAM role)
 ## Data sync
 - Move large data into/out of:
   - On premise/other cloud to AWS: need agent
