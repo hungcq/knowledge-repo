@@ -19,7 +19,7 @@
     - Pricing: vCPU & memory resources requested by containerized app
 - Security:
   - IAM roles for ECS:
-    - EC2 instance profile: used by ECS agent, access the necessary services
+    - EC2 instance profile (for EC2 launch type): used by ECS agent, access the necessary services (eg pull images)
     - ECS task role:
       - Allow each task to have specific role
       - Define in task definition
@@ -33,14 +33,14 @@
 - Service autoscaling:
   - Automatically increase/decrease desired number of ECS tasks
   - Scale at task level, not instance level
+  - Use AWS Application Autoscaling. Scaling metrics:
+    - Average CPU utilization
+    - Average RAM utilization
+    - ALB request count per target (from ALB)
   - Types:
-    - AWS application autoscaling. Scaling metrics:
-      - Average CPU utilization
-      - Average RAM utilization
-      - ALB request count per target (from ALB)
-    - Target tracking: scale based on target value for a specific Cloud watch metric
-    - Step scaling: scale based on specific Cloud watch alarm
-    - Scheduled scaling: scale on specific date/time
+    - Target tracking
+    - Step scaling
+    - Scheduled scaling
   - For ECS EC2 launch type, can scale EC2 instances by:
     - ASG: based on CPU utilization
     - ECS Cluster Capacity Provider:

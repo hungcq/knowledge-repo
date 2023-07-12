@@ -80,7 +80,9 @@
     - Snow cone & snow cone SSD: 2 CPUs, 4GB RAM, wired/wireless access
     - Snowball edge:
       - Compute optimized: 104 vCPUs, 416 GB RAM, optional GPU, 42 TB HDD/28 TB NVMe
-      - Storage optimized: 40 vCPUs, 80 GB RAM, 80 TB storage. Object storage clustering available.
+      - Storage optimized:
+        - 40 vCPUs, 80 GB RAM, 80 TB storage
+        - Object storage clustering available (cluster 5-10 devices into a single installation)
   - Can run EC2 instances & AWS lambda functions (using AWS IoT Greengrass)
   - Long-term deployment (1-3 years): discount price
 ## FSx

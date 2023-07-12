@@ -77,6 +77,10 @@
   - Schedule cron jobs
   - React to events
   - Trigger Lambda/send SNS
+- Features:
+  - Allow advanced filtering options with JSON rules
+  - Allow multiple destinations
+  - Other features: archive, event relay, reliable delivery
 - Flow: source -> event filter -> EventBridge: create JSON event -> destination
 - Event Bus:
   - Can send to Default/Partner/Custom Event Bus
@@ -89,6 +93,7 @@
 - Resource-based policy:
   - Manage permissions for a specific Event Bus (eg allow/deny events from other AWS accounts/regions)
   - Use case: aggregate all org events in a single AWS account/region
+- Can be used in event-based app. Use case: the only service integrated with SaaS partners.
 ## Insights & Operational Visibility
 - Container Insights:
   - Collect, aggregate, summarize metrics & logs from containers

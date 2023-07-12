@@ -49,6 +49,8 @@
     - Deployment mode:
       - Single instance: suitable for dev
       - High availability with LB & RDS failover: suitable for production
+    - Speed up deployment: can specify an AMI to use instead of the standard Elastic Beanstalk AMI included in platform version
+    - -> Dynamic installation parts can be installed at boot time using User data script
 - Snowball to Glacier: snowball -> S3 -> Glacier (via lifecycle policy)
 - ECS:
   - ECS task invoked by EventBridge: client -> S3 bucket -> EventBridge event -> ECS task: get object from S3 -> DynamoDB

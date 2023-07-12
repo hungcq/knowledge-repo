@@ -68,7 +68,8 @@
   - At rest encryption: set at launch time
   - -> To encrypt unencrypted DB, need to: create snapshot -> copy snapshot as encrypted -> restore from snapshot
   - In flight encryption: use AWS TLS cert on client side
-  - IAM auth: use IAM roles to connect to DB instead of username & password
+  - IAM auth: use IAM roles to connect to DB instead of username & password (supported for MySQL & PostGreSQL)
+  - -> Also allow SSL in flight encryption
   - Security group: control network access
   - Audit logs: can be enabled & sent to Cloud Watch for longer retention
 - RDS proxy:

@@ -162,30 +162,31 @@
 - FSx:
   - Def
   - Types:
-    - *Windows: feature highlights
-    - *Lustre: use case highlight, feature highlight, deployment options: scratch, persistent
+    - Windows: feature highlights
+    - Lustre: use case highlight, feature highlight, deployment options: scratch, persistent
     - NetApp ONTAP: compatibility
     - OpenZFS: compatibility
 - Storage Gateway:
   - Def
   - Types:
     - S3 File Gateway
-    - *FSx File Gateway
+    - FSx File Gateway
     - Volume Gateway: stored volume & cached volume
     - Tape Gateway
   - *Hardware appliance
 - Transfer Family:
-  - *Def
+  - Def
   - Supported protocols
 - DataSync:
   - Function
-  - *Targets
+  - Targets
   - Feature highlight
 - Summary: p.373
 ## [ELB - ASG](./elb-asg.md)
 - Scope
-- 4 types of ELBs: protocol supported, visibility (private vs public)
-- *ALB target groups. Where to get client IP, port, proto.
+- 4 types of ELBs: protocol supported
+- Visibility (private vs public)
+- ALB target groups. Where to get client IP, port, proto.
 - NLB:
   - Function
   - Usage
@@ -215,20 +216,20 @@
   - Scaling cooldown
 ## [Data](./data.md)
 - RDS:
-  - *Supported DBs
+  - Supported DBs
   - Storage autoscaling
   - Read replicas: consistency, app code update, network cost
   - Multi AZ: consistency
-  - *RDS Custom: def, supported DBs, control over which
-  - *RDS Proxy: advs, scope
+  - RDS Custom: def, supported DBs, control over which
+  - RDS Proxy: advs, scope
 - Aurora:
   - Supported DBs
   - Use case
   - Cross region replication
   - Custom Endpoints
   - Serverless
-  - *Multi-master
-  - *Global DB
+  - Multi-master
+  - Global DB
   - Aurora ML
   - Backups: automated vs manual
   - DB Cloning: mechanism, use case
@@ -236,8 +237,8 @@
 - ElastiCache:
   - Supported caches
   - App code update
-  - Redis vs Memcached
-  - *Security
+  - Redis vs Memcached: availability, scalability, durability features
+  - Security
   - Redis use case highlight
 - DocumentDB
 - Neptune
@@ -256,14 +257,14 @@
   - Types of resources support
   - Conditions
   - How to check private endpoints
-## [Solution architecture discussion](./solution-architecture-discussion)
+## [Solution architecture discussion](./solution-architecture-discussion.md)
 - p.232, 233, 243, 244, 250, 251, 495, 496, 503, 504, 559, 560
 - Beanstalk:
   - Components: app, app version, env
   - Web tier vs worker tier
   - Deployment modes: single instance vs high availability
+  - How to speed up deployment
 - Snowball into Glacier
-- *S3 Event Noti with EventBridge: feature highlights (p.797)
 - Blocking IP with CloudFront (p.805)
 - Data management & transfer summary (p.807)
 - Highly available EC2 instance (p.812, 813, 814)
@@ -276,57 +277,56 @@
 - Bucket:
   - Name constraint
   - Scope
-- *Objects: key components
-- *Security: user based, resource based, when IAM principle can access
+- Objects: key components
+- Security: user based, resource based, when IAM principle can access
 - Static website hosting
-- *Versioning: scope, what happened for existing objects when enable/disable versioning
+- Versioning: scope, what happened for existing objects when enable/disable versioning
 - Replication: requirement, cross region, same region, chaining allowed?, DELETE handling
 - Storage classes:
   - Standard - GP
   - Standard IA
   - One zone IA
-  - *Glacier: retrieval time
+  - Glacier: retrieval time
     - Instant retrieval
     - Flexible retrieval
     - Deep archive
   - Intelligent tiering
-- -> How to move between classes
-- Lifecycle rules:
+- How to move between classes
+- Lifecycle rules: how to specify, types:
   - Transition actions
-  - *Expiration actions. Versioning handling.
-- *Lifecycle rules scope
+  - Expiration actions: can be applied to which
 - Storage Class Analysis
-- *Requester Pays: types of cost, who can be requester
+- Requester Pays: types of cost, who can be requester
 - Event Notifications:
-  - *Targets. EventBridge features (p.295).
-  - *Permission required
-- *Baseline performance
+  - Targets
+  - Permission required
+- Baseline performance
 - Multipart upload: recommended, required size
 - Transfer Acceleration
 - Byte Range Fetches
 - Select & Glacier Select
-- *Batch Operations: use case highlight
+- Batch Operations: use case highlight
 - Security:
   - Object encryption:
     - Server side:
-      - *S3 managed keys: SSE-S3: encryption type, header
-      - *KMS keys: SSE-KMS: header. APIs called when upload/download.
-      - *Customer provided keys: SSE-C. Where encryption keys are stored. Upload protocol.
-    - *Client side: lib used
+      - S3 managed keys: SSE-S3: encryption type, header
+      - KMS keys: SSE-KMS: header, KMS APIs called when upload/download.
+      - Customer provided keys: SSE-C. How encryption keys are stored & provided. Upload protocol.
+    - Client side: lib used
   - Encryption in transit
-- *CORS: origin components. S3 config.
+- CORS: origin components. S3 config.
 - MFA delete: requirement, who can change config
 - *Access log
-- *Pre-signed URL: can gen using? Expiration of each gen method.
+- Pre-signed URL: can gen using? Expiration of each gen method.
 - Glacier Vault Lock
 - Object Lock:
   - Requirement
   - *Retention mode: compliance, governance
   - *Legal hold
-- *Access Points
-- *Object Lambda: how to access
+- Access Point
+- Object Lambda: flow
 ## [CloudFront](./cloud-front-global-accelerator.md)
-- *Origins
+- Origins
 - Geo Restriction
 - Price classes
 - Cache invalidation
@@ -336,55 +336,55 @@
 - Targets
 ## [Messaging](./messaging.md)
 - SQS:
-  - *Chars: delivery guarantee, ordering, throughput, max retention
+  - Chars: delivery guarantee, ordering, throughput, max retention
   - Message handling
-  - *Security:
+  - Security:
     - Encryption
     - Access control
     - Access Policies
   - Message Visibility Timeout
   - Long Polling: def, API
-  - *FIFO queue: throughput limit: without & with batching
+  - FIFO queue: throughput limit: without & with batching
 - SNS:
-  - *Dif vs SQS
-  - *Ways to publish
+  - Dif vs SQS
+  - Ways to publish
   - Security
   - Architecture:
     - Fanout
     - Send 1 S3 event to multiple receivers (p.399)
     - *Common targets
   - FIFO topic: limit
-  - *Message Filtering
+  - Message Filtering
 - Kinesis:
   - Function
   - Services:
-    - *Data Streams:
+    - Data Streams:
       - Def
       - Chars
       - Capacity Modes
-    - *Data Firehose:
+    - Data Firehose:
       - Def
       - Chars
-    - *Data Analytics
-    - *Video Streams
-- *Amazon MQ: def
+      - Destination
+    - Data Analytics
+    - Video Streams
+- Amazon MQ: def
 ## [Container](./container.md)
 - ECR
 - ECS:
   - Launch types: EC2, Fargate
-  - *IAM roles: EC2 Instance Profile, ECS Task Role (defined where)
+  - IAM roles: EC2 Instance Profile, ECS Task Role (defined where)
   - Supported by which ELB types
   - Data Volumes (EFS)
-  - *Autoscaling: types of scaling
-  - *EC2 instance autoscaling (EC2 launch type): types
+  - Autoscaling: at which level, types of scaling
+  - EC2 instance autoscaling (EC2 launch type): types
 - EKS:
   - How to collect logs & metrics
-  - *Node types:
+  - Node types:
     - Managed node groups
     - Self-managed nodes
     - Fargate
-  - *Data Volumes: supported file systems
-- Fargate
+  - Data Volumes: supported file systems
 - App Runner: can deploy using?
 ## [Serverless](./serverless.md)
 - Services
@@ -392,6 +392,7 @@
   - *Pricing
   - Limit: RAM, execution time, env vars, deployment, concurrent execution (soft limit)
   - *Networking: access VPC resource, RDS in VPC
+  - Layer: def, goal, limit
 - Edge Function:
   - Def
   - *Types & differences: CloudFront Functions & Lambda@Edge
@@ -491,9 +492,11 @@
   - *EC2 Instance Recovery
 - EventBridge (ex CW Events):
   - *Types of event buses
+  - Feature highlights (p.295)
   - Archive events
   - Schema infer & Schema Registry
   - Resource-based Policy
+  - Use case highlight
 - CW Container Insights: def, mechanism to collect logs in EKS & Kubernetes
 - CW Lambda Insights
 - *CW Contributor Insights: def, use case highlight
@@ -664,6 +667,7 @@
   - *Setup required
   - Schema Conversion Tool: when to use
   - Multi AZ deployment
+  - Source & target highlights
 - Migrate to Aurora MySQL:
   - *RDS to Aurora options
   - External MySQL to Aurora options

@@ -6,26 +6,27 @@
 - Recovery Point Objective (RPO) & Recovery Time Objective (RTO): RPO -> disaster (data loss) -> RTO (downtime)
 - Strats:
   - Backup & restore:
-    - High RPO & high RTO
+    - High RPO & high RTO (in hours)
     - Cheap, easy to implement
   - Pilot light:
     - Small version of app always run in the cloud
     - Useful for critical part of system
+    - RPO: in minutes
   - Warm standby:
     - Full system up & running but at minimum size
     - Upon disaster, can scale to production load
   - Hot site/multi-site approach: full production scale running on AWS & on premises
 - -> Later strats are better (lower RPO & RTO) but costlier
 ## Database Migration Service (DMS)
-- Migrate on premises DB to AWS
-- Source DB available during migration
+- Migrate data between on premises DB & AWS
+- Source DB can be available during migration
 - Supports:
   - Same tech: Oracle -> Oracle
   - Dif tech: Microsoft SQL -> Aurora
-- Support continuous data replication using change data capture
+- Support continuous data replication using change data capture (CDC)
 - Must create EC2 to perform replication tasks
-- Sources: most common DBs
-- Targets: most AWS DB services
+- Sources: most SQL DBs & AWS SQL DBs, S3, DocumentDB
+- Targets: most SQL DBs & AWS SQL DBs, Kafka, Redis, Babelfish, Redshift, DynamoDB, S3, OpenSearch, Kinesis Data Streams, DocumentDB, Neptune
 - Schema Conversion Tool (SCT): convert schema from one engine to another
 - Multi AZ deployment: DMS provisions & maintains sync standby replica in a dif AZ
 ## Migration cases

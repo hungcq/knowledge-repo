@@ -21,7 +21,7 @@
     - Client-side
   - Access control: IAM policies to regulate access to SQS API
   - SQS access policies (~S3 bucket policies): allow cross-account/other service access
-- Message visibility timeout: duration during which, after a message polled by a consumer, other consumers can't see it
+- Message Visibility Timeout: duration during which, after a message polled by a consumer, other consumers can't see it
 - -> After the duration, message can be reprocessed & duplicated
 - -> Can change via ChangeMessageVisibility API
 - Long polling:
@@ -39,7 +39,7 @@
 - Delay queues: allow postponing the delivery of new messages to a queue for several seconds
 ## SNS
 - Use case: pub-sub communication
-- Subscribers: SQS, Lambda, Email, SMS, HTTP, Kinesis data firehose
+- Subscribers: SQS, Lambda, Firehose, HTTP, Email, SMS
 - 2 types of publish:
   - Topic publish
   - Direct publish: to platform app via platform endpoint (eg Google cloud messaging, Apple APNS, Amazon ADM)
@@ -48,9 +48,9 @@
   - SNS topic -> many SQS subscribers -> service
   - SQS access policies must allow SNS to write
   - Work with SQS in other regions -> cross regions delivery
-- SNS to S3: SNS -> Kinesis data firehose -> S3
+- SNS to S3: SNS -> Firehose -> S3
 - SNS FIFO: ~SQS FIFO
-- Filter: subscriber filter message
+- Message Filtering: subscriber filter message
 ## Kinesis
 - Use case: real-time collect, process, analyze streaming data
 - Types:
@@ -70,13 +70,14 @@
     - Security: ~SQS
   - Data firehose:
     - Load data stream into AWS data stores
-    - Flow: producers -> firehose, transform optionally via Lambda -> destination (batch write)
+    - Flow: producers -> Firehose, transform optionally via Lambda -> destination (batch write)
     - Destinations:
       - S3, Redshift (copied through S3), OpenSearch
       - Third party partner destination
       - Custom destination (HTTP endpoint)
     - Can send all or failed data into backup S3 bucket
     - Near realtime
+    - Can send to only 1 destination at a time
     - Cost: data going through
   - Analytics: analyze data streams with SQL/Apache Flink
   - Video streams: capture, process & store video streams

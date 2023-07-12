@@ -9,7 +9,8 @@
   - Automated scaling
   - Integrated with most AWS services (eg API gateway, Kinesis, DynamoDB, S3, CloudFront, EventBridge (CloudWatch events),
   CloudWatch logs, SNS, SQS, Cognito)
-  - Can increase RAM (will also increase CPU & network)
+  - Performance: can increase RAM (will also increase CPU & network)
+  - Can be deployed as container images
 - Pricing: per request & compute time
 - Example usages:
   - Thumbnail creation & metadata store
@@ -28,11 +29,12 @@
     - Env vars: 4KB
 - Networking:
   - Default: outside user's own VPC (in AWS-owned VPC)
-  - -> Can't access resources in user VPC (eg RDS, ElastiCache, internal ELB)
+  - -> Can access public resource. Can't access resources in user VPC (eg RDS, ElastiCache, internal ELB).
   - Lambda in VPC:
     - User specifies VPC ID, subnets & security groups
     - Lambda create ENI in subnets
     - Use case: Lambda with RDS Proxy -> reduce open connections
+  - -> Need Internet Gateway to access public resource
 - Edge function:
   - Def: code attached to CloudFront distributions
   - -> Customize logic at edge
@@ -58,6 +60,11 @@
     - DB instance must allow outbound traffic to Lambda
     - DB must have permissions to invoke Lambda
   - Vs DB event noti: event notifications are events about DB instance itself (eg started, stopped), not the records
+- Lambda Layer:
+  - Def: ZIP archive that contains libraries/custom runtime/other dependencies
+  - Goal: use libraries in Lambda without needing to include them in deployment package
+  - -> Keep your deployment package small & easier development
+  - Max 5 layer/function
 ## DynamoDB
 - Chars:
   - Managed

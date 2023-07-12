@@ -50,6 +50,8 @@
   - Attach a resource-based policy to a resource (eg S3 bucket policy). Eg services: Lambda, SNS, SQS, CW Logs, API Gateway
   - Use a role as a proxy (assume a role):
     - Give up original permissions & take role's permissions (vs use resource-based policy)
+    - Trust Policy: define which principal entities (accounts, users, roles, and federated users) can assume the role
+    - -> The only resource-based policy in IAM
     - Eg services: Kinesis stream, Systems Manager Run Command, ECS task
 - Permission boundaries:
   - Def: use a managed policy to set the max permissions an IAM entity can get

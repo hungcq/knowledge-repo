@@ -12,6 +12,7 @@
 - Use AWS CloudFormation StackSets to deploy the same template across accs/regions
 - NLB routing: when specifying targets using an instance ID,
 traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance
+- CloudFront field level encryption (secured during transfer): encryption using public key at CloudFront -> decrypt at app
 ## S3
 - S3 versioning: after enabled, can only be suspended, not disabled
 - To transition objects from Standard to IA, min storage duration is 30 days
@@ -26,9 +27,12 @@ traffic is routed to instances using the primary private IP address specified in
 - Improve performance:
   - For object > 1GB: use Transfer Acceleration
   - For object < 1GB: use CloudFront
+- Strong consistency model for read-after-write when the write is successful
 ## ASG
 - Putting instance in Standby state for maintenance prevents ASG from creating another replacing instance
-- Launch configuration (deprecated): can't specify multiple instance types (eg on-demand & spot)
+- Launch configuration (deprecated):
+  - Can't specify multiple instance types (eg on-demand & spot)
+  - Can't be modified: need to create new launch config & point ASG to that
 - -> Use launch template instead
 - Potential causes of unhealthy instance not terminated:
   - Instance in Impaired status
@@ -43,6 +47,7 @@ traffic is routed to instances using the primary private IP address specified in
 - DocumentDB (vs DynamoDB): no in-memory caching layer
 - Global Aurora failover (vs Global DynamoDB tables): cheaper
 - -> DynamoDB Global tables have no concept of failover (active-active replication)
+- DynamoDB is not in-memory DB (only have in-memory caching layer with DAX)
 ## Messaging
 - Kinesis Data Analytics: realtime
 - DynamoDB is not a target of Firehose (only S3)

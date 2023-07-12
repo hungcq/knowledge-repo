@@ -8,7 +8,7 @@
     - Enhanced security with Origin access control (OAC - replacing OAI origin access identity)
     - Can be used as ingress (to upload files to S3)
   - Custom origin (HTTP):
-    - Application load balancer/EC2 instance (security group must allow public IPs of edge locations)
+    - ALB/EC2 instance (security group must allow public IPs of edge locations)
     - S3 website (must enable static website hosting)
     - Any HTTP backend
 - Geo restriction:
@@ -22,7 +22,6 @@
     - 200: most regions, excluding expensive regions
     - 100: only the least expensive regions (NA, EU)
 - Cache invalidation: force partial/full cache refresh to bypass TTL of all files (*) or specific path/file (/images/*)
-
 # Global Accelerator
 - Unicast vs anycast IPs:
   - Unicast: 1 server holds 1 IP
@@ -31,7 +30,7 @@
   - Leverage AWS internal network to route traffic to app
   - Flow: user -> AWS edge location -> app (via private network)
   - Create 2 anycast IPs for app -> can change BE without impacting end users
-  - Work with public/private: elastic IP, EC2, ALB, NLB
+  - Targets: public/private: elastic IP, EC2, ALB, NLB
   - Health check & automatic failover
   - Security:
     - Only need to whitelist 2 external IPs

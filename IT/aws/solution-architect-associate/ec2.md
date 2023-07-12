@@ -78,7 +78,7 @@
 - Placement group: control over EC2 instances placement strat:
   - Cluster: into low latency cluster (same rack) within AZ -> higher risk of failure
   - -> Use case: HPC
-  - Spread: spread over underlying hardware (max 7 instances per group per AZ)
+  - Spread: spread over underlying hardware (max 7 instances per AZ per group)
   - -> Use case: critical apps
   - Partition: spread over partitions (on dif racks, max 7 partitions per AZ). Partitions are separated from each other's failure.
   - -> Used for partition-aware app (eg Kafka, Hadoop)

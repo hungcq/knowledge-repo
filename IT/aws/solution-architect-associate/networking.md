@@ -161,7 +161,7 @@
 ## Transit Gateway
 - Function: transitive peering between thousands of VPC & on premises, star connection schema
 - The only service supporting IP Multicast
-- Equal cost multi path routing (ECMP): routing strat to forward a packet over multiple best path
+- Equal cost multi path routing (ECMP): routing strat to forward a packet over multiple best paths
 - -> Use case: create multiple Site to site VPN connections to increase bandwidth of connection to AWS
 - Can use Resource Access Manager to share Transit Gateway with other accs
 ## VPC Traffic Mirroring
