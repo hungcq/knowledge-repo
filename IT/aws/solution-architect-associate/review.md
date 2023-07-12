@@ -387,41 +387,40 @@
   - Data Volumes: supported file systems
 - App Runner: can deploy using?
 ## [Serverless](./serverless.md)
-- Services
 - Lambda:
-  - *Pricing
+  - Pricing
   - Limit: RAM, execution time, env vars, deployment, concurrent execution (soft limit)
-  - *Networking: access VPC resource, RDS in VPC
-  - Layer: def, goal, limit
+  - Networking: access VPC resource, RDS in VPC
+  - Layer: *def, goal, limit
 - Edge Function:
   - Def
-  - *Types & differences: CloudFront Functions & Lambda@Edge
+  - Types & differences: CloudFront Functions & Lambda@Edge
 - RDS Event Noti
 - DynamoDB:
   - Terms: tables, PK, attributes
-  - *Max record size
-  - *Supported data types
-  - *Read/write Capacity Modes
+  - Max record size
+  - Supported data types
+  - Read/write Capacity Modes
   - Accelerator (DAX)
-  - *Stream Processing: def, types
-  - *Global Tables: def, requirement, replication type
+  - Stream Processing: def, types
+  - Global Tables: def, requirement, replication type
   - TTL
   - Backup: types
-  - *S3 integration
+  - S3 integration
 - API Gateway:
   - Feature highlights: throttle req & cache res
-  - *Integrations
+  - Integrations
   - Endpoint types:
     - Edge-optimized
     - Regional
     - Private
   - Security:
-    - *Types of authentications
+    - Types of user authentications
     - HTTPS: where to store cert for each endpoint type
-- *Step Functions: def, features
+- Step Functions: def, features
 - Cognito:
-  - *User Pools: def, features, integrations
-  - *Identity Pools: Federated Identities term, user sources, flow
+  - User Pools: def, features, integrations
+  - Identity Pools: Federated Identities term, user sources, flow
 ## [Analytics](./analytics.md)
 - Athena:
   - Def

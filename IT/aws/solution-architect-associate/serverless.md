@@ -59,12 +59,12 @@
   - Network:
     - DB instance must allow outbound traffic to Lambda
     - DB must have permissions to invoke Lambda
-  - Vs DB event noti: event notifications are events about DB instance itself (eg started, stopped), not the records
+  - Vs RDS event noti: event notifications are events about DB instance itself (eg started, stopped), not the records
 - Lambda Layer:
   - Def: ZIP archive that contains libraries/custom runtime/other dependencies
   - Goal: use libraries in Lambda without needing to include them in deployment package
   - -> Keep your deployment package small & easier development
-  - Max 5 layer/function
+  - Max 5 layers/function
 ## DynamoDB
 - Chars:
   - Managed
@@ -182,6 +182,7 @@
   - Integrated with User pools
   - IAM policies applied to credentials defined in Cognito
   - -> Default IAM role for default/guest users
+  - User sources: Google, FB, SAML, OpenID, Cognito User Pools
   - Flow:
     - User get token from third party SSO login
     - Cognito verify token with third party
