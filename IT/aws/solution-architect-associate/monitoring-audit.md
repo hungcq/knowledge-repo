@@ -35,7 +35,7 @@
   - VPC Flow Logs: VPC specific logs
   - Route53: DNS queries
   - CloudTrail based on filter
-- Logs Insight: search & analyze CW logs
+- Logs Insights: search & analyze CW logs
 - Logs Subscriptions:
   - Provide realtime log events from CW Logs for processing & analysis
   - Destinations: KDS, Firehose, Lambda
@@ -92,7 +92,7 @@
   - Schema can be versioned
 - Resource-based policy:
   - Manage permissions for a specific Event Bus (eg allow/deny events from other AWS accounts/regions)
-  - Use case: aggregate all org events in a single AWS account/region
+  - Use case: aggregate all Org events in a single AWS account/region
 - Can be used in event-based app. Use case: the only service integrated with SaaS partners.
 ## Insights & Operational Visibility
 - Container Insights:
@@ -103,10 +103,11 @@
     - Kubernetes on EC2
     - Fargate (both ECS & EKS)
   - -> Use containerized version of CW Agent to discover containers in EKS & Kubernetes
-- Lambda Insights: monitor & troubleshoot serverless app on Lambda
+- Lambda Insights (provided as Lambda Layer): collect, aggregate & summarize system level metrics
+- -> Monitor & troubleshoot serverless app on Lambda
 - Contributor Insights:
-  - Analyze log data & create time series displaying contributor data
-  - Create metrics about top N contributors (eg heaviest network users, URLs generating most errors)
+  - Analyze log data & create time series displaying contributor data (eg VPC, DNS)
+  - Create metrics about top N contributors (eg top heaviest network users, URLs generating most errors)
   - Can build or use example rules using CW Logs
 - App Insights: provide automatic dashboards showing potential problems with monitored apps/related AWS services
 - -> Isolate ongoing issues

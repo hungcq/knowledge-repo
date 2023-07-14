@@ -14,6 +14,7 @@
   - Eventual consistency
   - Need to add replica address to apps
   - Network cost of data replication: only for cross regions
+  - Should be created with the same amount of compute and storage resources as the source DB instance
 - RDS multi AZs (disaster recovery):
   - Sync replication to standby replica: use one DNS -> automatic failover -> increase availability
   - Can set up read replica as standby replica

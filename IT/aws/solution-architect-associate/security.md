@@ -22,14 +22,23 @@
     - Public (publicly downloadable) & private key pair
     - Used for encrypt/decrypt or sign/verify operations
     - Use case: encryption outside AWS by users without KMS API access
-- KMS Key (ex KMS Customer Master Key) types:
-  - AWS owned keys (free): SSE-S3, SSE-SQS, SSE-DDB (default key)
-  - AWS managed key (free): (aws/[service name])
-  - Customer managed keys (CMK) created in KMS: 1$/month
-  - Customer managed keys imported (must be symmetric key): 1$/month
+- Keys types:
+  - AWS owned keys: free, shared with other accs: eg SSE-S3, SSE-SQS, SSE-DDB (default key)
+  - KMS Keys (ex KMS Customer Master Key) types:
+    - AWS managed key:
+      - Created only for user's account. User can view metadata.
+      - Pricing: no monthly fee, only usage fee (depending on service)
+      - Eg aws/rds, aws/ebs
+    - Customer managed keys (CMK):
+      - Created in KMS
+      - Pricing: 1$/month + usage fee (API calls)
+    - Customer managed keys imported:
+      - Must be symmetric key
+      - Pricing: 1$/month + usage fee (API calls)
 - API call cost: 0.03$/10000 calls
 - Automatic key rotation:
-  - AWS-managed key: default, every 1 year
+  - AWS owned keys: handle by AWS
+  - AWS managed key: default, every 1 year
   - Customer managed key: must be enabled, every 1 year
   - Imported key: only manual rotation possible, using alias
 - Key scope: per region
@@ -114,7 +123,8 @@
   - Rate-based rules: DDoS protection
 - Regional except for CloudFront
 - Rule Group: reusable set of rules that can be added to a web ACL
-- Pattern: fixed IP using WAF with ALB: client -> Global Accelerator -> ALB + WAF -> EC2 instances
+- Architecture: fixed IP: WAF not support NLB so must use GA for fixed IP:
+client -> Global Accelerator -> ALB + WAF -> EC2 instances
 ## Shield
 - Def: DDoS protection service
 - 2 types:

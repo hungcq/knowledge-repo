@@ -12,7 +12,7 @@
   - Def
   - Least privilege principle
   - Inline vs group policy
-  - *Components
+  - Components
 - Can access IAM via?
 - Access key components
 - Org:
@@ -30,7 +30,7 @@
 - IAM Conditions keywords:
   - Restrict From client IP
   - Restrict To region
-  - *Restrict based on tags
+  - Restrict based on tags
   - Force MFA
   - Resource policies: restrict access to accounts that are members of Org
 - S3 IAM: permission levels
@@ -46,23 +46,23 @@
 - IAM Policy evaluation logic
 - Identity Center (ex AWS SSO):
   - SSO:
-    - *Supported platforms/apps
-    - *Identity providers
+    - Supported platforms/apps
+    - Identity providers
   - Fine-grained permissions & assignments:
-    - *Multi acc permissions: function, Permission Set
-    - *App assignments
-    - *Attribute-based access control (ABAC)
+    - Multi acc permissions: function, Permission Set
+    - App assignments
+    - Attribute-based access control (ABAC)
   - Microsoft Active Directory (AD):
-    - *Def
+    - Def
     - Terms: object, tree, forest
     - AWS AD Services: relation with on-premise AD, where users are managed:
       - Managed Microsoft AD
       - AD Connector
       - Simple AD
-    - *How to connect with Identity Center: AWS Managed AD, Self-managed AD
+    - How to connect with Identity Center: AWS Managed AD, Self-managed AD
 - Control Tower:
-  - *Function
-  - *Guardrails: def, Preventive vs Detective: based on which service
+  - Function
+  - Guardrails: def, Preventive vs Detective: based on which service
 ## [EC2](./ec2.md)
 - Boostraping, User script
 - Instance types:
@@ -81,8 +81,8 @@
     - Spot Request
     - How to terminate
     - Spot fleet:
-      - *Def
-      - *Launch pool
+      - Def
+      - Launch pool
       - Strategies:
         - Lowest price pool
         - Diversified
@@ -91,7 +91,7 @@
     - Spot Block
   - Dedicated host: use case highlights
   - Dedicated instance
-  - *Capacity reservation: use case
+  - Capacity reservation: use case
 - Tenancy:
   - Change tenancy option
   - Tenancy priority when there is dif in VPC & ASG launch configs
@@ -101,7 +101,7 @@
   - Cluster
   - Spread: limit
   - Partition
-- *ENI:
+- ENI:
   - Def
   - Attributes
   - Scope
@@ -109,7 +109,7 @@
 - Hibernate: def, adv
 - AMI:
   - Def
-  - *Scope
+  - Scope
   - Types of AMI
   - AMI creation process
 ## [Storage](./storage.md)
@@ -273,6 +273,7 @@
   - Elastic Fabric Adapter (EFA): def, use case, OS restriction
   - AWS Batch
   - ParallelCluster: def, feature highlight
+- Points of DDoS mitigation (p.682 -> 685)
 ## [S3](./s3.md)
 - Bucket:
   - Name constraint
@@ -424,94 +425,93 @@
 ## [Analytics](./analytics.md)
 - Athena:
   - Def
-  - *Tricks
-  - *Federated Query
+  - Tricks
+  - Federated Query
 - Redshift:
   - Def
   - Data structure
-  - *Adv over Athena
+  - Adv over Athena
   - Cluster: node types
   - DR: multi AZ & snapshot
-  - *Ways to load data, best practice
-  - *Spectrum
+  - Ways to load data, best practice
+  - Spectrum
 - OpenSearch
-- *EMR: based on, cluster made of, node types
+- EMR: based on, cluster made of, node types
 - QuickSight:
-  - *Def
-  - *Engine
-  - *Column-Level security: which edition
+  - Def
+  - Engine
+  - Column-Level security: which edition
   - User & group: concept, which edition
   - Dashboard & sharing
 - Glue:
   - Def
-  - Vs DMS
+  - *Vs DMS
   - Job Bookmarks
-  - *ElasticViews
+  - ElasticViews
   - *DataBrew
   - Studio
-  - *Streaming ETL
+  - Streaming ETL
 - LakeFormation: def, adv
-- *Kinesis Data Analytics:
+- Kinesis Data Analytics:
   - For SQL app: def, data sources, output
   - For Apache Flink: def, data sources
 - MSK:
   - Def
+  - Data retention
   - Serverless
-  - *Consumers
+  - Consumers
 ## [Machine learning](./machine-learning.md)
-- *Rekognition: def, use case highlight
+- Rekognition: def, use case highlight
 - Transcribe: def, feature highlights
-- *Polly: def, feature highlights
+- Polly: def, feature highlights
 - Translate
-- *Lex: features
-- *Connect
+- Lex: features
+- Connect
 - Comprehend
 - Comprehend Medical: feature highlight
 - SageMaker
 - Forecast
-- *Kendra
+- Kendra
 - Personalize
-- *Textract
+- Textract
 ## [Monitoring & audit](./monitoring-audit.md)
 - Terms: metric, namespaces, dimension
-- *CW Metric Streams
+- CW Metric Streams
 - CW Logs:
-  - *Terms: lop group, log stream
-  - *Targets
-  - *Sources
-  - *Logs Insights
+  - Terms: lop group, log stream
+  - Targets
+  - Sources
+  - Logs Insights
   - S3 Export
-  - *Logs Subscriptions: targets, Subscription Filter, cross-acc, Logs Aggregation
+  - Logs Subscriptions: def, targets, Subscription Filter, Logs Aggregation, Cross-acc Subscription
   - How to get logs from EC2
   - Logs Agent & Unified Agent
 - CW Alarms:
-  - *States
-  - *Targets
+  - States
+  - Targets
   - Composite Alarms
-  - *EC2 Instance Recovery
+  - EC2 Instance Recovery
 - EventBridge (ex CW Events):
-  - *Types of event buses
+  - Types of event buses (sources)
   - Feature highlights (p.295)
-  - Archive events
   - Schema infer & Schema Registry
-  - Resource-based Policy
-  - Use case highlight
+  - *Resource-based policy: def, use case highlight
 - CW Container Insights: def, mechanism to collect logs in EKS & Kubernetes
 - CW Lambda Insights
-- *CW Contributor Insights: def, use case highlight
+- CW Contributor Insights: def, use case highlight
 - CW Application Insights
 - CloudTrail:
-  - *Function
+  - Function
   - Scope
   - Use case
-  - *Sources of API calls
-  - *Targets
+  - Sources of API calls
+  - Targets
   - Event types:
     - Management
     - Data
-    - *Insight
+    - Insight
   - Event retention
-- *Config:
+- Config:
   - Function
   - Use case highlights
   - Rules: function
@@ -523,21 +523,21 @@
 - KMS:
   - Best practice
   - KMS Keys (ex Customer Master Key): symmetric vs asymmetric
-  - *Key types: cost, automatic rotation:
+  - Key types: cost, automatic rotation:
     - AWS Owned
     - AWS Managed Key
     - Customer managed keys created in KMS
     - Customer managed keys imported
-  - *How to copy Snapshots across regions, across accs (p.655, 657)
-  - *Key Policies: default, custom: use case
+  - How to copy Snapshots across regions, across accs (p.655, 657)
+  - Key Policies: default, custom: use case
   - Multi-region keys: how keys are managed
-- *DynamoDB, Aurora: encrypt specific attributes at client-side: use what
-- *S3 Replication encryption considerations:
+- DynamoDB, Aurora: encrypt specific attributes at client-side: use what
+- S3 Replication encryption considerations:
   - Which objects replicated by default, which not replicated, which must enable
   - Same multi-region key replication
-- *Encrypted AMI sharing process
+- Encrypted AMI sharing process
 - SSM Param Store:
-  - *Def
+  - Def
   - Hierarchy
   - Param tiers
   - *Param Policies: feature
@@ -545,35 +545,34 @@
   - Def
   - Feature highlights
   - Use case highlight
-  - *Multi-region secret mechanism
+  - Multi-region secret mechanism
 - ACM:
   - *Integration targets
   - Request process
-  - *Import public cert: renewal, ways to get notified
+  - Import public cert: renewal, ways to get notified
 - WAF:
-  - *Function
+  - Function
   - Which layer
-  - *Targets
+  - Targets
   - *Types of Web ACL rules
   - *Scope
-  - *Rule Group
-  - *How to use with ALB
+  - Rule Group
+  - Architecture: how to use with fixed IP pattern
 - Shield: function, tiers
 - *Firewall Manager: function, use case highlight
-- Points of DDoS mitigation (p.682 -> 685)
 - GuardDuty:
   - Def
   - Data sources
   - Noti target
   - Feature highlight
 - Inspector:
-  - *Def
+  - Def
   - Targets:
     - EC2s: mechanism, assessments
     - Container Images
     - Lambdas
   - Risk score
-- *Macie
+- Macie
 ## [Networking](./networking.md)
 - Summary diagram: p.692
 - Summary: p.757, 758, 759
@@ -661,44 +660,44 @@
   - Warm standby
   - Hot site/multi-site approach
 - DMS:
-  - *Function
+  - Function
   - Feature highlight: CDC
-  - *Setup required
+  - Setup required
   - Schema Conversion Tool: when to use
   - Multi AZ deployment
   - Source & target highlights
 - Migrate to Aurora MySQL:
-  - *RDS to Aurora options
+  - RDS to Aurora options
   - External MySQL to Aurora options
   - DMS: when to use
 - VM import/export
 - Application Discovery Service: def, Agentless vs Agent-based
 - Application Migration Service
-- *Server Migration Service
+- Server Migration Service
 - AWS Backup:
-  - *Function
+  - Function
   - Supported services
   - Backup Plans
   - Backup Vault Lock
 - VMware Cloud on AWS
 ## [Other Services](./other-services.md)
-- *CloudFormation: def, adv
+- CloudFormation: def, adv
 - SES
-- *Pinpoint
+- Pinpoint
 - SSM:
   - Session Manager: function, advs
   - Run Command: def, config required
   - Patch Manager: def, config required
-  - *Maintenance Windows
+  - Maintenance Windows
   - *Automation: def, Runbook
 - Cost Explorer: function, feature highlights
 - Elastic Transcoder
 - AWS Batch:
-  - *Def
-  - *Types of instances
+  - Def
+  - Types of instances
   - How to define jobs
   - Dif vs Lambda
-- *AppFlow:
+- AppFlow:
   - Def
   - Source highlight
   - Destination highlights

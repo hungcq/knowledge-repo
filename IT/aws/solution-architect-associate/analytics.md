@@ -58,7 +58,7 @@
 - Create Hadoop cluster to analyze & process Big Data
 - Bundled with Spark, HBase, Presto, Flink...
 - Managed cluster: autoscale, integrated with Spot Instances
-- Node types:
+- Cluster made of EC2s. Node types:
   - Master: manage cluster, manage health, coordinate -> long running
   - Core: run tasks & store data
   - Task: run tasks -> usually Spot instances
@@ -125,6 +125,6 @@
   - Can't merge partitions
 - Consumers:
   - Kinesis Data Analytics for Flink
-  - Glue
+  - Glue Streaming ETL
   - Lambda
-  - Apps
+  - Apps run on EC2, ECS, EKS

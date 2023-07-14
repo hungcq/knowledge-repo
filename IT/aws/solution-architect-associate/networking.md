@@ -11,7 +11,7 @@
   - 172.16.0.0 -> 172.31.255.255 (172.16.0.0/12): AWS default VPC
   - 192.168.0.0 -> 192.168.255.255 (192.168.0.0/16): eg home networks
 - -> Others are public IPs
-## Default VPC
+## VPC
 - Virtual private cloud (VPC) def: a secure, isolated private cloud hosted within a public cloud
 - All new AWS accs have a default VPC
 - New EC2 instances are launched into the default VPC if no subnet is specified
@@ -23,6 +23,9 @@
     - Max size /16, min size /28
     - Only private IPs allowed
     - Should not overlap with user's other VPC/networks (eg corporate)
+- To use private hosted zone of Route53, need to config:
+  - enableDnsHostnames
+  - enableDnsSupport
 ## Subnet
 - Def: sub range in IPv4 within VPC
 - AWS reserves 5 IPs (first 4 & last 1) in each subnet:

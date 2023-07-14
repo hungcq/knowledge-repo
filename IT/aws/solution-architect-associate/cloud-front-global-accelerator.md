@@ -22,6 +22,9 @@
     - 200: most regions, excluding expensive regions
     - 100: only the least expensive regions (NA, EU)
 - Cache invalidation: force partial/full cache refresh to bypass TTL of all files (*) or specific path/file (/images/*)
+- 2 ways to restrict access to specific users:
+  - Signed URLs
+  - Signed cookies
 # Global Accelerator
 - Unicast vs anycast IPs:
   - Unicast: 1 server holds 1 IP

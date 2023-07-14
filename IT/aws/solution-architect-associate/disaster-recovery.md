@@ -26,7 +26,7 @@
 - Support continuous data replication using change data capture (CDC)
 - Must create EC2 to perform replication tasks
 - Sources: most SQL DBs & AWS SQL DBs, S3, DocumentDB
-- Targets: most SQL DBs & AWS SQL DBs, Kafka, Redis, Babelfish, Redshift, DynamoDB, S3, OpenSearch, Kinesis Data Streams, DocumentDB, Neptune
+- Targets: most SQL DBs, AWS DBs, Kafka, Redis, Babelfish, Redshift, S3, OpenSearch, KDS
 - Schema Conversion Tool (SCT): convert schema from one engine to another
 - Multi AZ deployment: DMS provisions & maintains sync standby replica in a dif AZ
 ## Migration cases

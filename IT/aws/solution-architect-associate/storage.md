@@ -30,6 +30,8 @@
 - Higher performance hardware disk attached to EC2 instance (local)
 - Ephemeral, risk of failure -> use for buffer, cache, temp content
 - -> Need backup & replication
+- If you create an AMI from an instance, the data on its instance store volumes isn't preserved
+- When you stop, hibernate, or terminate an instance, every block of storage in the instance store is reset
 ## EFS (elastic file system)
 - Def: managed network file system that can be mounted on any EC2
 - Chars:
@@ -54,6 +56,9 @@
   - Availability & durability:
     - Standard: good for production
     - One zone: good for dev, backup enabled by default, one zone IA
+- Setup access control:
+  - Use VPC security groups to control the network traffic to and from your file system
+  - Use an IAM policy to control access for clients who can mount your file system with the required permissions
 ## Snow family
 - Def: secure offline portable devices to:
   - Migrate data into/out of AWS

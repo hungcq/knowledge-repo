@@ -61,7 +61,7 @@
       - On-demand
       - Reserved
     - Most expensive
-  - Dedicated instance: no other customers share the hardware
+  - Dedicated instance: single tenant (~dedicated host): no other customers share the hardware
   - Capacity reservation: reserve on-demand instances capacity in a specific AZ for any duration
   - -> Suitable for short-term uninterrupted workload on specific AZ
 - Tenancy:
