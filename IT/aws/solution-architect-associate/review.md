@@ -121,7 +121,7 @@
 - Snapshot features:
   - Archive
   - Recycle bin
-  - *Fast snapshot restore
+  - Fast snapshot restore
 - Instance Store
 - EBS volume types:
   - gp2/gp3
@@ -132,16 +132,16 @@
 - EBS multi-attach:
   - Which volume type
   - Limit
-  - *Use case highlight
+  - Use case highlight
 - EBS encryption: where, how to encrypt unencrypted volume
 - EFS:
-  - *Def
+  - Def
   - Scope
   - Compatibility
 - EFS performance modes:
   - GP
-  - *Max IO
-- *EFS throughput mode:
+  - Max IO
+- EFS throughput mode:
   - Bursting
   - Provisioned
   - Elastic
@@ -173,7 +173,7 @@
     - FSx File Gateway
     - Volume Gateway: stored volume & cached volume
     - Tape Gateway
-  - *Hardware appliance
+  - Hardware appliance
 - Transfer Family:
   - Def
   - Supported protocols
@@ -253,7 +253,7 @@
 - Public vs private hosted zone
 - Alias record non target
 - Routing policies: simple, weighted, failover, latency based, geolocation, multi-value answer, geo-proximity, IP based
-- *Health check:
+- Health check:
   - Types of resources support
   - Conditions
   - How to check private endpoints
@@ -317,13 +317,13 @@
   - Encryption in transit
 - CORS: origin components. S3 config.
 - MFA delete: requirement, who can change config
-- *Access log
+- Access log
 - Pre-signed URL: can gen using? Expiration of each gen method.
 - Glacier Vault Lock
 - Object Lock:
   - Requirement
-  - *Retention mode: compliance, governance
-  - *Legal hold
+  - Retention mode: compliance, governance
+  - Legal hold
 - Access Point
 - Object Lambda: flow
 ## [CloudFront](./cloud-front-global-accelerator.md)
@@ -353,7 +353,7 @@
   - Architecture:
     - Fanout
     - Send 1 S3 event to multiple receivers (p.399)
-    - *Common targets
+    - Common targets
   - FIFO topic: limit
   - Message Filtering
 - Kinesis:
@@ -392,7 +392,7 @@
   - Pricing
   - Limit: RAM, execution time, env vars, deployment, concurrent execution (soft limit)
   - Networking: access VPC resource, RDS in VPC
-  - Layer: *def, goal, limit
+  - Layer: def, goal, limit
 - Edge Function:
   - Def
   - Types & differences: CloudFront Functions & Lambda@Edge
@@ -445,10 +445,10 @@
   - Dashboard & sharing
 - Glue:
   - Def
-  - *Vs DMS
+  - Vs DMS
   - Job Bookmarks
   - ElasticViews
-  - *DataBrew
+  - DataBrew
   - Studio
   - Streaming ETL
 - LakeFormation: def, adv
@@ -495,7 +495,7 @@
   - Types of event buses (sources)
   - Feature highlights (p.295)
   - Schema infer & Schema Registry
-  - *Resource-based policy: def, use case highlight
+  - Resource-based policy: def, use case highlight
 - CW Container Insights: def, mechanism to collect logs in EKS & Kubernetes
 - CW Lambda Insights
 - CW Contributor Insights: def, use case highlight
@@ -540,26 +540,26 @@
   - Def
   - Hierarchy
   - Param tiers
-  - *Param Policies: feature
+  - Param Policies: feature
 - Secrets Manager:
   - Def
   - Feature highlights
   - Use case highlight
   - Multi-region secret mechanism
 - ACM:
-  - *Integration targets
+  - Integration targets
   - Request process
   - Import public cert: renewal, ways to get notified
 - WAF:
   - Function
   - Which layer
   - Targets
-  - *Types of Web ACL rules
-  - *Scope
+  - Types of Web ACL rules
+  - Scope
   - Rule Group
   - Architecture: how to use with fixed IP pattern
 - Shield: function, tiers
-- *Firewall Manager: function, use case highlight
+- Firewall Manager: function, use case highlight
 - GuardDuty:
   - Def
   - Data sources
@@ -579,8 +579,8 @@
 - CIDR: components
 - Private IP: value ranges
 - VPC:
-  - *Default VPC: internet connectivity, EC2s have what
-  - *Max CIDRs/VPC, min/max CIDR size, CIDR allowed values, best practice
+  - Default VPC: internet connectivity, EC2s have what
+  - Max CIDRs/VPC, min/max CIDR size, CIDR allowed values, best practice
 - Subnet: IPs reserved
 - Bastion Hosts: def, config needed
 - IGW:
@@ -590,68 +590,68 @@
 - NAT Instance: function, config needed, adv over NAT Gateway
 - NAT Gateway:
   - Scope
-  - *Setup required
+  - Setup required
   - High availability
 - Data flow from private EC2s to Internet
 - NACL:
   - Scope
   - Stateful/stateless
   - Rules: allow deny?, precedence
-  - *Default NACL rule
+  - Default NACL rule
   - Ephemeral Ports
 - VPC Peering:
   - Function
-  - *Requirements
-  - *Char highlight
-  - *Scope
+  - Requirements
+  - Char highlight
+  - Scope
 - VPC Endpoints (PrivateLink):
   - Function
-  - *Types: mechanism, when to use:
+  - Types: mechanism, when to use:
     - Interface Endpoints
     - Gateway Endpoints
   - The other way to access public service
 - VPC Flow logs:
   - Info logged
-  - *Targets
+  - Targets
   - How to query
 - Site to site VPN:
   - Components: Virtual Private Gateway, Customer Gateway
-  - *Config required
-- *VPN CloudHub: function
+  - Config required
+- VPN CloudHub: function
 - Direct Connect (DX):
   - Function
-  - *Data flow
-  - *DX Gateway: function
+  - Data flow
+  - DX Gateway: function
   - Connection types: Dedicated vs Hosted: capacity, can add/remove capacity?
   - Time to setup
   - How to encrypt (IPSec)
-  - *Resiliency: high vs maximum
+  - Resiliency: high vs maximum
   - Backup connection setup
 - Transit Gateway:
-  - *Function
+  - Function
   - Connection model
-  - *Scope
-  - *Feature highlight
-  - *Site to site VPN ECMP: use case
-  - *How to share with other accs
+  - Scope
+  - Feature highlight
+  - Site to site VPN ECMP: use case
+  - How to share with other accs
 - Traffic Mirroring:
   - Function
   - Source
-  - *Targets
+  - Targets
 - IPv6:
   - Can disable IPv4 in VPC?
   - Troubleshooting when can't launch EC2 instances in subnet -> solution
 - Egress-only IGW: function, config required
 - Reachability Analyzer (p.758)
-- *ClassicLink (p.759)
+- ClassicLink (p.759)
 - Network cost:
   - Public vs private
   - Egress vs ingress
-  - *DX location
+  - DX location
 - Network Firewall:
   - Function
-  - *Layers
-  - *Feature highlights
+  - Layers
+  - Feature highlights
 ## [Disaster recovery](./disaster-recovery.md)
 - Terms: RPO, RTO
 - Strats: def, effectiveness & cost:
@@ -689,7 +689,7 @@
   - Run Command: def, config required
   - Patch Manager: def, config required
   - Maintenance Windows
-  - *Automation: def, Runbook
+  - Automation: def, Runbook
 - Cost Explorer: function, feature highlights
 - Elastic Transcoder
 - AWS Batch:

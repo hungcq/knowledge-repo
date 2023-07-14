@@ -57,8 +57,8 @@
     - Standard: good for production
     - One zone: good for dev, backup enabled by default, one zone IA
 - Setup access control:
-  - Use VPC security groups to control the network traffic to and from your file system
-  - Use an IAM policy to control access for clients who can mount your file system with the required permissions
+  - Use VPC security groups to control the network traffic to and from the file system
+  - Use an IAM policy to control access for clients who can mount the file system with the required permissions
 ## Snow family
 - Def: secure offline portable devices to:
   - Migrate data into/out of AWS
@@ -145,7 +145,7 @@
   - Per provisioned endpoint/hour
   - Data transfer in GB
 - Flow: FTP client -> Route 53 (optional) -> Transfer Family -> S3/EFS (via IAM role)
-## Data sync
+## DataSync
 - Move large data into/out of:
   - On premise/other cloud to AWS: need agent
   - AWS to dif storage service in AWS: agent not needed

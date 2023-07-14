@@ -30,7 +30,6 @@ traffic is routed to instances using the primary private IP address specified in
   - For object > 1GB: use Transfer Acceleration
   - For object < 1GB: use CloudFront
 - Strong consistency model for read-after-write when the write is successful
-- When you use server-side encryption with Amazon S3 managed keys (SSE-S3), each object is encrypted with a unique key. As an additional safeguard, it encrypts the key itself with a root key that it regularly rotates.
 ## ASG
 - Putting instance in Standby state for maintenance prevents ASG from creating another replacing instance
 - Launch configuration (deprecated):
@@ -42,8 +41,13 @@ traffic is routed to instances using the primary private IP address specified in
   - Health check grace period not expired
   - Instance failed ELB health check where ASG use EC2 type of health check
 - Termination precedence: oldest launch configuration -> oldest launch template -> closest to billing hour
-- As the Availability Zones got unbalanced, Amazon EC2 Auto Scaling will compensate by rebalancing the Availability Zones. When rebalancing, Amazon EC2 Auto Scaling launches new instances before terminating the old ones, so that rebalancing does not compromise the performance or availability of your application
-- Amazon EC2 Auto Scaling creates a new scaling activity for terminating the unhealthy instance and then terminates it. Later, another scaling activity launches a new instance to replace the terminated instance
+- Rebalancing when AZ is unbalanced. Steps:
+  - Launch new instances
+  - Terminate the old instances
+- -> App's performance/availability not affected
+- Terminating unhealthy instance steps:
+  - Create a new scaling activity for terminating the unhealthy instance
+  - Create another scaling activity to launch a new instance to replace the terminated instance
 ## Data
 - Aurora failover: select replica with the highest priority (lowest tier) with the largest size
 - Multi AZ option is only available for RDS. Aurora has use read replica as standby instance (async replication).
@@ -53,9 +57,14 @@ traffic is routed to instances using the primary private IP address specified in
 - Global Aurora failover (vs Global DynamoDB tables): cheaper
 - -> DynamoDB Global tables have no concept of failover (active-active replication)
 - DynamoDB is not in-memory DB (only have in-memory caching layer with DAX)
-- RDS applies OS updates by performing maintenance on the standby, then promoting the standby to primary, and finally performing maintenance on the old primary, which becomes the new standby
 - RDS standby: can't serve read/write requests -> can't be used as read replica
-- Any database engine level upgrade for an RDS DB instance with Multi-AZ deployment triggers both the primary and standby DB instances to be upgraded at the same time. This causes downtime until the upgrade is complete.
+- RDS OS update steps:
+  - Perform maintenance on the standby
+  - Promote the standby to primary
+  - Perform maintenance on the old primary, which becomes the new standby
+- Database engine level upgrade for an RDS DB instance with Multi-AZ deployment:
+triggers both the primary and standby DB instances to be upgraded at the same time
+- -> Cause downtime until the upgrade is complete
 ## Messaging
 - Kinesis Data Analytics: realtime
 - DynamoDB is not a target of Firehose (only S3)
