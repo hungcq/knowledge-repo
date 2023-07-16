@@ -71,12 +71,12 @@
 - Chap 6:
   - Traditional persistence: approach & problems
   - Event sourcing: def, char, advs & disadvs, design issues
-  - Event store: archi & example
+  - Event store: architecture & example
   - Using saga with event sourcing:
     - Choreography-based saga: problems
     - Orchestration-based saga: design issues
 - Chap 7:
-  - API composition: archi, design issues, advs & disadvs, usage
+  - API composition: architecture, design issues, advs & disadvs, usage
   - CQRS (same as above):
     - Design decisions
     - How to build/rebuild view
@@ -86,7 +86,7 @@
   - -> API gateway as solution
   - API gateway:
     - Functions
-    - Archi
+    - Architecture
     - Advs & disadvs
     - Design issues
   - API gw techs, considerations & examples:
@@ -120,9 +120,9 @@
 - Chap 11:
   - Security: authentication & authorization:
     - Review of security in monolith
-    - In microservice: archi, token approach, OAuth standard & archi
+    - In microservice: architecture, token approach, OAuth standard & archi
   - Configuration: problems, push-based & pull-based external config: design, advs & disadvs
-  - Observability aspects, archi & techs:
+  - Observability aspects, architecture & techs:
     - Health check
     - Log
     - Distributed tracing
@@ -132,12 +132,12 @@
   - Microservice chassis & service mesh: def, overview, techs
 - Chap 12:
   - Overview of deployment: def, history, functions of production env
-  - 4 deployment patterns: archi, pipeline, process, advs & disadvs:
+  - 4 deployment patterns: architecture, pipeline, process, advs & disadvs:
     - Language-specific package
     - Virtual machine
     - Container
     - Serverless
-  - Technologies: archi, deployment & upgrade process with examples:
+  - Technologies: architecture, deployment & upgrade process with examples:
     - Docker
     - Kubernetes
     - Istio

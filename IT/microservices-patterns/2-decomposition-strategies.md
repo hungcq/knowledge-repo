@@ -4,9 +4,9 @@
   - <img src="./resources/2.1.png" alt="drawing" width="500"/>
 - Architectural style:
   - Provide a limited set of elements (components) and relations (connectors) from which a **view** of an app's architecture can be defined
-  - An app usually uses a combination of archi styles
+  - An app usually uses a combination of architectural styles
 ### Styles apply to the logical view
-- Layered (eg 3-tier architecture): doesn't reflect modern app's archi: multiple entry/exit points
+- Layered (eg 3-tier architecture): doesn't reflect modern app's architecture: multiple entry/exit points
 - Hexagonal:
   - Business logic at the center, has ports, interact with the outside via ports
   - <img src="./resources/2.2.png" alt="drawing" width="500"/>
@@ -24,12 +24,12 @@
     - Decouple business logic from presentation & data access logic in the adapters
     - -> Easier to test business logic in isolation
     - Flexible, reflect modern app architecture: multiple, exchangeable adapters
-  - Usage: design each service in a microservice archi
-### Styles apply to the implementation view:
-- Monolithic archi
-- Microservice archi:
-  - Component: service:
-    - With its own logical view archi (usually hexagonal) & potentially separate technology stack
+  - Usage: design each service in a microservice architecture
+### Styles apply to the implementation view
+- Monolithic architecture
+- Microservice architecture:
+  - Component: *service*:
+    - With its own logical view architecture (usually hexagonal) & potentially separate technology stack
     - Implementation view can take many form (see Chap 12)
     - Correspond to business capabilities
     - Has an API to provide client access to its functionality. API consists of:
@@ -55,7 +55,7 @@
       - Improve app dev time attribute (eg understandability, maintainability, testability)
       - Improve runtime isolation: can't lock DB of other services
   - Unit of reuse: service. Shared libs should only be used for functionality that is unlikely to change.
-### Steps to define an app's microservice architecture:
+### Steps to define an app's microservice architecture
 - Not a process to follow mechanically, but likely to be iterative and requires creativity
 - <img src="./resources/2.5.png" alt="drawing" width="500"/>
 - Step 1: identify the system operations:
@@ -73,8 +73,8 @@
         - Create, update, delete domain objects
         - Create/destroy rela between them
 - Step 2: define services by *business capability*:
-  - Adv: business capabilities are stable -> resulting archi is stable
-  - The resulting services are only the first attempt at defining the archi
+  - Adv: business capabilities are stable -> resulting architecture is stable
+  - The resulting services are only the first attempt at defining the architecture
   - -> May evolve over time as more is learned about the domain:
     - Combine services due to excessive IPC
     - Split services due to high complexity
@@ -84,7 +84,7 @@
     - Identify subdomain by business capability
   - Decomposition design issues:
     - Network latency: combine service to reduce IPC
-    - Sync IPC reduces latency: use async messaging
+    - Sync IPC reduces availability: use async messaging
     - Managing data consistency: distributed trans or saga
     - Obtain a consistent view of the data: rarely a problem in practice
     - God classes prevent decomposition: apply DDD and use a separate domain model for each service

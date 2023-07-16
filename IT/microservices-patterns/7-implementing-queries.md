@@ -23,7 +23,7 @@
       - Fetch IDs, then bulk fetch other services -> require bulk fetch API
   - Service data model doesn't efficiently support the query (eg geospatial/text search query)
   - Need to separate concerns: service responsibility is maintaining business data, not querying data
-- Archi:
+- Architecture:
   - <img src="./resources/7.8.png" alt="drawing" width="500"/>
   - <img src="./resources/7.10.png" alt="drawing" width="500"/>
   - Command/domain model:
@@ -37,7 +37,7 @@
   - Make querying possible in an event sourcing app
   - Improve separation of concerns: both command side & query side are simpler & easier to maintain
 - Disadvs:
-  - Complex archi -> increased dev & operational effort
+  - Complex architecture -> increased dev & operational effort
   - Replication lag -> client must handle inconsistency by:
     - Command side & query side APIs return version. When out of date, client poll the query side.
     - Update local model using data returned by the command

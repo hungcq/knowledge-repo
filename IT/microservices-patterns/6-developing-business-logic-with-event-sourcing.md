@@ -1,5 +1,5 @@
 ## 6. Developing business logic with event sourcing
-### Traditional persistence:
+### Traditional persistence
 - Approach:
   - Map classes to DB tables
   - Map classes field to DB columns
@@ -67,7 +67,7 @@
 - Disadv: dif programming model: take time to learn, require rewriting business logic
 ### Event store
 - Usually a hybrid of a DB & a message broker
-- Archi:
+- Architecture:
   - <img src="./resources/6.9.png" alt="drawing" width="500"/>
 ### Using saga with event sourcing
 - Choreography-based saga:

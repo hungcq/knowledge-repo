@@ -20,7 +20,7 @@
         - Not required: read-only, pivot, retriable trans
   - Implementation: contain logic that coordinate the steps of the saga
   - Storing saga state: saga instance is saved to DB when created, and is loaded & saved to DB when handling reply messages
-### 2 ways to structure saga's coordination logic:
+### 2 ways to structure saga's coordination logic
 - Choreography: distribute decision making and sequencing among the saga participants
   - Main communication method: events
   - <img src="./resources/4.4.png" alt="drawing" width="500"/>

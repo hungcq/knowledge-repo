@@ -71,8 +71,8 @@
 - Pattern: reusable solution to a problem that occur in a particular context
 - Microservice pattern language: collection of interrelated software architecture and design patterns for microservices
 - Software architecture: high level structure of a software, which consists of constituent parts & the dependencies between those parts
-- Monolithic architecture: archi style that structures a system (implementation *view*) as a single executable or deployable component
-- Microservice architecture: archi style that structures a system (implementation *view*) as a set of multiple loosely coupled,
+- Monolithic architecture: architectural style that structures a system (implementation *view*) as a single executable or deployable component
+- Microservice architecture: architectural style that structures a system (implementation *view*) as a set of multiple loosely coupled,
 independently deployable services
 - Service: standalone, independently deployable software component that implements some useful functionality
 - Business capability: something that a business does in order to generate value (eg order management, item management, shipping...)

@@ -1,5 +1,5 @@
 ## 3. Interprocess communication in a microservice architecture
-### IPC design issues:
+### IPC design issues
 - Interaction styles:
   - <img src="./resources/tab-3.1.png" alt="drawing" width="500"/>
   - Mostly not related to IPC techs (eg can use messaging for req/res style by blocking waiting for a res)
@@ -112,9 +112,9 @@
     - How to scale out receivers while preserving message ordering
     - How to process message concurrently in each consumer
   - -> Solution: sharded (partitioned) channels:
-    - <img src="./resources/3.11.png" alt="drawing" width="500"/>
+    - <img src="./resources/3.11.png" width="600"/>
     - Related messages -> same partition (eg partitioned by key)
-    - n partition : 1 consumer service (eg same consumer group)
+    - 1 partition : 1 consumer instance
   - -> Same approach can be applied to multi threading handlers in each service
   - Handle duplicate messages:
     - Most mes broker deliver at least once
@@ -141,12 +141,12 @@
   - Replicate data:
     - Mechanism:
       - Maintain a replica of the needed data when processing requests
-      - Subscribe to events publish by data owner to keep the replica up to date
+      - Subscribe to events published by data owner to keep the replica up to date
     - Disadv: might require replication of large amount of data
   - Finish processing after returning a response:
     - Mechanism:
-      - Respond to client immediately (eg in pending state)
-      - Send confirmed state later
+      - Respond to client immediately (eg in PENDING state)
+      - Send CONFIRMED state later
     - Disadv: require corresponding client flow/logic
 ### Additional info
 - Factors to consider when choosing message broker:

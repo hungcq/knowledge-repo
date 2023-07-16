@@ -16,6 +16,7 @@
 - What types of API changes are backward compatible? How to handle major, breaking changes?
 - What are the dif types of messaging formats? What are the advs and disadvs of each?
 - What are the dif types of communication mechanisms between services? What are the characteristics, advs, disadvs of each?
+- How to define different types of async APIs?
 - How to handle partial failure and protect callers when using RPC? How to recover from an unavailable service?
 - What are the dif types of service discoveries? What are the main components, advs & disadvs of each type?
 - How to match a response to a request when using async messaging?
@@ -23,7 +24,7 @@
 - How to scale out receiver while preserving message ordering?
 - What are the techniques to handle duplicate messages?
 - How to ensure that a message is published as part of a transaction?
-- What are the dif ways to replace sync interaction to improve availability? What is the mechanism and tradeoff regarding each?
+- What are the dif ways to replace sync interaction to improve availability? What are the mechanism and tradeoff regarding each?
 - (Chap 5) What data should be including a domain event?
 
 # Queries in microservices

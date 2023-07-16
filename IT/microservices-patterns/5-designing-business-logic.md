@@ -4,7 +4,7 @@
   - Design business logic that works within the transaction management constraints of microservice architecture
 ### Business logic organization patterns
 - Transaction script pattern:
-  - Archi:
+  - Architecture:
     - Scripts locate in service classes as methods, once for each request/system operation, containing business logic of the request
     - Service method accesses DB via data access objects
     - Data objects are pure data with little/no behavior
@@ -12,7 +12,7 @@
   - Disadv: hard to extend & maintain
   - Usage: simple business logic
 - Domain model pattern:
-  - Archi (~object oriented design):
+  - Architecture (~object oriented design):
     - Business logic consists of an object model - network of relatively small classes
     - Classes correspond directly to concepts from problem domain, most contain both state and behavior
     - -> Simple service methods: business logic delegated to domain objects

@@ -28,7 +28,7 @@
     - Incrementally release the new version until it handles all the production traffic
     - Rollback to the old version if there is an issue at any point
     - Delete the old version when confident that the new version is working correctly
-### 4 deployment patterns:
+### 4 deployment patterns
 - Deploy service as a language-specific package:
   - Steps:
     - Install the necessary runtime in the machine (eg JDK, Node)
@@ -139,7 +139,7 @@
       - Definition of a pod's container can reference a ConfigMap to:
         - Define the container's env variables
         - Create config files inside the container
-  - Archi:
+  - Architecture:
     - <img src="./resources/12.10.png" alt="drawing" width="500"/>
     - Run on a cluster of machines
     - Type of machines:
@@ -173,7 +173,7 @@
     - Sol 1: fix the YAML file & rerun `kubectl apply` to update the deployment
     - Sol 2 : rollback using `kubetcl rollout undo deployment <service name>` command
 - Istio (service mesh):
-  - Archi:
+  - Architecture:
     - <img src="./resources/12.11.png" alt="drawing" width="500"/>
     - *Note*: typo in Key box: req - straight line, config: -- line
   - Concepts:

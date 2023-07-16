@@ -13,7 +13,7 @@
   - -> Alternative: implement in an upstream service:
     - Adv: separate concern
     - Disadvs: increase network latency & complexity
-- Archi:
+- Architecture:
   - <img src="./resources/8.3.png" alt="drawing" width="500"/>
 - Ownership model:
   - <img src="./resources/8.6.png" alt="drawing" width="500"/>
@@ -31,9 +31,9 @@
   - Need to invoke services concurrently to improve performance
   - -> Need to write maintainable concurrent code (eg reactive programming, JS promise) to avoid callback hell
   - Handle partial failure: use techniques in chap 3
-  - Fit the current archi: need to consider when choose tech/framework
+  - Fit the current architecture: need to consider when choose tech/framework
 - Backend for frontend pattern:
-  - Archi:
+  - Architecture:
     - <img src="./resources/8.7.png" alt="drawing" width="500"/>
     - Use shared lib for common functionality
   - Advs: of microservices
