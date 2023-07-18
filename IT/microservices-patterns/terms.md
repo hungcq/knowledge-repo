@@ -94,7 +94,7 @@ independently deployable services
 - Authentication: verify the identity of the principal (app or human) that is attempting to access the app
 - Authorization: verify that the principal is allowed to perform the requested operation on the specified data:
   - Role-based security: assign each user one or more roles that grant them permission to invoke particular operations
-  - Access control list: grant users or roles permission to perform an operation on a particular business object or aggregate
+  - Access control list (ACL): grant users or roles permission to perform an operation on a particular business object or aggregate
 - Audit: track the operations that a principal performs in order to detect security issues, help CS & enforce compliance
 - Trace (in distributed tracing): represent an external request, consist of one or more spans
 - Span (in distributed tracing): represent an operation. Key attributes: operation name, start & end time.

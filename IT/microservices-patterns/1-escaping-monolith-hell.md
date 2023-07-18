@@ -2,13 +2,13 @@
 - *Monolithic architecture*:
   - <img src="./resources/1.1.png" alt="drawing" width="500"/>
   - Suitable for new, small app
-  - Benefits when the app is small:
+  - Advs: when the app is small:
     - Simple to dev: suitable for IDE & dev tools
     - Easy to make radical changes
     - Easy to test
     - Easy to deploy
     - Easy to scale
-  - Drawbacks when the app is big:
+  - Disadvs: when the app is big:
     - Too complex -> difficult to dev & debug
     - Dev is slow: lag IDE, slow build, long start up time -> edit, build, run, test loop takes a long time
     - Path from commit to deployment is long:
@@ -28,7 +28,7 @@
 - *Microservice architecture*:
   - <img src="./resources/1.7.png" alt="drawing" width="500"/>
   - Suitable for large, complex app
-  - Benefits: of small, independent services:
+  - Advs: of small, independent services:
     - Enable continuous delivery and deployment of large, complex apps (most imp benefit):
       - Testability
       - Deployability: usually don't require coordination
@@ -39,7 +39,7 @@
     - Reliability:
       - Better fault isolation
       - Easier to test
-  - Drawbacks:
+  - Disadvs:
     - Difficult to find the right set of services
     - -> Can result in distributed monolith
     - Complex distributed system:

@@ -29,7 +29,7 @@
 
 # Queries in microservices
 - What are the dif ways to implement queries in microservices? What should be the considerations when choosing between them?
-- What is the architecture and the design issues of each type?
+- What are the architecture and design issues of each type?
 
 # External API
 - What are the main issues with client-invoking-services approach?
@@ -46,17 +46,17 @@
 - What types of token can be used to handle authorization? What is the challenge with each type and how to handle it?
 - What problem externalized config solves?
 - What are the dif approaches to implement externalized config? What are the advs and disadvs of each?
-- What is observability?
+- What is the goal of observability?
 - Which observability aspects should be considered?
 - What is the function of a health check endpoint?
 - What is log aggregation? Which functions should a log infra supports?
 - Why distributed tracing is needed? How is it implemented?
-- What is application metrics? Why do we need it? What is its typical architecture? What are dif types of metrics?
+- What is application metrics? Why do we need it? What is its typical architecture? What are the dif types of metrics?
 - What are the attributes of a common metric sample?
 - What is the responsibility of devs to have application metrics available? What are the dif ways to send to metric service?
-- Why do we need exception tracking when already have logging? How is it implemented?
+- Why do we need exception tracking when we already have logging? How is it implemented?
 - What is audit logging? Why do we need it? Which info should be recorded? What are the dif ways to implement it?
-- What is microservice chassis? What is the adv & disadv of it?
+- What is microservice chassis? What are the adv & disadv of it?
 - What is a service mesh? Why do we need it? What functions does it serve?
 
 # Deployment

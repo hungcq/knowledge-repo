@@ -12,7 +12,8 @@
 - -> Should consider first when design queries
 - Disadvs:
   - Costly query
-  - Reduced availability: involve multiple services. Solution: see chap 3 - RPC design issues: recover from an unavailable service
+  - Reduced availability: involve multiple services
+  - -> Solution: see chap 3 - RPC design issues: recover from an unavailable service
   - Lack of transactional data consistency
 ### Query using CQRS pattern
 - Usages:

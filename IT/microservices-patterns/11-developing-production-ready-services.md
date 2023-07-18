@@ -5,7 +5,7 @@
   - Authentication
   - Authorization: apps often use role based security with access control lists (ACLs)
   - Auditing
-  - Secure interprocess communication (eg services communicate over TLS with authentication)
+  - Secure IPC (eg services communicate over TLS with authentication)
 - Monolith security approaches:
   - Session-based:
     - Session: store principal ID & role in:
@@ -71,82 +71,82 @@
 ### Observability
 - Goal: make the service easier to manage & trouble shoot
 - <img src="./resources/11.9.png" alt="drawing" width="500"/>
-- Aspects:
-  - Health check:
-    - Service exposes health check API endpoint which returns the health of the service
-    - Goal: service instance can tell the deployment infra whether it can handle requests
-    - -> Deployment infra can take appropriate actions:
-      - Route requests to dif instances
-      - Terminate/restart the instance
-    - Design issues:
-      - Implement health check endpoint: request handler checks service instance's connections to external service (eg DB, message broker)
-      - Invoke health check endpoint: depend on details of deployment infra
-  - Log aggregation:
-    - Aggregate logs of all services in a centralized database that supports searching & alerting
-    - Logging infra functions:
-      - Aggregate logs
-      - Store logs
-      - Enable users to search
-    - Design issues:
-      - Choose log lib
-      - Decide where to log: stdout
-      - -> Let deployment infra handle
-  - Distributed tracing:
-    - Goal: see how the services interact during the handling of external requests, including a breakdown of where the time is spent
-    - Mechanism: assign each external request a unique ID and record how it flows through the system (eg timestamps, tree of service calls)
-    - -> Unique req ID also help with searching logs related to an external request
-      in a centralized server that provides visualization and analysis
-    - Components:
-      - Distributed tracing lib:
-        - Function: build the tree of spans & send to distributed tracing server
-        - Used by each service by:
-          - Call directly in code
-          - AOP
-      - Distributed tracing server: combine the spans to form a complete trace & store in DB
-  - Application metrics:
-    - Service report metrics to a central server that provides aggregation, visualization & alerting
-    - Goal: monitor service health & alert when there is problems
-    - Types:
-      - Infra-level metrics: eg CPU, memory, disk utilization
-      - App-level metrics: eg request latency, QPS, num of requests
-    - <img src="./resources/11.14.png" alt="drawing" width="500"/>
-    - Properties of a metric sample:
-      - Name
-      - Value
-      - Timestamp
-      - Other dimensions (name-value pairs)
-    - Dev responsibility:
-      - Add metric collection code
-      - Send metric to metric service. 2 approaches:
-        - Push model: service instances invoke Metrics service API
-        - Pull model: Metric service (or its agent running locally) invokes a service API to retrieve metrics from the service instance
-  - Exception tracking:
-    - Disadvs of logging exception to log file:
-      - Can't handle multiple line exceptions
-      - Don't have a mechanism to track the resolution of exceptions
-      - No automatic mechanism to deduplicate exceptions
-    - -> Need a centralized Exception service
-    - Service report exceptions to a central service that de-duplicates exceptions, generates alerts & manages their resolution
-    - Approaches for service to report exception:
-      - Call Exception service's API directly
-      - Use client lib provided by Exception service
-  - Audit logging:
-    - Record each user actions in a DB
-    - Goal: help CS, ensure compliance, detect suspicious behavior
-    - Record information:
-      - User identity
-      - Action performed
-      - Business objects
-    - Ways to implement:
-      - Add audit logging code to business logic. Disadvs:
-        - Reduce maintainability: intertwine audit logging code with business logic
-        - Error prone: dev writing audit logging code
-      - AOP:
-        - Adv: automatic -> more reliable
-        - Disadv: lack of details
-      - Event sourcing:
-        - Adv: automatically provide an audit log for create & update operation
-        - Disadv: doesn't record queries
+- Aspects: health check, log aggregation, distributed tracing, application metrics, exception tracking, audit logging
+#### Health check
+- Service exposes health check API endpoint which returns the health of the service
+- Goal: service instance can tell the deployment infra whether it can handle requests
+- -> Deployment infra can take appropriate actions:
+  - Route requests to dif instances
+  - Terminate/restart the instance
+- Design issues:
+  - Implement health check endpoint: request handler checks service instance's connections to external service (eg DB, message broker)
+  - Invoke health check endpoint: depend on details of deployment infra
+#### Log aggregation
+- Aggregate logs of all services in a centralized database that supports searching & alerting
+- Logging infra functions:
+  - Aggregate logs
+  - Store logs
+  - Enable users to search
+- Design issues:
+  - Choose log lib
+  - Decide where to log: stdout
+  - -> Let deployment infra handle
+#### Distributed tracing
+- Goal: see how the services interact during the handling of external requests, including a breakdown of where the time is spent
+- Mechanism: assign each external request a unique ID and record how it flows through the system (eg timestamps, tree of service calls)
+- -> Unique req ID also help with searching logs related to an external request
+  in a centralized server that provides visualization and analysis
+- Components:
+  - Distributed tracing lib:
+    - Function: build the tree of spans & send to distributed tracing server
+    - Used by each service by:
+      - Call directly in code
+      - AOP
+  - Distributed tracing server: combine the spans to form a complete trace & store in DB
+#### Application metrics
+- Service reports metrics to a central server that provides aggregation, visualization & alerting
+- Goal: monitor service health & alert when there is problems
+- Types:
+  - Infra-level metrics: eg CPU, memory, disk utilization
+  - App-level metrics: eg request latency, QPS, num of requests
+  - <img src="./resources/11.14.png" alt="drawing" width="500"/>
+- Properties of a metric sample:
+  - Name
+  - Value
+  - Timestamp
+  - Other dimensions (name-value pairs)
+- Dev responsibility:
+  - Add metric collection code
+  - Send metric to metric service. 2 approaches:
+    - Push model: service instances invoke Metrics service API
+    - Pull model: Metrics service (or its agent running locally) invokes a service API to retrieve metrics from the service instance
+#### Exception tracking
+- Disadvs of logging exception to log file:
+  - Can't handle multiple line exceptions
+  - Don't have a mechanism to track the resolution of exceptions
+  - No automatic mechanism to deduplicate exceptions
+- -> Need a centralized Exception service
+- Service report exceptions to a central service that de-duplicates exceptions, generates alerts & manages their resolution
+- Approaches for service to report exception:
+  - Call Exception service's API directly
+  - Use client lib provided by Exception service
+#### Audit logging
+- Record each user actions in a DB
+- Goal: help CS, ensure compliance, detect suspicious behavior
+- Record information:
+  - User identity
+  - Action performed
+  - Business objects
+- Ways to implement:
+  - Add audit logging code to business logic. Disadvs:
+    - Reduce maintainability: intertwine audit logging code with business logic
+    - Error prone: dev writing audit logging code
+  - AOP:
+    - Adv: automatic -> more reliable
+    - Disadv: lack of details
+  - Event sourcing:
+    - Adv: automatically provide an audit log for create & update operation
+    - Disadv: doesn't record queries
 ### Microservice chassis & service mesh
 - *Microservice chassis*:
   - Adv: reduce dev effort
