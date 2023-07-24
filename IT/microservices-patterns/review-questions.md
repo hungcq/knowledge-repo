@@ -63,7 +63,8 @@
 - Why do we need automated deployment process & infra?
 - What are the main functions of a production env?
 - How to prevent bugs in new deployment from affecting users?
-- What are the main deployment patterns? What are the advs and disadvs of each? Which pattern should be considered first?
+- What are the main deployment patterns? Which pattern should be considered first?
+- What are the main advs and disadvs of deploying as a language-specific package & deploying as VM/container & serverless?
 - What should be performed by the deployment pipeline in each pattern?
 - What is Docker? What is the function of a Dockerfile? What is included in its content?
 - What are the necessary steps to push and run a Docker image? What are the common arguments in `docker run` command?
@@ -71,5 +72,4 @@
 - What are the steps to deploy a service using Kubernetes? How to make a service accessible from the outside of a cluster?
 - How to upgrade a running service in Kubernetes? How to roll back the deployment if bugs occur?
 - What is Istio? What are the key concepts and components in its architecture? How to utilize it to separate deployment from release?
-- What is AWS Lambda? What is the dif when deploying in Lambda comparing to other deployment patterns?
-- What are the dif ways to invoke a Lambda function? How to deploy and upgrade a Lambda function?
+- What is AWS Lambda? What are the dif ways to invoke a Lambda function?

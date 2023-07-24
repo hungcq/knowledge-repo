@@ -183,10 +183,10 @@
       - Used by Istio as a sidecar:
         - When used with Kubernetes: run in a container within the service's pod
         - When used in other env without the pod concept: run in the same container as the service
-      - VirtualService: define how to route requests for one or more hostnames
-      - DestinationRule:
-        - Define one or more subsets of pods for a service (usually service versions)
-        - Can also define traffic policies (eg load-balancing algo)
+    - VirtualService: define how to route requests for one or more hostnames
+    - DestinationRule:
+      - Define one or more subsets of pods for a service (usually service versions)
+      - Can also define traffic policies (eg load-balancing algo)
   - Deployment steps:
     - Create routing rules to route to the v1
     - Deploy with Istio
