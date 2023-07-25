@@ -29,7 +29,7 @@
   - Light-weight: no field name, field tag
 - Advs of schemas:
   - Compact
-  - Can be used as documentation. Track changes
+  - Can be used as documentation. Track changes.
   - Can gen code from schema
 ### 4.2. Modes of data flow between processes
 - Through DB:

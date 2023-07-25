@@ -1,11 +1,11 @@
 ## 3. Storage & retrieval
 ### 3.1. Index structures
 - Keep additional metadata to help locate the data 
-- -> Need space. Write overhead
+- -> Need space. Write overhead.
 - Hash indexes (hash table):
   - Basic in-memory hash map of key - disk offset
-  - Break data into append-only segment files. Compact & merge segments periodically to remove duplicate old keys
-  - 1 hash map for each segment. Search all the map from newer to older
+  - Break data into append-only segment files. Compact & merge segments periodically to remove duplicate old keys.
+  - 1 hash map for each segment. Search all the map from newer to older.
   - Append-only advs:
     - Fast sequential write
     - Easy concurrency & recovery control: no overwrite
@@ -13,20 +13,22 @@
   - Disadvs:
     - Hash map must fit in memory, otherwise access is slow
     - Can't do range queries: must read all keys
-- Log-structure merge tree (LMS tree):
-  - Based on hash indexes
-  - Use segment files whose keys are sorted (sorted string table - SS table)
-  - Advs:
+- Log-structure merge tree (LSM tree):
+  - Implementation:
+    - Based on hash indexes
+    - Use segment files whose keys are sorted (sorted string table - SS table)
+    - How to maintain sorted segment:
+      - Keep new write in memtable (in-memory tree (eg AVL))
+      - When tree reach threshold, write to disk
+      - Read request: check memtable -> check in-memory index of segments (newer to older)
+      - Handle crash: keep a log file to restore memtable
+  - Advs over hash table:
     - Efficient merge (like merge sort)
     - Can use sparse in-memory index, range index for each segment (using BST like AVL)
     - -> Reduce memory usage
+      -  <img src="./resources/3.5.png" width="500">
     - Compress-able blocks (between keys in sparse index)
     - -> Reduce size & disk IO
-  - How to maintain sorted segment:
-    - Keep new write in memtable (in-memory tree (eg AVL))
-    - When tree reach threshold, write to disk
-    - Read request: check memtable -> check in-memory index of segments (newer to older)
-    - Handle crash: keep a log file to restore memtable
   - Optimizations:
     - Bloom filter to check if key exists
     - Compaction strategy
@@ -34,7 +36,7 @@
   - Implementation:
     - Break DB into fixed-size blocks/pages
     - Pages refer to other pages' address on disk
-    - Read: traverse tree until reaching leaf. Leaf contains key's value or address of page containing key's value
+    - Read: traverse tree until reaching leaf. Leaf contains key's value or address of page containing key's value.
       - <img src="./resources/3.6.png" width="500">
     - Update: search for the page containing the key, update & write the whole page to disk
     - Insert: if page reach its maximum capacity -> break into 2 pages & update tree
@@ -70,7 +72,9 @@
       - Make key unique by append row ID
   - Clustered index (store row within index) & covering index (store needed columns of the row within index)
   - -> No need to jump from index to heap file
-  - Multi-dimensional index (eg firstname, lastname) vs multi-column index (eg geospatial)
+  - Multi-column index:
+    - Concatenated index (eg firstname, lastname): implemented by concat 2+ fields into 1 key
+    - Multi-dimensional index (eg geospatial): allow range searching for 2+ fields
   - Full text search & fuzzy index (similar keys). i.e., using trie
   - In-memory DB: handle durability via:
     - Logs

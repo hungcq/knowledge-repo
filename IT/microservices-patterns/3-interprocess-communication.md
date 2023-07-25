@@ -104,6 +104,7 @@
     - Advs:
       - Loose coupling: publisher don't need to be aware of consumers -> no need for service discovery
       - Message buffering -> increased availability
+      - Allow 1 to many
     - Disadvs:
       - Potential performance bottleneck/single point of failure
       - Additional operational complexity

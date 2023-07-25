@@ -2,13 +2,13 @@
 - Represent real world in terms of data models
 - Each data model has assumption about usage
 ### 2.1. Relational vs Document DB
-- | Relational                                                              | Document                                                                    |
-  |-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-  | Transaction & batch processing                                          | Scalability                                                                 |
-  | Need to map to object<br>(languages are object-oriented)                | Specialized query operation                                                 |
-  | Now support JSON & XML fields with query & index                        | Dynamic schema                                                              |
-  | Query optimizer handle the access path for join                         | Suitable for self-contained document<br>-> Better locality (no join needed) |
-  | Normalize (no duplicate)<br>-> Handle one to many & many to many better | Denormalize (one to many)<br>-> Handle by application code -> costly        |
+- |                    | Relational                                                              | Document                                                                    |
+  |--------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+  | Use case           | Transaction & batch processing                                          | Scalability                                                                 |
+  | Application code   | Need to map to object<br>(languages are object-oriented)                | Specialized query operation                                                 |
+  | Schema flexibility | Schema-on-write<br>Now support JSON & XML fields with query & index     | Dynamic schema (schema-on-read)                                             |
+  | Query              | Query optimizer handle the access path for join                         | Suitable for self-contained document<br>-> Better locality (no join needed) |
+  | Normalization      | Normalize (no duplicate)<br>-> Handle one to many & many to many better | Denormalize (one to many)<br>-> Handle by application code -> costly        |
 - Considerations:
   - Simplicity of application code: self-contained or many to many?
   - Schema flexibility: schema-on-read or schema-on-write (costly when update schema)

@@ -1,0 +1,19 @@
+- Spring Cloud:
+  - Def: common framework containing several popular cloud-management microservice frameworks
+  - -> Help operate & deploy microservices to a private/public cloud
+  - Features:
+    - Service registration & discovery: Spring Cloud Service Discovery: Consul, Zookeeper, Eureka
+    - Reliability:
+      - Spring Cloud LoadBalancer: client-side LB
+      - Resilience4j: client resiliency patterns: circuit breaker, retry, bulkhead
+    - API gateway: Spring Cloud Gateway
+    - Messaging: Spring Cloud Stream
+    - Correlation ID for logging & tracing: Spring Cloud Sleuth
+    - Security: authentication & authorization: Spring Cloud Security
+    - Config: Spring Cloud Config:
+      - Handle env specific config data
+      - Data sources:
+        - Its own
+        - Git
+        - Key-value DB of service discovery projects (Consul, Eureka)
+- 

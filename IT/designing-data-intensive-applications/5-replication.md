@@ -23,7 +23,7 @@
 - Set up new followers:
   - Copy from a consistent snapshot
   - Connect to the leader and get all changes since the snapshot
-  - Process changes normally after caught-up
+  - Process changes normally after catching up
 - Async replication (vs sync replication): leader notifies the client before the followers' confirmation of the write 
 - -> Faster write but risk of reading inconsistent data
 - -> Usually only 1 follower is sync (semi-sync)
@@ -52,19 +52,20 @@
 - Implementations:
   - Read from leaders when reading sth user might have modified (e.g., read user profile from leader)
   - Track last update time: read from leader 1 min after the update
-  - Client track time of last write (send to server?) -> read from updated replica or wait till it has caught-up
+  - Client track timestamp/version of last write -> read from updated replica or wait till it has caught-up
 - Cross-device consistency issues: need centralized last-write tracking
 #### Monotonic reads
-- Problem: user see time go backward when read from dif replicas: read updated replica then read not updated replica
+- Problem: user see time go backward when reading from dif replicas: read updated replica then read not updated replica
 - Implementation: 1 user always read from the same replica
 #### Consistent prefix reads
 - Problem: violation of causality
-- Involve sharding: some partitions are replicated slower than other: user see some parts of data in older & some parts in newer state
+- Involve sharding: some partitions are replicated slower than other:
+user see some parts of data in older & some parts in newer state
 - <img src="./resources/5.5.png" width="500">
 - Implementation: causally related writes are written to the same partition
 
-### 5.3. Multi leader replication
-- More than 1 nodes accept writes 
+### 5.3. Multi-leader replication
+- More than 1 node accept writes 
 - -> No single point of failure
 - Use cases:
   - Multi data center operation: 1 leader in each center
@@ -108,9 +109,9 @@
 - Concurrent: no causal dependency
 - Last write win: data loss
 - Merge & resolve conflict: using version vector:
-  - Keep version numbers of all replica for each key
-  - DB send data of dif versions to client
-  - Client send version vector back when write 
+  - Keep version numbers of all replicas for each key
+  - DB sends data of dif versions to client
+  - Client sends version vector back when write 
   - -> DB choose which value to overwrite, which to keep as siblings
 
 ### Additional info
@@ -121,8 +122,11 @@
     - Side-effect (eg triggers)
   - -> Replace with fixed value, but many edge cases
   - Write-ahead log shipping (byte sequence): safe, but depend on the storage engine & version
-  - Logical (row-based) log replication:
-    - Logical log: sequence of record describing writes to DB
+  - Logical (row-based) log replication (eg MySQL binlog):
+    - Logical log: sequence of record describing writes to DB. Log info:
+      - Insert: all new values of all columns
+      - Update: row ID, new values of all/updated columns
+      - Delete: row ID
     - Advs:
       - Independent of internal implementation
       - Readable & easy to parse
