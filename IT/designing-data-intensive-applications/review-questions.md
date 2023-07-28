@@ -23,14 +23,14 @@
 - What are the dif strategies to partition key-value data? What are the tradeoffs of each approach?
 - How to handle celebrity key problem?
 - What are the dif ways to partition secondary index? How are read & write handled in each case?
-- What are the dif ways to assign partition to node? How rebalancing is handled in each case, with what tradeoff?
+- What are the dif ways to assign partition to node? How is rebalancing handled in each case, with what tradeoff?
 - Where can partitioning knowledge be kept? How is routing & discovery handled?
 
 # Transactions
-- What is a tran? Goal of using tran.
-- Explain 4 concepts in ACID with examples. How to ensure durability in: 1 node & multi nodes
-- What are the situations when retrying aborted trans is not effective
-- What is dirty read, dirty write, read skew, lost update, write skew, phantom. Provide examples.
+- What is a trans? Goal of using trans.
+- Explain 4 concepts in ACID with examples. How to ensure durability in: 1 node & multi nodes?
+- What are the situations when retrying aborted trans is not effective?
+- What are dirty read, dirty write, read skew (non-repeatable read), lost update, write skew, phantom? Provide examples.
 - What are the isolation levels? What anomalies does each level prevent? How are they implemented?
 
 # Distributed system issues & consensus

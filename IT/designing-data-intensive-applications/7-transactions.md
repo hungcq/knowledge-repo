@@ -1,15 +1,15 @@
 ## 7. Transactions
 ### 7.1. Concept
-- Group several reads & writes into 1 logical unit, executed as one operation 
+- Def: group several reads & writes into 1 logical unit, executed as one operation 
 - -> No partial failure
 - To simplify programming model for app accessing a DB 
 - -> Can ignore certain error scenarios & concurrency issues
 - ACID (BASE = not ACID):
   - Atomicity = abort-ability: undo partial changes when error occurs
-  - Consistency: consistent states are defined by app and violable by codes. DB can't fully ensure
+  - Consistency: consistent states are defined by app and violable by codes. DB can't fully ensure.
   - Isolation: handle concurrency: concurrently executed trans are isolated from each other
   - Durability: data written by trans are not lost:
-    - 1 node: e.g., write-ahead logs, in case DSs on disk are corrupted
+    - 1 node: e.g., write-ahead logs, in case data structures on disk are corrupted
     - Distributed: copy to a number of nodes
 - Single vs multi-object operations: trans needed for multi-object operations because:
   - Relational data: several related tables
@@ -21,6 +21,34 @@
   - Permanent errors (constraint violation)
   - Side effects are performed (call to external systems)
   - Client process fails when retrying -> the retry is lost
+- Anomalies:
+  - Dirty read: read uncommitted value:
+    - T1: set x = 1->2                       set y = 1->2
+    - T2:              read x = 2, read y = 1
+    - -> Inconsistent. x must = y
+    - Problems:
+      - Read partially updated state
+      - Read value of aborted trans
+  - Dirty write: overwrite uncommitted value:
+    - T1: set x = 1->2                          set y = 1->2
+    - T2:             set x = 1->3, set y = 1->3
+  - -> Inconsistent: x = 3, y = 2
+  - Read skew (timing anomaly/non-repeatable read): observe the DB in an inconsistent state
+    - T1: read acc1 = 500                                        read acc2 = 400
+    - T2:                set acc1 (500) += 100, acc2 (500) -= 100
+    - Problems:
+      - Inconsistent backups
+      - Inconsistent analytic queries & integrity checks
+  - Lost update: 2 concurrent trans do read-modify-write cycle (e.g., counter increment):
+    - T1: read x = 1                         set x = x + 1
+    - T2:           read x = 1, set x = x + 1
+  - -> Inconsistent: x = 2 instead of 3
+  - Write skew: 2 trans read the same object, then update some of those objects:
+    - T1: count  check valid count OK                       write
+    - T2: count                       check valid count OK  write
+  - -> When write change result of count, premise is no longer true (phantom)
+  - Phantom read: check for the absence of row matching some search condition (eg booking, check username existed)
+  - -> No row to lock to
 ### 7.2. Weak (non-serializable) isolation levels
 - Protect against some concurrency issues
 - Can lead to subtle bugs
@@ -30,7 +58,7 @@
 #### Read committed
 - No dirty reads & no dirty writes
 - Implementation:
-  - Prevent dirty write: use row-level locks. Trans hold lock until committed/aborted
+  - Prevent dirty write: use row-level locks. Trans hold lock until committed/aborted.
   - Prevent dirty read:
     - Use row-level lock for read: performance cost
     - Versioning: keep old value for read
@@ -40,8 +68,8 @@
   - Write lock for write (same as read committed implementation)
   - Multi-version concurrency control (MVCC) for read:
     - Use increasing trans ID (txid)
-    - Each row has multi versions corresponding to each update trans
-    - Each versions has `created by` & `deleted by` (txid) columns
+    - Each row has multiple versions corresponding to each update trans
+    - Each version has `created by` & `deleted by` (txid) columns
   - Visibility rules: ignore writes/deletions made by trans with higher ID
   - <img src="./resources/7.7.png" width="500">
   - Indexing:
@@ -51,21 +79,24 @@
 - Atomic write operations:
   - Lock
   - Use 1 thread
-- Explicit locking (SELECT FOR UPDATE = lock all rows returned by the query)
+- Explicit locking (SELECT FOR UPDATE = lock all rows returned by the query from being read)
 - Auto-detect by DB
-- Compare-and-set value
+- Compare-and-set (CAS) value: allow update only if the value has not changed since you last read it
 - Conflict resolution: merge conflict writes, used in multi-leader/leaderless DB replication
 #### Write skew & phantoms
 - Write skew can be resolved by locking all read rows when update 
-- -> Can't in case of phantom reads
+- -> Can't apply to phantom reads
 - Solution: materializing conflicts: create artificial locks in DB:
   - Example: booking: 15-min time slots, table containing combinations of room & time slot 
   - -> Lock on this table's rows when read
   - Problems:
     - Difficult to figure out
-    - Concurrency control mechanism affect data model
+    - Concurrency control mechanism affects data model
 ### 7.3. Serializable isolation
 - Trans executed in parallel result the same as executed serially
+- Types of concurrency control mechanisms:
+  - Pessimistic (eg 2PL): wait until safe to execute trans
+  - Optimistic (eg SSI): continue trans without blocking, check for isolation violation when committing, abort if needed
 #### Actual serial execution
 - Execute in 1 thread, serially
 - Requirements for performance:

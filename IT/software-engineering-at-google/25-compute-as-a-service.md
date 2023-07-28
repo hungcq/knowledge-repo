@@ -32,7 +32,7 @@
   - Centralization vs customization:
     - Customization: expanded & splitted API surface & compute env
     - Centralization: single CaaS solution to manage its entire fleet of machines
-    - -> Should be goal: to make the cost of managing the fleet remains manageable
+    - -> Should be aim for: to make the cost of managing the fleet remains manageable
   - VM advs:
     - Bring our own operating system
     - In most orgs, can take adv of preexisting exp in managing VMs & preexisting configurations & workloads based on VM
