@@ -19,7 +19,7 @@
       - Cache hit rate
     - Performance:
       - Throughput
-      - Response time: distribution of value (e.g., 99.9 percentile histogram)
+      - Response time: distribution of value (eg 99.9 percentile histogram)
       - Maintain performance: scale up vs scale out
   - Maintainability: let people work productively on the system
     - Operability

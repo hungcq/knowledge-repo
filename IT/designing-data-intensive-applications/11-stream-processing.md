@@ -21,23 +21,24 @@
     - Load balancing: redeliver mes to other consumer in case no ack -> no mes order
     - Fan-out
 #### Log-based message broker
-- Adv over traditional mes broker:
+- Techs: Kafka, Amazon Kinesis Streams, Twitter's DistributedLog, Google Cloud Pub/Sub
+- Advs over traditional mes broker:
   - Store mes to allow reprocessing
   - Can produce even without consumer (no memory used up)
 - Use append-only log files, partitioned across machines
 - Topic: group of partitions with mes of the same type
 - Order: only within, not across partition
-- Parallelize by assign dif partition to dif consumer group (1/many nodes)
+- Parallelize by assign dif partitions to dif consumer
 - -> Problems:
   - Num consumers must <= num partitions
-  - Head of line blocking within partition
+  - Head of line blocking within partition (1 message at top of partition is slow to process)
 - Track processed mes by consumer offset
 - Old mes dropped if out of disk space
 ### 11.2. Databases and streams
 - Replication log as data stream 
 - -> Keep heterogeneous data systems in sync
 - Problem with dual write (client write to both systems at the same time): write order can't be ensured
-- Change data capture:
+- Change data capture (CDC):
   - Observe all change written to a leader DB, extract & replicate to other systems
   - Optimizations:
     - Taking DB snapshot corresponding to a log offset
@@ -56,13 +57,14 @@
     - Large change history
     - Not allow deletion -> need to work around
 ### 11.3. Processing streams
-- Process stream:
+- Process streams to:
   - Keeping data system in sync
   - Push events to users
   - Produce output stream (pipeline)
 - Stream processing for monitoring:
   - Complex event processing: specify rule to search for patterns of events in a stream
-  - Stream analytics: aggregations & statistical metrics over a large number of events (rate, average, statistics over an interval)
+  - Stream analytics: aggregations & statistical metrics over a large number of events
+  (rate, average, statistics over an interval)
   - Maintaining materialized views
   - Search for patterns in individual event/multiple events
 - Difficulty of reasoning about time:
@@ -89,15 +91,16 @@
     - Example: Twitter post cache of followers: update when post added/follower changed
     - -> Materialized view of post table & follower table
   - Need to consider time dependence of joins: join an event with old or new state?
-  - -> Can use versioning (eg the event specify the version to join)
-- Fault tolerance: ensure each event processed only once:
-  - Microbatching & checkpointing: can't deal with side effect
+  - -> Can use versioning (eg the event specifies the version to join)
+- Fault tolerance: ensure each event is processed only once:
+  - Micro-batching & checkpointing: making output visible after processing the whole batch
+  - -> Can't deal with side effect
   - Atomic commit
-  - Idempotence (e.g., save last mes offset to the DB record). Requirements:
+  - Idempotence (eg save last mes offset to the DB record). Requirements:
     - Message ordering
     - Deterministic operation
     - No concurrent node updating the same value
-    - Fencing to avoid declared dead but actually alive situation
+    - Fencing to avoid "declared dead but actually alive" situation
 - Rebuild state after failure:
   - Replicate to external node
   - Save to local disk

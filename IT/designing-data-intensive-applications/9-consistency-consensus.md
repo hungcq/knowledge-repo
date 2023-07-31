@@ -7,7 +7,7 @@
 - Cross-channel timing dependency: not allow to read an old value after other client has read a new value
 - Linearizable systems:
   - Single-leader replication: with sync write or read from leader
-  - System with consensus algos
+  - System with consensus algorithms
 - Not linearizable systems:
   - Multi-leader replication: no single copy of data
   - Leaderless replication: can't solve cross-channel timing dependency even with strict quorum:
@@ -16,21 +16,23 @@
 - -> Old theorem, not practical because it ignores other faults
 - Cost of linearizability: performance
 ### 9.2. Ordering guarantees
-- Ordering preserve causality
-- Linearizability (total order - all operations are ordered) > causal consistency (partial order - concurrent operations exist):
+- Ordering preserves causality
+- Linearizability (total order - all operations are ordered) > causal consistency
+- Causal consistency: partial order - concurrent operations exist:
 strongest consistency model that incurs no performance cost & can be available
 - Determine causal dependency: version vector to keep track of prior read -> overhead
 #### Sequence number ordering
-- Lamport timestamp: pair (counter, node ID): every node & client keep track of max counter value it has seen so far & update stale current value:
+- Lamport timestamp: pair (counter, node ID):
+  - Every node & client keep track of max counter value it has seen so far & update stale current value
   - <img src="./resources/9.8.png" width="500">
 - -> Ensure total ordering but can't detect concurrent operations
-- Only work after the fact, not for operation that need immediate result (e.g., check for unique username to create)
+- Only work after the fact, not for operation that need immediate result (eg check for unique username to create)
 #### Total order broadcast
 - 2 safety properties:
-  - Reliable delivery: no mes lost
+  - Reliable delivery: no message lost
   - Total ordered delivery: messages are delivered to all nodes in the same order (fixed at delivered time)
 - Implement linearizable storage (compare-and-set operation) using total order broadcast as an append-only log:
-  - Append a “set username” mes to the log
+  - Append a "set username" mes to the log
   - Read the log, wait for the mes you just append to be delivered back
   - Check for messages contain the same username: if the first mes is your mes -> success 
 - -> Not ensure linearizable reads: changes are not immediately visible when reading from a data store updated async with the log

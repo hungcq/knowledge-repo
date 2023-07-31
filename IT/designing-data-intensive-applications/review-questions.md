@@ -35,19 +35,22 @@
 
 # Distributed system issues & consensus
 - What are the common issues in distributed system?
+- -> Unreliable network, unreliable clock
 - What is the mechanism to reach consensus despite those issues (eg implemented by ZooKeeper/etcd)?
-- Provide some example cases where consensus is imp?
+- -> Total order broadcast
 
 # Batch processing
 - What are the other 2 types of systems beside online system?
-- Provide some example outputs of batch processing job?
+- Provide some example outputs of batch processing job.
 - How MapReduce operate on a high level?
 - What is the advantage of dataflow engines (eg Spark) over MapReduce?
 
 # Stream processing
-- What is data stream? What is it commonly used for?
-- What is the adv of log-based message broker over traditional message broker?
+- What is data stream? [What is it commonly used for?](./11-stream-processing.md#113-processing-streams)
+- What are the advs of log-based message broker over traditional message broker?
 - How to parallelize processing using log-based message broker?
 - What is the common use of replication logs? How to optimize replication logs?
 - What are the dif types of stream joins? Provide an example for each.
+
+# Future of data systems
 - How are new data systems usually implemented? How dif tools are combined?

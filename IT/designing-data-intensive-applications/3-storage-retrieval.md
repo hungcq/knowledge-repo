@@ -67,7 +67,7 @@
 - Other indexing structures:
   - Secondary index:
     - Implementation similar to primary index
-    - Handle 1 key/multirow (e.g., multi row with same userid in secondary index):
+    - Handle 1 key/multirow (eg multi row with same userid in secondary index):
       - Store all rows as a list
       - Make key unique by append row ID
   - Clustered index (store row within index) & covering index (store needed columns of the row within index)

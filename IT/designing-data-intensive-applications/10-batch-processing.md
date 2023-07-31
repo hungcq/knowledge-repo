@@ -11,7 +11,8 @@
   - Experiment with prototypes
 - Example:
   - Sort data by key, then iterate & merge (reduce)
-  - Advs over program using in memory hash table: can handle case when there is not enough memory: write sorted segments to disk (like LSM tree)
+  - Adv over program using in memory hash table:
+  can handle case when there is not enough memory: write sorted segments to disk (like LSM tree)
 - Use a common interface: file (sequence of ASCII text)
 - Separate logic & wiring: use stdin as input & stdout as output
 ### 10.2. MapReduce & distributed filesystems
@@ -30,15 +31,17 @@
   - Call reducer function to iterate over sorted key-value pairs to combine values
 - Parallelization: based on partitioning:
   - Run mapper on each replica storing the input files
-  - Run reducer on configured num of replicas. Partition reducer by hash of key
-  - Mapper partition its output by reducer, each output partition written to a sorted file on the mapper disk -> notify corresponding reducer to download the output file when finished
+  - Run reducer on configured num of replicas. Partition reducer by hash of key.
+  - Mapper partitions its output by reducer, each output partition written to a sorted file on the mapper disk 
+  - -> Notify corresponding reducer to download the output file when finished
   - Reducer merge downloaded files, then reduce & write output to a file on distributed file system
+  - <img src="./resources/10.1.png" width="600">
 - Chain jobs into workflow: no support, implicitly by directory name 
 - -> Need to use external workflow scheduler
 - Reduce-side joins & grouping:
   - Joins must be local to a single machine to be efficient
   - 2 mappers for 2 sides of join: partition in the same way (eg hash of key)
-  - Reducer download & merge both side of join
+  - Reducer download & merge both sides of join
   - Handle hot keys:
     - 1 side of join sharded
     - Other side of join replicated to all shards
@@ -48,7 +51,8 @@
   - Output partitioned & sorted in the same way as the large side of join
   - Broadcast hash join: small side of join broadcast to all mappers, loaded into hash table/index on local disk
   - Partitioned hash join: if both sides of join are partitioned in the same way, mappers load only the needed partition for join
-  - Map-side merge joins: if both sides are partitioned in the same way & sorted (e.g., result of previous job), mappers just read both sides incrementally
+  - Map-side merge joins: if both sides are partitioned in the same way & sorted (eg result of previous job),
+  mappers just read both sides incrementally
 - Batch processing output examples:
   - Search indexes
   - Key-value store (eg recommendation for users): wait for batch job to finish, then bulk load result into DB 
@@ -60,17 +64,18 @@
     - Diversity of processing model: not constrained to SQL
     - Design for frequent faults (eg preemption, termination)
 ### 10.3. Beyond MapReduce
-- Materialization of immediate state: write files to HDFS after each job: slow down execution, have to wait prev job to finish 
+- Materialization of immediate state: write files to HDFS after each job:
+slow down execution, have to wait prev job to finish 
 - -> Dataflow engines (Spark, Tez, Flink):
-  - Handle entire workflow as one job
-  - Don't have to alternate map & reduce: only operator functions chained together
-  - Don't have to sort when not required
-  - Can optimize base on workflow info
-  - Need to recompute data/save checkpoint in case immediate state on RAM lost 
+  - Handle entire workflow as one job. Advs:
+    - Don't have to alternate map & reduce: only operator functions chained together
+    - Don't have to sort when not required
+    - Can optimize base on workflow info
+  - Need to recompute data/save checkpoint in case immediate state on RAM is lost 
   - -> Operator functions must be deterministic
 - Graphs & iterative processing: Pregel model:
-  - Vertex send message to another
-  - Vertex save state in memory between iterations, process only incoming message
+  - Vertex sends message to another
+  - Vertex saves state in memory between iterations, process only incoming message
   - Hard to partition frequently communicating vertexes together
   - -> Lot of mes sent via network
   - -> Running on 1 machine is usually more efficient

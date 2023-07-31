@@ -50,7 +50,7 @@
 - -> Users not see their update
 - Need read-after-write (i.e., read your write) consistency
 - Implementations:
-  - Read from leaders when reading sth user might have modified (e.g., read user profile from leader)
+  - Read from leaders when reading sth user might have modified (eg read user profile from leader)
   - Track last update time: read from leader 1 min after the update
   - Client track timestamp/version of last write -> read from updated replica or wait till it has caught-up
 - Cross-device consistency issues: need centralized last-write tracking

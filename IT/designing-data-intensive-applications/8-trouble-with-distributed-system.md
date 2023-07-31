@@ -7,12 +7,12 @@
   - -> Let partial failure escalate into total failure 
   - -> More like single-node computer
 ### 8.1. Unreliable network
-- Async packet networks (e.g., Ethernet): no timing & arrival guarantees
+- Async packet networks (eg Ethernet): no timing & arrival guarantees
 - When no response:
   - Request lost?
   - Request is delayed?
   - Receiving node failed?
-  - Receiving node pause? (e.g., running GC)
+  - Receiving node pause? (eg running GC)
   - Response lost?
   - Response is delayed? 
 - -> Usually handled via timeout, but still unsure of the problem
@@ -22,33 +22,32 @@
 - Choose a timeout:
   - Long: wait long
   - Short: premature death declaration 
-- -> Usually 2d + r:
-  - d: delivery time on network
-  - r: request handling time 
+- -> Usually 2d + r (d: delivery time on network, r: request handling time)
 - -> Problem: unbounded network delay & unbounded request handling time
-- Async network (vs sync network): bursty traffic to maximize utilization of network capacity, no need to guess & allocate network bandwidth
+- Async network (vs sync network): bursty traffic to maximize utilization of network capacity
+- -> No need to guess & allocate network bandwidth
 ### 8.2. Unreliable clock
 - Duration vs point-in-time
 - Time-of-day clock (vs monotonic clock - suitable for measuring duration):
   - Can jump back/forward
-  - Need to sync with NTP (network time protocol) servers
+  - Need to sync with network time protocol (NTP) servers
   - Can be changed by users 
 - -> Can't use timestamp for order events across dif nodes
 - Confident interval of clock
-- Process pause (eg due to GC, virtualization): the app not realize it is paused
+- Process pause (eg due to GC, virtualization): app not realize it is paused
 ### 8.3. Consensus
 - Fencing token: increasing number returned with a lock 
 - -> Reject write request with expired lock
 - Byzantine fault: nodes lie
 ### 8.4. System models
-- Things that a distributed system algo may assume
+- Things that a distributed system algorithm may assume
 - 3 system models:
   - Sync: bounded network delay, bounded clock error & bounded process pauses 
   - -> Usually not realistic
   - Partially sync: behave like sync system most of the time 
   - -> Realistic
   - Async: no timing assumption 
-  - -> Restrictive algos
+  - -> Restrictive algorithms
 - 3 fault models:
   - Crash-stop faults: node gone after crash
   - Crash-recovery faults: nodes have recoverable, stable storage
@@ -56,5 +55,5 @@
 - Partially sync with crash-recovery faults: useful model for real system
 - Correctness of algo: must satisfy some properties
 - Safety vs liveness properties:
-  - Safety: can identify the time of violation. Violation can't be undone
-  - Liveness (“eventual” keyword): may not hold at some point in time, but might be satisfied in the future
+  - Safety: can identify the time of violation. Violation can't be undone.
+  - Liveness ("eventual" keyword): may not hold at some point in time, but might be satisfied in the future

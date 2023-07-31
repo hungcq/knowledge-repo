@@ -28,7 +28,7 @@
   - Write to 1, read from all
 - Global index (index by term):
   - Cover data in all partitions
-  - Distribute across nodes by terms (using range or hashes): e.g., 1->10, a->e in partition 1
+  - Distribute across nodes by terms (using range or hashes): eg 1->10, a->e in partition 1
   - Write to several, read from 1
   - Problem: async index update, stale read
 
@@ -63,5 +63,5 @@
   - In routing tier
   - In DB nodes -> reroute client when don't have data
 - Problem: update when add/remove nodes:
-- -> Use coordination service (e.g., ZooKeeper) to keep track of cluster metadata (mapping of partitions to nodes)
+- -> Use coordination service (eg ZooKeeper) to keep track of cluster metadata (mapping of partitions to nodes)
 - -> Client/routing tier subscribe to coordination service, get notified when partitions moved or nodes added/removed

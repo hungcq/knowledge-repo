@@ -18,7 +18,7 @@
 - Convergence trend
 ### 2.2. Query languages
 - Imperative: specify the step of the query
-- Declarative: specify the result (pattern of data). The query optimizer decides “how”.
+- Declarative: specify the result (pattern of data). The query optimizer decides "how".
 - -> Can be optimized/parallelized easily
 - *On the web: CSS (declarative) vs JS code (imperative)
 - Map-reduce:

@@ -9,7 +9,7 @@
   - Consistency: consistent states are defined by app and violable by codes. DB can't fully ensure.
   - Isolation: handle concurrency: concurrently executed trans are isolated from each other
   - Durability: data written by trans are not lost:
-    - 1 node: e.g., write-ahead logs, in case data structures on disk are corrupted
+    - 1 node: eg write-ahead logs, in case data structures on disk are corrupted
     - Distributed: copy to a number of nodes
 - Single vs multi-object operations: trans needed for multi-object operations because:
   - Relational data: several related tables
@@ -39,7 +39,7 @@
     - Problems:
       - Inconsistent backups
       - Inconsistent analytic queries & integrity checks
-  - Lost update: 2 concurrent trans do read-modify-write cycle (e.g., counter increment):
+  - Lost update: 2 concurrent trans do read-modify-write cycle (eg counter increment):
     - T1: read x = 1                         set x = x + 1
     - T2:           read x = 1, set x = x + 1
   - -> Inconsistent: x = 2 instead of 3
