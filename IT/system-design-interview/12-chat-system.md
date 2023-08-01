@@ -1,0 +1,61 @@
+## 12. Chat system
+### Requirements
+- Type of chat app: 1-1/group?
+- Scope: mobile/web
+- Num DAU
+- Group size limit
+- Text size limit
+- Support media?
+- Support voice/video call?
+- Encryption
+- Chat history storage duration
+- Multi devices/user?
+- Noti
+- Side function: seen? Online/offline status? Searching?
+### High level design
+- Sender (HTTP keep-alive/web socket) -> Chat service (store, relay) (web socket) -> receiver
+- Service -> receiver protocol:
+  - Polling: inefficient when no new mes
+  - Long polling:
+    - Mechanism:
+      - Client holds connection open until there is new mes/timeout
+      - After new mes/timeout, client opens another connection
+    - Problems:
+      - Multi servers
+      - Can't detect disconnection
+      - Inefficient
+  - Web socket: need to manage connections
+- API servers: auth, user profile, service discovery
+- DB choice:
+  - User profile, settings, friend list: relational DB for robustness
+  - Chat history: noSQL DB:
+    - Fast read & random access
+    - Scale
+- <img src="./resources/12.8-modified.png" width="700">
+### Details
+- Unique message ID PK: snowflake
+- Service discovery (e.g., Zookeeper): pick chat server for client
+- 1-1 chat flow:
+  - <img src="./resources/12.12.png" width="600">
+- Sync across device:
+  - 1 session on each device
+  - Use current mes ID on each device -> fetch new mes
+- Group chat flow: mes sync queue for each user (or each server?) in group:
+  - A -> C queue -> C
+  - A -> D queue -> D
+  - B -> C queue -> C
+- Online status:
+  - Send heart beat to presence server
+  - When status change, publish to friends' presence server via message queue
+- Handle large group: read when user opens the group or manually refresh
+### Wrap up
+- Support media file: compression, cloud storage, thumbnail
+- Client-side caching
+- Resend mechanism
+- End-to-end encryption
+### Materials
+- [Erlang at Facebook](https://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)
+- [Messenger & Whatsapp process 60B messages each day](https://www.theverge.com/2016/4/12/11415198/facebook-messenger-whatsapp-number-messages-vs-sms-f8-2016)
+- [Facebook messages technology](https://www.facebook.com/notes/10158791457767200/)
+- [Whatsapp end-to-end encryption](https://faq.whatsapp.com/791574747982248/?locale=en_US)
+- [Slack uses app-level cache to scale](https://slack.engineering/flannel-an-application-level-edge-cache-to-make-slack-scale/)

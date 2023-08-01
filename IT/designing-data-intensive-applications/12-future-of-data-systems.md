@@ -34,7 +34,8 @@
   - -> Async event log with idempotent writes instead of distributed trans
 - Missing tools: uniform interface to integrate dif systems & propagate changes
 - Separate app code & storage
-- Dataflow: interplay between state, state changes & app code: app code subscribes to changes instead of polling for changes
+- Dataflow: interplay between state, state changes & app code:
+app code subscribes to changes instead of polling for changes
 #### Observing derived state
 - Read path: only compute when user acts
 - Write path: precomputed, done as data come in
@@ -46,7 +47,8 @@
 - -> Can track read events & derive meaningful data, merge data across partitions
 ### 12.3. Aiming for correctness
 - Avoid duplication: need to be enforced at end-user device using unique ID for each operation
-- Ensure uniqueness constraint in log-based messaging: process each partition in a single thread, scale out by hash unique field & map to partition
+- Ensure uniqueness constraint in log-based messaging:
+process each partition in a single thread, scale out by hash unique field & map to partition
 - Multi-partition request processing: money transfer example:
   - Client gen request ID
   - Validation processor (partition by payer ID) maintain & check account balance

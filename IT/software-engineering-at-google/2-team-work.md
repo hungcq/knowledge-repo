@@ -14,7 +14,7 @@
   - Trust
 - -> Good rela will help get the work done
 - Creative nature of SE requires risk being taken & mistake being learned
-- -> How to learn from mistakes: document failures by performing root-cause analysis & writing a postmortem describing:
+- -> To learn from mistakes: document failures by performing root-cause analysis & writing a postmortem describing:
   - Summary of the event
   - Timeline
   - Primary cause

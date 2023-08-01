@@ -11,17 +11,17 @@
   - Less time coding
   - Afraid not able to
 - Why lead: increase impact: scalable job
-- How:
+- Philosophy:
   - Serve the team: remove obstacles, create good technical & social env
   - Focus on what things should be done, trust the team to figure out how to do it
 - Anti-patterns:
-  - Hire pushover -> need to tell them what to do everytime
+  - Hire pushovers -> need to tell them what to do everytime
   - Ignore low performers:
     - Team spirit down: having to carry
     - Solutions: work with them early, set small incremental goals
     - -> Meet expectation: OK. Not: out.
   - Ignore human issues: need to show understanding & sympathy
-  - Be everyone's friend: to soft. Don't have to.
+  - Be everyone's friend: too soft. Don't have to.
   - Compromise the hiring bar -> low performers
   - Treat your team like children
 - Positive patterns:
@@ -29,7 +29,7 @@
     - Trust
     - Appreciate rational discussion & constructive criticism
     - Sincerely apologize when making mistakes
-  - Remain calm: always observed & have emotional impact on others
+  - Remain calm: always observed by others & have emotional impact on others
   - When people ask for advice:
     - Don't try to solve the problem
     - Help them solve by asking questions to refine & explore the problem
@@ -47,8 +47,7 @@
   - Track & ensure happiness
   - Give complements & ack
   - Insulate team from unrelated, org problems
-
-### Additional info:
+### Additional info
 - Attributes of a mentor:
   - Experienced with your team's processes & system
   - Explanation ability

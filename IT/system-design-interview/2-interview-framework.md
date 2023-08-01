@@ -1,0 +1,39 @@
+## 2. Interview framework
+### Overview
+- Purpose of SDIs: test communication & problem-solving skills:
+  - Technical design skill
+  - Collaboration skill
+  - Ability to work under pressure
+  - Skill to resolve ambiguity constructively
+  - Ability to ask good question
+- Red flags:
+  - Over-engineering, ignore tradeoffs: costly system
+  - Narrow-minded
+  - Stubborn
+### 4-step process
+- Problem & design scope: clarify requirements & assumptions:
+  - What problem is the system trying to solve?
+  - Who are the users of the system?
+  - What are the specific features to build?
+  - Load: num users, CCU, request/s
+  - Availability: tolerate single hardware/data center failure?
+  - Scalability: anticipation of growth (scale in next month/year)
+  - Existing services/stack to fit into or can be reused for the design
+  - Organizational: large, multi team org with separate infra team or new, small org?
+  - -> Microservices for productivity or simple monolith app for fast iteration & reduced operational effort
+- High level design (10-15 min) & ask feedback:
+  - Main components
+  - Use cases: flow & components involved
+  - APIs (optional)
+  - DB schema (optional)
+  - Rough calculations (optional): QPS & peak QPS (eg x2), storage, cache, number of servers
+- -> Suggest multiple approaches if possible: DB, event sourcing, communication mechanism
+- Detailed design (10-25 min):
+  - Ask which aspect/component to prioritize (eg API, DB schema, flow, communication mechanism, observability)
+  - Can be based on feedback from prev step
+- Wrap up (3-5 min): actively discuss:
+  - Bottleneck, improvement
+  - Design recap
+  - Error/edge cases
+  - Operational issues: monitoring, deployment
+  - Handling the next scale (eg x10 users)

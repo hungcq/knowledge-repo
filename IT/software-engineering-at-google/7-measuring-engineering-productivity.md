@@ -1,5 +1,5 @@
 ## 7. Measuring engineering productivity
-- Goal:
+- Goals:
   - Improve SE productivity -> can scale
   - Measure efficiently
 - Hard to measure
@@ -22,6 +22,6 @@
   - Contexts/narrative
   - Next steps to improve a process
   - Validation for quantitative metrics
-- Final step:
+- Final steps:
   - Take action: improve tools & processes
   - Track result

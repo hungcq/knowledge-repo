@@ -12,10 +12,10 @@
     - Novice: lag behind
   - Parroting: copy without understanding
   - Haunted graveyards: code people avoid touching because they afraid sth might go wrong
-- Philosophy: combine personalized help with documentation (scale better but has maintenance code)
+- Philosophy: combine personalized help with documentation (scale better but has maintenance cost)
 - Set up psychologically safe env via:
   - Mentorship: safe to ask
-  - Groups: via rules for interation
+  - Groups: via rules for interaction
 - Grow personal knowledge:
   - Ask questions
   - Understand context
