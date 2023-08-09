@@ -23,7 +23,7 @@
 - Enforcing rules:
   - Socially: teaching & training
   - Technically:
-    - Tooling: error checker, code formatter.
+    - Tooling: error checker, code formatter
     - Advs:
       - Correctness
       - Scalability

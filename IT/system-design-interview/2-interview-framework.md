@@ -29,7 +29,7 @@
   - Rough calculations (optional): QPS & peak QPS (eg x2), storage, cache, number of servers
 - -> Suggest multiple approaches if possible: DB, event sourcing, communication mechanism
 - Detailed design (10-25 min):
-  - Ask which aspect/component to prioritize (eg API, DB schema, flow, communication mechanism, observability)
+  - Ask which aspect/component to prioritize (eg API, DB schema, flow, security, communication mechanism, observability)
   - Can be based on feedback from prev step
 - Wrap up (3-5 min): actively discuss:
   - Bottleneck, improvement

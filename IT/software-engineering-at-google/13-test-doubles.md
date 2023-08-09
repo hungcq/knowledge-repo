@@ -7,11 +7,12 @@
   - Behavior of test double should closely resemble behavior of real implementation
   - -> No perfect fidelity -> need to supplement unit tests with larger scope tests that exercise real implementation
 - Real implementations (vs test doubles):
-  - Advs: 
+  - Advs:
     - Give more confidence that the system under test is working properly
     - -> Don't need to rely on integration/manual tests
-    - Tests don't depend on implementation (vs using doubles for external implementation)
-  - Use when real implementation is fast (build time & execution time), deterministic, has simple dependencies (eg value object)
+    - Tests don't depend on implementation details (test state vs using doubles to test detailed interaction)
+  - Use when real implementation is fast (build time & execution time),
+  deterministic, has simple dependencies (eg value object)
   - Can structure real implementation to make construction simpler (eg factory pattern)
 ### Techniques for using test doubles
 - *Faking*:
@@ -23,14 +24,15 @@
   - Fidelity:
     - To the API contracts of the real impl, from the perspective of the test
     - Can fail fast for unnecessary behaviors
-    - Must have its own tests to ensure fidelity. How: test the public API against both the real impl & the fake
+    - Must have its own tests to ensure fidelity
+    - -> How: test the public API against both the real impl & the fake
   - If fake is not provided by API owner: create your own fake by:
     - Wrap all calls to the API in a single class
     - Create a fake version of that class that doesn't talk to the API
 - *Stubbing*:
   - Usually done through mocking frameworks to reduce boilerplate (same with interaction testing)
   - Disadvs:
-    - Unclear tests: need extra code to define beha of functions being stubbed
+    - Unclear tests: need extra code to define behavior of functions being stubbed
     - -> Difficult to understand if unfamiliar with impl of SUT
     - Brittle tests: leak impl details into tests
     - -> Tests need to change following impl change, not change in API beha
@@ -54,8 +56,8 @@
   - Best practice:
     - Not a complete replacement for state testing
     - -> When using mock in unit tests, need to supplement the test suite with larger scoped tests that perform state testing
-    - Should be used for state-changing functions (eg command function)
+    - Should be used for state-changing functions (with side effects, eg send email, save to DB)
     - -> For non-state-changing function (eg query function), stubbing is enough:
     the SUT will return the value of the function to do other work that can be asserted
     - Avoid over-specifying which functions/arguments are validated
-    - -> Resilient to changes made to beha that are outside the scope of the test
+    - -> Resilient to changes made to behavior that are outside the scope of the test

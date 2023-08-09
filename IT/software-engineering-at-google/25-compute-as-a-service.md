@@ -16,7 +16,7 @@
     - Deduplication: client-assigned unique ID
   - Check for mis-identified failed node using address resolution system
 - Run once job: run on compute service to save engineer time, esp for heavy job
-- -> Need a limit to avoid accidental overuse
+- -> Set a limit to avoid accidental overuse
 ### Compute architecture lessons learned at Google, over time and scale
 - Containers as an abstraction of the compute env
 - Compute service manage resource for both batch job & serving job
@@ -49,7 +49,8 @@
       - Mid-level of traffic: the scaling will be more reactive & granular than that of the persistent container one
       - Loss of control over the env but less management overhead
     - -> Simpler & cheaper solution for small org or 1 team
-    - -> Cost in resource & management of a shared cluster amortizes well only if the cluster is truly shared between multiple teams
+    - -> Cost in resource & management of a shared cluster amortizes well
+    only if the cluster is truly shared between multiple teams
   - Public (vs private) cloud:
     - Advs:
       - Less management overhead but increased cost
@@ -58,13 +59,13 @@
     - -> Suitable for young orgs or products when predicting resource requirement is challenging
     - Mitigation of lock-in problem:
       - Use public cloud solutions that run using an open source architecture (eg Kubernetes)
-      - -> Difficult to guarantee that no parts specific to a provider is used
+      - -> Difficult to guarantee that no part specific to a provider is used
       - Use a lower level public cloud solution (eg Amazon EC2)
       & run a higher level open source solution (eg OpenWhisk, KNative) on top of it
       - Run multi-cloud: use managed services based on the same open source solutions
       from two or more dif cloud providers (eg GKE & AKS for Kubernetes)
       - Run in a hybrid cloud: part of workload on private infra, part on public cloud provider
         (eg use public cloud as a way to deal with overflow) -> can also manage migration
-      - -> Requirement for multi-cloud & hybrid cloud solution: require multiple envs to be connected well, through
+      - -> Requirement for multi-cloud & hybrid cloud solution: require multiple envs to be connected well, through:
         - Direct network connectivity between machines in dif envs
         - Common APIs that are available in both

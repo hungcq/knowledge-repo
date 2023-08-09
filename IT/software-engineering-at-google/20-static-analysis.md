@@ -16,9 +16,8 @@
   - Flexibility: num of analyses available, optional analyzer
 - Tradeoffs: cost:
   - Code quality: fix dead code -> buggy, low benefit
-  - -> Should focus on new code/edited code exception security/clean up
+  - -> Should focus on new code/edited code, except important security issues/bugs in existing code
   - Dev time: auto fix -> ease the integration/upgrade
-
 ### Process
 - Focus on dev happiness:
   - Measure effectiveness
@@ -27,7 +26,6 @@
 - Make it a part of the core dev workflow: at pre-commit step, compiler,
 IDE (higher performance requirement, higher complexity), code review
 - Encourage contribution from domain expert, use plugin mechanism
-
 ### Google tool
 - New features:
   - Focus on analyzing only affected files/lines

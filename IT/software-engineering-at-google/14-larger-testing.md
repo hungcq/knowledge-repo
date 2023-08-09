@@ -4,18 +4,18 @@
   - Slow
   - Non-hermetic:: share resources with other tests & traffic
   - Non-deterministic
-- Goal: reflect real beha -> more confident that the SUT works
+- Goal: reflect real behavior -> more confident that the SUT works
 - Common gaps in unit tests:
-  - Unfaithful doubles: written by dev of SUT, not dev of the dep
+  - Unfaithful doubles: written by dev of SUT, not dev of the dependency
   - -> Problems:
     - Might be stale
-    - Mistaken beha
+    - Mistaken behaviors
   - Can't test config issues
   - Can't test issues arising under load
-  - Miss beha/inputs/side effects not anticipated by the dev writing the tests
+  - Miss behaviors/inputs/side effects not anticipated by the dev writing the tests
 - Disadvs:
   - Not dev-friendly: hard to run during development
-  - No clear ownership: who should maintain & diagnose issues
+  - No clear ownership: who should maintain tests & diagnose issues
   - Lack of standardization: depend on the chars of the SUT
   - -> Harder to run, integrate & automate
 - Google exp:
@@ -23,43 +23,45 @@
     - Build unit tests (eg make it a requirement for submission)
     - Introduce automated integration tests & move away from manual e2e tests
   - Challenges:
-    - Rate of distinct scenarios to test in an e2e way can grow exponentially/combinatorially depending on the structure of the SUT
+    - Rate of distinct scenarios to test in an e2e way can grow exponentially/combinatorially
+    depending on the structure of the SUT
     - Impact of low-fidelity double grow exponentially with number of components
   - -> Goal: implement larger tests that work well at scale but maintain reasonably high fidelity
-- Dev work flow:
-  - Use a separate post-submit continuous build
-  - To write effectively: need clear libs, doc & examples:
-    - Reuse assertion libs
-    - Create libs to interact with SUTs, run A/B diffs, seed test data & orchestrate test workflows
-  - Run large tests:
-    - Techniques to speed up tests:
-      - Reduce scope/split into smaller tests to run in parallel
-      - Instead of using time-based sleep to wait for non-deterministic action to occur:
-        - Polling for a state transition repeatedly over a time window
-        - Use event handler
-      - Optimize build time: only build the core part of the SUT, use pre-built versions of other dep at a known good version
-    - Reduce flakiness:
-      - Reduce scope
-      - Higher timeout value -> tradeoff with test speed
-    - Make test understandable:
-      - Clear failure message:
-      for performance/A-B diff test, need clear explanation of what is measured & why the beha is considered suspect
-      - Minimize effort to identify root cause (eg distributed tracing)
-      - Provide support & contact info of owner & supporter of the test
-- Ownership:
-  - Integration tests of components within a particular project: project lead
-  - Featured-focused tests across services: feature owner:
-    - Dev responsible for e2e implementation
-    - Product manager/test engineer owning the description of the business scenario
-  - Record test owner using:
-    - Regular code ownership
-    - Annotations in test code
+### Dev work flow
+- Use a separate post-submit continuous build
+- To write effectively: need clear libs, doc & examples:
+  - Reuse assertion libs
+  - Create libs to interact with SUTs, run A/B diffs, seed test data & orchestrate test workflows
+- Run large tests:
+  - Techniques to speed up tests:
+    - Reduce scope/split into smaller tests to run in parallel
+    - Instead of using time-based sleep to wait for non-deterministic action to occur:
+      - Polling for a state transition repeatedly over a time window
+      - Use event handler
+    - Optimize build time: only build the core part of the SUT,
+    use pre-built versions of other dep at a known good version
+  - Reduce flakiness:
+    - Reduce scope
+    - Higher timeout value -> tradeoff with test speed
+  - Make test understandable:
+    - Clear failure message: for performance/A-B diff test,
+    need clear explanation of what is measured & why the behavior is considered a suspect
+    - Minimize effort to identify root cause (eg distributed tracing)
+    - Provide support & contact info of owner & supporter of the test
+### Ownership
+- Integration tests of components within a particular project: project lead
+- Featured-focused tests across services: feature owner:
+  - Dev responsible for e2e implementation
+  - Product manager/test engineer owning the description of the business scenario
+- Record test owner using:
+  - Regular code ownership
+  - Annotations in test code
 ### Structure
 - Phases:
   - Obtain a SUT
   - Seed necessary data
   - Perform actions
-  - Verify beha
+  - Verify behavior
 - SUT:
   - Hermeticity & fidelity are usually in conflict
   - Example types:
@@ -78,8 +80,8 @@
   - Should reduce SUT size at problem boundaries:
     - UI (browser, cli, app) - API boundary:
       - Why UIs are unreliable and costly to test:
-        - Often change in look-and-feel ways without impacting the underlying beha
-        - Usually have async beha
+        - Often change in look-and-feel ways without impacting the underlying behaviors
+        - Usually have async behaviors
       - Approach: split the tests into connected tests, use public API to drive e2e tests
     - Third-party boundary: needed because:
       - No public shared env for testing
@@ -129,7 +131,7 @@
     - Data: usually multiplexed from production or sampled
     - Verification: A/B diff comparison
   - Execution: send traffic to a public API & compare responses between old & new versions (esp between migrations)
-  - Any deviations in beha must be reconciled as anticipated or unanticipated (regressions)
+  - Any deviations in behavior must be reconciled as anticipated or unanticipated (regressions)
   - Variants:
     - A/A testing (comparing a system to itself) to identify non-deterministic beha, noise, flakiness
     - -> Remove those from A/B diffs
@@ -145,7 +147,7 @@
     - Data: handcrafted
     - Verification: assertions
   - Can use actual coding languages instead of runnable specification languages when:
-  those defining the intended product beha are fluent coders
+  those defining the intended product behavior are fluent coders
 - *Probers* & canary analysis:
   - Chars:
     - SUT: production
@@ -180,20 +182,21 @@
   - Approaches:
     - Use limited rollouts & experiments to make features in production available to a subset of users:
       - Dogfooding: release to staff -> feedback
-      - Experimentation (imp at Google): release to experiment group, compare with the control group in terms of some desired metric
+      - Experimentation (imp at Google): release to experiment group,
+      compare with the control group in terms of some desired metric
     - Rater evaluation:
       - Present human raters with results for a given operation & ask which one is better and why
       - Usage: in system where result evaluation is relative
       - Goal: determine whether to launch an algo changes
-
 ### Additional info
-- How to ensure the double reflects actual beha:
+- How to ensure the double reflects actual behavior:
   - Popular approach: consumer driven contract testing
   - Google approach: record & replay tests:
     - Record mode test: run continuously on post-submit to gen traffic logs & verify logs are generated
     - Replay mode test: used during dev & pre-submit testing
-    - When client beha changes significantly: rerun test in Record mode to generate new traffic
-- Should draft a test plan when designing software: strategic outline of what types of testing are needed and how much each, by:
+    - When client behavior changes significantly: rerun test in Record mode to generate new traffic
+- Should draft a test plan when designing software:
+strategic outline of what types of testing are needed and how much each, by:
   - Identify primary risks
   - Necessary testing approaches to mitigate those risks
 - Common approach to exploratory testing: bug bash meeting:

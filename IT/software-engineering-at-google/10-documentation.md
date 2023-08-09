@@ -17,7 +17,7 @@
   - Doc is view as extra burden to be maintained
 - Good doc: 
   - 3 aspects: completeness, accuracy, clarity
-  - -> Usually there is tradeoffs between those
+  - -> Usually there are tradeoffs between those
   - Good doc does it intended job of its type
 ### Best practices
 - Treat as code:
@@ -56,9 +56,9 @@
   - Who: audience
   - What: purpose of the doc
   - -> The doc should contain only info related to the what
-  - When: when the doc was created, reviewed or updated (explicitly or implicitly using tools)]
+  - When: when the doc was created, reviewed or updated (explicitly or implicitly using tools)
   - Where: where the doc should live, often implicit
-  - Why: purpose of the doc: summary of what you expect someone to take way from the doc
+  - Why: summary of what you expect someone to take away from the doc
 - Structure: should have beginning, middle & end:
   - Beginning: problem
   - Middle: recommended solution
@@ -116,6 +116,5 @@
 - Landing pages:
   - Content: only links to other pages for more info
   - Audience: user of your product or API
-
 ### Additional info
 - Canonical doc to avoid conflicts of docs with dif owners

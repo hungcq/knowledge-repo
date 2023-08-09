@@ -1,12 +1,10 @@
-## Build systems and build philosophy
-
+## 18. Build systems and build philosophy
 ### Overview
 - Function: transform source code written by engineers into executable binaries that can be read by machines
 - Goal:
   - Fast
   - Consistent across machine
 - Without a build system: slow, unreliable build & complex script
-
 ### 2 types of modern build systems
 - Task-based (eg Maven, Ant):
   - Mechanism:
@@ -18,8 +16,8 @@
   - Adv: flexible
   - Disadvs:
     - Too liberal -> complex script
-    - Difficulty of parallelizing build steps: risk of conflict resource usage
-    - Always build from scratch or risk having bugs
+    - Difficulty in parallelizing build steps: risk of conflict resource usage
+    - Always have to build from scratch or risk having bugs
     - High effort in maintaining & debugging scripts
 - Artifact-based:
   - Declarative style: engineer determines what to build, system determines how to build
@@ -29,19 +27,17 @@
   - Implementation details:
     - Control tools & OS dependency: declare tools & set of tools (toolchain for each OS)
     - Allow flexibility: use rules, limit to action, input & output
-    - Avoid conflict use of resource: ~Docker
+    - Avoid conflicting uses of resource: ~containerization
     - Distributed builds:
       - Remote caching: cache built artifacts -> don't have to build on local
       - -> Need to ensure download is faster than build
       - Remote execution: local -> build master -> workers -> shared cache
-
 ### Considerations when choosing build system
-- Shell scripts or invoke tools directly:
+- Use shell scripts or invoke tools directly:
   - Small project
   - Languages with built-in build system (eg Go)
 - At scale: choose artifact over task-based because migration effort of big project is high
-
-### Manage modules & deps
+### Manage modules & dependencies
 - Manage module:
   - Use fine-grained modules
   - -> Parallelize & distribute build -> faster
@@ -53,10 +49,10 @@
     - Don't public internal code as artifact: dif artifact versions violate one-version rule
     - -> Cache build results instead
   - External deps:
-    - Automatic (eg v1+): can't ensure compatibility
-    - Manual (specify the exact version): more reliable
+    - Automatic versioning (eg v1+): can't ensure compatibility
+    - -> Manual versioning (specify the exact version): more reliable
     - Use one-version rule
-    - Transitive: manage manually: generate workspace file listing all deps (~go.mod)
+    - Transitive dep: manage manually: generate workspace file listing all deps (~go.mod)
     - -> Explicit, easier to track & debug
     - Cache build results
     - Ensure security & reliability (deterministic): 3 options:

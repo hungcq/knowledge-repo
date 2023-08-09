@@ -14,7 +14,7 @@
   - Feed publishing
   - Feed building
 ### Details
-- News feed cache: store post ID by user ID (friend ID?)
+- News feed cache: store post ID by user ID
 - Post cache, DB: store post content by post ID
 - User cache, DB: store user info, follow/unfollow info…
 - Feed publishing design:

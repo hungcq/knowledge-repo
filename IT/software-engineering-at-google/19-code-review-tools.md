@@ -2,6 +2,6 @@
 - New features:
   - Diffing:
     - Cross-references
-    - Intraline diffing
+    - Intra-line diffing
     - Option to ignore whitespace
     - Move detection

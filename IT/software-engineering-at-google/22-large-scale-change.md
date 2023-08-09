@@ -41,10 +41,10 @@
   - Submission
 - Change creation: edit code
 - Sharding & submitting:
-  - Shard based upon project boundaries & ownership rules into changes that can be submitted atomically
+  - Based on project boundaries & ownership rules, shard into changes that can be submitted atomically
   - Put each individually sharded change through an independent test-mail-submit pipeline:
     - Review: send to local owners only when domain knowledge is required, otherwise send to global approver
-  - Submit: do pre-commit check first
+    - Submit: do pre-commit check first
 - Clean up:
   - Depend on change
   - Deprecation tools can be used to prevent back-sliding to old usage

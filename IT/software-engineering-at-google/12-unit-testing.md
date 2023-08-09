@@ -2,75 +2,75 @@
 - Characteristics of bad tests:
   - Brittle: break in response to unrelated change that introduced no real bugs
   - Unclear: when the test fails, hard to determine what was wrong, how to fix & why it was originally written
-- Prevent brittle tests:
-  - Strive for unchanging tests: need to change only when the requirements of the SUT change
-  - Test via public APIs of the SUT, not its implementation details:
-    - Tests invoke the system in the same way its users would
-    - How to test dif types of unit:
-      - Package/class designed to be accessible by anyone: test directly the exposed API
-      - Package/class providing a general functionality useful in a range of contexts (ie support lib): test directly
-      - Method/class supporting only 1-2 other classes (ie helper class): test indirectly through the user class
-  - Test state, not interactions: users only care what the result is, not how the system arrive at the result
-  - -> Prefer real objects when they are fast and deterministic to mocked objects
 - Advs of clear tests:
   - Faster dev time: diagnosing failure quickly
   - Document the SUT
   - Serve as basis for new tests
-- Write clear tests:
-  - Aim for complete & concise test: contain all the needed info, no more, explaining how it arrives at its result
-  - Test behavior, not method:
-    - A single method often does a few things & handle several edge cases
-    - -> Framing tests around methods leads to unclear tests
-    - Behavior:
-      - Def: a guarantee that a system makes about how it will respond to a series of inputs while in a particular state
-      - Can be expressed using "given, when, then"
-      - Mapping with method: many to many
-    - -> Write a test for each behavior
-    - Advs:
-      - Tests read more like natural language -> easy to understand
-      - Limited-scope tests -> clearly express cause & effect
-      - -> Easy to see what functionality is tested & encourage devs to add new tests instead of piling into existing test
-    - How to write behavior-driven tests:
-      - Make the given-when-then structure explicit, using:
-        - Test frameworks (eg Cucumber)
-        - White space & comments (for complex tests)
-        - -> Tests can be read at 3 levels of granularity:
-          - Name of the test method
-          - Given when then comments
-          - Actual code
-      - Name tests after the behavior being tested to convey useful info:
-        - Why test name are imp:
-          - First item in failure reports
-          - Express intent of the test
-        - A good name describes:
-          - Actions being taken on a system
-          - Expected outcome
-          - Additional info (eg state of the system/its env before taking action)
-        - -> Can use nested tests
-        - Tips:
-          - Begin with "should"
-          - Avoid "and": sign of multi behaviors
-  - Avoid logic in tests (eg operator, conditional, loop)
-  - -> Hard to know whether the test is correct
-  - Write clear failure messages, expressing:
-    - Desired outcome
-    - Actual outcome
-    - Relevant params
-- Code reuse: it is ok to repeat code as long as it makes the test clear:
-  - Shared values' problem: init is far from execution & verification
-  - -> Use helper method to init the value while reusing code
-  - Shared setup:
-    - Useful when the majority of tests:
-      - Don't care about the specific arguments used to construct the objects under test
-      - Can let them stay in default states
-    - Lead to unclear tests if tests depend on the particular values used in setup
-    - -> Better to repeat & state the value explicitly
-  - Shared helpers & validation: validation helper (if needed) should check only 1 fact
-  Check many facts will separate definition & execution from validation
-  - *Test infra*:
-    - Need to be treated as a separate product
-    - -> Must have its own tests
-    - Mostly 3rd party libs -> should standardize across org
+### Prevent brittle tests
+- Strive for unchanging tests: need to change only when the requirements of the SUT change
+- Test via public APIs of the SUT, not its implementation details:
+  - Tests invoke the system in the same way its users would
+  - How to test dif types of unit:
+    - Package/class designed to be accessible by anyone: test directly the exposed API
+    - Package/class providing a general functionality useful in a range of contexts (ie support lib): test directly
+    - Method/class supporting only 1-2 other classes (ie helper class): test indirectly through the user class
+- Test state, not interactions: users only care what the result is, not how the system arrives at the result
+- -> Prefer real objects to mocked objects when real objects are fast and deterministic
+### Write clear tests
+- Aim for complete & concise test: contain all the needed info, no more, explaining how it arrives at its result
+- Test behavior, not method:
+  - A single method often does a few things & handle several edge cases
+  - -> Framing tests around methods leads to unclear tests
+  - Behavior:
+    - Def: a guarantee that a system makes about how it will respond to a series of inputs while in a particular state
+    - Can be expressed using "given, when, then"
+    - Mapping with method: many to many
+  - -> Write a test for each behavior
+  - Advs:
+    - Tests read more like natural language -> easy to understand
+    - Limited-scope tests -> express cause & effect clearly
+    - -> Easy to see what functionality is tested & encourage devs to add new tests instead of piling into existing test
+  - How to write behavior-driven tests:
+    - Make the given-when-then structure explicit, using:
+      - Test frameworks (eg Cucumber)
+      - White space & comments (for complex tests)
+      - -> Tests can be read at 3 levels of granularity:
+        - Name of the test method
+        - Given when then comments
+        - Actual code
+    - Name tests after the behavior being tested to convey useful info:
+      - Why test name is imp:
+        - First item in failure reports
+        - Express intent of the test
+      - A good name describes:
+        - Actions being taken on a system
+        - Expected outcome
+        - Additional info (eg state of the system/its env before taking action)
+      - -> Can use nested tests
+      - Tips:
+        - Begin with "should"
+        - Avoid "and": sign of multiple behaviors
+- Avoid logic in tests (eg operator, conditional, loop)
+- -> Hard to know whether the test is correct
+- Write clear failure messages, expressing:
+  - Desired outcome
+  - Actual outcome
+  - Relevant params
+### Code reuse (can repeat code if it makes the test clear)
+- Shared values' problem: init is far from execution & verification
+- -> Use helper method to init the value while reusing code
+- Shared setup:
+  - Useful when the majority of tests:
+    - Don't care about the specific arguments used to construct the objects under test
+    - Can let them stay in default states
+  - Lead to unclear tests if tests depend on the particular values used in setup
+  - -> Better to repeat & state the value explicitly
+- Shared helpers & validation: validation helper (if needed) should check only 1 fact
+- -> Check many facts will separate definition & execution from validation
+- *Test infra*:
+  - Need to be treated as a separate product
+  - -> Must have its own tests
+  - Mostly 3rd party libs -> should standardize across org
 ### Additional info
 - 4 types of code changes:
   - Pure refactoring:

@@ -1,12 +1,72 @@
 # Software engineering
 - What are the 3 main difs between SE & programming?
 
-# Team work
+# Culture
 - What are the main sections of a postmortem?
-
-# Knowledge sharing
 - What is the philosophy for knowledge sharing?
-- How to setup a psychologically safe env?
-
-# Leadership
+- How to setup a psychologically safe env for knowledge sharing?
 - What is the leadership philosophy?
+
+# Process
+- Code review:
+  - Requirements
+  - What shouldn't be done
+  - 3 types of approvals
+  - Point of focus when reviewing dif types of changes:
+    - New feature
+    - Behavior changes (API), improvements & optimizations
+    - Bug fixes & rollbacks
+- Documentation:
+  - 3 types of reviews & corresponding goals
+  - Criteria to categorize audience:
+    - Experience level
+    - Domain knowledge
+    - Purpose
+    - How a user encounters the doc
+    - Customer vs provider (implementor)
+  - Questions to be answered in any doc: how, who, what, when, where, why, whose
+  - Doc structure
+  - Doc types: reference, design, tutorial, conceptual, landing page
+- Automated testing:
+  - Advs
+  - Advs over manual testing
+  - 3 testing activities
+  - Test sizes: constraint, adv & disadv
+- Unit testing:
+  - Chars of bad tests: brittle & unclear
+  - How to prevent brittle tests & unclear tests?
+  - Code reuse in test
+  - 4 types of code changes & what to do with tests
+- Test doubles:
+  - Real implementation: advs over test doubles, when to use
+  - Test double techniques: def, advs, disadvs use cases:
+    - Faking
+    - Stubbing
+    - Interaction testing (mocking)
+- Larger testing: chars, adv over unit tests
+- Deprecation:
+  - Goal
+  - When to deprecate
+  - Process, how to scale
+
+# Tools
+- Distributed VCS: def, disadvs
+- WIP dev branch: disadvs
+- Trunk-based development: process
+- Task-based vs artifact-based build system: overall mechanism
+- Limitations of semantic versioning
+- Large scale change:
+  - 4 types
+  - Process
+- CI:
+  - Functions, from a testing perspective
+  - Types of tests to run at:
+    - Pre-submit
+    - Post-submit
+    - Release candidate (RC) testing
+- CD:
+  - Short-term operational fixes to mitigate risks & problems
+  - Advs of early, frequent release
+- CaaS:
+  - Serverless mechanism
+  - Public (vs private) cloud: advs, disadv & mitigations

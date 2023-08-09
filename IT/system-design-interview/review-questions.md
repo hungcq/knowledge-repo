@@ -10,7 +10,6 @@
 - What is CAP theorem? What does each term mean?
 - Systems:
   - Rate limiter
-  - Web crawler
   - Noti system
   - News feed system
   - Chat system
