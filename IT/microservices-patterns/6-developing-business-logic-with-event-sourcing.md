@@ -15,7 +15,7 @@
 - Characteristics:
   - Agg business logic is structure around the requirement to produce & consume events
   - -> Change in agg business logic:
-    - <img src="./resources/6.5.png" alt="drawing" width="500"/>
+    - <img src="./resources/6.5.png" width="500"/>
   - Dif from normal domain event:
     - Agg, not the consumer, determines the events & their structure
     - Required: emitted for every state changes
@@ -35,7 +35,7 @@
   - Publish event: polling/tailing the event table instead of the OUTBOX table
   - Performance when reconstructing using a large number of events: periodically persist a snapshot of the agg's state:
     - Load agg using the most recent snapshot & events occurred since the snapshot was created
-    - <img src="./resources/6.8.png" alt="drawing" width="500"/>
+    - <img src="./resources/6.8.png" width="500"/>
     - Snapshot format: JSON/memento pattern
   - Idempotent message processing:
     - Using relational DB: insert processed message ids into a table
@@ -68,7 +68,7 @@
 ### Event store
 - Usually a hybrid of a DB & a message broker
 - Architecture:
-  - <img src="./resources/6.9.png" alt="drawing" width="500"/>
+  - <img src="./resources/6.9.png" width="500"/>
 ### Using saga with event sourcing
 - Choreography-based saga:
   - Adv: easy to implement

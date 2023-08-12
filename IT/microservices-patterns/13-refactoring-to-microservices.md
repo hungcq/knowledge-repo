@@ -27,7 +27,7 @@
     - Integration glue code:
       - Allow service to access the monolith data & invoke its functionality
       - Consist of adapters in the monolith & the service that communicate via IPC
-    - <img src="./resources/13.2.png" alt="drawing" width="500"/>
+    - <img src="./resources/13.2.png" width="500"/>
   - Non-usage:
     - New feature is too small to be a meaningful service
     - New feature is too tightly coupled with the monolith
@@ -35,13 +35,13 @@
     - Data consistency problem
   - -> Need to implement in the monolith, extract later
 - Separate presentation tier from the backend:
-  - <img src="./resources/13.3.png" alt="drawing" width="500"/>
+  - <img src="./resources/13.3.png" width="500"/>
   - Benefits:
     - Dev, deploy & scale 2 apps independently
     - Expose remote API of monolith that can be called by new microservices
   - -> Only a partial solution
 - Extract business capabilities into services:
-  - <img src="./resources/13.4.png" alt="drawing" width="500"/>
+  - <img src="./resources/13.4.png" width="500"/>
   - Parts to extract to the new service:
     - Inbound adapters containing API endpoints
     - Domain logic
@@ -89,7 +89,7 @@
         - Proxy to new service
       - Use feature toggle to dynamically switch between the 2 implementations
       - Remove the existing monolith implementation when the service is considered working as expected
-      - <img src="./resources/13.23.png" alt="drawing" width="500"/>
+      - <img src="./resources/13.23.png" width="500"/>
   - Pick interaction style & IPC mechanism:
     - Query data:
       - Option 1: consumer invoke RPC API of data provider:
@@ -113,7 +113,7 @@
       - Need to communicate with monolith
     - Goal: prevent legacy monolith's domain model from polluting service's domain model
     - Anti corruption layer def: layer of code that translates between dif domain models
-    - <img src="./resources/13.11.png" alt="drawing" width="500"/>
+    - <img src="./resources/13.11.png" width="500"/>
     - Functions:
       - Map class/attribute names/values
       - Map status code
@@ -149,5 +149,5 @@
     - Monolith login handler returns an additional cookie to be included in every request. Cookie content: JWT token.
     - API gateway validate the token in the cookie, set it in authorization header and send to services
     - Services validate the token and extract info
-    - <img src="./resources/13.13.png" alt="drawing" width="500"/>
+    - <img src="./resources/13.13.png" width="500"/>
 ### Refactoring examples of strat 1 and 3: skipped

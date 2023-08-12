@@ -1,5 +1,4 @@
-# Terms
-## List of microservice patterns
+# List of microservice patterns
 - Application architecture patterns:
   - Monolithic architecture (40)
   - Microservice architecture (40)
@@ -21,19 +20,22 @@
   - Self-registration (82)
   - Server-side discovery (85)
 - Transactional messaging patterns:
-  - Transactional outbox: publish an event or message as part of a DB transaction by saving it in an outbox table in the DB
+  - Transactional outbox: publish an event or message as part of a DB trans by saving it in an outbox table in the DB
   - Transaction log tailing: publish changes made to the DB by reading transaction logs of the outbox table
   - Polling publisher: publish messages by pulling the outbox table
 - Data consistency patterns:
-  - Saga: maintain data consistency across services using a sequence of local transactions coordinated using async messaging
+  - Saga: maintain data consistency across services using a sequence of local trans coordinated using async messaging
 - Business logic design patterns:
-  - Aggregate: organize a domain model as a collection of aggregates, each of which is a graph of objects that can be treated as a unit
+  - Aggregate: organize a domain model as a collection of aggregates,
+  each of which is a graph of objects that can be treated as a unit
   - Domain event: an aggregate publishes a domain event when it's created or undergoes some other significant change
   - Domain model: organize business logic as an object model consisting of classes that have state and behavior
   - Event sourcing: persist an agg as a sequence of domain events that represent state changes.
-  - Transaction script: organize business logic as a collection of procedural transaction scripts, one for each type of request
+  - Transaction script: organize business logic as a collection of procedural transaction scripts,
+  one for each type of request
 - Querying patterns:
-  - API composition: implement a query that retrieves data from several services by querying each service via its API & combine the results
+  - API composition: implement a query that retrieves data from several services
+  by querying each service via its API & combine the results
   - Command query responsibility segregation (CQRS): implement a query that needs data from several services
   by using events to maintain a read-only view that replicates data from the services
 - External API patterns:
@@ -44,7 +46,8 @@
   - Consumer-side contract test (303)
   - Service component test (335)
 - Security patterns:
-  - Access token: API gateway passes a token containing information about the user (eg identity & roles) to the services that it invokes
+  - Access token: API gateway passes a token containing information about the user (eg identity & roles)
+  to the services that it invokes
 - Cross-cutting concerns patterns:
   - Externalized configuration: provide the configuration property values to a service instance at runtime
   - Microservice chassis: a framework/set of frameworks that handle cross-cutting concerns (eg observability, config)
@@ -61,21 +64,25 @@
   - Language-specific packaging format (387)
   - Service mesh:
     - Networking infra that handles all communication between services and external apps
-    - Implement cross-cutting concerns (eg circuit breaker, distributed tracing, service discovery, load balancing, rule-based traffic routing)
+    - Implement cross-cutting concerns (eg circuit breaker, distributed tracing, service discovery,
+    load balancing, rule-based traffic routing)
   - Serverless deployment (416)
   - Sidecar (410)
 - Refactoring to microservices patterns:
   - Anti-corruption layer (447)
   - Strangler application (432)
-## Terms
+# Terms
 - Pattern: reusable solution to a problem that occur in a particular context
 - Microservice pattern language: collection of interrelated software architecture and design patterns for microservices
-- Software architecture: high level structure of a software, which consists of constituent parts & the dependencies between those parts
-- Monolithic architecture: architectural style that structures a system (implementation *view*) as a single executable or deployable component
-- Microservice architecture: architectural style that structures a system (implementation *view*) as a set of multiple loosely coupled,
-independently deployable services
+- Software architecture: high level structure of a software,
+which consists of constituent parts & the dependencies between those parts
+- Monolithic architecture: architectural style that structures a system (implementation *view*) 
+as a single executable or deployable component
+- Microservice architecture: architectural style that structures a system (implementation *view*)
+as a set of multiple loosely coupled, independently deployable services
 - Service: standalone, independently deployable software component that implements some useful functionality
-- Business capability: something that a business does in order to generate value (eg order management, item management, shipping...)
+- Business capability: something that a business does in order to generate value
+(eg order management, item management, shipping...)
 - IDL: interface definition language
 - Service registry: database of network locations of an app's service instances
 - Message broker: an intermediary through which all messages flow (sender -> broker -> receiver)
@@ -94,21 +101,25 @@ independently deployable services
 - Authentication: verify the identity of the principal (app or human) that is attempting to access the app
 - Authorization: verify that the principal is allowed to perform the requested operation on the specified data:
   - Role-based security: assign each user one or more roles that grant them permission to invoke particular operations
-  - Access control list (ACL): grant users or roles permission to perform an operation on a particular business object or aggregate
+  - Access control list (ACL): grant users or roles permission to perform an operation
+  on a particular business object or aggregate
 - Audit: track the operations that a principal performs in order to detect security issues, help CS & enforce compliance
 - Trace (in distributed tracing): represent an external request, consist of one or more spans
 - Span (in distributed tracing): represent an operation. Key attributes: operation name, start & end time.
-- Aspect oriented programming (AOP) (~middleware in Node): automatically intercept each service method call & perform an action
+- Aspect oriented programming (AOP) (~middleware in Node):
+automatically intercept each service method call & perform an action
 - Deployment: combination of process & architecture:
   - Deployment process: steps that must be performed by people (devs & operations) to get software into production
   - Deployment architecture: structure of the env in which that software runs
 - Container image: a filesystem image consisting of the app & any software required to run the service
 - Release: make a service in production available to handle production traffic
 - Sidecar: a process or container that runs alongside the service instance and implements cross-cutting concerns
-- Test case (test): a set of test inputs, execution conditions & expected results to verify the behavior of the system under test (SUT)
+- Test case (test): a set of test inputs, execution conditions & expected results
+to verify the behavior of the system under test (SUT)
 - Test suite: a collection of related tests
 - Test double: an object that simulates the behavior of the dependency
-- Consumer driven contract test: an integration test for a provider that verifies that the shape of its API matches the expectations of a consumer
+- Consumer driven contract test: an integration test for a provider
+that verifies that the shape of its API matches the expectations of a consumer
 - Deployment pipeline: the automated process of getting code from dev's computer into production
 - User journey test: corresponds to a user's journey through the system
 - Strangler app: new app consisting of microservices, developed by implementing new functionality as services

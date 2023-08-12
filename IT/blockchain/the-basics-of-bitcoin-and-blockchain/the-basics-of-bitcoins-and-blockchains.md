@@ -187,8 +187,8 @@ Blockchain, Finance
   - How:
     - Transfer physical money
     - Use correspondent bank accounts (accounts that banks open with other banks)
-      - <img src="./resources/1.png"  alt="drawing" width="400"/>
-      - <img src="./resources/2.png"  alt="drawing" width="400"/>
+      - <img src="./resources/1.png"  width="400"/>
+      - <img src="./resources/2.png"  width="400"/>
     - -> Difficulty in maintaining bank accounts with all banks
     - Use central bank payment system:
       - Each banks hold an account with central bank (clearing account), to be used for interbank payment
@@ -196,7 +196,7 @@ Blockchain, Finance
         - Deferred net settlement systems: add up payments, sum up and pay after a given period (eg 1 day)
         - Real time gross settlement systems: pay in real time
         - -> Banks need more capital to settle all payments immediately
-          - <img src="./resources/3.png"  alt="drawing" width="400"/>
+          - <img src="./resources/3.png"  width="400"/>
       - Clearing banks: banks allowed to have accounts with central bank
       - -> Smaller/foreign banks need to open clearing accounts with clearing banks
     - -> Only work within one jurisdiction and one currency
@@ -204,11 +204,11 @@ Blockchain, Finance
   - No central bank of the world to clear international commercial payments
   - -> Need to rely on correspondent banking systems
   - Bank uses a correspondent bank account with a bank in other country for all its customers' foreign money
-  - <img src="./resources/4.png"  alt="drawing" width="400"/>
+  - <img src="./resources/4.png"  width="400"/>
   - Cases:
     - Currency leaves/returns its domestic currency zone:
-      - <img src="./resources/5.png"  alt="drawing" width="400"/>
-      - <img src="./resources/6.png"  alt="drawing" width="400"/>
+      - <img src="./resources/5.png"  width="400"/>
+      - <img src="./resources/6.png"  width="400"/>
     - Currency moves outside its domestic currency zone:
       - Both banks have correspondent accounts in the home country of the currency
       - Money transfer between those accounts
@@ -219,13 +219,13 @@ Blockchain, Finance
   - Need a third party exchanger to take one currency and give other currency
   - Cases:
     - Bank of sender as exchanger:
-      - <img src="./resources/7.png"  alt="drawing" width="400"/>
+      - <img src="./resources/7.png"  width="400"/>
     - Bank of receiver as exchanger:
-      - <img src="./resources/8.png"  alt="drawing" width="400"/>
-      - <img src="./resources/9.png"  alt="drawing" width="400"/>
+      - <img src="./resources/8.png"  width="400"/>
+      - <img src="./resources/9.png"  width="400"/>
     - Money transfer operator (eg Transferwire) as exchanger:
-      - <img src="./resources/10.png"  alt="drawing" width="400"/>
-      - <img src="./resources/11.png"  alt="drawing" width="400"/>
+      - <img src="./resources/10.png"  width="400"/>
+      - <img src="./resources/11.png"  width="400"/>
   - -> Hold more a currency and less the other currency
   - -> Risk from FX rate fluctuation
 - Euro-currency:
@@ -280,7 +280,7 @@ Blockchain, Finance
     - Validating: digital signature decrypted using public key -> message -> compare with original message -> valid/invalid
     - Usually only the hash of the message is signed
     - -> Reduce signature size
-    - <img src="./resources/12.png"  alt="drawing" width="600"/>
+    - <img src="./resources/12.png"  width="600"/>
   - Adv over normal signature: dependent on the message -> no tampering with message after being signed
 
 ### 4. Cryptocurrencies

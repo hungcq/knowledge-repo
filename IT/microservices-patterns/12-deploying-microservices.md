@@ -2,7 +2,7 @@
 ### Deployment overview
 - History:
   - Evolution of deployment architecture:
-    - <img src="./resources/12.1.png" alt="drawing" width="500"/>
+    - <img src="./resources/12.1.png" width="500"/>
   - Evolution of deployment process:
     - Devs give app & operating instructions to operations
     - -> DevOps: dev team is also responsible for deployment:
@@ -74,7 +74,7 @@
     - System administration overhead: patch the operating system & runtime
 - Deploy service as a container:
   - Services are packaged as container images & deployed. Each instance is a container.
-  - <img src="./resources/12.8.png" alt="drawing" width="500"/>
+  - <img src="./resources/12.8.png" width="500"/>
   - Pipeline:
     - Build image: use container image-building tool:
       - Create image using service code & image description
@@ -140,7 +140,7 @@
         - Define the container's env variables
         - Create config files inside the container
   - Architecture:
-    - <img src="./resources/12.10.png" alt="drawing" width="500"/>
+    - <img src="./resources/12.10.png" width="500"/>
     - Run on a cluster of machines
     - Type of machines:
       - Master: manage the cluster. Components in master:
@@ -174,7 +174,7 @@
     - Sol 2 : rollback using `kubetcl rollout undo deployment <service name>` command
 - Istio (service mesh):
   - Architecture:
-    - <img src="./resources/12.11.png" alt="drawing" width="500"/>
+    - <img src="./resources/12.11.png" width="500"/>
     - *Note*: typo in Key box: req - straight line, config: -- line
   - Concepts:
     - Istio Envoy proxy:

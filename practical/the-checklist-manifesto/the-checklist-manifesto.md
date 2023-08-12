@@ -229,7 +229,7 @@ top managers set goal, measure progress & maintain communication line with emplo
   - -> Put a publication date on the cl
   - Allow institutions to make adjustments to fit the cls into their usual procedures
 - Checklist of making checklist:
-  - <img src="./resources/1.png" alt="drawing" width="800"/>
+  - <img src="./resources/1.png" width="800"/>
 - Checklist in complex tasks:
   - Not a comprehensive how-to guides
   - Quick & simple tools to strengthen skills of professionals

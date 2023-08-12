@@ -1,6 +1,6 @@
 ## 1. Escaping monolithic hell
 - *Monolithic architecture*:
-  - <img src="./resources/1.1.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.1.png" width="500"/>
   - Suitable for new, small app
   - Advs: when the app is small:
     - Simple to dev: suitable for IDE & dev tools
@@ -19,19 +19,20 @@
       - Hard to test thoroughly
       - Lack of fault isolation
     - Locked into an obsolete tech stack: rewrite whole app is risky
-- *Software architecture* mainly affect nonfunctional requirements (maintainability, extensibility, testability), not functional requirements
+- *Software architecture* mainly affect nonfunctional requirements (maintainability, extensibility, testability),
+not functional requirements
 - 3 ways to scale an app horizontally:
   - Load balance requests across multiple instances:
     - Randomly
     - Based on request's attribute
   - Decompose by function into multiple services. Can be combined with load balancing.
 - *Microservice architecture*:
-  - <img src="./resources/1.7.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.7.png" width="500"/>
   - Suitable for large, complex app
   - Advs: of small, independent services:
     - Enable continuous delivery and deployment of large, complex apps (most imp benefit):
       - Testability
-      - Deployability: usually don't require coordination
+      - Deploy-ability: usually don't require coordination
       - Autonomous, loosely coupled teams
     - Maintainability
     - Scalability: based on resource requirement of each service
@@ -71,30 +72,31 @@
     - Infra patterns: solve infra issues outside development
     - App infra patterns: solve infra issues related to development
     - App patterns: solve development problems
-    - <img src="./resources/1.10.png" alt="drawing" width="500"/>
+    - <img src="./resources/1.10.png" width="500"/>
   - Groups:
     - Decomposition:
-      - <img src="./resources/1.11.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.11.png" width="500"/>
     - Communication:
-      - <img src="./resources/1.12.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.12.png" width="500"/>
     - Data consistency:
-      - <img src="./resources/1.13.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.13.png" width="500"/>
     - Data query:
-      - <img src="./resources/1.14.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.14.png" width="500"/>
     - Deployment:
-      - <img src="./resources/1.15.png" alt="drawing" width="500"/>
+      - <img src="./resources/1.15.png" width="500"/>
     - Observability
     - Automated testing
     - Crosscutting concerns
     - Security
 - Process & organization:
   - Imp for success, beside architecture
-  - <img src="./resources/1.16.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.16.png" width="500"/>
   - Organization: team of teams, each 8-12 people:
     - Each team has clear business-oriented goal:
       developing and possibly operating one or more services that implement a feature or a business capability
-    - Cross-functional, can develop, test, and deploy its services without having to frequently communicate or coordinate with other teams
+    - Cross-functional, can develop, test, and deploy its services
+    without having to frequently communicate or coordinate with other teams
     - Grow: adding teams
   - -> Higher dev velocity, clear point of contact
-  - Development & delivery process: agile dev & deployment practices (eg Scrum, Kanban)
+  - Development & delivery process: Agile dev & deployment practices (eg Scrum, Kanban)
   - Transition from monolithic to microservice architecture: need to consider reaction & emotion of people

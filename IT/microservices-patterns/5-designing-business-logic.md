@@ -90,4 +90,4 @@
 - Publish event: service invoke domain event publisher interface (~command publisher interface)
 - Consume event: event consumer class (~command handler class) invoke service interface
 ### Example: skipped
-- <img src="./resources/5.12.png" alt="drawing" width="500"/>
+- <img src="./resources/5.12.png" width="500"/>

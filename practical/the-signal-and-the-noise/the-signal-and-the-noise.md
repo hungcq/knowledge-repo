@@ -178,7 +178,7 @@
     - Believe in many little ideas, take a many approaches toward a problem
     - More tolerant of nuance, uncertainty, complexity & dissenting opinion
   - -> Might be mistaken for lack of confidence & conviction
-  - <img src="./resources/2.png" alt="drawing" width="500"/>
+  - <img src="./resources/2.png" width="500"/>
 
 ## 3. All I care about is W's and L's
 - Scout (qualitative) vs statistical approach:
@@ -333,7 +333,7 @@
   - When the data is noisy: focus more on decision making process, not result:
   whether the right attitudes & skills are applied
 - Prediction learning curve: getting the basic right improves accuracy a lots:
-  - <img src="./resources/3.png" alt="drawing" width="400"/>
+  - <img src="./resources/3.png" width="400"/>
   - Enough, high-quality data
   - New, usable technology
   - Focus on accuracy, not comfort or fame
@@ -430,7 +430,7 @@ depends on making probabilistic judgements under uncertainty
   - First: others can't hold our cards
   - Break opponent's range into groups of hands functioning in the same ways
   - Hand groups & probabilities, call before flop:
-  - <img src="./resources/1.png" alt="drawing" width="500"/>
+  - <img src="./resources/1.png" width="500"/>
 - Common behavior:
   - Most players fold against a raise before the flop unless they have a decent hand
   - When a player call (not raise) before the flop:

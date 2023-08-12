@@ -1,7 +1,7 @@
 ## 3. Interprocess communication in a microservice architecture
 ### IPC design issues
 - Interaction styles:
-  - <img src="./resources/tab-3.1.png" alt="drawing" width="500"/>
+  - <img src="./resources/tab-3.1.png" width="500"/>
   - Mostly not related to IPC techs (eg can use messaging for req/res style by blocking waiting for a res)
 - API definition: API-first design
   - Steps:
@@ -56,7 +56,7 @@
       query the service registry to obtain a list of available service instances & routes the request to one of them
     - 2 types:
       - Application-level service discovery:
-        - <img src="./resources/3.5.png" alt="drawing" width="500"/>
+        - <img src="./resources/3.5.png" width="500"/>
         - Need health check mechanism
         - Client can cache service instances to improve performance
         - Adv: can handle scenario when services are deployed on multiple deployment platforms
@@ -64,18 +64,18 @@
           - Need service discovery lib for every language/framework
           - Need to set up & manage the service registry
       - Platform-provided service discovery:
-        - <img src="./resources/3.6.png" alt="drawing" width="500"/>
+        - <img src="./resources/3.6.png" width="500"/>
         - Adv: all aspects of service discovery are handled by the deployment platform
         - -> Service discovery is available to all services and clients regardless of their language/framework
         - Disadv: only support discovery of services that have been deployed using the platform
 ### Async messaging communication
-- <img src="./resources/3.7.png" alt="drawing" width="500"/>
+- <img src="./resources/3.7.png" width="500"/>
 - 2 types of channels:
   - Point to point: 1 message consumed by only 1 of the consumers (eg same consumer group in Kafka)
   - Publish-subscribe
 - Use messaging to implement dif interaction styles:
   - Req/res & req/async res:
-    - <img src="./resources/3.8.png" alt="drawing" width="500"/>
+    - <img src="./resources/3.8.png" width="500"/>
     - For sync req/res, client blocks until it receives the response
   - One-way noti & publish/subscribe: supported by messaging infra
   - Publish/async responses: similar to async req/res. Client gather responses with matching correlation ID.
@@ -131,7 +131,7 @@
     - Use distributed trans spanning the DB & the broker
     - -> Problem: many modern brokers don't support distributed trans
     - Use *transactional outbox pattern*:
-      - <img src="./resources/3.13.png" alt="drawing" width="500"/>
+      - <img src="./resources/3.13.png" width="500"/>
       - Publish message using *Polling publisher* or *Transaction log tailing* pattern
   - Choose lib:
     - Use broker's client lib: require effort to implement high level mechanisms

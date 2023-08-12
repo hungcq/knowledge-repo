@@ -14,9 +14,9 @@
     - Adv: separate concern
     - Disadvs: increase network latency & complexity
 - Architecture:
-  - <img src="./resources/8.3.png" alt="drawing" width="500"/>
+  - <img src="./resources/8.3.png" width="500"/>
 - Ownership model:
-  - <img src="./resources/8.6.png" alt="drawing" width="500"/>
+  - <img src="./resources/8.6.png" width="500"/>
   - *Note: common layer functions: request routing, authen...
   - Deployment pipeline must be fully automated to avoid blocking
 - Advs:
@@ -34,6 +34,6 @@
   - Fit the current architecture: need to consider when choose tech/framework
 - Backend for frontend pattern:
   - Architecture:
-    - <img src="./resources/8.7.png" alt="drawing" width="500"/>
+    - <img src="./resources/8.7.png" width="500"/>
     - Use shared lib for common functionality
   - Advs: of microservices

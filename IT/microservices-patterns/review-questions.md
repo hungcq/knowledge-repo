@@ -1,21 +1,20 @@
 # Microservice
-- What are monolithic and microservice architecture? When should each be used? What are the main advs and disadvs of each?
-- Which approach can be used to scale an app horizontally?
+- What are monolithic and microservice architecture? When should each be used?
+What are the main advs and disadvs of each?
 - What is the right process & organization structure to work with microservice?
-- What is the main constraint of microservice architecture? What are its advs?
+- How to look at an app architecture from dif perspectives?
+- What are the common ways to structure the logical view? What are the advs & disadvs of each?
+- What is the key constraint of microservice architecture? What are its advs?
 - What is a service? What does a service's API consist of?
 - Is service size important? What are the signs of well and badly designed service?
 - What are the steps to define the microservice architecture of an app?
-
-# Architectural styles
-- How to look at an app architecture from dif perspectives?
-- What are the common ways to structure the logical view? What are the advs & disadvs of each?
 
 # IPC
 - What are the main types of interaction styles, categorized by dif dimensions?
 - What types of API changes are backward compatible? How to handle major, breaking changes?
 - What are the dif types of messaging formats? What are the advs and disadvs of each?
-- What are the dif types of communication mechanisms between services? What are the characteristics, advs, disadvs of each?
+- What are the dif types of communication mechanisms between services?
+What are the characteristics, advs, disadvs of each?
 - How to define different types of async APIs?
 - How to handle partial failure and protect callers when using RPC? How to recover from an unavailable service?
 - What are the dif types of service discoveries? What are the main components, advs & disadvs of each type?
@@ -24,11 +23,13 @@
 - How to scale out receiver while preserving message ordering?
 - What are the techniques to handle duplicate messages?
 - How to ensure that a message is published as part of a transaction?
-- What are the dif ways to replace sync interaction to improve availability? What are the mechanism and tradeoff regarding each?
+- What are the dif ways to replace sync interaction to improve availability?
+What are the mechanism and tradeoff regarding each?
 - (Chap 5) What data should be including a domain event?
 
 # Queries in microservices
-- What are the dif ways to implement queries in microservices? What should be the considerations when choosing between them?
+- What are the dif ways to implement queries in microservices?
+What should be the considerations when choosing between them?
 - What are the architecture and design issues of each type?
 
 # External API
@@ -53,7 +54,8 @@
 - Why distributed tracing is needed? How is it implemented?
 - What is application metrics? Why do we need it? What is its typical architecture? What are the dif types of metrics?
 - What are the attributes of a common metric sample?
-- What is the responsibility of devs to have application metrics available? What are the dif ways to send to metric service?
+- What is the responsibility of devs to have application metrics available?
+What are the dif ways to send to metric service?
 - Why do we need exception tracking when we already have logging? How is it implemented?
 - What is audit logging? Why do we need it? Which info should be recorded? What are the dif ways to implement it?
 - What is microservice chassis? What are the adv & disadv of it?
@@ -71,5 +73,31 @@
 - What is Kubernetes? What are its main functions? What are the main concepts and components in its architecture?
 - What are the steps to deploy a service using Kubernetes? How to make a service accessible from the outside of a cluster?
 - How to upgrade a running service in Kubernetes? How to roll back the deployment if bugs occur?
-- What is Istio? What are the key concepts and components in its architecture? How to utilize it to separate deployment from release?
+- What is Istio? What are the key concepts and components in its architecture?
+How to utilize it to separate deployment from release?
 - What is AWS Lambda? What are the dif ways to invoke a Lambda function?
+
+# Answers
+- Microservices architecture:
+  - Main adv: enable continuous dev & delivery of large, complex app:
+    - Testability
+    - Deploy-ability
+    - Autonomous, loosely-coupled team
+  - Main disadvs:
+    - Difficulty of service decomposition
+    - Distributed system: partial failure, consistency, coordination
+- Key constraint of microservices architecture: services are loosely coupled, can only communicate via APIs
+- -> Advs: encapsulation, isolation, understandability & maintainability & testability
+- Sign of well-designed service:
+  - Developed by a small team
+  - Little collaboration with other teams
+- Sign of badly-designed service:
+  - Require by a large team
+  - Take a long time to test
+  - Affected by changes in other services or trigger changes in other services
+- Steps to define microservices architecture:
+  - Define high level domain model & system operations
+  - Define services by business capability
+  - Define service APIs:
+    - Assign system operations to services
+    - Define APIs to support collaboration between services for each system operation

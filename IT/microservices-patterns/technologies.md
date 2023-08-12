@@ -40,7 +40,7 @@
   - Framework to dev your own: Netflix Zuul, Spring cloud gateway
   - Graph-based techs:
     - Advs: flexible queries, less dev effort
-    - <img src="./resources/8.9.png" alt="drawing" width="500"/>
+    - <img src="./resources/8.9.png" width="500"/>
     - GraphQL: standard, available in many languages. Apollo graphQL: popular Node implementation
     - Netflix Falcor: implementation
 - Authentication & authorization:
@@ -57,9 +57,9 @@
   - OAuth 2.0: authentication protocol originally designed to authorize a third party app without revealing its password:
     - Flows:
       - API client flow:
-        - <img src="./resources/11.4.png" alt="drawing" width="500"/>
+        - <img src="./resources/11.4.png" width="500"/>
       - Login-based client flow:
-        - <img src="./resources/11.5.png" alt="drawing" width="500"/>
+        - <img src="./resources/11.5.png" width="500"/>
     - Refresh token steps:
       - API gateway obtains a new access token: make an OAuth 2.0 Refresh Grant request with the refresh token to the authen (OAuth) server
       - Authen server returns a new access token if the refresh token hasn't expired or revoked
