@@ -1,7 +1,8 @@
 # Technologies
 - REST API definition:
-  - Open API (openapis.org): most popular IDL:
-  - Swagger project: set of tools for dev & documenting API, including tools to generate client stubs & server skeletons from an interface def
+  - Open API (openapis.org): most popular IDL
+  - Swagger project: set of tools for dev & documenting API,
+  including tools to generate client stubs & server skeletons from an interface def
 - RPC techs:
   - REST:
     - IPC mechanism that mostly uses HTTP
@@ -29,7 +30,7 @@
   - Debezium: publishes DB changes to Kafka
   - LinkedIn Databus: mine Oracle trans log & publishes change as events
   - DynamoDB streams
-  - Eventuate Tram: use MySQL biglog/Postgres WAL/polling to read from outbox table & publish to Kafka
+  - Eventuate Tram: use MySQL binlog/Postgres WAL/polling to read from outbox table & publish to Kafka
 - Event sourcing event store frameworks:
   - Event Store (eventstore.org): .NET
   - Lagom
@@ -47,13 +48,6 @@
   - Framework:
     - Spring Security, Apache Shiro: Java
     - Passport: Node
-  - Json Web Token (JWT): popular standard for transparent token:
-    - Function: securely represent claims (eg user identity & roles) between 2 parties
-    - Consists of:
-      - Payload: Json object containing user info (eg identity & roles)
-      - Other metadata (eg expiration date)
-      - Signed secret: only known to the creator of the JWT & recipient services
-      - -> Prevent third party from tampering with the JWT
   - OAuth 2.0: authentication protocol originally designed to authorize a third party app without revealing its password:
     - Flows:
       - API client flow:
@@ -61,14 +55,15 @@
       - Login-based client flow:
         - <img src="./resources/11.5.png" width="500"/>
     - Refresh token steps:
-      - API gateway obtains a new access token: make an OAuth 2.0 Refresh Grant request with the refresh token to the authen (OAuth) server
-      - Authen server returns a new access token if the refresh token hasn't expired or revoked
+      - API gateway obtains a new access token: make an OAuth 2.0 Refresh Grant request
+      with the refresh token to the authentication (OAuth) server
+      - Authentication server returns a new access token if the refresh token hasn't expired or revoked
       - API gateway passes the new access token to the services & return it to the client
     - Advs:
       - Proven security standard
       - Save dev time: don't have to dev security infra (authentication & role management)
 - Logging infra:
-  - ELK stack (popular)
+  - ELK stack (popular):
     - Elastic search: text-search oriented NoSQL DB -> used as logging server
     - Logstash: log pipeline that aggregates the service logs & writes to Elastic search
     - Kibana: visualization tool for Elastic search
@@ -88,7 +83,8 @@
 - Service mesh: Istio, Linkerd, Conduit
 - VM deployment:
   - Animator: EC2 AMI VM builder
-  - Packer (packer.io): modern VM image builder, support many virtualization techs (eg EC2, Digital Ocean, Virtual Box, VMware)
+  - Packer (packer.io): modern VM image builder, support many virtualization techs
+  (eg EC2, Digital Ocean, Virtual Box, VMware)
   - Elastic Beanstalk: modern way to deploy services as VM on AWS
 - Testing:
   - Mockito: popular mock object framework for Java

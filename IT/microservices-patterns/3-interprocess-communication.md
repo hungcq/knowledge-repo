@@ -3,7 +3,7 @@
 - Interaction styles:
   - <img src="./resources/tab-3.1.png" width="500"/>
   - Mostly not related to IPC techs (eg can use messaging for req/res style by blocking waiting for a res)
-- API definition: API-first design
+- API definition: API-first design:
   - Steps:
     - Write interface definition
     - Review it with client devs
@@ -102,7 +102,7 @@
   - Broker-based: use a message broker:
     - Main consideration when choosing message broker: message ordering & scalability
     - Advs:
-      - Loose coupling: publisher don't need to be aware of consumers -> no need for service discovery
+      - Loose coupling: publishers don't need to be aware of consumers -> no need for service discovery
       - Message buffering -> increased availability
       - Allow 1 to many
     - Disadvs:

@@ -29,15 +29,14 @@ What are the mechanism and tradeoff regarding each?
 
 # Queries in microservices
 - What are the dif ways to implement queries in microservices?
-What should be the considerations when choosing between them?
-- What are the architecture and design issues of each type?
+What should be the considerations when choosing between them? What is the architecture of each type?
 
 # External API
 - What are the main issues with client-invoking-services approach?
 - What are the main functions of a typical API gateway?
 - Which team should own the API gateway?
 - What should be considered when designing an API gateway?
-- What are the advs and disadvs of API gateway pattern? What advs BFF pattern has over API gateway?
+- What are the advs and disadvs of API gateway pattern? What advs does BFF pattern have over API gateway?
 
 # Production-ready services
 - What qualities attributes should be ensured before deploying services to production?
@@ -45,13 +44,13 @@ What should be the considerations when choosing between them?
 - What approach monolith uses to handle security for FE and API client?
 - How does microservices handle authentication? Where can authorization be implemented and what is the tradeoff of each?
 - What types of token can be used to handle authorization? What is the challenge with each type and how to handle it?
-- What problem externalized config solves?
+- What problem is solved by externalized config?
 - What are the dif approaches to implement externalized config? What are the advs and disadvs of each?
 - What is the goal of observability?
 - Which observability aspects should be considered?
 - What is the function of a health check endpoint?
 - What is log aggregation? Which functions should a log infra supports?
-- Why distributed tracing is needed? How is it implemented?
+- Why is distributed tracing needed? How is it implemented?
 - What is application metrics? Why do we need it? What is its typical architecture? What are the dif types of metrics?
 - What are the attributes of a common metric sample?
 - What is the responsibility of devs to have application metrics available?
@@ -66,7 +65,7 @@ What are the dif ways to send to metric service?
 - What are the main functions of a production env?
 - How to prevent bugs in new deployment from affecting users?
 - What are the main deployment patterns? Which pattern should be considered first?
-- What are the main advs and disadvs of deploying as a language-specific package & deploying as VM/container & serverless?
+- What are the main advs and disadvs of deploying as a language-specific package & VM/container & serverless?
 - What should be performed by the deployment pipeline in each pattern?
 - What is Docker? What is the function of a Dockerfile? What is included in its content?
 - What are the necessary steps to push and run a Docker image? What are the common arguments in `docker run` command?

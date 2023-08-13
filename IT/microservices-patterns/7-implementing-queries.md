@@ -17,7 +17,8 @@
   - Lack of transactional data consistency
 ### Query using CQRS pattern
 - Usages:
-  - When API composition can't efficiently perform a query: not all services store attributes that can be used to filter or sort:
+  - When API composition can't efficiently perform a query:
+  not all services store attributes that can be used to filter or sort:
     - <img src="./resources/7.7.png" width="500"/>
     - Solution:
       - API composer retrieve & join large data set -> inefficient
@@ -31,7 +32,8 @@
     - Handle CUD operations using its own database
     - Can handle simple queries (eg non-join, primary key-based query)
   - Query model: handle nontrivial queries
-  - Can be applied within a service or can define query services: build DB by subscribing to events published by multiple services
+  - Can be applied within a service or can define query services:
+  build DB by subscribing to events published by multiple services
 - Advs:
   - Enable efficient queries
   - Enable efficient implementation of diverse queries using dif types of DB

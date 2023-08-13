@@ -12,7 +12,7 @@
 ### Testing microservices overview
 - 4 phases of an automated test:
   - Setup: initialize the SUT & its dependencies to the desired initial state
-  - Exercise: invoke the SUT
+  - Execute: invoke the SUT
   - Verify: make assertions about the invocation's outcome and the state of the SUT
   - Teardown: clean up the SUT & its dependencies if needed (eg rollback DB changes)
 - -> Can reuse setup & teardown methods to avoid code duplication
@@ -36,22 +36,22 @@
   - <img src="./resources/9.9.png" width="500"/>
   - Test stages in deployment pipeline:
     - Pre-commit: run unit tests
-    - Commit tests: compile service, run unit tests, perform static code analysis
+    - Commit: compile service, run unit tests, perform static code analysis
     - Integration: run integration tests
     - Component: run component tests
     - Deploy: deploy into production
   - Can have a manual testing stage: testers to promote to the next stage
-### Unit test
+### Unit tests
 - 2 types of unit tests:
   - Solitary: test a class in isolation using mock objects for the class's dependencies
   - Sociable: test a class and its dependencies
 - Entity & value object test: logic only
 - Saga test:
-  - Setup: classes interacting with DB & message broker
+  - Setup: mock classes interacting with DB & message broker
   - Execute: create saga
   - Verify: the saga sends the expected sequence of messages to the saga participant for both happy & failure paths
 - Domain service test:
-  - Setup: config mock objects for the service's dependencies
+  - Setup: mock service's dependencies
   - Execute: invoke service method
   - Verify:
     - The value returned by the service method is correct

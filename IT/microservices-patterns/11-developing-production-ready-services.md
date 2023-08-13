@@ -64,7 +64,8 @@
       - Centralized config:
         - Easy to manage
         - Can have override-able global defaults to avoid duplicate common properties
-      - Transparent decryption of sensitive data: encrypt/decrypt can be handled by config server before returning to service
+      - Transparent decryption of sensitive data:
+      encrypt/decrypt can be handled by config server before returning to service
       - Dynamic reconfig (eg via polling)
     - Disadv: increased complexity: another highly available component that needs to be setup & maintain
     - -> Use open source frameworks
@@ -79,7 +80,8 @@
   - Route requests to dif instances
   - Terminate/restart the instance
 - Design issues:
-  - Implement health check endpoint: request handler checks service instance's connections to external service (eg DB, message broker)
+  - Implement health check endpoint: request handler checks service instance's connections to external service
+  (eg DB, message broker)
   - Invoke health check endpoint: depend on details of deployment infra
 #### Log aggregation
 - Aggregate logs of all services in a centralized database that supports searching & alerting
@@ -92,8 +94,10 @@
   - Decide where to log: stdout
   - -> Let deployment infra handle
 #### Distributed tracing
-- Goal: see how the services interact during the handling of external requests, including a breakdown of where the time is spent
-- Mechanism: assign each external request a unique ID and record how it flows through the system (eg timestamps, tree of service calls)
+- Goal: see how the services interact during the handling of external requests,
+including a breakdown of where the time is spent
+- Mechanism: assign each external request a unique ID and record how it flows through the system
+(eg timestamps, tree of service calls)
 - -> Unique req ID also help with searching logs related to an external request
   in a centralized server that provides visualization and analysis
 - Components:
@@ -119,14 +123,16 @@
   - Add metric collection code
   - Send metric to metric service. 2 approaches:
     - Push model: service instances invoke Metrics service API
-    - Pull model: Metrics service (or its agent running locally) invokes a service API to retrieve metrics from the service instance
+    - Pull model: Metrics service (or its agent running locally) invokes a service API
+    to retrieve metrics from the service instance
 #### Exception tracking
 - Disadvs of logging exception to log file:
   - Can't handle multiple line exceptions
   - Don't have a mechanism to track the resolution of exceptions
   - No automatic mechanism to deduplicate exceptions
 - -> Need a centralized Exception service
-- Service report exceptions to a central service that de-duplicates exceptions, generates alerts & manages their resolution
+- Service report exceptions to a central service
+that de-duplicates exceptions, generates alerts & manages their resolution
 - Approaches for service to report exception:
   - Call Exception service's API directly
   - Use client lib provided by Exception service
@@ -153,4 +159,5 @@
   - Disadv: need one for every language/platform used to write services
 - *Service mesh*:
   - <img src="./resources/11.17.png" width="500"/>
-  - Help simplify the chassis: only implement concerns tightly integrated with app code (eg externalized config, health checks)
+  - Help simplify the chassis: only implement concerns tightly integrated with app code
+  (eg externalized config, health checks)

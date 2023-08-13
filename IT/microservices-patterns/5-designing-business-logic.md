@@ -3,16 +3,17 @@
   - Eliminate object references spanning service boundaries
   - Design business logic that works within the transaction management constraints of microservice architecture
 ### Business logic organization patterns
-- Transaction script pattern:
+- *Transaction script* pattern:
   - Architecture:
-    - Scripts locate in service classes as methods, once for each request/system operation, containing business logic of the request
+    - Scripts locate in service classes as methods, once for each request/system operation,
+    containing business logic of the request
     - Service method accesses DB via data access objects
     - Data objects are pure data with little/no behavior
   - Adv: simple to write
   - Disadv: hard to extend & maintain
   - Usage: simple business logic
-- Domain model pattern:
-  - Architecture (~object oriented design):
+- *Domain model* pattern:
+  - Architecture (~object-oriented design):
     - Business logic consists of an object model - network of relatively small classes
     - Classes correspond directly to concepts from problem domain, most contain both state and behavior
     - -> Simple service methods: business logic delegated to domain objects
@@ -22,10 +23,11 @@
     - Easy to understand
     - Easy to test each class individually
     - Easy to change/extend
-- Domain driven design:
+- Domain driven design (DDD):
   - Building blocks:
     - Entity: an object with a persistent identity. 2 entities with same attribute values are dif objects.
-    - Value object: an object as a collection of values. 2 values object with same attribute values can be used interchangeably.
+    - Value object: an object as a collection of values.
+    2 values object with same attribute values can be used interchangeably.
     - Factory
     - Repository
     - Service
@@ -35,8 +37,10 @@
   - -> Solution: aggregate pattern:
     - Focus of design: identify aggregates, their boundaries & roots
     - Characteristics:
-      - (1) Operations are invoked on the aggregate root (via a method), acting on the entire aggregate rather than parts of it
-      - An aggregate is the object of storage, often loaded entirely from the DB -> avoid complication; scaling DB by sharding agg is straightforward
+      - (1) Operations are invoked on the aggregate root (via a method),
+      acting on the entire aggregate rather than parts of it
+      - An aggregate is the object of storage, often loaded entirely from the DB
+      - -> Avoid complication; scaling DB by sharding agg is straightforward
       - Concurrency is handled by locking the aggregate root (eg version number/DB level lock)
     - Advs:
       - Decompose a domain model into chunks, which are easier to understand
@@ -79,15 +83,15 @@
     - Identify event triggers: user actions, external system, another domain event, passing of time
     - Identify aggs that consumes each command and emits the corresponding event
 - Approaches to generate domain events:
-  - Agg invoke message API directly
+  - Agg invokes message API directly
   - -> Problem: agg loaded from DB, not created -> can't use dependency injection to pass the messaging API
-  - Split responsibility between the agg and the service:
+  - Split responsibility between the agg and the service. 2 approaches:
     - Agg generate events whenever its state changes, return to service. Service publishes domain events as message:
       - Adv: simple
       - Disadv: agg's non-void methods is more complex -> not a problem for multiple-return-value languages
     - Agg root accumulate events in a field. Service retrieves the events & publishes them.
     - -> Difficult to implement
-- Publish event: service invoke domain event publisher interface (~command publisher interface)
-- Consume event: event consumer class (~command handler class) invoke service interface
+- Publish event: service invokes domain event publisher interface (~command publisher interface)
+- Consume event: event consumer class (~command handler class) invokes service interface
 ### Example: skipped
 - <img src="./resources/5.12.png" width="500"/>

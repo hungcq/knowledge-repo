@@ -29,74 +29,74 @@
     - Rollback to the old version if there is an issue at any point
     - Delete the old version when confident that the new version is working correctly
 ### 4 deployment patterns
-- Deploy service as a language-specific package:
-  - Steps:
-    - Install the necessary runtime in the machine (eg JDK, Node)
-    - Copy the package to the machine & start the service
-  - Pipeline:
-    - Build an executable
-    - Invoke the production env's service management interface to deploy the new version
-  - Can deploy multiple service instances on the same machine
-  - Advs:
-    - Fast deployment:
-      - Package transferred over the network is small
-      - Start time is low
-    - Efficient resource utilization if allocate properly
-  - Disadvs:
-    - Lack of encapsulation of the tech stack:
-      operation team must know the details of how to deploy each service (eg languages, frameworks, runtime versions)
-    - -> Increase risk of error during deployment
-    - Lack of isolation of the service instance: can consume all resources of the machine
-    - Difficult to allocate instances to machines to utilize it efficiently
-- Deploy service as a virtual machine:
-  - Services are packaged as VM images & deployed. Each instance is a VM.
-  - Pipeline:
-    - Build VM image:
-      - Content: service's code & required runtime software
-      - Config the VM image machine to run the app when the VM boots
-    - Deploy the VM image to machine
-  - Advs:
-    - Encapsulate technology stack: in the VM
-    - Isolate service instance
-    - Use mature cloud infra, which supports:
-      - Resource allocation
-      - Load balancing
-      - Autoscaling
-    - -> Easier to deploy small, simple app using VM than using Docker orchestration framework (need lots of set up)
-  - Disadvs:
-    - Less efficient resource utilization:
-      - Overhead of the VM, including its operating system
-      - Limited choice of VM sizes -> underutilized VM
-    - Slow deployment: cost lots of time to:
-      - Build VM image
-      - Transfer it over the network
-      - Start the VM
-    - System administration overhead: patch the operating system & runtime
-- Deploy service as a container:
-  - Services are packaged as container images & deployed. Each instance is a container.
-  - <img src="./resources/12.8.png" width="500"/>
-  - Pipeline:
-    - Build image: use container image-building tool:
-      - Create image using service code & image description
-      - Store image in a registry
-    - Deploy: pull image from the registry & create container
-  - Advs: same as VM, but faster deployment
-  - Disadv: operational complexity:
-    - Administer the container images
-    - Patch operating system & runtime
-    - Administer the container infra & possibly VM infra the container runs on
-- Deploy serverless service:
-  - Use a serverless deployment mechanism provided by a public cloud
-  - Advs:
-    - Integrated with the cloud's services
-    - Remove many system administration tasks
-    - Elastic
-    - Usage-based pricing
-  - Disadvs:
-    - Long-tail latency: due to elasticity, it takes time for the cloud to provision & start an instance of the service
-    - -> Not suitable for latency-sensitive services
-    - Limited event/request-based programming model: not suitable for long-running services (eg message consumer)
-  - Should consider whether this option meets the service requirements before consider other deployment patterns
+#### Deploy service as a language-specific package
+- Steps:
+  - Install the necessary runtime in the machine (eg JDK, Node)
+  - Copy the package to the machine & start the service
+- Pipeline:
+  - Build an executable
+  - Invoke the production env's service management interface to deploy the new version
+- Can deploy multiple service instances on the same machine
+- Advs:
+  - Fast deployment:
+    - Package transferred over the network is small
+    - Start time is low
+  - Efficient resource utilization if allocate properly
+- Disadvs:
+  - Lack of encapsulation of the tech stack:
+    operation team must know the details of how to deploy each service (eg languages, frameworks, runtime versions)
+  - -> Increase risk of error during deployment
+  - Lack of isolation of the service instance: can consume all resources of the machine
+  - Difficult to allocate instances to machines to utilize it efficiently
+#### Deploy service as a virtual machine
+- Services are packaged as VM images & deployed. Each instance is a VM.
+- Pipeline:
+  - Build VM image:
+    - Content: service's code & required runtime software
+    - Config the VM image machine to run the app when the VM boots
+  - Deploy the VM image to machine
+- Advs:
+  - Encapsulate technology stack: in the VM
+  - Isolate service instance
+  - Use mature cloud infra, which supports:
+    - Resource allocation
+    - Load balancing
+    - Autoscaling
+  - -> Easier to deploy small, simple app using VM than using Docker orchestration framework (need lots of set up)
+- Disadvs:
+  - Less efficient resource utilization:
+    - Overhead of the VM, including its operating system
+    - Limited choice of VM sizes -> underutilized VM
+  - Slow deployment: cost lots of time to:
+    - Build VM image
+    - Transfer it over the network
+    - Start the VM
+  - System administration overhead: patch the operating system & runtime
+#### Deploy service as a container
+- Services are packaged as container images & deployed. Each instance is a container.
+- <img src="./resources/12.8.png" width="500"/>
+- Pipeline:
+  - Build image: use container image-building tool:
+    - Create image using service code & image description
+    - Store image in a registry
+  - Deploy: pull image from the registry & create container
+- Advs: same as VM, but faster deployment
+- Disadv: operational complexity:
+  - Administer the container images
+  - Patch operating system & runtime
+  - Administer the container infra & possibly VM infra the container runs on
+#### Deploy serverless service
+- Use a serverless deployment mechanism provided by a public cloud
+- Advs:
+  - Integrated with the cloud's services
+  - Remove many system administration tasks
+  - Elastic
+  - Usage-based pricing
+- Disadvs:
+  - Long-tail latency: due to elasticity, it takes time for the cloud to provision & start an instance of the service
+  - -> Not suitable for latency-sensitive services
+  - Limited event/request-based programming model: not suitable for long-running services (eg message consumer)
+- Should consider whether this option meets the service requirements before consider other deployment patterns
 ### Technologies
 - Docker (containerization tech):
   - Dockerfile:
@@ -117,14 +117,16 @@
     - Env variables
 - Kubernetes (Docker orchestration framework):
   - 3 main functions of Docker orchestration framework:
-    - Resource management: treat a cluster of machines as a pool of CPU, memory & storage volumes, turning it into a single machine
+    - Resource management: treat a cluster of machines as a pool of CPU, memory & storage volumes,
+    turning it into a single machine
     - Scheduling: select the machine to run a container
     - Service management:
       - Ensure that the desired number of healthy instances is running at all times
       - Load balance request across the instances
       - Perform rolling upgrades of services & allow to roll back the upgrades
   - Key concepts:
-    - Pod: Kubernetes's unit of deployment, consists of a set of containers (usually 1) that share an IP address & storage volumes:
+    - Pod: Kubernetes's unit of deployment,
+    consists of a set of containers (usually 1) that share an IP address & storage volumes:
       - Can contain one or more sidecar containers which implement supporting functions
       - Ephemeral
     - Deployment:
@@ -169,9 +171,9 @@
     - Edit Deployment YAML file to refer to the new image
     - Update the deployment using `kubectl apply` command
   - -> Result: Kubernetes will perform a rolling upgrade of the pods
-  - Handle issues occur during upgrade:
-    - Sol 1: fix the YAML file & rerun `kubectl apply` to update the deployment
-    - Sol 2 : rollback using `kubetcl rollout undo deployment <service name>` command
+  - Handle issues occur during upgrade: either:
+    - Fix the YAML file & rerun `kubectl apply` to update the deployment
+    - Rollback using `kubetcl rollout undo deployment <service name>` command
 - Istio (service mesh):
   - Architecture:
     - <img src="./resources/12.11.png" width="500"/>
@@ -183,10 +185,12 @@
       - Used by Istio as a sidecar:
         - When used with Kubernetes: run in a container within the service's pod
         - When used in other env without the pod concept: run in the same container as the service
-    - VirtualService: define how to route requests for one or more hostnames
     - DestinationRule:
-      - Define one or more subsets of pods for a service (usually service versions)
+      - Basically a wrapper around *service* definition, map subset to deployment's label
+      - Define one or more *subsets* of pods for a service (usually service versions)
       - Can also define traffic policies (eg load-balancing algo)
+    - VirtualService: define how to route requests for one or more hostnames
+    (eg load balancing weight for each destination rule's subset)
   - Deployment steps:
     - Create routing rules to route to the v1
     - Deploy with Istio

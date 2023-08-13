@@ -17,7 +17,7 @@
   - <img src="./resources/8.3.png" width="500"/>
 - Ownership model:
   - <img src="./resources/8.6.png" width="500"/>
-  - *Note: common layer functions: request routing, authen...
+  - *Note: common layer functions: request routing, authentication...
   - Deployment pipeline must be fully automated to avoid blocking
 - Advs:
   - Encapsulate internal structure of the app
@@ -32,8 +32,8 @@
   - -> Need to write maintainable concurrent code (eg reactive programming, JS promise) to avoid callback hell
   - Handle partial failure: use techniques in chap 3
   - Fit the current architecture: need to consider when choose tech/framework
-- Backend for frontend pattern:
-  - Architecture:
+- Backend for frontend (BFF) pattern:
+  - Architecture & ownership:
     - <img src="./resources/8.7.png" width="500"/>
     - Use shared lib for common functionality
   - Advs: of microservices

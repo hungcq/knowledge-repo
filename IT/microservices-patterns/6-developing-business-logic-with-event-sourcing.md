@@ -72,7 +72,8 @@
 ### Using saga with event sourcing
 - Choreography-based saga:
   - Adv: easy to implement
-  - Disadv: event has a dual purpose: required to be published even if there is no state change or no agg created (eg error event)
+  - Disadv: event has a dual purpose:
+  required to be published even if there is no state change or no agg created (eg error event)
 - Design issues when using orchestration-based saga:
   - Create a saga reliably:
     - Relational DB: create in the same trans
