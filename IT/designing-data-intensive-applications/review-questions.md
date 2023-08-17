@@ -13,7 +13,6 @@
 # Replication
 - What are the advs of distributed data?
 - What are the dif algorithms to replicate data across nodes? How are they implemented, including read, write, replication?
-- What are the steps and considerations when designing fail over for leader-based, leaderless replication?
 - What are the problems related to replication lag? How to deal with them?
 - What are read and write quorum? What should be considered when choosing read & write quorum values?
 - What are the dif ways to implement replication logs?
@@ -24,7 +23,7 @@
 - How to handle celebrity key problem?
 - What are the dif ways to partition secondary index? How are read & write handled in each case?
 - What are the dif ways to assign partition to node? How is rebalancing handled in each case, with what tradeoff?
-- Where can partitioning knowledge be kept? How is routing & discovery handled?
+- What are the dif places where partitioning knowledge can be kept? How is routing & discovery handled?
 
 # Transactions
 - What is a trans? Goal of using trans.
@@ -42,7 +41,7 @@
 # Batch processing
 - What are the other 2 types of systems beside online system?
 - Provide some example outputs of batch processing job.
-- How MapReduce operate on a high level?
+- How does MapReduce operate on a high level?
 - What is the advantage of dataflow engines (eg Spark) over MapReduce?
 
 # Stream processing

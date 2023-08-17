@@ -25,7 +25,7 @@
   - Dirty read: read uncommitted value:
     - T1: set x = 1->2                       set y = 1->2
     - T2:              read x = 2, read y = 1
-    - -> Inconsistent. x must = y
+    - -> Inconsistent: x must = y
     - Problems:
       - Read partially updated state
       - Read value of aborted trans
@@ -44,9 +44,9 @@
     - T2:           read x = 1, set x = x + 1
   - -> Inconsistent: x = 2 instead of 3
   - Write skew: 2 trans read the same object, then update some of those objects:
-    - T1: count  check valid count OK                       write
-    - T2: count                       check valid count OK  write
-  - -> When write change result of count, premise is no longer true (phantom)
+    - T1: count (A, B)  check count > 1 OK                       write (remove A)
+    - T2: count (A, B)                       check count > 1 OK  write (remove B)
+  - -> When write change result of count, premise count > 1 is no longer true (phantom)
   - Phantom read: check for the absence of row matching some search condition (eg booking, check username existed)
   - -> No row to lock to
 ### 7.2. Weak (non-serializable) isolation levels
@@ -82,7 +82,7 @@
 - Explicit locking (SELECT FOR UPDATE = lock all rows returned by the query from being read)
 - Auto-detect by DB
 - Compare-and-set (CAS) value: allow update only if the value has not changed since you last read it
-- Conflict resolution: merge conflict writes, used in multi-leader/leaderless DB replication
+- Conflict resolution: merge conflicting writes, used in multi-leader/leaderless DB replication
 #### Write skew & phantoms
 - Write skew can be resolved by locking all read rows when update 
 - -> Can't apply to phantom reads

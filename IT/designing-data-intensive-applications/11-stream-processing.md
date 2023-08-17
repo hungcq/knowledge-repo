@@ -58,7 +58,7 @@
     - Not allow deletion -> need to work around
 ### 11.3. Processing streams
 - Process streams to:
-  - Keeping data system in sync
+  - Keep data system in sync
   - Push events to users
   - Produce output stream (pipeline)
 - Stream processing for monitoring:
@@ -78,7 +78,7 @@
     - Hopping window: fixed length, overlap to provide smoothing
     - Sliding window
     - Session window: all events of the same user occur closely in time
-- Stream joins: need to maintain state
+- Stream joins: need to maintain state:
   - Stream-stream (window join):
     - Can be self-join if process related events of one stream
     - Use hash table, drop old event if no matching event from the other stream

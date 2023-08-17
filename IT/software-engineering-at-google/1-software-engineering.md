@@ -1,7 +1,7 @@
 # I - Thesis
 ## 1. What is software engineering
 - SE vs programming: 2 dif problem domains with dif constraints, values & best practices -> dif tools
-- 3 difs between SE vs programming: time, scale & tradeoffs:
+- 3 difs between SE vs programming: time, scale & tradeoffs
 ### Time & change (most imp)
 - Time add a new dimension to programming: code needs to be sustainable
   - <img src="./resources/1.1.png" width="500"/>
