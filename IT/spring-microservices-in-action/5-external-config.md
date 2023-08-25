@@ -1,0 +1,20 @@
+# 5. Controlling configuration with the Spring Cloud Configuration Server
+- External config options: p.115: skipped
+- Config the config server via:
+  - Bootstrap file:
+    - Config app's name/profile/port, config data location
+    - Loaded before application.properties
+  - application.properties
+- Config server will always reflect the latest config in the config repo
+- Connect clients of config server:
+  - Can be config via:
+    - bootstrap.yml
+    - JVM run arguments: higher priority
+  - Config info:
+    - Spring profile (env)
+    - App name
+    - Config server endpoint
+  - -> Other local configs can be stored in application.properties/yml
+- Reload config at client side: use RefreshScope annotation for the Spring Boot application class
+- -> Provide a /refresh endpoint to reload custom config (not DB config)
+- -> Need to call the endpoint on all service instances. Push-based mechanism requires RabbitMQ.

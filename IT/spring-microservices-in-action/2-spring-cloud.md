@@ -1,3 +1,4 @@
+# 2. Exploring the microservices world with Spring Cloud
 - Spring Cloud:
   - Def: common framework containing several popular cloud-management microservice frameworks
   - -> Help operate & deploy microservices to a private/public cloud
@@ -16,4 +17,7 @@
         - Its own
         - Git
         - Key-value DB of service discovery projects (Consul, Eureka)
-- 
+- Spring Cloud Config parent BOM (Bill of Materials): contain all the third-party libraries and dependencies that are
+  used in the cloud project and the version numbers of the individual projects that make up that version
+- -> All the subprojects have compatible versions
+- -> Independent of Spring Boot -> need to check Spring Cloud website for version dependencies between Boot & Cloud

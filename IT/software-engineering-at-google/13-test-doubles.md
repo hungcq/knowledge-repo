@@ -51,7 +51,7 @@
   - Use cases:
     - Can't use real impl & no fake exists
     - -> Use mock as a compromise
-    - Differences in the number/order of calls to a function would cause undesired beha
+    - Differences in the number/order of calls to a function would cause undesired behavior
     (eg when using cache, need to verify that the DB object is not accessed more times than expected)
   - Best practice:
     - Not a complete replacement for state testing

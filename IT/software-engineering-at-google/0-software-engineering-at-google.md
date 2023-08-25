@@ -1,5 +1,5 @@
 # Category
-- Software engineering
+- Software engineering, best practices
 
 # Structure
 ## Simple outline
@@ -125,20 +125,6 @@
   - Not everything described is perfect
 - Written by many authors: collected & organized into a book
 - Not very condense: lots of example, can be read fast
-
-# Terms
-- SE vs programming:
-  - SE:
-    - Encompasses:
-      - Act of writing code
-      - All the tools and processes an organization uses to build and maintain that code over time
-    - Imply application of some theoretical knowledge to build something real and precise
-- 3 principles:
-  - Time & change
-  - Scale & growth
-  - Tradeoffs & costs
-- Sustainable codes: able to react to necessary change
-- Psychological safety: dare to take risk/make mistake in front of others
 
 # Criticism
 - Chap 1 discuss at quite a high level: need familiarity with many concepts to understand the examples

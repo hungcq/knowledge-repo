@@ -5,7 +5,8 @@
 # Storage & retrieval
 - What are the main primary-key index structures? How are they implemented? What are the main advs & disadvs of each?
 - How is secondary index implemented?
-- What is clustered index, covering index, concatenated index, multi-dimensional index? How is concatenated index implemented?
+- What is clustered index, covering index, concatenated (composite) index, multi-dimensional index?
+How is concatenated index implemented?
 
 # Encoding & evolution
 - What are the common encoding formats? What are the advs & disadvs of each? How is versioning handled by each?

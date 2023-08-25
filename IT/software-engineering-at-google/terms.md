@@ -1,3 +1,16 @@
+# Software engineering
+- SE vs programming:
+  - SE:
+    - Encompasses:
+      - Act of writing code
+      - All the tools and processes an organization uses to build and maintain that code over time
+    - Imply application of some theoretical knowledge to build something real and precise
+  - 3 principles:
+    - Time & change
+    - Scale & growth
+    - Tradeoffs & costs
+- Sustainable codes: able to react to necessary change
+
 # Documentation
 - Documentation: every supplemental text that an engineer needs to write to do their job,
 including standalone docs & code comments

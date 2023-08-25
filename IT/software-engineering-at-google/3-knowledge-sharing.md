@@ -1,5 +1,6 @@
 ## 3. Knowledge sharing
 - Summary: mechanism & culture to share knowledge effectively
+- Psychological safety def: dare to take risk/make mistake in front of others
 - Challenge to learning:
   - Lack of psychological safety
   - Info islands. Consequences:

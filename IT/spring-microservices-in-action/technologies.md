@@ -1,0 +1,2 @@
+- Lombok: use annotation to generate boilerplate code (eg getter, setter, to string, constructor)
+- Spring Boot Actuator: health check

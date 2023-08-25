@@ -41,8 +41,7 @@
   - -> Write the doc at their level
   - How to approach a broad audience: keep the doc short: might require maintaining a larger, detailed one
 - Know the dif types, not mix types
-- Doc reviews:
-  - 3 types of reviews (can sometimes be mixed)
+- Doc reviews: 3 types of reviews (can sometimes be mixed):
   - Technical review:
     - Goal: accuracy
     - Reviewer: subject matter expert

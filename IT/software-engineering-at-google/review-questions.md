@@ -1,5 +1,5 @@
 # Software engineering
-- What are the 3 main difs between SE & programming?
+- 3 main difs between SE & programming
 
 # Culture
 - What are the main sections of a postmortem?
@@ -17,13 +17,13 @@
     - Behavior changes (API), improvements & optimizations
     - Bug fixes & rollbacks
 - Documentation:
-  - 3 types of reviews & corresponding goals
   - Criteria to categorize audience:
     - Experience level
     - Domain knowledge
     - Purpose
     - How a user encounters the doc
     - Customer vs provider (implementor)
+  - 3 types of reviews & corresponding goals
   - Questions to be answered in any doc: how, who, what, when, where, why, whose
   - Doc structure
   - Doc types: reference, design, tutorial, conceptual, landing page
@@ -34,12 +34,12 @@
   - Test sizes: constraint, adv & disadv
 - Unit testing:
   - Chars of bad tests: brittle & unclear
-  - How to prevent brittle tests & unclear tests?
+  - How to prevent brittle tests & unclear tests
   - Code reuse in test
   - 4 types of code changes & what to do with tests
 - Test doubles:
   - Real implementation: advs over test doubles, when to use
-  - Test double techniques: def, advs, disadvs use cases:
+  - Test double techniques: def, advs, disadvs, use cases:
     - Faking
     - Stubbing
     - Interaction testing (mocking)

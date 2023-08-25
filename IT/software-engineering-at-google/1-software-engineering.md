@@ -38,7 +38,7 @@ should be scalable in terms of overall cost & resources consumption (eg human, c
   - Opportunity
   - Societal
   - Psychological (employees' happiness)
-- Types of decision:
+- Types of decisions:
   - Quantifiable cost & benefit
   - -> Straightforward: consult table of cost of dif types of resources
   - Not quantifiable:
