@@ -1,4 +1,7 @@
 # 1. Emotions across cultures
+- Emotion def: a process, a particular kind of automatic appraisal influenced by our evolutionary and personal past,
+in which we sense that something important to our welfare is occurring,
+and a set of physiological changes and emotional behaviors begins to deal with the situation
 - Universal emotions & facial expressions
 
 # 2. When do we become emotional?
