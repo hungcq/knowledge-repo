@@ -1,0 +1,2 @@
+# solution-architect-associate
+
