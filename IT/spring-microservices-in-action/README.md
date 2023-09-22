@@ -1,2 +1,0 @@
-# spring-microservices-in-action
-

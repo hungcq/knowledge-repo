@@ -1,2 +1,0 @@
-# the-go-programming-language
-

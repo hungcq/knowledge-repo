@@ -1,2 +1,0 @@
-# software-engineering-at-google
-

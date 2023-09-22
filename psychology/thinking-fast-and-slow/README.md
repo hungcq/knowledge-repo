@@ -1,2 +1,0 @@
-# thinking-fast-and-slow
-

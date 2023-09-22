@@ -1,2 +1,0 @@
-# designing-data-intensive-applications
-

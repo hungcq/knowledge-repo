@@ -1,2 +1,0 @@
-# the-checklist-manifesto
-
