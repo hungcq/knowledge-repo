@@ -13,7 +13,7 @@
   - Part 4: presentism
   - Part 5: rationalization
   - Part 6: corrigibility:
-    - Difficulty of learning from personal experience/collective wisdom
+    - Difficulty of overcoming the shortcomings of imagination by learning from personal experience/collective wisdom
     - Remedy
 
 # Goal
@@ -28,12 +28,17 @@
 - Claimed by authors: multi-discipline account -> readers need to judge for themselves
 - Funny, accessible
 - Contain brief descriptions of studies as illustrations
+- Lots of reference to academic text in Notes
 
 # Criticism
 - Some descriptions of experiments are difficult to understand
 - Failure to ack the limitation of lab experiments
 
 # Content
+## Foreword
+- People are future-focused, trying to make the future-self happy
+- -> Foresight is limited, most of the time the plans don't work out
+- The mistake of foresight is regular & systematic
 ## I - Prospection
 ### 1. Journey to elsewhen
 - Human's unique ability to predict:
