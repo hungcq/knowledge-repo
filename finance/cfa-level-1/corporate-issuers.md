@@ -1,5 +1,8 @@
-# Concept review
-## Corporate structures & ownership
+# Corporate Issuers
+
+## Concept review
+
+### Corporate structures & ownership
 - Business structures:
   - Sole proprietorship
   - General partnership
@@ -11,7 +14,8 @@
 - Ways to become public
 - Ways to become private
 - Equity holder interest (vs debt holder)
-## Corp gov & ESG
+
+### Corp gov & ESG
 - Shareholder theory
 - Stakeholder theory (broader)
 - Related party transaction
@@ -44,7 +48,8 @@
   - Engagement/active ownership
   - Green finance
 - Green bond
-## Business models & risks
+
+### Business models & risks
 - Business model: def:
 - Business model terms:
   - Penetration pricing
@@ -61,7 +66,8 @@
   - Macro
   - Business
   - Financial
-## Capital investment
+
+### Capital investment
 - Discount rate (in NPV calculation) = opportunity cost of capital (COC)
 - Capital budgeting analysis usually applies to
 - Capital component break point
@@ -74,7 +80,8 @@
   - Expansion
   - Flexibility
   - Fundamental
-## Working capital & liquidity
+
+### Working capital & liquidity
 - Bank lines of credit:
   - Uncommitted
   - Committed
@@ -85,17 +92,20 @@
   - Secondary
 - Drags on liquidity
 - Pull on liquidity
-## Capital structure
+
+### Capital structure
 - Estimation of WACC
 - Static trade-off theory (vs MM proposition with taxes)
 - Agency cost of equity
 - Cost of asymmetric info
 - Pecking order theory
-## Leverage
+
+### Leverage
 - Contribution margin
 
-# Corporate issuers
-## Corporate structures & ownership
+## Concept answers
+
+### Corporate structures & ownership
 - Business structures:
   - Sole proprietorship:
     - Owned & operated by one individual
@@ -123,7 +133,7 @@
   - Leveraged buyout
   - Management buyout
 - Equity holder interest (vs debt holder): potential growth -> can increase risks by issuing new debt
-## Corp gov & ESG
+### Corp gov & ESG
 - Shareholder theory: main focus of corp gov is interests of shareholders -> try to maximize market value of common equity
 - Stakeholder theory (broader): consider conflicts among primary stakeholders
 - Related party transaction: agreement or specific transaction that benefit entities
@@ -174,7 +184,7 @@ which majority shareholders have a financial interest -> detriment of minority s
   - Engagement/active ownership: using ownership to promote improved ESG practices
   - Green finance: promote sustainable economic growth by reducing emissions & using natural resource better
 - Green bond: bond raised to fund projects with positive env impact
-## Business models & risks
+### Business models & risks
 - Business model: how a company proposes to make money:
   - Potential customers
   - Product/service offered
@@ -201,7 +211,7 @@ which majority shareholders have a financial interest -> detriment of minority s
     - Sales: uncertainty about sale
     - Operating: uncertainty about operating earnings caused by fixed operating costs (~ operating leverage)
   - Financial: additional risk to common stockholders due to debt financing (~ financial leverage)
-## Capital investment
+### Capital investment
 - Discount rate (in NPV calculation) = opportunity cost of capital (COC)
 - Capital budgeting analysis usually applies to replacement/mandatory project, not research & development project (high risk)
 - Capital component break point = value at which component's cost of capital changes / component weight in WACC
@@ -222,7 +232,7 @@ which majority shareholders have a financial interest -> detriment of minority s
     - Price-setting
     - Production-flexibility: eg overtime labor, different materials, new product variety
   - Fundamental: projects that are option themselves because payoffs depend on price of an underlying asset (eg gold mine)
-## Working capital & liquidity
+### Working capital & liquidity
 - Bank lines of credit:
   - Uncommitted: may refuse to loan if circumstances change
   - Committed (regular/overdraft)
@@ -237,7 +247,7 @@ which majority shareholders have a financial interest -> detriment of minority s
   - Secondary: liquidating assets, renegotiating debt agreements, bankruptcy, reorganization
 - Drags on liquidity: delay or reduce cash inflow
 - Pull on liquidity: accelerate cash outflow
-## Capital structure
+### Capital structure
 - Estimation of WACC: always use target capital structure if available.
   Only use market value to estimate when target structure not available.
 - Static trade-off theory (vs MM proposition with taxes): add the expected costs of financial distress (interest cost) to the model
@@ -247,5 +257,5 @@ which majority shareholders have a financial interest -> detriment of minority s
 - Cost of asymmetric info: additional returned required by creditors/shareholders due to info asymmetry with managers
 - Pecking order theory: managers prefer financing choice that least likely to send negative signals to investors
 - -> Less visible better than more visible: internally generated capital (retained earning) > debt > equity
-## Leverage
+### Leverage
 - Contribution margin = price - variable cost

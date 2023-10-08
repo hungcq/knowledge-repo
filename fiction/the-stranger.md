@@ -1,4 +1,10 @@
-# Impression
+# The Stranger
+
+## Info
+- Type: book
+- Author: Albert Camus
+
+## Impression
 - The trial:
   - Lack of recognition of individual difference
   - Lack of recognition of factors from chance

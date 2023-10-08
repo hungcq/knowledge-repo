@@ -1,6 +1,7 @@
 # Equity
 - Fama & French 3 factors model: relative size, relative book-to-market value, and beta of the asset
 - Warrant holders have the right to buy the issuer's common stock
+
 ## Market structure
 - Bid = dealer buy in = lower price
 - Offer = dealer sell out = higher price
@@ -64,6 +65,7 @@ Dark pool: ATS that do not reveal client orders.
   - Operationally efficient: low trading cost
   - Informationally efficient: security prices reflect all info
   - Allocationally efficient: capital allocated to its most productive use
+
 ## Security indexes
 - Price return vs total return
 - Value weighted index = market capitalization weighted index
@@ -80,6 +82,7 @@ Free float: market float exclude shares not available to foreign buyers.
 - Fundamental weighting index: use weight based on firm fundamentals (eg earning, dividends, cash flow)
 - -> Unaffected by share price of index stock
 - -> Adv: avoid over-value tilt. Disadv: have value tilt.
+
 ## Market efficiency
 - Efficient market -> market value always = intrinsic value
 - Event study: test semi-strong form EMH by examining abnormal returns before & after the release of new info
@@ -94,6 +97,7 @@ that affects a firm intrinsic value
     - Value effect: value stock outperform growth stock
   - Others
 - Information cascade: when investors mimic decisions of others
+
 ## Equity securities
 - Type of preferred stocks:
   - Cumulative: missed dividends must be paid before common shareholders receive any dividends
@@ -104,6 +108,7 @@ that affects a firm intrinsic value
   - Sponsored: ~ common share: owner has the voting right
   - Unsponsored: depository bank retains the voting right
 - Baskets of listed depository receipts: ETF that invest in depository receipts
+
 ## Industry & company analysis
 - Companies by industries: (in book)
 - Gov classification system: less fine-grained, updated less frequently
@@ -125,6 +130,7 @@ through an analysis of fundamentals and/or business-cycle conditions
   - Decline: **negative growth**, consolidation, declining price
 - Analysis: industry then company
 - Predatory pricing: aggressive cost cutting to drive out competitors
+
 ## Equity valuation
 - Valuation models:
   - Discounted cash flow: Gordon growth, FCFE

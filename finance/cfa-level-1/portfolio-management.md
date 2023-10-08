@@ -1,10 +1,13 @@
-# Portfolio management
+# Portfolio Management
+
 ## Portfolio risk & return
 - According to CAPM, rational investor will choose portfolio along the CAL
 - Diversification ratio = portfolio return std / avg std of individual securities in the portfolio
 - -> Lower = better diversification
+
 ## Risk management
 - Risk exposure should be measured after risk budgeting\
+
 ## Concepts
 - Portfolio management process:
   - Planning: determine client needs & circumstances (IPS)

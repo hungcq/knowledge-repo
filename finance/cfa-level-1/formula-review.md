@@ -1,4 +1,6 @@
-# Quantitative methods
+# Formula Review
+
+## Quantitative Methods
 - Trimmed mean, winsorized mean
 - Harmonic mean & usage
 - Continuous compounding return over multiple period
@@ -21,7 +23,8 @@
 - Paired comparisons test statistic & usage
 - Chi-squared test statistic & usage
 - F-test statistic & usage
-# Economics
+
+## Economics
 - Elasticity from demand function
 - Marginal rev from price elasticity
 - GDP deflator
@@ -32,7 +35,8 @@
 - Fiscal multiplier
 - Real exchange rate
 - Marshall-Lerner condition & meaning
-# FSA
+
+## FSA
 - Diluted EPS
 - Ending shareholders' equity
 - Free cash flow to the firm
@@ -53,7 +57,8 @@
 - Dividends per share
 - Effective tax rate
 - Income tax expense
-# Corporate issuers
+
+## Corporate issuers
 - Dividend discount model
 - Return using CAPM with country risk premium
 - Operating leverage meaning, calculation
@@ -65,7 +70,8 @@
 - Purchases from inventory & COGS
 - Net operating cycle
 - De-levered beta asset, equity
-# Portfolio management
+
+## Portfolio management
 - Holding period return for multiple period
 - Annualized return
 - Utility function
@@ -78,12 +84,14 @@
 - M-squared
 - Treynor ratio
 - Jensen's alpha
-# Equity
+
+## Equity
 - Margin call price
 - Free cash flow to equity model
 - Projected EPS from dividend discount model
 - Enterprise value, EV/EBITDA meaning
-# Fixed income
+
+## Fixed income
 - Money market yield
 - Bond equivalent yield
 - Discount yield
@@ -100,8 +108,10 @@
 - Duration gap
 - Expected loss
 - Yield spread
-# Derivatives
+
+## Derivatives
 - Future value
 - Put-call parity
-# Alternative investments
+
+## Alternative investments
 - Price target in head and shoulder patterns

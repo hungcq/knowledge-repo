@@ -1,14 +1,19 @@
-(This summary focus on the findings of behavioral economics, not history of the field)
+# Misbehaving
 
-# Category
+## Info
+- Type: book
+- Author: Richard Thaler
+- This summary focus on the findings of behavioral economics, not history of the field
+
+## Category
 Behavioral economics, economics. Contains bio, stories & history of behavioral economics.
 
-# Summary
+## Summary
 The author tells the history of behavioral economics through his perspective.
 Important findings and experiments in the field are described, the difference with formal economic theory are highlighted.
 The author also presents its influence on public policy and prediction of future focus in the last part of the book.
 
-# Structure
+## Structure
 - Narrative style: ideas come out at dif time/speed
 - Both chronological & topical:
   - Part 1 (I): early years & early findings conflicting with formal models
@@ -20,17 +25,17 @@ The author also presents its influence on public policy and prediction of future
   - Part 3 (VII): recent research endeavors
   - Part 4 (VIII): new challenges & opportunities
 
-# Author problems & solution
+## Author problems & solution
 - Tell the story about the development of behavioral economics
 - Explain some discoveries of the field (in Part 2). Aim:
   - Improve understanding about human behaviors
   - Provide lessons about how to change the way people think about things, especially when they try to maintain the status quo
 
-# Presentation & style
+## Presentation & style
 - Narrative style, centered around the development of beha eco, makes the book engaging
 - The author has a very good sense of humour
 
-# Terms
+## Terms
 - Misbehave
 - Constraint optimization
 - Rational choice theory
@@ -63,11 +68,11 @@ The author also presents its influence on public policy and prediction of future
 - Randomized control trial (RCT)
 - Evidence-based economics
 
-# Arguments
+## Arguments
 
-## I. Beginning: 1970-78
+### I. Beginning: 1970-78
 
-### 1. Supposedly irrelevant factors (SIF)
+#### 1. Supposedly irrelevant factors (SIF)
 - People misbehaving: their behaviors were inconsistent with the idealized model of economic theory
 - Problem: the model replace human with Econ
 - -> Humans misbehave
@@ -106,7 +111,7 @@ The author also presents its influence on public policy and prediction of future
   - Start paying attention to SIF
 - Behavioral economics: economics done with strong injections of psychology & other social sciences
 - -> More accurate predictions, more fun to learn (lol)
-#### Additional info
+##### Additional info
 - The formal models give economics the reputation as the most powerful of the social sciences:
   - Influencing public policy
   - Intellectually: have unified core theory, everything else follows, like physical science
@@ -114,7 +119,7 @@ The author also presents its influence on public policy and prediction of future
   - Policy-making establishment
   - Businesses
 
-### 2. The endowment effect
+#### 2. The endowment effect
 - Opportunity cost: what you give up by doing some activity:
   - Formal prediction: people should treat opportunity cost equal to out-of-pocket cost
   - -> Logical thing to do
@@ -125,13 +130,13 @@ The author also presents its influence on public policy and prediction of future
   - -> Reduced volume of trade in the market
   - Inhibit change
 
-### 3. The list
+#### 3. The list
 - Bounded rationality: lack the cognitive ability to solve complex problems
 - -> Formal eco handle it by adding error term to the equation
 - -> Believe that as long as the errors are random, its opposing effects will cancel each other out
 - The errors are not random but systematic bias
 
-### 4. Value theory
+#### 4. Value theory
 - Normative vs descriptive theory:
   - Normative: tell the logically consistent way to think about some problem (eg rational choice theory)
   - Descriptive (positive) theory: describe how people actually solve the problem in the real world
@@ -147,13 +152,13 @@ The author also presents its influence on public policy and prediction of future
 - -> Offer a good prediction of actual choices, not a guide to rational choice
 - -> Break away from one-theory approach
 
-### 5. California Dreamin'
+#### 5. California Dreamin'
 - Author decided to use a variety of research methods:
   - Survey
   - Run exp
   - Study real life behavior
 
-### 6. The Gauntlet
+#### 6. The Gauntlet
 - Main reasons economists think they could safely ignore abnormal behaviors:
   - As if:
     - Argument: even if people are not capable of actually solving the complex problems economists assume they can handle,
@@ -186,15 +191,15 @@ The author also presents its influence on public policy and prediction of future
       - Competitive forces of the market might act slowly
     - Problem of 2: empirical evidences show that market prices are not rational
 - -> To answer: need proper data of real people interacting at high stakes in markets, not survey questions
-#### Additional info
+##### Additional info
 - Preference reversals: preference is reversed depending on how the problem is framed
 - -> Reject a foundation of all formal eco theories: people have well-defined preferences
 - -> There is nothing to be optimized without stable preference
 
-## II. Mental accounting: 1979-85
+### II. Mental accounting: 1979-85
 - Def: psychology of spending, saving & other household financial behavior
 
-### 7. Bargains and rip-offs
+#### 7. Bargains and rip-offs
 - Basic economic theory of consumer choice: all economic decisions are made through the lens of opportunity costs:
 spend on sth = forgo other opportunities
 - -> Need to choose the best possible way to use money
@@ -215,7 +220,7 @@ spend on sth = forgo other opportunities
       - Consumers: don't buy sth that won't be used just because the deal is too good
       - Business: everyone is interested in a good deal, either via sales or genuine low prices
 
-### 8. Sunk costs
+#### 8. Sunk costs
 - Def: an amount of money spent and cannot be retrieved
 - Consider utility of an activity by: will you do it if it is offered for free?
 - Fail to use sth that you paid for = recognize the loss in mental books
@@ -227,7 +232,7 @@ spend on sth = forgo other opportunities
 - When purchase a long time before consuming, people consider it an investment -> later consumption is free
 - -> Trick used by some industries (eg wine, vacation property)
 
-### 9. Buckets and budgets
+#### 9. Buckets and budgets
 - How families/organizations manage their finances (spending):
   - Use budgets with limit (mental budgeting)
   - Effect:
@@ -239,13 +244,13 @@ spend on sth = forgo other opportunities
   - Violate economic principle: money is fungible (can be spent on anything)
   - -> Should be spent in a way that best serves the interest of the household/organization
 - Also apply to wealth: by ease to spend: cash > normal accounts > saving accounts
-#### Additional info
+##### Additional info
 - 2008 crisis & relation to mental budgeting (not a full account. Leverage in financial markets is also critical - see The signal and the noise):
   - Home equity budget is easy to spend, esp on consumer durables
   - House price boomed -> homeowners borrowed against the increased equity to spend more
   - -> Consumption reduced when bubble busted -> recession
 
-### 10. At the poker table
+#### 10. At the poker table
 - House money effect (dif with prospect theory prediction - risk-averse for gains):
   - Winning money is assigned to a different account & get spent easier via risk-seeking behaviors
   - Thinking that worst case is back at the starting point
@@ -255,17 +260,17 @@ spend on sth = forgo other opportunities
   - When there is a chance: take risk
   - Effect: traders take increasing risks in the last quarter when losing, hoping to break even
   - -> Should pay attention to employees who are losing money
-#### Additional info
+##### Additional info
 - Author's observation: poker players dislike big bet that might increase size of their losses substantially
 - -> Opt for small bets that offer small chance of a big win, even though they have lower chance of breaking even
 
-## III. Self control: 1975-88
+### III. Self control: 1975-88
 - Def: what people want might not be what people choose
 - More generally: choosing between now and later
 - In formal eco theory, there is no difference between what people want and what people choose: choices reveal preferences
 - -> No self-control problem
 
-### 11. Willpower? No problem
+#### 11. Willpower? No problem
 - Passion vs (impartial spectator): myopic - short-sighted
 - Preference for present consumption over future consumption diminishes overtime
 - Intertemporal choice: choice made about the timing of consumption
@@ -283,13 +288,13 @@ spend on sth = forgo other opportunities
 - -> As models evolved (economists became more mathematically sophisticated), the people they described evolved as well
 - Behavioral theory to consumption & saving: behavioral life-cycle hypothesis:
 a household consumption in a given year depends on both its lifetime wealth & the mental accounts where that wealth is held
-#### Additional info
+##### Additional info
 - Original "invisible hand" phrase used by Adam Smith: "led by an invisible hand to promote and end which was no part of his intention.
 Nor is it always the worse for the society what it was no part of it."
 - -> Not that things will turn out for the best
 - Smith writing regarding behavioral eco: in "Theory of moral sentiments"
 
-### 12. The planner and the doer
+#### 12. The planner and the doer
 - When to take action to restrict future choices & commit to planned course of action:
 you believe that if you change preferences later, the change will be a mistake
 - Strategies people use to deal with self-control problems:
@@ -318,7 +323,7 @@ you believe that if you change preferences later, the change will be a mistake
   - Doers:
     - Short-lived agents, change after some time period
     - Completely selfish, try to maximize its own utility
-#### Additional info
+##### Additional info
 - Principal-agent model:
   - Principal:
     - Def: boss/owner
@@ -334,9 +339,9 @@ you believe that if you change preferences later, the change will be a mistake
   - Now: full utility
   - Any time period far enough away to be considered later: half utility, no discounting
 
-## Interlude
+### Interlude
 
-### 13. Misbehaving in the real world
+#### 13. Misbehaving in the real world
 - Skiing resort: selling discounted 10-pack ticket:
   - Transaction utility
   - Decoupled purchase decision from decision to go skiing -> initial purchase is considered an investment
@@ -347,9 +352,9 @@ you believe that if you change preferences later, the change will be a mistake
   - Increase future sale by building customer loyalty
 - Sale small % < rebate (returning some money) - dif mental account < reducing car loan interest (10 -> 2.9%) - reducing 2/3 rate sound like a lot
 
-## IV. Working with Danny: 1984-85
+### IV. Working with Danny: 1984-85
 
-### 14. What seems fair
+#### 14. What seems fair
 - Formal eco theory prediction when demand increase: raise price
 - -> Who value it most should get it
 - Perception of fairness depends on:
@@ -364,7 +369,7 @@ you believe that if you change preferences later, the change will be a mistake
     - All competitors follow (customer has no choice)
     - The products usually depends on supply and demand: should still have a cap
 
-### 15. Fairness game
+#### 15. Fairness game
 - Ultimatum:
   - People dislike unfair offers & willing to take financial hit to punish the Proposers
   - People usually feel morally obliged to make fair offers
@@ -377,34 +382,34 @@ you believe that if you change preferences later, the change will be a mistake
     - People are conditional cooperators: cooperate if enough others do (~The selfish genes)
     - Cooperation can be maintained in repeated games if players are given opportunity to punish non-cooperators
 
-### 16. Mugs
+#### 16. Mugs
 (combined with notes of chap 2)
 
-## V. Engaging with the economics profession
+### V. Engaging with the economics profession
 
-### 17. The debate begins
+#### 17. The debate begins
 - Rationality is neither necessary nor sufficient to do good economic theory:
   - Necessary: many rigorous formal theories based on behavior that is not rational
   - Sufficient: need auxiliary assumptions to derive useful result
 - Inconsistency in theorists' behavior: take months to derive the optimal solution, then assume that agents are capable of solving it
 - Efficient market models are only special cases, not realistic
-#### Additional info
+##### Additional info
 - Thomas Kuhn's model of scientific revolutions:
 paradigms change only when a significant number of empirical anomalies are accepted as valid violations of the received wisdom
 - -> People break with the way the field has been progressing & pursue a new direction
 
-### 18. Anomalies
+#### 18. Anomalies
 - Author's goal to create paradigm shift:
   - Find a broad spectrum of anomalies:
   - Use a variety of empirical methods, including market data
   - Not necessarily with a satisfactory behavioral explanation: only need to contradict theoretical predictions
-#### Additional info
+##### Additional info
 - Return on betting on favourites is much better than betting on longshots, esp in the last race (break even effect)
 
-### 19. Forming a team
+#### 19. Forming a team
 - Behavioral economics common method: not collaborate with psychologists, but read psychology work then research independently
 - -> Not discover new psychology, only modify economics tools to accommodate Humans & Econs
-#### Additional info
+##### Additional info
 - Behavioral vs standard game theory: 
   - Behavioral: how people actually play games
   - Standard: how Econs would play games if they knew that everyone else playing was also an Econ
@@ -412,7 +417,7 @@ paradigms change only when a significant number of empirical anomalies are accep
 academics don't like to talk about research in the abstract, but people from other fields find technical details hard to understand,
 or consider some theoretical exercises pointless
 
-### 20. Narrow framing on the upper east side
+#### 20. Narrow framing on the upper east side
 - Narrow framing: treating events one at a time, rather than as a portfolio
 - Implications:
   - Decision-making:
@@ -429,9 +434,9 @@ or consider some theoretical exercises pointless
     - -> The more people look at their portfolios, the less willing they will be to take on risk (see more losses) (also in Fooled by randomness)
     - Advice: buy a diversified portfolio heavily tilted toward stocks, then avoid reading news
 
-## VI. Finance
+### VI. Finance
 
-### 21. The beauty contest
+#### 21. The beauty contest
 - Efficient market hypothesis (EMH): 2 components:
   - Prices are rational: event if some people made mistakes, smart people could trade against them & correct prices
   - -> All assets sell for its true intrinsic value. Hold for both individual securities & overall market.
@@ -446,10 +451,10 @@ or consider some theoretical exercises pointless
     - Cause: better to fail conventionally than to succeed unconventionally
   - -> Investors will try to buy stocks that will go up in value - stocks that they think other investors will later decide should be worth more
   - -> Bet on future valuations
-#### Additional info
+##### Additional info
 - Keynes macroeco argument: gov should use fiscal policy to stimulate demand during recessions/depressions
 
-### 22. Does the stock market overreact?
+#### 22. Does the stock market overreact?
 - Trading volume in security market is very high compared to prediction made by rational theory
 - -> Possible explanation: overconfidence
 - People make extreme forecasts based on low-quality data
@@ -458,18 +463,18 @@ or consider some theoretical exercises pointless
   - People overreact to recent performance of stock
   - Regression toward the mean
 - -> Contradict with efficient market hypothesis prediction: P/E ratio & past history of the stock returns are known
-#### Additional info
+##### Additional info
 - Graham's value investing: find stocks priced below their intrinsic, long-run value: one strategy:
   - Calculate P/E ratio: price per share/annual earnings per share
   - Buy stock with low P/E of the big companies
   - Warning: under-valuations/over-valuations may persist for a long time
 
-### 23. The reaction to overreaction
+#### 23. The reaction to overreaction
 - How formal theorist explain why value investing beats the market:
 value stock has higher risk -> higher earning = risk premium
 - -> But value stock was in fact had lower risk according to formal risk model (CAPM)
 
-### 24. The price is not right
+#### 24. The price is not right
 - Present value of all future dividend payments should determine stock price
 - -> Stock price = forecast of present value
 - Rational forecast principle: predictions cannot vary more than the thing being forecast
@@ -483,13 +488,13 @@ value stock has higher risk -> higher earning = risk premium
 - -> Can predict trend but not precise timing: bubble can persist for years
 - -> Can't be used to time the market
 
-### 25. The battle of closed-end funds
+#### 25. The battle of closed-end funds
 - Closed-end fund: after initial raise, money can't be invested into or withdraw from
 - Shares are sold by closed-end fund at different price from market price
 - -> Violation of one-price principle of EMH
 - Strategy by Graham: buy funds with the biggest discounts
 
-### 26. Fruit flies, icebergs, and negative stock prices
+#### 26. Fruit flies, icebergs, and negative stock prices
 - Conclusions about EMH:
   - Good normative theory
   - As a descriptive theory:
@@ -499,16 +504,16 @@ value stock has higher risk -> higher earning = risk premium
     - Price is right (more imp component of the theory): price is often wrong, sometimes very wrong
     - -> Misallocation of resources can be big, bubbles are possible
     - -> Need proper policy to guard against
-#### Additional info
+##### Additional info
 - How Long term capital management (LTCM) fund collapsed:
   - Noticed that Royal Dutch Shell share price is not right -> do smart trade
   - Lost in other trade -> tried to reduce positions
   - Other funds also lost money & also bought Shell shares -> also did the same
 - -> Price was not correct but got more wrong -> collapsed
 
-## VII. Welcome to Chicago: 1995-present
+### VII. Welcome to Chicago: 1995-present
 
-### 27. Law schooling
+#### 27. Law schooling
 - Traditional law & economics approach: based exclusively on models of Econ:
 things would turn out for the best if markets were left alone to sort things out
 - -> Arguments depend on invisible handwave
@@ -531,9 +536,9 @@ things would turn out for the best if markets were left alone to sort things out
       - Fairness: willing to walk away from an unfair offer
       - -> People can punish the other party, even at cost to themselves
 
-### 28. The offices
+#### 28. The offices
 
-### 29. Football
+#### 29. Football
 - Becker conjecture:
   - Def: in competitive labor markets, only people who are able to perform their jobs like Econ are able to land the key positions
   - Only true to low & middle positions, not high positions
@@ -558,7 +563,7 @@ things would turn out for the best if markets were left alone to sort things out
       - Managers follow conventional wisdom to avoid getting fired
       - Owners want to win now
 
-### 30. Game shows
+#### 30. Game shows
 - Game show decision-making:
   - Decision-making at high stakes
   - Specific behavioral causes can be pointed out:
@@ -568,13 +573,13 @@ things would turn out for the best if markets were left alone to sort things out
 - An amount of money is considered small or large depending on the context
 - People are more willing to lie by omission than commission (I promise to...)
 
-## VIII. Helping out
+### VIII. Helping out
 - 3 goals of beha economists by mid-1990s:
   - Find & document anomalies
   - Develop theory: mathematical models that incorporate psychology finding
   - Make the world a better place without paternalism
 
-### 31. Save more tomorrow
+#### 31. Save more tomorrow
 - Difficulty of formal eco to deal with retirement saving problem:
   - Assumption: people already save the right amount -> no help needed
   - Only tool: increase after-tax financial return on saving
@@ -587,7 +592,7 @@ things would turn out for the best if markets were left alone to sort things out
   - Give people option of deciding now to increase saving rates later, after salary increase
 - Paternalism must involve coercion
 
-### 32. Going public
+#### 32. Going public
 - Nudge idea:
   - Premise:
     - In complicated world, people cannot make optimal decisions in all domains
@@ -597,7 +602,7 @@ things would turn out for the best if markets were left alone to sort things out
   - Nudge def: some small feature in the env that attracts attention & influences behavior positively
 - -> Rules & regulations are still inevitable to help society function
 
-### 33. Nudging in the UK
+#### 33. Nudging in the UK
 - Insights when running gov experiments:
   - If you want people to comply with some norm or rule, inform them that most other people comply
   - If you want to encourage someone to do sth, make it easy, remove barriers for change
@@ -616,7 +621,7 @@ things would turn out for the best if markets were left alone to sort things out
   - It is possible to make the change with one nearly costless action
 - Nudges are merely tools, can be used with bad intentions
 
-## Conclusion
+### Conclusion
 - Beha eco has the biggest impact in finance & development economics (eco of poor countries). Reasons:
   - There are very specific theories (eg law of one price)
   - Lots of data to test those theories
@@ -639,16 +644,16 @@ things would turn out for the best if markets were left alone to sort things out
     - Overcome overconfidence & confirmation biases
   - Try new idea or run actual experiments & record results: the proper way to learn & improve
   - Speak up. Create env that encourages evidence-based decisions.
-### Additional info
+#### Additional info
 - Mitigating costs of failures might be more effective at stimulating new businesses than high-earning tax cut
 
-# Criticism
+## Criticism
 - Some chapters might be irrelevant (eg chap 28)
 - Stories make the book easy to read but dilute the content a bit
 - Familiarity with some economics/psychology experiments might be needed to read the book well
 (can be found in Thinking fast and slow and Superfreakonomics)
 
-# Takeaways
+## Takeaways
 - History of behavioral economics
 - Difference between beha eco and formal eco
 - Basic understanding of some important economic concepts & theories
@@ -658,7 +663,7 @@ things would turn out for the best if markets were left alone to sort things out
 - Importance of & proper way to do trial and error approach: run RCT, collect data, improve
 - -> Lessons for other fields
 
-# Notes
+## Notes
 - Mistake when skimming this book:
   - Didn't read conclusion
   - Didn't read bibliography (dif from index)

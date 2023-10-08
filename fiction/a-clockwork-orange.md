@@ -1,4 +1,10 @@
-# Impression
+# A Clockwork Orange
+
+## Info
+- Type: book
+- Author: Anthony Burgess
+
+## Impression
 - Fucking difficult invented words
 - Concept of freedom. Rationality & moral choice, from society & individual pov.
 - Goodness vs freedom

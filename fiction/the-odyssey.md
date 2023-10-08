@@ -1,4 +1,10 @@
-# Impression
+# The Odyssey
+
+## Info
+- Type: book
+- Author: Homer
+
+## Impression
 - Hospitality
 - Luck
 - Stoicism

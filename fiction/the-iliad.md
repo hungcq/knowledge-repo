@@ -1,4 +1,10 @@
-# Impression
+# The Iliad
+
+## Info
+- Type: book
+- Author: Homer
+
+## Impression
 - Women as prizes
 - Personal gods
 - Superstition

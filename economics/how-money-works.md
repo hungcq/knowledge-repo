@@ -1,7 +1,12 @@
-# How money works
+# How Money Works
+
+## Info
+- Type: book
+- Author: DK
 
 ## Category
-Economics, finance
+- Economics
+- Finance
 
 ## Summary
 Introduce basic aspects of finance, including: micro & macroeconomics related to finance, investment & personal finance

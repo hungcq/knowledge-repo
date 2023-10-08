@@ -1,9 +1,11 @@
 # Fixed income
 - Rates if not mentioned period, are always quoted on 1-year basis
 - Capital gain/loss on selling bond = sell price - NPV
+
 ## Risk & return
 - Calculate money duration: use full price of bond
 - Yield curve for option-free, callable, putable bond -> convexity
+
 ## Credit analysis
 - Analyze:
   - High quality debt: focus more on default & spread risk

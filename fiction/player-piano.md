@@ -1,4 +1,10 @@
-# Impression
+# Player Piano
+
+## Info
+- Type: book
+- Author: Kurt Vonnegut
+
+## Impression
 - Key message is imp, but the story is stretch out too hard -> lack of substance
 - Hard to focus on the main story, as the Shah parts are extremely irrelevant & distracting
 - Key messages:

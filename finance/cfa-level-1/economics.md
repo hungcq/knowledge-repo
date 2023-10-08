@@ -1,4 +1,5 @@
 # Economics
+
 ## Demand & supply analysis
 - Normal profit is the level of accounting profit such that implicit opportunity costs are just covered
 - -> = 0 economic profit
@@ -8,6 +9,7 @@
 - -> Consumers may tend to buy more if its price rises
 - Slope of demand curve is slope of function of price in terms of demand (b) : P = a - b.Q
 - -> Demand curve: P is y-axis, Q is x-axis -> present P in terms of Q
+
 ## Business structure
 - Collusion is less likely when companies have similar market shares -> higher competitive force
 - Dif degree of price discrimination for monopoly:
@@ -16,6 +18,7 @@
   - Second degree: monopolist offers a menu of quantity-based pricing options designed to
     induce customers to self-select based on how highly they value the product (eg volume discount, bundling)
   - Third degree: customers are segregated by demographic or other traits
+
 ## Aggregate output, prices, and economic growth
 - GPD by consumption = C + G + I + (X - M)
 - C + S + T (national income) = C + G + I + (X - M)
@@ -31,6 +34,7 @@
   - Income approach: add capital consumption allowance
 - Mixed income = income from unincorporated business (eg farm, rental)
 - Increase in expected income -> decrease saving -> decrease supply of financial capital -> increase interest rate
+
 ## Business cycles
 - Cycle: recovery -> expansion (peak) -> slowdown -> contraction (bottom/trough)
 - Draw a 4-column table for the 4 phases:
@@ -42,11 +46,14 @@
   - Def 1: action taken by a nation's central bank to affect aggregate output and prices
     through changes in bank reserves, reserve requirements, or its target interest rate
   - Def 2: central bank activities that are directed toward influencing the quantity of money and credit in an economy
+
 ## Geopolitics
 - Tools of geopolitics:
     - <img src="resources/geopolitics-tools.png" width="600">
+
 ## Balance of payments
 - Foreign direct investment increases capital account surplus -> increase current account deficit
+
 ## Currency exchange rate
 - Appreciation to be affective to reduce trade surplus -> decrease in capital account deficit
 - (export = + current acc, buy capital abroad = -capital acc) -> export decrease = buy less capital abroad

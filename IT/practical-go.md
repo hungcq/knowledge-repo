@@ -1,3 +1,11 @@
+# Practical Go
+
+## Info
+- Type: blog
+- URL: https://dave.cheney.net/practical-go
+
+## Content
+
 ## 3. Style
 - Don't mix unrelated ideas in 1 function
 - -> Reduce usage of blank lines

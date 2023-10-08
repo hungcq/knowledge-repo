@@ -1,4 +1,10 @@
-# Impression
+# The Grapes Of Wrath
+
+## Info
+- Type: book
+- Author: John Steinbeck
+
+## Impression
 - Industrial transformation of agriculture & people left behind
 - Indifference of capitalism & its orgs
 - Identity tied to home & job
@@ -7,7 +13,7 @@
 - Unity & compassion of the working class
 - Class conflict
 - Resilience & steadiness in the face of adversity
-## Other points
+### Other points
 - Businessmen & middle class painted ugly & ridiculous
 - Erosion of traditional value by money
 - Inadequacy of religion in answering existential questions

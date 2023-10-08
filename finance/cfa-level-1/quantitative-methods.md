@@ -1,4 +1,4 @@
-# Quantitative methods
+# Quantitative Methods
 - Calculate number of compounding period using calculator: log a(b) = ln(b)/ln(a)
 - Type of graph for each visualization purpose:
   - Line chart: visualize trend in variables over time. Can use bubble to add 3rd dimension.
@@ -21,6 +21,7 @@
   - Period studied too long: a structural change in relationship occurred **during** the period
 - Arithmetic mean is used to for cast return of a single year,
   geometric mean is used to calculate annual compound return (multi years)
+
 ## Hypothesis testing
 - Type 1 & type 2 error:
   - Type 1: commit: reject null hypo when it is actually true (accept alternative when it is false)
@@ -49,6 +50,7 @@
 - Non-parametric test usages:
   - Assumptions of parametric tests are not met (eg small sample size, non-normal distribution)
   - Data not suitable for parametric test (eg ranked data)
+
 ## Linear regression
 - Residual = actual value - predicted value
 - Assumptions:

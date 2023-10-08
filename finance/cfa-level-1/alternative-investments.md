@@ -1,9 +1,10 @@
-# Alternative investments
+# Alternative Investments
 - Evaluate private company: use asset-based approach
 - Commodities market is in backwardation if producers are primary driver of future price
 - Over time, commodities compared to returns on global stocks or bonds:
   - Lower return
   - Higher price volatility
+
 ## Concept review
 - Traditional investment vs alternative investment
 - Adverse selection

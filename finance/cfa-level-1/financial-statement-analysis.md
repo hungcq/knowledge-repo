@@ -1,5 +1,6 @@
-# Financial statement analysis
+# Financial Statement Analysis
 - Pay attention to the year above each column
+
 ## Income statement analysis
 - Example:
   - <img src="./resources/income-stm-1.png" width="600">
@@ -14,10 +15,12 @@
   weighted average number of share before the dividend date x dividend rate + weighted average number of share after dividend
 - Trading securities unrealized gain affects net income,
 available for sale unrealized gain affects equity via other comprehensive income
+
 ## Balance sheet analysis
 - Example:
   - <img src="./resources/balance-sheet.png" width="600">
 - Trade receivables are reported at net realizable value, un-collectability already accounted for
+
 ## Cash flow statements
 - Example:
   - <img src="./resources/cash-flow.png" width="600">
@@ -39,9 +42,11 @@ available for sale unrealized gain affects equity via other comprehensive income
     - **Paid** interest, dividends can be operating/financing
 - Conversion of bonds into common stock is non-cash transaction, whether or not there is difference in value
 - -> Disclose only in footnote to cash flow stm
+
 ## Financial ratios
 - Total debt only include interest-bearing short/long debts (not account payable and other long-term debts)
 - Interest coverage ratio: EBIT / actual interest payment
+
 ## Inventories
 - Types of costs included in inventory:
   - Purchase
@@ -64,6 +69,7 @@ available for sale unrealized gain affects equity via other comprehensive income
 - Inventory valuation:
   - IFRS: lower of cost and net realizable value
   - GAAP: lower of cost, market value, or net realisable value depending upon the inventory method used
+
 ## Long-lived assets
 - Cost that can be capitalized: interest paid - interest received from temporarily investing.
 Preferred dividend cost can't be capitalized.
@@ -78,6 +84,7 @@ Preferred dividend cost can't be capitalized.
   - Percentage of completion (ie progress toward satisfying performance obligations):
   recognize profit corresponding to the costs incurred as a proportion of estimated total costs
   - Installment method: recognize profit in proportion to cash collected
+
 ## Income tax
 - Higher tax base of asset = less depreciation = higher taxable income = more tax paid = tax asset
 - Income tax expense (provision for income tax) = tax payable + dDTL - dDTA

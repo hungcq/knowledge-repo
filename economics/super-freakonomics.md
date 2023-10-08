@@ -1,5 +1,9 @@
 # Super Freakonomics
 
+## Info
+- Type: book
+- Author: Stephen J. Dubner, Steven Levitt
+
 ## Intro
 - Unifying theme of Freakonomics: people respond to incentives, though not necessarily
 in way that are predictable or manifest

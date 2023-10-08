@@ -1,3 +1,10 @@
+# The Wind-Up Bird Chronicle
+
+## Info
+- Type: book
+- Author: Haruki Murakami
+
+## Impression
 - Normal life disrupted
 - Weird people & life stories
 - Mystery

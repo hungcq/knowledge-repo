@@ -1,3 +1,10 @@
+# Đến Starbuck Mua Cà Phê Cốc Lớn
+
+## Info
+- Type: book
+- Author: Yoshimoto Yoshio
+
+## Notes
 - Chi phí giao dịch liên quan: phí phải trả thêm cho một lần mua sản phẩm; tạo nên sự chênh lệch về giá của cùng 1 sản phẩm
   - Hiện tượng ăn chênh lệch => đồng giá sản phẩm
 - Tính kinh tế theo quy mô
