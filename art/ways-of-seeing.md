@@ -1,4 +1,10 @@
-# Impression
+# Ways Of Seeing
+
+## Info
+- Type: book
+- Author: John Berger
+
+## Impression
 - Very difficult to read, especially the chapters with only images
 - Hard to judge the validity of the arguments: my lack of understanding of art and history
 - -> Need to come back and read a second time

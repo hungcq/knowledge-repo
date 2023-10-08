@@ -1,4 +1,8 @@
-# The molecule of more
+# The Molecule Of More
+
+## Info
+- Type: book
+- Author: Daniel Z. Lieberman, Michael E. Long
 
 ## Category
 - Biology

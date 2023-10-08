@@ -1,4 +1,10 @@
-# Goal
+# European Paintings: From Leonardo to Rembrandt to Goya
+
+## Info
+- Type: course
+- URL: https://www.edx.org/learn/art/universidad-carlos-iii-de-madrid-european-paintings-from-leonardo-to-rembrandt-to-goya
+
+## Goal
 - Provide a greater knowledge of the history of European art
 - Develop the following skills:
   - Learn to identify paintings by the artists and from the periods covered in the course.
@@ -7,13 +13,16 @@
   - Become familiar with the language and concepts necessary to understand the history of art and to continue studying it in the future.
   - Learn to use knowledge of art history to make sense of life and of the experience of being in the world.
 
-# Renaissance
+## Content
+
+### Renaissance
 - Def: period in the cultural history of Europe that follows the late Middle Ages (15-16th century)
 - Initiated the path from a religious explanation of things to reason and science
 - Human beings developed a new confidence in their own abilities and an attitude of curiosity towards nature and reality
 - Dynamic time defined by a new faith in progress
 - Beginning of the modern era
-## Renaissance art
+
+#### Renaissance art
 - Center: Italy & Belgium
 - Defining features of paintings:
   - Have the will to be more realistic than painting had been in the past:
@@ -33,7 +42,7 @@
   - Placed a greater emphasis than their Northern counterparts in creating ideal beauty,
   based on the ideas of a harmony and proportion, as manifest in ancient art
 
-# 17th century
+### 17th century
 - Development of science. New rationalistic world view form & religious world view challenged.
 - -> Cultural change affecting arts. Sense of uncertainty.
 - Features of art:
@@ -45,7 +54,7 @@
   - -> Interest in here & now, materialism
 - -> Varied arts reflecting differences in religion, economy, class & origin
 
-# 18th century
+### 18th century
 - Absolute monarchies weakened
 - -> Try to display ostentatiously
 - -> Rococo style. A bit evasive, removed from social, cultural & political reality.
@@ -56,12 +65,12 @@
 - -> Adopted by elegant society all over the continent in dress & architecture, sculpture & in painting.
 Also chosen to be art of the Revolution.
 
-# Impression
+## Impression
 - Continuity
 - Innovation
 - Multi-discipline
 
-# Pay attention to
+## Pay attention to
 - Brush stroke
 - Scene
 - Expression

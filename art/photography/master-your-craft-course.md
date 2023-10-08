@@ -1,4 +1,10 @@
-# 10-step guide to stutter drag portraits
+# Master Your Craft
+
+## Info
+- Type: course
+- URL: https://www.classcentral.com/course/youtube-master-your-craft-54711
+
+## 10-step guide to stutter drag portraits
 - Env stutter drag
 - Signature portrait: unique to you/your studio
 - 10 step:
@@ -24,14 +30,14 @@
   - Use high frame range, shoot through the motion (multiple images)
   - Verify, repeat if not satisfied
 
-# How to work with mixed lightning
+## How to work with mixed lightning
 - Mixed lightning: dif colored lights landing on the subject's face (eg indoor event)
 - Solutions:
   - Turn out the lights. Angle the subject to the strongest light source.
   - Find the dominant light source, use a gel (eg magnetic CTO gel)
 - Use mixed light: avoid background light on the face of the subject, reduce background light
 
-# Story telling
+## Story telling
 - When the scene is average or when camera can't capture the beauty/entirety of it
 - Shooting steps:
   - Wide: establishing
@@ -42,13 +48,13 @@
   - Crop
   - Layout
 
-# Utilizing phone
+## Utilizing phone
 - When encounter a grand, ultra-wide scene:
   - Change vantage point: avoid unnatural objects, get better view
   - Focus on a portion of it
 - Turn grid on: get the horizon on the top/bottom third depending on whether the sky/ground is more interesting
 
-# Posing tips for men
+## Posing tips for men
 - Feet:
   - Toes pointed out
   - Feet shoulder width apart
@@ -63,9 +69,6 @@
 - Perform action & take detail shots
 - <img src="./resources/pose.png" width="200"/>
 
-# Tips for beach portrait
-- 
-
-# Tips
+## Tips
 - Person in motion: let them lead to the open side of the frame
 - Cropping: avoid cropping at joins. Crop at narrowing points (eg thigh, above hip)

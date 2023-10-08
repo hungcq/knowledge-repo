@@ -1,7 +1,13 @@
-# Category
+# Oxygen
+
+## Info
+- Type: book
+- Author: Nick Lane
+
+## Category
 Biology, geology, chemistry, medicine
 
-# Structure
+## Structure
 - Chap 1: intro to controversy around role of oxygen & free radical theory
 - Chap 2-8: history of life on earth & relation with atmospheric oxygen level:
   - Chap 2: origin of life & historical atmospheric composition: theories & evidence
@@ -36,17 +42,17 @@ Biology, geology, chemistry, medicine
     - Different approaches of medicine to age related diseases: pharmacogenomics & oxidative stress
   - Chap 15: biological age & relation with risk of disease
 
-# Goals
+## Goals
 - Provide an understanding of the role of oxygen in life (evolution) and death:
   - How & why life produced & adapted to oxygen
   - Evolutionary past & future of life on Earth
   - Energy & health, disease & death, sex & regeneration, human species
 
-# Style
+## Style
 - Accessible
 - One long argument, but chapters are mostly independent
 
-# Terms
+## Terms
 - Free radical: most biologically important ones are reactive forms of molecular oxygen, which can damage biological molecules
 - Respiration: use oxygen to oxidize organic material (food), extracting energy for use & releasing CO2 back into the air
 - Periods in earth history:
@@ -64,8 +70,8 @@ Biology, geology, chemistry, medicine
 - Crustacean: động vật giáp xác
 - Plaque: mảng
 
-# Main points
-## 1. Introduction
+## Main points
+### 1. Introduction
 - Controversies around the role of oxygen
 - Imp of oxygen in nourishing life
 - Oxygen in evolutionary & organic biology
@@ -75,7 +81,7 @@ Biology, geology, chemistry, medicine
 - Intro to the role of free radicals & antioxidants in biology
 - Discussion about scientific method: specialization & imp of having inter-discipline big picture view
 - -> Applied to oxygen research
-## 2. In the beginning: the origins & imp of oxygen
+### 2. In the beginning: the origins & imp of oxygen
 - Problem intro: life adaptation to oxygen & implication
 - Old theory about history of life (primordial soup) & relation with oxygen:
   - Early life forms  evolved without oxygen because organic matters can be oxidized
@@ -86,7 +92,7 @@ Biology, geology, chemistry, medicine
 - 2 possible sources of oxygen:
   - Photosynthesis
   - Ultraviolet light splits H2O
-## 3. The silence of the aeons: 3B years of microbial evolution
+### 3. The silence of the aeons: 3B years of microbial evolution
 - Difficulty in understanding early history of life: lack of evidence: main source: fossils & genetic code
 - Rejection of theory of evolution toward complexity: simple gene could replicate faster & dominate
 - Microbes can be metabolically sophisticated & versatile
@@ -94,7 +100,7 @@ Biology, geology, chemistry, medicine
 - Links of rising oxygen level with eukaryotic success:
   - Symbiotic rela with mito
   - Clustering together of cells to deal with oxygen toxicity
-## 4. Fuse to the Cambrian explosion: snowball earth, environmental change & the first animals
+### 4. Fuse to the Cambrian explosion: snowball earth, environmental change & the first animals
 - Problem: why Cambrian explosion happened so suddenly
 - Role of Cambrian explosion: diversification of segmented bilateral animals similar to modern day crustaceans
 - Theories about ice ages (~750M years ago)
@@ -105,11 +111,11 @@ Biology, geology, chemistry, medicine
 - Efficient oxygen metabolism -> opportunity for predators
 - Role of oxygen in chemistry of structural components
 - -> Necessary for large size & colonization of land
-## 5. The Bolsover dragonfly: oxygen & the rise of the giants
+### 5. The Bolsover dragonfly: oxygen & the rise of the giants
 - Difficulty in measuring historical oxygen level: possible contributing factors
 - Biological structure & mechanism of flying insects
 - -> Why high oxygen level enables large size
-## 6. Treachery in the air: oxygen poisoning & x-irradiation: a mechanism in common
+### 6. Treachery in the air: oxygen poisoning & x-irradiation: a mechanism in common
 - Free radical chemistry
 - Molecular oxygen structure & chemistry
 - Respiration vs radiation: dif radicals, slower rate, restricted location, repair mechanism
@@ -117,12 +123,12 @@ Biology, geology, chemistry, medicine
 - -> Same mechanism applies to other stress factors
 - -> Possibilities that protection against oxygen evolved earlier to protect against radiation
 - Supporting evidence from Earth early condition
-## 7. Green planet: radiation & the evolution of photosynthesis
+### 7. Green planet: radiation & the evolution of photosynthesis
 - Problem in understanding evolution of photosynthesis: no immediate benefit
 - Photosynthesis mechanism
 - Early source of oxidative stress before oxygen: H2O2 formed in water by ultraviolet radiation
 - -> Photosynthesis evolved from catalase which deals with oxidative stress
-## 8. Looking for LUCA: last ancestor in an age before oxygen
+### 8. Looking for LUCA: last ancestor in an age before oxygen
 - Prokaryote & eukaryote chars
 - Evidence for LUCA:
   - Same DNA code & protein transcription mechanism
@@ -141,7 +147,7 @@ Biology, geology, chemistry, medicine
   - Oxygen level doesn't have to be high
   - Proteins regulating & storing oxygen
 - Antioxidants might have dif evolutionary function: regulate internal oxygen level
-## 9. Portrait of a paradox: vitamin C and the many faces of an antioxidant
+### 9. Portrait of a paradox: vitamin C and the many faces of an antioxidant
 - Vitamin C mechanism
 - Pro-oxidant mechanism: regenerate active form of Fe (Fe2+)
 - -> Initiate free radical chain reactions
@@ -150,14 +156,14 @@ Biology, geology, chemistry, medicine
   - A single repetitive action can have many physiological roles besides an antioxidant effect
   - Antioxidant effect depends on env (eg other molecules)
   - -> Complex mechanism & interaction
-## 10. The antioxidant machine: 101 ways of living with oxygen
+### 10. The antioxidant machine: 101 ways of living with oxygen
 - 5 categories of antioxidant defense:
   - Avoidance (sheltering)
   - Antioxidant enzyme (prevention)
   - Free radical scavengers: contain iron/copper which catalyses the formation of hydroxyl radicals
   - Repair: regenerate antioxidant like vitamin C
   - Stress response: activate inflammatory or antioxidant genes (eg to produce antioxidant enzymes)
-## 11. Sex and the art of bodily maintenance: trade-offs in the evolution of aging
+### 11. Sex and the art of bodily maintenance: trade-offs in the evolution of aging
 - 2 mechanistic theories about aging:
   - Programmed aging: aging is programmed in the genes, equivalent to other developmental processes
   - Stochastic: aging as an accumulation of wear and tear over a lifetime
@@ -168,14 +174,14 @@ Biology, geology, chemistry, medicine
 - -> More efficient than selection by death
 - Disposable soma (evolutionary) theory of aging: throwable body vs immortal germ line
 - -> Tradeoff between sex & death: resources directed at reproduction is subtracted from bodily maintenance
-## 12. Eat! Or you'll live forever: the triangle of food, sex and longevity
+### 12. Eat! Or you'll live forever: the triangle of food, sex and longevity
 - Observation: aging is deferred until sexual maturation
 - Selection pressure is low for problems occurring later in life
 - Distinction between aging & age related diseases
 - Theory of antagonistic pleiotropy:
 tiny benefits from a gene in youth can outweigh dreadful afflictions later in life if the net result is more children
 - Evidence against antagonistic pleiotropy
-## 13. Gender bender: the rate of living and the need for sexes
+### 13. Gender bender: the rate of living and the need for sexes
 - Inverse relation between the rate of free radical production and lifespan in mammals
 - Mitochondrial theory of aging: aging as damage accumulated into mito DNA
 - -> Not corroborated by empirical data
@@ -190,7 +196,7 @@ tiny benefits from a gene in youth can outweigh dreadful afflictions later in li
 - Medicine goal:
   - Not to increase max lifespan: few people live to the maximum lifespan
   - Alleviate age related diseases
-## 14. Beyond genes and destiny: the double-agent theory of aging and diseases
+### 14. Beyond genes and destiny: the double-agent theory of aging and diseases
 - Difficult concept of "working" gene: depend on env factor
 - Basis of pharmacogenomics field: most diseases are predisposed by many genes
 - -> Individualized treatment: consider the individual's whole genome
@@ -204,20 +210,20 @@ as people get older, risk of accidental death accumulates -> less evolutionary p
   - Old age: leaking mito -> free radical & oxidative stress -> inflammation -> age related diseases
 - -> Pleiotropic tradeoff: importance of inflammation mechanism for organisms earlier in life
 - -> Alzheimer as example of the mechanism
-## 15. Life, death and oxygen: lessons from evolution on the future of aging
+### 15. Life, death and oxygen: lessons from evolution on the future of aging
 - Book summary
 - Clues about escaping age related diseases:
   - Infectious diseases: immunosuppression: reduce risk of age related diseases but also affect health negatively
   - Mito: less leaky & more efficient -> longer lifespan
 - Discussion about current approach of medicine: lacking a hypo, focusing on details
 
-# Criticism
+## Criticism
 - Too much detailed description of side arguments, while evidence & reasoning of main argument is thin
 - Dif view compared to ones of later books: origin of life -> acceptable
 - Some ideas repeated in other books -> acceptable
 - Chapters on aging have too much speculation with little evidence
 - Too many theories about aging, hard to keep track of
 
-# Takeaways
+## Takeaways
 - Evolutionary history: investigation approaches & role of oxygen
 - More on antioxidant & free radical theory of aging

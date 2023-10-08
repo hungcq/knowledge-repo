@@ -1,3 +1,10 @@
+# What I Learned Losing A Million Dollars
+
+## Info
+- Type: book
+- Author: Jim Paul, Brendan Moynihan
+
+## Notes
 - External vs internal losses
 - 5 stages of internal losses: denial, anger, bargaining, depression, acceptance
 - Discrete event vs continuous process

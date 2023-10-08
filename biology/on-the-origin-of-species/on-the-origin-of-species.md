@@ -1,8 +1,15 @@
-# Category
+# On The Origin Of Species
+
+## Info
+- Type: book
+- Author: Charles Darwin
+- First edition (1859)
+
+## Category
 Biology, geology, theoretical
 
-# Structure
-## Outline
+## Structure
+### Outline
 - Chap 1-5: theory:
   - Variation, under domestication & nature
   - Inheritance
@@ -19,15 +26,15 @@ Biology, geology, theoretical
   - Mutual affinities
 - Chap 14: summary & conclusion
 - Historical sketch: reference to the same idea mentioned earlier by other thinkers
-## Detailed structure
+### Detailed structure
 See table of contents
 
-# Goal
+## Goal
 - Provide clear insight into the means of modification & co-adaptation to support the conclusion:
 each species had not been independently created, but had descended, like varieties, from other species
 - -> Study of variation under domestication as the best approach
 
-# Style
+## Style
 - Expository, with answers to counter-arguments & alternative theories
 - Empirical: lots of observational evidence
 - Strictly coherent: the chapters form one long argument
@@ -35,7 +42,7 @@ each species had not been independently created, but had descended, like varieti
 - -> Typical of scientific works?
 - Chap 6 & 7: deal with the difficulties mainly by providing numerous evidence, esp of gradations
 
-# Terms
+## Terms
 - Horticulture: gardening
 - Monstrosity: considerable deviation of structure in one part, either injurious or not useful to the species,
   and not generally propagated
@@ -57,14 +64,14 @@ not only the life of the individual but success in leaving progeny
 - Quadruped (vs biped): animal with 4 legs
 - Genealogical: connected to line of ancestors
 
-# Main points
-## Introduction:
+## Main points
+### Introduction:
 - Goal
 - Outline of structure
 - Conclusion
 - Confirmation & ack of the unknown
 
-## 1. Variation under domestication
+### 1. Variation under domestication
 - Causes of variability: less in condition of life than prior to conception
 - Differences due to frequency of usage
 - Correlation of certain characteristics
@@ -93,7 +100,7 @@ not only the life of the individual but success in leaving progeny
   - Close attention paid to even the slightest deviation
   - Facility in preventing crosses in case of animals with separate sexes
 
-## 2. Variation under nature
+### 2. Variation under nature
 - Individual difs in imp parts do exist, though hard to observe
 - No clear def & agreement on what should be ranked as species and varieties
 - Species & varieties are only sth on the same scale of variation
@@ -104,7 +111,7 @@ not only the life of the individual but success in leaving progeny
 - Species in large genera are more similar to each other than those in small genera
 - Group of species is generally centered around a parent species
 
-## 3. Struggle for existence
+### 3. Struggle for existence
 - Problem: explanation for universal adaptation
 - All organic beings are exposed to severe competition
 - Imp of keeping the struggle for existence in mind to understand nature
@@ -126,7 +133,7 @@ not only the life of the individual but success in leaving progeny
 same food, living area & risk
 - -> Less between species of the same genus & of distinct genera
 
-## 4. Natural selection
+### 4. Natural selection
 - Link between variation under nature and variation under domestication
 - Requirement for natural selection: occurrence of profitable variations
 - Natural selection can occur in balanced condition by new random advantageous char
@@ -162,7 +169,7 @@ same food, living area & risk
 - Illustration & elaboration of the process of forming new species using diagram of time & difference
   - <img src="./resources/diagram.gif" width="800">
   
-## 5. Laws of variation
+### 5. Laws of variation
 - Effects of external condition:
   - Mainly from the change in reproductive system, which causes variations
   - Mechanism is unknown
@@ -186,7 +193,7 @@ same food, living area & risk
   - Distinct species present analogous variations
   - A variety of one species often assumes some chars of an allied species or reverts to some chars of an early progenitor
 
-## 6. Difficulties on theory
+### 6. Difficulties on theory
 - List of difficulties (see structure)
 - Causes of the absense/rarity of transitional varieties:
   - Extinction of less adapted form & slow formation of new species
@@ -207,7 +214,7 @@ same food, living area & risk
     - Inheritance
   - Individual sacrifice for community
 
-## 7. Instinct
+### 7. Instinct
 - Comparison of instinct with habit:
   - Similarity:
     - Performed unconsciously
@@ -218,7 +225,7 @@ same food, living area & risk
 - -> Perfection of the instinct help save wax, which is critical for the bees
 - Being sterile could be selected if it benefits the community as a whole (eg division of labour)
 
-## 8. Hybridism
+### 8. Hybridism
 - Goal: show that sterility of hybrids is not a specially acquired or endowed quality, but is i
 - Dif between pure species & hybrids: reproductive organs is in good (vs bad) condition
 - Infertility of hybrids is popular but varies case by case
@@ -228,7 +235,7 @@ same food, living area & risk
 - Hybrids & mongrels don't differ that much
 - -> Support the view that there is no clear distinction between varieties & species
 
-## 9. On the imperfection of the geological record
+### 9. On the imperfection of the geological record
 - Intermediate form should be between ancestor & descendants, not between existing species
 - Evidence of the age of the Earth
 - Causes of the poorness of palaeontological collections:
@@ -239,11 +246,11 @@ same food, living area & risk
 - Possible explanation for the sudden appearance of groups of allied species in the lowest known fossiliferous strata:
 state of continents & oceans used to be much different: continents as oceans & the reverse
 
-## 10. On the geological succession of organic beings
+### 10. On the geological succession of organic beings
 - Restate the theory, with evidence from geology
 - Explanation of geological & palaeontological facts by the theory
 
-## 11. Geographical distribution
+### 11. Geographical distribution
 - Neither the similarity nor the dissimilarity of the inhabitants of various regions can be accounted for by their climatal
 or other physical conditions
 - -> Main cause of change: relation with other organic beings, not physical condition
@@ -267,7 +274,7 @@ or other physical conditions
   - Ack of lacking in specific knowledge
   - Cannot explain affinities of southern species
 
-## 12. Geographical distribution - continued
+### 12. Geographical distribution - continued
 - Dispersal mechanisms of fresh water productions:
   - Change in land level -> rivers cross each other
   - Flood
@@ -287,7 +294,7 @@ or other physical conditions
   - Colonisation from the nearest and readiest source
   - Subsequence modification and better adaptation of the colonists to their new home
 
-## 13. Mutual affinities of organic beings: morphology: embryology: rudimentary organs
+### 13. Mutual affinities of organic beings: morphology: embryology: rudimentary organs
 - Naturalists usually use tree-like diagram for classification
 - Rules of classification:
   - Based on common/rudimentary/atrophied organs, not specialized or vital organs
@@ -314,7 +321,7 @@ happened because of similar env or random factors
   - Explanation of outlier cases in embryology: early dif has utility
 - Rudimentary, atrophied or aborted organ: after many selected generation, reduced to rudimentary state by disuse
 
-## 14. Recapitulation and conclusion
+### 14. Recapitulation and conclusion
 - Difficulties:
   - Perfection of organs & habits
   - Sterility
@@ -343,12 +350,12 @@ happened because of similar env or random factors
   - Amount of organic change can be used as an approximate measure of time in geology
   - Open up new interest & new field of research
 
-# Criticism
+## Criticism
 - Sexual selection should not be limited to male
 - Chap 8 has so many conclusions without any implications
 - Some parts are a bit lengthy & repetitive
 
-# Takeaways
+## Takeaways
 - Much deeper understanding of natural selection & evolutionary biology, including theory, supporting arguments & difficulties
 - Historical perspective on one of the best work of science & biology:
 full of keen observations, sharp, critical & coherent arguments, careful & adequate treatment of most counter-arguments
