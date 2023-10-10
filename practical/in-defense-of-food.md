@@ -1,12 +1,18 @@
-# Category: practical, history, science
+# In Defense Of Food
 
-# Structure
-## Outline
+## Info
+- Type: book
+- Author: TODO
+
+## Category: practical, history, science
+
+## Structure
+### Outline
 - Part I: nutritionism: definition, historical account, problems
 - Part II: the Western diet & its problems
 - Part III: rules to healthy & pleasurable eating
 
-## Detailed structure
+### Detailed structure
 - Introduction:
   - Main ideas & structure
   - Current situations
@@ -49,7 +55,7 @@
   - Chap 3: rules regarding best types of whole food
   - Chap 4: rules regarding how to eat
 
-# Author's problems & solution
+## Author's problems & solution
 - Describe how we arrived at present state of nutritional confusion & anxiety: OK
 - Show limitation of scientific understanding about food: OK
 - Defend food from nutrition science & food industry: OK
@@ -58,24 +64,24 @@
 - -> Reclaim health & happiness as eaters
 - Invite to join the new food movement
 
-# Presentation & style
+## Presentation & style
 - Author's claims:
   - Use nutrition science findings mainly for explanation & understanding
 - Clear arguments, backed by scientific/statistical evidences
 
-# Terms
+## Terms
 - Nutritionism: food & human bodies should only be understood and engaged with in terms of their nutritional & chemical constituents & requirements
 
-# Arguments
-## I - The age of nutritionism
-### 1. From foods to nutrients
+## Arguments
+### I - The age of nutritionism
+#### 1. From foods to nutrients
 - History of the rise of nutritionism: how nutrients replaced food
 - Why gov/scientific recommendations changed from food to nutrients:
   - Pressure from industries
   - Scientific reductionism bias
 - -> New way of thinking about food & health
 
-### 2. Nutritionism defined
+#### 2. Nutritionism defined
 - Basic assumptions of nutritionism:
   - Foods are the sum of their nutrient parts
   - -> Need scientists to explain & guide us
@@ -87,17 +93,17 @@
   - Focus on measured nutrients, not qualitative differences among foods
   - -> No dif between foods & processed foods
 
-### 3. Nutritionism comes to market
+#### 3. Nutritionism comes to market
 - Review of imitation law & how it got repealed
 
-### 4. Food science's golden age
+#### 4. Food science's golden age
 - The rise of processed food & food science
 - Health claim: easy to acquire, no scientific basis
 - Attitude toward whole food in the age of nutritionism:
   - Labeled good or bad depending on popular nutritional orthodoxy
   - No health claims -> subsided
 
-### 5. The melting of the lipid hypothesis
+#### 5. The melting of the lipid hypothesis
 - The lipid hypothesis:
   - Def: dietary fat is responsible for chronic disease
   - Conclusions of recent review: low-fat campaign has been based on little scientific evidence & caused unintended health consequences:
@@ -106,14 +112,14 @@
     - No convincing evidence supports that low-fat diet causes weight loss
   - -> No one publicly ack
 
-### 6. Eat right, get fatter
+#### 6. Eat right, get fatter
 - How the dietary advice was taken: eat more other things
 - Parties benefiting from the dietary recommendation:
   - Food industries
   - Nutrition scientists
   - Journalists
 
-### 7. Beyond the pleasure principle
+#### 7. Beyond the pleasure principle
 - Psychological consequences of nutritionism:
   - Confusion & anxiety
   - Reduced pleasure in eating
@@ -121,12 +127,12 @@
 - Review of historical ideas that undervalue pleasure in eating
 - -> Basis for nutritionism
 
-### 8. The proof in the low-fat pudding
+#### 8. The proof in the low-fat pudding
 - Evidences against the low-fat campaign - consequences on public health:
   - Increased obesity & diabetes
   - No reduction in heart disease
 
-### 9. Bad science
+#### 9. Bad science
 - Flaws & difficulties of nutrition science:
   - Problematic assumption: food = sum of nutrient parts
   - -> Flawed approach: study one nutrient at a time (basic tool of science: study one variable at a time):
@@ -172,15 +178,15 @@
           - Same as cohort study
           - Changes in diet of control group (following recommendation) & other group (failed to follow prescription)
 
-### 10. Nutritionism's children
+#### 10. Nutritionism's children
 - Summary of part I
 
-## II - The Western diet and the diseases of civilization
-### 1. The Aborigine in all of us
+### II - The Western diet and the diseases of civilization
+#### 1. The Aborigine in all of us
 - The Aborigine study: revert to hunter-gatherer living & diet
 - -> Conclusion: some of the most harmful effects of the Western diet could be quickly reversed
 
-### 2. The elephant in the room
+#### 2. The elephant in the room
 - Review of studies about effect of diet and health:
   - People who eat the Western diet (vs any traditional diet) suffer higher rates of cancer, cardiovascular diseases, diabetes
   - Western Price studies:
@@ -194,7 +200,7 @@
 - Short discussion about ecological aspect of food & health
 - Why interest in those studies waned: reliance on industrial food in wartime
 
-### 3. The industrialization of eating: what we do know
+#### 3. The industrialization of eating: what we do know
 - Foods from ecological point of view: relationships among species in food chains
 - -> Health is the product of being in relationships in food chain
 - -> Health of each part of the chain links to health of other part
@@ -240,8 +246,8 @@
   - Adapt biologically: no ideal condition for natural selection
   - Health care: economic cost, decreased quality of life
 
-## III - Getting over nutritionism
-### 1. Escape from the Western diet
+### III - Getting over nutritionism
+#### 1. Escape from the Western diet
 - Nutrition science is imperfect, tries to explain problems of the Western diet
 - -> Don't need to understand the mechanism to arrive at the solution: stop eating the Western diet
 - Difficulty in execution
@@ -261,7 +267,7 @@
     - How to eat food: manners, customs & habits governing relationship to food & eating
     - Goal: create healthy & pleasing culture of eating
 
-### 2. Eat food: food defined
+#### 2. Eat food: food defined
 - Don't eat anything your great-grandmother wouldn't recognize as food:
   - Sub-rule: don't eat anything incapable of rotting
 - Avoid food products containing ingredients that are:
@@ -280,7 +286,7 @@
       - Personal contact -> responsibility > regulation
   - Sub-rule: shake the hand that feeds you
 
-### 3. Mostly plants: what to eat
+#### 3. Mostly plants: what to eat
 - Eat mostly plants, especially leaves:
   - Universal scientific consensus supporting diet rich in vegetables & fruits
   - Meat is nutritious, but should be used as condiment for the vegetables, not eaten in huge quantities, esp industrial meat
@@ -304,7 +310,7 @@
 - Don't look for the magic bullet in the traditional diet. Why: dietary patterns might be more than the sum of the contributing foods
 - Have a glass of wine with dinner
 
-### 4. Not too much: how to eat
+#### 4. Not too much: how to eat
 - Pay more, eat less:
   - Why:
     - High quality food costs more
@@ -337,13 +343,13 @@
     - Philosophical: chance to contemplate about food
 - -> Subversive act: against nutritionism & industrial eating
 
-# Criticism
+## Criticism
 - Some minor details are not correct/detailed enough:
   - Discussion about roles of antioxidants
   - Effect of alcohol
 - Some rules in How to eat chapter are repeated, not well-organized
 
-# Takeaways
+## Takeaways
 - Understand nutritionism: definition, history & its effect on current food environment
 - -> New way of looking at food & making food/eating choice
 - Aware of the flaws of nutrition science

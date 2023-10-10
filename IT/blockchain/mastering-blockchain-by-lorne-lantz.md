@@ -1,6 +1,9 @@
 # Mastering Blockchain
-#### Unlocking the Power of Cryptocurrencies and Smart Contracts
-Lorne Lantz & Daniel Cawrey 2020 (authors are experienced blockchain developers, traders, entrepreneurs)
+
+## Info
+- Type: book
+- Author: Lorne Lantz, Daniel Cawrey (experienced blockchain developers, traders, entrepreneurs)
+- Year: 2020
 
 # Category
 Blockchain, finance, computer science

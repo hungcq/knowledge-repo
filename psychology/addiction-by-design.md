@@ -1,7 +1,13 @@
-# Category
+# Addiction By Design
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 Design, psychology, gambling, addiction
 
-# Structure
+## Structure
 - Introduction:
   - Goal
   - Scope
@@ -23,7 +29,7 @@ Design, psychology, gambling, addiction
   - Chap 10: regulatory policy & debate over responsibility of managing risk from gambling
 - End: gambling industry expansion in new regions & markets. How ethical & economic concerns are considered in those.
 
-# Author's goals
+## Author's goals
 - Explores the significance of the meteoric expansion of modern machine gambling over the past two decades in the US
 through an examination of the relationship between the changing technological configuration of gambling activities
 and the changing experience of gamblers
@@ -33,7 +39,7 @@ but the repeated interaction between the gambler and the object
 - Explore the machine zone and the broader constellation of material, social,
 and political-economic circumstances out of which it emerges and from which it seeks escape
 
-# Style
+## Style
 - Paying close attention to elements of gambling machine design and the kinds of affective self-management they afford gamblers
 - Tracking back and forth between gamblers' experience and the array of environments, objects,
 and software programs with which they interact
@@ -43,8 +49,8 @@ while also avoiding the tendency of human-centered approaches to regard technolo
 - Focus: Las Vegas: leader in number of experiments & maturity of gambling machine
 - Casting the addicted gambler not as aberrant or mal-adapted consumers, but as experts on the "zone" in which they are caught
 
-# Content
-## Intro
+## Content
+### Intro
 - Rise of machine gambling: sophistication, as main source of profit, popularization
 - Machine gambling as a flow activity, dissociate with the world
 - Addiction as a goal of design when focus is on maximizing revenue

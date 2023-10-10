@@ -1,20 +1,29 @@
-# Category: IT, language, reference
+# The Go Programming Language
 
-# Impression
+## Info
+- Type: book
+- Author: TODO
+
+## Category
+- IT
+- Programming language
+- Reference
+
+## Impression
 - Table of contents look like a reference book, each section is short
 
-# Structure
+## Structure
 
-# Author's goals
+## Author's goals
 - Help reader start using Go effectively right away and to use it well, taking full advantage of Go’s language features
 and standard libraries to write clear, idiomatic, and efficient programs
 
-# Style
+## Style
 
-# Terms
+## Terms
 
-# Content
-## Go origin
+## Content
+### Go origin
 - C:
   - Basic programming elements
   - Idea of compling program to machine code
@@ -23,11 +32,11 @@ and standard libraries to write clear, idiomatic, and efficient programs
 program consists of processes with no shared state, communicating & synchronizing via channels
 - Other languages: iota, nested functions, slice, defer
 
-## The go project
+### The go project
 - Take adv of modern concepts (eg GC, package system) while avoiding complexity (eg statically typed)
 - Provide libraries to work with a variety of tasks
 
-# Criticism
+## Criticism
 - 
 
-# Takeaways
+## Takeaways

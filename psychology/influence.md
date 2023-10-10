@@ -1,7 +1,13 @@
-# Category
+# Influence
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Psychology
 
-# Structure
+## Structure
 - Chap 1: chars of automatic behaviors
 - Chap 2-7: 6 principles that direct human behaviors:
   - Reciprocation
@@ -11,19 +17,19 @@
   - Authority
   - Scarcity
 
-# Goal
+## Goal
 - Describe some of the most imp psychological principles influencing the tendency to comply with a request
 - Describe the techniques most effectively use these principles to bring about compliance
 - Provide an understanding of automatic influence
 - -> Avoid being exploited in the age of information
 - Not included: rule of material self-interest: too simple & obvious
 
-# Style
+## Style
 - Reference: mainly papers, some books
 - Easy to read, humorous, with stories, result description & results
 
-# Content
-## Introduction
+## Content
+### Introduction
 - Research techniques:
   - Experimental studies
   - Systematic immersion into the world of compliance professionals:
@@ -31,7 +37,7 @@
     - Examination of written materials
     - Posing as a compliance professional or aspiring one in dif orgs
 
-## 1. Weapons of influence
+### 1. Weapons of influence
 - Fixed-action pattern (automatic behavior pattern):
   - Def: intricate sequences of behavior, acted in the same fashion and in the same order most of the time
   - Trigger feature: often will be just a tiny aspect of the totality
@@ -39,12 +45,12 @@
 - Evo role of shortcuts in human beha: deal with huge amount of info
 - -> More relevant in info age
 - Human auto behavior is not only instinctive but also cultural
-### Additional info
+#### Additional info
 - When we ask someone to do us a favor, we will be more successful if we provide a reason. Not necessarily good reason.
 - You get what you pay for -> expensive = good
 - Contrast principle: ~ anchoring. Eg: present expensive item first as an anchor for comparison -> the other item is cheap
 
-## 2. Reciprocation
+### 2. Reciprocation
 - Beha: try to repay in kind what another person has provided us
 - Causes:
   - Imp evo role: facilitate coordination
@@ -75,13 +81,13 @@
     - -> Social friction & isolation
   - Redefine: if not an actual favor but sale device
   - -> No longer feel bad to refuse. Can even exploit back -> reciprocation.
-### Additional info
+#### Additional info
 - Free sample marketing technique: 2 purposes:
   - Provide info
   - Trigger reciprocation
 - Allow man to buy a drink = sexually obligated in some cultures
 
-## 3. Commitment and consistency
+### 3. Commitment and consistency
 - Beha: desire to be & appear consistent with earlier choices
 - -> Might act against our best interest
 - Cause: personal & social pressure
@@ -109,7 +115,7 @@
   - Pay attention to signals of foolish consistency: tighten stomach
   - Ask yourself: "would I make the same choice with current info", then trust the first feeling
   - -> No time to rationalize
-### Addi
+#### Addi
 - Techniques:
   - Under-supply the promised gift
   - Ask to predict the donated amount
@@ -117,7 +123,7 @@
   - -> Feeling well -> hard to be stingy after
 - Imp role of harsh initiation ceremony in increasing group's survival & solidarity
 
-## 4. Social proof
+### 4. Social proof
 - Beha: assume that an action is more correct if others are doing it
 - Optimal conditions:
   - Uncertainty
@@ -125,7 +131,7 @@
 - Handling tactics:
   - When social proof is deliberate faked: make a conscious decision to be alert to counterfeit social evidence
   - Recheck the facts
-### Addi
+#### Addi
 - Sound of laughter: cue that sth is funny
 - Techniques:
   - Label the product as "fastest growing", "largest selling"
@@ -134,7 +140,7 @@
 - -> How to seek help in such situation: isolate one indi from the crowd & call for help: provide specific instructions
 - -> No uncertainty, clear responsibility, clear actions to perform
 
-## 5. Liking
+### 5. Liking
 - Beha: prefer to say yes to the requests of someone we know and like
 - Compliant techniques:
   - Get then mention the name of a friend who recommend
@@ -160,7 +166,7 @@
     - Reverse action: dislike them
     - -> Might be unfair, forgo actually nice people
     - Separate the liked person from the request
-### Addi
+#### Addi
 - Competitive activities increase hostility towards other groups
 - -> Collaboration towards common goal reduces conflict
 - People become fonder of the people and things they experienced while they are eating
@@ -168,7 +174,7 @@
   - Associate ourselves with successful others
   - Inflate the success of related people
 
-## 6. Authority
+### 6. Authority
 - Beha: willingness of adults to go to almost any lengths on the command of an authority
 - Causes:
   - Social benefits
@@ -184,10 +190,10 @@
   - Need to distinguish real & not real expert: focus on field of expertise
   - Need to check whether the expert is honest: anything to gain from the recommendation?
   - -> Aware of counter move when they pretend to argue to a degree against their own interests
-### Addi
+#### Addi
 - Association between size and status
 
-## 7. Scarcity
+### 7. Scarcity
 - Beha: opportunities seem more valuable to us when their availability is limited
 - Causes:
   - Loss aversion, regret aversion of forgone oppo
@@ -207,19 +213,19 @@
   - Tactics:
     - Pay attention to competitive arousal -> cue
     - Distinguish between the joy of possessing vs experiencing: what we want from the item
-### Addi
+#### Addi
 - Exclusive info is more persuasive
 - Techniques:
   - Schedule the same appointment time for prospective buyers
   - Auction format: trigger competitiveness
 
-## Epilogue
+### Epilogue
 - Summary: increasingly complex world
 - -> Revert to simple cue, auto response to guide decision
 - -> More susceptible to tricks of compliance professionals
 - -> Need tactics to identify & retaliate
 
-# Criticism
+## Criticism
 - Is there a misunderstanding between gene selection and social selection?
 - Some real-life stories seem to be cherry-picked
 - Chap 4 - social proof: handling tactic 2: how can we recheck the fact when we do things automatically?

@@ -1,5 +1,9 @@
 # Free Will
 
+## Info
+- Type: book
+- Author: TODO
+
 ## Concept
 - Oxford dictionary: the power of acting without the constraint of
 necessity or fate; the ability to act at one's own discretion

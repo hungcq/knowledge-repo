@@ -1,7 +1,13 @@
-# Category
+# Site Reliability Engineering
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Software engineering
 
-# Structure
+## Structure
 - Preface:
   - SRE def
   - Problems, goals
@@ -27,12 +33,12 @@
   - Process of eliminating toil
   - When toil is bad
 
-# Author's goals
+## Author's goals
 - Problem: most effort is spent after a software is built
 - -> SRE: focus on whole life cycle of software objects. Vs SE: design & build software systems.
 - Explain how SREs do things at Google
 
-# Presentation & styles
+## Presentation & styles
 - Author's claim:
   - Collection of essays, shared a common vision
   - Personal account
@@ -45,11 +51,11 @@
   - -> Conceptualize the content & make it more usable
 - References: mainly papers. Other sources: blog posts, books, lectures.
 
-# Terms
+## Terms
 - Chap 2
 
-# Content
-## Preface
+## Content
+### Preface
 - SRE: def by main roles:
   - Engineering (E): apply the principles of computer science & engineering to
     the design & development of computing systems (usually large distributed ones):
@@ -68,10 +74,10 @@
 - Other reading resources:
   - Ref in each chap
   - [Website](https://g.co/SREBook): include code examples
-### Additional info
+#### Additional info
 - Small org should also have an early reliability structure: expand later on is less costly
 - -> Can adopt best practices in part 4: management
 
-# Criticism
+## Criticism
 
-# Takeaway
+## Takeaway

@@ -1,6 +1,9 @@
 # The Basics of Bitcoins and Blockchains
-#### An Introduction to Cryptocurrencies and the Technology That Powers Them
-Antony Lewis 2018
+
+## Info
+- Type: book
+- Author: Antony Lewis
+- Year: 2018
 
 ## Category
 Blockchain, Finance

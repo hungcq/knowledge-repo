@@ -1,10 +1,18 @@
-# 1. Emotions across cultures
+# Emotion Revealed
+
+## Info
+- Type: book
+- Author: TODO
+
+## Content
+
+### 1. Emotions across cultures
 - Emotion def: a process, a particular kind of automatic appraisal influenced by our evolutionary and personal past,
 in which we sense that something important to our welfare is occurring,
 and a set of physiological changes and emotional behaviors begins to deal with the situation
 - Universal emotions & facial expressions
 
-# 2. When do we become emotional?
+### 2. When do we become emotional?
 - Evolved themes & learned themes (variations).
 - 9 ways to become emotional:
   - Automatic appraisal
@@ -17,7 +25,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
   - Violation of social norms
   - Voluntarily assuming the appearance of emotion
 
-# 3. Changing what we become emotional about
+### 3. Changing what we become emotional about
 - Refractory period.
 - Learned trigger (1) -> cell assembly in brain (memory of learned trigger) (2) -> emotional response (3)
 - 6 factors determining how successful the attempt to reduce power of trigger and length of refractory period (1):
@@ -44,7 +52,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
     - Randomly
     - Dense emotional experiences
 
-# 4. Behaving emotionally
+### 4. Behaving emotionally
 - Problems:
   - Overact under emotions
   - No emotions
@@ -97,7 +105,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
   - Interrupt/halt actions. Reduce signals.
 - Analyze emotional episode afterward. Understand self & the other.
 
-# 5. Sadness and agony
+### 5. Sadness and agony
 - Trigger: loss:
   - Rejection
   - Loss of self-esteem
@@ -138,7 +146,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
   - Cheek raise -> narrow eyes
 - Dealing with suppressed expressions
 
-# 6. Anger
+### 6. Anger
 - Triggers:
   - Interference:
     - Physical inference (theme)
@@ -232,7 +240,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
       - Explain
       - Make up in some ways
 
-# 7. Surprise and fear
+### 7. Surprise and fear
 - Surprise:
   - Trigger: unexpected event
   - Brief, quickly leave for other emotions or no emotions (fixed, limited duration)
@@ -316,8 +324,8 @@ and a set of physiological changes and emotional behaviors begins to deal with t
   - Close: can be direct, but ask, don't assume the cause.
   "I sense that something is worrying you. Can I help in any way?"
 
-# 8. Disgust and Contempt
-# 8.1. Disgust
+### 8. Disgust and Contempt
+### 8.1. Disgust
 - Feeling of aversion
 - Caused by:
   - Taste, thought of eating sth
@@ -347,7 +355,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
 - Expression:
   - Unbalanced, asymmetric
   - Lip corner tightened, slightly raised
-## 8.2. Contempt
+#### 8.2. Contempt
 - Vs disgust: contempt:
   - Only experienced about people or actions of people, not about tastes, smells, touches
   - Make you feel superior to the object of contempt
@@ -372,7 +380,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
 - Slight expression:
   - Nose wrinkled
   - Upper lip raised
-## 8.3. Using the information
+#### 8.3. Using the information
 - Not close:
   - Facing definite contempt/disgust: don't directly confront (most people don't acknowledge the feeling).
   Give a chance to talk about the feeling.
@@ -387,7 +395,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
     - Ignore
     - Acknowledge, discuss solution
 
-# 9. Enjoyable emotions
+### 9. Enjoyable emotions
 - A set of distinctive enjoyable emotions
 - Sensory pleases:
   - Touch, sight, sound, smell, taste
@@ -470,7 +478,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
   - Usually fake vs real smile doesn't matter
   - What specific enjoyable emotion felt usually doesn't matter
 
-# 10. Individual different in emotional experience
+### 10. Individual different in emotional experience
 - Ways of experience emotion:
   - Speed of emotional onset
   - Strength of emotional response
@@ -483,7 +491,7 @@ and a set of physiological changes and emotional behaviors begins to deal with t
 - Events that easily trigger each emotion
 - Some left-over emotions: guilt, shame, embarrassment, envy: no unique expression
 
-# 11. Meaning of different types of expression
+### 11. Meaning of different types of expression
 - Slight expression:
   - Beginning of an emotion
   - Weak emotion

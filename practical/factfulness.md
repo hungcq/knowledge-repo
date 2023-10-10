@@ -1,3 +1,10 @@
+# Factfulness
+
+## Info
+- Type: book
+- Author: TODO
+
+## Resources
 - 8.5
 - Gap minder
 - Dollarstreet

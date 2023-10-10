@@ -1,6 +1,9 @@
 # Blockchain Basics
-#### A Non-Technical Introduction in 25 Steps
-Daniel Drescher 2017 (traders, developers)
+
+## Info
+- Type: book
+- Author: Daniel Drescher (traders, developers)
+- Year: 2017
 
 ## Category
 IT, blockchain basic, theoretical, non-technical

@@ -1,9 +1,15 @@
-# Category
+# Spring Microservices In Actions
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - IT
 - Microservices
 - Framework
 
-# Structure
+## Structure
 - Chap 1:
   - Microservice def, design issues & patterns intro
   - Cloud intro
@@ -27,7 +33,7 @@
 - Appendix B: OAuth grant types
 - Appendix C: monitoring
 
-# Author's goals
+## Author's goals
 - Defs, best practices, design considerations, use cases of microservices architecture
 - How to build microservices app using Spring projects (eg Spring Boot, Spring Cloud)
 - -> Only highlight microservice features, not all features
@@ -38,14 +44,14 @@
   - App logs (EKL)
   - Deployment pipeline
 
-# Style
+## Style
 - Descriptive & visual info
 - Hands-on code examples
 - Microservice patterns, best practices & infra techs simulating real world app dev env
 
-# Terms
+## Terms
 
-# Criticism
+## Criticism
 - 
 
-# Takeaways
+## Takeaways

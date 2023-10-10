@@ -1,9 +1,17 @@
-# 1. Diffuse Mode
+# A Mind For Numbers
+
+## Info
+- Type: book
+- Author: TODO
+
+## Content
+
+### 1. Diffuse Mode
 - Skim -> prime, organize thoughts
 - Focused (highly attentive state) vs diffuse thinking (big picture, resting state network)
 - Einstellung effect: stuck on the wrong approach: jump on the problem before understand the fundamentals
 
-# 2. Switch modes
+### 2. Switch modes
 - Activities: bus, bath, bed, walk, sport, music...
 - Take note about the problem before & after going to bed
 - Sleep:
@@ -13,7 +21,7 @@
 - Frustration as a rest signal
 - Talk to people when stuck
 
-# 3. Chunking
+### 3. Chunking
 - Chunk: pieces of info bound together by meaning
 - -> Get the main idea, save working memory
 - 3 steps to form chunk:
@@ -23,13 +31,13 @@
 - Bottom up chunking process (how) vs Top down big picture process (when)
 - Interleaving > overloading: practice by doing dif problems requiring dif strats
 
-# 4. Recall
+### 4. Recall
 - Increase understanding
 - Should be within a day
 - Recall outside usual context
 - Illusion of competence: reread -> fluency < recall
 
-# 5. Build a chunked library
+### 5. Build a chunked library
 - Step by step nature of math/science problem
 - Deliberate practice
 - Build a chunked lib: build intuition in problem-solving:
@@ -41,13 +49,13 @@
   - Active repetition while doing sth easy
 - -> Move on to a new problem
 
-# 6. Procrastination
+### 6. Procrastination
 - No time for both modes
 - Bad habit, addiction
 - Procrastinate about uncomfortable things, seek temp pleasure
 - Excuse for doing poorly & pride for being smart
 
-# 7. Habit of Procrastination
+### 7. Habit of Procrastination
 - 4 parts of habit:
   - Cue: remove
   - Routine: create new
@@ -58,7 +66,7 @@
   - Ignore distraction
   - Practice being under stress
 
-# 8. Procrastination tools & tips
+### 8. Procrastination tools & tips
 - Daily task list: create in the evening
 - Weekly task list: big picture
 - Do the most disliked job in the morning
@@ -66,7 +74,7 @@
 - Meditation: ignore distracting thoughts
 - Backup plan for procrastination periods 
 
-# 9. Memory
+### 9. Memory
 - Visuo-spatial memory
 - Memory palace
 - Importance of concentration
@@ -79,24 +87,24 @@
 - Physical exercises
 - Big working mem -> less creative
 
-# 10. Mind’s eye
+### 10. Mind’s eye
 - Equation: abstraction, simplification of concept
 - -> Deeper meaning
 - Personalize & visualize concepts/ideas
 - Learn abstract concept without application
 - -> Easier to transfer to other disciplines
 
-# 11. Mentor
+### 11. Mentor
 - Pick question carefully. Avoid show off questions.
 - Avoid describe your wrong approach. Listen to suggestion first.
 
-# 12. Avoiding Overconfidence
+### 12. Avoiding Overconfidence
 - Left hemisphere: logical, focused vs Right: critical, big picture
 - Recheck solution: not much time needed
 - Hard to spot your own error
 - Value of brainstorming with others & straight criticism
 
-# 13. Test taking
+### 13. Test taking
 - Testing effect: test & recall: important learning exp
 - Test prep check list
 - Start with hard problem first. Switch to easy problem when stuck for 1-2 min. Not consider when:
@@ -106,7 +114,7 @@
   - Reframe interpretation of stress symptoms -> excitement
   - Deep stomach breath
 
-# 14. Other info & tips
+### 14. Other info & tips
 - Take course slowly -> learn deeply
 - Blinking/deliberate eye close -> change view, big picture
 - Breath slowly to nap

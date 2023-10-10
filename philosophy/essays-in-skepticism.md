@@ -1,3 +1,9 @@
+# Essays In Skepticism
+
+## Info
+- Type: book
+- Author: TODO
+
 # How to avoid silly errors
 - Make the observation yourself
 - Sign of bias, lack of reasons: angry when hear different opinion

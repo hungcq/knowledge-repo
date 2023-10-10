@@ -1,4 +1,8 @@
-# How not to be wrong
+# How Not To Be Wrong
+
+## Info
+- Type: book
+- Author: TODO
 
 ## Category
 Math, theoretical, using normal experience/examples

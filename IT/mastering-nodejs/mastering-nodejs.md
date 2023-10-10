@@ -1,4 +1,12 @@
-# 1. The Node environment
+# Mastering NodeJS
+
+## Info
+- Type: book
+- Author: TODO
+
+## Content
+
+### 1. The Node environment
 - Google V8 engine: compile node, not interpret
 - Node design:
   - Simplicity > complexity
@@ -18,7 +26,7 @@
   - removeListener
 - libuv: create & manage event loop
 
-# 2. Async event driven programming
+### 2. Async event driven programming
 - <img src="./resources/async-event.png" width="656">
 - Event loop runs in the same thread Js code run, starts when process starts.
 - Event loop delegate IO to libuv. libuv manages these operations, notify the event loop when results are available.
@@ -71,7 +79,7 @@
     - Promise
   - Exception: serious system error
 
-# 3. Testing your application
+### 3. Testing your application
 - Native debugging tool: console.log, util.inspect, debugger, assert module, vm module for sandboxing.
 - Mocha:
   - Test runner. Not concern with assertion.
@@ -84,7 +92,7 @@
   - Mocks: function with pre-programmed behaviors and expectations.
 - Headless testing: Nightmare and Puppeteer.
 
-# 4. Miscellaneous
+### 4. Miscellaneous
 - V8 compiler optimization:
   - Number: no change from integer to float
   - Array: no sparse array (slow hash table), no delete operation, no preallocate large array

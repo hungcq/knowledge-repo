@@ -1,10 +1,16 @@
-# Category
+# An Introduction To Mathematics
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Mathematics
 - Philosophy
 - Physics
 - History
 
-# Structure
+## Structure
 - Chap 1: The abstract nature of mathematics
   - Cause of failure in math education
   - Goal, non goal
@@ -83,21 +89,21 @@
   - Quantity idea
   - Rule of measurement
 
-# Goals
+## Goals
 - Show what the mathematics is about,
 and why it is necessarily the foundation of exact thought as applied to natural phenomena
 - Non goal: to teach math
 
-# Terms
+## Terms
 - Pedantry: too much attention to details
 
-# Style
+## Style
 - Author claim: focus to make the general argument comprehensible, details are only used as examples
 - Full of illuminating historical stories
 - Some examples require focused attention
 
-# Main points
-## 1. The abstract nature of mathematics
+## Main points
+### 1. The abstract nature of mathematics
 - Cause of failure in math education:
 fundamental ideas are not disentangled from the technical procedure
 invented to facilitate their exact representation in particular instances
@@ -110,31 +116,31 @@ to relations between the things which form the external world
   into general laws of the world of external events
 - -> Need abstract mathematical ideas to describe abstract, formal properties of things (scientific description)
 
-## 2. Variables
+### 2. Variables
 - Ideas of "any" and "some" things in algebra: use letters instead of definite numbers of arithmetic
 - -> Enabled by variables
 - Some def: anything between any and one only
 - "Some" idea allows the presentation of relationship between dif things using more than one variable
 - Idea of undetermined variables is much more imp in math, compared to the solution of equation containing them
-### Additional info
+#### Additional info
 - Skillful mathematicians choose equivalent form of the relation under consideration
 that is most convenient for immediate purpose
 - Study of general properties of relation between pairs of numbers is facilitated by the use of xOy diagram
 
-## 3. Methods of application
+### 3. Methods of application
 - Math simplicity of formula won't make the stated law true
 - -> Must check the assumptions & relevance to the phenomena
 - To apply math formula, need to have:
   - Clear theoretical ideas
   - Correct estimate of their relevant to the phenomena under observation
-### Additional info
+#### Additional info
 - Practicality vs tendency towards abstract knowledge:
   - Practical man as a man who practices the errors of his forefathers
   - -> All advances are confined to minor technical details of engineering
   - Abstract dreamers: arrive at new point of view, which could give a more fundamental control over the forces of nature
 
-## 4. Dynamics
-### Dynamic, dynamical explanation of phenomena
+### 4. Dynamics
+#### Dynamic, dynamical explanation of phenomena
 - Claim of dynamics: the various quantities of things perceptible to the senses
 are merely our peculiar mode of appreciating changes in position on the part of things existing in space
 - Dynamical explanation of phenomena: statements of general form
@@ -146,22 +152,22 @@ without reference to anyone in particular or to any special modes of perception:
   (eg lengths of lines, sizes of angles, areas and volumes)
   - Rate of changes of geometrical elements (eg velocities, angular velocities, accelerations)
   - -> Necessitated by the fact of motion and change
-### Application of math
+#### Application of math
 - Deal with correlation between variable numbers which are supposed to represent
   the correlations existing in nature between the measures of these geometrical elements & their rates of change
 - When variables are substituted by definite numbers: only in occasional testing of the laws by reference to experiments
-### Physical, scientific world view
+#### Physical, scientific world view
 - Implication of physical world view: events of such an abstract world are sufficient to explain our sensations
 - Evidence of the existence of external physical world:
 the world submitted itself to test & allow its events to be explored and predicted by the apparatus of abstract math ideas
 - -> Inductive verification has a remarkable success, even though inductive proof is never conclusive
-### Vector quantities & vector addition
+#### Vector quantities & vector addition
 - Vector def: anything completely given by the determination of a magnitude and a direction
 - Fundamental vectors of science: velocity, acceleration, force
 - Vector presentation: a line drawn with the proper length in the proper direction on the arbitrarily assigned scale of magnitude
 - Vector addition diagram: chief bridge over which the results of pure math are applied to the facts of nature
 
-## 5. Symbolism of mathematics
+### 5. Symbolism of mathematics
 - Symbols:
   - Function: as an immense simplification,
   representing an analysis of the ideas of the subjects & an almost pictorial representation of their relations to each other
@@ -174,19 +180,19 @@ the world submitted itself to test & allow its events to be explored and predict
   - Result from combination of variable idea & algebraic form idea
   - Distinction between var & param: presented by letters at the end vs by letters at the beginning of the alphabet
   - Adv: generalization reduce the amount of arithmetic performed
-### Additional info
+#### Additional info
 - Deliberate vs automatic thinking:
 civilization advances by extending the number of imp operations which we can perform without thinking about them
 - -> Operations of thought are limited, must only be made at decisive moment
 
-## 6. Generalizations of number
+### 6. Generalizations of number
 - Real numbers: include integral, fractional & incommensurable numbers
 - Incommensurable numbers fill the gap in fractional series
 - 3 imp math ideas: generality, variable & form
 - Positive & negative numbers as operations
 - -> Generalize above countable things
 
-## 7 & 8. Imaginary numbers
+### 7 & 8. Imaginary numbers
 - Origin: due to equations like x^2 + a = b
 - -> Goal: achieve generalization of a & b -> solutions +-sqrt(b - a) always have a meaning even if b - a < 0
 - -> sqrt(-1) needs a meaning
@@ -195,7 +201,7 @@ civilization advances by extending the number of imp operations which we can per
 - Same formula for vector addition & multiplication
 - -> Quadratic equation (ax^2 + bx +c = 0) can always be interpreted in terms of vector (calculus of vector)
 
-## 9. Coordinate geometry
+### 9. Coordinate geometry
 - Representation of a point in a plain by (x,y) coordinate
 - Math deals with the general truths applying to all things
 - -> Various branches of math undergo a perpetual process of generalization, then coalesce
@@ -218,7 +224,7 @@ civilization advances by extending the number of imp operations which we can per
 - Idea of origin O in coordinates or vectors:
 our first procedure in exploring the universe is to fix upon an origin "nearly here"
 
-## 10. Conic sections
+### 10. Conic sections
 - Def: curves formed by cutting a cone with a plane:
   - Ellipse
   - Parabola
@@ -228,7 +234,7 @@ our first procedure in exploring the universe is to fix upon an origin "nearly h
 - Algebraic form of conic sections (only when they represent any locus):
 ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0
 
-## 11. Functions
+### 11. Functions
 - Def: a correlation between 2 variable numbers, called respectively the argument and the value of the function,
 such that whatever value be assigned to the argument, the value is definitely (uniquely) determined
 - -> Representable like other correlations by a graph (method of coordinate geometry)
@@ -260,7 +266,7 @@ such that whatever value be assigned to the argument, the value is definitely (u
   - Continuity: f(x) is continuous  at a value a of its argument
   when in the neighborhood of a its values approximate to f(a) within every standard of approximation (any k)
 
-## 12. Periodicity in nature
+### 12. Periodicity in nature
 - Periodicity def: successive events so analogous to each other that they may be termed recurrences of the same event
 - -> Nature is dominated by the existence of those events
 - Imp role of periodicity in conception of life:
@@ -270,11 +276,11 @@ such that whatever value be assigned to the argument, the value is definitely (u
 - -> Astronomical phenomena are only used as reference
 - Implication to math: to be a fit instrument for the investigation of nature,
 need to be able to express essential periodicity of things
-### Additional info
+#### Additional info
 - Determination of the broad general consistency of the imp periodicities (eg motion of planets)
 was the first step in natural science
 
-## 13. Trigonometry
+### 13. Trigonometry
 - Origin: triangularization process in map-making
 - Main problem of trigonometry: given the magnitudes of the angles of a triangle,
 what can be stated as to the relative magnitudes of the sides
@@ -291,7 +297,7 @@ then f(x) can be written as the sum of a set of terms in the form:
 - -> Result: harmonic analysis of the function: x represent particular time
 - -> Deal with natural fact of periodicity
 
-## 14. Series
+### 14. Series
 - Def: a set of things ranged in order/sequence
 - Series summation: symbolize the fundamental process of approximation
 - Limit:
@@ -310,7 +316,7 @@ then f(x) can be written as the sum of a set of terms in the form:
   - Function as limit of a series
   - Exponential (exp) function
 
-## 15. Differential calculus
+### 15. Differential calculus
 - Idea: the systematic consideration of the rates of increase of function
 - -> Common in nature
 - Coalesce with the problem of drawing tangent to curve
@@ -326,12 +332,12 @@ then f(x) can be written as the sum of a set of terms in the form:
       - The limit is equal to its value at a
 - Derived function (differential coefficient) def:
 the limit, if it exists, of the function (f(x+h) - f(x))/h of the argument h at the value 0 of its argument
-### Additional info
+#### Additional info
 - Subjects of Integral calculus:
   - Rectification of curves: find the lengths of curves
   - Quadrature of curves: find the areas enclosed by curves
 
-## 16. Geometry
+### 16. Geometry
 - Scope of study: properties of the shapes and relative positions of things
 - -> Science of dimensional order: a division of the more general science of order
 - Abstract nature:
@@ -340,7 +346,7 @@ the limit, if it exists, of the function (f(x+h) - f(x))/h of the argument h at 
 - Method of study: think of interesting simple figures and investigate correlations between their various parts
 - Attempt to generalize introduce the ideas of variables
 
-## 17. Quantity
+### 17. Quantity
 - Def: a set of things (eg lengths) which are measurable in terms of any one of them
 - -> Quantities of the same kind
 - Quantity idea: the means by which a continuum (eg a line, an area) can be split up into definite countable parts
@@ -351,7 +357,7 @@ the limit, if it exists, of the function (f(x+h) - f(x))/h of the argument h at 
 - Quantity is the main application of the theory of numbers
 - Physical science depends on the main ideas of number, quantity, space and time
 
-# Takeaways
+## Takeaways
 - Math imp to & its application in science
 - Main ideas & subjects of math:
   - History of their development

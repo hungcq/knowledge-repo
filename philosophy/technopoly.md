@@ -1,7 +1,13 @@
-# Category
+# Technopoly
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 Philosophy, culture, science
 
-# Structure
+## Structure
 - Introduction: author's goal
 - Chap 1:
   - Main problems from story about Thamus:
@@ -43,17 +49,17 @@ Philosophy, culture, science
   - Individual: remember & respect cultural symbols
   - Cultural: education with a coherent curriculum
 
-# Author's goals
+## Author's goals
 - Describe when, how, why technology became a danger
 - -> Raise the awareness & skepticism needed when there are so much enthusiasm about technology
 - Provide a response to the problem of living in a developing technopoly
 
-# Style
+## Style
 - Expository
 - Rhetoric
 - Contains lots of history & examples
 
-# Terms
+## Terms
 - Types of cultures:
   - Tool-using
   - Technocracy
@@ -61,12 +67,12 @@ Philosophy, culture, science
 - Information glut
 - Scientism
 
-# Content
+## Content
 
-# Criticism
+## Criticism
 - The education reform proposal is interesting and insightful, but it is hard to see how it can be achieved
 
-# Takeaway
+## Takeaway
 - Information control mechanism & information glut
 - Impacts of technology on culture, esp of invisible technology
 - Understanding & awareness of scientism

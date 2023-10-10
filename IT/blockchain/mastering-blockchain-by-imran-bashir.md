@@ -1,6 +1,9 @@
 # Mastering Blockchain
-#### A deep dive into distributed ledgers, consensus protocols, smart contracts, DApps, cryptocurrencies, Ethereum, and more
-Imran Bashir 2020
+
+## Info
+- Type: book
+- Author: Imran Bashir
+- Year: 2020
 
 ## Category
 Blockchain, theoretical, practical, computer science

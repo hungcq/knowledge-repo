@@ -1,8 +1,14 @@
-# Category
+# Software Engineering At Google
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Software engineering, best practices
 
-# Structure
-## Simple outline
+## Structure
+### Simple outline
 - Culture:
   - Collective nature of software development enterprise
   - -> Dev is team effort
@@ -13,7 +19,7 @@
 - Tools:
   - How to use tools to benefit the codebase
   - Describe Google tools & provide 3rd party alternative
-## Outline
+### Outline
 - Preface:
   - Basic concepts
   - Problems & solutions
@@ -56,7 +62,7 @@
   - Chap 25: compute as a service: how, types, scale
 - Part 5: conclusion
 
-## Detailed structure
+### Detailed structure
 - Chap 16: version control and branch management:
   - Overview: def, comparison with other approaches, functions, centralized vs distributed VCS
   - Branch management practice: analysis & recommendations
@@ -106,7 +112,7 @@
   - Compute architecture lessons learned at Google, over time and scale
   - Considerations when choosing a compute service
 
-# Author problems & solutions
+## Author problems & solutions
 - Current SE theory & practice are not very rigorous
 - -> Share Google collective exp (why: scale & many years of exp): OK
 - -> Path toward more reliable software practices: OK
@@ -118,7 +124,7 @@
 - -> Focus on engineering, not programming
 - (Also in outline)
 
-# Presentation & styles
+## Presentation & styles
 - Author claim:
   - Link 3 principles throughout the chapters
   - -> How they affect engineering practice
@@ -126,7 +132,7 @@
 - Written by many authors: collected & organized into a book
 - Not very condense: lots of example, can be read fast
 
-# Criticism
+## Criticism
 - Chap 1 discuss at quite a high level: need familiarity with many concepts to understand the examples
 - 2 chaps about leadership are high level and self-help style
 - -> Need real life experiments to see whether the strategies work & how to apply them in specific situations
@@ -136,7 +142,7 @@
   - Is the idea even remotely feasible for normal orgs?
 - Chap 21: dependency management: what is a SAT graph?
 
-# Takeaways
+## Takeaways
 - How to think from an engineer perspective: consider time, scale and tradeoff
 - How to write clear, resilient to change tests
 - Best practices & lessons about various aspects of software engineering from a big, experienced organization

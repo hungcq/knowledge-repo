@@ -1,6 +1,9 @@
 # The Blockchain Developer
-#### A Practical Guide for Designing, Implementing, Publishing, Testing, and Securing Distributed Blockchain-based Projects
-Elad Elrom 2019 (tech lead, has worked for several big company)
+
+## Info
+- Type: book
+- Author: Elad Elrom (tech lead, has worked for several big company)
+- Year: 2019
 
 ## Category
 IT, blockchain, practical developer guide, technical

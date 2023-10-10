@@ -1,4 +1,8 @@
-# The checklist manifesto
+# The Checklist Manifesto
+
+## Info
+- Type: book
+- Author: TODO
 
 ## Category
 Practical, design, human error

@@ -1,7 +1,13 @@
-# Category
+# The Logic Of Scientific Discovery
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Philosophy
 
-# Structure
+## Structure
 - Part 1:
   - Overview of main problem
   - In adequacy of existing solutions
@@ -16,17 +22,17 @@
     - Corroboration
   - Example of application
 
-# Goals
+## Goals
 - Give a logical analysis of the method of empirical sciences
 - Give a more detailed analysis of the method of deductive testing
 - -> Show that, within the framework of this analysis,
 all the epistemological problems that inductive logic gives rise can be dealt with
 
-# Style
+## Style
 - Expositional
 - Thorough and logical
 
-# Terms
+## Terms
 - Synthetic statement: description of the world that can't be taken for granted.
   It is possibly true but not necessarily true.
 - Analytic statement: true by definition, self-explanatory, have no informative value (eg frozen water is ice)
@@ -76,27 +82,27 @@ and according to n-tuples of predecessors
 = probability of the property b within the reference sequence a
 - Probability logic: logical relation between events, sequence of stms, probability in alternative & truth
 
-# Content
-## Preface
+## Content
+### Preface
 - Central problem & interest in philosophy & science: understand the world
 - The growth of knowledge can be best studied by studying the growth of scientific knowledge
 - Method of philosophy: rational discussion: state the problem clearly & examine its proposed solution critically
 - -> Scientific kno is the extension of common sense kno
 - Scientific kno can be more easily studied compared to common sense kno
 - -> Problem of reasonable belief -> problem of accepting & rejecting sci theories
-## I. Introduction to the logic of science
-### 1. A survey of some fundamental problems
+### I. Introduction to the logic of science
+#### 1. A survey of some fundamental problems
 - Task of logic of scientific discovery (kno): to give a logical analysis of the method of empirical sciences
-#### The problem of induction
+##### The problem of induction
 - Problem of induction def
 - Common view: empirical science use inductive methods
 - -> Problem of induction
 - -> Difficulties: infinite regress or a priori valid principle of induction
-#### Elimination of psychologism
+##### Elimination of psychologism
 - Psychologism (psy of kno) vs logic of kno:
   - Psy of kno: how a new idea is created
   - Logic of kno: how the idea is systematically tested
-#### Deductive testing of theories
+##### Deductive testing of theories
 - Positivism def
 - Overview of the method of deductive testing:
 New tentative idea (eg anticipation, hypothesis, theoretical system)
@@ -119,7 +125,7 @@ by comparing them with the results of practical applications & experiments:
 - -> Positive decision can only temporarily support the theory, subsequent negative decisions might always falsify it
 - -> Theory withstanding severe tests & not superseded by another theory -> corroborated by past experience
 - -> The procedure is not inductive: truth/probability of theory not derived from truth of singular stms
-#### The problem of demarcation
+##### The problem of demarcation
 - Method of induction can't solve the problem of demarcation: can't distinguish between empirical sciences & metaphysical systems
 - Positivists try to find the chars of empirical science & of metaphysics to distinguish them from each other
 instead of proposing a convention
@@ -128,10 +134,10 @@ instead of proposing a convention
 - -> Need to agree on the purpose of empirical science to decide the convention
 - Value of the proposal: help to elucidate the problems of the theory of kno
 - Metaphysical speculation has its value
-#### Experience as a method
+##### Experience as a method
 - Empirical science def: system representing the real world of exp
 - -> Distinguished from other systems by the fact that it has been submitted to deductive testing method
-#### Falsifiability as a criterion of demarcation
+##### Falsifiability as a criterion of demarcation
 - Theories can't be verified by exp (inductive logic)
 - -> Need a new criterion which allow unverified stms into empirical science
 - -> Falsifiability as the criterion of demarcation (testable by exp)
@@ -140,14 +146,14 @@ instead of proposing a convention
   but can be falsified by them (by means of purely deductive inference)
   - Evasion of falsification is possible
   - -> The method should be characterized to exclude those ways of evasion
-#### The problem of the 'empirical basis'
+##### The problem of the 'empirical basis'
 - Problems of the empirical basis def
 - Basic stm def
 - Singular stm must be empirical to serve as premisses in falsifying inferences
 - Problem: perceptual exp can't justify basic stms: stms can only be logically justified by stms
 - -> Solution depends on the distinction between objective logical relations & subjective exp
 - -> Need to define objectivity
-#### Scientific objectivity and subjective conviction
+##### Scientific objectivity and subjective conviction
 - Scientific objectivity def
 - To be inter-subjectively testable, the stm must be universal - deal with events occurring regularly
 - Stm of subjective exp doesn't provide any justification for scientific stm
@@ -156,26 +162,26 @@ instead of proposing a convention
 - -> Can derive from it other testable stms, but test can't be carried on forever
 - -> Not a problem since scientific stms, according to the method, are not required to be tested, only testable
 
-### 2. On the problem of a theory of scientific method
-#### Why methodological decisions are indispensable
+#### 2. On the problem of a theory of scientific method
+##### Why methodological decisions are indispensable
 - Distinguishing char of science is its ability to advance, esp when there are conflicting systems of theories
 - -> Empirical science should be characterized by its method of dealing with scientific stms
-#### The naturalistic approach to the theory of method
+##### The naturalistic approach to the theory of method
 - Naturalistic view def
 - A system of methodological rules without a principle of induction is better:
 the principle of induction is not needed, doesn't provide any value & gives rise to inconsistencies
 - What a science/scientist is always remains a matter of convention or decision
 - -> Methodology should be a matter of convention
-#### Methodological rules as conventions
+##### Methodological rules as conventions
 - Main rule: other rules of scientific procedure must be designed in a way that they do not protect
 any stm in science against falsification
 - Value of the convention:
   - For science: allow the scientist to compare his work with the def
   - For philosophy: advance the theory of knowledge, deal with problems of older theories
 
-## II. Some structural components of a theory of experience
-### 3. Theories
-#### Causality, explanation, and the deduction of predictions
+### II. Some structural components of a theory of experience
+#### 3. Theories
+##### Causality, explanation, and the deduction of predictions
 - Causal explanation def
 - Components of causal explanation:
   - Universal stms def
@@ -185,7 +191,7 @@ any stm in science against falsification
 of this deductive method of theoretical explanation
 - Proposal: methodological rule: we are not to abandon the search for universal laws and for a coherent theoretical system,
 nor ever give up our attempts to explain causally any kind of event we can describe
-#### Strict and numerical universality
+##### Strict and numerical universality
 - 2 types of universal synthetic stms:
   - Strictly universal stm def (theory, natural law)
   - -> Cannot be replaced by a conjunction of a finite number of singular stms
@@ -194,13 +200,13 @@ nor ever give up our attempts to explain causally any kind of event we can descr
 - Proposed convention:
   - Regard natural law as strictly universal stms
   - Numerically universal stms should be considered singular stms
-#### Universal concepts and individual concepts
+##### Universal concepts and individual concepts
 - Individual concept def
 - -> Must exist in singular stm
 - Universal concept def
 - The distinction has no relation with the distinction between class and element:
 both indi and universal names may occur as names of some classes or elements
-#### Strictly universal and existential stms
+##### Strictly universal and existential stms
 - Imp types of universal pure stms (only universal names and no individual names occur):
   - Strictly universal
   - Strictly existential: eg 'there are', 'there exist at least one'
@@ -212,7 +218,7 @@ or in the form of non-existence stms ('there is not' stms)
 - Strictly existential stms cannot be falsified. No singular stm (basic stm) can contradict them.
 - -> Non-empirical or metaphysical
 - Unilateral decidability: both kinds of strict stms are decidable one-way only
-#### Theoretical system
+##### Theoretical system
 - A tentative system can usually be quite well surveyed as a whole, with all its imp consequences
 - -> Formulated sufficiently clearly & definitely
 - -> Every new assumption can be easily recognizable for what it is: a modification and therefore a revision of the system
@@ -223,7 +229,7 @@ or in the form of non-existence stms ('there is not' stms)
   - Sufficient: for the deduction of all stms belonging to the theory which is to be axiomatized
   - Necessary: contain no superfluous assumptions
 - -> Enable the investigation of the mutual dependence of various parts of the system
-#### Some possibilities of interpreting a system of axioms
+##### Some possibilities of interpreting a system of axioms
 - 2 interpretations of any system of axioms:
   - If the axioms are regarded as conventions then they tie down the use or meaning of the fundamental ideas
   or primitive terms or concepts which the axioms introduce;
@@ -232,20 +238,20 @@ or in the form of non-existence stms ('there is not' stms)
   - As a system of empirical or scientific hypotheses: systems that results from applying a rule:
   not to use undefined concepts as if they were implicitly defined
   - -> Enable evolution: new system covers old one
-#### Levels of universality. The modus tollens
+##### Levels of universality. The modus tollens
 - Theoretical systems have stms with dif level of universality
 - If a system of higher level of universality is falsified, the falsification may be attributed to the new hypothesis
 - -> The old system of lesser universality is not required to be regarded as falsified
 
-### 4. Falsifiability
-#### Some conventionalist objections
+#### 4. Falsifiability
+##### Some conventionalist objections
 - Conventionalism def
 - -> Laws of nature are needed to determine what an observation and what a sci measurement is
 - -> Laws of nature are not falsifiable by observation
 - Conventionalism as a system is self-contained and defensible
 - Conventionalists tend to select the simplest system
 - -> Problem: attitude when the old system is challenged: try to explain away the inconsistencies of the old system
-#### Methodological rules
+##### Methodological rules
 - Empirical (refutable) systems should be distinguished by its methods
 - -> The methods should prevent conventionalist stratagems
 - Some common stratagems & handling methods:
@@ -261,7 +267,7 @@ or in the form of non-existence stms ('there is not' stms)
   - -> The system has to be re-examined after as if it were new
   - Concern regarding the competence of the experimenter or theoretician: inter-subjectively testable experiments are
   either to be accepted, or to be rejected in the light of counter-experiments
-#### Logical investigation of falsifiability
+##### Logical investigation of falsifiability
 - Logical characterization of falsifiable systems def
 - System of basic stms def
 - -> Contain many stms which are mutually incompatible
@@ -273,20 +279,20 @@ than we can deduce from the initial conditions alone
 - A theory:
   - Make assertions only about its potential falsifiers: it asserts their falsity
   - Say nothing about the truth/falsity of permitted basic stms
-#### Falsifiability and falsification
+##### Falsifiability and falsification
 - Rules to determine under what conditions a system is to be regarded as falsified:
   - Non reproducible occurrences are of no significance
   - -> Accepted basic stms which contradict a theory are not sufficient to falsify it
   - Only falsify when a low level emp hypo which describes such an effect is proposed and corroborated
   - -> Falsifying hypo
-#### Occurrences and events
+##### Occurrences and events
 - Expression in informal language:
   - Occurrence: described by a singular stm (basic stm)
   - Event:
     - What may be typical or universal about an occurrence
     - What, in an occurrence, can be described with the help of universal names
 - -> A falsifiable theory rules out not merely one occurrence, but always at least one event
-#### Falsifiability and consistency
+##### Falsifiability and consistency
 - Consistency: the first requirement to be satisfied by every theoretical system, empirical or not
 - Inconsistent system: uninformative because any conclusion can be derived from it
 - Consistent system: divide the set of all possible stms into 2:
@@ -296,15 +302,15 @@ than we can deduce from the initial conditions alone
 stms which do not satisfy the condition of consistency fail to differentiate
 between any 2 stms within the totality of all possible stms
 
-### 5. The problem of the empirical basis
-#### Perceptual experiences as empirical basis: psychologism
+#### 5. The problem of the empirical basis
+##### Perceptual experiences as empirical basis: psychologism
 - Trilemma: accept sci stms dogmatically vs justify them via stms (infinite regress) vs psychologism
 - Psychologism def
 - -> Science as the systematic presentation of our immediate convictions
 - -> Problem: scientific stms expressed in universals can never be justified
-#### Concerning the so-called 'protocol sentences'
+##### Concerning the so-called 'protocol sentences'
 - Protocol sentence def
-#### The objectivity of the empirical basis
+##### The objectivity of the empirical basis
 - Epistemology should focus on:
   - How we test sci stms by their deductive consequences
   - What kind of consequences we can select for this purpose if they in their turn are to be inter-subjectively testable
@@ -312,7 +318,7 @@ between any 2 stms within the totality of all possible stms
 - Process of sci: testing, not justifying using exp
 - Sci suspends judgement about assertions which are not testable
 - -> Those can at best suggest a problem
-#### Basic statements
+##### Basic statements
 - Formal requirements for basic stms:
   - From a universal stm without initial conditions, no basic stm can be deduced
   - Universal stm and basic stm can contradict each other
@@ -324,7 +330,7 @@ between any 2 stms within the totality of all possible stms
 - Material requirement: the event mentioned in the basic stm must be an observable event
 (inter-subjectively testable by observation)
 - In material mode of speech: an observable event is occurring in a certain individual region of space and time
-#### The relativity of basic stms. Resolution of Fries's trilemma
+##### The relativity of basic stms. Resolution of Fries's trilemma
 - Any basic stm can again in its turn be subjected to tests, using as a touchstone any of the basic stms
 which can be deduced from it with the help of some theory, either the one under test, or another
 - -> The need to stop only at a kind of stm that is especially easy to test
@@ -332,7 +338,7 @@ which can be deduced from it with the help of some theory, either the one under 
   - Continue the tests
   - Conclude that the stm is not inter-subjectively testable
 - Resolution of the trilemma: experiences can motivate a decision, and hence acceptance or rejection of a stm, but don't justify it
-#### Theory and experiment
+##### Theory and experiment
 - Basic stms are accepted as the result of a decision or agreement; and to that extend they are conventions
 - -> With the goal of discovering objective truth, the decisions are reached in accordance with a procedure governed by rules
 - Imp rule: only accept/reject basic stms when testing theories:
@@ -347,8 +353,8 @@ raise searching questions about these theories, to be answered by the acceptance
   - Has hitherto stood up to the severest tests
   - Is testable in the most rigorous way
 
-### 6. Degrees of testability
-#### A programme and an illustration
+#### 6. Degrees of testability
+##### A programme and an illustration
 - High degree of falsifiability = larger class of potential falsifiers
 = say more about the world of experience (higher empirical content)
 - Aim of theoretical sci: obtain theory with the highest degree of falsifiability
@@ -356,33 +362,33 @@ raise searching questions about these theories, to be answered by the acceptance
 with the greatest precision attainable by theoretical sci
 - -> All the events or classes of occurrences which we actually encounter and observe, and only those,
 would be characterized as 'permitted'
-#### How are classes of potential falsifiers to be compared?
+##### How are classes of potential falsifiers to be compared?
 - Difficulty in comparing classes of potential falsifiers: infinite classes of forbidden/permitted events
 - 3 ways of comparing infinite classes:
   - Use the concept of cardinality (power) of a class
   - -> Can't solve the problem since the classes of potential falsifiers have the same cardinal number for all theories
   - Use the concept of dimension: linked with degree of composition of basic stms
   - Use the subclass relation
-#### Degrees of falsifiability compared by means of the subclass relation
+##### Degrees of falsifiability compared by means of the subclass relation
 - Fsb: degree of falsifiability
 - Fsb(x) > Fsb(y) if class of potential falsifiers of x include that of y as proper subclass
 - -> Fsb(metaphysical/tautological) = 0. Fsb(self-contradictory) = 1 (assume 1 = max)
 - -> Fsb(empirical) > 0 & < 1 (empirical & consistent)
-#### The structure of the subclass relation. Logical probability
+##### The structure of the subclass relation. Logical probability
 - Less falsifiable = more logically probable
 - Degree of falsifiability can also be applied to singular stms
-#### Empirical content, entailment, and degree of falsifiability
+##### Empirical content, entailment, and degree of falsifiability
 - Logical content def
 - Empirical content def
 - The comparison of the logical and of the empirical contents of 2 stms p & q leads to the same result
 if the stms compared contain no metaphysical elements
-#### Levels of universality and degrees of precision
+##### Levels of universality and degrees of precision
 - 2 imp demands to attain the highest possible empirical content:
   - The demand for the highest attainable level (or degree) of universality
   - The demand for the highest attainable degree of precision
 - Rule: if of 2 stms both their universality and their precision are comparable, then the less universal or less precise
 is derivable from the more universal or more precise; unless the one is more universal and the other more precise
-#### Logical ranges. Notes on the theory of measurement
+##### Logical ranges. Notes on the theory of measurement
 - Degree of precision in measurement must be high enough to detect the small dif between the calculated observable events
 when comparing the consequences of 2 theories
 - Bounds of interval (x+-y) need to be fixed with a degree of precision greatly exceeding
@@ -390,7 +396,7 @@ what we can hope to attain for the original measurement
 - -> Unsharp (condensation) bounds
 - In the absence of measurements, concept of condensation bounds cannot be applied
 - -> Superiority of methods that employ measurements over purely qualitative methods
-#### Degrees of testability compared by reference to dimensions
+##### Degrees of testability compared by reference to dimensions
 - Limitation of subclass relation in answering the question of the number of parameters which have to be ascertained,
 and to be substituted in the formula
 - Compare degrees of testability of theories by ascertaining the minimum degree of composition
@@ -406,38 +412,38 @@ would be permitted by the theory simply because of their low degree of compositi
   - -> Smaller d = higher falsifiability
   - -> Can be applied to basic stms
 - If 2 theories have the same d, then use subclass approach if can
-#### The dimension of a set of curves
+##### The dimension of a set of curves
 - When the field of application of a theory can be identified with the field of its graphic representation,
 then the dimension of the theory with respect to this field
 is identical with the dimension of the set of curves corresponding to the theory
 - -> The number of freely determinable params of a set of curves by which a theory is represented
 is characteristic for the degree of falsifiability of that theory
-#### Two ways of deducing the number of dimensions of a set of curves
+##### Two ways of deducing the number of dimensions of a set of curves
 - 2 methods of reducing d:
   - Material: not change the shape of curve
   - Formal: change the shape of curve
   - -> Not diminish the generality of the definition
 
-### 7. Simplicity
-#### Elimination of the aesthetic and the pragmatic concepts of simplicity
+#### 7. Simplicity
+##### Elimination of the aesthetic and the pragmatic concepts of simplicity
 - Aesthetic: more elegant
 - Pragmatic: done more easily
 - Reason for elimination: extra-logical, irrelevant to the theory of knowledge
-#### Simplicity and degree of falsifiability
+##### Simplicity and degree of falsifiability
 - Define simplicity as degree of falsifiability
 - -> Simple = more universal & falsifiable = greater empirical content
 
-### 8. Probability
+#### 8. Probability
 - Scope: probability of events and the problems it raises
 - -> Probability of hypo in chap 9
-#### The problem of interpreting probability statements
+##### The problem of interpreting probability statements
 - Types:
   - Numerical
   - Non-numerical: 2 types:
     - Can be transformed into numerical
     - Can't be transformed
 - Problem: how to interpret a numerical probability stm and the numerical assertion it makes
-#### Subjective and objective interpretations
+##### Subjective and objective interpretations
 - 2 interpretations of classical theory of probability:
   - Subjective: notable is Keynes logico-subjective theory (~Bayesian).
   Limitation: does not explain how a stm of ignorance, interpreted as a frequency stm, can be empirically tested and corroborated
@@ -445,12 +451,12 @@ is characteristic for the degree of falsifiability of that theory
   with which an event of a certain kind occurs within a sequences of occurrences
   - -> Numerical prob stms are only admissible if we can give a frequency interpretation of them
 - Next part (skipped - too technical): construct anew the theory of prob as a modified frequency theory
-#### The problem of decidability
+##### The problem of decidability
 - Problem: so long as the binomial formula is derivable within the system, probability stms will not be falsifiable
 - -> Void of empirical content
 - Practical falsification used in empirical sci: obtained only through a methodological decision
 to regard highly improbable events as ruled out (prohibited)
-#### The logical form of probability statements
+##### The logical form of probability statements
 - Prob stms are non-falsifiable & non-verifiable, therefore:
   - Have no falsifiable consequences
   - Cannot be consequences of verifiable stms
@@ -465,14 +471,14 @@ to regard highly improbable events as ruled out (prohibited)
   - -> Regulate the relations between the various prob stms themselves
   - -> Ensure prob stms can contradict one another:
   prob stms have the form of a conjunction between universal stm and existential hypo
-#### A probabilistic system of speculative metaphysics
+##### A probabilistic system of speculative metaphysics
 - -> Explain any regularities as a rare random occurrence
-#### Probability in physics
+##### Probability in physics
 - The rule that extreme improbabilities have to be neglected agrees with the demand for sci objectivity:
 improbable events are not reproducible
 - -> If reproducible then the prob estimate is falsified
 - The dividing line between what is permitted and what is forbidden is determined by the attainable precision in measurements
-#### Law and chance
+##### Law and chance
 - Frame conditions def: the rules of play and other rules determining the conditions 
 under which the various events of a random sequence are to take place
 - -> No initial conditions given -> can't make prediction
@@ -482,26 +488,26 @@ under which the various events of a random sequence are to take place
   - Its elements are not predictable, or that they are 'due to chance' in the subjective sense of insufficient knowledge
   - There are no laws
   - The sequence itself is completely irregular
-#### The deducibility of macro laws from micro laws
+##### The deducibility of macro laws from micro laws
 - To explain macro events, need:
   - Non-statistical hypotheses about the micro events and their laws of interaction
   - Hypothetical frequency estimates: a special class of hypotheses: prohibitions which concern regularities in the large
 - Statistical estimates (frequency stms) can be derived from assumptions about the statistical distribution of initial conditions
-#### Formally singular probability statements
+##### Formally singular probability statements
 - Formally singular prob: event k has the probability b given that k is an element of the sequence a
 - Sequence a is often not explicitly mentioned
 - When there are several possible reference sequences, stms about the actual outcome of singular occurrences
 cannot change the prob of these occurrences; they may however suggest to us the choice of another reference-class
 - -> ~ subjective theory: interpret formally singular prob as 'degree of rational belief'
-#### The theory of range
+##### The theory of range
 - If between two property classes y and b the subclass relation holds, then:
 Fsb(event k has property y) > Fsb(event k has property b)
 - -> If we have randomness, we may correlate relative frequencies with the ranges in order to make the ranges measurable
 
-### 10. Corroboration, or how a theory stands up to tests
+#### 10. Corroboration, or how a theory stands up to tests
 - Theories are not verifiable, but they can be corroborated
 - -> Should focus on degree of corroboration, not prob of hypo
-#### Concerning the so-called verification of hypotheses
+##### Concerning the so-called verification of hypotheses
 - Common justification for ignoring the non-verifiability of theories: regularities which are directly testable by experiment,
 though conceivable, or logically possible, that they might change;
 but this possibility is disregarded by empirical sci and does not affect its methods
@@ -512,7 +518,7 @@ but this possibility is disregarded by empirical sci and does not affect its met
   - To have no exceptions
 - -> The possibility of falsifying a corroborated law is by no means without significance from a methodological point of view
 - Failure of inductive method in solving the issue: have to choose between infinite regress and apriorism
-#### The probability of a hypothesis and the probability of events: criticism of probability logic
+##### The probability of a hypothesis and the probability of events: criticism of probability logic
 - Probability logic def
 - Failure of the attempt to reduce prob of hypo to prob of events (stms):
   - (Acked) confusion of subjective feelings of conviction with objective prob
@@ -527,7 +533,7 @@ but this possibility is disregarded by empirical sci and does not affect its met
 - Reason why believers in prob logic have reached an opposite view: hypotheses of prob are not falsifiable
 - -> They use prob logic to deal with the difficulty (decidable)
 - -> Need methodological rules to make them falsifiable (close to actual method of physicists)
-#### Inductive logic and probability logic
+##### Inductive logic and probability logic
 - Not possible to construct a concept of the prob of hypos which maybe interpreted as
 expressing a 'degree of validity' of the hypos, in analogy to the concepts 'true' and 'false',
 and which is sufficiently closely related to the concept of 'objective prob' (relative frequency)
@@ -536,7 +542,7 @@ to assess the truth/prob of an appraisal (the stm that describes a theory as 'pr
 need another appraisal or apriori principle of induction
 - -> Same situation: have to choose between infinite regress or apriorism
 - To avoid the pitfall, need to take into account the asymmetry between verification & falsification
-#### The positive theory of corroboration: how a hypothesis may 'prove its mettle'
+##### The positive theory of corroboration: how a hypothesis may 'prove its mettle'
 - Addressing objections:
   - Theories as provisional conjectures: tautological
   - Use of corroboration as appraisal: the appraisal of the corroboration is not a hypo,
@@ -552,7 +558,7 @@ need another appraisal or apriori principle of induction
 - Degree of corroboration is:
   - Not numerically calculable & comparable
   - Regarded as final when a theory is falsified
-#### Corroborability, testability, and logical probability
+##### Corroborability, testability, and logical probability
 - Corroborability ~ testability: inverse to logical prob
 - -> Opposite view to prob logic: prob of hypo ~ logical prob
 - Tendency of inductive & prob logic:
@@ -560,7 +566,7 @@ need another appraisal or apriori principle of induction
   - -> More logically probable (justifiable by exp)
   - -> Deny value of predictions
   - Choose simple theory that has less chance of conflict with reality
-#### Remarks concerning the use of the concepts 'true' and 'corroborated'
+##### Remarks concerning the use of the concepts 'true' and 'corroborated'
 - It is possible to avoid using the concepts 'true' and 'false'
 - -> Use logical considerations about derivability relations instead
 - Use of language:
@@ -571,7 +577,7 @@ need another appraisal or apriori principle of induction
 - -> Timeless: describe or appraise a stm irrespective of any changes in the empirical world
 - -> The dif between truth and corroboration:
 corroboration is logically derivable from the theory and the various set of basic stms accepted at various times
-#### The path of science
+##### The path of science
 - Direction in the evolution of physics, from theories of a lower level of universality to theories of a higher level,
 can be viewed as:
   - Inductive direction
@@ -601,12 +607,12 @@ many proposed but not testable by current level of sci
     - Ever discovering new, deeper, and more general problems,
     and of subjecting our ever tentative answers to ever renewed and ever more rigorous tests: infinite yet attainable
 
-# Criticism
+## Criticism
 - Chap 8 (probability) is too technical
 - -> Better be put in an appendix to avoid digression from main arguments
 - Seem like a good understanding of quantum theory is required to understand chap 9
 
-# Takeaway
+## Takeaway
 - Scientific method: deductive testing, corroboration
 - Methodological rules regarding various problems: conventionalist stratagems, probability
 - Falsifiability as a criterion of demarcation between scientific & metaphysical system/stms

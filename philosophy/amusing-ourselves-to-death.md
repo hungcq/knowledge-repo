@@ -1,7 +1,17 @@
-# Category: philosophy, culture
+# Amusing Ourselves To Death
 
-# Structure
-## Outline
+## Info
+- Type: book
+- Author: TODO
+
+## Category
+- Philosophy
+- Culture
+- Media
+- Technology
+
+## Structure
+### Outline
 - Part 1:
   - Problem introduction
   - Structure & scope
@@ -11,7 +21,7 @@
   - Form of content suitable for the TV: entertainment
   - How TV as a media influences public discourse in various fields: news, religion, politic, education
   - Threats, possible solutions & difficulties
-## Detailed structure
+### Detailed structure
 - Part 1:
   - Chap 1:
     - Current situation
@@ -55,7 +65,7 @@
     - Unawareness as a problem
     - Solutions & difficulties
 
-# Author's problems & solution
+## Author's problems & solution
 - Talk about the possibility of a trivial culture: OK
 - Tell the story of origin & meaning of the descent into triviality: OK
 - -> Provide a better explanation & understanding of the situation: OK
@@ -63,11 +73,11 @@
 - -> Most public discourse has become nonsense: OK
 - Demonstrate by concrete examples how TV affect it: OK
 
-# Style
+## Style
 - Expository, with examples
 - Content is condense, arguments to the point
 
-# Terms
+## Terms
 - Conversation/discourse: all techniques and technologies that permit people of a particular culture to exchange messages
 - -> = communication
 - Message vs metaphor:
@@ -81,13 +91,13 @@
   - -> Has an inherent bias, tendency to be used in certain ways
   - Medium: a use of the physical apparatus
 
-# Arguments
-## Foreword
+## Arguments
+### Foreword
 - Brave new world's warning is more relevant than 1984:
 people will love technologies that provide distraction, deprive them capacity to think
 - -> Risk of becoming a trivial culture
 
-## 1. The medium is the metaphor
+### 1. The medium is the metaphor
 - Current situation:
   - All public discourse increasingly takes the form of entertainment:
     - Outlook > quality
@@ -111,7 +121,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - Quantity & speed of info
   - Context in which info is experience
 
-## 2. Media as epistemology
+### 2. Media as epistemology
 - Scope: focus on epistemology - definition of truth & sources of such definitions, not aesthetic/literary criticism
 - -> TV is not dangerous when it outputs undisguised junk, but when it attempts to carry imp cultural conversations
 - Truth:
@@ -151,7 +161,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - -> New form won't have an unchallenged influence: changes is gradual, then all at once (current situation)
   - TV pollutes public communications & its surrounding landscape, not everything. Its beneficial possibilities shouldn't be disregarded.
 
-## 3. Typographic America
+### 3. Typographic America
 - AAmerica in 1700-1800s:
   - High level of literary, extended to all classes
   - Lots of books & newspapers
@@ -160,7 +170,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - Quantity of printed matter
   - Its monopoly
 
-## 4. The typographic mind
+### 4. The typographic mind
 - Character of audience in typographic culture from Lincoln - Douglas debate example:
   - Accustomed to extended oratorical performance
   - -> Long attention span
@@ -189,7 +199,7 @@ people will love technologies that provide distraction, deprive them capacity to
     - Printed matter has its monopoly on attention & intellect
     - Reading is an imp, serious activity, crucial to connect to and understand the world
 
-## 5. The peek-a-boo world
+### 5. The peek-a-boo world
 - 2 technologies that changed public discourse mid-1800s:
   - Telegraph: enable transferring info instantly across distance
   - -> Impact on public discourse: when embraced by the press, it introduces:
@@ -220,7 +230,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - Its impact is mostly invisible
   - -> The world influenced by TV is natural, not strange
 
-## 6. The age of show business
+### 6. The age of show business
 - Why TV as a medium release its full potentialities as a technology of images in the US: suitable env:
   - Liberal democracy
   - Free market economy
@@ -240,7 +250,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - Has time constraint & expectation of a fast tempo: showing people in the act of thinking is boring - no performance to see
   - -> Discussions: fragmented, in a short time, no argument, no response to argument, no explanation
 
-## 7. "Now... this"
+### 7. "Now... this"
 - The phrase "now... this" stresses the incoherence of matters presented on TV: separate events in short programs
 - -> Typical of news programs
 - Features of news on TV:
@@ -265,7 +275,7 @@ people will love technologies that provide distraction, deprive them capacity to
 - TV create new paradigm for conception of public info
 - -> Other media follow suit (newspaper, radio)
 
-## 8. Shuffle off to Bethlehem
+### 8. Shuffle off to Bethlehem
 - How religion is presented on TV:
   - Can't consecrate the space to exp the show
   - -> Can't achieve required state of mind
@@ -282,7 +292,7 @@ people will love technologies that provide distraction, deprive them capacity to
   - -> Popularity of trivial religion drives out traditional religion
 - Consequence: try to refashion religious services, to make them more televisible
 
-## 9. Reach out and elect someone
+### 9. Reach out and elect someone
 - Attributes of TV commercial:
   - Claims in images, not proposition
   - -> Emotional appeal, not tests of truth, becomes basis of consumer decisions
@@ -310,7 +320,7 @@ people will love technologies that provide distraction, deprive them capacity to
 - -> The public can't distinguish between serious discourse and entertainment
 - -> No need for censorship
 
-## 10. Teaching as an amusing activity
+### 10. Teaching as an amusing activity
 - Why educational TV show is embraced:
   - Parent:
     - Feel less guilty when can't restrict children access to TV
@@ -345,7 +355,7 @@ people will love technologies that provide distraction, deprive them capacity to
     - Use entertainment to keep students' interest
   - -> No scientific evidence that learning is increased when information is presented in a dramatic settings
 
-## 11 The Huxleyan warning
+### 11 The Huxleyan warning
 - Difficulties:
   - Not everyone believes that a solution is needed:
     - Unaware of the influence of technologies & media
@@ -370,7 +380,7 @@ people will love technologies that provide distraction, deprive them capacity to
         - Question not asked: how to use education to control media/technology
         - -> Should be the center of the curriculum
 
-# Criticism
+## Criticism
 - Examples & events in chap 3 seems like cherry-picked
 - Arguments in chap 3, 4 are mostly historical & based on observation. Psychological/neurological causes are not provided.
 - -> Author did claim at the beginning
@@ -379,7 +389,7 @@ people will love technologies that provide distraction, deprive them capacity to
 - Some special terms are provided and used throughout the book (eg discourse, resonance, metaphor), but the definition is not clear-cut
 - -> Simple English word should be more preferable (eg communication, influence)
 
-# Takeaways
+## Takeaways
 - Aware of and understand the implication and influence of media, and technology in general, in:
   - Form of content
   - Standard of truth and intelligence

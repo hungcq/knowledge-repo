@@ -1,6 +1,9 @@
 # The Blockchain and the Law
-#### The Rule of Code
-Primavera De Filippi, Aaron Wright 2018
+
+## Info
+- Type: book
+- Author: Primavera De Filippi, Aaron Wright
+- Year: 2018
 
 ## Category
 Blockchain, Politics, Laws

@@ -12,3 +12,8 @@
 - Pass score: 720/1000
 - Result: within 5 days. Overall score a few days later.
 - Can retake 14 days later
+## Exam domain
+- Security: 30%
+- Resilience: 26%
+- High performance: 24%
+- Cost optimization: 20%

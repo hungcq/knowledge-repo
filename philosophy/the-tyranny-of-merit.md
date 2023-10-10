@@ -1,9 +1,15 @@
-# Category
+# The Tyranny Of Merit
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 - Philosophy
 - Politics
 - Contemporary
 
-# Structure
+## Structure
 - Prologue:
   - 2020 US president election
   - Current political division: intro the problem
@@ -28,22 +34,22 @@ colleges & uni as the main mechanism that societies allocate opportunity: origin
   - Proposals to restore social esteem
   - Call for public discussion & deliberation about the common good
 
-# Goals
+## Goals
 - Call for public discourse which takes seriously the corrosive effect of meritocracy on the social bonds
 
-# Style
+## Style
 - Ref: mainly journals, quotations & books
 - Provide figures from various fields to support arguments
 
-# Terms
+## Terms
 - Democrat = liberal = left
 - Dissipate: slowly remove
 - Evangelist: a person who popularizes a religion
 - Desert (moral desert): deserve-ness
 - Condescension: hubris
 
-# Content
-## Introduction
+## Content
+### Introduction
 - The college admission fraud
 - Unfairness in college admission
 - Common sentiment in public view: problem with meritocracy is not the principle with the failure to live up to it
@@ -51,7 +57,7 @@ colleges & uni as the main mechanism that societies allocate opportunity: origin
   - Elite college's economic meaning
   - Moral justification of merit: earned success
 
-## 1. Winners and losers
+### 1. Winners and losers
 - Misdiagnosed causes of populist nationalism:
   - Bigotry
   - Economic complaint
@@ -84,7 +90,7 @@ but of the way mainstream political parties & elites have governed
 - -> Meritocracy is not an answer to rising inequality, only a justification of it
 - -> Redistribution of income as a better working solution
 
-## 2. Great because good: a brief moral history of merit:
+### 2. Great because good: a brief moral history of merit:
 - Advs of hiring based on merit:
   - Efficiency
   - Fairness: no discrimination
@@ -99,7 +105,7 @@ but of the way mainstream political parties & elites have governed
 - Development of the new view
 - -> Not necessarily tie to religious assumptions, but any ethics that stresses free will & responsibility
 
-## 3. The rhetoric of rising
+### 3. The rhetoric of rising
 - Rise of meritocratic idea in public discourse:
   - Personal responsibility: in attempts to rein in the welfare state & shift risks from govs & companies to individuals
   - Rhetoric of rising: promise that those who work hard & play by the rules
@@ -108,7 +114,7 @@ but of the way mainstream political parties & elites have governed
 - -> Many working class populist parties supporters are interested more in reassertions of national sovereignty, identity & pride
 - Mistaking aspiration for fact: perfect equality of opportunity has not been achieved
 
-## 4. Credentialism: the last acceptable prejudice
+### 4. Credentialism: the last acceptable prejudice
 - Popularity of credentialism
 - Education as the answer to inequality & the mean to compete in a globalized economy
 - -> Eroded social esteem for those who had not gone to college
@@ -126,7 +132,7 @@ governance requires dif set of skill than provided by uni education: practical w
 - -> Political debate is often about identity & framing fact, not about agreeing on the facts
 - Climate change debate as an example that being more informed is not the cause of having dif opinions
 
-## 5. Success ethic
+### 5. Success ethic
 - Comparison of meritocracy with aristocracy
 - Public discussion are mainly about how to implement meritocracy right, not about meritocracy itself
 - Objections to meritocratic society:
@@ -154,14 +160,14 @@ governance requires dif set of skill than provided by uni education: practical w
         - To qualify for public assistance, must present & conceive of themselves as victims of forces beyond their control
         - -> Humiliation: welfare recipients viewed as lacking agency, incapable of acting responsibly
   - Attitudes toward success and failure
-### Additional info
+#### Additional info
 - Why society has the right to claim the benefits of the talented:
 the community enables success in various way (eg culture, infra)
 - Market value is different from moral contribution: demand is mostly created by the economic system
 - -> Ethical assessment of an economic system must consider the kind of wants it tends to generate or nourish,
 not only its efficiency in satisfying wants existing at any given time
 
-## 6. The sorting machine
+### 6. The sorting machine
 - Colleges & uni as the main mechanism that societies allocate opportunity
 - Origin & history: goal: find the most talented, not the privileged to lead society
 - Results:
@@ -192,7 +198,7 @@ not only its efficiency in satisfying wants existing at any given time
     - Devote greater support to community colleges, technical & vocational education, and job training
     - Popularized moral & civic education
 
-## 7. Recognizing work
+### 7. Recognizing work
 - Current situation:
   - Increased rate of death of despair
   - Increased resentment due to:
@@ -217,7 +223,7 @@ not only its efficiency in satisfying wants existing at any given time
 - -> Need to deliberate about the common life
 - -> Rebuild the social bond
 
-# Criticism
+## Criticism
 - Too much history & quotation & repetition: I don't give a fuck about what the US presidents said?
 - Too much states, some seems like cherry-picked
 - -> Should have just keep in ref
@@ -227,6 +233,6 @@ not only its efficiency in satisfying wants existing at any given time
   - Random stats & comparison with VN war
   - Consumption tax is regressive tax
 
-# Takeaway
+## Takeaway
 - Understanding of important contemporary matter: populist backlash & its causes
 - Understanding of meritocracy & its problems & some proposed solutions

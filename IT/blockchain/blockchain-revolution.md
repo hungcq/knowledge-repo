@@ -1,5 +1,9 @@
 # Blockchain Revolution
-Don Tapscott and Alex Tapscott 2018
+
+## Info
+- Type: book
+- Author: Don Tapscott, Alex Tapscott
+- Year: 2018
 
 ## Category
 IT, blockchain, economics, politics, sociology

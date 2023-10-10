@@ -1,18 +1,24 @@
-# Category
+# Common Sense
+
+## Info
+- Type: book
+- Author: TODO
+
+## Category
 Politics
 
-# Style
+## Style
 - Rhetorical
 
-# Main points
-## Of the origin and design of government in general. With concise remarks on the English constitution.
+## Main points
+### Of the origin and design of government in general. With concise remarks on the English constitution.
 - Origin of gov, from small society to big country
 - -> Goal: ensure order, freedom & security
 - Good gov design: simple
 - -> More ordered & easier to repair
 - Analysis of the complexity & absurdity of the English gov
 
-## Of monarchy and heredity succession
+### Of monarchy and heredity succession
 - Analysis of Scripture
 - Absurdity of heredity succession: violate equality
 - Origin of heredity succession: for convenience, avoid disorder during election
@@ -22,7 +28,7 @@ Politics
   - Regency abuse power when king is weak
 - Historical evidence of instability
 
-## Thoughts on the present state of American affairs
+### Thoughts on the present state of American affairs
 - Imp of the matter: involve a continent & posterity
 - Answers to arguments favouring reconciliation - dependence on Britain:
   - Origin: America flourished when in connection with UK:
@@ -53,7 +59,7 @@ Politics
   - Before missing the chance to establish a good gov
   - Right moment when the conflict is high
 
-## Of the present ability of America, with some miscellaneous reflections
+### Of the present ability of America, with some miscellaneous reflections
 - The right time for revolution, regarding:
   - Military power
   - Number of inhabitants
@@ -62,9 +68,9 @@ Politics
 - Discussion of America & Britain navy force
 - Discussion of the organization of the gov
 
-# Criticism
+## Criticism
 - Arguments are not that sound: derive from some parallels & a few examples
 - Not strictly coherent: some parts seem irrelevant, out of place
 
-# Takeaways
+## Takeaways
 - Historical perspective on the American revolution

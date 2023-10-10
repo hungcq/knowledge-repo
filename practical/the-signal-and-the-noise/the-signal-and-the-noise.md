@@ -1,7 +1,13 @@
-# Category: practical
+# The Signal And The Noise
 
-# Structure
-## Outline
+## Info
+- Type: book
+- Author: TODO
+
+## Category: practical
+
+## Structure
+### Outline
 - Intro:
   - Problem with more data
   - Difficulty of prediction. Intro solution.
@@ -27,7 +33,7 @@
     - Global warming
     - Terrorism
 
-## Detailed structure
+### Detailed structure
 - Chap 1:
   - 2008 financial crisis as a failure of prediction at various stages
   - Out of sample problem in prediction
@@ -81,18 +87,18 @@
   - Analysis of threat of terrorist attack
   - Imp of imagination & consideration of the unknown unknown
 
-# Author's problems & solutions
+## Author's problems & solutions
 - Provide insight to: predict better, avoid repeating mistake: OK
 - Investigate data-driven prediction in many fields: OK at surface level
 
-# Presentation & style
+## Presentation & style
 - Author's claim:
   - Detailed -> immerse in the topic -> insight
   - Choose topics with public info -> verifiable
 - Narrative style: stories of predictions in dif fields
 - Basically an easy read: the book is long but messages are not condense: can read fast most of the time
 
-# Terms
+## Terms
 - Risk vs uncertainty:
   - Risk: quantifiable
   - Uncertainty: hard to measure
@@ -114,8 +120,8 @@
 - -> Science resembles consensus process
 - Unknown unknown: thing that we don't know we don't know, possibility that we haven't considered
 
-# Arguments
-## Introduction
+## Arguments
+### Introduction
 - Problem with lots of info:
   - Instinctually cherry-pick the confirming info (confirmation bias) -> more one-sided
   - -> Need to be aware of the biases to get the benefits of additional info
@@ -137,7 +143,7 @@
   - Accept that objective truth will always be affected by subjective point of view
 - Prediction connects subjective & objective reality: test theory by making falsifiable prediction in the real world
 
-## 1. A catastrophic failure of prediction
+### 1. A catastrophic failure of prediction
 - Common mistakes in making prediction:
   - Cherry picking, confirmation bias
   - Ignore hard to measure risks
@@ -150,7 +156,7 @@
   - -> Issue: more uncertainty, less clear relationship, less confident, less persuasive
 - Precise problem: mistaking risk for uncertainty, making precise prediction when there is lots of uncertainty
 - -> Failed sense of confidence
-### Additional info
+#### Additional info
 - Dif assumptions about level of dependence in a system can provide very dif answers
 - Common ways to explain away bad prediction:
   - Blame bad luck: less credible when:
@@ -159,7 +165,7 @@
   - -> Problems in the model, not the world itself
   - Plead ignorance: nobody saws it coming
 
-## 2. Are you smarter than a television pundit?
+### 2. Are you smarter than a television pundit?
 - Confirmation bias:
   - More info -> worse prediction
   - Solution: recognize influence of our assumptions & biases in the forecast & question ourselves about them
@@ -170,7 +176,7 @@
   - -> Keep record of all forecasts to evaluate forecasting performance over the whole course of predicting an event
   - Look from dif viewpoints, consider predictions from other forecasters
   - Aggregate dif types of info from dif fields into models. Qualitative factors can be considered (eg transformed using numerical scale).
-### Additional info
+#### Additional info
 - Hedgehog vs fox writers/thinkers:
   - Hedgehog: believe in big ideas, principles that governing every interaction in society
   - -> Sound confident, more likely to appear in the press/TV
@@ -180,7 +186,7 @@
   - -> Might be mistaken for lack of confidence & conviction
   - <img src="./resources/2.png" width="500"/>
 
-## 3. All I care about is W's and L's
+### 3. All I care about is W's and L's
 - Scout (qualitative) vs statistical approach:
   - Scout bias:
     - Affected by irrelevant/not critical info
@@ -188,14 +194,14 @@
   - Statistical bias: assume that if sth can't be easily quantified, it doesn't matter
 - -> Collect as much info as possible, but be rigorous and disciplined when analyzing it
 - -> Competent forecaster makes better prediction when more info is available
-### Additional info
+#### Additional info
 - New ideas that provide competitive advantage are rarely found in normal thinking process
 - -> Need to either:
   - Dig into the details
   - Think at the most abstract level to find alternative paradigm
 - -> Require tools & habits
 
-## 4. For years you've been telling us that rain is green
+### 4. For years you've been telling us that rain is green
 - Forecast is useful when:
   - We can do sth about it
   - There are people believing it
@@ -216,7 +222,7 @@
   - Economic value: whether the forecast help the public and policy-makers make better decision
 - -> Accuracy is the best policy
 
-## 5. Desperately seeking signal
+### 5. Desperately seeking signal
 - When disaster occurs, there is a tendency to look for a signal in the noise, anything that might explain the chaos
 - Overfitting:
   - Mistake noise for a signal
@@ -226,7 +232,7 @@
     - Poor understanding of the fundamental relationships
 - -> Models score better on paper but worse in the real world
 
-## 6. How to drown in three feet of water
+### 6. How to drown in three feet of water
 - Problems of economic forecasts:
   - Only a single number is presented, not handle uncertainty
   - Difficulties:
@@ -241,10 +247,10 @@
 - How to improve forecasts' quality:
   - Supply-side approach: prediction market
   - Demand-side approach: reduce demand for inaccurate & overconfident forecasts
-### Additional info
+#### Additional info
 - Rational bias: less reputation -> less to lose -> make more extreme forecast
 
-## 7. Role models
+### 7. Role models
 - Problems in infectious disease prediction:
   - Extrapolation from small amount of unreliable data
   - Prediction change the way people behave -> self-cancelling & self-fulfilling predictions:
@@ -257,7 +263,7 @@
     - Try to understand why
     - Plan for it
     - Minimize its cost
-### Additional info
+#### Additional info
 - Should not extrapolate when predicting on exponential scale: range of possible outcomes too big
 - Agent-based modeling:
   - Similar to simulation
@@ -269,7 +275,7 @@
   - Hard to test because major diseases are rare
   - Only help to perform experiments, not predicting outbreaks for now
 
-## 8. Less and less and less wrong
+### 8. Less and less and less wrong
 - Don't think of the future in terms of no-lose bets, impeachable theories, infinitely precise measurements
 - -> Think of it as probability
 - -> Bet when our estimation of probabilities diverge by a sufficient margin from the odds on offer
@@ -303,11 +309,11 @@
   - Develop a hypothesis to explain the phenomenon
   - Formulate a prediction from the hypothesis
   - Test the prediction
-### Additional info
+#### Additional info
 - The past and the future both can be expressed in terms of long-run probabilities
 - -> Dif from the present: only 1 thing can happen
 
-## 9. Rage against the machine
+### 9. Rage against the machine
 - Heuristic approach to problem-solving: apply rules of thumb when a deterministic solution is beyond practical capacity
 - -> Biases and blind spots will exist
 - Human strengths:
@@ -322,12 +328,12 @@
   - -> Computer is not useful
   - Decent data, imperfect understanding of cause
   - -> Need trial and error approach: human produces lots of ideas, then test them with data & prediction
-### Additional info:
+#### Additional info:
 - When there is not enough time to process information: might need to trade off between breath and depth
 - When the model produces unexpected/hard-to-explain result: should lean toward "bug" interpretation
 - Biases & blind spots of the forecaster will be replicated in his computer program
 
-## 10. The poker bubble
+### 10. The poker bubble
 - Avoid result-oriented bias: blaming luck for failure & taking account for success
   - When there is short feedback loop: apply more rigor in evaluating predictions
   - When the data is noisy: focus more on decision making process, not result:
@@ -345,10 +351,10 @@
 - In fields that involve lots of luck, dif in skills might take a long time to be visible
 - -> Need to be honest with yourself, adjust belief of whether you are good based on results & prior expectation
 - -> Need to ack which is under control and which is out of control
-### Additional info
+#### Additional info
 - Poker is good for practicing probabilistic judgement under uncertainty
 
-## 11. If you can't beat 'em...
+### 11. If you can't beat 'em...
 - Betting market: create incentive by putting money on opinion
 - Group forecast:
   - Usually beat typical individual one, but not necessarily a good forecast or the best forecast
@@ -356,44 +362,44 @@
 - -> Still need to improve individual forecasts to improve group performance
 - Should have a strong supporting evidence if your forecast is against the consensus view
 - -> Can occasionally beat the market, but not all the time
-### Additional info
+#### Additional info
 - Traders judged on short-term performance will follow the herd
 - -> Bubbles might be inevitable
 - Opportunities to short a bubbles or long a panic will come every 15-20 years, but not enough to make a steady career
 
-## 12. A climate of healthy skepticism
+### 12. A climate of healthy skepticism
 - Noisy data can obscure the signal, even in cases where there is no doubt that the signal exists
 - Always make a backup plan (reasonable baseline case) in case the model fails
-### Additional info
+#### Additional info
 - Conclusions regarding global warming:
   - Greenhouse effect almost certainly exists & will be exacerbated by manmade of CO2 emissions
   - -> Likely to make the planet warmer
   - Impacts of warming effect are uncertain, but likely not good
 
-## 13. What you don't know can hurt you
+### 13. What you don't know can hurt you
 - There are cases where there are lots of signal
 - -> Need signal analysis capabilities to sort out the relevant signals
 - Tendency to mistake the unfamiliar for the impossible
 - -> Need to admit what we don't know
 
-## Conclusion
+### Conclusion
 - Strategy to close the gap between what we know and what we think we know: Bayesian thinking:
   - Hold different hypotheses at once
   - Set prior based on past/collective exp or common sense, update based on new evidence
   - Don't mistake approximation for the real world
   - Make lots of forecasts & test them
-### Additional info
+#### Additional info
 - Nature might become more predictable
 - Human affair will become harder to predict because of new technologies
 
-# Criticism
+## Criticism
 - Chap 8 discuss disadvs of Fisher approach but doesn't describe it first
 - Chap 10 when considering between call and fold decisions, should take stake into account (win/loss amount, not probabilities)
 - Chap 11 analysis of economics & financial market is quite shallow
 - The topics in many chapters are big (eg economics, finance)
 - -> Some high level overview of the issues and lessons are presented, but clearly not detailed enough
 
-# Takeaways
+## Takeaways
 - Basic poker skill
 - Fuller understanding of scientific method & role of prediction in science
 - Problems of prediction, esp in the age of big data
@@ -401,7 +407,7 @@
 - Differences between simulation and statistical model
 - Better understanding of Bayesian theorem & imp of thinking probabilistically
 
-# Additional info: Poker
+## Additional info: Poker
 - Less of a psychological game than a mathematical game:
 depends on making probabilistic judgements under uncertainty
 - Skills:
