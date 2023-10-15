@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Timothy D. Wilson
 
 ## Category
 Psychology, unconscious, self-awareness

@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Natasha D. Schull
 
 ## Category
 Design, psychology, gambling, addiction

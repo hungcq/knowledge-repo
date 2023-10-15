@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Alfred North Whitehead
 
 ## Category
 - Mathematics

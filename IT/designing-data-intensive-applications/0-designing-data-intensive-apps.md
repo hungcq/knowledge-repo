@@ -2,4 +2,4 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Martin Kleppmann

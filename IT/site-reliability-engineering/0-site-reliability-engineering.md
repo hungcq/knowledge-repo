@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Editors: Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 ## Category
 - Software engineering

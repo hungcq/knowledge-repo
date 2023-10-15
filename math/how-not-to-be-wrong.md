@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Jordan Ellenberg
 
 ## Category
 Math, theoretical, using normal experience/examples

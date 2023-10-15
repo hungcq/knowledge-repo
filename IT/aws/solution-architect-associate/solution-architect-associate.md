@@ -2,4 +2,4 @@
 
 ## Info
 - Type: exam, course
-- URL: TODO
+- URL: https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/

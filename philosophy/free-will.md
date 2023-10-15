@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Sam Harris
 
 ## Concept
 - Oxford dictionary: the power of acting without the constraint of

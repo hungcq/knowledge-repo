@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Michael Pollan
 
 ## Category: practical, history, science
 

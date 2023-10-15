@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: John Carnell, Illary Huaylupo Sánchez
 
 ## Category
 - IT

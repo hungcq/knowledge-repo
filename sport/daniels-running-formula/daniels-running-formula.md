@@ -1,17 +1,23 @@
-# Category
+# Daniels Running Formula
+
+## Info
+- Type: book
+- Author: Jack Daniels
+
+## Category
 Sport, practical
 
-# Structure
-## Outline
+## Structure
+### Outline
 - Preface: approach intro, goals, structure
 - Part 1: training information, considerations, and options that can contribute to the success of all runners
 - Part 2: training advice and programs specific to different events and distances
 
-# Goals
+## Goals
 - Provide practical scientific info for both coaches & athletes
 - Present what I think to be the best approach to training for or coaching middle- and long-distance running events
 
-# Terms
+## Terms
 - Viscosity: nhầy
 - Types of training (increasing level of intensity):
   - E: easy running (or jogging). L run: typically at E pace. jg: jog: jogging or slow running.
@@ -21,14 +27,14 @@ Sport, practical
   - R: repetition training. ST: stride: light, quick 15-20s run (not sprinting) with 45-60s rest between
 - Stroke volume: amount of blood pumped with each heart beat
 
-# Main points
-## Preface
+## Main points
+### Preface
 - Approach:
   - Consistent training
   - Produce the most benefit from the least amount of stress, not the highest possible amount
 
-## I - Understanding the formula for training
-### 1. Essentials of running success
+### I - Understanding the formula for training
+#### 1. Essentials of running success
 - 4 basic ingredients:
   - Inherent ability: physiologically & biomechanically (eg joint & muscle position, efficiency of the cardiovascular system)
   - Intrinsic motivation
@@ -52,7 +58,7 @@ Sport, practical
   - A good run or race is never a fluke: you are capable of doing it
 - -> To take adv: memorize & make it a habit
 
-### 2. Training principles and tips
+#### 2. Training principles and tips
 - Can be adjusted
 - Each principle improves dif bodily functions
 - Principles of training:
@@ -110,10 +116,10 @@ Sport, practical
     - -> 2-2 for first 2/3 race, 2/1 for the final 1/3
   - At altitude, faster breathing rate is easier: air less dense -> less air flow resistence
   - Can check breathing rhythm to determine how hard is the training
-#### Additional info:
+##### Additional info:
 - Muscular discomfort associated with a hard session is realized ~48 hours after the stress
 
-### 3. Physiological & personal training profiles
+#### 3. Physiological & personal training profiles
 - Aerobic profile:
   - Economy curve: how much aerobic involvement is associated with increasing workloads
   - <img src="./resources/3.2.png" width="400">
@@ -148,14 +154,14 @@ Sport, practical
   - To set up a training plan that best fits each indi:
   should gather basic info about the past & current state of fitness and time availability
   - <img src="./resources/3.8.png" width="400">
-#### Additional info
+##### Additional info
 - Training intensity is not always the same at the same speed of running. Examples of other factors:
   - Temperate
   - Wind
   - Hilly terrain
   - Rough/muddy footing
 
-### 4. Types of training and intensities
+#### 4. Types of training and intensities
 - Easy running (E):
   - Intensity: 59-74% VO2 max or 65-79% max heart rate
   - Benefits:
@@ -256,12 +262,12 @@ Sport, practical
     - Increase weekly mileage
 - Summary:
   - <img src="./resources/4.1.png" width="500">
-#### Additional info
+##### Additional info
 - Stay at any amount of weekly time spent running for at least 3-4 weeks before increasing the training amount
 - When max for the season, can increase or decrease weekly amounts based on weather or other situations limiting available time
 - Should use time, not distance, as the factor limiting types of training
 
-### 5. VDOT system of training
+#### 5. VDOT system of training
 - Race time imp as a measurement: reflect max, economy, threshold & mental approach to racing
 - VDOT (V.O2): represent performance
 - -> Higher value is associated with better runner, regardless of age or sex
@@ -273,7 +279,7 @@ Sport, practical
   - <img src="./resources/5.3-tab.png" width="500">
 - 6-second rule: add 6s (7-8s for runner in 40-50 VDOT categories) for lower training intensity per 400m
 
-### 6. Environment- and altitude-specific training
+#### 6. Environment- and altitude-specific training
 - It is beneficial to train under the same conditions where important races will take place
 - Don't try to train a lot under adverse conditions because you will not be able to train as hard as usual
 - When racing in:
@@ -281,9 +287,9 @@ Sport, practical
   - In cold conditions: start the race in an extra upper-body layer and discard them during the race after warmed up
 - Altitude training: skipped
 
-### 7. Treadmill training
+#### 7. Treadmill training
 
-### 8. Fitness training
+#### 8. Fitness training
 - 4 training plans for dif types of runners:
   - White plan: beginners or people just came back to running
     - <img src="./resources/8.1-tab-1.png" width="400">
@@ -298,7 +304,7 @@ Sport, practical
 - -> Blue and gold plan are more than adequate to prepare for serious racing
 - -> Can move on to structured event-training programs in part 2 of the book
 
-### 9. Training breaks and supplemental training
+#### 9. Training breaks and supplemental training
 - Types of training breaks:
   - Unplanned:
     - Might be due to injury/illness -> can't do any running or alternative exercises
@@ -324,31 +330,31 @@ Sport, practical
   - Arm and leg flapping
   - Recovery run
 
-## II - Applying the formula to competitive events
-### 10. Season-tailored training
+### II - Applying the formula to competitive events
+#### 10. Season-tailored training
 
-### 11. 800 meters
+#### 11. 800 meters
 
-### 12. 1500 meters to 2 miles
+#### 12. 1500 meters to 2 miles
 
-### 13. 5K and 10K
+#### 13. 5K and 10K
 
-### 14. Cross country
+#### 14. Cross country
 
-### 15. 15K to 30K
+#### 15. 15K to 30K
 
-### 16. Marathon
+#### 16. Marathon
 
-### 17. Ultradistance
+#### 17. Ultradistance
 
-### 18. Triathlon
+#### 18. Triathlon
 
-# Criticism
+## Criticism
 - Most pictures (except information table) are irrelevant
 - Mixing miles and meter is really messy
 - Partly an informational book: half of the book should be used as reference instead of for understanding
 
-# Takeaway
+## Takeaway
 - Training principles
 - Dif types of training & benefits
 - Training plans for dif levels of fitness & dif types of race

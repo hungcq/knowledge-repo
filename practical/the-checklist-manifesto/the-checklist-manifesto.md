@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Atul Gawande
 
 ## Category
 Practical, design, human error

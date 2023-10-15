@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Alex Xu
 
 ## Category
 Practical, IT, System design

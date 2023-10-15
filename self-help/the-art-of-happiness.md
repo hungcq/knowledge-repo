@@ -1,6 +1,12 @@
-# Category: practical, self-help
+# The Art Of Happiness
 
-# Structure (only finished chap 6)
+## Info
+- Type: book
+- Author: Dalai Lama XIV, Howard C. Cutler
+
+## Category: practical, self-help
+
+## Structure (only finished chap 6)
 - Author's note & intro:
   - Main content
   - Dalai Lama (DL) as a character
@@ -28,17 +34,17 @@
     - How to connect with others (cont)
     - On relationship & romance
 
-# Author's goals
+## Author's goals
 - Identify principles DL uses to achieve happiness
 - Present to Western, non-Buddhist audience
 
-# Style
+## Style
 - Narrative
 - Divided by subject-matter
 - Focus on applicable material, reduce religious aspect
 
-# Content
-## Introduction
+## Content
+### Introduction
 - Communication philosophy: relate to other as another human being, focus on the similarity instead of the difference
 - DL's view about science
 - Principles:
@@ -47,7 +53,7 @@
 - -> Formed by sound reasoning, rational discussion & broad direct experience
 - -> Wise approach to deal with human problem that is both optimistic & realistic
 
-## 1. The right to happiness
+### 1. The right to happiness
 - Happiness is the ultimate goal
 - Mind def: include intellect & feeling
 - Happiness can be achieved through training of the mind: to apply inner discipline
@@ -56,7 +62,7 @@
   - Cultivate happiness factors & eliminate suffering factors
 - Experiments demonstrate that happy people exhibit certain quality of openness, willingness to help others
 
-## 2. The sources of happiness
+### 2. The sources of happiness
 - Baseline level of happiness = genetical, moment to moment happiness = perception
 - Change > absolute level
 - People always compare with others
@@ -71,7 +77,7 @@
     - How to achieve: want & appreciate what we have
   - Inner worth: source: able to relate to other people
 
-## 3. Training the mind for happiness
+### 3. Training the mind for happiness
 - Causal principle -> seek/avoid causes/conditions that give rise to happiness/suffering
 - 2 types of mental states:
   - Hostile to others: hatred, jealousy, anger -> negative
@@ -85,14 +91,14 @@
     - Counter-argument: why training is needed if human naturally pursue happiness?
     - -> Answer: natural reaction is for short term goal -> need rational consideration to know what is good in the long term
 
-## 4. Reclaiming our innate state of happiness
+### 4. Reclaiming our innate state of happiness
 - Buddha Nature doctrine: underlying nature of human is gentleness
 - -> Can adopt the belief without resort to the doctrine: gentleness is good for physical health & development, good for society
 - To resolve conflict: need warm heart (where does this come from? Genetical?) & knowledge
 - Compassion tendency is the result of nature & nurture -> not that convincing
 - Should keep reminding ourselves of happiness as the ultimate goal
 
-## 5. A new model for intimacy
+### 5. A new model for intimacy
 - How to connect with others:
   - Try to look for their positive aspects
   - Not fear of being disliked/judged by others
@@ -110,10 +116,10 @@
 - Romantic notion of "one special person" is a product of culture
 - -> Problems: cutting people from other potential sources of intimacy, cause unhappiness when that someone is not there
 
-## 6. Deepening our connection to others
+### 6. Deepening our connection to others
 - To understand relationship problems, need to deliberately reflect on the underlying nature & basis of the relationship
 
-# Criticism
+## Criticism
 - While trying to present a way to achieve happiness, the question of what is happiness was not adequately addressed (p.14),
 even mistaken with satisfaction
 - Just a cheap self-help book, quickly written without doing homework

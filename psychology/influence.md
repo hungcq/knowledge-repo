@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Robert Cialdini
 
 ## Category
 - Psychology

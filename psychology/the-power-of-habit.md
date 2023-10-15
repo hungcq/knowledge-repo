@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Charles Duhigg
 
 ## Notes
 - Replace existing habit: keep cue and reward, change routine; belief that difficulties can be overcome

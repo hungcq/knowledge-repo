@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Chris Richardson
 
 ## Category
 IT, backend, microservices, architecture, development

@@ -1,8 +1,8 @@
-# Mastering NodeJS
+# Mastering Node.js
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Sandro Pasquali
 
 ## Content
 

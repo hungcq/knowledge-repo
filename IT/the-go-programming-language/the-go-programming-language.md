@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Alan A. A. Donovan, Brian Kernighan
 
 ## Category
 - IT

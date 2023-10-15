@@ -1,8 +1,8 @@
-# English Grammar In Use Intermediate
+# English Grammar In Use Intermediate Level
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Raymond Murphy
 
 ## Content
 

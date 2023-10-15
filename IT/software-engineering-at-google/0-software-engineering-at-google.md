@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Authors: Titus Winters, Tom Manshreck, Hyrum Wright
 
 ## Category
 - Software engineering, best practices

@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Anna Rosling Rönnlund, Hans Rosling, Ola Rosling
 
 ## Resources
 - 8.5

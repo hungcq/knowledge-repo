@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Mortimer J. Adler, Charles Van Doren
 
 ## Category
 Practical, reading, books

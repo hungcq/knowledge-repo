@@ -2,7 +2,7 @@
 
 ## Info
 - Type: book
-- Author: TODO
+- Author: Bertrand Russell
 
 # How to avoid silly errors
 - Make the observation yourself
