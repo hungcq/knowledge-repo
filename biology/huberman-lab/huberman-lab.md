@@ -54,3 +54,8 @@
 - 4 types: muscular, long duration, high intensity interval training: aerobic & anaerobic
 - Benefit of last 3 types: more oxygen & blood to the brain & muscle
 - Improve performance: have a visual destination
+
+### Huberman routine
+- Improve mood: omega 3
+- Improve metabolism: 5-15 min walk after meal
+- Non sleep deep rest: various brain & body benefits, https://www.reveri.com/. Hypnosis as a directed tool.
