@@ -32,6 +32,17 @@
     - Engineering work: types
   - Process of eliminating toil
   - When toil is bad
+- Chap 6: monitoring distributed systems:
+  - Terms
+  - Reasons to monitor a system
+  - Principles:
+    - Simplicity
+    - Blackbox vs white-box monitoring
+    - 4 golden signals
+    - Use distribution, not average
+    - Philosophy on pages & pagers
+    - Consideration when creating monitoring & alerting rules
+    - Issues of evolving systems & general approach
 
 ## Author's goals
 - Problem: most effort is spent after a software is built

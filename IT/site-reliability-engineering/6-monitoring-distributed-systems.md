@@ -1,0 +1,68 @@
+# 6. Monitoring distributed systems
+- Terms:
+  - Monitoring: collecting, processing, aggregating & displaying real-time quantitative data about a system
+  - Dashboard: chars:
+    - May have filters, selectors..., but is prebuilt to expose the metrics most important to its users
+    - Might display team information (eg list of high-priority bugs, current on-call engineer by area of responsibility)
+    - Alert:
+      - Def: a notification intended to be read by a human
+      - Pushed to a system such as a bug or ticket queue, an email alias, or a pager
+      - Types: ticket, email alert, page
+    - Root cause:
+      - Def: a defect in a software or human system that, if repaired,
+      instills confidence that this event won't happen again in the same way
+      - A given incident might have multiple root causes
+    - Node & machine:
+      - Def: a single instance of a running kernel in either a physical server, virtual machine, or container
+      - There might be multiple services worth monitoring on a single machine
+    - What is broken: symptom
+    - -> Why: (possibly intermediate) cause
+    - -> In a multilayered system, one person's symptom is another person's cause
+- Reasons to monitor a system:
+  - Analyzing long-term trends: eg user/DB growth rate
+  - Comparing over time or across experiment groups
+  - Alerting
+  - Building dashboards
+  - Conducting ad hoc retrospective analysis (ie debugging): eg what else happened around the same time of the issue?
+  - Others (not related to SRE):
+    - Supplying raw input into business analytics
+    - Facilitating analysis of security breaches
+- Principles:
+  - Simplicity: complex dependency hierarchy won't be stable when there is steady rate of continuous refactoring
+  - -> Google's focus: simpler & faster monitoring systems, with better tools for post hoc analysis
+  - Blackbox vs white-box monitoring:
+    - Combine heavy use of white-box monitoring with modest but critical uses of blackbox monitoring
+    - Blackbox monitoring:
+      - Symptom oriented & represent active/not predicted problems
+      - Usage:
+        - For paging: when a problem is both already ongoing and contributing to real symptoms
+        - Identify not-yet-occurring but imminent problems
+    - White-box monitoring usage: collect telemetry for debugging
+  - 4 golden signals:
+    - Latency:
+      - Def: the time it takes to service a request
+      - Need to distinguish between the latency of a successful requests and the latency of failed requests
+    - Traffic:
+      - Def: a measure of how much demand is being placed on a system, measured in high-level system-specific metric
+      - Types:
+        - Web service: HTTP requests/s. Can be divided by nature of the requests (eg static vs dynamic content)
+        - Connection-oriented system: network IO rate or concurrent sessions
+        - Storage system: reads & writes & transactions per second
+    - Errors:
+      - Def: the rate of requests that fail
+      - Types:
+        - Explicit: eg HTTP 500s
+        - Implicit: eg wrong response
+        - By policy: ie what is defined as an error case
+    - -> Secondary (internal) protocols may be necessary to track partial failure modes (eg end to end system tests)
+    - Saturation:
+      - Def: a measure of your system fraction, emphasizing the resources that are most constrained
+      - -> How "full" the service is
+      - Need to set a utilization target
+      - Can be supplemented with higher-level load measurement
+      - Also concerned with predictions and impending saturation
+      - Should page when saturation is nearly problematic
+  - Use distribution, not average
+
+## Criticism
+- Not well-structured: too many headings that are all over the place
