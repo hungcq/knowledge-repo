@@ -21,7 +21,7 @@
     - Should be maintained by team that owns the real impl
     - Worth dev effort if there are lots of users (more user benefit)
   - Should be created at root of dependency (eg DB, not classes depended on DB)
-  - Fidelity:
+  - *Fidelity*:
     - To the API contracts of the real impl, from the perspective of the test
     - Can fail fast for unnecessary behaviors
     - Must have its own tests to ensure fidelity

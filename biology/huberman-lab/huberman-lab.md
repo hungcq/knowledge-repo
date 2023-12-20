@@ -59,3 +59,7 @@
 - Improve mood: omega 3
 - Improve metabolism: 5-15 min walk after meal
 - Non sleep deep rest: various brain & body benefits, https://www.reveri.com/. Hypnosis as a directed tool.
+- Get sunlight 5-30min when the sun going down in the afternoon
+- -> Regulate melatonin release: to offset negative effect of late night light
+- Avoid carb at lunch for focus & alert. Eat carb at dinner for calm & easy sleep.
+- When lack of sleep, try not to sleep too early or wake up too late to avoid disrupting sleep rhythm
