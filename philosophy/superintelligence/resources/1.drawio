@@ -1,9 +1,150 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T11:04:38.773Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.16" etag="_R6V-rDZ_QeqA1hwP21t" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-04T11:05:20.570Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="piUuAoDx2sgmophH_g4s" version="22.1.16" type="github">
   <diagram name="Page-1" id="Gwyv1nEHarVkNdXKAt6X">
-    <mxGraphModel>
+    <mxGraphModel dx="1781" dy="496" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="z1n2_DynCDEGULMoVqMm-1" value="AI field history:&lt;br&gt;multiple peaks &amp;amp; troughs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-6" target="z1n2_DynCDEGULMoVqMm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-6" target="z1n2_DynCDEGULMoVqMm-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-6" target="z1n2_DynCDEGULMoVqMm-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-6" target="z1n2_DynCDEGULMoVqMm-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-6" value="Past development" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-7" value="Bigger picture:&lt;br&gt;successive, accelerated development" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-10" target="z1n2_DynCDEGULMoVqMm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-10" target="z1n2_DynCDEGULMoVqMm-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-10" value="Repeated failed predictions &amp;amp; hypes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-11" value="Underestimation of technical difficulty" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-12" value="Failure to account for intelligence explosion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-13" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-14" target="z1n2_DynCDEGULMoVqMm-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-14" value="Progress" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-16" target="z1n2_DynCDEGULMoVqMm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-16" value="Logic paradigm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-18" target="z1n2_DynCDEGULMoVqMm-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-18" value="Multilayered neural network &amp;amp; genetic algos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-20" target="z1n2_DynCDEGULMoVqMm-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-20" value="Classification into general algo groups" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-21" value="Optimizations &amp;amp; improvements can originate from dif areas &amp;amp; can benefit many dif areas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="580" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-23" target="z1n2_DynCDEGULMoVqMm-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-23" value="AI vs software: blurring line" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-24" value="Tradeoff: computational demand vs performance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-30" target="z1n2_DynCDEGULMoVqMm-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-30" target="z1n2_DynCDEGULMoVqMm-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-30" target="z1n2_DynCDEGULMoVqMm-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-30" target="z1n2_DynCDEGULMoVqMm-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-30" target="z1n2_DynCDEGULMoVqMm-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-30" value="Present capability" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="870" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-31" value="More useful distinction: narrow vs general-purpose" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-32" value="High/superhuman performance in many areas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-33" value="Wide application" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-35" target="z1n2_DynCDEGULMoVqMm-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-35" value="Only special purpose algos are required, not GI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-36" value="High level ability might be achievable through simpler mechanism" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-40" target="z1n2_DynCDEGULMoVqMm-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-40" target="z1n2_DynCDEGULMoVqMm-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-39" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-40" target="z1n2_DynCDEGULMoVqMm-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-40" value="Expert surveys:&lt;br&gt;no consesus&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-&amp;gt; Weak conclusion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-41" value="Human level machine intelligence (HLMI)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-42" value="Author&#39;s differing view" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-43" value="Long-term impacts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-46" target="z1n2_DynCDEGULMoVqMm-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-45" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="z1n2_DynCDEGULMoVqMm-46" target="z1n2_DynCDEGULMoVqMm-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-46" value="Timing" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z1n2_DynCDEGULMoVqMm-47" value="SI arrival after reaching HLMI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1109" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
