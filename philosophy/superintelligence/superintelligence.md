@@ -50,7 +50,8 @@
 - Neuromorphic: p.34
 - WBE: p.35
 - Recursive self-improvement: p.35
-- Intelligent vs wiseL p.67
+- Biological cognition: p.43
+- Intelligent vs wise: p.67
 - Recalcitrance: p.79 (~return to scale)
 - Overhang: p.89
 - Decisive strategic advantage: p.96
@@ -66,6 +67,20 @@
 - p.171
 - p.201
 
+## Takeaway
+
 ## Main content
 ### Chap 1
 <img src="./resources/1.drawio.svg">
+
+### Chap 2
+<img src="./resources/2.drawio.svg">
+
+### Chap 3
+<img src="./resources/3.drawio.svg">
+
+### Chap 4
+<img src="./resources/4.drawio.svg">
+
+### Chap 5
+<img src="./resources/5.drawio.svg">
