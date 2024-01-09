@@ -51,6 +51,18 @@
     - Imp of tight association between model and impl
     - Suitable programming paradigm & tools
     - Implication for team's division of responsibility
+  - Chap 4: isolating the domain:
+    - Layered architecture: def, layers, adv
+    - Domain layer
+    - Smart UI pattern (vs DDD) discussion: use case & disadvs
+  - Chap 5: a model expressed in software
+    - Object associations: difficulty, mitigation
+    - 3 model elements: def, chars, design:
+      - Entity
+      - Value object
+      - Service
+    - Module (package) best practices
+    - Modeling paradigms: suitability, use cases: OOP vs others
 
 ## Goals
 - Problem: sources of complexity:
@@ -85,6 +97,9 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - -> Usually have little to do with computers
 - Domain model: a rigorously organized and selective abstraction of domain knowledge
 - Domain modeling: loosely representing reality to a particular purpose
+- Entity: an object defined primarily by its identity (not attributes)
+- Value object: an object that represents a descriptive aspect of the domain with no conceptual identity
+- Service: an operation offered as an interface that stands alone in the model, without encapsulating state
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.
