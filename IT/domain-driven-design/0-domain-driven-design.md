@@ -55,7 +55,7 @@
     - Layered architecture: def, layers, adv
     - Domain layer
     - Smart UI pattern (vs DDD) discussion: use case & disadvs
-  - Chap 5: a model expressed in software
+  - Chap 5: a model expressed in software:
     - Object associations: difficulty, mitigation
     - 3 model elements: def, chars, design:
       - Entity
@@ -63,6 +63,15 @@
       - Service
     - Module (package) best practices
     - Modeling paradigms: suitability, use cases: OOP vs others
+  - Chap 6: the life cycle of a domain object:
+    - Managing complex objects life cycle: challenges & design patterns
+    - Aggregate: problem, invariants, impl
+    - Factory: goal, design
+    - Repository:
+      - 3 ways of getting ref to an obj
+      - Problem
+      - Advs
+      - Design
 
 ## Goals
 - Problem: sources of complexity:
@@ -100,6 +109,10 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Entity: an object defined primarily by its identity (not attributes)
 - Value object: an object that represents a descriptive aspect of the domain with no conceptual identity
 - Service: an operation offered as an interface that stands alone in the model, without encapsulating state
+- Aggregate: a cluster of associated objects treated as a unit for the purpose of data changes
+- Factory: a program element whose responsibility is the creation of other objects
+- Reconstitution: the creation of an instance from stored data
+- Repository: a mechanism for encapsulating storage, retrieval & search behavior which emulates a collection of objects
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.
