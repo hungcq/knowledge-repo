@@ -72,6 +72,31 @@
       - Problem
       - Advs
       - Design
+  - Chap 7: using the language: an extended example:
+    - Design
+    - Scenarios walk through & refactoring
+  - Chap 8: breakthrough:
+    - Chars
+    - How to approach it
+  - Chap 9: making implicit concepts explicit:
+    - Goal
+    - Where to discover new concepts, with examples
+    - Modeling non-obvious concepts, with examples:
+      - Constraints
+      - Processes
+      - Specifications
+  - Chap 10:
+    - Problems of bad design
+    - -> Advs of supple design
+    - Scope of application, iterative process
+    - Patterns of supple design, with examples:
+      - Intention-revealing interfaces:
+        - Side-effect-free functions
+        - Assertions
+      - Decomposition: conceptual contours, standalone classes, closure of operations
+    - Discussion of declarative design tools & DSL
+    - Approaches to make big system supple
+    - Examples: patterns usage & combination
 
 ## Goals
 - Problem: sources of complexity:
@@ -113,9 +138,17 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Factory: a program element whose responsibility is the creation of other objects
 - Reconstitution: the creation of an instance from stored data
 - Repository: a mechanism for encapsulating storage, retrieval & search behavior which emulates a collection of objects
+- Designing (software) vs modeling (domain)
+- Breakthrough: an oppo opens up to transform the software into something more expressive and versatile
+- -> Can mean new features or the replacement of a big chunk of rigid code with a simple, flexible expression of the model
+- Making implicit concepts explicit: represent concepts hinted at discussion or present implicitly in the design
+  explicitly in the model with one or more objects or relationships
+- Specification: a predicate-like value object that determines if an object does or does not satisfy some criteria
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.
+- Chap 9: the coordination between specs & repo seems awkward
+- Chap 10: conceptual contour explanation is too abstract
 
 ## Takeaway
 - Best practices & patterns to organize the codebase for extensibility & maintainability

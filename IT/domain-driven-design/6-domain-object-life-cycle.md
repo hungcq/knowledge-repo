@@ -62,6 +62,7 @@
     - -> Pass in ID as param
     - Handling invariant violation: must repair the inconsistency
     - -> Can use ORM/parser instead if available
+  - Should contain ID generation logic
 
 ### Repository
 - 3 ways of getting ref to an object:

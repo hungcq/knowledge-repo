@@ -69,6 +69,8 @@ Philosophy, culture, science
 
 ## Content
 
+### 9. 
+
 ## Criticism
 - The education reform proposal is interesting and insightful, but it is hard to see how it can be achieved
 
