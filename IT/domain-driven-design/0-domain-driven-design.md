@@ -51,6 +51,7 @@
     - Imp of tight association between model and impl
     - Suitable programming paradigm & tools
     - Implication for team's division of responsibility
+- Part 2: the building blocks of a model-driven design:
   - Chap 4: isolating the domain:
     - Layered architecture: def, layers, adv
     - Domain layer
@@ -75,6 +76,7 @@
   - Chap 7: using the language: an extended example:
     - Design
     - Scenarios walk through & refactoring
+- Part 3: refactoring toward deeper insight:
   - Chap 8: breakthrough:
     - Chars
     - How to approach it
@@ -85,7 +87,7 @@
       - Constraints
       - Processes
       - Specifications
-  - Chap 10:
+  - Chap 10: supple design:
     - Problems of bad design
     - -> Advs of supple design
     - Scope of application, iterative process
@@ -97,6 +99,33 @@
     - Discussion of declarative design tools & DSL
     - Approaches to make big system supple
     - Examples: patterns usage & combination
+  - Chap 11: applying analysis patterns:
+    - Analysis pattern def
+    - Chars
+    - Components
+    - Example of application in DDD process
+    - Advs
+    - Best practices
+  - Chap 12: relating design patterns to the model:
+    - Design vs domain patterns
+    - Design patterns usage in DDD
+    - Example of application: strategy & composite pattern
+  - Chap 13: refactoring toward deeper insight:
+    - Process
+    - Best practices & experience
+- Part 4: strategic design:
+  - Chap 14: maintaining model integrity:
+    - Model unification: def, risk, process
+    - Bounded context: goal, components, motivation, process
+    - Patterns to relate 2 models (model context strategies):
+      - Shared kernel
+      - Customer/supplier
+      - Conformist
+      - Anti-corruption layer
+      - Separate ways
+      - Open host service
+      - Published language
+    - -> Transformation (refactoring)
 
 ## Goals
 - Problem: sources of complexity:
@@ -144,6 +173,12 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Making implicit concepts explicit: represent concepts hinted at discussion or present implicitly in the design
   explicitly in the model with one or more objects or relationships
 - Specification: a predicate-like value object that determines if an object does or does not satisfy some criteria
+- Analysis patterns: patterns based on accumulated exp solving problems in one/some particular domains
+- Model unification: the internal consistency of a model, such that each term is unambiguous and no rules contradict
+- Context:
+  - Informal: where a model applies (eg a certain part of the code or the work of a particular team)
+  - Formal: a set of conditions must apply in order to be able to say that the terms in a model have a specific meaning
+- Duplication of concepts: there are 2 model elements (and attendant impls) that actually represent the same concept
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.

@@ -1,0 +1,21 @@
+## 13. Refactoring toward deeper insight
+- Process:
+  - Step 1: identify the problems: could be in:
+    - Complexity/awkwardness in the code
+    - Language of the model seems disconnected from the domain experts
+    - New requirements are not fitting in naturally
+    - New understanding of the domain
+  - -> The most difficult & uncertain part of refactoring toward deeper insight
+  - Step 2: refine the model to make it communicate clearly & naturally:
+    - Can be a small change
+    - Can be a bigger change that involves more skilled devs & domain experts & requires several meetings (2-3 at most)
+- Step 3: design:
+  - Seek refs from domain literature/analysis patterns
+  - Aim for supple design
+- Best practices:
+  - Should be able to assemble a small team on the fly to solve the problem
+  - Pick an appropriate scope
+  - Use & refine the ubi lang with the help of domain experts
+  - Create a process that embraces necessary refactoring & doesn't require elaborate justification
+  - -> Refactoring should be part of an exploratory process
+- Evolution process is non-linear (see breakthrough) & usually emerges in the form of a crisis (inadequacy in the model)
