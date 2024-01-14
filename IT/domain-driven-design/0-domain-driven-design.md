@@ -126,6 +126,19 @@
       - Open host service
       - Published language
     - -> Transformation (refactoring)
+  - Chap 15: distillation:
+    - Distillation: problem, advs, goal
+    - Core domain: problem, def, goals, process
+    - Distillation techniques:
+      - Domain vision statement
+      - Highlighted core:
+        - Distillation doc
+        - Flagged core
+      - Generic subdomains
+      - Cohesive mechanisms
+      - Segregated core
+      - Abstract core
+  - Chap 16:
 
 ## Goals
 - Problem: sources of complexity:
@@ -179,11 +192,15 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
   - Informal: where a model applies (eg a certain part of the code or the work of a particular team)
   - Formal: a set of conditions must apply in order to be able to say that the terms in a model have a specific meaning
 - Duplication of concepts: there are 2 model elements (and attendant impls) that actually represent the same concept
+- Shared kernel: designate some subset of the domain model that the 2 teams agree to share, including code & DB design
+- Core domain: those parts of the model distinctive and central to the purposes of the intended apps
+- Generic subdomains: general principles everyone knows or details that belong to supporting specialties
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.
 - Chap 9: the coordination between specs & repo seems awkward
 - Chap 10: conceptual contour explanation is too abstract
+- Chap 14: shared kernel pattern seems outdated with the introduction of API
 
 ## Takeaway
 - Best practices & patterns to organize the codebase for extensibility & maintainability
