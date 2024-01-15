@@ -138,7 +138,14 @@
       - Cohesive mechanisms
       - Segregated core
       - Abstract core
-  - Chap 16:
+  - Chap 16: large-scale structure:
+    - Large-scale structure: def, problems, goal, advs, chars, usage, evolution
+    - Patterns: problem, def, usage, design:
+      - System metaphor
+      - Respon layers
+      - Knowledge level
+      - Pluggable component framework
+    - Design: restrictiveness, best practices
 
 ## Goals
 - Problem: sources of complexity:
@@ -195,6 +202,10 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Shared kernel: designate some subset of the domain model that the 2 teams agree to share, including code & DB design
 - Core domain: those parts of the model distinctive and central to the purposes of the intended apps
 - Generic subdomains: general principles everyone knows or details that belong to supporting specialties
+- Large-scale structure:
+  - Informal: a language that lets you discuss and understand the system in broad strokes
+  - Formal: a set of high-level concepts or rules or both that establishes a pattern of design for an entire system
+- Stratification: division into layers
 
 ## Criticism
 - Some parts are too abstract. Hard to understand/apply given only 1 example.
