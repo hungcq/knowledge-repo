@@ -146,6 +146,15 @@
       - Knowledge level
       - Pluggable component framework
     - Design: restrictiveness, best practices
+  - Chap 17: bringing the strategy together:
+    - Combinations:
+      - Principles
+      - LSS & bounded context
+      - LSS & distillation
+    - Strategic design:
+      - Assessment
+      - Process
+      - Decision-making
 
 ## Goals
 - Problem: sources of complexity:
@@ -173,7 +182,7 @@
   - Written as a set of patterns (format see Appendix)
   - Require some knowledge of OO modeling
 
-## Terms
+## Terms (see also Glossary)
 - Model: a simplification. An interpretation of reality
 that abstracts the aspects relevant to solving the problem at hand and ignores extraneous detail.
 - Domain: a subject area to which the user applies the program
@@ -202,7 +211,7 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Shared kernel: designate some subset of the domain model that the 2 teams agree to share, including code & DB design
 - Core domain: those parts of the model distinctive and central to the purposes of the intended apps
 - Generic subdomains: general principles everyone knows or details that belong to supporting specialties
-- Large-scale structure:
+- Large-scale structure (LSS):
   - Informal: a language that lets you discuss and understand the system in broad strokes
   - Formal: a set of high-level concepts or rules or both that establishes a pattern of design for an entire system
 - Stratification: division into layers
@@ -254,3 +263,10 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
   - Core: intro to part 1, chap 1, 2, 3, 9, 14
   - Advanced topic: part 3, 4
 - Imp of adopting DDD for the whole team: better comm, better design & impl, better collaboration with other teams
+
+### Conclusion
+- Call for creating tools to facilitate DDD
+- Advs of patterns:
+  - Offer solutions to known problems
+  - -> Facilitate higher level thinking
+  - Facilitate comm

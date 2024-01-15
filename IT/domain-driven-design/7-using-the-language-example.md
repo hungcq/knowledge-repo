@@ -13,12 +13,14 @@ in the previous 3 chapters to handle requirements
     - Decide which entities need repo: consider user flow in app requirement
     - Use service to encapsulate functions of other systems & specify their responsibilities in our system
     - -> Can have a lower level class to handle communicating with the other program
-- img 7.2, 7.3, 7.4
+- <img src="./resources/7.2.png" width="800">
+- <img src="./resources/7.3.png" width="800">
+- <img src="./resources/7.4.png" width="800">
 - Walk through design scenarios to cross-check design decisions
 - Considerations for designing one to many association:
   - Frequent update, rare retrieval of the collection: replace collection with a query to avoid contention
   - Infrequent update, frequent retrieval of the collection: use object ref collection
-- Img 7.6
+- <img src="./resources/7.6.png" width="800">
 - Model partitioning: look for the cohesive concepts
 & focusing on what we want to comm to others on the project using ubi lang
 - Enterprise segment as a pattern to encapsulate type information

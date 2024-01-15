@@ -9,7 +9,7 @@
 - Chapter goal:
   - Layout systematic approach to strategic distillation of the core domain
   - Explain how to effectively share a view of it within the team & provide a language to walk about what we are doing
-- Img 15.1
+- <img src="./resources/15.1.png" width="700">
 
 ### Core domain
 - Problems of big, complicated model:
@@ -167,7 +167,7 @@ with conceptual coherent assertions & side-effect-free functions
   - Synchronize between team members via comm: insights & decision
 
 #### Abstract core
-- img under title
+- <img src="./resources/abstract-core.png" width="600">
 - Problem: even the core domain model usually has so much detail that comm the big picture can be difficult
 - Def: refactor interaction between subdomains in separate modules into a special core module (~ a manager)
 - -> Must be based on domain insight

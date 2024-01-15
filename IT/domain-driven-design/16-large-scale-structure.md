@@ -12,7 +12,7 @@
   to hold together all the teams & subsystems involved in the project
   - Shape and explain the model & design but do not appear in it
   - -> Shouldn't be presented in UML
-- Img 16.1
+- <img src="./resources/16.1.png" width="700">
 
 ### Evolving order (evolution)
 - Limitation: rigidity
@@ -58,11 +58,11 @@
     - Decision support: analysis & decision-making, using historical data & info from lower layers
   - Software that enforces elaborate business rules or legal requirements:
   add a policy layer: specifying business rules & goals
-  - Img 16.13
+  - <img src="./resources/16.13.png" width="700">
   - For business with less fixed assets (eg financial service, insurance):
     - Can merge operation & potential layer
     - Introduce commitment layer: reflecting agreements with customers/other businesses
-  - Img 16.14
+  - <img src="./resources/16.14.png" width="700">
 - Design:
   - Should stay within 4-5 layers
   - Should not force designs into layers when it is not natural
@@ -80,3 +80,31 @@
   - Require configuration skill when the system behavior becomes complex
   - Complication/unexpected behaviors when changing structure in knowledge level
   - -> Lots of foresight needed when designing knowledge level
+
+#### Pluggable component framework
+- Problem: high cost of integrating multiple bounded context
+- Components:
+  - An abstract core of interfaces & interactions
+  - Dif impl of those
+- -> Can be used by dif clients
+- Limitations:
+  - Hard to apply, requires:
+    - Design skill
+    - Deep, mature model
+  - Rigidity
+
+### Design
+- Dif level of restrictiveness at:
+  - LSS patterns
+  - Rules of each pattern
+- -> Should focus on developer exp: guide toward a good design while retaining flexibility
+- General ways of controlling cost & maximizing gain while evolving the structure:
+  - Minimalism: keep the structure simple & lightweight: address the most serious concerns
+  - Process:
+    - The entire team must follow the structure in new development & refactoring
+    - -> The structure must be understood by the entire team
+    - Terminology & relas must enter ubi lang
+    - Restructuring yields supple design as the model improves
+    - Distillation lightens the load:
+      - Smaller core domain
+      - Easy-to-replace supporting components

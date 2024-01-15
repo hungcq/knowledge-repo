@@ -93,8 +93,10 @@
   - Transaction control should be handled by client, where domain logic lies
   - Choose framework that facilitates repo impl. Adapt if needed.
   - Relationship between factory & repo:
-    - Object initialization: img 6.23
-    - Object reconstitution: img 6.22
+    - Object initialization:
+    - <img src="./resources/6.23.png" width="600">
+    - Object reconstitution:
+    - <img src="./resources/6.22.png" width="600">
   - Design object for relational DB:
     - Might need to compromise to handle object-relational mismatch or to optimize performance
     - A table row should contain an object, perhaps along with subsidiaries in an agg

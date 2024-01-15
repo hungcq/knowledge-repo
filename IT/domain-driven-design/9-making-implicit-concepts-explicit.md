@@ -37,7 +37,7 @@
     - Simple rule: simple test
     - Complex rule: combination of specs (~ combination of logical operations)
     - Construction: can use a factory to configure a spec using info from other sources (eg an object, DB, config)
-    - Img 9.13
+    - <img src="./resources/9.13.png" width="700">
   - Need to apply the pattern appropriately in the code, not only in the design
   - Specs use cases:
     - Validation: whether an object satisfies some criteria
