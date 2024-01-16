@@ -69,7 +69,36 @@ Philosophy, culture, science
 
 ## Content
 
-### 9. 
+### 9. Scientism
+- Scientism beliefs:
+  - Principles of physical science applied to human behavior study -> social science: facts, theories, laws
+  - -> Scientist: authority, prestige
+  - Social laws can be used for social engineering -> control, authority
+  - Science can solve human problems (eg meaning, well-being) -> control, authority
+- Distinction:
+  - True science: study processes: events in nature: regular, explainable, predictable
+  - Shit science: study practices: artificial, human events
+- Comparison: natural vs social science:
+  | Scientific practices                                                        | Natural science                                                  | Social science                                                                                                                                                      |
+  |-----------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Quantification                                                              | To describe structure of nature                                  | To give precision to ideas<br>-> Common layman practice                                                                                                             |
+  | Empiricism:<br>observe -> evidence<br>-> supporting arguments -> conclusion | - Highly objective<br>- Objects are indifferent to being studied | - Bounded by time, situation, cultural prejudices, specific condition<br>- Lab experiments: subjects affected by env & how questions are framed<br>-> Not universal |
+  | Falsifiability                                                              | Yes                                                              | - Not predictable<br>- Full of contradictory examples in reality<br>- Ambiguous terms                                                                               |
+  | Conclusion                                                                  | Imp                                                              | Common place, rediscovery                                                                                                                                           |
+- Social science: documenting the behavior & feeling of people as they confront problems posed by their culture
+- -> ~story telling, literature: subjective interpretation of human nature, supported by examples
+- Comparison: social science vs story telling:
+  |         | Social science                                           | Story telling        |
+  |---------|----------------------------------------------------------|----------------------|
+  | Form    | Exposition                                               | Fiction              |
+  | Focus   | Wider population                                         | Based on individuals |
+  | Method  | Use abstract social facts<br>-> Reason, logic, arguments | Showing              |
+  | Purpose | Persuasion                                               | Entertainment        |
+- Why social science is embraced in current culture:
+  - Technopoly preference for objectivity, facts, science
+  - Failure of religion -> lack of meaning & moral authority
+  - Lack of understanding about science
+- Scientism = 3 beliefs + embrace without question + expect science to solve moral problems, tell us what to do
 
 ## Criticism
 - The education reform proposal is interesting and insightful, but it is hard to see how it can be achieved
