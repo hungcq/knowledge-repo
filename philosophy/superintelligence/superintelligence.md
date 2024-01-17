@@ -57,7 +57,12 @@
 - Decisive strategic advantage: p.96
 - Wise-singleton sustainability threshold: p.124
 - Orthogonal: p.129
+- Instrumental goal: p.132
 - Existential risk: p.140
+- Malignant failure mode: causing existential catastrophes
+- Perverse instantiation: p.146
+- Infrastructure profusion: p.150
+- Oracles: question-answering systems that have domain-general intelligence
 
 ## Criticism
 - Chap 11 goes to far into the future, read like science fiction. The basic assumptions are not solid.
@@ -84,3 +89,18 @@
 
 ### Chap 5
 <img src="./resources/5.drawio.svg">
+
+### Chap 6
+<img src="./resources/6.drawio.svg">
+
+### Chap 7
+<img src="./resources/7.drawio.svg">
+
+### Chap 8
+<img src="./resources/8.drawio.svg">
+
+### Chap 9
+<img src="./resources/9.drawio.svg">
+
+### Chap 10
+<img src="./resources/10.drawio.svg">
