@@ -63,6 +63,9 @@
 - Perverse instantiation: p.146
 - Infrastructure profusion: p.150
 - Oracles: question-answering systems that have domain-general intelligence
+- Associative value accretion for AI: specify a mechanism that leads to the acquisition of human values
+when the AI interacts with a suitable env
+- 
 
 ## Criticism
 - Chap 11 goes to far into the future, read like science fiction. The basic assumptions are not solid.
@@ -104,3 +107,9 @@
 
 ### Chap 10
 <img src="./resources/10.drawio.svg">
+
+### Chap 11
+<img src="./resources/11.drawio.svg">
+
+### Chap 12
+<img src="./resources/12.drawio.svg">
