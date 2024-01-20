@@ -65,51 +65,64 @@
 - Oracles: question-answering systems that have domain-general intelligence
 - Associative value accretion for AI: specify a mechanism that leads to the acquisition of human values
 when the AI interacts with a suitable env
-- 
+- State risk vs step risk: p.287
 
 ## Criticism
-- Chap 11 goes to far into the future, read like science fiction. The basic assumptions are not solid.
 - Lack of consideration regarding unexpected movement that slowdown/stop the progress: eg conflict, war
 - Solving large scale problem (eg world control) is not easy, even for SI
-- -> Might require lots of experiments over a long time scale
-- p.171
-- p.201
-
-## Takeaway
+- -> Might require lots of experiments over a long timescale
+- There is an assumption that certain kinds of perverse instantiation are bad, but it is not necessarily true (eg maximizing pleasure)
+- Chap 11 goes to far into the future, read like science fiction. The basic assumptions are not solid.
+- Chap 11: arguments about population increase seems ungrounded
 
 ## Main content
-### Chap 1
+### 1. Past developments and present capabilities
 <img src="./resources/1.drawio.svg">
 
-### Chap 2
+### 2. Paths to superintelligence
 <img src="./resources/2.drawio.svg">
 
-### Chap 3
+### 3. Forms of superintelligence
 <img src="./resources/3.drawio.svg">
 
-### Chap 4
+### 4. The kinetics of an intelligence explosion
 <img src="./resources/4.drawio.svg">
 
-### Chap 5
+### 5. Decisive strategic advantage
 <img src="./resources/5.drawio.svg">
 
-### Chap 6
+### 6. Cognitive superpowers
 <img src="./resources/6.drawio.svg">
 
-### Chap 7
+### 7. The superintelligence will
 <img src="./resources/7.drawio.svg">
 
-### Chap 8
+### 8. Is the default outcome doom?
 <img src="./resources/8.drawio.svg">
 
-### Chap 9
+### 9. The control problem
 <img src="./resources/9.drawio.svg">
 
-### Chap 10
+### 10. Oracles, genies, sovereigns, tools
 <img src="./resources/10.drawio.svg">
 
-### Chap 11
+### 11. Multipolar scenarios
 <img src="./resources/11.drawio.svg">
 
-### Chap 12
+### 12. Acquiring values
 <img src="./resources/12.drawio.svg">
+
+### 13. Choosing the criteria for choosing
+- Problem: choose value to install without locking in prejudices & preconceptions of present generation
+- <img src="./resources/13.drawio.svg">
+
+## 14. The strategic picture
+<img src="./resources/14.drawio.svg">
+
+## 15. Crunch time
+<img src="./resources/15.drawio.svg">
+
+## Afterword
+- Recent events & progress in AI
+- Prediction
+- Call for action
