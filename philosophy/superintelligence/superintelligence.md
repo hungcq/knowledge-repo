@@ -116,13 +116,13 @@ when the AI interacts with a suitable env
 - Problem: choose value to install without locking in prejudices & preconceptions of present generation
 - <img src="./resources/13.drawio.svg">
 
-## 14. The strategic picture
+### 14. The strategic picture
 <img src="./resources/14.drawio.svg">
 
-## 15. Crunch time
+### 15. Crunch time
 <img src="./resources/15.drawio.svg">
 
-## Afterword
+### Afterword
 - Recent events & progress in AI
 - Prediction
 - Call for action
