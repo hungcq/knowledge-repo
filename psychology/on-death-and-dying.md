@@ -1,4 +1,4 @@
-# Superintelligence
+# On Death and Dying
 
 ## Info
 - Type: book
@@ -27,3 +27,4 @@
   - Boring most of the time
 
 ## Main content
+<img src="./resources/on-death-and-dying.drawio.svg">
