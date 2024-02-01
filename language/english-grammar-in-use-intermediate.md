@@ -33,6 +33,8 @@ contain consist seem
 ### 5. Past simple
 - Describe completed action
 - Describe one thing happened after another
+- Examples:
+  - It was a good holiday
 
 ### 6.Past continuous
 - was doing something = was in the middle of doing it at a certain time.
@@ -41,13 +43,17 @@ The action or situation started before this time, but had not finished. Examples
   - What were you doing at 10 o'clock last night?
 - Something happened (past simple) in the middle of something else (past continuous)
 
-### 7-8. Present perfect
-- Provide new info (can also use past simple)
+### 7-8, 11. Present perfect
+- Provide new info (can also use past simple). If continue to talk about it, then normally use the past simple.
 - Describe an action in the past that has a result now (can also use past simple)
 - Talk about a period of time that continues from the past until now
 (eg have ever done sth in life, recently, in the last few days, so far, since I arrived)
 Use with today, this evening, this year... when these periods are not finished at the time of speaking.
+- Talk about new/recent happening (can also use past simple)
 - Use with: this is the n-th times
+- Comparison with past simple:
+  - Past simple only tells us about the past. We don't know what the current situation is (eg lost a key, but might have found it).
+  - Present perfect tells about the present
 #### Other case
 - has been to somewhere = visited, not there now
 - has gone to somewhere = is there now or is on the way there
@@ -66,3 +72,6 @@ Use with today, this evening, this year... when these periods are not finished a
     - Sth has been finished. We are thinking about the result of the activity (the painted bedroom), not the activity itself.
     - Describe how much, how many or how many times (for completed actions)
     - Use for verbs that can't be in -ing form (except want and mean that can be used with present perfect continuous)
+    - Use with "always"
+
+### 12. "For" & "since" usages & special cases in present perfect tense
