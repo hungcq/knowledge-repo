@@ -75,3 +75,12 @@ Use with today, this evening, this year... when these periods are not finished a
     - Use with "always"
 
 ### 12. "For" & "since" usages & special cases in present perfect tense
+
+### 15. Past perfect (I had done)
+- Usage:
+  - Usually used when talking about the past, to talk about sth that happened before a point of time in the past
+  (eg when I arrived, she had already left).
+  - Talk about sth that happened up to some point in the past (~present perfect - up to the present)
+  
+### 16. Past perfect continuous (I had been doing)
+- ~ present perfect continuous (sth just stopped/focus on the act itself) + past perfect (before a point of time in the past)
