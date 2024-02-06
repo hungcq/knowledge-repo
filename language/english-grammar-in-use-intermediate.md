@@ -12,6 +12,8 @@
 - Describe temporary situations (eg I’m living with some friends until I find a place of my own.)
 - Describe a change that has started to happen.
   Related verbs: getting, becoming changing, improving, starting, beginning increasing, rising, falling, growing
+- Talk about that is already decided and arranged to do in the future
+- Talk about sth just before you start to do it. Usually used with words of movement (eg go/come/leave).
 #### Other cases
 - Use with today/this week/this year/these days...
 - always doing something = do it too often or more often than normal (eg always looking at the phone)
@@ -24,6 +26,7 @@
 - Describe something that is true in general
 - Describe how often we do things
 - Describe permanent situations
+- Describe timetables/programmes/fixed schedules or plans
 #### Other cases
 - Use with: promise/suggest/apologise/advise/insist/agree/refuse
 - Use with (list 1): like want need prefer know realise understand recognise believe suppose remember mean belong fit
@@ -84,3 +87,15 @@ Use with today, this evening, this year... when these periods are not finished a
   
 ### 16. Past perfect continuous (I had been doing)
 - ~ present perfect continuous (sth just stopped/focus on the act itself) + past perfect (before a point of time in the past)
+
+### 17. Have and have got
+- Can be used interchangeably when talking about possession
+- Question/negative sentence:
+  - Have: use with do/does
+  - Have got: have'nt got, have you got...?
+- Use "have" to talk about sth we do or experience (eg have breakfast, have a sandwich)
+
+### 18. Used to
+- Describe sth that sb did often in the past, but not anymore
+- Describe sth that was true in the past but not anymore
+- Negative form: didn't use to/used not to
