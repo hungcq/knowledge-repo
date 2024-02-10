@@ -99,3 +99,30 @@ Use with today, this evening, this year... when these periods are not finished a
 - Describe sth that sb did often in the past, but not anymore
 - Describe sth that was true in the past but not anymore
 - Negative form: didn't use to/used not to
+
+### 20. Going to do
+- = Already decided to do or intend to do it
+- When feel quite certain that sth is going to happen in the future
+- Vs "be doing": already arranged to do it or have a fixed schedule
+- Was/were going to:
+  - Intended to do sth, but didn't do it
+  - Thought that sth was going to happen, but it didn't happen
+
+### 21, 22. Will and shall
+- Will:
+  - Just decided to do sth (vs be going to: decided/arranged before)
+  - Offer/agree/promise to do sth
+  - To say what we believe about the future (ie make a prediction)
+  - -> Used with think/probably/sure/wonder
+  - -> Vs:
+    - I hope + present (I hope it doesn't rain tmr)
+    - Be going to: quite certain in the prediction
+  - Will you do sth: please do it
+  - Won't: when sb refuses to do sth
+- Shall:
+  - Mostly used in shall I/shall we
+  - Used to ask if it is ok to do sth or to make a suggestion
+
+### 24. Future continuous & future perfect
+- Future continuous (will be doing): will be in the middle of doing sth in the future
+- Future perfect (will have done): will complete before a time in the future
