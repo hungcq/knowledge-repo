@@ -126,3 +126,44 @@ Use with today, this evening, this year... when these periods are not finished a
 ### 24. Future continuous & future perfect
 - Future continuous (will be doing): will be in the middle of doing sth in the future
 - Future perfect (will have done): will complete before a time in the future
+
+### 25. When I do and When I have done, If and When
+- When/while/before/after/as soon as/until + present simple
+- When/before/after/as soon as/until + present perfect: 1 thing complete before the other
+- -> Usually can use interchangeably with when + present simple
+- When vs if: in the future:
+  - When: for things that are sure to happen
+  - If: for things that will possibly happen
+
+### 26, 27. Can, could, be able to
+- Can: the present
+- Could:
+  - The past: usually used when: see, hear, smell, taste, feel, remember, understand
+  - Can be used for possible/not realistic action now or in the future, esp to make suggestions
+  (not realistic eg: I could do this all the time)
+  - -> Can is also possible. Could is less sure than can.
+  - Could have: to talk about the past: sth was possible, but did not happen (eg could have been worse)
+  - Couldn't do sth: it would not be possible (eg couldn't run)
+  - -> Second meaning: past of can -> need to decide depends on context
+  - Couldn't have done sth: would not have been possible
+- Be able to = can. Needed when:
+  - Haven't been able to
+  - Might/must be able to
+  - Was able to/managed to (vs could: general ability): somebody succeeded in doing something in a specific situation
+  - -> Couldn't is possible in all situation
+
+### 28. Must and can't
+- Must/can't: to say that we believe sth is certain/not possible
+- For the past, use must have/can't (or couldn't) have + past participle
+
+### 29, 30. May and might
+- Usage:
+  - May/might = could: sth is possible
+  - -> Couldn't (not possible) vs may/might not (maybe not)
+  - Talk about possible actions or happenings in the future
+  - May/might be doing sth:
+    - Might be in the middle of doing sth in the future
+    - For possible plans: vs be doing (for sure)
+- Fast form: may have/might have
+- Use might (not may) when the situation is not real (eg use with if)
+- May/might as well do something = should do it because there is no better alternative/there is no reason not to do it
