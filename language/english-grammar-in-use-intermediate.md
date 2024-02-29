@@ -152,11 +152,11 @@ Use with today, this evening, this year... when these periods are not finished a
   - Was able to/managed to (vs could: general ability): somebody succeeded in doing something in a specific situation
   - -> Couldn't is possible in all situation
 
-### 28. Must and can't
+### 28. Must & can't
 - Must/can't: to say that we believe sth is certain/not possible
 - For the past, use must have/can't (or couldn't) have + past participle
 
-### 29, 30. May and might
+### 29, 30. May & might
 - Usage:
   - May/might = could: sth is possible
   - -> Couldn't (not possible) vs may/might not (maybe not)
@@ -167,3 +167,54 @@ Use with today, this evening, this year... when these periods are not finished a
 - Fast form: may have/might have
 - Use might (not may) when the situation is not real (eg use with if)
 - May/might as well do something = should do it because there is no better alternative/there is no reason not to do it
+
+### 31, 32. Have to & must & needn't
+- Have to vs must:
+  - Have to: talk about obligation (eg I have to work from 9am to 5pm)
+  - Must: for formal instruction
+  - Use "had to" for the past
+- Mustn't (don't do it) vs don't have to (can do if want)
+- Needn't = don't need to
+- Needn't have done: already did it, but it was not necessary
+- -> Can be used with "could have"
+
+### 33, 34. Should
+- Should have done: didn't do it, but it was a good thing to do
+- = ought to
+- Usually used with insist, demand, recommend, suggest, propose: should + subjunctive (original form of verb)
+- -> Can leave out "should"
+- -> Remember "suggest" usage: "what do you suggest I do?", not "what do you suggest me to do?"
+- If sth should + verb = Should sth + verb = If sth + verb, but smaller probability
+
+### 35. Had better & it's time
+- Had better (not) ~ should (not), but:
+  - Used only for specific situations
+  (eg "you should go out more often", not "you had better go out more often")
+  - There will be a problem if not follow the advice
+- It's time to do sth = should do sth
+- It's time somebody did something = they should have already done it or started it
+
+### 36. Would
+- Imagine situation:
+  - Would do: to talk about sth that is not real/an imagined situation
+  - Would have done: to talk about sth that didn't happen in the past (eg I didn't see the movie but I would have liked it)
+  - Usually used with if
+- The past of will/won't
+- Wouldn't do sth: refused to do sth (~ past of won't)
+- To talk about sth that happen regularly in the past (= used to)
+
+### 37. Can, could, would you... (requests, offers, permissions)
+- Can/could you: request people to do things
+- Request to do things:
+  - Can/could/may I ...?
+  - Do you mind/is it OK/alright if I ...?
+- Can/could/may I have, can I have: request for things
+- Offer or invite:
+  - Can I do sth/get sth for you?
+  - Would you like sth/to do sth?
+
+### 38. If I do/did
+- If sth happens, sth will: talk about sth possible
+- If sth happened, sth would (past form): talk about something that will not happen, or we don't expect that it will happen
+- -> Instead of would, can use "might" (possible action) or "could" (ability)
+
