@@ -218,3 +218,11 @@ Use with today, this evening, this year... when these periods are not finished a
 - If sth happened, sth would (past form): talk about something that will not happen, or we don't expect that it will happen
 - -> Instead of would, can use "might" (possible action) or "could" (ability)
 
+### 39. I wish I did
+- I wish + past tense: talk about sth that is not real at the present
+- -> Can use were instead of was, but "was" is ok
+
+### 40. If I had known, I wish I had known
+- To talk about sth that didn't happen in the past
+- Form: If I had + past participle, I would have + past participle
+- Use could have & might have for ability & possible action
