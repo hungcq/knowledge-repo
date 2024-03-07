@@ -219,10 +219,21 @@ Use with today, this evening, this year... when these periods are not finished a
 - -> Instead of would, can use "might" (possible action) or "could" (ability)
 
 ### 39. I wish I did
-- I wish + past tense: talk about sth that is not real at the present
-- -> Can use were instead of was, but "was" is ok
+
 
 ### 40. If I had known, I wish I had known
 - To talk about sth that didn't happen in the past
 - Form: If I had + past participle, I would have + past participle
 - Use could have & might have for ability & possible action
+
+### 39, 41. Wish
+- Wish(ed) sb sth (eg luck, happiness, success, all the best)
+- -> Vs "hope(d) sth happen"
+- I wish + past tense: regret that sth doesn't happen at the present
+- -> Can use were instead of was, but "was" is ok
+- I wish I had + past participle: talk about sth that didn't happen in the past
+- I wish sth would happen: would like sth to happen or change
+- -> Also to complain
+
+### 42. Passive
+- Question form: how/what/when... was sth done?
