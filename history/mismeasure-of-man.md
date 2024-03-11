@@ -26,12 +26,14 @@
 - Biological determinism
 - Scientific racism
 - Factor analysis
-
-## Criticism
+- Hereditarian
+- Reification
+- Craniometry
 
 ## Takeaway
 - Sense of progress
 - Similarity of trivial, lack of evidence conclusions in the past with modern psychology
+- Similarity with ridiculous theories in modern time
 - Misunderstanding of major theories in their early day -> lasting social impact
 
 ## Main content

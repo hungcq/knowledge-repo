@@ -40,7 +40,7 @@
   - Hard to find one
 
 #### Responsibility layers
-- Layers requirement: dependency direction are one-way
+- Layers requirement: dependency directions are one-way
 - Process:
   - Identify broad abstract responsibilities of the model as layers
   - Refactor the model so that the responsibilities of each domain object, agg & module
@@ -53,7 +53,7 @@
   - Conceptual contours: dif rates of change between layers
 - Common layers appearing in many domains:
   - Business based on exploiting large fixed capital assets (eg factories, cargo ships, logistical software):
-    - Potential/capability layer: what can be done with existing resources & third party vendors
+    - Potential/capability layer: what can be done with existing resources & third-party vendors
     - Operation: what is being done using the resources
     - Decision support: analysis & decision-making, using historical data & info from lower layers
   - Software that enforces elaborate business rules or legal requirements:
