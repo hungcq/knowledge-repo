@@ -1,4 +1,4 @@
-# Superintelligence
+# The Mismeasure of Man
 
 ## Info
 - Type: book
