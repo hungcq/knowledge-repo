@@ -235,5 +235,14 @@ Use with today, this evening, this year... when these periods are not finished a
 - I wish sth would happen: would like sth to happen or change
 - -> Also to complain
 
-### 42. Passive
+### 42, 43, 44, 45. Passive
 - Question form: how/what/when... was sth done?
+- Should use the person as subject in passive form for verb that have 2 objects (eg give, offer, ask, pay, show, tell).
+Eg: I give her some money -> "She has been given some money", not "some money has been given to her"
+- It is said/supposed/believed... that he + V = he is said to + V/have been + V (past form)
+- = People say/suppose/believe... that
+- -> Usually used when reporting news
+- to be supposed to: 2 meanings:
+  - = it is said to
+  - Talk about what is intended/arranged/expected, which is dif from the real situation
+- Not supposed to = not allowed or advised

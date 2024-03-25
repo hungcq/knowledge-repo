@@ -3,7 +3,7 @@
 - -> Transform the model, facilitate refinement into a deeper model
 
 ### Where to discover new concepts
-- Language of domain experts: not simple as "noun are object" notion
+- Language of domain experts: not simple as "nouns are objects" notion
 - -> Need to follow up with conversation and knowledge crunching to carve out a clean, useful concept
 - Awkwardness/complication in the design
 - -> Engage the domain experts to search/invent the missing concept
@@ -41,7 +41,7 @@
   - Need to apply the pattern appropriately in the code, not only in the design
   - Specs use cases:
     - Validation: whether an object satisfies some criteria
-    - Selection from a collection. Difficulty: integrate with DB query (see p.232 for some example solutions)
+    - Selection from a collection. Difficulty: integrate with DB query (see p.232 for some example solutions).
     - Object creation: specify the criteria (~options)
 
 ### Additional info

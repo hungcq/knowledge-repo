@@ -142,7 +142,7 @@
     - Large-scale structure: def, problems, goal, advs, chars, usage, evolution
     - Patterns: problem, def, usage, design:
       - System metaphor
-      - Respon layers
+      - Responsibility layers
       - Knowledge level
       - Pluggable component framework
     - Design: restrictiveness, best practices

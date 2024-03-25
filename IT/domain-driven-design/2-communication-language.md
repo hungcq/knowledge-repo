@@ -32,7 +32,7 @@ sketch a diagram of 3-5 objects central to the issue at hand. Update during the 
   - Object meaning
   - Object explicit behavior
 - Diagram best practices:
-  - Should be minimal, focus on imp parts. Avoid putting in every details
+  - Should be minimal, focus on imp parts. Avoid putting in every details.
   - -> Avoid using diagram of the entire object/DB model
   - Talk about objects' meaning during the discussion to supplement the diagram
 - Detail about the design should be captured in code
