@@ -246,3 +246,32 @@ Eg: I give her some money -> "She has been given some money", not "some money ha
   - = it is said to
   - Talk about what is intended/arranged/expected, which is dif from the real situation
 - Not supposed to = not allowed or advised
+
+### 46. Have something done
+- = get sth done
+- Meanings:
+  - Arrange for sth to do sth for you
+  - Sth happen to sb or their belongings
+
+### 47, 48. Reported speech
+- Said (that) + reported clause
+- Change of tense of verb in reported clause:
+  - Present -> past
+  - Past -> past or past perfect (optional)
+- -> (Optional) when the situation is still the same, don't have to change the verb
+- Tell sb = say to sb
+- Tell sb to do sth = say to do sth
+
+### 49, 50. Questions
+- Does sb do sth?: confirmation
+- Wh questions:
+  - Who/what do I do sth to?: when who/what is the object of the sentence
+  - Who/what do sth?: when who/what is the subject of the sentence. Eg: who wants sth to eat?
+  - Prepositions are usually at the end
+- Negative questions (isn't it, didn't you):
+  - Usage:
+    - To show surprise
+    - When expect the listener to agree with us
+  - Answer: yes means "it is", no mean "it isn't"
+  - Usually used with "Why". Eg why don't we
+- 

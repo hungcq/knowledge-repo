@@ -230,6 +230,9 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 
 ## Content
 
+### Summary map
+- <img src="../resources/ddd.drawio.svg">
+
 ### Graphs
 - <img src="./resources/building-block-supple-design.png" width="800">
 - <img src="./resources/strategic-design.png" width="800">
