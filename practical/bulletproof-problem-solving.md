@@ -37,7 +37,7 @@
 ## Appendix
 ### Cleaving frames
 <img src="./resources/bulletproof-problem-solving/business-cleaving-frames.png" width="700">
-<img src="./resources/bulletproof-problem-solving/social-cleaving-frames.png" width="700">
+<img src="./resources/bulletproof-problem-solving/social-citizen-cleaving-frames.png" width="700">
 <img src="./resources/bulletproof-problem-solving/individual-cleaving-frames.png" width="700">
 
 ### Top 10 heuristics
