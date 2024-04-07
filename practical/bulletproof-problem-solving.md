@@ -49,10 +49,21 @@
 <img src="./resources/bulletproof-problem-solving/analysis-tools-considerations.png" width="800">
 <img src="./resources/bulletproof-problem-solving/crowd-sourcing-considerations.png" width="600">
 
+### Story telling
+<img src="./resources/bulletproof-problem-solving/arg-structures.png" width="600">
+<img src="./resources/bulletproof-problem-solving/deductive-arg-example.png" width="600">
+<img src="./resources/bulletproof-problem-solving/story-telling-example.png" width="700">
+
+### Uncertainty
+<img src="./resources/bulletproof-problem-solving/levels-of-uncertainty.png" width="500">
+<img src="./resources/bulletproof-problem-solving/uncertainty-actions.png" width="500">
+
 ### Tools
 - Cleaving frames
 - Logic trees
 - Cost-benefit analysis graph
-- Problem def:
-  - <img src="./resources/bulletproof-problem-solving/problem-def.png" width="700">
-  
+- <img src="./resources/bulletproof-problem-solving/problem-def.png" width="600">
+- <img src="./resources/bulletproof-problem-solving/ROIC-logic-tree.png" width="600">
+- <img src="./resources/bulletproof-problem-solving/impact-influence.png" width="400">
+- <img src="./resources/bulletproof-problem-solving/workplan.png" width="600">
+- <img src="./resources/bulletproof-problem-solving/story.png" width="400">
