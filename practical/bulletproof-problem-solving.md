@@ -26,8 +26,6 @@
 - Basically just an introduction. Many techniques/knowledge/issues are not adequately dealt with.
 - Work planning: too detailed, might cost too much time
 
-## Terms
-
 ## Takeaway
 - Motivation to try out the process, esp problem breakdown using dif types of logic trees
 - Some understanding of how consultant companies work
@@ -62,8 +60,8 @@
 - Cleaving frames
 - Logic trees
 - Cost-benefit analysis graph
-- <img src="./resources/bulletproof-problem-solving/problem-def.png" width="600">
+- <img src="./resources/bulletproof-problem-solving/problem-def.png" width="500">
 - <img src="./resources/bulletproof-problem-solving/ROIC-logic-tree.png" width="600">
 - <img src="./resources/bulletproof-problem-solving/impact-influence.png" width="400">
-- <img src="./resources/bulletproof-problem-solving/workplan.png" width="600">
+- <img src="./resources/bulletproof-problem-solving/workplan.png" width="500">
 - <img src="./resources/bulletproof-problem-solving/story.png" width="400">
