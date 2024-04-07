@@ -20,10 +20,11 @@
 - Highly visual
 
 ## Criticism
-- Use lots of buzzwords but keep claming that the process is generally accessible
+- Use lots of buzzwords but keep claiming that the process is generally accessible
 - Lots of knowledge required to choose the apt formula/tree
 - Imp branches in problem breakdown are limited by what we know
 - Basically just an introduction. Many techniques/knowledge/issues are not adequately dealt with.
+- Work planning: too detailed, might cost too much time
 
 ## Terms
 
@@ -34,3 +35,24 @@
 
 ## Main content
 <img src="./resources/bulletproof-problem-solving.drawio.svg">
+
+## Appendix
+### Cleaving frames
+<img src="./resources/bulletproof-problem-solving/business-cleaving-frames.png" width="700">
+<img src="./resources/bulletproof-problem-solving/social-cleaving-frames.png" width="700">
+<img src="./resources/bulletproof-problem-solving/individual-cleaving-frames.png" width="700">
+
+### Top 10 heuristics
+<img src="./resources/bulletproof-problem-solving/top-10-heuristics.png" width="700">
+
+### Analysis sophisticated tools considerations
+<img src="./resources/bulletproof-problem-solving/analysis-tools-considerations.png" width="800">
+<img src="./resources/bulletproof-problem-solving/crowd-sourcing-considerations.png" width="600">
+
+### Tools
+- Cleaving frames
+- Logic trees
+- Cost-benefit analysis graph
+- Problem def:
+  - <img src="./resources/bulletproof-problem-solving/problem-def.png" width="700">
+  
