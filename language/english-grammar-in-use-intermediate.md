@@ -274,4 +274,25 @@ Eg: I give her some money -> "She has been given some money", not "some money ha
     - When expect the listener to agree with us
   - Answer: yes means "it is", no mean "it isn't"
   - Usually used with "Why". Eg why don't we
-- 
+- -> Used as a new question
+- -> Vs question tags (at the end of a statement)
+- Wh clause as object (eg Do you know what time it is?):
+  - Who/what does sth? -> who/what sth does
+  - Who/what do I do sth to? -> who/what I do sth to
+  - Does sb do sth? (confirmation): whether/if sb does sth
+
+### 51. Auxiliary verbs. I think/hope so.
+- Auxiliary verbs:
+  - Examples: have, can, was, "do you" in why do you
+  - Can be used to not repeating something (eg Yes, I do)
+  - Used in confirmation questions (see Questions)
+  - Used with so/neither: so do I, neither do I = I don't either
+- I think/hope/guess/am afraid so/not: to answer a question without repeating the question's content
+- Aux verb + S? (eg have you?):
+  - To show surprise
+  - To show interest in what was said
+  - In the same yes/no form with the statement (I like it -> Do you)
+  - -> Vs question tags (in reverse yes/no form)
+
+### 52. Question tags
+- Mini question at the end of a sentence 
