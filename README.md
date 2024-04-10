@@ -1,2 +1,2 @@
 # Knowledge Repository
-[Github link](https://github.com/hungcq/knowledge-repo)
+[GitHub link](https://github.com/hungcq/knowledge-repo)
