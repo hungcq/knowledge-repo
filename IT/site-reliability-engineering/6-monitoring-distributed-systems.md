@@ -1,4 +1,4 @@
-# 6. Monitoring distributed systems
+## 6. Monitoring distributed systems
 - Terms:
   - Monitoring: collecting, processing, aggregating & displaying real-time quantitative data about a system
   - Dashboard: chars:
@@ -63,6 +63,3 @@
       - Also concerned with predictions and impending saturation
       - Should page when saturation is nearly problematic
   - Use distribution, not average
-
-## Criticism
-- Not well-structured: too many headings that are all over the place

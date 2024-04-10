@@ -43,6 +43,19 @@
     - Philosophy on pages & pagers
     - Consideration when creating monitoring & alerting rules
     - Issues of evolving systems & general approach
+- Chap 7: the evolution of automation at Google:
+  - Advs
+  - Use cases & evolution of automation
+  - Google examples & lesson learned
+  - Imp of transparency
+  - Recommendations
+- Chap 8: release engineering:
+  - Def & role
+  - Best practices
+  - Google processes & best practices for continuous build & continuous delivery
+  - 4 dif approaches to config management
+  - Recommendations
+- Chap 9
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
@@ -90,5 +103,7 @@
 - -> Can adopt best practices in part 4: management
 
 ## Criticism
+- Chap 6: not well-structured: too many headings that are all over the place
+- Chap 9: mostly platitude
 
 ## Takeaway

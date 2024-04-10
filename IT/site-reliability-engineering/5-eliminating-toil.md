@@ -1,4 +1,4 @@
-# 5. Eliminating toil
+## 5. Eliminating toil
 - Main types of SRE activities:
   - Toil:
     - Def: the kind of work tied to running a production service that tends to be:

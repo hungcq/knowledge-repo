@@ -1,0 +1,21 @@
+## 7. The evolution of automation at Google
+- Advs:
+  - More consistent compared to human operators
+  - Of a platform: centralized, extensible, reusable, sellable
+  - Faster repairs when run regularly to detect & repair common faults
+  - Faster action: no need for manual confirmation
+- Use cases:
+  - Examples:
+    - User account creation
+    - Cluster turnup & turndown for services
+    - Software/hardware installation preparation & decommissioning
+    - Rollouts of new software versions
+    - Runtime config changes
+    - Dependency changes
+  - Focus: manage lifecycle of systems, not their data: hard to manage small change in data
+  - Tradeoff: high level, complex tool vs low level, reusable tool/language
+  - Automate directly within the app:
+    - Adv: no glue logic
+    - -> No integration issue
+    - Eg: automatic DB failover, not via external script
+- Transparency of internal operation is imp for understanding & troubleshooting
