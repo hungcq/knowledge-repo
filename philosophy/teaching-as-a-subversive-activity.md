@@ -44,4 +44,4 @@
 - Ideas for mentoring & coaching: question-based, let mentees think by themselves
 
 ## Main content
-<img src="./resources/teaching-as-a-subversive-activity.drawio.png">
+<img src="./resources/teaching-as-a-subversive-activity.drawio.svg">

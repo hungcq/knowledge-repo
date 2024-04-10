@@ -295,4 +295,30 @@ Eg: I give her some money -> "She has been given some money", not "some money ha
   - -> Vs question tags (in reverse yes/no form)
 
 ### 52. Question tags
-- Mini question at the end of a sentence 
+- Mini question at the end of a sentence
+- Use auxiliary verbs
+- In reverse yes/no form with the sentence (eg you do, don't you?)
+- Meaning:
+  - If voice go up, negative sentence + tag: ask a question
+  - If voice go down: expect listener to agree
+- Exception:
+  - Let's... + shall we?
+  - Don't... + will you?
+  - I'm... + aren't I (= am I not)?
+
+### 53. V + ing
+- Used after: enjoy, mind, suggest, stop, finish, recommend, consider, admit, deny, avoid, risk, imagine, fancy,
+put off, go on, keep on, give up
+- -> Can use having done for finished action (optional)
+- Can use: sb + V-ing. Example: stop, imagine, remember, keep
+
+### 54. V + to
+- Used after: offer, agree, refuse, decide, plan, arrange, hope, forget, manage, fail, promise, threaten, deserve, 
+afford, learn, see, appear, pretend, claim
+- Can use:
+  - To be doing: continuous
+  - To have done: perfect
+- Can use question word (eg what/how/where/whether to do sth) after:
+  - ask, know, decide, remember, forget, learn, explain, understand, wonder: V + what/how to do sth
+  - show/tell/ask/advise/teach + V + what/how/where to do sth
+- 
