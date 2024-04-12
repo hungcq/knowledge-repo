@@ -306,13 +306,13 @@ Eg: I give her some money -> "She has been given some money", not "some money ha
   - Don't... + will you?
   - I'm... + aren't I (= am I not)?
 
-### 53. V + ing
+### 53. Verb + ing
 - Used after: enjoy, mind, suggest, stop, finish, recommend, consider, admit, deny, avoid, risk, imagine, fancy,
 put off, go on, keep on, give up
 - -> Can use having done for finished action (optional)
 - Can use: sb + V-ing. Example: stop, imagine, remember, keep
 
-### 54. V + to
+### 54. Verb + to
 - Used after: offer, agree, refuse, decide, plan, arrange, hope, forget, manage, fail, promise, threaten, deserve, 
 afford, learn, see, appear, pretend, claim
 - Can use:
@@ -321,4 +321,17 @@ afford, learn, see, appear, pretend, claim
 - Can use question word (eg what/how/where/whether to do sth) after:
   - ask, know, decide, remember, forget, learn, explain, understand, wonder: V + what/how to do sth
   - show/tell/ask/advise/teach + V + what/how/where to do sth
-- 
+- Begin/start/continue/intend/bother: can use with both V-ing and "to V"
+- -> Usually not use V-ing after V-ing (eg it is starting to ...)
+
+### 55. Verb + object + to
+- Want/expect/ask/help/would like/would prefer:
+  - Sb to do
+  - To do
+- Help: can use with/without "to"
+- Tell/advise/remind/warn/invite/encourage/persuade/get/force/teach/allow/enable sb to do
+- Make/let sb do
+- -> Be made to do
+
+### 56, 57. Verb + to vs Verb + ing
+- Different meaning: remember, regret, go on, try, need, help to (vs can't help doing)

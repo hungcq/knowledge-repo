@@ -55,7 +55,12 @@
   - Google processes & best practices for continuous build & continuous delivery
   - 4 dif approaches to config management
   - Recommendations
-- Chap 9
+- Chap 9: simplicity: best practices
+- Chap 10: practical alerting from time-series data:
+  - Borgmon monitoring system: ~prometheus
+  - Blackbox monitoring
+  - Maintaining config
+- 
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
