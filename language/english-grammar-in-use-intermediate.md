@@ -323,6 +323,9 @@ afford, learn, see, appear, pretend, claim
   - show/tell/ask/advise/teach + V + what/how/where to do sth
 - Begin/start/continue/intend/bother: can use with both V-ing and "to V"
 - -> Usually not use V-ing after V-ing (eg it is starting to ...)
+- Would like/love/prefer/hate + to have done sth: regret now that didn't/couldn't do it
+- Like to: choose to do sth even when not enjoying it
+- -> Vs like doing (most situation)
 
 ### 55. Verb + object + to
 - Want/expect/ask/help/would like/would prefer:
@@ -333,5 +336,32 @@ afford, learn, see, appear, pretend, claim
 - Make/let sb do
 - -> Be made to do
 
-### 56, 57. Verb + to vs Verb + ing
+### 56, 57, 58. Verb + to vs Verb + ing
 - Different meaning: remember, regret, go on, try, need, help to (vs can't help doing)
+
+### 59. Prefer, would rather
+- Prefer:
+  - Liking in general: + V-ing (~like)
+  - Comparison:
+    - Prefer sth to sth else
+    - Prefer doing sth to doing sth else
+    - Prefer doing sth rather than (doing) sth else
+    - Prefer to do sth rather than (do) sth else
+- Would rather:
+  - do sth (than do sth else) = would prefer to do it
+  - sb did sth: would prefer sb to do sth now
+
+### 60, 61, 62. Preposition + Verb-ing
+- Preposition + N -> + (not) V-ing
+- To + verb-ing if "to" is used as preposition (eg looking forward to, prefer sth to sth, be/get used to)
+
+### 63. Phrase + Verb-ing
+- There is no point in = it's no use/good + doing sth
+- Worth:
+  - It's worth doing sth
+  - Sth is worth doing
+  - Sth/it is (not) worth it
+- Have (no) trouble/(no) difficulty/a (any) problem doing sth
+- Spend/waste (time) doing sth
+- Go + V-ing: for sports/other activity
+
