@@ -365,3 +365,53 @@ afford, learn, see, appear, pretend, claim
 - Spend/waste (time) doing sth
 - Go + V-ing: for sports/other activity
 
+### 64. To, for, so that: talk about purpose
+- To + verb
+- For:
+  - + noun, for sb to do sth
+  - For + V-ing: to say what sth is used for
+  - What ... for: to ask about purpose
+- Use "so (that)" + S + V, esp with can, could, will, would (eg I wore warm clothes so that I wouldn't get cold)
+
+### 65. Adj + to
+- It is adj to do sth = sth is adj to do
+- It is a adj sth to do = sth is adj to do
+- It is adj of sb to do sth (eg it is nice of you to help me)
+- Sb is adj to sth: talk about reaction (eg Im sorry to hear)
+- The first/second/only/last sth to do sth
+- Sb/sth is bound/sure/likely to (happen)
+
+### 66. Special cases with to do and doing
+- Afraid to, afraid of
+- Interested to (= adj + to), interested in
+- Sorry to, sorry for
+- Failed to do sth, succeeded in doing sth
+
+### 67. See sb do & see sb doing
+- See/hear/smell/listen to/watch:
+  - Sb do sth: saw the action from start to finish
+  - Sb doing sth: saw sb at the middle of doing sth
+- -> Can use both sometimes
+
+### 68. V-ing clause
+- Usages: shorthand:
+  - 2 things happen at the same time. Example:
+    he is in the kitchen making coffee = he is in the kitchen, and he is making coffee
+  - 1 action happens during another action. Example:
+    I choked (while/when) eating = I choked while I was eating
+- When 1 action happens before another action:
+  - "having + past participle" clause. Eg: having had breakfast, I went to work.
+  - After + V-ing
+- -> Used more in written English than spoken English
+- To explain/give reason to sth (eg feeling tired, I went to sleep):
+  - "having + past participle" clause: when 1 action completed before another action
+  - (Not) V-ing clause: when
+- -> Used more in written English than spoken English
+
+### 69, 70. Countable and uncountable
+- Countable:
+  - Any/some + plural
+  - Many/few + plural
+- Uncountable:
+  - Any/some + N
+  - Much/little + N
