@@ -415,3 +415,14 @@ afford, learn, see, appear, pretend, claim
 - Uncountable:
   - Any/some + N
   - Much/little + N
+- Some noun can be both countable and uncountable
+- -> Need to decide using context: a specific thing = countable, things in general = uncountable (eg a noise vs noise)
+
+### 71, 72, 73, 74, 75: A/an, the, some
+- A/an: a thing in general
+- Some usages:
+  - A number of specific things
+  - -> Can omit (eg I need new clothes = I need some new clothes)
+  - -> Can't be used when talking about things in general (eg I love bananas)
+  - Some but not all of sth
+- 

@@ -1,0 +1,41 @@
+## 10. Being on-call
+- Typical activities of an on-call engineer:
+  - Available to perform operations on production systems within minutes:
+    - Determine response time based on desired service availability
+    - Steps:
+      - Receive & ack a page
+      - Triage the problems & work toward its resolution
+      - Involve other team members & escalating as needed
+  - Handle and/or vet non-paging production events
+- Practices:
+  - Maintain balance:
+    - In quantity: 25% time spent on-call (eg 1 week/month)
+    - In quality: on-call engineer have sufficient time to deal with any incidents & follow-up activities
+    (eg writing postmortems)
+    - -> Limit num of incident = on-call time/time to handle
+    - Compensation: types:
+      - Time-off in=lieu
+      - Cash
+  - Make on-call engineers feel safe:
+    - Rational, focused, deliberate cognitive functions mode of thinking is better
+    when dealing with outages related to complex systems
+    - -> Need to reduce stress
+    - -> Provide on-call resources:
+      - Clear escalation paths: dev team
+      - Well-defined incident-management procedures: supported by web-based tool
+      - Blameless postmortem culture: focus on event, build automation to avoid future error
+  - Setting appropriate operational load:
+    - Temporarily load an experienced SRE to an overloaded team
+    - -> Need to measure symptoms of operational overload
+    - Eliminate noisy/duplicating alerts
+    - Work with dev team, routing alert to them if their changes have large impact
+    - Operational underload -> out of touch with production systems -> confidence issue & knowledge gaps. Approaches:
+      - Ensure sufficient load by on-call rotation
+      - Provide training activities
+### Additional info
+- Can have secondary on-call: responsibility depend on team arrangement
+- Multi-site team:
+  - Advs:
+    - Avoid night shifts by rotations
+    - Reduce number of on-call engineers
+  - Disadv: communication & coordination overhead

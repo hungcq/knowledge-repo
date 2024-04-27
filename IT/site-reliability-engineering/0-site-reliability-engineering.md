@@ -60,7 +60,12 @@
   - Borgmon monitoring system: ~prometheus
   - Blackbox monitoring
   - Maintaining config
-- 
+- Chap 11: being on-call
+  - Main on-call activities
+  - Practices:
+    - Maintaining balance
+    - Providing resources to make on-call engineers feel safe
+    - Setting apt operational load
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
@@ -81,7 +86,7 @@
 - References: mainly papers. Other sources: blog posts, books, lectures.
 
 ## Terms
-- Chap 2
+- In chap 2
 
 ## Content
 ### Preface
