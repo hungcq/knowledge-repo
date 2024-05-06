@@ -418,11 +418,33 @@ afford, learn, see, appear, pretend, claim
 - Some noun can be both countable and uncountable
 - -> Need to decide using context: a specific thing = countable, things in general = uncountable (eg a noise vs noise)
 
-### 71, 72, 73, 74, 75: A/an, the, some
-- A/an: a thing in general
+### 71, 72, 73, 74, 75, 76: A/an, the, some
+- A/an: a thing in general, a kind of thing (characteristic) (eg black coffee)
 - Some usages:
   - A number of specific things
   - -> Can omit (eg I need new clothes = I need some new clothes)
   - -> Can't be used when talking about things in general (eg I love bananas)
   - Some but not all of sth
-- 
+- The:
+  - Talk about a specific thing
+  - Talk about a specific type of sth (eg The giraffe is the tallest of all animals, The dollar is the US currency)
+  - -> Use after mention "a" thing the second time
+  - When there is only one of sth (eg the equator)
+  - The + adj = adj + people -> plural form (eg The rich = rich people, the French)
+  - -> When talking about 1 person of nationality ending with ch/sh, need to add a noun (eg The French woman)
+  - -> Vs nationality ending with ese/ss (eg a Chinese)
+  - Exception: without the:
+    - Earth, Biology (a name), space (in the universe)
+    - Thing + name (eg platform A, size M, room 1, vitamin B)
+    - TV (as a medium)
+- Nationality:
+  - Nationality ending with ch/sh:
+    - The + nationality = nationality + people -> plural form (eg The French)
+    - When talking about 1 person, need to add a noun (eg The French woman)
+  - Nationality ending with ese/ss:
+    - The + nationality = nationality + people (eg The Chinese)
+    - When talking about 1 person, don't need to add a noun (eg a Swiss)
+  - Other nationality:
+    - Nationality+s = nationality + people (eg Mexicans, Thais)
+    - When talking about 1 person, don't need to add a noun (eg a Thai)
+- -> For simplicity, use "nationality + people" for plural form

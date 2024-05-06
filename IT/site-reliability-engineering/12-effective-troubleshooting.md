@@ -1,0 +1,36 @@
+## 12. Effective troubleshooting
+- Triage def: find out how serious the situation is
+- <img src="./resources/12-1.png" width="500">
+- Principle: hypothetico-deductive method: iteratively test hypothetical causes of the failure:
+  - Form hypotheses using:
+    - Observations of the system
+    - Theoretical basis for understanding system behavior
+  - 2 approaches to test hypotheses:
+    - Compare the observed state of the system against our theories to find confirming or disconfirming evidence
+    - Change the system in a controlled way and observe the results
+- Common pitfalls:
+  - (1)Look at symptoms that aren't relevant or misunderstand the meaning of system metrics
+  - (2) Misunderstand how to change the system, its inputs/envs to safely and effectively test hypotheses
+  - (1) & (2) -> Require general distributed system knowledge & knowledge of this particular system
+  - Come up with wildly improbable theories about what's wrong, or latching on to causes of past problems
+  - -> Require common sense: think about probable causes first
+  - Spurious correlation: due to large amount of data or mistaking correlation with causation
+- Best practices:
+  - Problem report:
+    - Chars of effective report:
+      - Expected behavior
+      - Actual behavior
+      - Optional:
+        - How to reproduce the behavior
+        - Reports have a consistent form and stored in a searchable location
+      - -> Jira
+    - Avoid direct messaging: less visibility, more workload to popular team member
+  - Triage:
+    - Assess the severity:
+      - Low impact problems
+      - High impact problems: emergency call/meeting
+    - Deal with major outage:
+      - Don't start troubleshooting and try to find a root cause as quickly as possible
+      - Make the system work as well as it can under the circumstances
+      - -> Can take steps to preserve evidence of what's going wrong (eg logs) to help with subsequent root-cause analysis
+  - 

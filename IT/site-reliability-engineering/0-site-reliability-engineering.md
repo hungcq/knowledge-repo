@@ -66,6 +66,10 @@
     - Maintaining balance
     - Providing resources to make on-call engineers feel safe
     - Setting apt operational load
+- Chap 12: effective troubleshooting:
+  - Principles
+  - Common pitfalls
+  - Best practices
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
