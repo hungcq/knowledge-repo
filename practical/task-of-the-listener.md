@@ -8,4 +8,4 @@
 - Practical
 
 ## Summary
-<img src="./resources/">
+<img src="./resources/the-task-of-the-listener.drawio.svg">
