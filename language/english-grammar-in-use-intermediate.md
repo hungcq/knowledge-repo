@@ -418,7 +418,7 @@ afford, learn, see, appear, pretend, claim
 - Some noun can be both countable and uncountable
 - -> Need to decide using context: a specific thing = countable, things in general = uncountable (eg a noise vs noise)
 
-### 71, 72, 73, 74, 75, 76: A/an, the, some
+### 71, 72, 73, 74, 75, 76, 77, 78: A/an, the, some
 - A/an: a thing in general, a kind of thing (characteristic) (eg black coffee)
 - Some usages:
   - A number of specific things
@@ -434,9 +434,8 @@ afford, learn, see, appear, pretend, claim
   - -> When talking about 1 person of nationality ending with ch/sh, need to add a noun (eg The French woman)
   - -> Vs nationality ending with ese/ss (eg a Chinese)
   - Exception: without the:
-    - Earth, Biology (a name), space (in the universe)
-    - Thing + name (eg platform A, size M, room 1, vitamin B)
-    - TV (as a medium)
+
+#### Additional info
 - Nationality:
   - Nationality ending with ch/sh:
     - The + nationality = nationality + people -> plural form (eg The French)
@@ -448,3 +447,18 @@ afford, learn, see, appear, pretend, claim
     - Nationality+s = nationality + people (eg Mexicans, Thais)
     - When talking about 1 person, don't need to add a noun (eg a Thai)
 - -> For simplicity, use "nationality + people" for plural form
+- Name:
+  - Without the (most cases): (noun) + name (eg Bangkok, Hung, Doctor John, platform A, size M, room 1, vitamin B)
+  - With the:
+    - Name with Republic/State/Kingdom
+    - Name of rivers/canals/deserts, plural names (eg the Andes)
+    - Name with "of" (eg Bank of England)
+    - Name of newspapers & orgs
+  - Direction:
+    - With the: the north/south (of sth)
+    - Without the: northern sth, direction is in the name (eg South Africa)
+  - Building:
+    - With the:
+      - Names of public buildings/institutions...: name + noun (Cambridge University)
+      - Name of other buildings with people's name (eg The McDonald's)
+    - Without the: other buildings: the + name + noun (optional) (eg The Sheraton (Hotel))
