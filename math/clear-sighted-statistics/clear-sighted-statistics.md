@@ -15,7 +15,7 @@
 
 
 ## Goals
-
+<img src="./resources/goal.drawio.svg">
 
 ## Terms
 - Statistics: data derived from samples
@@ -24,9 +24,14 @@
 - Data (plural of datum)
 
 ## Style
-- Lots of data visualization
-- Tool: Excel (popular)
-- -> Complimented by G-power: null hypothesis testing
-- Multiple examples
+- Author's claim (ok):
+  - Lots of data visualization
+  - Tool: Excel (popular)
+  - -> Complimented by G-power: null hypothesis testing
+  - Multiple examples
 
 ## Summary
+<img src="./resources/clear-sighted-statistics.drawio.svg">
+
+### Excel formulas
+- 

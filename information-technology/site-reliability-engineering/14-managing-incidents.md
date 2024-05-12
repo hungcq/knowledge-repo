@@ -1,0 +1,35 @@
+## 14. Managing incidents
+- Chars of unmanaged incidents:
+  - Sharp focus on the technical problem:
+  try to solve it, not think about the bigger picture of how to mitigate the problem
+  - Poor communication: about what actions their colleagues are taking
+  - Individual, uncoordinated work
+- Features of well-designed incident management process:
+  - Recursive separation of responsibilities: main roles:
+    - Incident commander: command:
+      - Hold the high-level state about the incident
+      - Structure the incident response task force, assign responsibilities according to need and priority
+      - Hold all positions that they have not delegated
+      - Can remove roadblocks that prevent Ops from working most effectively
+    - Ops team: operational work:
+      - Ops lead works with the incident commander to respond to the incident by applying operational tools to the task at hand
+      - Operations team should be the only group modifying the system during an incident
+    - Communicator: communication:
+      - Issue periodic updates to the incident response team and stakeholders (usually via email)
+      - Other tasks: eg keep the incident document accurate & up to date
+    - Planner: planning: support ops by dealing with longer-term issues (eg file bugs, order dinner, arrange handoffs,
+    track how the system has diverged from the norm so that it can be reverted once the incident is resolved)
+  - Recognized command post: offline room & online email/chat
+  - Live incident state document:
+    - Maintained by incident commander
+    - Best practices:
+      - Use a template to generate
+      - Keep the most imp info at the top makes it more usable
+      - Retain for postmortem analysis
+  - Clear, live handoff of incident commander role
+- When to declare an incident:
+  - Declare early then find a simple fix
+  - Set clear conditions for declaring an incident. Egs:
+    - Do you need to involve a second team in fixing the problem?
+    - Is the outage visible to customers?
+    - Is the issue unsolved even after an hour's concentrated analysis?

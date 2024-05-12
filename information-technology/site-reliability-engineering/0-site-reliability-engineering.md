@@ -70,6 +70,11 @@
   - Principles
   - Common pitfalls
   - Best practices
+- Chap 13: emergency response: lessons learned
+- Chap 14: managing incidents:
+  - Chars of unmanaged incidents
+  - Features of well-designed incident management process
+  - When to declare incident
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
