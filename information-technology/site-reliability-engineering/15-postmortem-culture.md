@@ -1,0 +1,44 @@
+## 15. Postmortem culture: learning from failure
+- Def: A written record of an incident, including:
+  - Its impact
+  - The actions taken to mitigate or resolve it
+  - The root cause(s)
+  - The follow-up actions to prevent the incident from recurring
+- Goals:
+  - Document the incident
+  - Provide an understanding of the root causes
+  - Put in place effective preventive actions to reduce the likelihood an/or impact of recurrence
+- Examples of when to write:
+  - User-visible downtime or degradation beyond a certain threshold
+  - Data loss of any kind
+  - On-call engineer intervention
+  - A resolution time above some threshold
+  - A monitoring failure (usually mean manual incident discovery)
+  - Request from a stakeholder
+- -> Make the criteria explicit
+- Blameless culture: focus on identifying the contributing cases of the incident
+without indicting any individual or team for bad or inappropriate behavior
+- Best practices:
+  - Collaborate and share knowledge:
+    - Key features of tools to write postmortem:
+      - Real-time collaboration
+      - Open commenting/annotation system
+      - Email notifications
+    - Review criteria:
+      - Was key incident data collected for posterity?
+      - Are the impact assessments complete?
+      - Was the root case sufficiently deep?
+      - Is the action plan apt and are resulting bug fixes at apt priority?
+      - Did we share the outcome with relevant stakeholders?
+    - Process:
+      - Write
+      - Review
+      - Share with larger team/mailing list
+      - Store for ref
+  - Introducing a postmortem culture:
+    - Management encouragement & active participation
+    - Social methods: postmortem of the month, reading clubs
+    - Ask for feedback & improve the process
+- Advanced tools:
+  - Tools to integrate data into postmortem doc
+  - Automated trend analysis & common themes detection

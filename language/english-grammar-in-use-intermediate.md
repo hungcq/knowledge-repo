@@ -433,7 +433,6 @@ afford, learn, see, appear, pretend, claim
   - The + adj = adj + people -> plural form (eg The rich = rich people, the French)
   - -> When talking about 1 person of nationality ending with ch/sh, need to add a noun (eg The French woman)
   - -> Vs nationality ending with ese/ss (eg a Chinese)
-  - Exception: without the:
 
 #### Additional info
 - Nationality:
@@ -462,3 +461,17 @@ afford, learn, see, appear, pretend, claim
       - Names of public buildings/institutions...: name + noun (Cambridge University)
       - Name of other buildings with people's name (eg The McDonald's)
     - Without the: other buildings: the + name + noun (optional) (eg The Sheraton (Hotel))
+
+### 79. Singular and plural (exception)
+- Plural: things with 2 parts (eg trousers, jeans, glasses) -> usually use with "a pair of"
+- Words always ending in s, both singular & plural: means, species, series
+- Can be both plural or singular: group of people & name of such entity:
+eg audience, committee, company, family, government, staff, team, firm, police, Shell (Shell company)
+- -> Exception: always plural: police -> a policeman
+- Singular: a period of time, a sum of money, a distance (eg 3 years/30 dollars/2 miles isn't many)\
+
+### 80. Noun + noun
+- Noun/V-ing + noun: a kind of thing (eg marriage problem, bus driver, frying pan)
+- -> Sometimes write as a single word (eg weekend). When not sure, use 2 words.
+- Also: a 3-hour course, a 3-week holiday...
+

@@ -75,6 +75,10 @@
   - Chars of unmanaged incidents
   - Features of well-designed incident management process
   - When to declare incident
+- Chap 15: postmortem culture:
+  - Def
+  - Goals
+  - Best practices
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
