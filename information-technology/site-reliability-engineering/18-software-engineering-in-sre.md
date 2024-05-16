@@ -1,0 +1,48 @@
+## 18. Software engineering in SRE
+- Advs of SE within SRE:
+  - Good understanding of production env & the tools needed
+  - Dev for internal users
+  - -> Quick & high quality feedback
+  - Help SREs maintain coding skill & work balance
+  - For the org: attract & help to retain engineers with a broad variety of skills
+- Case study: automated capacity planning tool:
+  - Problems, solution: skipped
+  - Lesson learned:
+    - Launch and iterate: can use prototype/non-optimal component at early stage
+    - Set appropriate level of expectation about functionalities
+    - Identify appropriate customers: those who can derive most benefits
+    - Customer service: onboard users, address emotional concern
+    - Design at the right level: general enough but don't have to cover every use cases (diminishing return)
+- Considerations when choosing projects:
+  - What makes a project a good candidate to take the leap from one-off tool to fully fledged software engineering effort:
+    - Engineers with firsthand exp in the relative domain who are interested in working on the project
+    - A target user base that is highly technical
+    - -> Can provide high-signal bug reports during the early phases of development
+    - Project with noticeable benefits (eg reducing toil for SREs, improving existing piece of infra, streamlining a complex process)
+    - Project fits into the overall set of objectives for the org
+    - -> Engineering leaders can weigh its potential impact & subsequently advocate for the project
+  - Red flags:
+    - Software that touches many moving parts at once
+    - Software design that requires an all or nothing approach that prevents iterative development
+    - Overly specific work that only benefits a small percentage of the org
+    - Tools too flexible & universal
+    - -> Risk not quite fitting any use case
+- Build SE culture:
+  - Team components: SREs with strong coding and software development skills,
+  but may not have the traditional software development experience of being part of a product team
+  or having to think about customer feature requests
+  - -> Partner with engineers, TPMs or PMs who are familiar with user-facing software development
+  - Allocate dedicated, non-interrupted, project work time
+  - SREs involved in any dev effort continue working as SREs instead of becoming full-time devs
+  - -> Maintain production env perspective
+  - How to introduce a software development model to an SRE org focused on production support:
+    - Recognize that this goal is as much an org change as it is a technical challenge
+    - Think about the goal of developing software in SRE:
+      - Foster better software development practices within the team
+      - Software development that produces results that can be used across teams, possibly as a standard for the org
+      - -> Need to:
+        - Create & communicate a clear message about strategy, plans, and **the benefits SRE gains from this effort**
+        - Evaluate the org's capabilities to build & ship a product
+        - -> Educate/recruit if necessary
+        - Launch and iterate: aim for relatively straightforward & achievable targets
+        - Don't lower your standard
