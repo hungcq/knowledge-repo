@@ -475,3 +475,29 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - -> Sometimes write as a single word (eg weekend). When not sure, use 2 words.
 - Also: a 3-hour course, a 3-week holiday...
 
+### 81. 's (apostrophe)
+- Use 's:
+  - For most people/animals instead of "of" (eg Tom's computer, not computer of Tom)
+  - For places (eg city's street, world's population, Vietnam's population)
+  - With time words (eg yesterday, next week, Monday) and periods of time (eg a week's holiday, ten minutes' walk)
+  - -> ? Why not a ten-minute walk
+- -> Can skip the noun after 's to avoid repeating
+- Use "of":
+  - After a long group of word (eg the mother of the man we met yesterday)
+  - For things/ideas...
+- Can use both 's and of for an organization (group of people)
+- 's forms:
+  - 's: after a singular noun/plural noun not ending in s/group of nouns (eg Jane and Karen's)
+  - s': after a plural noun ending in s
+- A + 's = a kind of thing (eg a boy's name = name for boys)
+
+### 82. Myself/themselves (reflexive pronouns)
+- Usage:
+  - When the subject and the object are the same (eg I introduce myself)
+  - Emphasize sth/the one who does sth (eg the film itself isn't good, she does it herself = she herself does it)
+  - -> Can be omitted
+- Form:
+  - -self: singular (yourself)
+  - -selves: plural (yourselves)
+- Exception: not use after wash/shave/dress
+- Themselves vs each other = one another

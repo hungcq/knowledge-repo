@@ -79,6 +79,10 @@
   - Def
   - Goals
   - Best practices
+- Chap 16: tracking outages: functionalities of outage tracker
+- Chap 17: testing for reliability:
+  - Types of tests
+  - Build test culture: best practices
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
@@ -128,5 +132,7 @@
 ## Criticism
 - Chap 6: not well-structured: too many headings that are all over the place
 - Chap 9: mostly platitude
+- Chap 17: poorly written. Hard to understand the details.
 
 ## Takeaway
+- Monitoring best practices

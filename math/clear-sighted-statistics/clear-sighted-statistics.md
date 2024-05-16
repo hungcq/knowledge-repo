@@ -22,6 +22,13 @@
 - Parameters: data taken from the entire population
 - Population: total people/things under investigation
 - Data (plural of datum)
+- Sampling error: stats value != param value
+- Facts (empirical evidence): separated observations/measurements
+- -> Vs value
+- Latin letter (eg s): var of a sample
+- Greek letter (eg sigma): data of a population
+- Sampling frame: list of all elements in the population
+- Measurement: assignment of numbers to variables
 
 ## Style
 - Author's claim (ok):

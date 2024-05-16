@@ -1,0 +1,25 @@
+## 17. Testing for reliability
+- Types of tests:
+  - Traditional tests:
+    - More common in software development to evaluate the correctness of software offline, during development
+    - Types:
+      - Unit tests
+      - Integration tests
+      - System tests:
+        - Smoke tests: test very simple but critical behavior
+        - -> Simplest type
+        - Performance tests
+        - Regression tests: prevent introducing old bugs
+  - Production tests:
+    - Def: interact with a live production system
+    - -> Similar to blackbox monitoring
+    - Types:
+      - Configuration test:
+        - Test which version of config the binary is using
+        - Simple case: query the service to retrieve config content, compare with the goal file content
+      - Stress test: goal: find the limits on a web service
+      - Canary test: for new version of service/config
+- Testing at scale:
+  - Test the env (eg runtime lib)
+  - Test SRE tools
+  - Test whether internal state seen through the API is constant across the operation
