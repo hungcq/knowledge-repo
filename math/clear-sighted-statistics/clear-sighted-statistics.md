@@ -29,6 +29,8 @@
 - Greek letter (eg sigma): data of a population
 - Sampling frame: list of all elements in the population
 - Measurement: assignment of numbers to variables
+- Construct: abstract concept
+- Instruments = questionnaires?
 
 ## Style
 - Author's claim (ok):

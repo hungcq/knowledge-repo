@@ -501,3 +501,10 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
   - -selves: plural (yourselves)
 - Exception: not use after wash/shave/dress
 - Themselves vs each other = one another
+
+### 83. Of mine, my own, on my own/by myself
+- A friend of mine/Tom's (not of me) = one of my/Tom's friends
+- Own:
+  - My own/her own sth = sth of my own = sth that is only mine/hers, not shared/borrowed
+  - Do sth ourselves (eg cut his own hair)
+- On my own = by myself = alone

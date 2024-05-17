@@ -83,6 +83,19 @@
 - Chap 17: testing for reliability:
   - Types of tests
   - Build test culture: best practices
+- Chap 18: software engineering in SRE:
+  - Advs
+  - Case study
+  - Project consideration
+  - Build SE culture best practices
+- Chap 19: load balancing at the frontend:
+  - At DNS
+  - At virtual IP address (LB to many machines behind)
+- Chap 20: load balancing in the datacenter:
+  - Identify & avoid unhealthy task
+  - Limit connection pool
+  - Load balancing policies
+- 
 
 ## Author's goals
 - Problem: most effort is spent after a software is built

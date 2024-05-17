@@ -1,0 +1,32 @@
+## 20. Load balancing in the datacenter
+- Scope: algos for distributing work within a given datacenter for a stream of queries
+- Step 1: identify & avoid unhealthy tasks in pool of backends
+- Step 2: subsetting: limit connection pool: n client tasks -> m backend tasks
+- -> How to distribute backend tasks
+- Step 3: load balancing:
+  - Def: mechanisms used by client tasks to select which backend task in its subset receives a client request
+  - Policies:
+    - Simple round robin: problems:
+      - Small subsetting: all clients may not issue requests at the same rate
+      - -> More likely when vastly different processes share the same backends
+      - -> Backends in the subset of clients generating the most traffic will naturally tend to be more loaded
+      - Varying query costs
+      - Machine diversity
+      - Unpredictable performance factors: affected by neighbor tasks, task restart
+    - -> Work poorly in practice
+    - Least-loaded round robin:
+      - Def: use round robin among the set of tasks with a minimal number of active requests
+      - 2 problems:
+        - The count of active requests may not be a very good proxy for the capability of a given backend
+        - The count of active requests in each client doesn't include requests from other clients to the same backends
+      - -> Work poorly in practice
+    - Weighted round robin:
+      - Algo:
+        - Each client task keeps a capability score for each backend in its subset
+        - Requests are distributed in round-robin fashion,
+        but clients weight the distributions of requests to backend proportionally
+        - In each response (including response to health checks),
+        backends include the current observed rates of queries and errors per second, in addition to the utilization (typically CPU usage)
+        - Clients adjust the capability scores periodically based on:
+          - Current number of successful requests handled and at what utilization cost
+          - Failed requests result in a penalty that affects future decisions
