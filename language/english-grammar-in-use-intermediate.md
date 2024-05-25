@@ -508,3 +508,24 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
   - My own/her own sth = sth of my own = sth that is only mine/hers, not shared/borrowed
   - Do sth ourselves (eg cut his own hair)
 - On my own = by myself = alone
+
+### 84. There and it
+- There:
+  - When talking about sth for the first time, to say that it exists (eg there's a restaurant)
+  - = at/in that place (eg nothing to do there)
+- It: talk about a specific thing/place/situation
+
+### 85. Some and any
+- Some:
+  - In positive sentences
+  - In questions:
+    - When talk about a person/thing exists (eg are you waiting for sb?)
+    - To ask for/offer sth (eg can I have some sugar?)
+- Any:
+  - In negative sentences (literally or implicit in meaning)
+  - In most questions
+  - With "if" (literally or implicit in meaning)
+  - When it doesn't matter which
+- Somebody=someone/anybody=anyone + singular verb, but represented by they/them/their
+- Some/any + plural countable noun (see Countable and uncountable). Exception: "it doesn't matter which".
+- -> Use plural verb

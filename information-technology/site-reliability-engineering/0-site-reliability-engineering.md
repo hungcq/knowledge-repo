@@ -95,7 +95,12 @@
   - Identify & avoid unhealthy task
   - Limit connection pool
   - Load balancing policies
-- 
+- Chap 21: handling overload:
+  - Capacity measurement
+  - Load limit mechanisms
+  - Utilization measurement
+  - Handling overload error at client side
+  - Handling connection overload
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
