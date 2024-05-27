@@ -101,6 +101,12 @@
   - Utilization measurement
   - Handling overload error at client side
   - Handling connection overload
+- Chap 22: address cascading failures: cascading failures:
+  - Causes: server overload, resource exhaustion, service unavailability
+  - Strats to prevent server overload
+  - Triggering conditions
+  - Testing
+  - Immediate mitigation strats
 
 ## Author's goals
 - Problem: most effort is spent after a software is built

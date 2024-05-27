@@ -529,3 +529,22 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - Somebody=someone/anybody=anyone + singular verb, but represented by they/them/their
 - Some/any + plural countable noun (see Countable and uncountable). Exception: "it doesn't matter which".
 - -> Use plural verb
+
+### 86. No/none/any, nothing/nobody
+- No + noun = none = not a, not any (eg there is no bus = there isn't a bus)
+- None:
+  - Use without a noun
+  - None of + plural nouns. Verb can be singular/plural.
+- Nothing, nobody/no-one, nowhere = not anything, anybody, anywhere:
+  - Can be used at the beginning of a sentence or alone
+  - Can be used as subject, especially after be/have
+  - + singular verb, but represented by they/them/their (~somebody, anyone)
+
+### 87. Much, many, little, few, a lot, plenty
+- Much/little (= not much) + uncountable noun
+- Many/few (= not many) + plural noun
+- A lot of/lots of/plenty of (= more than enough) + uncountable/plural noun
+- Uncountable noun + singular verb, plural noun + plural verb
+- Much: shouldn't use in positive sentence (eg we spend lots of money, not we spend much money)
+- Many/a lot of: can be used in all kinds of sentences
+- A little (uncountable) = a few (countable) = some

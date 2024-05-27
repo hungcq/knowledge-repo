@@ -1,0 +1,24 @@
+## 22. Address cascading failures
+- Causes of cascading failures:
+  - Server overload: most common cause
+  - Resource exhaustion:
+    - CPU
+    - Memory
+    - Threads
+    - File descriptors
+    - Dependencies among resource: resource exhaustion scenarios feed from one another
+    - -> Difficult to debug due to many secondary symptoms
+  - Service unavailability: difficult to escape because as soon as servers come back online
+  they are bombarded with an extremely high rate of requests and fail almost immediately
+- Strategies to preventing server overload: in rough priority order:
+  - Load test the server's capacity limits, and test the failure mode for overload
+  - -> Prefer realistic env
+  - Serve degraded results: use service-specific strategy
+  - Instrument the server to reject requests when overloaded
+  - Instrument high-level systems to reject requests, rather than overloading servers: rate-limiting layers:
+    - Reserve-proxies: limit the volume of requests by criteria (eg IP address) to mitigate attempted DoS attacks and abusive clients
+    - Load balancers:
+      - Drop requests when the service enters global overload
+      - Can be indiscriminate or more selective depending on the service
+    - Individual tasks: to prevent random fluctuations in LB from overwhelming the server
+  - Perform capacity planning
