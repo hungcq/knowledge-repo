@@ -119,4 +119,4 @@ open new approaches to understand phenomena that previously haven't been conside
 - F.INV, F.DIST: F distribution
 - CONFIDENCE.NORM, CONFIDENCE.T: confidence interval for population mean with known/unknown population std
 - TINV: t-value from probability
-- 
+- CHISQ: Chi-square dist

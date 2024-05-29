@@ -548,3 +548,14 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - Much: shouldn't use in positive sentence (eg we spend lots of money, not we spend much money)
 - Many/a lot of: can be used in all kinds of sentences
 - A little (uncountable) = a few (countable) = some
+
+### 88. All/some vs all/some of
+- All/some/half/no/etc + noun = all/some/half/none/etc of + the/those/these noun (specific) (eg all of the people)
+- All/some of + it/us/you/them
+- Some/most/half... can be used without a noun sometimes
+
+### 89. Both/either/neither vs both/either/neither of
+- Usage: talk about 2 things
+- Both + plural noun, neither/either + singular noun = both/neither/either of + the/those/these plural noun (specific)
+- Both/neither/either of + us/you/them
+- Both ... and, either ... or, neither ... nor: can be used with noun/verb/phrase/adjective
