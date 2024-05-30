@@ -74,6 +74,8 @@ open new approaches to understand phenomena that previously haven't been conside
   - Null hypo (H0): a proposition tested through falsification process
   - -> In stats: sample stats = population params, dif = sampling error
   - Alternative hypo (HA/H1): MECE with H0
+  - p-value: the probability under a specific statistical model that the statistical summary of the data
+  would be equal to or more extreme than its observed value
 
 ## Style
 - Author's claim (ok):
@@ -120,3 +122,9 @@ open new approaches to understand phenomena that previously haven't been conside
 - CONFIDENCE.NORM, CONFIDENCE.T: confidence interval for population mean with known/unknown population std
 - TINV: t-value from probability
 - CHISQ: Chi-square dist
+- Correlation & regression:
+  - CORREL: calculate r
+  - RSQ: r^2
+  - LINEST: least square line (combine SLOPE, INTERCEPT)
+  - TREND: calculate predicted y
+  - STEYX: standard error of estimate
