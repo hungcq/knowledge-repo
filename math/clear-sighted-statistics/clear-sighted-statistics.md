@@ -89,6 +89,9 @@ open new approaches to understand phenomena that previously haven't been conside
 ## Takeaway
 - Basic understanding of the research method used in social science/business
 - Limitation of NHST and development in statistics field
+- How to do stats on Excel
+- Deeper understanding of NHST concepts & process, and usage of different types of tests
+- Development in the field
 
 ## Summary
 <img src="./resources/clear-sighted-statistics.drawio.svg">

@@ -104,6 +104,7 @@
 - Chap 22: address cascading failures: cascading failures:
   - Causes: server overload, resource exhaustion, service unavailability
   - Strats to prevent server overload
+  - Considerations to avoid server overload
   - Triggering conditions
   - Testing
   - Immediate mitigation strats
