@@ -532,6 +532,7 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 
 ### 86. No/none/any, nothing/nobody
 - No + noun = none = not a, not any (eg there is no bus = there isn't a bus)
+- -> No + plural countable noun: more common
 - None:
   - Use without a noun
   - None of + plural nouns. Verb can be singular/plural.
@@ -559,3 +560,43 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - Both + plural noun, neither/either + singular noun = both/neither/either of + the/those/these plural noun (specific)
 - Both/neither/either of + us/you/them
 - Both ... and, either ... or, neither ... nor: can be used with noun/verb/phrase/adjective
+
+### 90. All every whole
+- Everybody/everyone/everything:
+  - Can stand alone
+  - + singular verb, but represented by they/them/their (~somebody, anyone, noone)
+- -> Vs All:
+  - + noun
+  - of us/you/them
+  - We/you/they + ... + all + ... (eg we are all happy)
+  - All about
+  - All = the only thing(s) (eg all I have eaten)
+- The/my/a + whole + singular noun
+- -> Vs "All the" + uncountable noun
+
+### 91. Each & every
+- Usage:
+  - Similar in most cases
+  - Each:
+    - When think of things separately
+    - Usually used for small number of things
+    - Used for 2 things
+  - Every:
+    - When think of things as a group (~all)
+    - Usually used for large number of things
+    - Talk about frequency (eg every day)
+- Form:
+  - Each/each + noun/each one/each of
+  - -> Can be used in the middle of a sentence
+  - Every + noun/every one of
+
+### 92, 93, 94, 95, 96: Relative clause
+- What = the thing(s) that (eg what happened was my fault)
+- Can omit who/that/which when it is the object of the verb
+- Whom/preposition + whom/preposition + which: formal word, not used frequently in spoken English
+- Whose: used mostly for people
+- -> The + noun + of which: used for things
+- The day/the last time/the reason + (that) + ...
+- Extra information clause (separated using ,): when we already know which person/thing the speaker means
+- Some/most/many/all/neither/none/both/one of which/whom (eg I have 2 brothers, all of whom are soldiers)
+- Which = the fact that
