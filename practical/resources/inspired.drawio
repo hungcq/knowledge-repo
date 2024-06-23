@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T14:49:11.349Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="OyZwES92yCQsYMwklxeO" version="24.4.10" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-23T14:49:20.132Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="S6WrqNXV2hbgbNccxIGV" version="24.4.10" type="github">
   <diagram name="Page-1" id="LtzkvoZE5wQOxvXeWPpe">
     <mxGraphModel dx="954" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -161,16 +161,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="TtzPyp4bpMKkoiG6bIdR-54" value="No help from" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="185" y="710" width="60" height="30" as="geometry" />
+          <mxGeometry x="174" y="690" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TtzPyp4bpMKkoiG6bIdR-55" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="165" y="690" width="20" height="70" as="geometry" />
+          <mxGeometry x="154" y="670" width="20" height="70" as="geometry" />
         </mxCell>
         <mxCell id="TtzPyp4bpMKkoiG6bIdR-56" value="Biz schools" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="105" y="690" width="60" height="30" as="geometry" />
+          <mxGeometry x="94" y="670" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TtzPyp4bpMKkoiG6bIdR-57" value="Industry orgs" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="100" y="730" width="60" height="30" as="geometry" />
+          <mxGeometry x="89" y="710" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
