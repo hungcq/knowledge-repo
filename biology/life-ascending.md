@@ -114,3 +114,27 @@
     - Obs: chemical formation of DNA is feasible given vents condition
     - Hypo: RNA -> (via reverse transcriptase, not DNA replication machinery) DNA
     - Difficulty: single origin of life
+
+### 3. Photosynthesis
+- Reaction: energy + CO2 + H20 (via respiration) <-> (via photosynthesis + energy) O2 + organic molecules
+- Photosynthesis mechanism: as a catalyst to separate O2 from H2O with minimal energy
+- Photosynthesis main goal: get electron from reducer -> form organic matter
+- Question: cause of the switch from other easier electron givers (H2S, dissolved Fe - plentiful in early earth) to H2O:
+  - Hypo: other material ran out
+  - -> Falsified by geological record
+  - Obs: photosynthesis product ATP alongside organic matter
+  - Obs:
+    - Similarity of all chloroplasts & similarity with cyanobacteria (DNA & structure)
+    - Cyanobacteria is the only oxygenic photosynthesis bacteria
+  - -> Hypo: cyanobacteria origin, endosymbiosis
+- Obs: 2 photosystems in photosynthesis
+- Question: how photosystems evolved in cyanobacteria:
+  - Obs:
+    - Similar photosystems between bacteria
+    - Similar core structures between 2 photosystems
+    - Photosystem I uses light to synthesize organic matter from easy source (H2S, Fe)
+    - Photosystem II capture light energy to make ATP
+    - 2 photosystems can evolve naturally
+  - Hypo: dif systems coordinated by a switch, which was disabled due to electron rich env
+  - Obs: mineral cluster in oxygenic complex help split water
+  - -> Hypo: origin in vents, incorporated into photosystem
