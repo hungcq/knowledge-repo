@@ -19,6 +19,11 @@
   - Data mapping patterns
 - -> Better understanding of the patterns used by current projects
 
+## Criticism
+- Pre-microservice age type of book. Many problems/patterns are out of dated:
+  - Some problems are no longer an issue
+  - Some problems have established ways of solving
+
 ## Content
 
 ### Part 1

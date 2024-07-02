@@ -4,7 +4,10 @@
 - Type: book
 - Author: Michael Pollan
 
-## Category: practical, history, science
+## Category
+- Practical
+- History
+- Science
 
 ## Structure
 ### Outline
