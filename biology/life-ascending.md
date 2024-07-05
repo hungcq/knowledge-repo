@@ -27,6 +27,7 @@
 ## Terms
 - Hydrothermal vents: hot, under-water
 - -> Black smoker & alkaline
+- Eukaryote: true nucleus
 
 ## Theme
 - Selection
@@ -138,3 +139,35 @@
   - Hypo: dif systems coordinated by a switch, which was disabled due to electron rich env
   - Obs: mineral cluster in oxygenic complex help split water
   - -> Hypo: origin in vents, incorporated into photosystem
+
+### 4. The complex cell
+- Obs: euka life forms rapidly changed earth env & biological diversity
+- Question: evolution of complex life, why it evolved only once
+- Question: missing intermediate life forms:
+  - Obs: big dif between euka & proka cells
+  - Obs: some bacteria have some euka traits, but never all of them
+  - Problem: build tree of life:
+    - Techniques & limitation:
+      - Fossil record: missing records & bias animal with skeleton
+      - Gene sequencing:
+        - Lateral gene transfer & gene fusion
+        - Difficult to know exactly how much change happened to a gene: only 4 letters
+    - Obs: unique euka genes
+    - -> No consensus about rate of gene evolution
+    - Obs: genes with bacteria equivalent: core process -> evolve slowly -> can build tree of life
+  - Obs from ribosomal gene sequencing: archaea dif from bacteria & close rela with euka
+  - Obs: genes in euka common to 3 groups is a combination of bacteria & archaea genes
+  - Question: source of euka traits: evolved before/after genes fusion?
+    - Hypo: primitive phagocyte: evolving host cell, approaching euka traits, finally acquire mito
+    - Obs: euka without mito, with chimeric genes -> lost mito
+    - -> Weaken the hypo
+    - Hypo 2: the reverse
+    - Obs: all mitos retain some genes despite many disadvs: inefficiency, high mutation rate
+    - -> Hypo: retained for respiration: locally control gene activity
+    - Obs: area to volume ratio, need to duplicate genes to control internal membranes -> difficulty of getting big
+    - Hypo: advs of mito: internal membranes & ability to control locally
+  - Question: evolution & adv of nucleus
+    - Obs: DNA contain non-coding sections (introns), originated from jumping genes
+    - Obs: RNA scissors to cut introns before building proteins. Scissors operate slowly.
+    - Hypo: nucleus to separate cutting from protein building
+    - -> Adv: large genome, variation & complexity
