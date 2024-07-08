@@ -171,3 +171,68 @@
     - Obs: RNA scissors to cut introns before building proteins. Scissors operate slowly.
     - Hypo: nucleus to separate cutting from protein building
     - -> Adv: large genome, variation & complexity
+
+### 5. Sex
+- Obs: universality of sex in euka
+- Disadvs of sex:
+  - Biological cost, need 2 partners
+  - -> Slow
+  - Post only half genes -> can't retain adv of good genome
+- Question: why sex evolve? Why not clone good genome?
+  - Obs: meiosis mechanism, recombination
+  - Hypo: sex allow combination of 2 good genes of dif individuals & avoid degeneration from bad genes (Muller's ratchet)
+  - -> Problem: group selection -> no evolutionary adv
+  - Hypo: sex & recombination (genetically) are advantageous to changing env
+  - -> Not supported by data
+  - Hypo: sex advs against parasites
+  - -> Only under certain circumstances -> can't explain universality
+  - Adjusted hypo: sex also retains genetic diversity (simulation)
+  - -> Imp for adaptation & also benefit individual
+  - Hypo: early euka conditions:
+    - High selection pressure: jumping genes destroy genome
+    - Variable population & high mutation rate: impact of bacterial genes on host genome
+  - -> Sex combine advs & allow survival
+  - Obs: sex mechanism is not hard to evolve:
+    - Cell fusion
+    - Segregation of chromosomes
+    - Recombination
+
+### 6. Movement
+- Obs:
+  - Muscle consists of fibers, with bands of dif density
+  - Muscle contraction is triggered by electricity from nervous system
+- Question: muscle contraction mechanism
+- -> Obs: muscle mechanism: myosin, actin (skipped)
+- Obs: common ancestor of most animal has both muscle types & myosin
+- -> Question: how actin-myosin mechanism evolve? What is the evolutionary adv?
+  - Obs: actin in cytoskeleton (common to all euka cells) can bind to myosin heads
+  - Obs: all variations of cell movement & inner transportation are based on the same mechanism
+  - Obs (via crystallography): myosin & kinesin have similar structure despite dif gene sequences
+  - -> Evolve from common bacterial ancestors
+  - Obs: cytoskeleton mechanism (skipped)
+  - Obs: all living euka is motile
+  - -> Ancestor is motile
+- Remaining question: evolution of motility in ancestral euka, source of the proteins
+
+### 7. Sight
+- Obs: dominance of species with eyes
+- Question: evolution of rudimentary eyes:
+  - Obs: eyes with retina and no lens are more sensitive to light
+  - Obs: eyes start to appear in fossil in Cambrian explosion
+  - -> Hypo: eyes evolution drive the explosion
+  - Hypo: gradual evolution of eyes
+  - -> Prediction: formed by reusable material
+- Question: how lens evolve:
+  - Obs: proteins used in lens are also used in other places, reinvented many times
+- Question: evolution of light-sensitive cells of the retina:
+  - Protein for sensing light in retina is used across the animal kingdom
+  - Hypo 1: common ancestor
+  - Hypo 2: constraints -> convergent evolution
+  - Obs: light sensitive cells of vertebrates & invertebrates have dif structures & neural mechanism
+  - Obs: several genes can control eyes development in both groups
+  - -> Corroborate hypo 1
+  - Obs: light sensitive proteins exist in species close to ancestor of both group, used for circadian rhythm
+  - -> Common ancestor, diverge to dif functions
+- Question: who was the ancestor?
+  - Obs: visual pigments (opsin) in both groups exist in algae, in particular chloroplasts
+  - -> Hypo: common ancestor: protozoa: engulfed chloroplasts
