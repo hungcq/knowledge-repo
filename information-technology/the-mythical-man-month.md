@@ -9,7 +9,7 @@
 - Project management
 
 ## Goals
-- Discuss managing software project
+- Discuss managing software projects
 - Provide lore of the field & a personal view
 
 ## Style
