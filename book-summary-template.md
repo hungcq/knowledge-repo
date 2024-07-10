@@ -1,4 +1,4 @@
-# [name]
+# Book Summary Template
 
 ## Info
 - Type: book
