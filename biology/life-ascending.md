@@ -8,8 +8,6 @@
 - Biology
 - Evolution
 
-## Structure
-
 ## Goals
 
 ## Style
@@ -21,11 +19,13 @@
   - Stimulating thoughts
 
 ## Takeaway
+- Deeper understanding of the research process in natural science: question framing, consistency checking
 
 ## Criticism
+- Many questions remain unanswered, or the answer is very tentative
 
 ## Terms
-- Hydrothermal vents: hot, under-water
+- Hydrothermal vents: hot, underwater
 - -> Black smoker & alkaline
 - Eukaryote: true nucleus
 
@@ -51,7 +51,7 @@
     - Concentration problem
   - Hypo: black smoker:
     - Reactions:
-      - CO & others -> organic matter (C,H,O)
+      - CO & others -> organic matter (C, H, O)
       - H2S + Fe -> FeS2 + H2 + energy
     - -> Concentration problem
   - Hypo: alkaline vents:
@@ -65,7 +65,7 @@
       - -> Chemically & thermodynamically feasible
     - -> Question: where ATP in the reaction comes from?
     - -> Simple form (acetyl thioester) in vents
-    - Question: how life escape from vents (as source of energy):
+    - Question: how life escaped from vents (as a source of energy):
       - Question: ATP energy is atomic -> can't be formed in straight reaction: no extra energy saved for further reaction
       - -> Chemiosmosis mechanism: pump proton across membrane (proto gradients)
       - -> Build an ATP gradually
@@ -79,9 +79,9 @@
 - Question: how DNA code for protein (amino acid)?
   - Constraint: 20 amino acid (aa) -> 3-letter sequence needed
   - Hypo: overlapping sequence
-  - -> Falsified by data: how aa appear in protein
+  - -> Falsified by data: how aa appears in protein
   - Obs: DNA -> messenger RNA -> transfer RNA (20 types, bind to dif 3-letter codons):
-    - Question: how transfer RNA bind to mRNA correctly/orderly
+    - Question: how transfer RNA binds to mRNA correctly/orderly
     - Hypo: only 1 per 3 cyclic permutations of codon is allowed
     - -> Disproved by aa AAA
     - Obs: redundant code, dif codons can code for 1 aa
@@ -119,7 +119,7 @@
 ### 3. Photosynthesis
 - Reaction: energy + CO2 + H20 (via respiration) <-> (via photosynthesis + energy) O2 + organic molecules
 - Photosynthesis mechanism: as a catalyst to separate O2 from H2O with minimal energy
-- Photosynthesis main goal: get electron from reducer -> form organic matter
+- Main goal of photosynthesis: get electron from reducer -> form organic matter
 - Question: cause of the switch from other easier electron givers (H2S, dissolved Fe - plentiful in early earth) to H2O:
   - Hypo: other material ran out
   - -> Falsified by geological record
@@ -133,11 +133,11 @@
   - Obs:
     - Similar photosystems between bacteria
     - Similar core structures between 2 photosystems
-    - Photosystem I uses light to synthesize organic matter from easy source (H2S, Fe)
-    - Photosystem II capture light energy to make ATP
+    - Photosystem I uses light to synthesize organic matter from an easy source (H2S, Fe)
+    - Photosystem II captures light energy to make ATP
     - 2 photosystems can evolve naturally
   - Hypo: dif systems coordinated by a switch, which was disabled due to electron rich env
-  - Obs: mineral cluster in oxygenic complex help split water
+  - Obs: mineral cluster in oxygenic complex helps split water
   - -> Hypo: origin in vents, incorporated into photosystem
 
 ### 4. The complex cell
@@ -146,15 +146,15 @@
 - Question: missing intermediate life forms:
   - Obs: big dif between euka & proka cells
   - Obs: some bacteria have some euka traits, but never all of them
-  - Problem: build tree of life:
+  - Problem: build the tree of life:
     - Techniques & limitation:
       - Fossil record: missing records & bias animal with skeleton
       - Gene sequencing:
         - Lateral gene transfer & gene fusion
         - Difficult to know exactly how much change happened to a gene: only 4 letters
     - Obs: unique euka genes
-    - -> No consensus about rate of gene evolution
-    - Obs: genes with bacteria equivalent: core process -> evolve slowly -> can build tree of life
+    - -> No consensus about the rate of gene evolution
+    - Obs: genes with bacteria equivalent: core process -> evolve slowly -> can build the tree of life
   - Obs from ribosomal gene sequencing: archaea dif from bacteria & close rela with euka
   - Obs: genes in euka common to 3 groups is a combination of bacteria & archaea genes
   - Question: source of euka traits: evolved before/after genes fusion?
@@ -167,7 +167,7 @@
     - Obs: area to volume ratio, need to duplicate genes to control internal membranes -> difficulty of getting big
     - Hypo: advs of mito: internal membranes & ability to control locally
   - Question: evolution & adv of nucleus
-    - Obs: DNA contain non-coding sections (introns), originated from jumping genes
+    - Obs: DNA contains non-coding sections (introns), originated from jumping genes
     - Obs: RNA scissors to cut introns before building proteins. Scissors operate slowly.
     - Hypo: nucleus to separate cutting from protein building
     - -> Adv: large genome, variation & complexity
@@ -177,10 +177,10 @@
 - Disadvs of sex:
   - Biological cost, need 2 partners
   - -> Slow
-  - Post only half genes -> can't retain adv of good genome
-- Question: why sex evolve? Why not clone good genome?
+  - Past only half the genes -> can't retain adv of good genome
+- Question: why sex evolved? Why not clone good genomes?
   - Obs: meiosis mechanism, recombination
-  - Hypo: sex allow combination of 2 good genes of dif individuals & avoid degeneration from bad genes (Muller's ratchet)
+  - Hypo: sex allows the combination of 2 good genes of dif individuals & avoid degeneration from bad genes (Muller's ratchet)
   - -> Problem: group selection -> no evolutionary adv
   - Hypo: sex & recombination (genetically) are advantageous to changing env
   - -> Not supported by data
@@ -199,12 +199,12 @@
 
 ### 6. Movement
 - Obs:
-  - Muscle consists of fibers, with bands of dif density
-  - Muscle contraction is triggered by electricity from nervous system
+  - Muscle consists of fibers with bands of dif density
+  - Muscle contraction is triggered by electricity from the nervous system
 - Question: muscle contraction mechanism
 - -> Obs: muscle mechanism: myosin, actin (skipped)
-- Obs: common ancestor of most animal has both muscle types & myosin
-- -> Question: how actin-myosin mechanism evolve? What is the evolutionary adv?
+- Obs: common ancestor of most animals has both muscle types & myosin
+- -> Question: how actin-myosin mechanism evolved? What is the evolutionary adv?
   - Obs: actin in cytoskeleton (common to all euka cells) can bind to myosin heads
   - Obs: all variations of cell movement & inner transportation are based on the same mechanism
   - Obs (via crystallography): myosin & kinesin have similar structure despite dif gene sequences
@@ -225,14 +225,133 @@
 - Question: how lens evolve:
   - Obs: proteins used in lens are also used in other places, reinvented many times
 - Question: evolution of light-sensitive cells of the retina:
-  - Protein for sensing light in retina is used across the animal kingdom
+  - Protein for sensing light in the retina is used across the animal kingdom
   - Hypo 1: common ancestor
   - Hypo 2: constraints -> convergent evolution
   - Obs: light sensitive cells of vertebrates & invertebrates have dif structures & neural mechanism
-  - Obs: several genes can control eyes development in both groups
+  - Obs: several genes can control eye development in both groups
   - -> Corroborate hypo 1
-  - Obs: light sensitive proteins exist in species close to ancestor of both group, used for circadian rhythm
+  - Obs: light-sensitive proteins exist in species close to ancestor of both groups, used for circadian rhythm
   - -> Common ancestor, diverge to dif functions
 - Question: who was the ancestor?
   - Obs: visual pigments (opsin) in both groups exist in algae, in particular chloroplasts
   - -> Hypo: common ancestor: protozoa: engulfed chloroplasts
+
+### 8. Hot blood
+- Obs:
+  - Heat retention is not difficult for large cold-blooded animals
+  - Hot-blooded animals generate internal heat regardless of the env
+  - Energy cost to maintain internal heat is high when temp is low
+- Question: evolutionary adv of hot blood:
+  - Obs: dif muscle types: power vs stamina tradeoff
+  - Hypo: selection for stamina -> logically plausible
+  - Obs: max rate = 10x resting rate
+  - -> Hypo: resting metabolic rate is directly proportional to max rate
+  - Obs: high mito density in organs of hot-blooded animals
+  - Hypo: heat & hot blood as side effect of aerobic capacity
+  - -> Obs: many exceptions to the link
+  - Obs: 2 groups of reptiles are ancestor of mammal & bird respectively:
+    - Therapsids:
+      - Lystrosaurus: herbivore
+      - Cynodonts -> mammal
+    - Archosaurs:
+      - Thyropods -> birds
+      - Dinosaurs
+  - Obs: reptilian ancestors of mammals have respiratory turbinates -> probably high resting metabolism
+  - -> Hypo: hot-blooded
+  - Obs: theropod dinosaurs have similar skin structure to birds -> likely to have feathers
+  - -> Hypo: hot-blooded or high aerobic capacity
+  - Obs: structure of theropod's heart & lung can also support high level of activity: 4-chamber heart, bird-like lung
+  - -> Hypo: high metabolic rate, not necessarily hot-blooded
+  - Obs: geological activities & atmospheric composition at that period
+  - -> Hypo: carbon rich, nitrogen poor diet requires either:
+    - Burn extra carbon from food
+    - Use extra food to get bigger
+  - -> Hypo: hot blood evolved from adv of high aerobic capacity & the need to burn extra carbon from green diet
+
+### 9. Consciousness
+- Question:
+  - Mind/brain rela/interaction
+  - How mind/brain evolved
+  - -> Imp: involve human conception of their spirit
+- Motivation for scientific study:
+  - Deep mystery
+  - Cure disease
+- Consciousness def:
+  - Core/primary (~animal): emotions, motivations, pain, rudimentary sense of self
+  - Extended (human): awareness of self embedded in the world, society, culture, future projection
+- Obs: extended consciousness: easy to explain given core consciousness: society, language
+- Obs:
+  - Unitary feeling: brain mechanism
+  - Perception: via neural mechanism: encode, transmit, transform
+  - Illustrations:
+    - Damage brain -> reproducible result, ~animal, can affect consciousness
+    - Direct brain stimulation/drug
+- Hypo: consciousness is a result of brain activity, not an emergence property
+- Obs: coherent perception produced by neurons firing in synchrony
+- -> Hypo: a group of neurons fires at the moment of conscious perception
+- Def: emotion: body states
+- -> Map out by brain into feeling
+- -> Map of feeling into external objects = consciousness -> human value
+- Question: how the maps are built & relate to each other
+  - Obs:
+    - Map = group of neurons strengthened by experience
+    - Strengthening mechanism: when neurons fire together
+    - Role of genes: general brain structure & region development, not detailed architecture & connections
+  - Obs:
+    - Dif oscillation phases for dif aspects of a scene
+    - Oscillation (reverberation) between distant brain regions
+    - When a neuron fires, it depolarizes & can't fire again until it has re-polarized
+    - Phase-lock mechanism: time taken for neurons to be able to fire again
+  - -> Hypo: phase-locked oscillations bind when phases overlap -> higher level of consciousness = lower phase
+- Question: how neurons generate feeling:
+  - Obs: primordial emotions = feeling, serves survival/propagation purpose
+  - Obs: feeling induces action -> physically selectable
+  - Assumption: sense = input, feeling = output
+  - -> Question: what is feeling in terms of matter
+  - -> Hypo: feeling as new "conscious" property of matter
+  - Hypo: feeling = result of quantum mechanic in the brain (vibration of proteins)
+  - -> Not corroborated by obs of the brain's working
+  - Hypo: selection on physical attribute of neurons
+  - -> Feeling = pattern of neuron firing:
+    - Feeling selection:
+      - Realness -> survival adv
+      - Immaterial feeling = inability to introspect brain's working = optimization: focus on outer-world -> selected
+    - Difficulty of full expression by language = loss during neural firing & pattern mapping
+    - Can be communicated = same firing pattern
+- Obs: many animals with brain have feeling
+- -> Hypo: consciousness arose from primordial feelings -> widespread -> can study animals
+
+### 10. Death
+- Question: evo adv of death
+- Cell death:
+  - Obs: genetically identical cells differentiate to adapt to the env
+  - Hypo: programmed death mechanism evolved in bacteria:
+  weak/damaged cells in genetically identical population suicide to ensure survival of the genome
+  - Obs: differentiation (specialization) between germ-line & soma cells
+  - -> Found in primitive colonies of cells
+  - Obs: in all euka cells, death machinery is the same & inherited from mito (~cyanobacteria)
+  - -> In multicellular organism: death ensures differentiation, punish transgression
+- Question: aging & death in multicellular organisms:
+  - Hypo: population selection, death benefits species
+  - -> Not work for selfish gene
+  - Hypo: no selective pressure after reproductive cycle -> accumulation of bad traits & antagonistic pleiotropy
+  - -> Only explain age-related diseases, not aging & dying
+  - Obs:
+    - Mutations causing change in a single pathway extend lifespan & health of various species
+    - Life-extending genes also control sexual maturation:
+      - Env plenitude -> insulin -> body development
+      - Tradeoff: resource for bodily maintenance vs resource for sex
+  - Question: can lifespan be prolonged without affecting fertility?
+  - Hypo: free-radical theory of aging: free radicals damage DNA & protein -> aging
+  - -> Falsified by obs:
+    - Antioxidants don't prolong life
+    - Free radical is an imp signal of cell physiology: trigger apoptosis, not damaging cells
+  - Obs: lifespan & health span ~ free radical like ~ metabolic rate in most mammals
+  - -> Adjusted hypo: increased rate of leak from old, damaged mitos triggers inflammation mechanism -> prolonged mild stress
+  - -> Either:
+    - Cell deaths & increased pressure on living cells
+    - Cells avoid death by switching to alternative energy source -> cancer
+  - -> Age-related diseases
+  - Obs: reduced free radical leaking (calorie restriction/gene mutation) increases life/health span in several cases
+  - Consequence of hypo: should focus on delaying aging, not curing diseases in aged body
