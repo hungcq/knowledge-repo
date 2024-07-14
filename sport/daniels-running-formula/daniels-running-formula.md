@@ -15,7 +15,7 @@ Sport, practical
 
 ## Goals
 - Provide practical scientific info for both coaches & athletes
-- Present what I think to be the best approach to training for or coaching middle- and long-distance running events
+- Present what the author thinks to be the best approach to training for or coaching middle- and long-distance running events
 
 ## Terms
 - Viscosity: nhầy

@@ -418,7 +418,7 @@ afford, learn, see, appear, pretend, claim
 - Some noun can be both countable and uncountable
 - -> Need to decide using context: a specific thing = countable, things in general = uncountable (eg a noise vs noise)
 
-### 71, 72, 73, 74, 75, 76, 77, 78: A/an, the, some
+### 71, 72, 73, 74, 75, 76, 77, 78. A/an, the, some
 - A/an: a thing in general, a kind of thing (characteristic) (eg black coffee)
 - Some usages:
   - A number of specific things
@@ -590,7 +590,7 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
   - -> Can be used in the middle of a sentence
   - Every + noun/every one of
 
-### 92, 93, 94, 95, 96: Relative clause
+### 92, 93, 94, 95, 96. Relative clause
 - What = the thing(s) that (eg what happened was my fault)
 - Can omit who/that/which when it is the object of the verb
 - Whom/preposition + whom/preposition + which: formal word, not used frequently in spoken English
@@ -600,3 +600,20 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - Extra information clause (separated using ,): when we already know which person/thing the speaker means
 - Some/most/many/all/neither/none/both/one of which/whom (eg I have 2 brothers, all of whom are soldiers)
 - Which = the fact that
+
+### 97. -ing & -ed clauses
+- Left = not used, still there
+
+### 98. -ing/-ed adjectives
+- -ing adj: tell about sth
+- -ed adj: tell how sb feels
+
+### 99, 100, 101. Adjectives & adverbs
+- Order:
+  - Opinion adj -> fact adj
+  - Fact adj: size/length -> shape/width -> age -> color -> origin -> material
+- Use "and" for 2+ color adjs
+- Adverbs: can be used before:
+  - Adj
+  - Another adverb
+  - Past participle
