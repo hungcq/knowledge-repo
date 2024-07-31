@@ -617,3 +617,104 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
   - Adj
   - Another adverb
   - Past participle
+- Fast, hard, late, well: can be both adj & adv
+- Hardly
+  - = very little, almost not, certainly not
+  - Usage: hardly + verb/ever/any/anybody/anything...
+  - Can hardly = very difficult
+
+### 102. So & such
+- Usage:
+  - Make the meaning stronger
+  - = like this (eg I got up at six. I don’t usually get up so early. = early like this; such a thing = a thing like this)
+- Form:
+  - So + adj/adv
+  - Such + (a/an/adj) + noun. No such + noun.
+  - So/such ... + (that) + clause
+
+### 103. Enough & too
+- Enough form:
+  - Adj/adv + enough
+  - Enough + plural noun
+  - Can be used alone
+- Too/enough ... + for sb/sth
+- Too/enough ... + to do: emphasize the ability to do it
+- Too/enough ... + to be done: emphasize the subject and the action being done to it
+
+### 104. Quite, pretty, rather, fairly
+- Quite
+  - = pretty (informal) = less than very, more than a little
+  - Used before a/an
+  - Quite + a lot of
+  - Not quite = not completely
+- Rather: ~quite:
+  - Used for negative ideas (things we think not good)
+  - To express surprise
+- Fairly: < quite
+
+### 105, 106, 107. Comparative
+- Use -er for 1 syllable word or 2-syllable adj ending in "y"
+- Use more for adv ending in "y"
+- Much/a lot = far/a bit/a little = slightly/no = not any/any + comparative
+- "-er and -er"/"more and more + noun/2-syllable comparative":
+to say that sth changes continuously (eg better and better, more and more expensive, more and more tourists)
+- The comparative the better:
+  - As adj as possible (eg the sooner the better)
+  - To say that one thing depends on another thing (eg the younger you are, the easier it is to learn)
+- Not as/so + adj (+ as + clause) = less than (eg not as crowded as usual = less crowded than usual)
+- As adj as = equal -> twice/there times as adj as = 3x
+- The same (noun) as
+- Than me/her = than I am/she is
+- Elder vs older: elder can only be used to talk about people -> can always use older
+
+### 108. Superlative
+- -est or most: same rule as comparative
+- Form: the/my/yours... + superlative +:
+  - in places/orgs/groups of people (eg in the hotel)
+  - of period of time (eg of the year)
+  - Present perfect clause (eg I have done)
+
+### 109, 110. Word order
+- Verb + object: go together, nothing in between
+- Verb (+ object) + place.
+- Time:
+  - After place
+  - Sometimes at the start of the sentence
+- Some adverbs go in the middle of the sentence (eg always, usually, never, also, probably, still, only, already):
+  - Before 1-word verbs (including standalone can, will, do, to be)
+  - After "to be"
+  - After the first verb in 2-word verbs (including can, will, doesn't)
+- -> Also apply to "all", "both"
+- Note: probably before negative (eg probably can't help = can probably help)
+
+### 111, 112. Still anymore yet already even
+- Still:
+  - To say that an action is continuing
+  - = in spite of this
+- Not anymore/any longer:
+  - To say that a situation has changed
+  - Go at the end of a sentence (vs no longer: at the middle of a sentence)
+- Yet:
+  - = until now: show expectation that sth will happen
+  - Usually used at the end of questions and negative sentences
+  - Usually used with present perfect
+- -> Still not: show stronger surprise/impatience
+- Already = sooner than expected: usually in the middle/end of sentence
+- Even = sth is unusual or surprising
+- Even though/even when/even if + clause
+
+### 113. Although, though, even though, in spite of, despite
+- Although/Even though/Though clause1, clause2 = Clause1, but clause2
+= Clause2 although clause1 = In spite of the fact that clause1, clause2
+- In spite of/despite + noun/pronoun/verb-ing, clause (eg despite what I said, despite having nothing, despite this)
+- Though can be used at the end of a sentence in spoken English: clause1. clause2 though. = though clause1, clause2
+
+### 114. In case
+- In case something happens = Because it is possible it will happen = because it might happen
+- -> Not used with future tense (ie will)
+- Just in case: smaller probability
+- In case = preparation, do anyway
+- -> Vs If = conditional: only do when sth happens
+- In case + past tense: to say why sb did sth
+- In case of + N = If there is + N
+- -> Usually used in notices, instructions...
