@@ -718,3 +718,37 @@ to say that sth changes continuously (eg better and better, more and more expens
 - In case + past tense: to say why sb did sth
 - In case of + N = If there is + N
 - -> Usually used in notices, instructions...
+
+### 115. Unless, as long as, provided
+- Meaning:
+  - Unless = except if ~ if not (eg can go unless it rain = can go if it doesn't rain)
+  - Not unless = positive + only if (eg cant go unless = can go only if)
+  - As long as, so long as = provided, providing (that) = if = on condition that
+- Use present tense when talking about the future
+
+### 116. As
+- As = at the same time as, just as = exactly at that moment:
+  - When 2 things happen at the same time (same tense, usually past tense)
+  - As + past continuous clause: when 1 thing happens in the middle of sth else
+- -> Vs when: used when 1 thing happens after another (when clause1, clause2 -> clause1 happens before clause2)
+- Can be used for 2 things happen together over a long period of time
+- As = because = since
+
+### 117. Like & as
+- Like (proposition):
+  - = similar to = the same as
+  - Form: + noun/pronoun/verb-ing
+- Like = for example = such as
+- As = like:
+  - = in the same way as = in the same condition as:
+  - + clause
+- As usual, as always, the same as
+- Do as + clause = do what + clause (eg do as they promised = do what they promised)
+- As you know/as I said/as she expected/as I thought = know/said this already/before
+- As (preposition) = in the position of, in the form of (eg as an engineer, as a place to visit, the news came as a shock)
+
+### 118. Like & as if
+- Like = as if = as though:
+  - Looks/sounds/feels + like/as if/as though + clause: to say how sb/sth looks/sounds/feels
+  - Other verb + like/as if/as though + clause: to describe how sb does sth
+- As if + past tense (~if): when talking about sth not real (eg he is talking as if he knew everything)
