@@ -752,3 +752,87 @@ to say that sth changes continuously (eg better and better, more and more expens
   - Looks/sounds/feels + like/as if/as though + clause: to say how sb/sth looks/sounds/feels
   - Other verb + like/as if/as though + clause: to describe how sb does sth
 - As if + past tense (~if): when talking about sth not real (eg he is talking as if he knew everything)
+
+### 119. During, for, while
+- During = between start & end of sth -> when sth happens
+- During + time word = in + time word (eg in the night)
+- For -> how long sth happens
+- While + clause:
+  - Vs: during + noun
+  - Use present tense when talking about the future
+
+### 120. By & until, by the time
+- By Monday = on or before Monday, not later than Monday
+- -> Sth happens "by" a time in the future
+- Until = till: to say how long a situation continues
+- -> Sth continues "until" a time in the future
+- By the time + clause:
+  - Sth happens/happened by a time in the future/past
+  - Usually to say about sth that takes a long time (eg by the time I arrived, she had already left)
+  - By then = by that time: shorten form to avoid repeating a clause
+
+### 121. At/on/in (time)
+- At + time of day
+- On + day/date (on is optional before day (eg on Friday = Friday, on Friday morning = Friday morning))
+- In:
+  - In + longer period
+  - = time from now (eg in a month = a month from now)
+  - = how long it takes to do sth (eg I learned to drive in 4 weeks)
+- Next/last/this/every + time: no preposition before
+#### Other usage
+- At the moment, at the minute, at present, at this time = now
+- At the same time
+- At (the) weekends = on (the) weekends
+- At Christmas, on Christmas day
+- At night = during nights in general, in the night = during a particular night
+- In the morning(s) vs On Friday morning
+
+### 122. On time & in time, at the end & in the end
+- On time = punctual, at the time planned
+- In time + for sth/to do sth = soon enough, on or before time
+- -> Opposite: too late. Just in time = almost late.
+- At the end/beginning (of sth) = at the time when sth ends/begins
+- In the end = finally: describe the final result of a situation
+- -> Opposite: at first
+
+### 123, 124, 125. In/at/on (position)
+- In: ~inside
+- At: ~outside
+- On: ~on the surface
+#### Special usage
+- In:
+  - In a line/row/queue
+  - In a picture/photo(graph)
+  - In a newspaper/magazine/book
+  - In an office/a department
+  - In the sky/world
+  - In the country = not in a town
+  - In bed/hospital/prison
+- On:
+  - On the left/right (-hand side)
+  - On the ground/first/second/... floor
+  - On a map/menu/list/page/website
+  - On a river/road
+  - On the coast
+  - On the way
+- At:
+  - At the top/bottom/end of
+  - At school/uni/college/home/work
+  - At a party/concert/meeting/wedding/conference...
+  - At the station/airport
+- Front/back:
+  - In the front/back of a car
+  - At the front/back of a building/theater/group of people...
+  - On the front/back of an envelope/a piece of paper...
+- Corner:
+  - In the corner of a room
+  - At/on the corner of a street
+- Building:
+  - At: to describe where an event takes place (eg we ate at Helen's house)
+  - In: to describe about the building itself (eg it was cold in Helen's house)
+- City/town/village:
+  - Usually use "in"
+  - Use "at" when we think of the place as a point or station on a journey
+- Means of transportation:
+  - On a bus/train/plane/ship/bike/motorbike/horse
+  - In a car/taxi
