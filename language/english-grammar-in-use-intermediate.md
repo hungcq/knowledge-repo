@@ -795,7 +795,7 @@ to say that sth changes continuously (eg better and better, more and more expens
 - In the end = finally: describe the final result of a situation
 - -> Opposite: at first
 
-### 123, 124, 125. In/at/on (position)
+### 123, 124, 125, 127. In/at/on (position)
 - In: ~inside
 - At: ~outside
 - On: ~on the surface
@@ -808,6 +808,11 @@ to say that sth changes continuously (eg better and better, more and more expens
   - In the sky/world
   - In the country = not in a town
   - In bed/hospital/prison
+  - In the rain/sun/shade...
+  - In adj weather (eg in cold weather)
+  - In a language (eg in English)
+  - In a currency (eg in dollars)
+  - In good/bad mood
 - On:
   - On the left/right (-hand side)
   - On the ground/first/second/... floor
@@ -815,11 +820,15 @@ to say that sth changes continuously (eg better and better, more and more expens
   - On a river/road
   - On the coast
   - On the way
+  - On media (eg on TV/the radio/the phone)
+  - On holiday/vacation/business/a trip/a tour/a cruise
 - At:
   - At the top/bottom/end of
   - At school/uni/college/home/work
   - At a party/concert/meeting/wedding/conference...
   - At the station/airport
+  - At the age/speed/altitude... of
+  - At number + units (eg at 90 miles per hour, at 100 degrees)
 - Front/back:
   - In the front/back of a car
   - At the front/back of a building/theater/group of people...
@@ -836,3 +845,69 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Means of transportation:
   - On a bus/train/plane/ship/bike/motorbike/horse
   - In a car/taxi
+
+### 126. To, at, in, into
+- To: for movement
+- Welcome to, a trip/visit to, my way to
+- Into: enter sth (eg into the kitchen, into a bank account)
+- -> With go/get/put, can use "in" instead
+
+### 128. By
+- Usage:
+  - Method of transportation (eg by car)
+  - -> Vs in a car/on a plane/on foot
+  - How to do sth (eg pay by card, do sth by hand). Exception: pay in cash.
+  - Passive sentence: by + subject who performs the action (eg door is opened by Hung)
+  - -> Vs with + object used to perform the action (eg door is opened (by Hung) with a key)
+  - Next to/beside (position)
+  - Distance between 2 things (eg increased by 5%)
+- Other usage:
+  - By mistake/accident/chance
+  - -> Vs On purpose
+  - Play/painting/poem by + author
+
+### 129. Noun + preposition
+- Reason/demand/need for
+- Cause/picture/photograph/map/plan/drawing of
+- Advantage/disadv of noun/verb-ing
+- -> Vs There is an adv in/to verb-ing
+- An increase/decrease/rise/fall in sth (eg an increase in the cost of living)
+- Damage/invitation/solution/answer/reply/key/reaction to
+- Attitude to/towards
+- Rela/connection/contact with sb/sth
+- Rela/connection/contact/difference between 2 people/things
+
+### 130, 131. Adjective + preposition
+- Nice/kind/good/generous/polite/honest/stupid/silly... of sb (to do sth)
+- Nice/kind/good/generous/polite/rude/friendly/cruel... to sb
+- Angry/annoyed/furious/upset:
+  - About sth
+  - With sb for doing sth
+- Excited/worried/nervous/happy... about sth
+- Pleased/satisfied/happy/delight/disappointed with sth you get or experience
+- Surprised/shocked/amazed/astonished/upset at/by sth
+- Impressed with/by sb/sth
+- Fed up with/bored with sth
+- Sorry:
+  - About sth that happened
+  - For/about sth you did/caused = I'm sorry I did sth
+  - Feel/be sorry for sb in a bad situation
+- Adj + of:
+  - Tired of sth
+  - Afraid/scared/frightened/terrified of
+  - Fond/proud/ashamed/jealous/envious of
+  - Suspicious/critical/tolerant of
+  - Aware/conscious of
+  - Full/short of
+  - Typical of
+  - Certain/sure of/about
+- Good/bad/brilliant/better/hopeless at
+- Married/engaged to
+- Similar to
+- Different from/to
+- Interested in
+- Keen on
+- Dependent on, independent of
+- Crowed with (eg people)
+- Famous for
+- Responsible for
