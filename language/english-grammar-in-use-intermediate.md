@@ -911,3 +911,109 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Crowed with (eg people)
 - Famous for
 - Responsible for
+
+### 132, 133, 134, 135, 136. Verb + preposition
+- No preposition:
+  - Phone/call/email/text sb -> vs Write to
+  - Answer sb/sth -> vs Reply to
+  - Ask sb
+  - Thank sb
+  - Discuss sth -> vs Have a discussion about
+  - Ask sb the way/the time
+- Verb + to:
+  - Talk/speak to/with
+  - Listen to
+  - Apologize to sb for sth
+  - Explain sth to sb. Explain/describe to sb what/how/why + clause.
+  - Write (sth) to sb
+  - Reply to sth
+  - Happen to
+  - Invite sb to
+  - Prefer 1 thing to another
+- Verb + at:
+  - Look/glance/stare/have at look/take a look + at
+  - Laugh at
+  - Aim/point (sth) at
+  - Shoot/fire at
+  - Shout at: when angry/aggressive
+  - -> Vs shout to: so that people can hear you
+  - Throw at sb/sth: to hit them
+  - -> Vs throw to sb: for sb to catch
+- Verb + about:
+  - Read/talk/know about
+  - Have a discussion about
+  - Do sth/nothing about sth
+  - Care about
+  - -> Vs Care what/where/how + clause
+- Verb + for:
+  - Ask (sb) for
+  - Apply (to a company) for a job
+  - Wait for sb, wait for sth (to happen)
+  - Search (a person/place/bag) for sth
+  - Leave (a place) for another place
+  - Pay (sb) for
+  - -> Vs Pay a bill/fine/tax/fee/rent/sum of money
+  - Thank/forgive sb for
+  - Blame sb/sth for = sb/sth is to blame for
+  - -> Vs blame a problem etc on
+- Verb + of:
+  - Accuse/suspect sb of
+  - Approve/disapprove of
+  - Die of/from an illness
+  - Consist of
+- Verb + from:
+  - Suffer from an illness etc
+  - Protect sb/sth from
+- Verb + on:
+  - Depend/rely on
+  - Live on (money/food)
+  - Congratulate/compliment sb on
+  - Concentrate on
+  - Insist on
+  - Spend (money) on
+- Verb + in:
+  - Specialize in
+  - Succeed in
+- Verb + into:
+  - Break into
+  - Crash/drive/bump/run into
+  - Divide/cut/split sth into 2+ parts
+  - Translate sth from a language into another
+- Verb + with:
+  - Collide with
+  - Fill sth with sth
+  - Provide/supply sb with
+  - -> Vs provide sth
+#### Specific words
+- Look:
+  - Look for = search for
+  - Look after = take care of
+- Care:
+  - Take care of sb/sth = look after, keep safe, take responsibility for
+  - Care for sb = take care of sb
+  - Don't care for sth = don't like sth
+- Hear:
+  - Hear about: be told about
+  - Hear of: know that sb/sth exists
+  - Hear from: be in contact with sb
+- Think:
+  - Think about: consider sth
+  - Think of:
+    - Produce an idea
+    - Give an opinion (eg think of the movie)
+  - -> Can also use "think about" most of the time
+- Dream:
+  - Dream about: when sleeping
+  - Dream about/of being/doing sth: imagine
+  - Wouldn't dream of doing sth = would never do it
+- Complain:
+  - Complain to sb about sth: when not satisfied with it
+  - Complain of a pain/illness...: say you are in pain...
+- Remind:
+  - Remind sb about sth: tell sb not to forget
+  - Remind sb of: cause sb to remember
+- Believe:
+  - Believe in sth: believe that sth exists or it is good to do sth
+  - Believe sth: believe that it is true
+  - Believe sb: believe what they say
+
