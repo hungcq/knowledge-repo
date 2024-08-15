@@ -1017,3 +1017,27 @@ to say that sth changes continuously (eg better and better, more and more expens
   - Believe sth: believe that it is true
   - Believe sb: believe what they say
 
+### 137, 138, 139, 140, 141, 142, 143, 144, 145. Phrasal verbs
+- Def: verbs of movement, used with: in out on off up down away back by through about along over forward round/around
+- -> Give special meaning to the verb
+- Examples: look out, get on, take off
+- Sometimes used with a preposition (eg look up at, keep up with)
+- Sometimes have an object:
+  - Normal object: 2 possible forms:
+    - Verb + object + in/out/etc (eg turn the light on)
+    - Verb + in/out/etc + object
+  - Pronoun: verb + pronoun + in/out/etc
+- Verb + in/out: usually don't need an object eg (move in)
+- -> Vs Verb + into/out of (eg move into a flat)
+
+#### Meaning
+- Drop in = visit somebody at home without arranging to do this
+- Join in = take part in something that is already going on
+- Plug in an electrical machine = connect it to the electricity supply
+- Take sb in = deceive somebody
+- Fill in/out a form, a questionnaire etc. = write the necessary information on a form
+- Eat out = eat at a restaurant, not at home
+- Drop out of college / university / a course / a race = stop before you have completely finished
+- Get out of sth that you arranged to do = avoid doing it
+- Leave sth out = omit it, not include it
+- Cross something out = write a line through something
