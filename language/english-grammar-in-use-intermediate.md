@@ -1029,6 +1029,49 @@ to say that sth changes continuously (eg better and better, more and more expens
   - Pronoun: verb + pronoun + in/out/etc
 - Verb + in/out: usually don't need an object eg (move in)
 - -> Vs Verb + into/out of (eg move into a flat)
+- Out = not burning, not shining:
+  - Go out
+  - Put out a fire/cigarette/light
+  - Turn out a light
+  - Blow out a candle
+- On/off:
+  - For lights, machines, etc:
+    - Put/leave the light on
+    - Turn/switch the light on/off
+    - Put music/a song/a machine on
+  - For events:
+    - Go on = happen
+    - Call sth off = cancel it
+    - Put sth off = put off doing sth = delay it
+  - For clothes, etc:
+    - Put on clothes/glasses/make-up/a seat belt/etc
+    - Put on weight = get heavier
+    - Try on clothes (to see if they fit)
+    - Take off clothes/glasses/etc
+- Off: away from a person or place:
+  - I'm off to Paris = I'm going to Paris
+  - Walk/run/drive/ride off/go off = Walk/run/drive/ride off/go away
+  - Set off = start a journey
+  - Take off = leave the ground (for planes)
+  - See somebody off = go with them to the airport/station to say goodbye
+- On: continue doing sth:
+  - Go/carry on (doing sth/with sth): continue
+  - Keep on doing sth = keep doing sth
+  - Drive/walk/play/etc on = continue driving/walking/playing/etc
+- Up & down: position
+  - Put sth up (on a wall etc)
+  - Take sth down (from a wall etc)
+  - Pick sth up
+  - Put sth down
+  - Stand up
+  - Sit/bend/lie down
+  - Turn sth up/down (eg volume, oven)
+- Down: getting less:
+  - Slow down
+  - Calm (sb) down
+  - Cut down (on sth) = eat, drink or do sth less often
+- Away = away from home/a person/a place etc: go away, fly away, take away, walk away, run away, look away
+- -> Back = back to home/a place/a person etc: be back, put back, give back, go back, come back, get back, take sth back
 
 #### Meaning
 - Drop in = visit somebody at home without arranging to do this
@@ -1037,7 +1080,85 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Take sb in = deceive somebody
 - Fill in/out a form, a questionnaire etc. = write the necessary information on a form
 - Eat out = eat at a restaurant, not at home
-- Drop out of college / university / a course / a race = stop before you have completely finished
+- Drop out of college / university / a course / a race = stop before you have finished
 - Get out of sth that you arranged to do = avoid doing it
 - Leave sth out = omit it, not include it
 - Cross something out = write a line through something
+- Work out:
+  - Do physical exercises
+  - Develop, progress
+  - Do calculation (eg The total bill for three people is £97.35. That works out at £32.45 each.)
+  - Work sth out: calculate
+  - Work/figure out = understand, think about a problem and find an answer
+- Carry out an order/experiment/survey/investigation/plan
+- Find out that/what/when/etc. Find out about = get information about
+- Give/hand things out = give to each person
+- Point something out (to somebody) = draw attention to it
+- Run out of sth
+- Sort something out = find a solution to, put in order
+- Turn out to be. Turn out good/nice/etc. Turn out that.
+- Try out a machine, a system, a new idea etc = test it to see if it is OK
+- Get on:
+  - Get on = progress
+  - Get on (with somebody) = have a good relationship
+  - Get on with sth = continue something you have to do, usually after an interruption
+  - How do you get on? = How do you do?
+- Get by = enough to manage
+- Doze/drop/nod off = fall asleep
+- Finish sth off
+- Go off = make an alarm sound
+- Put sb off (doing) sth so that they don’t want it or want to do it anymore
+- Rip somebody off/be ripped off = cheat somebody/be cheated
+- Show off = try to impress people with your ability, your knowledge etc
+- Tell sb off = speak angrily to sb because they did something wrong
+- Knock down a building/blow something down/cut something down etc
+- Burn down
+- Break down = stop working (for machines, cars, relationships etc)
+- Close/shut down = stop doing business
+- Let somebody down = disappoint them because you didn't do what they hoped
+- Turn sb/sth down = refuse an application, an offer etc
+- Write something down = write sth on paper because you may need the info later
+- Go/come/walk up to = approach
+- Catch up (with somebody), catch somebody up = move faster than people in front of you so that you reach them
+- Keep up (with somebody) = continue at the same speed or level
+- Set up an org, a company, a business, a system, a website etc = start it
+- Take up a hobby, a sport, an activity etc = start doing it
+- Fix up a meeting etc = arrange it
+- Grow up
+- Bring up a child = raise, look after a child
+- Clean up, clear up, tidy up
+- Wash up = wash the plates, dishes etc after a meal
+- End up somewhere/doing sth
+- Give up = stop trying, give something up = stop doing it
+- Make up something, be made up of something = consist of
+- Take up space or time = use space or time
+- Turn up, show up = arrive, appear
+- Use something up = use all of it so that nothing is left
+- Bring up a topic etc = introduce it in a conversation
+- Come up = be introduced in a conversation
+- Come up with an idea, a suggestion etc = produce an idea
+- Make sth up = invent something that is not true
+- Cheer up = be happier, cheer somebody up = make somebody feel happier
+- Save up for sth/to do sth = save money to buy something
+- Clear up = (weather) become bright
+- Blow up = explode, blow something up = destroy it with a bomb etc
+- Tear something up = tear it into pieces
+- Beat sb up = hit someone repeatedly so that they are badly hurt
+- Break up, split up (with somebody) = separate
+- Do up a coat, a shoelace, buttons etc = fasten, tie etc
+- Do up a building, a room etc = repair and improve it
+- Look sth up in a dictionary/encyclopaedia etc
+- Put up with sth = tolerate a difficult situation or person
+- Hold up a person, a plan etc = delay
+- Mix up people/things, get people/things mixed up = think one is the other
+- Get away = escape, leave with difficulty
+- Get away with something = do something wrong without being caught
+- Keep away (from sth) = don't go near
+- Give sth away = give it to sb else because you don’t want it anymore
+- Put sth away = put it in the place where it is usually kept
+- Throw sth away = put it in the rubbish
+- Wave back/smile back/shout back/hit sb back
+- Call/phone/ring (sb) back = return a phone call
+- Get back to somebody = reply to them by phone etc
+- Look back (on sth) = think about what happened in the past
+- Pay back money, pay somebody back
