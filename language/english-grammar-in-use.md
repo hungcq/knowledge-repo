@@ -1,4 +1,4 @@
-# English Grammar In Use Intermediate Level
+# English Grammar In Use
 
 ## Info
 - Type: book
@@ -9,9 +9,9 @@
 ### 1. Present continuous (I'm doing)
 - Describe action happening at the time of speaking, not finished
 - Sometimes the action might not happen at the time of speaking (eg reading sth, learning sth, working on sth)
-- Describe temporary situations (eg I’m living with some friends until I find a place of my own.)
+- Describe temporary situations (eg I'm living with some friends until I find a place of my own.)
 - Describe a change that has started to happen.
-  Related verbs: getting, becoming changing, improving, starting, beginning increasing, rising, falling, growing
+  Related verbs: getting, becoming, changing, improving, starting, beginning, increasing, rising, falling, growing.
 - Talk about that is already decided and arranged to do in the future
 - Talk about sth just before you start to do it. Usually used with words of movement (eg go/come/leave).
 #### Other cases
@@ -626,7 +626,7 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 ### 102. So & such
 - Usage:
   - Make the meaning stronger
-  - = like this (eg I got up at six. I don’t usually get up so early. = early like this; such a thing = a thing like this)
+  - = like this (eg I got up at six. I don't usually get up so early. = early like this; such a thing = a thing like this)
 - Form:
   - So + adj/adv
   - Such + (a/an/adj) + noun. No such + noun.
@@ -1107,7 +1107,7 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Doze/drop/nod off = fall asleep
 - Finish sth off
 - Go off = make an alarm sound
-- Put sb off (doing) sth so that they don’t want it or want to do it anymore
+- Put sb off (doing) sth so that they don't want it or want to do it anymore
 - Rip somebody off/be ripped off = cheat somebody/be cheated
 - Show off = try to impress people with your ability, your knowledge etc
 - Tell sb off = speak angrily to sb because they did something wrong
@@ -1154,7 +1154,7 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Get away = escape, leave with difficulty
 - Get away with something = do something wrong without being caught
 - Keep away (from sth) = don't go near
-- Give sth away = give it to sb else because you don’t want it anymore
+- Give sth away = give it to sb else because you don't want it anymore
 - Put sth away = put it in the place where it is usually kept
 - Throw sth away = put it in the rubbish
 - Wave back/smile back/shout back/hit sb back
