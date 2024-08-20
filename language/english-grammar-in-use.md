@@ -1162,3 +1162,18 @@ to say that sth changes continuously (eg better and better, more and more expens
 - Get back to somebody = reply to them by phone etc
 - Look back (on sth) = think about what happened in the past
 - Pay back money, pay somebody back
+
+### Appendix 1. Regular & irregular verb
+
+### Appendix 2. Present & past tenses
+
+### Appendix 3. Future tense
+
+### Appendix 4. Modal verbs
+
+### Appendix 5. Short forms
+- Eg I'm, I've
+
+### Appendix 6. Spelling
+
+### Appendix 7. American English
