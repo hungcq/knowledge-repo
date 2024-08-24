@@ -154,7 +154,7 @@ Use with today, this evening, this year... when these periods are not finished a
 
 ### 28. Must & can't
 - Must/can't: to say that we believe sth is certain/not possible
-- For the past, use must have/can't (or couldn't) have + past participle
+- For the past, use "must have"/can't (or couldn't) have + past participle
 
 ### 29, 30. May & might
 - Usage:
@@ -181,7 +181,7 @@ Use with today, this evening, this year... when these periods are not finished a
 ### 33, 34. Should
 - Should have done: didn't do it, but it was a good thing to do
 - = ought to
-- Usually used with insist, demand, recommend, suggest, propose: should + subjunctive (original form of verb)
+- Usually used with: insist, demand, recommend, suggest, propose: should + subjunctive (original form of verb)
 - -> Can leave out "should"
 - -> Remember "suggest" usage: "what do you suggest I do?", not "what do you suggest me to do?"
 - If sth should + verb = Should sth + verb = If sth + verb, but smaller probability
@@ -561,7 +561,7 @@ eg audience, committee, company, family, government, staff, team, firm, police, 
 - Both/neither/either of + us/you/them
 - Both ... and, either ... or, neither ... nor: can be used with noun/verb/phrase/adjective
 
-### 90. All every whole
+### 90. All, every, whole
 - Everybody/everyone/everything:
   - Can stand alone
   - + singular verb, but represented by they/them/their (~somebody, anyone, noone)
