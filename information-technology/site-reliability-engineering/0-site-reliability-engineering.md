@@ -12,102 +12,123 @@
   - SRE def
   - Problems, goals
   - Reading suggestions
-- Chap 1: introduction:
-  - Sysadmin approach to service management: advs, disadvs
-  - Google's SRE approach to service management: advs, challenges
-  - SRE tenets
-- Chap 2: the production env at Google: terms & services at Google
-- Chap 3: embracing risk:
-  - Overview
-  - Metric to measure service risk
-  - Considerations when define service's risk tolerance
-  - Error budget: problems, goals, process, advs
-- Chap 4: service level objective:
-  - SLI
-  - SLO
-  - SLA
-- Chap 5: eliminating toil:
-  - Main types of SRE activities:
-    - Toil: def
-    - Engineering work: types
-  - Process of eliminating toil
-  - When toil is bad
-- Chap 6: monitoring distributed systems:
-  - Terms
-  - Reasons to monitor a system
-  - Principles:
-    - Simplicity
-    - Blackbox vs white-box monitoring
-    - 4 golden signals
-    - Use distribution, not average
-    - Philosophy on pages & pagers
-    - Consideration when creating monitoring & alerting rules
-    - Issues of evolving systems & general approach
-- Chap 7: the evolution of automation at Google:
-  - Advs
-  - Use cases & evolution of automation
-  - Google examples & lesson learned
-  - Imp of transparency
-  - Recommendations
-- Chap 8: release engineering:
-  - Def & role
-  - Best practices
-  - Google processes & best practices for continuous build & continuous delivery
-  - 4 dif approaches to config management
-  - Recommendations
-- Chap 9: simplicity: best practices
-- Chap 10: practical alerting from time-series data:
-  - Borgmon monitoring system: ~prometheus
-  - Blackbox monitoring
-  - Maintaining config
-- Chap 11: being on-call
-  - Main on-call activities
-  - Practices:
-    - Maintaining balance
-    - Providing resources to make on-call engineers feel safe
-    - Setting apt operational load
-- Chap 12: effective troubleshooting:
-  - Principles
-  - Common pitfalls
-  - Best practices
-- Chap 13: emergency response: lessons learned
-- Chap 14: managing incidents:
-  - Chars of unmanaged incidents
-  - Features of well-designed incident management process
-  - When to declare incident
-- Chap 15: postmortem culture:
-  - Def
-  - Goals
-  - Best practices
-- Chap 16: tracking outages: functionalities of outage tracker
-- Chap 17: testing for reliability:
-  - Types of tests
-  - Build test culture: best practices
-- Chap 18: software engineering in SRE:
-  - Advs
-  - Case study
-  - Project consideration
-  - Build SE culture best practices
-- Chap 19: load balancing at the frontend:
-  - At DNS
-  - At virtual IP address (LB to many machines behind)
-- Chap 20: load balancing in the datacenter:
-  - Identify & avoid unhealthy task
-  - Limit connection pool
-  - Load balancing policies
-- Chap 21: handling overload:
-  - Capacity measurement
-  - Load limit mechanisms
-  - Utilization measurement
-  - Handling overload error at client side
-  - Handling connection overload
-- Chap 22: address cascading failures: cascading failures:
-  - Causes: server overload, resource exhaustion, service unavailability
-  - Strats to prevent server overload
-  - Considerations to avoid server overload
-  - Triggering conditions
-  - Testing
-  - Immediate mitigation strats
+- Part 1: introduction:
+  - Chap 1: introduction:
+    - Sysadmin approach to service management: advs, disadvs
+    - Google's SRE approach to service management: advs, challenges
+    - SRE tenets
+  - Chap 2: the production env at Google: terms & services at Google
+- Part 2: principles:
+  - Chap 3: embracing risk:
+    - Overview
+    - Metric to measure service risk
+    - Considerations when define service's risk tolerance
+    - Error budget: problems, goals, process, advs
+  - Chap 4: service level objective:
+    - SLI
+    - SLO
+    - SLA
+  - Chap 5: eliminating toil:
+    - Main types of SRE activities:
+      - Toil: def
+      - Engineering work: types
+    - Process of eliminating toil
+    - When toil is bad
+  - Chap 6: monitoring distributed systems:
+    - Terms
+    - Reasons to monitor a system
+    - Principles:
+      - Simplicity
+      - Blackbox vs white-box monitoring
+      - 4 golden signals
+      - Use distribution, not average
+      - Philosophy on pages & pagers
+      - Consideration when creating monitoring & alerting rules
+      - Issues of evolving systems & general approach
+  - Chap 7: the evolution of automation at Google:
+    - Advs
+    - Use cases & evolution of automation
+    - Google examples & lesson learned
+    - Imp of transparency
+    - Recommendations
+  - Chap 8: release engineering:
+    - Def & role
+    - Best practices
+    - Google processes & best practices for continuous build & continuous delivery
+    - 4 dif approaches to config management
+    - Recommendations
+  - Chap 9: simplicity: best practices
+- Part 3: practices:
+  - Chap 10: practical alerting from time-series data:
+    - Borgmon monitoring system: ~prometheus
+    - Blackbox monitoring
+    - Maintaining config
+  - Chap 11: being on-call
+    - Main on-call activities
+    - Practices:
+      - Maintaining balance
+      - Providing resources to make on-call engineers feel safe
+      - Setting apt operational load
+  - Chap 12: effective troubleshooting:
+    - Principles
+    - Common pitfalls
+    - Best practices
+  - Chap 13: emergency response: lessons learned
+  - Chap 14: managing incidents:
+    - Chars of unmanaged incidents
+    - Features of well-designed incident management process
+    - When to declare incident
+  - Chap 15: postmortem culture:
+    - Def
+    - Goals
+    - Best practices
+  - Chap 16: tracking outages: functionalities of outage tracker
+  - Chap 17: testing for reliability:
+    - Types of tests
+    - Build test culture: best practices
+  - Chap 18: software engineering in SRE:
+    - Advs
+    - Case study
+    - Project consideration
+    - Build SE culture best practices
+  - Chap 19: load balancing at the frontend:
+    - At DNS
+    - At virtual IP address (LB to many machines behind)
+  - Chap 20: load balancing in the datacenter:
+    - Identify & avoid unhealthy task
+    - Limit connection pool
+    - Load balancing policies
+  - Chap 21: handling overload:
+    - Capacity measurement
+    - Load limit mechanisms
+    - Utilization measurement
+    - Handling overload error at client side
+    - Handling connection overload
+  - Chap 22: address cascading failures: cascading failures:
+    - Causes: server overload, resource exhaustion, service unavailability
+    - Strats to prevent server overload
+    - Considerations to avoid server overload
+    - Triggering conditions
+    - Testing
+    - Immediate mitigation strats
+  - Chap 23: manage critical state: distributed consensus
+  - Chap 24: distributed scheduling
+  - Chap 25: data processing pipelines
+  - Chap 26: data integrity
+  - Chap 27: product launches at scale
+- Part 4: management:
+  - Chap 28: SREs training
+  - Chap 29: dealing with interrupts
+  - Chap 30: embedding SREs to deal with operational overload
+  - Chap 31: communication & collaboration in SRE
+  - Chap 32: SRE engagement model
+- Appendices:
+  - A: availability table
+  - B: summary of best practices
+  - C: example incident state document
+  - D: example postmortem
+  - E: launch coordination checklist
+  - F: production meeting minutes
 
 ## Author's goals
 - Problem: most effort is spent after a software is built
