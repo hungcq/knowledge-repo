@@ -6,16 +6,17 @@
   - JSON doc: define permissions of users/groups
   - -> Least privilege principle: give only the needed permissions
   - Inline policy (vs group policy): for 1 user
+  - Variable & tags
   - Components:
     - Version
     - ID
     - Statement:
       - Sid
-      - Effect: allow/deny
+      - Effect: allow/deny (highest precedence -> use NotAction when don't want Deny)
       - Principal (map): user/account/role
       - Action: array allow/deny actions
       - Resource: array
-      - Condition: when to apply
+      - Condition: when to apply. Form: "operator": "key": "value"
 - Password policy:
   - Length
   - Specific character types
@@ -33,10 +34,17 @@
 - Access key: managed by users. Components:
   - ID: ~username
   - Secret: ~password
-- Role: assign permissions to services
+- Role: short-term credentials, use STS
+- -> Assign permissions to services/EC2 instances (via EC2 metadata service)/accounts (via cross-account roles)
+- -> Assume role = give up original permissions
 - Security tools (for audit):
   - Credentials Report (account level): list users & status of their credentials
   - Access Advisor (user level): service permissions granted & last access of those services
+  - Access Analyzer:
+    - Analyze resources shared with external entity: define zone of trust (AWS acc/org)
+    - -> report findings of access outside zone of trust
+    - Policy validation: validate & recommendations
+    - Policy generation: cloud trail logs (90 days) -> fine-grained permissions (actions & services)
 - Best practices:
   - Root account: created by default, shouldn't be used or shared, except for AWS account setup
   - 1 user ~ 1 person in org
@@ -59,7 +67,7 @@
   - Supported for users & roles (not groups)
   - Can be used in combination with Org. Effective permissions are intersection of boundary & identity-based policy & Org.
   - Use cases:
-    - Delegate responsibility to non admins
+    - Delegate responsibility to non-admins
     - Allow users to self-manage permissions without escalating their privileges
     - Restrict one specific user of whole acc via SCP
 - Access evaluation precedence: deny > Org > resource-based > identity-based > boundary -> session
@@ -139,3 +147,6 @@
   - 2 types:
     - Preventive Guardrail: use SCP (eg restrict regions across all accs)
     - Detective: use Config to monitor compliance
+
+## Security token service (STS)
+- User (assume role API) -> STS: credentials (15m-12h)
