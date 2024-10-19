@@ -1,4 +1,5 @@
 # Monitoring & metrics
+
 ## CloudWatch
 - Provide metrics for all services in AWS
 - Metric:
@@ -12,6 +13,7 @@
 - Metric Stream:
   - Continually stream CloudWatch metrics to a destination of choice (Firehose, third party service)
   - Near realtime delivery & low latency
+
 ### Logs
 - Store app logs
 - Log groups: usually representing an app
@@ -42,6 +44,7 @@
   - Subscription Filter: filter logs to deliver to destination
   - Logs Aggregation: from dif accounts & regions into KDS
   - Cross-acc Subscription: send log events to resources in a dif AWS account (need proper permissions)
+
 ## Agent & Logs Agent
 - Need to run agent (with proper permission) on EC2 to push log files
 - Can be setup on premises
@@ -57,6 +60,7 @@
     - Netstat (eg TCP, UDP connections)
     - Processes
     - Swap space
+
 ## Alarms
 - Can trigger notis for any metric
 - States:
@@ -72,6 +76,7 @@
 - EC2 instance recovery: triggered by StatusCheckFailed_System alarm. Can alert SNS topic. Can't recover terminated instance.
 - -> Recovery: same instance ID, private/public/elastic IP, metadata, placement group
 - Can be created based on CW Logs Metrics Filter
+
 ## EventBridge (ex CW Events)
 - Functions:
   - Schedule cron jobs
@@ -94,6 +99,7 @@
   - Manage permissions for a specific Event Bus (eg allow/deny events from other AWS accounts/regions)
   - Use case: aggregate all Org events in a single AWS account/region
 - Can be used in event-based app. Use case: the only service integrated with SaaS partners.
+
 ## Insights & Operational Visibility
 - Container Insights:
   - Collect, aggregate, summarize metrics & logs from containers
@@ -111,6 +117,7 @@
   - Can build or use example rules using CW Logs
 - App Insights: provide automatic dashboards showing potential problems with monitored apps/related AWS services
 - -> Isolate ongoing issues
+
 ## CloudTrail
 - Provide governance, compliance & audit for user's AWS account: history of events/API calls made within AWS account
 - -> Who do what
@@ -129,8 +136,13 @@
   - Insights:
     - Detect unusual activity
     - Analyze normal events to create baseline, then continuously analyze write events to detect unusual patterns
+    - Flow: management events -> CloudTrail Insights -> Insight Events -> Cloud Trail console/S3 bucket/EventBridge
 - Event retention: 90 days
 - -> Need to log to S3 for longer retention, analyze using Athena
+- Organizational Trail:
+  - Created in management account
+  - Logs to S3 bucket by member account ID
+
 ## Config
 - Audit & record compliance of AWS resources
 - Record configs & changes over time (eg public access to S3, unrestricted SSH access to EC2)

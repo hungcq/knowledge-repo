@@ -101,8 +101,15 @@
 ## Big Data Ingestion Pipeline
 - IoT devices -> Kinesis Data Streams -> Firehose <-> Lambda transformation -> S3 ingestion bucket
   -> Lambda -> Athena (process ingestion bucket) -> S3 reporting bucket -> Redshift/Quicksight
-## CloudTrail - EventBridge integration
-- API call interception: API call in AWS services -> CloudTrail: event -> EventBridge -> SNS
+
+## CloudTrail
+- Intercept API calls with EventBridge: API calls -> CloudTrail logs -> EventBridge events -> SNS
+- -> Fastest way to react to events
+- Delivery to S3: (every 5 mins) CloudTrail (via SSE-S3/SSE-KMS keys) -> S3 (via lifecycle policy) -> Glacier
+- -> For storage
+- Alert for API calls: CloudTrail -> CW Logs -> Metric Filters -> CW Alarm -> SNS (eg count EC2 TerminateInstances API call)
+- -> For counting/filter/anomaly detection capacity
+
 ## DDoS protection
 - Edge location layer: protected at CloudFront, GA, Route53
 - Infra layer defense: protect EC2 against high traffic:
