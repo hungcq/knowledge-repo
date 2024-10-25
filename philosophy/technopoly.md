@@ -79,6 +79,7 @@ Philosophy, culture, science
   - True science: study processes: events in nature: regular, explainable, predictable
   - Shit science: study practices: artificial, human events
 - Comparison: natural vs social science:
+- 
   | Scientific practices                                                        | Natural science                                                  | Social science                                                                                                                                                      |
   |-----------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   | Quantification                                                              | To describe structure of nature                                  | To give precision to ideas<br>-> Common layman practice                                                                                                             |
@@ -88,6 +89,7 @@ Philosophy, culture, science
 - Social science: documenting the behavior & feeling of people as they confront problems posed by their culture
 - -> ~story telling, literature: subjective interpretation of human nature, supported by examples
 - Comparison: social science vs story telling:
+- 
   |         | Social science                                           | Story telling        |
   |---------|----------------------------------------------------------|----------------------|
   | Form    | Exposition                                               | Fiction              |
