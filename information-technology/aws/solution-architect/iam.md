@@ -77,21 +77,49 @@
   - Main: management acc
   - Other: member accs
 - Mapping acc:org : n:1
-- Hierarchy structure: root organizational unit (OU) -> sub OU -> ... -> accounts. Can divide by:
+- Hierarchy structure: root organizational unit (OU) -> sub OU -> ... -> member accounts. Can divide by:
   - Business unit
   - Dev/production env
   - Project based
 - Security: Service Control Policies (SCP):
   - IAM policies applied to OU/accs
   - Not applied to management acc: root access by default
-  - Applied to root acc
+  - Applied to all users & roles in the acc, including root user
   - Disallow everything by default (vs IAM)
   - Not affect any service-linked role
-- Advs:
+  - Must have explicit allows in all links from the root to the node acc
+- OrganizationAccountAccessRole:
+  - Grant full permission in the member acc to the management acc
+  - Used to perform admin tasks in the member accounts (eg creating IAM users)
+  - Automatically added to newly created member accounts. Need to manually added for invited existing acc.
+- Multi account strategies:
+  - Per department
+  - Per cost center
+  - Per dev/test/prod
+  - Based on regulatory restrictions
+  - For resource isolation
+  - Separate per-account service limits
+  - Dif account for logging
+- Features:
   - Management centralization
   - Consolidated billing across all accs: single payment method
   - -> Pricing benefits from aggregated usage (eg volume discount)
   - Can share reserve instances & saving plans discount across accs
+- Reserve instances & saving plans discount:
+  - Default share between all accounts
+  - Can be turn off by account
+  - To have discount, both accounts must turn on
+- Move accounts: remove from old org -> invite -> accept
+- Policies:
+  - Tag Policies: ensure consistent tags. Monitor non-compliance via EventBridge.
+  - aws:TagKeys:
+    - ForAllValues = AND
+    - ForAnyValues = OR
+  - awsRequestTag: prevent users/roles in member accounts from creating resources if they don't have tags
+  - AI services opt-out policies: AI services can't use content for continuous improvement
+  - Backup policies:
+    - Define backup plans across org/OU/member acc
+    - Immutable backup plans appear in member accounts (view only)
 ## IAM conditions
 - aws:SourceIp: restrict client IP making API calls
 - aws:RequestedRegion: restrict region the API calls are made to
@@ -104,7 +132,7 @@
 ## Identity Center (ex Single Sign-On)
 - SSO for:
   - All AWS accs in AWS Orgs
-  - Business cloud apps
+  - Business cloud apps (eg Salesforce, Microsoft 365)
   - SAML 2.0 enabled apps
   - EC2 Windows instances
 - Identity providers:
@@ -117,28 +145,44 @@
   - SSO access to SAML 2.0 business apps (eg Salesforce, Microsoft 365)
   - Need to provide URLs, certificates, metadata
 - Attribute-based access control (ABAC): fine-grained permissions based on users' attributes stored in Identity Store
-## Directory Service
+
+## Directory Services
 - Microsoft Active Directory:
   - Def: DB of objects: users, accs, computers, printers...
-  - Centralized security management
+  - Flow: Window instances (auth) -> domain controllers
+  - Found on Windows Server with AD Domain Services
+  - Centralized security management, create acc, assign perms
   - Objects organized in trees. Forest = group of trees.
   - Found on Windows Server with AD Domain Services
+- AD Federation Services (ADFS): provide single sign-on across Microsoft apps, using SAML
 - Allow creating Microsoft AD on AWS:
   - Managed Microsoft AD:
     - Create AD in AWS
     - Manage users in AWS AD
+    - Can establish trust connections with on-premise AD:
+      - Must establish Direct connect (DX) or VPN connection
+      - 3 types of forest trust:
+        - 2 types of 1-way trust
+        - 2-way trust
+      - Trust ~ proxy != replication
     - Support MFA
-    - Can establish trust connections with on-premise AD
+    - Features: in slide
+    - Highly integrated with AWS services
   - AD Connector:
     - Def: Directory Gateway (proxy) to on-premise AD
     - Support MFA
     - Users managed on on-premise AD
-  - Simple AD: managed AD on AWS, can't be joined with on-premise AD
+    - Need VPN/DX
+    - No caching
+  - Simple AD:
+    - Managed AD on AWS, can't be joined with on-premise AD
+    - Cheap, small scale, less features
 - Identity Center - Active Dir setup:
   - Managed AD: out of the box integration
   - Self-managed AD: either:
     - Create 2-way trust rela using Managed AD
     - Create AD Connector
+
 ## Control Tower
 - Def: easy way to set up & govern a secure & compliant multi-acc AWS env based on best practices
 - Use Org to create accs
@@ -147,6 +191,65 @@
   - 2 types:
     - Preventive Guardrail: use SCP (eg restrict regions across all accs)
     - Detective: use Config to monitor compliance
+  - Levels:
+    - Mandatory: auto enabled & enforced by Control Tower
+    - Strongly recommended: based on AWS best practices
+    - Elective: commonly used by enterprises (optional)
+- Account Factory: automate account provisioning & deployments:
+  - Pre-approved baselines & config options (eg VPC default config)
+  - Provision new accs via AWS Service Catalog 
 
 ## Security token service (STS)
 - User (assume role API) -> STS: credentials (15m-12h)
+- Need to grant permission to assume a role
+- Can revoke active sessions
+- Can add MFA protection to role: only users signing in with MFA can assume the role
+- Grant access to third party (AWS account outside zone of trust):
+  - Get 3rd party AWS acc ID
+  - Define external ID (secret between 2 parties, rela: third party 1:1 role)
+- Session tag: provide when assuming a role -> added in the credentials -> used for authorization in IAM policy
+- APIs:
+  - AssumeRole
+  - AssumeRoleWithSAML: for users logged in with SAML
+  - AssumeRoleWithWebIdentity: for users logged in with internet identity provider (eg Google, FB)
+  - -> Should use Cognito instead
+  - GetSessionToken: for MFA
+  - GetFederationToken: for federated user
+
+## Identity federation
+- Def: give users outside AWS permissions to access AWS resources in your account
+- -> Don't need to create IAM users
+- Types:
+  - SAML 2.0: user -> auth & get SAML assertion (key) via identity store
+  -> AWS SAML sign in endpoint/AssumeRoleWithSAML -> credentials
+  - Custom identity broker application:
+    - For identity provider not compatible with SAML 2.0
+    - Flow: user -> identity broker -> auth with identity store + call STS AssumeRole/GetFederationToken -> credentials
+  - Web identity federation:
+    - Without Cognito (not recommended): user: 1. IDP -> web token, 2. STS -> credentials
+    - With Cognito (~token vending machine):
+      - Flow: user: 2. Cognito -> Cognito token, 3. STS -> credentials
+      - Advs:
+        - Support anonymous users
+        - Support MFA
+        - Data sync
+
+## Resource Access Manager (RAM)
+- Share AWS resources you own with other accounts or within Org
+- Resources can be shared:
+  - VPC subnets:
+    - Allow to have all resources launched in the same subnets
+    - Must be from the same AWS org
+    - Can't share security groups & default VPC
+    - Participants can manage their own resources, but can't view, modify, delete resources of others
+  - Transit Gateway
+  - Route 53 (Resolver Rules, DNS Firewall Rule Groups)
+  - ...
+- Managed Prefix List:
+  - Def: a set of 1+ CIDR blocks
+  - Make it easier to config & maintain security groups & route tables
+  - Customer-managed prefix list: share with other accounts: update to modify many security groups at once
+  - AWS-managed prefix list: set of CIDRs for AWS services, can't be CRUD
+- Route 53 Outbound Resolver:
+  - Share forwarding rules with other accs with VPCs
+  - Define forwarding rules (DNS A record) -> share with other accounts -> can forward to IP of VPC of other accounts
