@@ -10,6 +10,12 @@
 - Solana: efficiency, performance, cost, reliability issues, growth, SOL coin
 - Explorer: https://explorer.solana.com/?cluster=devnet
 
+## Account
+- Store data
+- Each validator node have full stateful data
+- Ledger -> account state
+- -> Optimization: snapshot
+
 # Solana APIs
 - Web3 js: client lib? Interact with Solana APIs
 - Connect to dev-test/main-beta cluster
