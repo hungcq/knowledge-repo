@@ -34,7 +34,7 @@
   - When: new system offers compelling benefits
 - Compulsory deprecation:
   - Def: usually comes with a deadline for the removal of obsolete system
-  - How to scale: done by 1 team of expert. Advs:
+  - How to scale: done by 1 team of experts. Advs:
     - Reuse expertise
     - Reduce burden to users
   - Need enforcement mechanism
