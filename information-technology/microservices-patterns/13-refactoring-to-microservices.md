@@ -9,7 +9,7 @@
   - New features still developed in the monolith -> effort diverted, constant moving target
   - Might implement features that are no longer needed
 - Overall strat:
-  - Incrementally refactor the monolith & build stranger app
+  - Incrementally refactor the monolith & build strangler app
   - -> Stop when the monolith is small enough/no longer an obstacle to ongoing dev
   - Migrate high value or constantly changing areas of the app first
   - -> Increase dev velocity, maintain business support for the migration
@@ -134,8 +134,8 @@
       - Sol 2: use DB event via transaction log tailing/polling
         - Adv: don't have to change the monolith
         - Disadv:
-        - Low level event
-        - Don't know reason for the update
+          - Low level event
+          - Don't know the reason for the update
     - Consume problem: monolith written in language without message broker client
     - -> New helper service to subscribe to event & update monolith DB directly
 - Maintain data consistency across service and monolith:
