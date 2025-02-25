@@ -23,29 +23,29 @@
   - Client process fails when retrying -> the retry is lost
 - Anomalies:
   - Dirty read: read uncommitted value:
-    - T1: set x = 1->2                       set y = 1->2
-    - T2:              read x = 2, read y = 1
+    - T1: set x = 1->2-----------------------set y = 1->2
+    - T2: -------------read x = 2, read y = 1
     - -> Inconsistent: x must = y
     - Problems:
       - Read partially updated state
       - Read value of aborted trans
   - Dirty write: overwrite uncommitted value:
-    - T1: set x = 1->2                          set y = 1->2
-    - T2:             set x = 1->3, set y = 1->3
+    - T1: set x = 1->2--------------------------set y = 1->2
+    - T2: ------------set x = 1->3, set y = 1->3
   - -> Inconsistent: x = 3, y = 2
   - Read skew (timing anomaly/non-repeatable read): observe the DB in an inconsistent state
-    - T1: read acc1 = 500                                        read acc2 = 400
-    - T2:                set acc1 (500) += 100, acc2 (500) -= 100
+    - T1: read acc1 = 500----------------------------------------read acc2 = 400
+    - T2: ---------------set acc1 (500) += 100, acc2 (500) -= 100
     - Problems:
       - Inconsistent backups
       - Inconsistent analytic queries & integrity checks
   - Lost update: 2 concurrent trans do read-modify-write cycle (eg counter increment):
-    - T1: read x = 1                         set x = x + 1
-    - T2:           read x = 1, set x = x + 1
+    - T1: read x = 1-------------------------set x = x + 1
+    - T2: ----------read x = 1, set x = x + 1
   - -> Inconsistent: x = 2 instead of 3
   - Write skew: 2 trans read the same object, then update some of those objects:
-    - T1: count (A, B)  check count > 1 OK                       write (remove A)
-    - T2: count (A, B)                       check count > 1 OK  write (remove B)
+    - T1: count (A, B)--check count > 1 OK-----------------------write (remove A)
+    - T2: count (A, B)-----------------------check count > 1 OK  write (remove B)
   - -> When write change result of count, premise count > 1 is no longer true (phantom)
   - Phantom read: check for the absence of row matching some search condition (eg booking, check username existed)
   - -> No row to lock to
@@ -55,10 +55,12 @@
 #### Read uncommitted
 - Prevent dirty writes
 - Allow dirty reads
+- Implementation:
+  - Prevent dirty write: use row-level locks. Trans hold lock until committed/aborted.
 #### Read committed
 - No dirty reads & no dirty writes
 - Implementation:
-  - Prevent dirty write: use row-level locks. Trans hold lock until committed/aborted.
+  - Prevent dirty write: same as read commited impl
   - Prevent dirty read:
     - Use row-level lock for read: performance cost
     - Versioning: keep old value for read
@@ -134,11 +136,11 @@
 #### Serializable snapshot isolation (SSI)
 - Check for outdated premise:
   - Detect read of stale MVCC object version (uncommitted write before the read):
-    - T1: count  update                commit 
-    - T2:              count  update          abort
+    - T1: count  update----------------commit 
+    - T2: -------------count--update----------abort
   - Detect write affecting prior read (write after the read):
-    - T1: count      update      commit 
-    - T2:       count      update      abort
+    - T1: count------update------commit 
+    - T2: ------count------update------abort
 - -> Optimistic concurrency control
 - Performance:
   - No blocking: suitable for read-heavy workload

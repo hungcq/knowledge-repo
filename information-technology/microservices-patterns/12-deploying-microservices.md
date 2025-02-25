@@ -132,7 +132,7 @@
     - Deployment:
       - Def: a controller that ensures the desired number of instances of the pod (service instances) are running at all time
       - Support versioning with rolling upgrades & rollbacks
-      - Declared in YAML file, specify of configs of a pod
+      - Declared in YAML file, specifying configs of a pod
     - Service: a form of infra-provided service discovery:
       - Has an IP address & a DNS name that resolves to that IP address. Both are only accessible within Kubernetes.
       - Function: provide clients of a service with a static/stable network location
