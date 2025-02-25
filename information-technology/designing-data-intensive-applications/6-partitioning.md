@@ -15,8 +15,8 @@
   - Hash key -> assign each partition a range of hashes
   - -> More evenly distributed
   - Problem: inefficient range query
-  - -> Add other columns into primary key, sort by these columns
-  - -> Can handle search with a particular primary key
+  - -> Concatenated PK (eg (userid, ts)), hash & partition main column, sort by other columns
+  - -> Can handle search with a particular primary key (eg all messages of userid 1 in a ts range)
 - Skew workloads & hot spots:
   - Partially handled by hashing
   - Celebrity key problem: num of reads & writes of 1 key extremely high
@@ -29,7 +29,7 @@
 - Global index (index by term):
   - Cover data in all partitions
   - Distribute across nodes by terms (using range or hashes): eg 1->10, a->e in partition 1
-  - Write to several, read from 1
+  - Write to several (1 partition/index field), read from 1
   - Problem: async index update, stale read
 
 ### 6.3. Rebalancing
@@ -42,7 +42,7 @@
 - Hash mod n: most keys will be moved
 - Fixed num of partitions, map partitions to nodes:
   - Move entire partition
-  - Adv:
+  - Advs:
     - Easy to operate
     - Can assign partitions by node's capacity
   - Problem: choose num of partition:
