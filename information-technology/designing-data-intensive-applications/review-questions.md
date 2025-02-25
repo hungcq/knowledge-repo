@@ -42,7 +42,7 @@ How is concatenated index implemented?
 # Batch processing
 - What are the other 2 types of systems beside online system?
 - Provide some example outputs of batch processing job.
-- How does MapReduce operate on a high level?
+- How does MapReduce operate at a high level?
 - What is the advantage of dataflow engines (eg Spark) over MapReduce?
 
 # Stream processing
