@@ -3,7 +3,7 @@
 ### 3.1. Index structures
 - Keep additional metadata to help locate the data 
 - -> Need space. Write overhead.
-#### Hash indexes (hash table):
+#### Hash indexes (hash table)
 - Basic in-memory hash map of key - disk offset
 - Break data into append-only segment files. Compact & merge segments periodically to remove duplicate old keys.
 - 1 hash map for each segment. Search all the map from newer to older.
@@ -14,7 +14,7 @@
 - Disadvs:
   - Hash map must fit in memory, otherwise access is slow
   - Can't do range queries: must read all keys
-#### Log-structure merge tree (LSM tree):
+#### Log-structure merge tree (LSM tree)
 - Implementation:
   - Based on hash indexes
   - Use segment files whose keys are sorted (sorted string table - SS table)
@@ -39,7 +39,7 @@
 - Optimizations:
   - Bloom filter to check if key exists
   - Compaction strategy
-#### B-tree:
+#### B-tree
 - Implementation:
   - Break DB into fixed-size blocks/pages
   - Pages refer to other pages' address on disk
@@ -62,7 +62,7 @@
   - Pointer to siblings in leaf pages (B+ tree)
   - -> Scanning without jumping back to parent pages
   - Fractal tree: borrow log-structured ideas
-#### Other indexing structures:
+#### Other indexing structures
 - Secondary index:
   - Implementation similar to primary index
   - Handle 1 key/multirow (eg dif userids, same age):
@@ -110,4 +110,4 @@
   - Data cube/OLAP cube: grid of aggregates grouped by dif dimensions 
   - -> Faster but less flexibility. Write more expensive
   - <img src="./resources/3.12.png" width="500">
- 
+  
