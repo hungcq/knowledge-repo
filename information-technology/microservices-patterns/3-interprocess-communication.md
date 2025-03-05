@@ -26,7 +26,7 @@
         - Self-describing
       - Disadv: big & costly-to-parse message
     - Binary: advs & disadvs: reverse of text-based. Additional advs:
-      - Require API-first design
+      - Enforce API-first design
       - Can be statically checked in compiling languages
 ### Remote procedure call communication
 - Characteristic: client assumes the res will arrive in a timely fashion

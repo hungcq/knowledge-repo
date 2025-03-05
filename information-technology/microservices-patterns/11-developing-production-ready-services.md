@@ -1,51 +1,54 @@
 ## 11. Developing production-ready services
 - Problem: ensure quality attributes before deploying in production: security, configurability, observability
+
 ### Security: authentication & authorization
 - 4 aspects of security:
   - Authentication
   - Authorization: apps often use role based security with access control lists (ACLs)
   - Auditing
   - Secure IPC (eg services communicate over TLS with authentication)
-- Monolith security approaches:
-  - Session-based:
-    - Session: store principal ID & role in:
-      - Memory: require requests to be routed to the same instance
-      - DB
-    - Session token: used to identify the session. Usually opaque token. Can be:
-      - Cryptographically strong random number
-      - Store of session state
-    - Steps: login -> server returns session token -> client includes token in each subsequent request -> server
-  - API client: use API key & secret in every request
-- Microservice security:
-  - Authentication:
-    - Approach: centralize authentication in the API gateway before forwarding to the services
-    - <img src="./resources/11.3.png" width="500"/>
-    - Advs:
-      - One place to implement -> safe effort
-      - Hide complexity of dif auth mechanisms from the services
-  - Authorization:
-    - Where to implement:
-      - Authorize in the API gateway:
-        - Advs:
-          - One place to implement
-          - Can reject requests before forwarding to services
-        - Disadvs:
-          - Coupling API gateway to the services
-          - Can only implement role-based authorization, not ACLs
-      - Authorize in the services (standard way) -> can do both role-based & ACLs
-    - Types of tokens:
-      - Opaque token (eg UUID):
-        - Adv: can be revoked
-        - Disadv: reduce performance, availability & increase latency:
-          token recipient must validate token via a sync RPC call to security service
-      - Transparent token (eg JWT) (standard way):
-        - Approach: API gateway & services use the token to pass around info about the principal
-        - Adv & disadv: reverse of opaque token
-        - Solution to irrevocable problem: issue token with short expiration times
-        - -> New problem: app must continually reissue JWTs to keep the session active
-        - -> Use OAuth 2.0 security standard
+#### Monolith security approaches:
+- Session-based:
+  - Session: store principal ID & role in:
+    - Memory: require requests to be routed to the same instance
+    - DB
+  - Session token: used to identify the session. Usually opaque token. Can be:
+    - Cryptographically strong random number
+    - Store of session state
+  - Steps: login -> server returns session token -> client includes token in each subsequent request -> server
+- API client: use API key & secret in every request
+#### Microservice security:
+- Authentication:
+  - Approach: centralize authentication in the API gateway before forwarding to the services
+  - <img src="./resources/11.3.png" width="500"/>
+  - Advs:
+    - One place to implement -> safe effort
+    - Hide complexity of dif auth mechanisms from the services
+- Authorization:
+  - Where to implement:
+    - Authorize in the API gateway:
+      - Advs:
+        - One place to implement
+        - Can reject requests before forwarding to services
+      - Disadvs:
+        - Coupling API gateway to the services
+        - Can only implement role-based authorization, not ACLs
+    - Authorize in the services (standard way) -> can do both role-based & ACLs
+  - Types of tokens:
+    - Opaque token (eg UUID):
+      - Adv: can be revoked
+      - Disadv: reduce performance, availability & increase latency:
+        token recipient must validate token via a sync RPC call to security service
+    - Transparent token (eg JWT) (standard way):
+      - Approach: API gateway & services use the token to pass around info about the principal
+      - Adv & disadv: reverse of opaque token
+      - Solution to irrevocable problem: issue token with short expiration times
+      - -> New problem: app must continually reissue JWTs to keep the session active
+      - -> Use long-lived refresh tokens (OAuth 2.0 security standard)
+
 ### Configuration
 - Problem: dif config properties for dif envs
+- Externalized configuration def: provide the configuration property values to a service instance at runtime
 - 2 approaches for externalized config:
   - Push model:
     - Deployment infra passes the config properties to the service instance using OS env var or configuration file
@@ -67,8 +70,9 @@
       - Transparent decryption of sensitive data:
       encrypt/decrypt can be handled by config server before returning to service
       - Dynamic reconfig (eg via polling)
-    - Disadv: increased complexity: another highly available component that needs to be setup & maintain
+    - Disadv: increased complexity: another highly available component that needs to be set up & maintain
     - -> Use open source frameworks
+
 ### Observability
 - Goal: make the service easier to manage & trouble shoot
 - <img src="./resources/11.9.png" width="500"/>
@@ -109,10 +113,11 @@ including a breakdown of where the time is spent
   - Distributed tracing server: combine the spans to form a complete trace & store in DB
 #### Application metrics
 - Service reports metrics to a central server that provides aggregation, visualization & alerting
-- Goal: monitor service health & alert when there is problems
+- Goal: monitor service health & alert when there are problems
 - Types:
   - Infra-level metrics: eg CPU, memory, disk utilization
   - App-level metrics: eg request latency, QPS, num of requests
+- Architecture:
   - <img src="./resources/11.14.png" width="500"/>
 - Properties of a metric sample:
   - Name
@@ -125,6 +130,7 @@ including a breakdown of where the time is spent
     - Push model: service instances invoke Metrics service API
     - Pull model: Metrics service (or its agent running locally) invokes a service API
     to retrieve metrics from the service instance
+    - -> Central place to config aggregation
 #### Exception tracking
 - Disadvs of logging exception to log file:
   - Can't handle multiple line exceptions
@@ -154,10 +160,14 @@ that de-duplicates exceptions, generates alerts & manages their resolution
     - Adv: automatically provide an audit log for create & update operation
     - Disadv: doesn't record queries
 ### Microservice chassis & service mesh
-- *Microservice chassis*:
+- Microservice chassis:
+  - Dev: a framework/set of frameworks that handle cross-cutting concerns (eg observability, config)
   - Adv: reduce dev effort
   - Disadv: need one for every language/platform used to write services
-- *Service mesh*:
+- Service mesh:
+  - Def:
+    - Networking infra that handles all communication between services and external apps
+    - Implement cross-cutting concerns related to inter-service communication
+    - -> Help simplify the chassis: only implement concerns tightly integrated with app code
+      (eg externalized config, health checks)
   - <img src="./resources/11.17.png" width="500"/>
-  - Help simplify the chassis: only implement concerns tightly integrated with app code
-  (eg externalized config, health checks)

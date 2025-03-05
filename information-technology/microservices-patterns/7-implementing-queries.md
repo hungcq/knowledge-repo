@@ -5,7 +5,7 @@
     - Frontend client (eg web app): not practical for clients accessing services via the internet: slow network
     - API gateway/BFF variant -> allow clients accessing the gateway via the internet to efficiently retrieve the data
     - Standalone API composer: usage:
-      - For queries used internally by multiple services
+      - Queries used internally by multiple services
       - Externally accessible queries with logic too complex to be part of API gateway
   - Query performance: should call provider services in parallel
 - Adv: simple to implement
@@ -20,7 +20,7 @@
   - When API composition can't efficiently perform a query:
   not all services store attributes that can be used to filter or sort:
     - <img src="./resources/7.7.png" width="500"/>
-    - Solution:
+    - Solutions:
       - API composer retrieve & join large data set -> inefficient
       - Fetch IDs, then bulk fetch other services -> require bulk fetch API
   - Service data model doesn't efficiently support the query (eg geospatial/text search query)

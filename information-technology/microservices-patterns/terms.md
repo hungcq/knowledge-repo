@@ -49,8 +49,8 @@
   - Access token: API gateway passes a token containing information about the user (eg identity & roles)
   to the services that it invokes
 - Cross-cutting concerns patterns:
-  - Externalized configuration: provide the configuration property values to a service instance at runtime
-  - Microservice chassis: a framework/set of frameworks that handle cross-cutting concerns (eg observability, config)
+  - Externalized configuration
+  - Microservice chassis
 - Observability patterns:
   - Application metrics (373)
   - Audit logging (377)
@@ -62,10 +62,7 @@
   - Deploy a service as a container (393)
   - Deploy a service as a VM (390)
   - Language-specific packaging format (387)
-  - Service mesh:
-    - Networking infra that handles all communication between services and external apps
-    - Implement cross-cutting concerns (eg circuit breaker, distributed tracing, service discovery,
-    load balancing, rule-based traffic routing)
+  - Service mesh
   - Serverless deployment (416)
   - Sidecar (410)
 - Refactoring to microservices patterns:
