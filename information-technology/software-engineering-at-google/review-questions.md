@@ -1,39 +1,36 @@
-# Software engineering
-- 3 main difs between SE & programming
+# Review questions
 
-# Culture
+## Software engineering
+- 3 main differences between SE & programming
+
+## Culture
 - What are the main sections of a postmortem?
-- What is the philosophy for knowledge sharing?
+- What is the philosophy of knowledge sharing?
 - How to setup a psychologically safe env for knowledge sharing?
 - What is the leadership philosophy?
 
-# Process
+## Process
 - Code review:
   - Requirements
   - What shouldn't be done
-  - 3 types of approvals
+  - Review criteria (see 3 types of approvals)
   - Point of focus when reviewing dif types of changes:
     - New feature
     - Behavior changes (API), improvements & optimizations
     - Bug fixes & rollbacks
 - Documentation:
-  - Criteria to categorize audience:
-    - Experience level
-    - Domain knowledge
-    - Purpose
-    - How a user encounters the doc
-    - Customer vs provider (implementor)
-  - 3 types of reviews & corresponding goals
-  - Questions to be answered in any doc: how, who, what, when, where, why, whose
+  - Main best practices
+  - Criteria to categorize audience
+  - Review criteria (see 3 types of reviews)
+  - Questions to be answered in any doc
   - Doc structure
   - Doc types: reference, design, tutorial, conceptual, landing page
 - Automated testing:
-  - Advs
   - Advs over manual testing
   - 3 testing activities
   - Test sizes: constraint, adv & disadv
 - Unit testing:
-  - Chars of bad tests: brittle & unclear
+  - Chars of bad tests
   - How to prevent brittle tests & unclear tests
   - Code reuse in test
   - 4 types of code changes & what to do with tests
@@ -49,7 +46,7 @@
   - When to deprecate
   - Process, how to scale
 
-# Tools
+## Tools
 - Distributed VCS: def, disadvs
 - WIP dev branch: disadvs
 - Trunk-based development: process

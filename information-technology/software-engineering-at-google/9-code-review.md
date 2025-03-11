@@ -5,7 +5,7 @@
   - Supporting tools
 - Shouldn't: debate previous design decisions
 - 3 types of approval needed from 3 roles (goal: flexibility -> scalable):
-  - Other engineer: functional correctness & understandability
+  - Another engineer: functional correctness & understandability
   - Code owner: suitable for the repo
   - Engineer with the language's readability: consistency of style
 - -> Usually done by 1 person, or the author performs both role 2 & 3
@@ -39,4 +39,4 @@
   - Refactoring & large-scale changes:
     - Low-risk: reviewed by owners of the entire codebase
     - High-risk/local expertise needed: reviewed by individual engineers:
-      limit comments to concern specific to local code, not the tool -> scalable
+      limit comments to concerns specific to local code, not the tool -> scalable

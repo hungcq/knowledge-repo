@@ -6,9 +6,9 @@
   - Evolution of deployment process:
     - Devs give app & operating instructions to operations
     - -> DevOps: dev team is also responsible for deployment:
-      - Operation team provide console for dev to deploy code
+      - Operation team provides console for dev to deploy code
       - -> Deployment pipeline: test & deploy
-- Big app contain hundreds of microservices -> can't hand config servers & services
+- Big app contains hundreds of microservices -> can't hand config servers & services
 - -> Need highly automated deployment process & infra to scale
 - 4 main functions of a production env:
   - Service management interface:
@@ -17,7 +17,7 @@
   - Runtime service management: ensure that the desired number of service instances is running at all time
   - Monitoring (aka observability):
     - Provide devs with insight into what their services are doing, including log files & metrics
-    - Alert devs if there is problem
+    - Alert devs if there is a problem
   - Request routing: route user requests to the services
 - How to prevent bugs in new deployment from affecting users: separate deployment from release:
   - Use service mesh feature: rule-based load balancing & traffic routing
@@ -96,126 +96,126 @@
   - Long-tail latency: due to elasticity, it takes time for the cloud to provision & start an instance of the service
   - -> Not suitable for latency-sensitive services
   - Limited event/request-based programming model: not suitable for long-running services (eg message consumer)
-- Should consider whether this option meets the service requirements before consider other deployment patterns
+- Should consider whether this option meets the service requirements before considering other deployment patterns
 ### Technologies
-- Docker (containerization tech):
-  - Dockerfile:
-    - Describes how to build a Docker container image
-    - Specify:
-      - Base container image
-      - Instructions for installing software & config the container
-      - Shell command to run when the container is created
-  - Steps to push an image into the registry:
-    - Tag the image using `docker tag` command: using registry address & service version
-    - Push the image using `docker push` command
-  - Steps to run a container (`docker run` command):
-    - Container infra pulls the image from the registry
-    - Container infra creates containers from the image
-  - `docker run` arguments:
-    - Image name
-    - Port mapping
-    - Env variables
-- Kubernetes (Docker orchestration framework):
-  - 3 main functions of Docker orchestration framework:
-    - Resource management: treat a cluster of machines as a pool of CPU, memory & storage volumes,
-    turning it into a single machine
-    - Scheduling: select the machine to run a container
-    - Service management:
-      - Ensure that the desired number of healthy instances is running at all times
-      - Load balance request across the instances
-      - Perform rolling upgrades of services & allow to roll back the upgrades
-  - Key concepts:
-    - Pod: Kubernetes's unit of deployment,
-    consists of a set of containers (usually 1) that share an IP address & storage volumes:
-      - Can contain one or more sidecar containers which implement supporting functions
-      - Ephemeral
-    - Deployment:
-      - Def: a controller that ensures the desired number of instances of the pod (service instances) are running at all time
-      - Support versioning with rolling upgrades & rollbacks
-      - Declared in YAML file, specifying configs of a pod
-    - Service: a form of infra-provided service discovery:
-      - Has an IP address & a DNS name that resolves to that IP address. Both are only accessible within Kubernetes.
-      - Function: provide clients of a service with a static/stable network location
-    - ConfigMap:
-      - A named collection of name-value pairs that defines the external config for one or more app services
-      - Definition of a pod's container can reference a ConfigMap to:
-        - Define the container's env variables
-        - Create config files inside the container
-  - Architecture:
-    - <img src="./resources/12.10.png" width="500"/>
-    - Run on a cluster of machines
-    - Type of machines:
-      - Master: manage the cluster. Components in master:
-        - API server: REST API for deploying & managing services (eg called by kubectl command-line interface)
-        - Etcd: key-value NoSQL DB storing the cluster data
-        - Scheduler: select a node to run a pod
-        - Controller manager: run the controllers, which ensure that the state of the cluster matches the intended state
-      - Node: worker that runs one or more pods. Components in node:
-        - Kubelet: create & manage the pods running on the node
-        - Kube-proxy: manage networking, including load balancing across pods
-        - Pods
-  - Deployment steps:
-    - Define deployment in a YAML file
-    - Create or update the deployment by using the `kubectl apply` command
-    - -> Result: running pods with dynamic address
-    - Define service in a YAML file
-    - Create service using `kubectl apply` command
-    - -> Result: service with a stable address, accessible inside the cluster
-  - 2 ways to make service accessible from outside the cluster:
-    - Use NodePort service: accessible via a cluster-wide port on all the nodes in the cluster
-    - -> Use load balancer to balance requests from the Internet across the all the nodes
-    - Use LoadBalancer service: automatically config a cloud-specific load balancer
-    - -> Less config needed but less control over the load balancer config
-  - Upgrade running service steps:
-    - Build a new container image (tagged with a dif version tag) & push it to the registry
-    - Edit Deployment YAML file to refer to the new image
-    - Update the deployment using `kubectl apply` command
-  - -> Result: Kubernetes will perform a rolling upgrade of the pods
-  - Handle issues occur during upgrade: either:
-    - Fix the YAML file & rerun `kubectl apply` to update the deployment
-    - Rollback using `kubetcl rollout undo deployment <service name>` command
-- Istio (service mesh):
-  - Architecture:
-    - <img src="./resources/12.11.png" width="500"/>
-    - *Note*: typo in Key box: req - straight line, config: -- line
-  - Concepts:
-    - Istio Envoy proxy:
-      - Def: a modified version of Envoy: high-performance proxy that supports a variety of protocols
-      - Support robust interservice communication using such as circuit breaker, rate limiting, automatic retries
-      - Used by Istio as a sidecar:
-        - When used with Kubernetes: run in a container within the service's pod
-        - When used in other env without the pod concept: run in the same container as the service
-    - DestinationRule:
-      - Basically a wrapper around *service* definition, map subset to deployment's label
-      - Define one or more *subsets* of pods for a service (usually service versions)
-      - Can also define traffic policies (eg load-balancing algo)
-    - VirtualService: define how to route requests for one or more hostnames
-    (eg load balancing weight for each destination rule's subset)
-  - Deployment steps:
-    - Create routing rules to route to the v1
-    - Deploy with Istio
-    - Route test traffic to v2 by modifying rules in VirtualService. Can route by:
-      - Request header
-      - Weight
-    - Route production traffic to v2
-    - Delete v1 deployment (eg by running `kubetcl delete deploy <name>` command)
-- AWS lambda:
-  - Service development:
-    - Must use a dif programming model
-    - Code & packaging depend on the programming language
-  - 4 ways to invoke:
-    - HTTP requests: config AWS API gateway to route HTTP requests to the lambda function
-    - Events generated by AWS services
-    - Scheduled invocations: use Linux cron-like schedule
-    - Direct API calls in other services (HTTP req/res)
-  - Serverless: serverless deployment framework, supports many platforms
-  - -> Can be used to make lambda function deployment easier
-  - Deployment steps using Serverless:
-    - Write serverless.yml file to define:
-      - The lambda functions
-      - Their RESTful endpoints
-    - Deploy the lambda functions using `serverless deploy`
-    - Create & config an API gateway to route requests to them
-  - Update steps using Serverless:
-    - Rebuild the lambda function's package
-    - Rerun `serverless deploy`
+#### Docker (containerization tech)
+- Dockerfile:
+  - Describe how to build a Docker container image
+  - Specify:
+    - Base container image
+    - Instructions for installing software & config the container
+    - Shell command to run when the container is created
+- Steps to push an image into the registry:
+  - Tag the image using `docker tag` command: using registry address & service version
+  - Push the image using `docker push` command
+- Steps to run a container (`docker run` command):
+  - Container infra pulls the image from the registry
+  - Container infra creates containers from the image
+- `docker run` arguments:
+  - Image name
+  - Port mapping
+  - Env variables
+#### Kubernetes (Docker orchestration framework)
+- 3 main functions of Docker orchestration framework:
+  - Resource management: treat a cluster of machines as a pool of CPU, memory & storage volumes,
+  turning it into a single machine
+  - Scheduling: select the machine to run a container
+  - Service management:
+    - Ensure that the desired number of healthy instances is running at all times
+    - Load balance request across the instances
+    - Perform rolling upgrades of services & allow to roll back the upgrades
+- Key concepts:
+  - Pod: Kubernetes's unit of deployment,
+  consists of a set of containers (usually 1) that share an IP address & storage volumes:
+    - Can contain one or more sidecar containers which implement supporting functions
+    - Ephemeral
+  - Deployment:
+    - Def: a controller that ensures the desired number of instances of the pod (service instances) are running at all time
+    - Support versioning with rolling upgrades & rollbacks
+    - Declared in YAML file, specifying configs of a pod
+  - Service: a form of infra-provided service discovery:
+    - Has an IP address & a DNS name that resolves to that IP address. Both are only accessible within Kubernetes.
+    - Function: provide clients of a service with a static/stable network location
+  - ConfigMap:
+    - A named collection of name-value pairs that defines the external config for one or more app services
+    - Definition of a pod's container can reference a ConfigMap to:
+      - Define the container's env variables
+      - Create config files inside the container
+- Architecture:
+  - <img src="./resources/12.10.png" width="500"/>
+  - Run on a cluster of machines
+  - Type of machines:
+    - Master: manage the cluster. Components in master:
+      - API server: REST API for deploying & managing services (eg called by kubectl command-line interface)
+      - Etcd: key-value NoSQL DB storing the cluster data
+      - Scheduler: select a node to run a pod
+      - Controller manager: run the controllers, which ensure that the state of the cluster matches the intended state
+    - Node: worker that runs one or more pods. Components in node:
+      - Kubelet: create & manage the pods running on the node
+      - Kube-proxy: manage networking, including load balancing across pods
+      - Pods
+- Deployment steps:
+  - Define deployment in a YAML file
+  - Create or update the deployment by using the `kubectl apply` command
+  - -> Result: running pods with dynamic address
+  - Define service in a YAML file
+  - Create service using `kubectl apply` command
+  - -> Result: service with a stable address, accessible inside the cluster
+- 2 ways to make service accessible from outside the cluster:
+  - Use NodePort service: accessible via a cluster-wide port on all the nodes in the cluster
+  - -> Use load balancer to balance requests from the Internet across all the nodes
+  - Use LoadBalancer service: automatically config a cloud-specific load balancer
+  - -> Less config needed but less control over the load balancer config
+- Upgrade running service steps:
+  - Build a new container image (tagged with a dif version tag) & push it to the registry
+  - Edit deployment.yaml to refer to the new image
+  - Update the deployment using `kubectl apply` command
+- -> Result: Kubernetes will perform a rolling upgrade of the pods
+- Handle issues occur during upgrade: either:
+  - Fix the deployment.yaml & rerun `kubectl apply` to update the deployment
+  - Rollback using `kubetcl rollout undo deployment <service name>` command
+#### Istio (service mesh)
+- Architecture:
+  - <img src="./resources/12.11.png" width="500"/>
+  - *Note*: typo in Key box: req - straight line, config: -- line
+- Concepts:
+  - Istio Envoy proxy:
+    - Def: a modified version of Envoy: high-performance proxy that supports a variety of protocols
+    - Support robust inter-service communication using such as circuit breaker, rate limiting, automatic retries
+    - Used by Istio as a sidecar:
+      - When used with Kubernetes: run in a container within the service's pod
+      - When used in other envs without the pod concept: run in the same container as the service
+  - DestinationRule:
+    - Basically a wrapper around *service* definition, map subset to deployment's label
+    - Define one or more *subsets* of pods for a service (usually service versions)
+    - Can also define traffic policies (eg load-balancing algo)
+  - VirtualService: define how to route requests for one or more hostnames
+  (eg load balancing weight for each destination rule's subset)
+- Deployment steps:
+  - Create routing rules to route to the v1
+  - Deploy with Istio
+  - Route test traffic to v2 by modifying rules in VirtualService. Can route by:
+    - Request header
+    - Weight
+  - Route production traffic to v2
+  - Delete v1 deployment (eg by running `kubetcl delete deployment <name>` command)
+#### AWS lambda
+- Service development:
+  - Must use a dif programming model
+  - Code & packaging depend on the programming language
+- 4 ways to invoke:
+  - HTTP requests: config AWS API gateway to route HTTP requests to the lambda function
+  - Events generated by AWS services
+  - Scheduled invocations: use Linux cron-like schedule
+  - Direct API calls in other services (HTTP req/res)
+- Serverless: serverless deployment framework, supports many platforms
+- -> Can be used to make lambda function deployment easier
+- Deployment steps using Serverless:
+  - Write serverless.yml file to define:
+    - The lambda functions
+    - Their RESTful endpoints
+  - Deploy the lambda functions using `serverless deploy`
+  - Create & config an API gateway to route requests to them
+- Update steps using Serverless:
+  - Rebuild the lambda function's package
+  - Rerun `serverless deploy`

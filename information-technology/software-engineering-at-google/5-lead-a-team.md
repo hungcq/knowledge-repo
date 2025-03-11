@@ -2,7 +2,7 @@
 - Goal:
   - For leaders: people management & technical leadership
   - For others: understand leaders better
-- 3 types of role:
+- 3 types of roles:
   - Engineering manager: people & product aspect
   - Tech lead: technical & project management aspect
   - Tech lead manager (combine both roles): for new, small teams

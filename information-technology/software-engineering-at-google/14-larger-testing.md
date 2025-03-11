@@ -25,7 +25,7 @@
   - Challenges:
     - Rate of distinct scenarios to test in an e2e way can grow exponentially/combinatorially
     depending on the structure of the SUT
-    - Impact of low-fidelity double grow exponentially with number of components
+    - Impact of low-fidelity double grow exponentially with the number of components
   - -> Goal: implement larger tests that work well at scale but maintain reasonably high fidelity
 ### Dev work flow
 - Use a separate post-submit continuous build
@@ -39,7 +39,7 @@
       - Polling for a state transition repeatedly over a time window
       - Use event handler
     - Optimize build time: only build the core part of the SUT,
-    use pre-built versions of other dep at a known good version
+    use pre-built versions of other deps at a known good version
   - Reduce flakiness:
     - Reduce scope
     - Higher timeout value -> tradeoff with test speed
@@ -48,6 +48,10 @@
     need clear explanation of what is measured & why the behavior is considered a suspect
     - Minimize effort to identify root cause (eg distributed tracing)
     - Provide support & contact info of owner & supporter of the test
+- Should draft a test plan when designing software:
+  strategic outline of what types of testing are needed and how much each, by:
+  - Identify primary risks
+  - Necessary testing approaches to mitigate those risks
 ### Ownership
 - Integration tests of components within a particular project: project lead
 - Featured-focused tests across services: feature owner:
@@ -85,7 +89,7 @@
       - Approach: split the tests into connected tests, use public API to drive e2e tests
     - Third-party boundary: needed because:
       - No public shared env for testing
-      - Might have cost with sending traffic
+      - Might have cost when sending requests
 - Test data: 2 types:
   - Seeded data: setting up SUT state
   - Test traffic: sent to the SUT by the test itself during its execution
@@ -100,59 +104,66 @@
   - -> Diffs are verified by human to see whether each is intended
 ### Types
 - Functional testing of one or more interacting binaries:
-  - Chars:
-    - SUT: single machine hermetic or cloud-deployed isolated
-    - Data: handcrafted
-    - Verification: assertions
+  - SUT: single machine hermetic or cloud-deployed isolated
+  - Data: handcrafted
+  - Verification: assertions
   - Execution: interact via published API
-- Browser & device testing: special case of functional testing, test the end user apps
+- Browser & device testing: special case of functional testing, test the end-user apps
 - Performance, load & stress testing:
-  - Chars:
-    - SUT: cloud-deployed isolated
-    - Data: handcrafted/multiplexed from production
-    - Verification: diff (performance metrics)
+  - SUT: cloud-deployed isolated
+  - Data: handcrafted/multiplexed from production
+  - Verification: diff (performance metrics)
   - Execution: send simultaneous traffic to external API
-  - Goal:
+  - Goals:
     - Ensure performance between versions
-    - Ensure system can handle expected spikes in traffic
+    - Ensure the system can handle expected spikes in traffic
 - Deployment config testing:
-  - Chars:
-    - SUT: single machine hermetic or cloud-deployed isolated
-    - Data: none
-    - Verification: assertions (doesn't crash)
+  - SUT: single machine hermetic or cloud-deployed isolated
+  - Data: none
+  - Verification: assertions (doesn't crash)
   - Execution: test the integration of the SUT with its config files
-- *Exploratory testing*: chars:
+- Exploratory testing:
   - SUT: production or shared staging
   - Data: production or a known test universe
   - Verification: manual
+  - Execution: manually interact with a product via a public API, try new paths/user scenarios in the system
+  - Goal: look for:
+    - Behavior deviating from expected/intuitive behavior
+    - Security vulnerability
+  - Common approach: bug bash meeting:
+    - A team of engineers & related personnel with familiarity with the product manually tests it
+    - Can use a published guideline regarding:
+      - Particular focus areas
+      - Starting points for using the system
+    - Goal: explore & document questionable product behaviors & bugs
 - A/B diff regression testing:
-  - Chars:
-    - SUT: 2 cloud-deployed isolated envs
-    - Data: usually multiplexed from production or sampled
-    - Verification: A/B diff comparison
+  - SUT: 2 cloud-deployed isolated envs
+  - Data: usually multiplexed from production or sampled
+  - Verification: A/B diff comparison
   - Execution: send traffic to a public API & compare responses between old & new versions (esp between migrations)
-  - Any deviations in behavior must be reconciled as anticipated or unanticipated (regressions)
+  - -> Any deviations in behavior must be reconciled as anticipated or unanticipated (regressions)
   - Variants:
-    - A/A testing (comparing a system to itself) to identify non-deterministic beha, noise, flakiness
+    - A/A testing (comparing a system to itself) to identify non-deterministic behaviors, noise, flakiness
     - -> Remove those from A/B diffs
     - A/B/C testing (?)
   - Limitations:
     - Manual verification of diffs
     - Noise (eg non-determinism)
     - Generate enough useful traffic
-    - Complexity in setting up 2 SUTs, esp when there are shared dep
-- *UAT*:
-  - Chars:
-    - SUT: machine-hermetic or cloud-deployed isolated
-    - Data: handcrafted
-    - Verification: assertions
+    - Complexity in setting up 2 SUTs, esp when there are shared deps
+- UAT:
+  - Def: automated test that exercises the product through public APIs
+  to ensure the overall beha for specific user journeys
+  - SUT: machine-hermetic or cloud-deployed isolated
+  - Data: handcrafted
+  - Verification: assertions
   - Can use actual coding languages instead of runnable specification languages when:
   those defining the intended product behavior are fluent coders
-- *Probers* & canary analysis:
-  - Chars:
-    - SUT: production
-    - Data: production
-    - Verification: assertions & A/B diff (of metrics)
+- Probers & canary analysis:
+  - Prober def: function test that run encoded assertions against the production env
+  - SUT: production
+  - Data: production
+  - Verification: assertions & A/B diff (of metrics)
   - Goal: ensure that the production env itself is healthy
   - Prober asserts well-known & deterministic read-only actions
   - -> Assertions hold even if the production data changes
@@ -160,10 +171,9 @@
   - Canary analysis: compare health metrics of both the canary & baseline parts of production
   - Limitation: issues already affected end users
 - Disaster recovery & chaos engineering:
-  - Chars:
-    - SUT: production
-    - Data: production & user-crafted (fault injection)
-    - Verification: manual & A/B diff (metrics)
+  - SUT: production
+  - Data: production & user-crafted (fault injection)
+  - Verification: manual & A/B diff (metrics)
   - Goal: test how well the systems can react to unexpected changes/failures
   - Disaster recovery: inject faults into infra (eg datacenter fires/malicious attacks)
   - Chaos engineering:
@@ -174,10 +184,9 @@
     - Issues already affected end users
     - Disaster recovery is expensive to run
 - User evaluation:
-  - Chars:
-    - SUT: production
-    - Data: production
-    - Verification: manual and A/B diffs (of metrics)
+  - SUT: production
+  - Data: production
+  - Verification: manual and A/B diffs (of metrics)
   - Goal: collect metrics about the popularity & issues of upcoming features
   - Approaches:
     - Use limited rollouts & experiments to make features in production available to a subset of users:
@@ -195,13 +204,3 @@
     - Record mode test: run continuously on post-submit to gen traffic logs & verify logs are generated
     - Replay mode test: used during dev & pre-submit testing
     - When client behavior changes significantly: rerun test in Record mode to generate new traffic
-- Should draft a test plan when designing software:
-strategic outline of what types of testing are needed and how much each, by:
-  - Identify primary risks
-  - Necessary testing approaches to mitigate those risks
-- Common approach to exploratory testing: bug bash meeting:
-  - A team of engineers & related personnel with familiarity with the product manually tests it
-  - Can use a published guidelines regarding:
-    - Particular focus areas
-    - Starting points for using the system
-  - Goal: explore & document questionable product behaviors & bugs

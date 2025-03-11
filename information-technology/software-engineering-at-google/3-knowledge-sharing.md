@@ -23,11 +23,11 @@
 - Dif approaches to ask the community:
   - Group chats: less structured, hard to document
   - Mailing lists: clumsy, suited for complicated questions
-  - Q&A platform: same advs as mailing list, but more usable & editable
+  - Q&A platform: same advs as mailing lists, but more usable & editable
 - Why ask the community:
   - Can get help from broader community
   - Answers are broadly available to others in the community
-- Other stuffs about Google knowledge sharing culture:
+- Other stuff about Google knowledge sharing culture:
   - Tech talks & classes
   - Documentation
   - Newsletter

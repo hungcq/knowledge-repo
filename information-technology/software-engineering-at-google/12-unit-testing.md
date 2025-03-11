@@ -17,9 +17,9 @@
 - Test state, not interactions: users only care what the result is, not how the system arrives at the result
 - -> Prefer real objects to mocked objects when real objects are fast and deterministic
 ### Write clear tests
-- Aim for complete & concise test: contain all the needed info, no more, explaining how it arrives at its result
+- Aim for complete & concise test: contain all the necessary info, no more, explaining how it arrives at its result
 - Test behavior, not method:
-  - A single method often does a few things & handle several edge cases
+  - A single method often does a few things & handles several edge cases
   - -> Framing tests around methods leads to unclear tests
   - Behavior:
     - Def: a guarantee that a system makes about how it will respond to a series of inputs while in a particular state

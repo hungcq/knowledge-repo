@@ -1,7 +1,7 @@
 ## 11. Testing overview
 - Advs of automated testing:
   - Prevent bugs
-  - Allow to change with confidence
+  - Allow changing with confidence
   - Better software design: more modular, handle edge cases
   - Test as doc
   - Faster review
@@ -17,7 +17,7 @@
   - Write test
   - Run test: regularly
   - Fix test failure: quickly
-- *Test size*:
+- Test size (resources needed to run the test):
   - Small test:
     - Constraint: can't access source of slowness/nondeterminism:
       - Run in a single process -> can't run a server & have a separate test process connect to it
@@ -31,12 +31,12 @@
     - Disadv: can be slow/nondeterministic (eg rely on OS/third party processes)
   - Large test:
     - No constraint
-    - Focus:
+    - Usage:
       - Full system end-to-end tests: validate config
       - Legacy component that doesn't allow using test doubles
     - Should be isolated from small/medium tests: run only during build & release process
     - -> Can't impact dev workflow
-- *Test scope*:
+- Test scope (how much code is being validated (not executed) by a given test):
   - Unit test: validate logic in a small focused part of the codebase (eg class/method)
   - Integration test: verify interaction between a small number of components (eg server & its DB)
   - Large-scoped test (functional, end-to-end, system test): validate:

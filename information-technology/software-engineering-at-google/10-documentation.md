@@ -7,22 +7,22 @@
   - Clearly stated design goals & team objectives -> project team are more focused
   - Clear steps for manual processes
   - Less effort to onboard new members to a team/code base
-  - Long term benefit to all future readers
+  - Long-term benefit to all future readers
 - Reasons why doc is not popular:
   - No immediate benefit to writers
   - Engineers' attitude:
     - View writing as a separate skill than that of programming
     - Don't feel like they are capable writers
   - Limited tools & integration into dev workflow
-  - Doc is view as extra burden to be maintained
+  - Doc is viewed as extra burden to be maintained
 - Good doc: 
   - 3 aspects: completeness, accuracy, clarity
   - -> Usually there are tradeoffs between those
-  - Good doc does it intended job of its type
+  - Good doc does its intended job of its type
 ### Best practices
 - Treat as code:
   - With owner/maintainer
-  - With internal policies/standard rules to optimized for readers
+  - With internal policies/standard rules to optimize for readers
   - Version controlled
   - Review changes
   - Track issues
@@ -42,16 +42,13 @@
   - How to approach a broad audience: keep the doc short: might require maintaining a larger, detailed one
 - Know the dif types, not mix types
 - Doc reviews: 3 types of reviews (can sometimes be mixed):
-  - Technical review:
-    - Goal: accuracy
-    - Reviewer: subject matter expert
-  - Audience review:
-    - Goal: clarity
-    - Reviewer: someone unfamiliar with the domain
-  - Writing review:
-    - Goal: consistency
-    - Reviewer: technical writer/volunteer
-- Doc usually answer How question. Try to address who-what-when-where-why in the first 2 paragraphs of any doc:
+  - Technical review by subject-matter expert
+  - -> Goal: accuracy
+  - Audience review by someone unfamiliar with the domain
+  - -> Goal: clarity
+  - Writing review by technical writer/volunteer
+  - -> Goal: consistency
+- Doc usually answers How question. Try to address who-what-when-where-why in the first 2 paragraphs of any doc:
   - Who: audience
   - What: purpose of the doc
   - -> The doc should contain only info related to the what
@@ -76,7 +73,7 @@
     - Implementation comments
   - 3 types by place:
     - File comments:
-      - Should be used for all files
+      - Should be in all files
       - Content:
         - Main use cases
         - Intended audience
@@ -105,7 +102,7 @@
     - Focus on user:
       - Number each action that a user, not the system, needs to undertake
       - Denote user-visible input or output on separate lines
-    - Focus on other aspect: number the steps from the perspective of that focus
+    - Focus on other aspects: number the steps from the perspective of that focus
 - Conceptual doc:
   - Purposes:
     - Provide overviews of the APIs/systems
