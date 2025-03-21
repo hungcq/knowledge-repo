@@ -160,7 +160,7 @@
   - Can use actual coding languages instead of runnable specification languages when:
   those defining the intended product behavior are fluent coders
 - Probers & canary analysis:
-  - Prober def: function test that run encoded assertions against the production env
+  - Prober def: function test that runs encoded assertions against the production env
   - SUT: production
   - Data: production
   - Verification: assertions & A/B diff (of metrics)

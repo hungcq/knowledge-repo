@@ -9,7 +9,7 @@
 - Goals/signals/metrics framework to guide metric creation:
   - Goal
   - Signal:
-    - How you might know that you have achieved the end result
+    - How you might know that you have achieved the end-result
     - Might not be measurable
   - Metric:
     - Proxy to a signal
