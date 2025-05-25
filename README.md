@@ -14,7 +14,7 @@ within 1 month of studying,
 despite having no prior production experience with AWS.
 I don't believe there's any subject I can't learn-given enough time and effort.
 
-To support my learning, I've been maintaining this [personal knowledge repository](https://github.com/hungcq/knowledge-repo)
+To support my learning, I've been maintaining this personal knowledge repository
 since 2021. It's where I distill and document what I've learned, primarily from books, but also from other types of material.
 The topics are broad, spanning philosophy, science, software engineering, and business.
 
