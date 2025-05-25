@@ -1,6 +1,5 @@
 # Knowledge Repository
-*You can find the [GitHub repository here](https://github.com/hungcq/knowledge-repo)
-and the [GitBook site here](https://knowledge-repo.hungcq.xyz).*
+*You can find the [GitHub repository here](https://github.com/hungcq/knowledge-repo) and the [GitBook site here](https://knowledge-repo.hungcq.xyz).*
 
 I'm a lifelong learner. Learning is my commitment-it gives my life meaning and purpose.
 Everything else is a means to that end, tools that support and enable my learning.
