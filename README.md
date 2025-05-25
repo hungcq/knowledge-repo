@@ -10,12 +10,11 @@ I completed the [CFA (Chartered Financial Analyst) Level 1](https://basno.com/do
 [The curriculum](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam#core-curriculum-topics)
 is broad and demanding, often compared to a graduate-level program.
 I also earned the [AWS Solutions Architect Associate certification](https://www.credly.com/badges/e02b602d-f604-4689-94d0-8b94d4f026c6)
-within 1 month of studying,
-despite having no prior production experience with AWS.
+within 1 month of studying, despite having no prior production experience with AWS.
 I don't believe there's any subject I can't learn-given enough time and effort.
 
-To support my learning, I've been maintaining this personal knowledge repository
-since 2021. It's where I distill and document what I've learned, primarily from books, but also from other types of material.
+To support my learning, I've been maintaining this personal knowledge repository since 2021.
+It's where I distill and document what I've learned, primarily from books, but also from other types of material.
 The topics are broad, spanning philosophy, science, software engineering, and business.
 
 Being effective matters-because time is limited. That's why I not only focus on what I learn, but also how I learn.
