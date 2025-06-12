@@ -4,7 +4,7 @@ I'm a lifelong learner. Learning is my commitment-it gives my life meaning and p
 Everything else is a means to that end, tools that support and enable my learning.
 
 By most standards, I'm a strong learner (I believe). Recently, without any formal background in finance or economics,
-I completed the [CFA (Chartered Financial Analyst) Level 1](https://basno.com/dotg1acm) in just 3 months, scoring in the top 10%.
+I completed the [CFA (Chartered Financial Analyst) Level 1](https://basno.com/dotg1acm) in just 3 months, scoring in the top 10%. 
 [The curriculum](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam#core-curriculum-topics)
 is broad and demanding, often compared to a graduate-level program.
 I also earned the [AWS Solutions Architect Associate certification](https://www.credly.com/badges/e02b602d-f604-4689-94d0-8b94d4f026c6)
