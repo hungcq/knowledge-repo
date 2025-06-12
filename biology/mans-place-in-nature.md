@@ -13,4 +13,4 @@
 - Part 3: fossils evidence
 
 ## Content
-<img src="./resources/mans-place-in-nature.drawio.svg">
+<img src="resources/mans-place-in-nature.drawio.svg"/>

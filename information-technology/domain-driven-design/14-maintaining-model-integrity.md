@@ -28,7 +28,7 @@
   - Bounded context: define the range of applicability of each model
   - Context map: give a global overview of the project's contexts and the relas between them
   - Continuous integration process to keep the model unified within a context
-- <img src="./resources/14.1.png" width="700">
+- <img src="./resources/14.1.png" width="700"/>
 - Process when project is ongoing:
   - Define bounded context & context map as-is
   - Tighten up the team's practices around that current organization:
@@ -113,7 +113,7 @@ there is a strong tendency for the model to fragment
 - Main goal: map the rela
 - -> Can refactor the divergence/rela but not required
 - -> Update the map only after the change is done
-- Example: <img src="./resources/14.3.png" width="800">
+- Example: <img src="./resources/14.3.png" width="800"/>
 - Best practices:
   - Some translations are impossible due to ambiguous mapping
   - For simple case, create a Translator object/function to translate between 2 models
@@ -170,7 +170,7 @@ there is a strong tendency for the model to fragment
 - -> Tradeoffs sum:
   - Benefits of seamless integration of functionality against additional effort of coordination & comm
   - Independent action against smoother comm
-- <img src="./resources/14.13.png" width="700">
+- <img src="./resources/14.13.png" width="700"/>
 
 #### Shared kernel
 - Def
@@ -241,7 +241,7 @@ the need for the system to adapt to the semantics of the other system can lead t
     - Facade is optional if the other system have simple/clean interface
   - Include comm and transport mechanisms to talk between systems
   - If have access to the other system, can refactor its interface or add automated tests to ease the integration
-- <img src="./resources/14.8.png" width="700">
+- <img src="./resources/14.8.png" width="700"/>
 
 #### Separate ways
 - Integration is expensive. When benefit is small, strive for isolated bounded contexts without any integration

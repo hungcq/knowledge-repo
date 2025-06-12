@@ -35,10 +35,10 @@
 - -> PostMapping, PutMapping, DeleteMapping are similar
 - PathVariable("name"): method param annotation, mapping the param in the URL to the method's param
 - RequestBody: method param annotation, mapping the request body into an object
-- ResponseEntity<Type>: wrapper object, representing the entire HTTP response (status code, header, body of Type)
+- ResponseEntity`<Type>`: wrapper object, representing the entire HTTP response (status code, header, body of Type)
 ## Localization: skipped
 ## Spring HATEOAS
 - Add hyperlinks for a given resource
 - Usage:
-  - Extend the model class using RepresentationModel<Type>
+  - Extend the model class using RepresentationModel`<Type>`
   - In the GET handler of the class, call model.add(link). link can be built with HATEOAS link to static method.

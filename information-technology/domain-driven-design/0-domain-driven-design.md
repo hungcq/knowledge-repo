@@ -231,11 +231,11 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 ## Content
 
 ### Summary map
-- <img src="../resources/ddd.drawio.svg">
+- <img src="../resources/ddd.drawio.svg"/>
 
 ### Graphs
-- <img src="./resources/building-block-supple-design.png" width="800">
-- <img src="./resources/strategic-design.png" width="800">
+- <img src="./resources/building-block-supple-design.png" width="800"/>
+- <img src="./resources/strategic-design.png" width="800"/>
 
 ### Foreword
 - Problem: main source of complexity in SE is the intricacy of the problem domain

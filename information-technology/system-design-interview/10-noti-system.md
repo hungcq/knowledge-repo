@@ -17,7 +17,7 @@
   - User schema: userid, phone, email
   - Device schema: device token
 - Send noti:
-  - <img src="./resources/10.14.png" width="700">
+  - <img src="./resources/10.14.png" width="700"/>
 ### Details
 - Noti template for consistency & performance
 - Retry mechanism

@@ -15,7 +15,7 @@
 - Storage duration?
 - Store duplicate content?
 ### High level design
-- <img src="./resources/9.2.png" width="700">
+- <img src="./resources/9.2.png" width="700"/>
 ### Details
 - How to choose seed URLs:
   - Popular sites
@@ -27,7 +27,7 @@
   - Ensure politeness: each domain as a queue, handled by 1 worker
   - Prioritization: use queues with dif weights, workers choose queue randomly based on weight, put to queue router
   - Freshness: ensure content updated, can use page's update history
-  - <img src="./resources/9.8.png" width="500">
+  - <img src="./resources/9.8.png" width="500"/>
 - HTML downloader:
   - Multi nodes, pull from queue pushed by URL frontier
   - Read & cached robot.txt (file in each site specifying which web can be downloaded)

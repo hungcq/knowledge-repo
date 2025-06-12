@@ -18,7 +18,7 @@
 - React optimization
 
 ## Main content
-<img src="./resources/road-to-react.drawio.svg">
+<img src="./resources/road-to-react.drawio.svg"/>
 
 ### Other notes
 - Refresh behavior: bridge between React side & Dev server side:

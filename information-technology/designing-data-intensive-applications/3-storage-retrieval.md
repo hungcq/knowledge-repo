@@ -27,7 +27,7 @@
   - Efficient merge (like merge sort)
   - Can use sparse in-memory index, range index for each segment (using BST like AVL)
   - -> Reduce memory usage
-    -  <img src="./resources/3.5.png" width="500">
+    -  <img src="./resources/3.5.png" width="500"/>
   - Compress-able blocks (between keys in sparse index)
   - -> Reduce size & disk IO
 - Advs over B-tree:
@@ -44,10 +44,10 @@
   - Break DB into fixed-size blocks/pages
   - Pages refer to other pages' address on disk
   - Read: traverse tree until reaching leaf. Leaf contains key's value or address of page containing key's value.
-    - <img src="./resources/3.6.png" width="500">
+    - <img src="./resources/3.6.png" width="500"/>
   - Update: search for the page containing the key, update & write the whole page to disk
   - Insert: if page reaches its maximum capacity -> break into 2 pages & update tree
-    - <img src="./resources/3.7.png" width="500">
+    - <img src="./resources/3.7.png" width="500"/>
 - Adv: can attach locks to tree to lock key range -> strong transaction semantics
 - Ensure reliability:
   - Write-ahead log (redo log): use to restore the tree in consistent state if crash when updating multiple pages
@@ -109,5 +109,5 @@
   - Pre-computed (materialized) aggregates for fast query
   - Data cube/OLAP cube: grid of aggregates grouped by dif dimensions 
   - -> Faster but less flexibility. Write more expensive
-  - <img src="./resources/3.12.png" width="500">
+  - <img src="./resources/3.12.png" width="500"/>
   

@@ -132,7 +132,7 @@
     - Suggestions & resources
 - Clitoris:
   - Structure: ~penis:
-    - <img src="./resources/clitoris.png" width="300">
+    - <img src="./resources/clitoris.png" width="300"/>
   - Function: key source of pleasure for women
   - How women can have pleasure: by stimulating glans & bulbs & legs of clitoris, not by penetration only
 - Orgasm gap:
@@ -276,7 +276,7 @@
 - Sexual desire: dif vs other biological derives:
 no physical deprivation: the longer people go without sex, the less desire they have
 - Mental process: from desire to behavior
-  - <img src="./resources/desire.png" width="150">
+  - <img src="./resources/desire.png" width="150"/>
   - Attention:
     - Source of distraction: thoughts about your own life or sexual response
     - Some distraction/self consciousness/thoughts are normal
@@ -293,14 +293,14 @@ no physical deprivation: the longer people go without sex, the less desire they 
 #### 7. Gaps in our understanding of desire
 - Sexual response models:
   - Outdated, popular model:
-    - <img src="./resources/old-model.png" width="400">
+    - <img src="./resources/old-model.png" width="400"/>
     - Problems:
       - Desire comes first
       - -> Sex as a purely biological derive -> not correspond to reality
       - Linear model: based on male physiology
       - -> Not correspond to reality, esp for women
   - New model:
-    - <img src="./resources/new-model.png" width="400">
+    - <img src="./resources/new-model.png" width="400"/>
     - Barriers:
       - Psychological: eg attention, thoughts, learning & association, expectation & pressure
       - Circumstantial: ie too busy to have time for sex

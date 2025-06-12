@@ -33,8 +33,8 @@
 ### Service level objective (SLO)
 - Def: a target value or range of values for a service level that is measured by an SLI
 - Types:
-  - SLI <= target
-  - Lower bound <= SLI <= upper bound
+  - SLI `<=` target
+  - Lower bound `<=` SLI `<=` upper bound
 - Focus on what users care about, not what you can measure
 - Should work from desired objectives backward to specific indicators
 - Definition:

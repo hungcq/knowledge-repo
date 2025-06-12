@@ -72,7 +72,7 @@
   - -> Do big changes as separate tasks
   - During code review:
     - Should be done while pair-programming
-    - Process: ideas <-> refactor to test ideas -> make suggestions
+    - Process: ideas `<->` refactor to test ideas -> make suggestions
     - -> Adv: implemented suggestions
 - Long-term, planned refactoring:
   - Avoid all-in refactoring
@@ -129,8 +129,8 @@
 - Quick intro: chap 3
 - Details of techniques: chap 5-12
 - Summary: smells & refactoring suggestions:
-  - <img src="./resources/smell1.png" width="600">
-  - <img src="./resources/smell2.png" width="600">
+  - <img src="./resources/smell1.png" width="600"/>
+  - <img src="./resources/smell2.png" width="600"/>
 
 ### Building tests
 - TDD: test-code-refactor cycle

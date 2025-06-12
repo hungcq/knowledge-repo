@@ -15,7 +15,7 @@
 
 
 ## Goals
-<img src="./resources/clear-sighted-statistics-goal.drawio.svg">
+<img src="./resources/clear-sighted-statistics-goal.drawio.svg"/>
 
 ## Terms
 - Statistics: data derived from samples
@@ -94,7 +94,7 @@ open new approaches to understand phenomena that previously haven't been conside
 - Development in the field
 
 ## Summary
-<img src="resources/clear-sighted-statistics.drawio.svg">
+<img src="resources/clear-sighted-statistics.drawio.svg"/>
 
 ### Excel formulas
 - MAX

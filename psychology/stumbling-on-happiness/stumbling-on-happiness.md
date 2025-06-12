@@ -111,7 +111,7 @@ areas of the brain that response emotionally to real events also response emotio
 - -> People only recognize when the brain prioritizes sensory perception over imagination,
 not when it prioritizes current emotion over emotional prediction
 - -> Prefeeling is influenced by current emotion
-- <img src="./resources/11.png" width="600">
+- <img src="./resources/11.png" width="600"/>
 - Filling-in material: the present
 - -> Affect memory, esp memory of past emotions
 ### 7. Time bombs

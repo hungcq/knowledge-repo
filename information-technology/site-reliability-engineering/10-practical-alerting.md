@@ -1,6 +1,6 @@
 # III - Practices
 - Img: bottom: most basic requirements:
-  - <img src="./resources/iii-1.png" width="600">
+  - <img src="./resources/iii-1.png" width="600"/>
 
 ## 10. Practical alerting from time-series data
 - Borgmon difference vs Prometheus:

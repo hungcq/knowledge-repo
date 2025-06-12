@@ -193,7 +193,7 @@
 - -> Positive: when one var > mean, the other aso tends to be > mean
 - Independent: P(A|B) = P(A)
 - Prob distribution: describe probs of all possible outcomes for a random var
-- Cumulative distribution func (distribution func): p(x <= a)
+- Cumulative distribution func (distribution func): p(x `<=` a)
 - Binomial random var: num of success in a given num of trials. Assumptions:
   - p(success) for each trial is constant
   - Trials are independent

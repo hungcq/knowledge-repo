@@ -21,4 +21,4 @@
 - Static type model (concept) vs dynamic model
 
 ## Skimmed content
-<img src="./resources/analysis-patterns.drawio.svg">
+<img src="./resources/analysis-patterns.drawio.svg"/>

@@ -23,7 +23,7 @@
   - Ambiguity/inconsistency that will trip up design
 - Should be closely tied to spoken lang
 - -> Utilize human talent in lang for model development
-- <img src="./resources/2.3.png" width="600">
+- <img src="./resources/2.3.png" width="600"/>
 
 ### Documents, diagrams, code
 - Use informal UML diagrams to anchor a discussion:

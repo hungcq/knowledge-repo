@@ -82,9 +82,9 @@ Philosophy, culture, science
 - 
   | Scientific practices                                                        | Natural science                                                  | Social science                                                                                                                                                      |
   |-----------------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  | Quantification                                                              | To describe structure of nature                                  | To give precision to ideas<br>-> Common layman practice                                                                                                             |
-  | Empiricism:<br>observe -> evidence<br>-> supporting arguments -> conclusion | - Highly objective<br>- Objects are indifferent to being studied | - Bounded by time, situation, cultural prejudices, specific condition<br>- Lab experiments: subjects affected by env & how questions are framed<br>-> Not universal |
-  | Falsifiability                                                              | Yes                                                              | - Not predictable<br>- Full of contradictory examples in reality<br>- Ambiguous terms                                                                               |
+  | Quantification                                                              | To describe structure of nature                                  | To give precision to ideas<br/>-> Common layman practice                                                                                                             |
+  | Empiricism:<br/>observe -> evidence<br/>-> supporting arguments -> conclusion | - Highly objective<br/>- Objects are indifferent to being studied | - Bounded by time, situation, cultural prejudices, specific condition<br/>- Lab experiments: subjects affected by env & how questions are framed<br/>-> Not universal |
+  | Falsifiability                                                              | Yes                                                              | - Not predictable<br/>- Full of contradictory examples in reality<br/>- Ambiguous terms                                                                               |
   | Conclusion                                                                  | Imp                                                              | Common place, rediscovery                                                                                                                                           |
 - Social science: documenting the behavior & feeling of people as they confront problems posed by their culture
 - -> ~story telling, literature: subjective interpretation of human nature, supported by examples
@@ -94,7 +94,7 @@ Philosophy, culture, science
   |---------|----------------------------------------------------------|----------------------|
   | Form    | Exposition                                               | Fiction              |
   | Focus   | Wider population                                         | Based on individuals |
-  | Method  | Use abstract social facts<br>-> Reason, logic, arguments | Showing              |
+  | Method  | Use abstract social facts<br/>-> Reason, logic, arguments | Showing              |
   | Purpose | Persuasion                                               | Entertainment        |
 - Why social science is embraced in current culture:
   - Technopoly preference for objectivity, facts, science

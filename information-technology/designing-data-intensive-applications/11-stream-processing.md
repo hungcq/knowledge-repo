@@ -30,7 +30,7 @@
 - Order: only within, not across partition
 - Parallelize by assign dif partitions to dif consumer
 - -> Problems:
-  - Num consumers must <= num partitions
+  - Num consumers must `<=` num partitions
   - Head of line blocking within partition (1 message at top of partition is slow to process)
 - Track processed mes by consumer offset
 - Old mes dropped if out of disk space

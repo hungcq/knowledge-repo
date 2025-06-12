@@ -213,7 +213,7 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 - -> Issue: usually lack of consideration for purpose: just do what we want at that moment
 - Desire dopamine mechanism:
   - Circuit: mesolimbic pathway (dopamine desire circuit):
-    - <img src="./resources/1.png" width="300"/>
+    - <img src="resources/1.png" width="300"/>
     - Cells wind through ventral tegmental area (old part of brain) to nucleus accumbens
     - These cells activated -> release dopamine to nucleus accumbens -> motivation feeling
   - -> Evolved to promote survival & reproduction
@@ -294,7 +294,7 @@ Arguments are supported by data, experiment results, evolutionary history and bi
 ### 3. Domination
 - Dopamine control mechanism:
   - Circuit: meso-cortical circuit:
-    - <img src="./resources/2.png" width="300"/>
+    - <img src="resources/2.png" width="300"/>
     - Start from ventral tegmental area, end in frontal lobes (specialized in logical thinking)
   - Evolutionary aim: secure as many resources as possible
   - -> Reward: feeling good

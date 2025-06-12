@@ -20,10 +20,10 @@
 - Feed publishing design:
   - Fanout on write: fast retrieval, heavy computation, waste resource on inactive use
   - Fanout on read
-  - <img src="./resources/11.4.png" width="700">
+  - <img src="./resources/11.4.png" width="700"/>
 - -> Should use hybrid approach: fanout on read for users with many followers, otherwise fanout on write
 - Retrieval:
-  - <img src="./resources/11.7.png" width="700">
+  - <img src="./resources/11.7.png" width="700"/>
   - CDN for media content
 - Cache architecture:
   - News feed: feed IDs

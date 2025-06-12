@@ -63,7 +63,7 @@
     - REST APIs with HTTP
     - User can interact with their dir in S3: use Cognito + Security Token Service (STS)
     - Authentication
-  - Architecture: client -> API Gateway -> Lambda -> DynamoDB. Authentication: client -> Cognito <-> API Gateway
+  - Architecture: client -> API Gateway -> Lambda -> DynamoDB. Authentication: client -> Cognito `<->` API Gateway
   - -> Improve read throughput: DAX, cache at API Gateway
 - MyBlog.com: serverless website:
   - Requirements:
@@ -99,7 +99,7 @@
   - Vs Managed Blockchain: centralized DB -> comply with financial laws
 - Timestream (time series DB): sample architecture: Prometheus -> Timestream -> Grafana
 ## Big Data Ingestion Pipeline
-- IoT devices -> Kinesis Data Streams -> Firehose <-> Lambda transformation -> S3 ingestion bucket
+- IoT devices -> Kinesis Data Streams -> Firehose `<->` Lambda transformation -> S3 ingestion bucket
   -> Lambda -> Athena (process ingestion bucket) -> S3 reporting bucket -> Redshift/Quicksight
 
 ## CloudTrail

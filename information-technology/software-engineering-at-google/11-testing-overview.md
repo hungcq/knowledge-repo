@@ -50,7 +50,7 @@
     - Simple, clear -> no control statements (eg operation, conditional, loop)
     - -> Easy to read & diagnose failure
   - 2 anti-patterns of tests distribution by size/scope:
-    - <img src="./resources/11.4.png" width="600">
+    - <img src="./resources/11.4.png" width="600"/>
     - Ice cream cone: usually appear in projects that start as prototypes & rushed to production
     - Hourglass: hard to instantiate individual dependencies in isolation due to tight coupling
   - Write tests for anything you don't want to break (eg expected behaviors, dep behaviors)

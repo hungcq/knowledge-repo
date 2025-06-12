@@ -11,7 +11,7 @@
 - Not linearizable systems:
   - Multi-leader replication: no single copy of data
   - Leaderless replication: can't solve cross-channel timing dependency even with strict quorum:
-    - <img src="./resources/9.6.png" width="500">
+    - <img src="./resources/9.6.png" width="500"/>
 - CAP: choose either consistency or availability when partitioned 
 - -> Old theorem, not practical because it ignores other faults
 - Cost of linearizability: performance
@@ -24,7 +24,7 @@ strongest consistency model that incurs no performance cost & can be available
 #### Sequence number ordering
 - Lamport timestamp: pair (counter, node ID):
   - Every node & client keep track of max counter value it has seen so far & update stale current value
-  - <img src="./resources/9.8.png" width="500">
+  - <img src="./resources/9.8.png" width="500"/>
 - -> Ensure total ordering but can't detect concurrent operations
 - Only work after the fact, not for operation that need immediate result (eg check for unique username to create)
 #### Total order broadcast

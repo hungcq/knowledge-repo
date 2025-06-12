@@ -1,4 +1,4 @@
-# Data models & query languages
+# Review questions
 - What are the main differences between relational & document data model? What should be considered when choosing data model?
 - What are the 2 types of query languages?
 

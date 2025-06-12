@@ -28,7 +28,7 @@
     - Has market value. Exception: owner-occupied housing & gov services.
     - Final good, not intermediate
 - GPD as income/output:
-    - <img src="resources/gdp.png" width="500">
+    - <img src="resources/gdp.png" width="500"/>
 - GPD calculation:
   - Expenditure approach: add statistical discrepancy
   - Income approach: add capital consumption allowance
@@ -38,8 +38,8 @@
 ## Business cycles
 - Cycle: recovery -> expansion (peak) -> slowdown -> contraction (bottom/trough)
 - Draw a 4-column table for the 4 phases:
-    - <img src="resources/cycle-employment.png" width="600">
-    - <img src="resources/cycle-inventory.png" width="600">
+    - <img src="resources/cycle-employment.png" width="600"/>
+    - <img src="resources/cycle-inventory.png" width="600"/>
 - Credit cycles tend to be  longer, deeper, and sharper than business cycles
 - Fiscal policy is the use of taxes and government spending to affect the level of aggregate expenditures
 - Monetary policy:
@@ -49,7 +49,7 @@
 
 ## Geopolitics
 - Tools of geopolitics:
-    - <img src="resources/geopolitics-tools.png" width="600">
+    - <img src="resources/geopolitics-tools.png" width="600"/>
 
 ## Balance of payments
 - Foreign direct investment increases capital account surplus -> increase current account deficit

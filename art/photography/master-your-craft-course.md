@@ -67,7 +67,7 @@
   - Turn chin (face) toward the light
 - Lower camera to elongate the legs
 - Perform action & take detail shots
-- <img src="./resources/pose.png" width="200"/>
+- <img src="resources/pose.png" width="200"/>
 
 ## Tips
 - Person in motion: let them lead to the open side of the frame

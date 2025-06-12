@@ -27,7 +27,7 @@
 - libuv: create & manage event loop
 
 ### 2. Async event driven programming
-- <img src="./resources/async-event.png" width="656">
+- <img src="./resources/async-event.png" width="656"/>
 - Event loop runs in the same thread Js code run, starts when process starts.
 - Event loop delegate IO to libuv. libuv manages these operations, notify the event loop when results are available.
 - Event-driven: app has main loop, divide into 2 sections:

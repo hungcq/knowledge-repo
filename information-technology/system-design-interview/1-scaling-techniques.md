@@ -1,8 +1,8 @@
 ## 1. Scaling techniques
 ### Overall Diagram
-- <img src="./resources/1.23.png" width="500">
+- <img src="./resources/1.23.png" width="500"/>
 ### Multi data centers diagram
-- <img src="./resources/1.15.png" width="500">
+- <img src="./resources/1.15.png" width="500"/>
 ### Notes
 - Split DB server - service server: scale independently
 - Disadvs of vertical scaling:

@@ -167,7 +167,7 @@ same food, living area & risk
   - Why parent species became extinct: less adapted, less varied
 - Divergence of character -> more ecological niche to take adv of -> not regress back
 - Illustration & elaboration of the process of forming new species using diagram of time & difference
-  - <img src="./resources/diagram.gif" width="800">
+  - <img src="resources/diagram.gif" width="800"/>
   
 ### 5. Laws of variation
 - Effects of external condition:

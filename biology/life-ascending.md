@@ -60,7 +60,7 @@
     - Reaction: H2 (plenty) + CO2 -> (via energy & catalyst - Fe, S) organic molecule + extra energy
     - Question: reaction happened that led to life:
       - -> Consider common properties of life
-      - Kerbs cycle: organic molecule <-> CO2 + ATP + H2 (for respiration with O2 -> ATP)
+      - Kerbs cycle: organic molecule `<->` CO2 + ATP + H2 (for respiration with O2 -> ATP)
       -> other side reaction -> other organic molecule (prediction)
       - -> Chemically & thermodynamically feasible
     - -> Question: where ATP in the reaction comes from?
@@ -117,7 +117,7 @@
     - Difficulty: single origin of life
 
 ### 3. Photosynthesis
-- Reaction: energy + CO2 + H20 (via respiration) <-> (via photosynthesis + energy) O2 + organic molecules
+- Reaction: energy + CO2 + H20 (via respiration) `<->` (via photosynthesis + energy) O2 + organic molecules
 - Photosynthesis mechanism: as a catalyst to separate O2 from H2O with minimal energy
 - Main goal of photosynthesis: get electron from reducer -> form organic matter
 - Question: cause of the switch from other easier electron givers (H2S, dissolved Fe - plentiful in early earth) to H2O:

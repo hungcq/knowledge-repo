@@ -11,7 +11,7 @@
   - Upload QPS
 ### High level design
 - Simple design:
-  - <img src="./resources/15.7.png" width="500">
+  - <img src="./resources/15.7.png" width="500"/>
 - 3 main APIs:
   - Upload file
   - Download file
@@ -20,14 +20,14 @@
   - First version that got processed win
   - Second version will be presented with the original file. User manually resolves the conflict.
 - High level design:
-  - <img src="./resources/15.10.png" width="500">
+  - <img src="./resources/15.10.png" width="500"/>
   - Block server:
     - Break files into small blocks before uploading to cloud storage
     - Reconstruct file from blocks when requested
 ### Details
 - Block server: split -> compress -> encrypt -> upload changed blocks to cloud storage (delta sync)
 - Data schema:
-  - <img src="./resources/15.13.png" width="500">
+  - <img src="./resources/15.13.png" width="500"/>
 - Fetch new data flow:
   - Block service -> file meta service -> noti service -> client: file uploaded
   - Client -> file meta service: changed blocks

@@ -16,17 +16,17 @@
     - Failure detection: gossip protocol
     - Handle partial failure: sloppy quorum & hinted handoff
     - Handle permanent failure: sync data using anti entropy background process, comparing hash tree of buckets in each node
-      - <img src="./resources/6.16.png" width="400">
+      - <img src="./resources/6.16.png" width="400"/>
     - Multi-datacenter replication
 - Design:
   - Overall architecture:
-    - <img src="./resources/6.17.png" width="400">
+    - <img src="./resources/6.17.png" width="400"/>
   - Write path:
-    - <img src="./resources/6.19.png" width="400">
+    - <img src="./resources/6.19.png" width="400"/>
   - Read path:
     - Read from in-memory SSTable if found
     - Read from disk if not found in SSTable
-      - <img src="./resources/6.17.png" width="400">
+      - <img src="./resources/6.17.png" width="400"/>
 ### Additional info
 - CAP theorem:
   - Def: it is impossible for a distributed system to simultaneously provide more than 2 of 3 guarantees:

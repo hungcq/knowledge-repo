@@ -15,7 +15,7 @@
 - Priming effect
 
 ## 5. Cognitive ease – strain
-- Familiarity (repetition) <--> cognitive easy -> truth
+- Familiarity (repetition) `<->` cognitive easy -> truth
 - Persuasive message:
   - Memorable (verse)
   - Clear text (high contrast, bright color, bold text)
@@ -214,7 +214,7 @@
 - Certainty effect: almost certain outcome weighted less
 - Expectation principle: not work
 - Decision weight:
-  - <img src="./resources/decision-weight.png" width="500">
+  - <img src="./resources/decision-weight.png" width="500"/>
 - -> Inadequate sensitivity to immediate probabilities
 - Very rare events:
   - Ignore/overestimate probability
@@ -223,8 +223,8 @@
 - Four-fold pattern:
   - |                                       | Gains                                        | Losses                                       |
     |---------------------------------------|----------------------------------------------|----------------------------------------------|
-    | High probability<br>Certainty effect  | Risk averse<br>Accept unfavorable settlement | Risk seeking<br>Reject favorable settlement  |
-    | Low probability<br>Possibility effect | Risk seeking<br>Reject favorable settlement  | Risk averse<br>Accept unfavorable settlement |
+    | High probability<br/>Certainty effect  | Risk averse<br/>Accept unfavorable settlement | Risk seeking<br/>Reject favorable settlement  |
+    | Low probability<br/>Possibility effect | Risk seeking<br/>Reject favorable settlement  | Risk averse<br/>Accept unfavorable settlement |
 
 ## 30. Rare events
 - Overestimation of probability of rare event is likely when alternative is not specified
@@ -236,7 +236,7 @@
 - Broad vs narrow framing
 - Consider favorable gambles if:
   - Independent of each other
-  - << total wealth
+  - `<<` total wealth
   - Are not long shot (probability of winning very small)
 - Risk policy: broad frame for risky choices:
   - Take the highest possible deductible when buying insurance

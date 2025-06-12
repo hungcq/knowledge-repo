@@ -44,7 +44,7 @@
 - VM import/export
 - AWS Application Discovery Service
 - (eg server utilization data, dependency mapping)
-- DMS: replicate on-premise <-> AWS
+- DMS: replicate on-premise `<->` AWS
 - Server Migration Service: incremental replication of on-premise live servers to AWS
 ## AWS Backup
 - Managed service, to manage & automate backups centrally across AWS

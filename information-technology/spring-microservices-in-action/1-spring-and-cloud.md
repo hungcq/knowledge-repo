@@ -14,5 +14,5 @@
     - Production ready feature (eg metrics, security, external config)
   - -> Fast dev time, leveraging existing Spring functionality
 - System architecture of example:
-  - <img src="./resources/1.4.png" width="600">
+  - <img src="./resources/1.4.png" width="600"/>
 - Spring profile: allow mapping beans to different environments (eg dev, production)

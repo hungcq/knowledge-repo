@@ -8,4 +8,4 @@
 - Practical
 
 ## Summary
-<img src="./resources/do-you-know-how-to-listen.drawio.svg">
+<img src="./resources/do-you-know-how-to-listen.drawio.svg"/>

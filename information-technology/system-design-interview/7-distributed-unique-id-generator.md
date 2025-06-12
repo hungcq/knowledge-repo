@@ -25,7 +25,7 @@
       - Single point of failure: DB
       - Performance bottleneck: DB
   - Twitter snowflake:
-    - <img src="./resources/7.5.png" width="400">
+    - <img src="./resources/7.5.png" width="400"/>
     - Timestamp: from a defined epoch
     - Constraints:
       - 41 bit timestamp -> ~69 years

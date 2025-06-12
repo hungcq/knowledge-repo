@@ -7,7 +7,7 @@
   - LSS can:
     - Exist within 1 bounded context
     - Cut across many of them & organize the context map
-  - <img src="./resources/17.5.png" width="700">
+  - <img src="./resources/17.5.png" width="700"/>
   - Can use dif LSS for dif context, but risk losing significance
 - LSS & distillation: LSS roles:
   - Help explain the relas within the core domain & between generic subdomains

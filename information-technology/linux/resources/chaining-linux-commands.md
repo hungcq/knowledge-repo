@@ -188,7 +188,7 @@ When writing your own programs to handle streaming data in a Unix-like environme
    - Example: `./program2 | ./program1`
    - Here, `program1` should be designed to read input from stdin.
 
-<li>**Command Substitution (`$(...)` or ``...``):** Command substitution is different. It captures the output of a command and then uses it as an argument in another command. This approach is not suitable for streaming large amounts of data because it requires the entire output to be loaded into memory before it can be passed to the next command.
+<li>**Command Substitution (`$(...)` or ``...``):** Command substitution is different. It captures the output of a command and then uses it as an argument in another command. This approach is not suitable for streaming large amounts of data because it requires the entire output to be loaded into memory before it can be passed to the next command.</li>
 
 
 - Example: `./program1 $(./program2)`

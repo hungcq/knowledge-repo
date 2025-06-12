@@ -61,7 +61,7 @@
 - Problem: violation of causality
 - Involve sharding: some partitions are replicated slower than other:
 user see some parts of data in older & some parts in newer state
-- <img src="./resources/5.5.png" width="500">
+- <img src="./resources/5.5.png" width="500"/>
 - Implementation: causally related writes are written to the same partition
 
 ### 5.3. Multi-leader replication

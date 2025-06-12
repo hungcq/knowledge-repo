@@ -25,7 +25,7 @@
   - Sliding window log
   - Sliding window counter
 - High level design:
-  - <img src="./resources/4.12.png">
+  - <img src="./resources/4.12.png"/>
 ### Details
 - Info to return to client (via header for flexibility):
   - Request remaining
@@ -50,6 +50,6 @@
   - Adjust request rate based on limit
   - Retry with backoff
 - Detailed design:
-  - <img src="./resources/4.13.png" width="400">
+  - <img src="./resources/4.13.png" width="400"/>
 ### Materials
 - [Rate limiting with Redis sorted set](https://engineering.classdojo.com/blog/2015/02/06/rolling-rate-limiter/)

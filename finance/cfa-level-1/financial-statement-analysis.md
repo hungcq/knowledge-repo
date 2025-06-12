@@ -3,8 +3,8 @@
 
 ## Income statement analysis
 - Example:
-  - <img src="./resources/income-stm-1.png" width="600">
-  - <img src="./resources/income-stm-2.png" width="600">
+  - <img src="resources/income-stm-1.png" width="600"/>
+  - <img src="resources/income-stm-2.png" width="600"/>
 - Dividends are not included in income stm or other comprehensive income
 - -> Only used for calculating retained earnings, should not deduce it to get net income
 - Calculate diluted EPS:
@@ -18,12 +18,12 @@ available for sale unrealized gain affects equity via other comprehensive income
 
 ## Balance sheet analysis
 - Example:
-  - <img src="./resources/balance-sheet.png" width="600">
+  - <img src="resources/balance-sheet.png" width="600"/>
 - Trade receivables are reported at net realizable value, un-collectability already accounted for
 
 ## Cash flow statements
 - Example:
-  - <img src="./resources/cash-flow.png" width="600">
+  - <img src="resources/cash-flow.png" width="600"/>
 - Types of activities classified by types of cash flow:
   - Operating:
     - Current assets & current liabilities

@@ -19,16 +19,16 @@
   - API servers: serve other requests
 - 2 main flows:
   - Video uploading flow:
-    - <img src="./resources/14.4.png" width="600">
+    - <img src="./resources/14.4.png" width="600"/>
   - Video streaming flow: need to understand & choose the right video streaming protocol
 ### Details
 - Use DAG to determine & parallelize video-transcoding tasks
 - Video transcoding architecture:
-  - <img src="./resources/14.10.png" width="700">
+  - <img src="./resources/14.10.png" width="700"/>
   - DAG scheduler decide tasks to run & put tasks into task queue
   - Resource scheduler:
     - Get task from task queue, pick the suitable worker from worker queue to run the task
-    - <img src="./resources/14.17.png" width="700">
+    - <img src="./resources/14.17.png" width="700"/>
 - Upload flow:
   - Steps:
     - FE -> API server: pre-signed URL: give access permission to the object in the URL (eg object in Amazon S3)

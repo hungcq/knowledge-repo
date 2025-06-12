@@ -86,7 +86,7 @@ Sport, practical
     - Everyone has seasonal limits: due to lifestyle at any given time
     - Training intensities should be determined by current fitness, best measured by race performances
   - Diminishing return:
-    - <img src="./resources/2.3.png" width="400">
+    - <img src="./resources/2.3.png" width="400"/>
   - Accelerating setbacks:
   to avoid setback through injury or lack of interest, most of the training must be in the gray shading in above image
   - Maintenance:
@@ -122,7 +122,7 @@ Sport, practical
 #### 3. Physiological & personal training profiles
 - Aerobic profile:
   - Economy curve: how much aerobic involvement is associated with increasing workloads
-  - <img src="./resources/3.2.png" width="400">
+  - <img src="./resources/3.2.png" width="400"/>
   - Running economy can vary depending on where you are running (eg at sea level, at altitude, on track, on treadmill)
   - Gender dif: the best men have higher VO2 max values than the best women
 - Running variable and improvements:
@@ -132,7 +132,7 @@ Sport, practical
     - Blood lactate
     - Rating of perceived exertion (RPE): show level of discomfort
   - Improvement due to training:
-    - <img src="./resources/3.4.png" width="400">
+    - <img src="./resources/3.4.png" width="400"/>
 - Heart rate during training runs:
   - Slower speed of running under less than desirable conditions will often lead to the desired intensity of exercise
   - Purpose of work out & variable to measure:
@@ -153,7 +153,7 @@ Sport, practical
 - Personal training & racing profiles:
   - To set up a training plan that best fits each indi:
   should gather basic info about the past & current state of fitness and time availability
-  - <img src="./resources/3.8.png" width="400">
+  - <img src="./resources/3.8.png" width="400"/>
 ##### Additional info
 - Training intensity is not always the same at the same speed of running. Examples of other factors:
   - Temperate
@@ -183,7 +183,7 @@ Sport, practical
       - Maximum: 150 mins
     - Focus on maintain good running mechanics to avoid injury
     - Distance limit for any single run:
-      - Weekly mileage < 64km: <= 30% weekly mileage
+      - Weekly mileage < 64km: `<=` 30% weekly mileage
       - Weekly mileage >= 64km: the lesser of 25% weekly mileage or 150 mins
 - Marathon-pace running (M):
   - Intensity: 75-84% VO2 max or 80-89% max heart rate
@@ -194,7 +194,7 @@ Sport, practical
   - Training suggestions:
     - Distance limit for any single run: lesser of 110 mins or 29km or 20% weekly mileage
     - Should mix M with both E and T
-    - <img src="./resources/4.1-tab.png" width="400">
+    - <img src="./resources/4.1-tab.png" width="400"/>
 - Threshold running (T):
   - Intensity:
     - Fairly hard but the pace is manageable for a fairly long time: 20-30 mins
@@ -218,11 +218,11 @@ Sport, practical
       - Increase stress: reduce recovery time, not increase speed
       - Work-recovery time ratio: 5-1
     - Limit in a single workout:
-      - <= 10% weekly mileage
+      - `<=` 10% weekly mileage
       - Tempo run: 20 mins each, can do more than one
       - Cruise intervals: total 30 mins
-    - <img src="./resources/4.2-tab-1.png" width="400">
-    - <img src="./resources/4.2-tab-2.png" width="400">
+    - <img src="./resources/4.2-tab-1.png" width="400"/>
+    - <img src="./resources/4.2-tab-2.png" width="400"/>
 - Interval training (I):
   - Intensity: at or very close to VO2 max & maximum heart rate
   - Benefit: maximize aerobic power
@@ -236,9 +236,9 @@ Sport, practical
       - Should not worry about the actual speed
       - Pace: could maintain for 10-12m
       - Recovery jog: shorter or equal hard run duration
-    - <img src="./resources/4.3-tab-1.png" width="400">
-    - <img src="./resources/4.3-tab-2.png" width="400">
-    - <img src="./resources/4.3-tab-3.png" width="400">
+    - <img src="./resources/4.3-tab-1.png" width="400"/>
+    - <img src="./resources/4.3-tab-2.png" width="400"/>
+    - <img src="./resources/4.3-tab-3.png" width="400"/>
 - Repetition training (R):
   - Benefit: improve anaerobic power, speed & economy of running
   - Training suggestions:
@@ -247,21 +247,21 @@ Sport, practical
       - In time: 2-3 times as the faster R-pace runs
       - In distance: jog as far as the run just performed
     - Distance limit in a single workout: the lesser of 8K or 5% weekly mileage
-    - <img src="./resources/4.4-tab-1.png" width="400">
-    - <img src="./resources/4.4-tab-2.png" width="400">
-    - <img src="./resources/4.4-tab-3.png" width="400">
-    - <img src="./resources/4.4-tab-4.png" width="400">
+    - <img src="./resources/4.4-tab-1.png" width="400"/>
+    - <img src="./resources/4.4-tab-2.png" width="400"/>
+    - <img src="./resources/4.4-tab-3.png" width="400"/>
+    - <img src="./resources/4.4-tab-4.png" width="400"/>
 - Tracking training intensities:
   - Should record the total amount of mileage accomplished each week
   - Note how much dif types of stress are being included in overall program
   - Heart rate point table:
-    - <img src="./resources/4.5.png" width="400">
+    - <img src="./resources/4.5.png" width="400"/>
   - Increase training amount:
     - Increase heart rate point for each type of training
     - Increase total heart rate point
     - Increase weekly mileage
 - Summary:
-  - <img src="./resources/4.1.png" width="500">
+  - <img src="./resources/4.1.png" width="500"/>
 ##### Additional info
 - Stay at any amount of weekly time spent running for at least 3-4 weeks before increasing the training amount
 - When max for the season, can increase or decrease weekly amounts based on weather or other situations limiting available time
@@ -272,11 +272,11 @@ Sport, practical
 - VDOT (V.O2): represent performance
 - -> Higher value is associated with better runner, regardless of age or sex
 - How to determine VDOT value:
-  - <img src="./resources/5.1-tab.png" width="500">
+  - <img src="./resources/5.1-tab.png" width="500"/>
   - Use the highest value of dif race times to determine appropriate paces for dif types of training
 - How to determine training intensity:
-  - <img src="./resources/5.2-tab.png" width="600">
-  - <img src="./resources/5.3-tab.png" width="500">
+  - <img src="./resources/5.2-tab.png" width="600"/>
+  - <img src="./resources/5.3-tab.png" width="500"/>
 - 6-second rule: add 6s (7-8s for runner in 40-50 VDOT categories) for lower training intensity per 400m
 
 #### 6. Environment- and altitude-specific training
@@ -292,14 +292,14 @@ Sport, practical
 #### 8. Fitness training
 - 4 training plans for dif types of runners:
   - White plan: beginners or people just came back to running
-    - <img src="./resources/8.1-tab-1.png" width="400">
-    - <img src="./resources/8.1-tab-2.png" width="400">
-    - <img src="./resources/8.1-tab-3.png" width="400">
+    - <img src="./resources/8.1-tab-1.png" width="400"/>
+    - <img src="./resources/8.1-tab-2.png" width="400"/>
+    - <img src="./resources/8.1-tab-3.png" width="400"/>
   - Red plan: runner involved in running but to a limited degree
   - Blue plan: serious runners who what to increase dedication to running
-    - <img src="./resources/8.3-tab-1.png" width="400">
-    - <img src="./resources/8.3-tab-2.png" width="400">
-    - <img src="./resources/8.3-tab-3.png" width="400">
+    - <img src="./resources/8.3-tab-1.png" width="400"/>
+    - <img src="./resources/8.3-tab-2.png" width="400"/>
+    - <img src="./resources/8.3-tab-3.png" width="400"/>
   - Gold plan: serious runners who want to be involved in a structured program and who can commit time
 - -> Blue and gold plan are more than adequate to prepare for serious racing
 - -> Can move on to structured event-training programs in part 2 of the book
@@ -314,11 +314,11 @@ Sport, practical
 - Due to loss of fitness, should not jump right back into the volume of training you were doing before
 - -> Can gain benefit without training hard because of lower level of fitness
 - Effect of break by break duration:
-  - <img src="./resources/9.1.png" width="400">
+  - <img src="./resources/9.1.png" width="400"/>
 - -> A few day off won't have much negative effect
 - VDOT adjustment by break duration:
-  - <img src="./resources/9.1-tab.png" width="400">
-  - <img src="./resources/9.2.png" width="400">
+  - <img src="./resources/9.1-tab.png" width="400"/>
+  - <img src="./resources/9.2.png" width="400"/>
 - Supplemental trainings (refer to the book for details):
   - Push-up
   - Side leg lift

@@ -23,4 +23,4 @@
 - Utilitarianism
 
 ## Summary
-<img src="./resources/animal-liberation.drawio.svg">
+<img src="./resources/animal-liberation.drawio.svg"/>

@@ -35,7 +35,7 @@
   - Mapper partitions its output by reducer, each output partition written to a sorted file on the mapper disk 
   - -> Notify corresponding reducer to download the output file when finished
   - Reducer merge downloaded files, then reduce & write output to a file on distributed file system
-  - <img src="./resources/10.1.png" width="600">
+  - <img src="./resources/10.1.png" width="600"/>
 - Chain jobs into workflow: no support, implicitly by directory name 
 - -> Need to use external workflow scheduler
 - Reduce-side joins & grouping:

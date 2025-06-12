@@ -8,7 +8,7 @@
   - Cache
   - Number of servers
 - Latency numbers:
-  - <img src="./resources/2.2.png" width="600">
+  - <img src="./resources/2.2.png" width="600"/>
 - Transactions/s of a typical DB node: ~1000
 ### Materials
 - [Google back-of-the-envelope estimation](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)

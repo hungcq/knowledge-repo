@@ -24,4 +24,4 @@
   - H: average number of individuals that have lived in a civilization before it reaches a posthuman stage
   - f1: fraction of posthuman civilizations that are interested in running ancestor‐simulations
   - N1: average number of ancestor‐simulations run by such interested civilizations
-- <img src="./resources/simulation.drawio.svg">
+- <img src="./resources/simulation.drawio.svg"/>

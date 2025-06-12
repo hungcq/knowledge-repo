@@ -84,4 +84,4 @@
   - -> Techniques for reducing conflict of interest & increase transparency
 - Chap 15: documentation template & best practices
 - Chap 16: no silver bullet:
-  - <img src="./resources/no-silver-bullet.jpg" width="800">
+  - <img src="./resources/no-silver-bullet.jpg" width="800"/>

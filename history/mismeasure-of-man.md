@@ -37,4 +37,4 @@
 - Misunderstanding of major theories in their early day -> lasting social impact
 
 ## Main content
-<img src="./resources/the-mismeasure-of-man.drawio.svg">
+<img src="./resources/the-mismeasure-of-man.drawio.svg"/>

@@ -27,4 +27,4 @@
 ## Content
 
 ### Part 1
-<img src="./resources/patterns-of-enterprise-app-architecture.drawio.svg">
+<img src="./resources/patterns-of-enterprise-app-architecture.drawio.svg"/>

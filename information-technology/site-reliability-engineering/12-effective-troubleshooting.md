@@ -1,6 +1,6 @@
 ## 12. Effective troubleshooting
 - Triage def: find out how serious the situation is
-- <img src="./resources/12-1.png" width="500">
+- <img src="./resources/12-1.png" width="500"/>
 ### Principle: hypothetico-deductive method: iteratively test hypothetical causes of the failure:
 - Form hypotheses using:
   - Observations of the system

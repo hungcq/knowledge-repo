@@ -482,9 +482,9 @@ value stock has higher risk -> higher earning = risk premium
 - -> Prices are not rational
 - Robert Shiller's method to beat market & predict bubbles: compare overall P/E ratio with average historical ratio (eg 10 years):
   - Long-term stock market price/earning ratios:
-  - <img src="./resources/1.png" width="500"/>
+  - <img src="resources/1.png" width="500"/>
   - House prices and rents:
-  - <img src="./resources/2.png" width="500"/>
+  - <img src="resources/2.png" width="500"/>
 - -> Can predict trend but not precise timing: bubble can persist for years
 - -> Can't be used to time the market
 

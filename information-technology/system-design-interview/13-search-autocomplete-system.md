@@ -23,11 +23,11 @@
     - Cache top search query at each node
     - -> No need to search and sort all children
     - -> Trade space for time complexity
-    - <img src="./resources/13.8.png" width="600">
+    - <img src="./resources/13.8.png" width="600"/>
 - Data gathering service:
   - Top searches are unlikely to change & updating tree for every search is costly
   - -> Need optimization
-  - <img src="./resources/13.9.png" width="600">
+  - <img src="./resources/13.9.png" width="600"/>
   - Log search data: sampling to reduce amount of logs
   - Store trie data:
     - Document store

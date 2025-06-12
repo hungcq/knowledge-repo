@@ -446,7 +446,7 @@ would be permitted by the theory simply because of their low degree of compositi
   - Select arbitrarily a class of relatively atomic stms, taken as a basis for comparison.
   Example form: there is a measuring apparatus for ... at the place ...,
   the pointer of which lies between the gradation marks ... and ...
-  - d: dimension: all singular stms whose degree of composition <= d are permitted
+  - d: dimension: all singular stms whose degree of composition `<=` d are permitted
   - -> Smaller d = higher falsifiability
   - -> Can be applied to basic stms
 - If 2 theories have the same d, then use subclass approach if can

@@ -21,7 +21,7 @@
     - Handle hash collision by appending a string
     - Check hash exist in DB exist: use bloom filter for efficiency
   - Base 62 conversion of auto incremented ID: predictable
-- Flow: Client <--> Load balancer -> Servers -> Cache -> DB
+- Flow: Client `<->` Load balancer -> Servers -> Cache -> DB
 - Redirect codes:
   - 301: permanent: browser will cache & not send subsequent request to short URL
   - -> Reduce load

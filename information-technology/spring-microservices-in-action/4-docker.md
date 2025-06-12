@@ -5,7 +5,7 @@
   - No overhead of guest OS
 - -> VM use case: when need a complete OS
 - Docker architecture:
-  - <img src="./resources/4.2.png" width="600">
+  - <img src="./resources/4.2.png" width="600"/>
 - Can build image using:
   - Basic Dockerfile: copy the entire JAR file
   - Multistage build Dockerfile: copy only the essential part of the app

@@ -17,7 +17,7 @@
     - Add:
       - Index keys in each node by key range, then query keys to be moved?
       - Not possible for hash index: need to scan all keys in all node?
-- <img src="./resources/5.14.png" width="400">
+- <img src="./resources/5.14.png" width="400"/>
 ### Materials
 - [Wiki consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing)
 - [Amazon Dynamo paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)

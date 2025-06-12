@@ -31,12 +31,12 @@
   - Chat history: noSQL DB:
     - Fast read & random access
     - Scale
-- <img src="./resources/12.8-modified.png" width="700">
+- <img src="./resources/12.8-modified.png" width="700"/>
 ### Details
 - Unique message ID PK: snowflake
 - Service discovery (e.g., Zookeeper): pick chat server for client
 - 1-1 chat flow:
-  - <img src="./resources/12.12.png" width="600">
+  - <img src="./resources/12.12.png" width="600"/>
 - Sync across device:
   - 1 session on each device
   - Use current mes ID on each device -> fetch new mes

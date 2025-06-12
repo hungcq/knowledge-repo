@@ -65,7 +65,7 @@
   - Capacity reservation: reserve on-demand instances capacity in a specific AZ for any duration
   - -> Suitable for short-term uninterrupted workload on specific AZ
 - Tenancy:
-  - Can only change the tenancy of an instance: dedicated <-> host
+  - Can only change the tenancy of an instance: dedicated `<->` host
   - Dedicated has higher priority against default (applies when there is dif between ASG launch config & VPC launch config)
 - Private IP: access the internet via NAT + internet gateway
 - Elastic IP:

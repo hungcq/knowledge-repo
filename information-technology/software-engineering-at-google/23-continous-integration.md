@@ -6,7 +6,7 @@
 - Function: automate the build & release processes, with continuous build & CD. Continuous testing is applied throughout.
 - CI encourages fast feedback loops, with detailed (eg which build, by whom) & actionable feedback
 - Tradeoff: effort to build CI system vs early detection of problems
-- <img src="./resources/23.2.png" width="500">
+- <img src="./resources/23.2.png" width="500"/>
 ### Continuous testing
 - Tests to run at:
   - Pre-submit: fast, reliable & related to the change/project

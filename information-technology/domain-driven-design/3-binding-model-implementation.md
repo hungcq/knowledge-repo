@@ -9,7 +9,7 @@
 - -> Include both domain concepts & technical considerations
 - -> Need to:
   - Choose between possible models
-  - Multiple iterations & refactoring: model <-> design/code
+  - Multiple iterations & refactoring: model `<->` design/code
   - Implementation language supports modeling paradigm (eg OOP)
 - Discussion about suitability of OOP paradigm to model driven design, compared to other paradigms
 - System model should map to end users' model

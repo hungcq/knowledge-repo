@@ -77,50 +77,50 @@ when the AI interacts with a suitable env
 
 ## Main content
 ### 1. Past developments and present capabilities
-<img src="./resources/1.drawio.svg">
+<img src="./resources/1.drawio.svg"/>
 
 ### 2. Paths to superintelligence
-<img src="./resources/2.drawio.svg">
+<img src="./resources/2.drawio.svg"/>
 
 ### 3. Forms of superintelligence
-<img src="./resources/3.drawio.svg">
+<img src="./resources/3.drawio.svg"/>
 
 ### 4. The kinetics of an intelligence explosion
-<img src="./resources/4.drawio.svg">
+<img src="./resources/4.drawio.svg"/>
 
 ### 5. Decisive strategic advantage
-<img src="./resources/5.drawio.svg">
+<img src="./resources/5.drawio.svg"/>
 
 ### 6. Cognitive superpowers
-<img src="./resources/6.drawio.svg">
+<img src="./resources/6.drawio.svg"/>
 
 ### 7. The superintelligence will
-<img src="./resources/7.drawio.svg">
+<img src="./resources/7.drawio.svg"/>
 
 ### 8. Is the default outcome doom?
-<img src="./resources/8.drawio.svg">
+<img src="./resources/8.drawio.svg"/>
 
 ### 9. The control problem
-<img src="./resources/9.drawio.svg">
+<img src="./resources/9.drawio.svg"/>
 
 ### 10. Oracles, genies, sovereigns, tools
-<img src="./resources/10.drawio.svg">
+<img src="./resources/10.drawio.svg"/>
 
 ### 11. Multipolar scenarios
-<img src="./resources/11.drawio.svg">
+<img src="./resources/11.drawio.svg"/>
 
 ### 12. Acquiring values
-<img src="./resources/12.drawio.svg">
+<img src="./resources/12.drawio.svg"/>
 
 ### 13. Choosing the criteria for choosing
 - Problem: choose value to install without locking in prejudices & preconceptions of present generation
-- <img src="./resources/13.drawio.svg">
+- <img src="./resources/13.drawio.svg"/>
 
 ### 14. The strategic picture
-<img src="./resources/14.drawio.svg">
+<img src="./resources/14.drawio.svg"/>
 
 ### 15. Crunch time
-<img src="./resources/15.drawio.svg">
+<img src="./resources/15.drawio.svg"/>
 
 ### Afterword
 - Recent events & progress in AI

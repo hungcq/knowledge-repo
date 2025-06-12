@@ -51,7 +51,7 @@
 - Patterns:
   - Search item in DynamoDB: DynamoDB -> DynamoDB Stream -> Lambda -> OpenSearch (provide query API)
   - CloudWatch Logs: Logs -> Subscription Filter -> Lambda (realtime)/Kinesis Data Firehose (near realtime) -> OpenSearch
-  - Kinesis Data Stream -> Firehose (near realtime) <-> Lambda (transform) -> OpenSearch
+  - Kinesis Data Stream -> Firehose (near realtime) `<->` Lambda (transform) -> OpenSearch
   - Kinesis Data Stream -> Lambda (realtime) -> OpenSearch
 - Use case example: store & analyze logs in realtime
 ## Elastic MapReduce (EMR)

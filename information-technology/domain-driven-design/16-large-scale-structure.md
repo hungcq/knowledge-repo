@@ -12,7 +12,7 @@
   to hold together all the teams & subsystems involved in the project
   - Shape and explain the model & design but do not appear in it
   - -> Shouldn't be presented in UML
-- <img src="./resources/16.1.png" width="700">
+- <img src="./resources/16.1.png" width="700"/>
 
 ### Evolving order (evolution)
 - Limitation: rigidity
@@ -58,11 +58,11 @@
     - Decision support: analysis & decision-making, using historical data & info from lower layers
   - Software that enforces elaborate business rules or legal requirements:
   add a policy layer: specifying business rules & goals
-  - <img src="./resources/16.13.png" width="700">
+  - <img src="./resources/16.13.png" width="700"/>
   - For business with less fixed assets (eg financial service, insurance):
     - Can merge operation & potential layer
     - Introduce commitment layer: reflecting agreements with customers/other businesses
-  - <img src="./resources/16.14.png" width="700">
+  - <img src="./resources/16.14.png" width="700"/>
 - Design:
   - Should stay within 4-5 layers
   - Should not force designs into layers when it is not natural

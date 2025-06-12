@@ -73,7 +73,7 @@
     - Each row has multiple versions corresponding to each update trans
     - Each version has `created by` & `deleted by` (txid) columns
   - Visibility rules: ignore writes/deletions made by trans with higher ID
-  - <img src="./resources/7.7.png" width="500">
+  - <img src="./resources/7.7.png" width="500"/>
   - Indexing:
     - Index point to all versions, filter not-visible versions
     - Copy-on-write/append-only
