@@ -1,5 +1,6 @@
 ## 9. Making implicit concepts explicit
-- Def
+- Def: represent concepts hinted at discussion or present implicitly in the design
+explicitly in the model with one or more objects or relationships
 - -> Transform the model, facilitate refinement into a deeper model
 
 ### Where to discover new concepts

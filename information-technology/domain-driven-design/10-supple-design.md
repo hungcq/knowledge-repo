@@ -12,7 +12,7 @@
     - Easy to change at flexible points
     - Effects of change are obvious
 - Early versions of a design are usually stiff
-- -> Need to make the most crucial, intricate parts supple, not every parts
+- -> Need to make the most crucial, intricate parts supple, not every part
 
 ### Patterns that contribute to a supple design
 

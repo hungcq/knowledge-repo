@@ -199,8 +199,6 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 - Designing (software) vs modeling (domain)
 - Breakthrough: an oppo opens up to transform the software into something more expressive and versatile
 - -> Can mean new features or the replacement of a big chunk of rigid code with a simple, flexible expression of the model
-- Making implicit concepts explicit: represent concepts hinted at discussion or present implicitly in the design
-  explicitly in the model with one or more objects or relationships
 - Specification: a predicate-like value object that determines if an object does or does not satisfy some criteria
 - Analysis patterns: patterns based on accumulated exp solving problems in one/some particular domains
 - Model unification: the internal consistency of a model, such that each term is unambiguous and no rules contradict
@@ -231,7 +229,7 @@ that abstracts the aspects relevant to solving the problem at hand and ignores e
 ## Content
 
 ### Summary map
-- <img src="../resources/ddd.drawio.svg"/>
+- <img src="./resources/ddd.drawio.svg"/>
 
 ### Graphs
 - <img src="./resources/building-block-supple-design.png" width="800"/>
