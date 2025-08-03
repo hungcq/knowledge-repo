@@ -1,4 +1,5 @@
 ## 10. *Documentation*
+
 ### Overview
 - SEs write most of the doc themselves
 - -> Need proper processes, tools & incentives
@@ -19,6 +20,7 @@
   - 3 aspects: completeness, accuracy, clarity
   - -> Usually there are tradeoffs between those
   - Good doc does its intended job of its type
+
 ### Best practices
 - Treat as code:
   - With owner/maintainer
@@ -28,7 +30,7 @@
   - Track issues
   - Evaluated periodically
   - With tools to measure accuracy, freshness...
-- Write for audience:
+- Write for the audience:
   - Identify the audience formally/informally before writing
   - Criteria to categorize audience:
     - Experience level (eg expert or junior)
@@ -37,7 +39,7 @@
     - How a user encounters the doc:
       - Seekers knowing what they want: focus on consistency in style to support efficient search
       - Stumblers not knowing exactly what they want: provide overview/intro & intended audience
-    - Customer vs provider (implementor): create separate doc for each type
+    - Customer vs provider (implementor): create separate docs for each type
   - -> Write the doc at their level
   - How to approach a broad audience: keep the doc short: might require maintaining a larger, detailed one
 - Know the dif types, not mix types
@@ -65,8 +67,9 @@
     - Remove or mark it as obsolete
     - Indicate where to go for new info (if possible)
 - Technical writer: focus on writing docs that cross API boundaries
+
 ### Doc types
-- Reference doc (most common type):
+- Reference doc (the most common type):
   - Usually generated from code comments
   - 2 types by purpose:
     - API comments
@@ -111,6 +114,7 @@
   - Difficult to write -> unpopular
 - Landing pages:
   - Content: only links to other pages for more info
-  - Audience: user of your product or API
+  - Audience: users of your product or API
+
 ### Additional info
 - Canonical doc to avoid conflicts of docs with dif owners

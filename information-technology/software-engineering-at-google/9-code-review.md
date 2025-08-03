@@ -21,7 +21,7 @@
 - Knowledge sharing
 ### Best practices
 - Be polite & professional:
-  - Ask for reason before assuming sth is wrong
+  - Ask for the reason before assuming sth is wrong
   - If not agree with reviewer: offer an alternative & ask reviewer to take another look
 - Write small changes: ~200 lines
 - -> Easy to review & rollback

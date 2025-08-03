@@ -26,12 +26,12 @@
   - Doc structure
   - Doc types: reference, design, tutorial, conceptual, landing page
 - Automated testing:
-  - Advs over manual testing
+  - Advs over manual testing: see Notes
+  - Test sizes: constraint, adv & disadv: see Notes
   - 3 testing activities
-  - Test sizes: constraint, adv & disadv
 - Unit testing:
-  - Chars of bad tests
-  - How to prevent brittle tests & unclear tests
+  - Chars of bad tests: see Notes
+  - How to prevent brittle tests & unclear tests: see Notes
   - Code reuse in test
   - 4 types of code changes & what to do with tests
 - Test doubles:
