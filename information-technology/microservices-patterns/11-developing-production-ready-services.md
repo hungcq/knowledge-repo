@@ -102,7 +102,7 @@
 including a breakdown of where the time is spent
 - Mechanism: assign each external request a unique ID and record how it flows through the system
 (eg timestamps, tree of service calls)
-- -> Unique req ID also help with searching logs related to an external request
+- -> Unique req ID also helps with searching logs related to an external request
   in a centralized server that provides visualization and analysis
 - Components:
   - Distributed tracing lib:
@@ -143,7 +143,7 @@ that de-duplicates exceptions, generates alerts & manages their resolution
   - Call Exception service's API directly
   - Use client lib provided by Exception service
 #### Audit logging
-- Record each user actions in a DB
+- Record each user action in a DB
 - Goal: help CS, ensure compliance, detect suspicious behavior
 - Record information:
   - User identity

@@ -1,33 +1,35 @@
 ## 12. Deploying microservices
+
 ### Deployment overview
 - History:
   - Evolution of deployment architecture:
     - <img src="./resources/12.1.png" width="500"/>
-  - Evolution of deployment process:
+  - Evolution of the deployment process:
     - Devs give app & operating instructions to operations
     - -> DevOps: dev team is also responsible for deployment:
       - Operation team provides console for dev to deploy code
       - -> Deployment pipeline: test & deploy
-- Big app contains hundreds of microservices -> can't hand config servers & services
-- -> Need highly automated deployment process & infra to scale
+- Big app contains hundreds of microservices -> can't manually config servers & services
+- -> Need a highly automated deployment process & infra to scale
 - 4 main functions of a production env:
   - Service management interface:
     - Enable devs to create, update & config services
     - Ideally a REST API invoked by command-line & GUI deployment tools
   - Runtime service management: ensure that the desired number of service instances is running at all time
+  - Request routing: route user requests to the services
   - Monitoring (aka observability):
     - Provide devs with insight into what their services are doing, including log files & metrics
     - Alert devs if there is a problem
-  - Request routing: route user requests to the services
-- How to prevent bugs in new deployment from affecting users: separate deployment from release:
+- How to prevent bugs in new deployments from affecting users: separate deployment from release:
   - Use service mesh feature: rule-based load balancing & traffic routing
   - -> Can safely run multiple versions of the services simultaneously
   - Steps:
-    - Deploy new version into production without routing any end-user requests to it
+    - Deploy a new version into production without routing any end-user requests to it
     - Test it in production
     - Incrementally release the new version until it handles all the production traffic
     - Rollback to the old version if there is an issue at any point
     - Delete the old version when confident that the new version is working correctly
+
 ### 4 deployment patterns
 #### Deploy service as a language-specific package
 - Steps:
@@ -41,20 +43,20 @@
   - Fast deployment:
     - Package transferred over the network is small
     - Start time is low
-  - Efficient resource utilization if allocate properly
+  - Efficient resource utilization when allocating properly
 - Disadvs:
   - Lack of encapsulation of the tech stack:
-    operation team must know the details of how to deploy each service (eg languages, frameworks, runtime versions)
+    the operation team must know the details of how to deploy each service (eg languages, frameworks, runtime versions)
   - -> Increase risk of error during deployment
   - Lack of isolation of the service instance: can consume all resources of the machine
-  - Difficult to allocate instances to machines to utilize it efficiently
+  - Difficult to allocate instances to machines to utilize them efficiently
 #### Deploy service as a virtual machine
 - Services are packaged as VM images & deployed. Each instance is a VM.
 - Pipeline:
   - Build VM image:
     - Content: service's code & required runtime software
     - Config the VM image machine to run the app when the VM boots
-  - Deploy the VM image to machine
+  - Deploy the VM image to a machine
 - Advs:
   - Encapsulate technology stack: in the VM
   - Isolate service instance
@@ -96,6 +98,7 @@
   - Long-tail latency: due to elasticity, it takes time for the cloud to provision & start an instance of the service
   - -> Not suitable for latency-sensitive services
   - Limited event/request-based programming model: not suitable for long-running services (eg message consumer)
+  - Vendor's lock in
 - Should consider whether this option meets the service requirements before considering other deployment patterns
 ### Technologies
 #### Docker (containerization tech)

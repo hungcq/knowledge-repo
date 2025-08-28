@@ -8,12 +8,12 @@
   - Scheduled noti
 - Allow users to unsubscribe?
 - Num noti/day
-### High level design
+### High-level design
 - 2 flows:
   - Gather contact info
   - Send noti
 - Gather info: 1/N user -> N devices:
-  - User -> Load balancer -> API servers -> DB
+  - Client -> Load balancer -> API servers -> DB
   - User schema: userid, phone, email
   - Device schema: device token
 - Send noti:

@@ -6,10 +6,9 @@
   - Reduce response time
   - Reduce coupling, scale independently
 - What are the disadvs of vertical scaling?
-- How many phases are there of a typical system design interview? What should be done at each phase?
+- How many phases are there in a typical system design interview? What should be done at each phase?
 - What is CAP theorem? What does each term mean?
 - Systems:
-  - Rate limiter
   - Noti system
   - News feed system
   - Chat system

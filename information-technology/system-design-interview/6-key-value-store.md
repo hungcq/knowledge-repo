@@ -35,8 +35,8 @@
     - Partition tolerance: the system can handle network partition (some nodes can't communicate with others)
   - For distributed system, network partition is unavoidable. So the system must choose between consistency and availability.
   - For distributed data system:
-    - Choosing consistency means blocking all writes to avoid unavailable node serving stale data
-    - Choose availability means allow writes, unavailable node continues to serve stale data, sync later
+    - Choosing consistency = blocking all writes to avoid unavailable node serving stale data
+    - Choose availability = allow writes, unavailable node continues to serve stale data, then sync later
 ### Materials
 - [BigTable paper](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtableosdi06.pdf)
 - [Cassandra architecture](https://cassandra.apache.org/doc/latest/architecture/)

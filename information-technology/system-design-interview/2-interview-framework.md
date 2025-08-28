@@ -5,7 +5,7 @@
   - Collaboration skill
   - Ability to work under pressure
   - Skill to resolve ambiguity constructively
-  - Ability to ask good question
+  - Ability to ask good questions
 - Red flags:
   - Over-engineering, ignore tradeoffs: costly system
   - Narrow-minded
@@ -19,9 +19,9 @@
   - Availability: tolerate single hardware/data center failure?
   - Scalability: anticipation of growth (scale in next month/year)
   - Existing services/stack to fit into or can be reused for the design
-  - Organizational: large, multi team org with separate infra team or new, small org?
+  - Organizational: large, multi-team org with separate infra team or new, small org?
   - -> Microservices for productivity or simple monolith app for fast iteration & reduced operational effort
-- High level design (10-15 min) & ask feedback:
+- High-level design (10-15 min) -> ask for feedback:
   - Main components
   - Use cases: flow & components involved
   - APIs (optional)
