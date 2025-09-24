@@ -63,3 +63,22 @@
 - -> Regulate melatonin release: to offset negative effect of late night light
 - Avoid carb at lunch for focus & alert. Eat carb at dinner for calm & easy sleep.
 - When lack of sleep, try not to sleep too early or wake up too late to avoid disrupting sleep rhythm
+
+### Fasting
+- 2-3h before sleep: autophagy while fasting during sleep
+- Min 1h after waking up. Push far if possible.
+- Eating ideal:
+  - 6-8h window. Eg 10am-6/8pm.
+  - Keep the window at the same period across days.
+  - Extend if work hard mentally/physically (eg 8h instead of 6h)
+- Depend on meal size & food type
+- Reality: 1-2h longer than planned feeding window
+- Light walk after eating: enter fasting state faster
+- Eat: signal for cellular growth. Fast: cellular repair/clearance.
+- Drink a bit of salt (electrolyte) can increase brain activity & offset lightheadedness due to low blood sugar while fasting
+
+### 3 channels of food preference
+- Taste: bitter, salty, sweet, sour, umami (protein)
+- Subconscious signaling from the gut: based on nutrient content of foods
+- Learned association between taste & quality/value of a food: dopamine/motivation related
+- -> Can be influenced
