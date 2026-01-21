@@ -1,0 +1,2 @@
+- Unique idea -> more time to refine the product & dont have to worry about defensibility
+- 
